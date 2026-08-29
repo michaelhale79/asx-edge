@@ -15,116 +15,438 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run ASX scanner
+      - name: Run ASX Edge scanner
         shell: python
         run: |
-          import json, statistics, urllib.request, datetime
+          import json
+          import statistics
+          import urllib.request
+          import urllib.parse
+          import datetime
           from pathlib import Path
+          from html.parser import HTMLParser
 
-          VERSION = 2
+          VERSION = 3
 
           TICKERS = [
-            "BHP","CBA","CSL","NAB","WBC","ANZ","WES","MQG","GMG","RIO",
-            "TLS","WOW","TCL","FMG","ALL","REA","XRO","WDS","QBE","RMD",
-            "MIN","JHX","CAR","SEK","CPU","ALD","STO","COL","S32","ORG",
-            "SUN","IAG","BXB","AMC","SHL","ASX","APA","MPL","TWE","NXT",
-            "WBT","BRN","LYC","PLS","LTR","ZIP","PME","MP1","DMP","NEC"
+              "BHP","CBA","CSL","NAB","WBC","ANZ","WES","MQG","GMG","RIO",
+              "TLS","WOW","TCL","FMG","ALL","REA","XRO","WDS","QBE","RMD",
+              "MIN","JHX","CAR","SEK","CPU","ALD","STO","COL","S32","ORG",
+              "SUN","IAG","BXB","AMC","SHL","ASX","APA","MPL","TWE","NXT",
+              "WBT","BRN","LYC","PLS","LTR","ZIP","PME","MP1","DMP","NEC",
+
+              # Michael holdings
+              "DRO","ETPMAG","GOLD",
+
+              # Isobel & Oliver holdings
+              "DTL","WOR","AIA"
           ]
 
-          H = {"User-Agent":"Mozilla/5.0"}
+          H = {
+              "User-Agent":
+              "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)"
+          }
+
+          POSITIVE = {
+              "upgrade":18,
+              "upgrades":18,
+              "guidance increased":20,
+              "record":8,
+              "contract":10,
+              "awarded":12,
+              "award":10,
+              "approval":12,
+              "approved":10,
+              "acquisition":5,
+              "profit growth":12,
+              "revenue growth":12,
+              "earnings growth":12,
+              "cash flow positive":14,
+              "debt reduction":12,
+              "resource upgrade":14,
+              "reserve upgrade":14,
+              "discovery":12,
+              "production increase":10,
+              "buy-back":8,
+              "buyback":8
+          }
+
+          NEGATIVE = {
+              "downgrade":-22,
+              "guidance reduced":-22,
+              "profit warning":-25,
+              "trading halt":-4,
+              "capital raising":-12,
+              "capital raise":-12,
+              "placement":-12,
+              "entitlement offer":-12,
+              "proposed issue":-7,
+              "issue of securities":-7,
+              "application for quotation":-3,
+              "insolvency":-30,
+              "administration":-30,
+              "suspension":-12,
+              "delay":-8,
+              "termination":-15,
+              "ceased":-8
+          }
+
+          NOISE = [
+              "appendix 3y",
+              "appendix 3x",
+              "appendix 3z",
+              "notification regarding unquoted",
+              "application for quotation",
+              "change in substantial holding",
+              "becoming a substantial holder",
+              "notice of meeting",
+              "results of meeting",
+              "cleansing notice"
+          ]
 
           def clamp(x):
-              return max(0,min(100,x))
+              return max(0, min(100, x))
 
-          def pct(a,b):
-              return ((a/b)-1)*100 if b else 0
+          def pct(a, b):
+              return ((a / b) - 1) * 100 if b else 0
 
-          def fetch(symbol):
-              url = "https://query1.finance.yahoo.com/v8/finance/chart/" + symbol + "?range=1y&interval=1d"
-              req = urllib.request.Request(url,headers=H)
-              with urllib.request.urlopen(req,timeout=20) as r:
-                  raw = json.load(r)
+          def avg(values, n):
+              block = values[-min(n, len(values)):]
+              return sum(block) / len(block) if block else 0
 
-              x = raw["chart"]["result"][0]
-              p = x["indicators"]["adjclose"][0]["adjclose"]
-              v = x["indicators"]["quote"][0]["volume"]
+          def ret(prices, days):
+              i = max(0, len(prices) - 1 - days)
+              return pct(prices[-1], prices[i])
 
-              rows = [(a,b or 0) for a,b in zip(p,v) if a is not None]
-
-              if len(rows) < 80:
-                  raise Exception("Not enough history")
-
-              return rows
-
-          def ret(prices,days):
-              i = max(0,len(prices)-1-days)
-              return pct(prices[-1],prices[i])
-
-          def avg(values,n):
-              x = values[-min(n,len(values)):]
-              return sum(x)/len(x)
-
-          def drawdown(prices,n=60):
-              block = prices[-min(n,len(prices)):]
+          def drawdown(prices, n=60):
+              block = prices[-min(n, len(prices)):]
               peak = block[0]
               worst = 0
 
               for p in block:
-                  peak = max(peak,p)
-                  worst = min(worst,pct(p,peak))
+                  peak = max(peak, p)
+                  worst = min(worst, pct(p, peak))
 
               return abs(worst)
 
-          benchRows = fetch("^AXJO")
-          bp = [x[0] for x in benchRows]
+          def fetch_json(url):
+              req = urllib.request.Request(url, headers=H)
 
-          bench = {
-              20:ret(bp,20),
-              60:ret(bp,60),
-              120:ret(bp,120)
+              with urllib.request.urlopen(req, timeout=25) as r:
+                  return json.load(r)
+
+          def fetch_text(url):
+              req = urllib.request.Request(url, headers=H)
+
+              with urllib.request.urlopen(req, timeout=25) as r:
+                  return r.read().decode(
+                      "utf-8",
+                      errors="ignore"
+                  )
+
+          def fetch_market(symbol):
+              url = (
+                  "https://query1.finance.yahoo.com/"
+                  "v8/finance/chart/"
+                  + urllib.parse.quote(symbol)
+                  + "?range=1y&interval=1d"
+              )
+
+              raw = fetch_json(url)
+
+              result = raw["chart"]["result"][0]
+
+              closes = (
+                  result["indicators"]
+                  ["adjclose"][0]
+                  ["adjclose"]
+              )
+
+              volumes = (
+                  result["indicators"]
+                  ["quote"][0]
+                  ["volume"]
+              )
+
+              rows = []
+
+              for close, volume in zip(closes, volumes):
+                  if close is not None:
+                      rows.append(
+                          (
+                              float(close),
+                              float(volume or 0)
+                          )
+                      )
+
+              if len(rows) < 80:
+                  raise Exception("Not enough price history")
+
+              return rows
+
+          class AnnouncementParser(HTMLParser):
+
+              def __init__(self):
+                  super().__init__()
+
+                  self.in_tr = False
+                  self.in_td = False
+
+                  self.row = []
+                  self.cell = ""
+
+                  self.price_sensitive = False
+                  self.rows = []
+
+              def handle_starttag(
+                  self,
+                  tag,
+                  attrs
+              ):
+
+                  attrs = dict(attrs)
+
+                  if tag == "tr":
+                      self.in_tr = True
+                      self.row = []
+                      self.price_sensitive = False
+
+                  elif tag == "td" and self.in_tr:
+                      self.in_td = True
+                      self.cell = ""
+
+                  elif tag == "img" and self.in_tr:
+
+                      alt = (
+                          attrs.get("alt", "")
+                          .lower()
+                      )
+
+                      if "price sensitive" in alt:
+                          self.price_sensitive = True
+
+              def handle_data(self, data):
+
+                  if self.in_td:
+                      self.cell += data
+
+              def handle_endtag(self, tag):
+
+                  if tag == "td" and self.in_td:
+
+                      text = " ".join(
+                          self.cell.split()
+                      )
+
+                      self.row.append(text)
+
+                      self.in_td = False
+                      self.cell = ""
+
+                  elif tag == "tr" and self.in_tr:
+
+                      if self.row:
+                          self.rows.append(
+                              {
+                                  "cells":self.row[:],
+                                  "priceSensitive":
+                                  self.price_sensitive
+                              }
+                          )
+
+                      self.in_tr = False
+
+          def fetch_announcements():
+
+              url = (
+                  "https://www.asx.com.au/"
+                  "asx/v2/statistics/"
+                  "todayAnns.do"
+              )
+
+              try:
+
+                  html = fetch_text(url)
+
+                  parser = AnnouncementParser()
+                  parser.feed(html)
+
+                  announcements = {}
+
+                  for row in parser.rows:
+
+                      cells = row["cells"]
+
+                      if len(cells) < 2:
+                          continue
+
+                      ticker = cells[0].strip().upper()
+
+                      if not (
+                          2 <= len(ticker) <= 6
+                          and ticker.replace(
+                              ".",
+                              ""
+                          ).isalnum()
+                      ):
+                          continue
+
+                      headline = cells[-1].strip()
+
+                      if not headline:
+                          continue
+
+                      announcements.setdefault(
+                          ticker,
+                          []
+                      ).append(
+                          {
+                              "headline":headline,
+                              "priceSensitive":
+                              row["priceSensitive"]
+                          }
+                      )
+
+                  print(
+                      "Announcement tickers found:",
+                      len(announcements)
+                  )
+
+                  return announcements
+
+              except Exception as e:
+
+                  print(
+                      "Announcement feed failed:",
+                      e
+                  )
+
+                  return {}
+
+          def score_headline(item):
+
+              headline = (
+                  item["headline"]
+                  .strip()
+                  .lower()
+              )
+
+              for phrase in NOISE:
+                  if phrase in headline:
+                      return 0
+
+              signal = 0
+
+              for phrase, score in POSITIVE.items():
+                  if phrase in headline:
+                      signal += score
+
+              for phrase, score in NEGATIVE.items():
+                  if phrase in headline:
+                      signal += score
+
+              if item["priceSensitive"]:
+
+                  if signal > 0:
+                      signal += 5
+
+                  elif signal < 0:
+                      signal -= 5
+
+              return signal
+
+          ANNOUNCEMENTS = fetch_announcements()
+
+          bench_rows = fetch_market("^AXJO")
+          bench_prices = [
+              x[0]
+              for x in bench_rows
+          ]
+
+          BENCH = {
+              20:ret(bench_prices, 20),
+              60:ret(bench_prices, 60),
+              120:ret(bench_prices, 120)
           }
 
-          def analyse(ticker,rows):
+          def analyse(ticker, rows):
 
-              prices = [x[0] for x in rows]
-              volumes = [x[1] for x in rows]
+              prices = [
+                  x[0]
+                  for x in rows
+              ]
+
+              volumes = [
+                  x[1]
+                  for x in rows
+              ]
 
               price = prices[-1]
 
-              r5 = ret(prices,5)
-              r20 = ret(prices,20)
-              r60 = ret(prices,60)
-              r120 = ret(prices,120)
-              r250 = ret(prices,250)
+              r5 = ret(prices, 5)
+              r20 = ret(prices, 20)
+              r60 = ret(prices, 60)
+              r120 = ret(prices, 120)
+              r250 = ret(prices, 250)
 
-              rs20 = r20-bench[20]
-              rs60 = r60-bench[60]
-              rs120 = r120-bench[120]
+              rs20 = r20 - BENCH[20]
+              rs60 = r60 - BENCH[60]
+              rs120 = r120 - BENCH[120]
 
-              ma20 = avg(prices,20)
-              ma60 = avg(prices,60)
-              ma200 = avg(prices,200)
+              ma20 = avg(prices, 20)
+              ma60 = avg(prices, 60)
+              ma200 = avg(prices, 200)
 
               daily = [
-                  pct(prices[i],prices[i-1])
-                  for i in range(max(1,len(prices)-60),len(prices))
+                  pct(
+                      prices[i],
+                      prices[i - 1]
+                  )
+                  for i in range(
+                      max(
+                          1,
+                          len(prices) - 60
+                      ),
+                      len(prices)
+                  )
               ]
 
-              vol = statistics.pstdev(daily)
+              volatility = (
+                  statistics.pstdev(daily)
+                  if len(daily) > 1
+                  else 0
+              )
+
               dd = drawdown(prices)
 
-              vol20 = avg(volumes,20)
-              vol60 = avg(volumes,60)
+              vol20 = avg(volumes, 20)
+              vol60 = avg(volumes, 60)
 
-              volumeRatio = volumes[-1]/vol20 if vol20 else 1
-              volumeTrend = vol20/vol60 if vol60 else 1
+              volume_ratio = (
+                  volumes[-1] / vol20
+                  if vol20
+                  else 1
+              )
 
-              above20 = sum(
-                  1 for p in prices[-20:]
-                  if p > ma20
-              ) / min(20,len(prices))
+              volume_trend = (
+                  vol20 / vol60
+                  if vol60
+                  else 1
+              )
 
-              trendStack = (
+              above20 = (
+                  sum(
+                      1
+                      for p in prices[-20:]
+                      if p > ma20
+                  )
+                  / min(
+                      20,
+                      len(prices)
+                  )
+              )
+
+              trend_stack = (
                   int(price > ma20)
                   + int(ma20 > ma60)
                   + int(ma60 > ma200)
@@ -133,151 +455,382 @@ jobs:
               relative = clamp(
                   50
                   + rs20
-                  + rs60*.45
-                  + rs120*.20
+                  + rs60 * .45
+                  + rs120 * .20
               )
 
               persistence = clamp(
                   25
-                  + above20*45
-                  + trendStack*10
+                  + above20 * 45
+                  + trend_stack * 10
               )
 
               acceleration = (
-                  rs20-rs60/3
-                  + .35*(r5-r20/4)
+                  rs20
+                  - rs60 / 3
+                  + .35 * (
+                      r5
+                      - r20 / 4
+                  )
               )
 
               inflecting = clamp(
                   50
-                  + acceleration*1.15
-                  + (8 if ma20 > ma60 else -8)
-                  + (6 if volumeTrend > 1.08 else 0)
+                  + acceleration * 1.15
+                  + (
+                      8
+                      if ma20 > ma60
+                      else -8
+                  )
+                  + (
+                      6
+                      if volume_trend > 1.08
+                      else 0
+                  )
               )
 
               stability = clamp(
                   85
-                  - vol*8
-                  - dd*1.15
+                  - volatility * 8
+                  - dd * 1.15
               )
 
-              volumeScore = clamp(
+              volume_score = clamp(
                   50
-                  + (volumeRatio-1)*18
-                  + (volumeTrend-1)*30
+                  + (
+                      volume_ratio - 1
+                  ) * 18
+                  + (
+                      volume_trend - 1
+                  ) * 30
+              )
+
+              ticker_anns = (
+                  ANNOUNCEMENTS.get(
+                      ticker,
+                      []
+                  )
+              )
+
+              announcement_signal = 0
+
+              for item in ticker_anns:
+                  announcement_signal += (
+                      score_headline(item)
+                  )
+
+              announcement_signal = max(
+                  -45,
+                  min(
+                      45,
+                      announcement_signal
+                  )
+              )
+
+              announcement_score = clamp(
+                  50
+                  + announcement_signal
+              )
+
+              price_sensitive_news = any(
+                  item["priceSensitive"]
+                  for item in ticker_anns
+              )
+
+              mismatch = 0
+
+              if announcement_signal >= 10:
+
+                  if r5 < 4:
+                      mismatch += 18
+
+                  elif r5 < 8:
+                      mismatch += 10
+
+                  if rs20 < 5:
+                      mismatch += 8
+
+              mismatch_score = clamp(
+                  50 + mismatch
               )
 
               penalty = 0
 
               if r20 > 25:
-                  penalty += min(16,(r20-25)*.6)
+                  penalty += min(
+                      16,
+                      (r20 - 25) * .6
+                  )
 
               if r5 > 15:
-                  penalty += min(12,(r5-15)*.8)
+                  penalty += min(
+                      12,
+                      (r5 - 15) * .8
+                  )
 
-              if price > ma20*1.18:
+              if price > ma20 * 1.18:
                   penalty += 8
 
               risk = clamp(
                   18
-                  + vol*7
-                  + dd*.9
+                  + volatility * 7
+                  + dd * .9
                   + penalty
               )
 
-              catalyst = clamp(
-                  45
-                  + (volumeScore-50)*.55
-                  + max(0,acceleration)*.6
+              catalyst_score = clamp(
+                  (
+                      volume_score * .30
+                      + inflecting * .25
+                      + announcement_score * .45
+                  )
               )
 
-              early = clamp(
-                  inflecting*.45
-                  + relative*.25
-                  + volumeScore*.20
-                  + (100-persistence)*.10
+              technical_confidence = clamp(
+                  (
+                      persistence * .35
+                      + stability * .30
+                      + relative * .35
+                  )
+              )
+
+              announcement_confidence = (
+                  80
+                  if ticker_anns
+                  else 35
+              )
+
+              confidence = clamp(
+                  technical_confidence * .60
+                  + announcement_confidence * .40
               )
 
               opportunity = clamp(
-                  relative*.28
-                  + inflecting*.27
-                  + persistence*.18
-                  + stability*.15
-                  + volumeScore*.12
+                  relative * .20
+                  + inflecting * .20
+                  + persistence * .13
+                  + stability * .12
+                  + volume_score * .08
+                  + announcement_score * .17
+                  + mismatch_score * .10
                   - penalty
               )
 
-              edge = (
-                  "UNDER-NOTICED"
-                  if early > opportunity+4
-                  else "INFLECTING"
+              if (
+                  announcement_signal >= 10
+                  and mismatch >= 15
+              ):
+                  edge = "UNDER-NOTICED"
+
+              elif inflecting >= 65:
+                  edge = "INFLECTING"
+
+              else:
+                  edge = "MISPRICED"
+
+              if ticker_anns:
+
+                  top_announcement = max(
+                      ticker_anns,
+                      key=lambda x:
+                      abs(
+                          score_headline(x)
+                      )
+                  )
+
+                  top_headline = (
+                      top_announcement[
+                          "headline"
+                      ]
+                  )
+
+              else:
+                  top_headline = (
+                      "No material announcement "
+                      "headline detected today."
+                  )
+
+              if announcement_signal > 0:
+
+                  announcement_view = (
+                      "Positive announcement signal"
+                  )
+
+              elif announcement_signal < 0:
+
+                  announcement_view = (
+                      "Negative announcement signal"
+                  )
+
+              else:
+
+                  announcement_view = (
+                      "No strong announcement signal"
+                  )
+
+              if mismatch >= 15:
+
+                  reaction_view = (
+                      "Price reaction appears muted "
+                      "relative to the positive news."
+                  )
+
+              else:
+
+                  reaction_view = (
+                      "No strong news/price mismatch "
+                      "is currently detected."
+                  )
+
+              thesis = (
+                  f"{announcement_view}. "
+                  f"Relative strength vs ASX 200 is "
+                  f"{rs20:+.1f}% over 1 month and "
+                  f"{rs60:+.1f}% over 3 months. "
+                  f"Evidence confidence "
+                  f"{round(confidence)}/100."
               )
 
+              catalyst_text = (
+                  f"{top_headline} "
+                  f"{reaction_view}"
+              )
+
+              risk_text = (
+                  f"60-day volatility "
+                  f"{volatility:.1f}% per day; "
+                  f"recent max drawdown "
+                  f"{dd:.1f}%. "
+              )
+
+              if penalty > 0:
+                  risk_text += (
+                      "The opportunity score is being "
+                      "penalised for price overextension."
+                  )
+
+              else:
+                  risk_text += (
+                      "No major price-overextension "
+                      "penalty is currently applied."
+                  )
+
               return {
-                "ticker":ticker,
-                "name":ticker,
-                "price":round(price,3),
+                  "ticker":ticker,
+                  "name":ticker,
+                  "price":round(price, 3),
 
-                "opp":round(opportunity),
-                "edge":edge,
+                  "opp":round(opportunity),
+                  "edge":edge,
 
-                "quality":round(stability),
-                "valuation":50,
-                "growth":round(inflecting),
-                "momentum":round(relative),
-                "catalystScore":round(catalyst),
-                "risk":round(risk),
+                  # Stability proxy for now
+                  "quality":round(stability),
 
-                "delta":0,
+                  # Real valuation data is not yet available
+                  "valuation":50,
 
-                "return1m":round(r20,1),
-                "return3m":round(r60,1),
-                "return6m":round(r120,1),
-                "return12m":round(r250,1),
+                  "growth":round(inflecting),
+                  "momentum":round(relative),
+                  "catalystScore":
+                  round(catalyst_score),
+                  "risk":round(risk),
 
-                "relative1m":round(rs20,1),
-                "relative3m":round(rs60,1),
-                "relative6m":round(rs120,1),
+                  "confidence":
+                  round(confidence),
 
-                "volumeRatio":round(volumeRatio,2),
-                "drawdown60":round(dd,1),
+                  "announcementScore":
+                  round(announcement_score),
 
-                "thesis":
-                  f"Relative strength vs ASX 200: {rs20:+.1f}% over 1 month and {rs60:+.1f}% over 3 months. Trend persistence {round(persistence)}/100.",
+                  "announcementSignal":
+                  round(announcement_signal),
 
-                "catalyst":
-                  f"20-day volume trend is {volumeTrend:.2f}× the 60-day average. " +
-                  (
-                    "Relative strength is accelerating."
-                    if acceleration > 2
-                    else "Relative strength is not yet accelerating strongly."
-                  ),
+                  "mismatchScore":
+                  round(mismatch_score),
 
-                "riskText":
-                  f"60-day volatility {vol:.1f}% per day; recent max drawdown {dd:.1f}%. " +
-                  (
-                    "The stock is being penalised for overextension."
-                    if penalty > 0
-                    else "No major overextension penalty."
-                  ),
+                  "priceSensitiveNews":
+                  price_sensitive_news,
 
-                "history":[]
+                  "announcements":
+                  ticker_anns[:10],
+
+                  "delta":0,
+
+                  "return5d":
+                  round(r5, 1),
+
+                  "return1m":
+                  round(r20, 1),
+
+                  "return3m":
+                  round(r60, 1),
+
+                  "return6m":
+                  round(r120, 1),
+
+                  "return12m":
+                  round(r250, 1),
+
+                  "relative1m":
+                  round(rs20, 1),
+
+                  "relative3m":
+                  round(rs60, 1),
+
+                  "relative6m":
+                  round(rs120, 1),
+
+                  "volumeRatio":
+                  round(volume_ratio, 2),
+
+                  "drawdown60":
+                  round(dd, 1),
+
+                  "thesis":
+                  thesis,
+
+                  "catalyst":
+                  catalyst_text,
+
+                  "riskText":
+                  risk_text,
+
+                  "history":[]
               }
 
           path = Path("data.json")
+
           previous = {}
-          oldVersion = None
+          old_version = None
 
           if path.exists():
+
               try:
-                  old = json.loads(path.read_text())
-                  oldVersion = old.get("engineVersion")
+
+                  old = json.loads(
+                      path.read_text()
+                  )
+
+                  old_version = (
+                      old.get(
+                          "engineVersion"
+                      )
+                  )
+
                   previous = {
-                      x["ticker"]:x
-                      for x in old.get("stocks",[])
+                      item["ticker"]:item
+                      for item
+                      in old.get(
+                          "stocks",
+                          []
+                      )
                   }
-              except:
-                  pass
+
+              except Exception as e:
+
+                  print(
+                      "Could not read old data:",
+                      e
+                  )
 
           stocks = []
 
@@ -285,36 +838,85 @@ jobs:
 
               try:
 
-                  print("Scanning",ticker)
+                  print(
+                      "Scanning",
+                      ticker
+                  )
+
+                  rows = fetch_market(
+                      ticker + ".AX"
+                  )
 
                   item = analyse(
                       ticker,
-                      fetch(ticker+".AX")
+                      rows
                   )
 
-                  if ticker in previous and oldVersion == VERSION:
+                  if (
+                      ticker in previous
+                      and old_version == VERSION
+                  ):
 
-                      oldScore = previous[ticker].get(
-                          "opp",
-                          item["opp"]
+                      old_item = (
+                          previous[ticker]
+                      )
+
+                      old_score = (
+                          old_item.get(
+                              "opp",
+                              item["opp"]
+                          )
                       )
 
                       item["delta"] = (
-                          item["opp"]-oldScore
+                          item["opp"]
+                          - old_score
                       )
 
-                      item["history"] = previous[ticker].get(
-                          "history",
-                          []
-                      )[-9:]
+                      item["history"] = (
+                          old_item.get(
+                              "history",
+                              []
+                          )[-9:]
+                      )
+
+                      old_ann = (
+                          old_item.get(
+                              "announcementSignal",
+                              0
+                          )
+                      )
+
+                      if (
+                          item[
+                              "announcementSignal"
+                          ]
+                          != old_ann
+                      ):
+
+                          item["history"].append(
+                              [
+                                  datetime.date.today().isoformat(),
+                                  "Announcement signal changed",
+                                  (
+                                      f"{old_ann} → "
+                                      f"{item['announcementSignal']}"
+                                  )
+                              ]
+                          )
 
                       if item["delta"] != 0:
 
-                          item["history"].append([
-                              datetime.date.today().isoformat(),
-                              "Opportunity score changed",
-                              f"{oldScore} → {item['opp']}"
-                          ])
+                          item["history"].append(
+                              [
+                                  datetime.date.today().isoformat(),
+                                  "Opportunity score changed",
+                                  (
+                                      f"{old_score} → "
+                                      f"{item['opp']}"
+                                  )
+                              ]
+                          )
 
                   stocks.append(item)
 
@@ -327,18 +929,30 @@ jobs:
                   )
 
           stocks.sort(
-              key=lambda x:x["opp"],
+              key=lambda x:
+              x["opp"],
               reverse=True
           )
 
           output = {
               "engineVersion":VERSION,
-              "updated":datetime.datetime.now(
+
+              "updated":
+              datetime.datetime.now(
                   datetime.timezone.utc
               ).isoformat(),
-              "source":"Free daily market data",
-              "benchmark":"ASX 200",
-              "stocks":stocks
+
+              "source":
+              (
+                  "Free daily market data + "
+                  "official ASX announcement headlines"
+              ),
+
+              "benchmark":
+              "ASX 200",
+
+              "stocks":
+              stocks
           }
 
           path.write_text(
@@ -348,10 +962,31 @@ jobs:
               )
           )
 
+          print("")
+          print("TOP OPPORTUNITIES")
+          print("-----------------")
+
+          for item in stocks[:10]:
+
+              print(
+                  item["ticker"],
+                  "OPP",
+                  item["opp"],
+                  item["edge"],
+                  "ANN",
+                  item["announcementSignal"],
+                  "CONF",
+                  item["confidence"]
+              )
+
       - name: Commit updated data
         run: |
           git config user.name "ASX Edge Bot"
           git config user.email "asx-edge@users.noreply.github.com"
+
           git add data.json
-          git diff --cached --quiet || git commit -m "Update ASX Edge market data"
+
+          git diff --cached --quiet || \
+          git commit -m "Update ASX Edge market data"
+
           git push
