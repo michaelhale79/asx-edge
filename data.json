@@ -1,9 +1,207 @@
 {
-  "engineVersion": 3,
-  "updated": "2026-08-29T14:34:57.109116+00:00",
+  "engineVersion": 3.1,
+  "announcementLookbackDays": 10,
+  "updated": "2026-08-29T14:46:24.856136+00:00",
   "source": "Free daily market data + official ASX announcement headlines",
   "benchmark": "ASX 200",
   "stocks": [
+    {
+      "ticker": "ALL",
+      "name": "ALL",
+      "price": 60.54,
+      "opp": 64,
+      "edge": "UNDER-NOTICED",
+      "quality": 63,
+      "valuation": 50,
+      "growth": 45,
+      "momentum": 55,
+      "catalystScore": 67,
+      "risk": 36,
+      "confidence": 69,
+      "announcementScore": 95,
+      "announcementSignal": 45,
+      "mismatchScore": 76,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Update - Notification of buy-back - ALL 6 pages 18.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Update - Notification of buy-back - ALL 6 pages 18.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Update - Notification of buy-back - ALL 6 pages 18.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Update - Notification of buy-back - ALL 6 pages 18.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Update - Notification of buy-back - ALL 6 pages 18.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Update - Notification of buy-back - ALL 6 pages 18.3KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": 10,
+      "return5d": -0.6,
+      "return1m": -5.5,
+      "return3m": 18.7,
+      "return6m": 31.6,
+      "return12m": -10.7,
+      "relative1m": -6.8,
+      "relative3m": 14.0,
+      "relative6m": 27.0,
+      "volumeRatio": 1.03,
+      "drawdown60": 9.3,
+      "thesis": "Positive announcement signal. Relative strength vs ASX 200 is -6.8% over 1 month and +14.0% over 3 months. Evidence confidence 69/100.",
+      "catalyst": "Update - Notification of buy-back - ALL 6 pages 18.3KB Price reaction appears muted relative to the positive news.",
+      "riskText": "60-day volatility 1.4% per day; recent max drawdown 9.3%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Announcement signal changed",
+          "0 \u2192 45"
+        ],
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "54 \u2192 64"
+        ]
+      ]
+    },
+    {
+      "ticker": "BXB",
+      "name": "BXB",
+      "price": 19.75,
+      "opp": 64,
+      "edge": "UNDER-NOTICED",
+      "quality": 64,
+      "valuation": 50,
+      "growth": 54,
+      "momentum": 51,
+      "catalystScore": 70,
+      "risk": 36,
+      "confidence": 67,
+      "announcementScore": 90,
+      "announcementSignal": 40,
+      "mismatchScore": 76,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Change of Director's Interest Notice 4 pages 422.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Notification of cessation of securities - BXB 4 pages 15.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Update - Notification of buy-back - BXB 6 pages 18.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Application for quotation of securities - BXB 7 pages 20.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Application for quotation of securities - BXB 7 pages 20.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Notification of cessation of securities - BXB 4 pages 15.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Update - Notification of buy-back - BXB 6 pages 18.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification of cessation of securities - BXB 4 pages 15.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Update - Notification of buy-back - BXB 6 pages 18.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Application for quotation of securities - BXB 7 pages 20.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Application for quotation of securities - BXB 7 pages 20.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Notification of cessation of securities - BXB 4 pages 15.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Update - Notification of buy-back - BXB 6 pages 18.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Application for quotation of securities - BXB 7 pages 20.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Application for quotation of securities - BXB 7 pages 20.5KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": 9,
+      "return5d": 3.5,
+      "return1m": 0.8,
+      "return3m": 16.2,
+      "return6m": -13.6,
+      "return12m": -21.8,
+      "relative1m": -0.5,
+      "relative3m": 11.6,
+      "relative6m": -18.2,
+      "volumeRatio": 1.2,
+      "drawdown60": 8.0,
+      "thesis": "Positive announcement signal. Relative strength vs ASX 200 is -0.5% over 1 month and +11.6% over 3 months. Evidence confidence 67/100.",
+      "catalyst": "Update - Notification of buy-back - BXB 6 pages 18.5KB Price reaction appears muted relative to the positive news.",
+      "riskText": "60-day volatility 1.5% per day; recent max drawdown 8.0%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Announcement signal changed",
+          "0 \u2192 40"
+        ],
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "55 \u2192 64"
+        ]
+      ]
+    },
     {
       "ticker": "XRO",
       "name": "XRO",
@@ -12,29 +210,60 @@
       "edge": "INFLECTING",
       "quality": 36,
       "valuation": 50,
-      "growth": 79,
-      "momentum": 73,
+      "growth": 80,
+      "momentum": 71,
       "catalystScore": 59,
       "risk": 59,
-      "confidence": 50,
+      "confidence": 68,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Ceasing to be a substantial holder 4 pages 351.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Final Directors Interest Notice Anjali Joshi 2 pages 120.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Results of 2026 Annual Meeting 2 pages 72.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Chair's address to Shareholders 33 pages 2.3MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Notification regarding unquoted securities - XRO 6 pages 19.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Xero revises CEO pay to global peer benchmark 4 pages 126.5KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 0.8,
       "return1m": 22.3,
       "return3m": 6.5,
       "return6m": 2.3,
       "return12m": -42.8,
-      "relative1m": 21.6,
-      "relative3m": 3.6,
-      "relative6m": -2.8,
+      "relative1m": 21.1,
+      "relative3m": 1.8,
+      "relative6m": -2.3,
       "volumeRatio": 1.35,
       "drawdown60": 22.3,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +21.6% over 1 month and +3.6% over 3 months. Evidence confidence 50/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +21.1% over 1 month and +1.8% over 3 months. Evidence confidence 68/100.",
+      "catalyst": "Ceasing to be a substantial holder 4 pages 351.8KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 3.0% per day; recent max drawdown 22.3%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -47,28 +276,34 @@
       "quality": 58,
       "valuation": 50,
       "growth": 69,
-      "momentum": 75,
+      "momentum": 73,
       "catalystScore": 54,
       "risk": 41,
-      "confidence": 55,
+      "confidence": 73,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-19",
+          "headline": "Change in substantial holding 7 pages 2.0MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -1.9,
       "return1m": 12.4,
       "return3m": 18.9,
       "return6m": 34.1,
       "return12m": -29.4,
-      "relative1m": 11.6,
-      "relative3m": 16.0,
-      "relative6m": 29.0,
+      "relative1m": 11.1,
+      "relative3m": 14.2,
+      "relative6m": 29.5,
       "volumeRatio": 0.29,
       "drawdown60": 9.0,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +11.6% over 1 month and +16.0% over 3 months. Evidence confidence 55/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +11.1% over 1 month and +14.2% over 3 months. Evidence confidence 73/100.",
+      "catalyst": "Change in substantial holding 7 pages 2.0MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.1% per day; recent max drawdown 9.0%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -81,64 +316,223 @@
       "quality": 53,
       "valuation": 50,
       "growth": 79,
-      "momentum": 81,
+      "momentum": 80,
       "catalystScore": 57,
       "risk": 48,
-      "confidence": 55,
+      "confidence": 73,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Change of Director's Interest Notice 2 pages 224.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Dividend/Distribution - DTL 4 pages 15.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "DTL FY26 Results Briefing 44 pages 3.7MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "DTL FY26 Results Media Announcement 4 pages 456.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "DTL FY26 App 4E Annual Financial and Sustainability Report 95 pages 3.3MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 18.6,
       "return1m": 14.3,
       "return3m": 19.7,
       "return6m": 53.1,
       "return12m": 26.9,
-      "relative1m": 13.6,
-      "relative3m": 16.9,
-      "relative6m": 48.0,
+      "relative1m": 13.1,
+      "relative3m": 15.1,
+      "relative6m": 48.5,
       "volumeRatio": 0.74,
       "drawdown60": 8.1,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +13.6% over 1 month and +16.9% over 3 months. Evidence confidence 55/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +13.1% over 1 month and +15.1% over 3 months. Evidence confidence 73/100.",
+      "catalyst": "Change of Director's Interest Notice 2 pages 224.9KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.9% per day; recent max drawdown 8.1%. The opportunity score is being penalised for price overextension.",
       "history": []
+    },
+    {
+      "ticker": "S32",
+      "name": "S32",
+      "price": 5.25,
+      "opp": 61,
+      "edge": "INFLECTING",
+      "quality": 42,
+      "valuation": 50,
+      "growth": 73,
+      "momentum": 70,
+      "catalystScore": 55,
+      "risk": 53,
+      "confidence": 70,
+      "announcementScore": 58,
+      "announcementSignal": 8,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 3Y - Matt Daley 3 pages 220.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 3Y - Stephen Pearce 3 pages 221.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 4G - Key to Disclosures 9 pages 316.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Climate-related Reporting Methodology 21 pages 1.4MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Annual Report 296 pages 18.7MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Full Year Financial Results Presentation 39 pages 14.0MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Update - Notification of buy-back - S32 5 pages 15.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Dividend/Distribution - S32 5 pages 20.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 4E and 2026 Financial Results Outlook 24 pages 346.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "61% Increase in Sierra Gorda Ore Reserve Estimate 31 pages 2.3MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": 1,
+      "return5d": 7.4,
+      "return1m": 14.9,
+      "return3m": 10.5,
+      "return6m": 23.2,
+      "return12m": 105.1,
+      "relative1m": 13.6,
+      "relative3m": 5.8,
+      "relative6m": 18.6,
+      "volumeRatio": 0.53,
+      "drawdown60": 17.5,
+      "thesis": "Positive announcement signal. Relative strength vs ASX 200 is +13.6% over 1 month and +5.8% over 3 months. Evidence confidence 70/100.",
+      "catalyst": "Update - Notification of buy-back - S32 5 pages 15.8KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 2.8% per day; recent max drawdown 17.5%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Announcement signal changed",
+          "0 \u2192 8"
+        ],
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "60 \u2192 61"
+        ]
+      ]
     },
     {
       "ticker": "BHP",
       "name": "BHP",
       "price": 67.3,
-      "opp": 61,
+      "opp": 60,
       "edge": "INFLECTING",
       "quality": 55,
       "valuation": 50,
       "growth": 69,
-      "momentum": 68,
+      "momentum": 67,
       "catalystScore": 55,
       "risk": 43,
-      "confidence": 53,
+      "confidence": 71,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Update - Dividend/Distribution - BHP 6 pages 23.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Notification of cessation of securities - BHP 4 pages 14.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification regarding unquoted securities - BHP 6 pages 18.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Change of Director's Interest Notice 4 pages 441.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Application for quotation of securities - BHP 7 pages 21.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "2026 US Annual Report (Form 20-F) 1028 pages 19.2MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
       "return5d": 3.3,
       "return1m": 11.6,
       "return3m": 7.2,
       "return6m": 31.4,
       "return12m": 65.8,
-      "relative1m": 10.8,
-      "relative3m": 4.3,
-      "relative6m": 26.3,
+      "relative1m": 10.3,
+      "relative3m": 2.5,
+      "relative6m": 26.8,
       "volumeRatio": 1.2,
       "drawdown60": 13.3,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +10.8% over 1 month and +4.3% over 3 months. Evidence confidence 53/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +10.3% over 1 month and +2.5% over 3 months. Evidence confidence 71/100.",
+      "catalyst": "Update - Dividend/Distribution - BHP 6 pages 23.1KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.9% per day; recent max drawdown 13.3%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "61 \u2192 60"
+        ]
+      ]
     },
     {
       "ticker": "MIN",
@@ -149,97 +543,65 @@
       "quality": 33,
       "valuation": 50,
       "growth": 74,
-      "momentum": 59,
+      "momentum": 58,
       "catalystScore": 58,
       "risk": 60,
-      "confidence": 51,
+      "confidence": 68,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Corporate Governance Statement 22 pages 11.4MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 4G 13 pages 483.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Financial Results Presentation 46 pages 4.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Financial Results Announcement 6 pages 365.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Dividend/Distribution - MIN 5 pages 18.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 4E and 2026 Annual Report 174 pages 17.2MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Ceasing to be a substantial holder 3 pages 213.0KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -1.3,
       "return1m": 12.9,
       "return3m": -8.0,
       "return6m": 13.9,
       "return12m": 80.2,
-      "relative1m": 12.1,
-      "relative3m": -10.9,
-      "relative6m": 8.8,
+      "relative1m": 11.6,
+      "relative3m": -12.7,
+      "relative6m": 9.3,
       "volumeRatio": 1.34,
       "drawdown60": 26.8,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +12.1% over 1 month and -10.9% over 3 months. Evidence confidence 51/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +11.6% over 1 month and -12.7% over 3 months. Evidence confidence 68/100.",
+      "catalyst": "2026 Corporate Governance Statement 22 pages 11.4MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.6% per day; recent max drawdown 26.8%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "JHX",
-      "name": "JHX",
-      "price": 41.42,
-      "opp": 60,
-      "edge": "MISPRICED",
-      "quality": 55,
-      "valuation": 50,
-      "growth": 58,
-      "momentum": 79,
-      "catalystScore": 47,
-      "risk": 43,
-      "confidence": 56,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -3.3,
-      "return1m": 11.3,
-      "return3m": 29.2,
-      "return6m": 38.4,
-      "return12m": 39.2,
-      "relative1m": 10.5,
-      "relative3m": 26.4,
-      "relative6m": 33.3,
-      "volumeRatio": 0.31,
-      "drawdown60": 9.3,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +10.5% over 1 month and +26.4% over 3 months. Evidence confidence 56/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 2.4% per day; recent max drawdown 9.3%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "S32",
-      "name": "S32",
-      "price": 5.25,
-      "opp": 60,
-      "edge": "INFLECTING",
-      "quality": 42,
-      "valuation": 50,
-      "growth": 73,
-      "momentum": 71,
-      "catalystScore": 52,
-      "risk": 53,
-      "confidence": 52,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": 7.4,
-      "return1m": 14.9,
-      "return3m": 10.5,
-      "return6m": 23.2,
-      "return12m": 105.1,
-      "relative1m": 14.1,
-      "relative3m": 7.7,
-      "relative6m": 18.1,
-      "volumeRatio": 0.53,
-      "drawdown60": 17.5,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +14.1% over 1 month and +7.7% over 3 months. Evidence confidence 52/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 2.8% per day; recent max drawdown 17.5%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
@@ -251,64 +613,187 @@
       "quality": 53,
       "valuation": 50,
       "growth": 66,
-      "momentum": 68,
+      "momentum": 66,
       "catalystScore": 57,
       "risk": 45,
-      "confidence": 51,
+      "confidence": 69,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Change of Director's Interest Notice 3 pages 243.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Dividend/Distribution - DMP 5 pages 19.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Appendix 4G 13 pages 200.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Corporate Governance Statement 22 pages 214.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Dividend Reinvestment Plan 1 page 24.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Full-Year Media Release 3 pages 70.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Full-Year Market Presentation 32 pages 1.8MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Appendix 4E / Annual Report 178 pages 13.9MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 6.1,
       "return1m": 8.2,
       "return3m": 25.3,
       "return6m": 5.2,
       "return12m": 44.1,
-      "relative1m": 7.4,
-      "relative3m": 22.5,
-      "relative6m": 0.1,
+      "relative1m": 6.9,
+      "relative3m": 20.7,
+      "relative6m": 0.6,
       "volumeRatio": 1.45,
       "drawdown60": 7.3,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +7.4% over 1 month and +22.5% over 3 months. Evidence confidence 51/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +6.9% over 1 month and +20.7% over 3 months. Evidence confidence 69/100.",
+      "catalyst": "Change of Director's Interest Notice 3 pages 243.9KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.9% per day; recent max drawdown 7.3%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
-      "ticker": "REA",
-      "name": "REA",
-      "price": 176.32,
+      "ticker": "JHX",
+      "name": "JHX",
+      "price": 41.42,
       "opp": 59,
-      "edge": "INFLECTING",
-      "quality": 49,
+      "edge": "WATCH",
+      "quality": 55,
       "valuation": 50,
-      "growth": 65,
-      "momentum": 64,
-      "catalystScore": 51,
-      "risk": 48,
-      "confidence": 52,
+      "growth": 58,
+      "momentum": 78,
+      "catalystScore": 47,
+      "risk": 43,
+      "confidence": 74,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": 1.1,
-      "return1m": 10.8,
-      "return3m": 12.7,
-      "return6m": 4.0,
-      "return12m": -24.8,
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "2026 Sustainability Report 3 pages 181.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 3Y - J Singh 3 pages 264.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 3Y - J Singh 4 pages 266.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Change in substantial holding 3 pages 307.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification regarding unquoted securities - JHX 5 pages 17.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification regarding unquoted securities - JHX 5 pages 17.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Change in substantial holding 2 pages 513.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Appendix 3Y - A ERTER 4 pages 321.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Application for quotation of securities - JHX 7 pages 21.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Results of 2026 Annual General Meeting 68 pages 945.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "James Hardie Announces Divestiture of European Operations 76 pages 539.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "2026 AGM Chair's Address and Presentation 30 pages 3.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Notification regarding unquoted securities - JHX 5 pages 17.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Notification regarding unquoted securities - JHX 5 pages 17.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Notification regarding unquoted securities - JHX 5 pages 17.2KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": -3.3,
+      "return1m": 11.3,
+      "return3m": 29.2,
+      "return6m": 38.4,
+      "return12m": 39.2,
       "relative1m": 10.0,
-      "relative3m": 9.8,
-      "relative6m": -1.1,
-      "volumeRatio": 0.9,
-      "drawdown60": 17.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +10.0% over 1 month and +9.8% over 3 months. Evidence confidence 52/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 2.0% per day; recent max drawdown 17.2%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "relative3m": 24.6,
+      "relative6m": 33.8,
+      "volumeRatio": 0.31,
+      "drawdown60": 9.3,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +10.0% over 1 month and +24.6% over 3 months. Evidence confidence 74/100.",
+      "catalyst": "2026 Sustainability Report 3 pages 181.7KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 2.4% per day; recent max drawdown 9.3%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "60 \u2192 59"
+        ]
+      ]
     },
     {
       "ticker": "CAR",
@@ -319,63 +804,80 @@
       "quality": 48,
       "valuation": 50,
       "growth": 67,
-      "momentum": 56,
-      "catalystScore": 64,
+      "momentum": 55,
+      "catalystScore": 65,
       "risk": 48,
-      "confidence": 48,
+      "confidence": 66,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Notice of 2026 Annual General Meeting Date 1 page 145.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Change of Director's Interest Notice 3 pages 252.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Application for quotation of securities - CAR 6 pages 18.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Notification of cessation of securities - CAR 4 pages 14.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Becoming a substantial holder 8 pages 701.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Ceasing to be a substantial holder from MUFG 52 pages 2.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Ceasing to be a substantial holder 4 pages 439.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Change in substantial holding from MUFG 696 pages 4.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Change in substantial holding 7 pages 585.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Change in substantial holding 23 pages 1.1MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -4.1,
       "return1m": 6.1,
       "return3m": 4.4,
       "return6m": 7.7,
       "return12m": -27.4,
-      "relative1m": 5.3,
-      "relative3m": 1.5,
-      "relative6m": 2.6,
+      "relative1m": 4.8,
+      "relative3m": -0.3,
+      "relative6m": 3.1,
       "volumeRatio": 2.56,
       "drawdown60": 13.9,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +5.3% over 1 month and +1.5% over 3 months. Evidence confidence 48/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.8% over 1 month and -0.3% over 3 months. Evidence confidence 66/100.",
+      "catalyst": "Notice of 2026 Annual General Meeting Date 1 page 145.6KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.6% per day; recent max drawdown 13.9%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "ALD",
-      "name": "ALD",
-      "price": 42.08,
-      "opp": 59,
-      "edge": "MISPRICED",
-      "quality": 58,
-      "valuation": 50,
-      "growth": 60,
-      "momentum": 68,
-      "catalystScore": 52,
-      "risk": 40,
-      "confidence": 53,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": 5.6,
-      "return1m": 5.5,
-      "return3m": 15.7,
-      "return6m": 40.6,
-      "return12m": 44.0,
-      "relative1m": 4.7,
-      "relative3m": 12.8,
-      "relative6m": 35.5,
-      "volumeRatio": 0.91,
-      "drawdown60": 11.4,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.7% over 1 month and +12.8% over 3 months. Evidence confidence 53/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.7% per day; recent max drawdown 11.4%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
@@ -383,34 +885,121 @@
       "name": "APA",
       "price": 10.77,
       "opp": 59,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 68,
       "valuation": 50,
       "growth": 62,
-      "momentum": 60,
+      "momentum": 59,
       "catalystScore": 51,
       "risk": 32,
-      "confidence": 54,
+      "confidence": 72,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-20",
+          "headline": "APA signs agreement for Sybella Creek Solar Farm 2 pages 88.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Corporate Governance Statement and Appendix 4G 41 pages 2.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "APA FY26 Final Distribution Information 2 pages 37.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "APA FY26 Results Presentation 49 pages 12.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "APA delivers strong FY26 results 3 pages 45.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Update - Dividend/Distribution - APA 6 pages 24.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "APA FY26 Appendix 4E and Annual Report 248 pages 19.1MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 2.4,
       "return1m": 5.7,
       "return3m": 7.3,
       "return6m": 21.3,
       "return12m": 30.5,
-      "relative1m": 4.9,
-      "relative3m": 4.4,
-      "relative6m": 16.2,
+      "relative1m": 4.4,
+      "relative3m": 2.6,
+      "relative6m": 16.7,
       "volumeRatio": 0.97,
       "drawdown60": 6.8,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.9% over 1 month and +4.4% over 3 months. Evidence confidence 54/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.4% over 1 month and +2.6% over 3 months. Evidence confidence 72/100.",
+      "catalyst": "APA signs agreement for Sybella Creek Solar Farm 2 pages 88.4KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.1% per day; recent max drawdown 6.8%. No major price-overextension penalty is currently applied.",
       "history": []
+    },
+    {
+      "ticker": "PME",
+      "name": "PME",
+      "price": 181.48,
+      "opp": 59,
+      "edge": "UNDER-NOTICED",
+      "quality": 32,
+      "valuation": 50,
+      "growth": 63,
+      "momentum": 70,
+      "catalystScore": 56,
+      "risk": 62,
+      "confidence": 66,
+      "announcementScore": 60,
+      "announcementSignal": 10,
+      "mismatchScore": 68,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-21",
+          "headline": "PME signs 7-year, A$25M contract with Valley Health 2 pages 182.2KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": 3,
+      "return5d": -5.3,
+      "return1m": 11.9,
+      "return3m": 14.0,
+      "return6m": 29.9,
+      "return12m": -37.4,
+      "relative1m": 10.6,
+      "relative3m": 9.3,
+      "relative6m": 25.3,
+      "volumeRatio": 0.81,
+      "drawdown60": 25.2,
+      "thesis": "Positive announcement signal. Relative strength vs ASX 200 is +10.6% over 1 month and +9.3% over 3 months. Evidence confidence 66/100.",
+      "catalyst": "PME signs 7-year, A$25M contract with Valley Health 2 pages 182.2KB Price reaction appears muted relative to the positive news.",
+      "riskText": "60-day volatility 3.0% per day; recent max drawdown 25.2%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Announcement signal changed",
+          "0 \u2192 10"
+        ],
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "56 \u2192 59"
+        ]
+      ]
     },
     {
       "ticker": "RIO",
@@ -421,7 +1010,7 @@
       "quality": 53,
       "valuation": 50,
       "growth": 67,
-      "momentum": 55,
+      "momentum": 54,
       "catalystScore": 53,
       "risk": 45,
       "confidence": 51,
@@ -436,47 +1025,185 @@
       "return3m": -3.7,
       "return6m": 17.9,
       "return12m": 63.1,
-      "relative1m": 5.4,
-      "relative3m": -6.6,
-      "relative6m": 12.8,
+      "relative1m": 4.9,
+      "relative3m": -8.4,
+      "relative6m": 13.3,
       "volumeRatio": 1.04,
       "drawdown60": 16.6,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +5.4% over 1 month and -6.6% over 3 months. Evidence confidence 51/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.9% over 1 month and -8.4% over 3 months. Evidence confidence 51/100.",
+      "catalyst": "No material announcement headline detected in the last 10 days. No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.7% per day; recent max drawdown 16.6%. No major price-overextension penalty is currently applied.",
       "history": []
+    },
+    {
+      "ticker": "REA",
+      "name": "REA",
+      "price": 176.32,
+      "opp": 58,
+      "edge": "INFLECTING",
+      "quality": 49,
+      "valuation": 50,
+      "growth": 65,
+      "momentum": 63,
+      "catalystScore": 51,
+      "risk": 48,
+      "confidence": 70,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-24",
+          "headline": "Change of Director's Interest Notice 4 pages 264.9KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": 1.1,
+      "return1m": 10.8,
+      "return3m": 12.7,
+      "return6m": 4.0,
+      "return12m": -24.8,
+      "relative1m": 9.5,
+      "relative3m": 8.0,
+      "relative6m": -0.6,
+      "volumeRatio": 0.9,
+      "drawdown60": 17.2,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +9.5% over 1 month and +8.0% over 3 months. Evidence confidence 70/100.",
+      "catalyst": "Change of Director's Interest Notice 4 pages 264.9KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 2.0% per day; recent max drawdown 17.2%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "59 \u2192 58"
+        ]
+      ]
+    },
+    {
+      "ticker": "ALD",
+      "name": "ALD",
+      "price": 42.08,
+      "opp": 58,
+      "edge": "WATCH",
+      "quality": 58,
+      "valuation": 50,
+      "growth": 60,
+      "momentum": 66,
+      "catalystScore": 52,
+      "risk": 40,
+      "confidence": 71,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Elizabeth Donaghey 2 pages 259.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Dividend/Distribution - ALD 4 pages 15.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "2026 Half Year Results Presentation 46 pages 2.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "2026 Half Year Results 3 pages 286.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "2026 Half Year Report 42 pages 2.2MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": 5.6,
+      "return1m": 5.5,
+      "return3m": 15.7,
+      "return6m": 40.6,
+      "return12m": 44.0,
+      "relative1m": 4.2,
+      "relative3m": 11.0,
+      "relative6m": 36.0,
+      "volumeRatio": 0.91,
+      "drawdown60": 11.4,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.2% over 1 month and +11.0% over 3 months. Evidence confidence 71/100.",
+      "catalyst": "Appendix 3Y - Elizabeth Donaghey 2 pages 259.9KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 1.7% per day; recent max drawdown 11.4%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "59 \u2192 58"
+        ]
+      ]
     },
     {
       "ticker": "ORG",
       "name": "ORG",
       "price": 11.71,
       "opp": 58,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 63,
       "valuation": 50,
       "growth": 64,
-      "momentum": 59,
+      "momentum": 58,
       "catalystScore": 51,
       "risk": 36,
-      "confidence": 53,
+      "confidence": 71,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Change in substantial holding 6 pages 543.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification regarding unquoted securities - ORG 7 pages 22.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification regarding unquoted securities - ORG 8 pages 25.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 3Y 4 pages 369.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Appendix 3Y 3 pages 348.4KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -1.5,
       "return1m": 8.8,
       "return3m": 7.9,
       "return6m": -0.7,
       "return12m": -2.9,
-      "relative1m": 8.0,
-      "relative3m": 5.1,
-      "relative6m": -5.8,
+      "relative1m": 7.5,
+      "relative3m": 3.2,
+      "relative6m": -5.3,
       "volumeRatio": 0.63,
       "drawdown60": 8.5,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +8.0% over 1 month and +5.1% over 3 months. Evidence confidence 53/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +7.5% over 1 month and +3.2% over 3 months. Evidence confidence 71/100.",
+      "catalyst": "Change in substantial holding 6 pages 543.6KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.6% per day; recent max drawdown 8.5%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -485,101 +1212,59 @@
       "name": "SUN",
       "price": 18.44,
       "opp": 58,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 64,
       "valuation": 50,
-      "growth": 60,
-      "momentum": 57,
+      "growth": 61,
+      "momentum": 55,
       "catalystScore": 55,
       "risk": 36,
-      "confidence": 52,
+      "confidence": 70,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-24",
+          "headline": "Appendix 3Y - Steve Johnston 2 pages 306.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Suncorp 2026 Notice of Annual General Meeting 21 pages 892.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Update - Dividend/Distribution - SUN 6 pages 24.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Update - Dividend/Distribution - SUN 6 pages 24.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Notification regarding unquoted securities - SUN 6 pages 19.4KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 1.7,
       "return1m": -0.8,
       "return3m": 9.5,
       "return6m": 31.4,
       "return12m": -7.8,
-      "relative1m": -1.6,
-      "relative3m": 6.7,
-      "relative6m": 26.3,
+      "relative1m": -2.1,
+      "relative3m": 4.9,
+      "relative6m": 26.8,
       "volumeRatio": 1.17,
       "drawdown60": 6.5,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.6% over 1 month and +6.7% over 3 months. Evidence confidence 52/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -2.1% over 1 month and +4.9% over 3 months. Evidence confidence 70/100.",
+      "catalyst": "Appendix 3Y - Steve Johnston 2 pages 306.6KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.7% per day; recent max drawdown 6.5%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "AMC",
-      "name": "AMC",
-      "price": 64.7,
-      "opp": 58,
-      "edge": "MISPRICED",
-      "quality": 66,
-      "valuation": 50,
-      "growth": 55,
-      "momentum": 59,
-      "catalystScore": 53,
-      "risk": 34,
-      "confidence": 53,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -3.2,
-      "return1m": 0.3,
-      "return3m": 21.8,
-      "return6m": 10.1,
-      "return12m": 7.6,
-      "relative1m": -0.5,
-      "relative3m": 18.9,
-      "relative6m": 5.0,
-      "volumeRatio": 1.14,
-      "drawdown60": 5.7,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -0.5% over 1 month and +18.9% over 3 months. Evidence confidence 53/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.6% per day; recent max drawdown 5.7%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "ETPMAG",
-      "name": "ETPMAG",
-      "price": 87.86,
-      "opp": 58,
-      "edge": "INFLECTING",
-      "quality": 38,
-      "valuation": 50,
-      "growth": 77,
-      "momentum": 55,
-      "catalystScore": 56,
-      "risk": 57,
-      "confidence": 47,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -1.2,
-      "return1m": 15.4,
-      "return3m": -8.0,
-      "return6m": -19.4,
-      "return12m": 60.1,
-      "relative1m": 14.6,
-      "relative3m": -10.9,
-      "relative6m": -24.5,
-      "volumeRatio": 0.86,
-      "drawdown60": 22.7,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +14.6% over 1 month and -10.9% over 3 months. Evidence confidence 47/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 2.7% per day; recent max drawdown 22.7%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
@@ -591,7 +1276,7 @@
       "quality": 65,
       "valuation": 50,
       "growth": 68,
-      "momentum": 55,
+      "momentum": 54,
       "catalystScore": 53,
       "risk": 35,
       "confidence": 51,
@@ -606,81 +1291,149 @@
       "return3m": 1.3,
       "return6m": -12.9,
       "return12m": 18.7,
-      "relative1m": 9.0,
-      "relative3m": -1.5,
-      "relative6m": -18.1,
+      "relative1m": 8.5,
+      "relative3m": -3.3,
+      "relative6m": -17.5,
       "volumeRatio": 0.89,
       "drawdown60": 8.4,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +9.0% over 1 month and -1.5% over 3 months. Evidence confidence 51/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +8.5% over 1 month and -3.3% over 3 months. Evidence confidence 51/100.",
+      "catalyst": "No material announcement headline detected in the last 10 days. No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.4% per day; recent max drawdown 8.4%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
-      "ticker": "WOW",
-      "name": "WOW",
-      "price": 39.65,
+      "ticker": "CSL",
+      "name": "CSL",
+      "price": 172.32,
       "opp": 57,
-      "edge": "MISPRICED",
-      "quality": 70,
+      "edge": "INFLECTING",
+      "quality": 49,
       "valuation": 50,
-      "growth": 54,
-      "momentum": 55,
-      "catalystScore": 52,
-      "risk": 31,
-      "confidence": 52,
-      "announcementScore": 50,
-      "announcementSignal": 0,
+      "growth": 68,
+      "momentum": 100,
+      "catalystScore": 56,
+      "risk": 57,
+      "confidence": 76,
+      "announcementScore": 58,
+      "announcementSignal": 8,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": 2.0,
-      "return1m": -0.3,
-      "return3m": 12.5,
-      "return6m": 12.4,
-      "return12m": 47.8,
-      "relative1m": -1.1,
-      "relative3m": 9.6,
-      "relative6m": 7.2,
-      "volumeRatio": 1.13,
-      "drawdown60": 5.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.1% over 1 month and +9.6% over 3 months. Evidence confidence 52/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.1% per day; recent max drawdown 5.2%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Alison Watkins AM 4 pages 135.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Costa Saroukos 3 pages 134.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Cameron Price 3 pages 134.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Samantha Lewis 3 pages 135.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Carolyn Hewson AO 4 pages 135.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Andrew Cuthbertson AO 3 pages 133.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Brian McNamee AO 4 pages 136.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Notification regarding unquoted securities - CSL 6 pages 19.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification of buy-back - CSL 5 pages 15.1KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": 1,
+      "return5d": 2.4,
+      "return1m": 40.0,
+      "return3m": 86.1,
+      "return6m": 19.2,
+      "return12m": -14.5,
+      "relative1m": 38.7,
+      "relative3m": 81.4,
+      "relative6m": 14.6,
+      "volumeRatio": 0.76,
+      "drawdown60": 9.0,
+      "thesis": "Positive announcement signal. Relative strength vs ASX 200 is +38.7% over 1 month and +81.4% over 3 months. Evidence confidence 76/100.",
+      "catalyst": "Notification of buy-back - CSL 5 pages 15.1KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 3.1% per day; recent max drawdown 9.0%. The opportunity score is being penalised for price overextension.",
+      "history": [
+        [
+          "2026-08-29",
+          "Announcement signal changed",
+          "0 \u2192 8"
+        ],
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "56 \u2192 57"
+        ]
+      ]
     },
     {
       "ticker": "RMD",
       "name": "RMD",
       "price": 32.74,
       "opp": 57,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 52,
       "valuation": 50,
       "growth": 61,
-      "momentum": 66,
+      "momentum": 65,
       "catalystScore": 50,
       "risk": 46,
-      "confidence": 51,
+      "confidence": 69,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "LR 1.15.3 Compliance 1 page 69.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Update - Dividend/Distribution - RMD 4 pages 16.8KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 2.5,
       "return1m": 10.1,
       "return3m": 23.8,
       "return6m": -7.1,
       "return12m": -20.7,
-      "relative1m": 9.4,
-      "relative3m": 20.9,
-      "relative6m": -12.2,
+      "relative1m": 8.8,
+      "relative3m": 19.1,
+      "relative6m": -11.7,
       "volumeRatio": 0.47,
       "drawdown60": 12.8,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +9.4% over 1 month and +20.9% over 3 months. Evidence confidence 51/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +8.8% over 1 month and +19.1% over 3 months. Evidence confidence 69/100.",
+      "catalyst": "LR 1.15.3 Compliance 1 page 69.7KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.3% per day; recent max drawdown 12.8%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -689,32 +1442,53 @@
       "name": "STO",
       "price": 8.12,
       "opp": 57,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 55,
       "valuation": 50,
-      "growth": 61,
-      "momentum": 57,
+      "growth": 62,
+      "momentum": 56,
       "catalystScore": 50,
       "risk": 43,
-      "confidence": 53,
+      "confidence": 70,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "Change in substantial holding 117 pages 12.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Santos 2026 Half-year Results 42 pages 2.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Dividend/Distribution - STO 5 pages 20.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Santos HY26 - 4D - Directors' Report and Declaration 38 pages 1.4MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -1.5,
       "return1m": 5.6,
       "return3m": 5.2,
       "return6m": 12.4,
       "return12m": 8.0,
-      "relative1m": 4.8,
-      "relative3m": 2.3,
-      "relative6m": 7.3,
+      "relative1m": 4.3,
+      "relative3m": 0.5,
+      "relative6m": 7.8,
       "volumeRatio": 0.59,
       "drawdown60": 12.8,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.8% over 1 month and +2.3% over 3 months. Evidence confidence 53/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +4.3% over 1 month and +0.5% over 3 months. Evidence confidence 70/100.",
+      "catalyst": "Change in substantial holding 117 pages 12.1MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.9% per day; recent max drawdown 12.8%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -723,116 +1497,350 @@
       "name": "COL",
       "price": 23.8,
       "opp": 57,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 65,
       "valuation": 50,
       "growth": 55,
-      "momentum": 53,
+      "momentum": 52,
       "catalystScore": 51,
       "risk": 35,
-      "confidence": 54,
+      "confidence": 71,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-25",
+          "headline": "2026 Sustainability Supplement 54 pages 9.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Appendix 4G 15 pages 622.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "2026 Corporate Governance Statement 23 pages 3.8MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "2026 Full Year Results Presentation 35 pages 5.2MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "2026 Full Year Results Release 17 pages 579.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Dividend/Distribution - COL 5 pages 21.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Appendix 4E & 2026 Annual Report 188 pages 23.2MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 4.3,
       "return1m": -1.2,
       "return3m": 9.2,
       "return6m": 16.2,
       "return12m": 2.9,
-      "relative1m": -2.0,
-      "relative3m": 6.3,
-      "relative6m": 11.0,
+      "relative1m": -2.5,
+      "relative3m": 4.5,
+      "relative6m": 11.6,
       "volumeRatio": 1.22,
       "drawdown60": 7.6,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -2.0% over 1 month and +6.3% over 3 months. Evidence confidence 54/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -2.5% over 1 month and +4.5% over 3 months. Evidence confidence 71/100.",
+      "catalyst": "2026 Sustainability Supplement 54 pages 9.1MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.5% per day; recent max drawdown 7.6%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
-      "ticker": "CSL",
-      "name": "CSL",
-      "price": 172.32,
-      "opp": 56,
-      "edge": "INFLECTING",
-      "quality": 49,
+      "ticker": "AMC",
+      "name": "AMC",
+      "price": 64.7,
+      "opp": 57,
+      "edge": "WATCH",
+      "quality": 66,
       "valuation": 50,
-      "growth": 68,
-      "momentum": 100,
+      "growth": 55,
+      "momentum": 58,
       "catalystScore": 53,
-      "risk": 57,
-      "confidence": 58,
+      "risk": 34,
+      "confidence": 53,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
       "announcements": [],
-      "delta": 0,
-      "return5d": 2.4,
-      "return1m": 40.0,
-      "return3m": 86.1,
-      "return6m": 19.2,
-      "return12m": -14.5,
-      "relative1m": 39.2,
-      "relative3m": 83.2,
-      "relative6m": 14.1,
-      "volumeRatio": 0.76,
-      "drawdown60": 9.0,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +39.2% over 1 month and +83.2% over 3 months. Evidence confidence 58/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 3.1% per day; recent max drawdown 9.0%. The opportunity score is being penalised for price overextension.",
-      "history": []
+      "delta": -1,
+      "return5d": -3.2,
+      "return1m": 0.3,
+      "return3m": 21.8,
+      "return6m": 10.1,
+      "return12m": 7.6,
+      "relative1m": -1.0,
+      "relative3m": 17.1,
+      "relative6m": 5.5,
+      "volumeRatio": 1.14,
+      "drawdown60": 5.7,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.0% over 1 month and +17.1% over 3 months. Evidence confidence 53/100.",
+      "catalyst": "No material announcement headline detected in the last 10 days. No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 1.6% per day; recent max drawdown 5.7%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "58 \u2192 57"
+        ]
+      ]
+    },
+    {
+      "ticker": "ETPMAG",
+      "name": "ETPMAG",
+      "price": 87.86,
+      "opp": 57,
+      "edge": "INFLECTING",
+      "quality": 38,
+      "valuation": 50,
+      "growth": 77,
+      "momentum": 54,
+      "catalystScore": 56,
+      "risk": 57,
+      "confidence": 47,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [],
+      "delta": -1,
+      "return5d": -1.2,
+      "return1m": 15.4,
+      "return3m": -8.0,
+      "return6m": -19.4,
+      "return12m": 60.1,
+      "relative1m": 14.1,
+      "relative3m": -12.7,
+      "relative6m": -24.0,
+      "volumeRatio": 0.86,
+      "drawdown60": 22.7,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +14.1% over 1 month and -12.7% over 3 months. Evidence confidence 47/100.",
+      "catalyst": "No material announcement headline detected in the last 10 days. No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 2.7% per day; recent max drawdown 22.7%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "58 \u2192 57"
+        ]
+      ]
     },
     {
       "ticker": "MQG",
       "name": "MQG",
       "price": 251.78,
       "opp": 56,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 69,
       "valuation": 50,
       "growth": 56,
-      "momentum": 55,
+      "momentum": 54,
       "catalystScore": 50,
       "risk": 32,
-      "confidence": 52,
+      "confidence": 70,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Ceasing to be a substantial holder for OML 20 pages 196.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Ceasing to be a substantial holder for JDO 20 pages 230.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Change in substantial holding for WEB 19 pages 188.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Becoming a substantial holder for OML 18 pages 342.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Macquarie Group audit tender update 1 page 54.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Ceasing to be a substantial holder for OML 21 pages 198.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Becoming a substantial holder for JDO 18 pages 166.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Ceasing to be a substantial holder for LOT 16 pages 188.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Change in substantial holding for KLI 14 pages 156.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Change in substantial holding for SIQ 124 pages 398.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Becoming a substantial holder for RPL 19 pages 168.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Ceasing to be a substantial holder for JDO 15 pages 220.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Becoming a substantial holder for OML 18 pages 165.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Becoming a substantial holder for LOT 22 pages 721.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Becoming a substantial holder for JDO 17 pages 617.5KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 1.3,
       "return1m": -0.5,
       "return3m": 6.5,
       "return6m": 29.1,
       "return12m": 19.8,
-      "relative1m": -1.3,
-      "relative3m": 3.6,
-      "relative6m": 23.9,
+      "relative1m": -1.8,
+      "relative3m": 1.8,
+      "relative6m": 24.5,
       "volumeRatio": 0.95,
       "drawdown60": 7.3,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.3% over 1 month and +3.6% over 3 months. Evidence confidence 52/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.8% over 1 month and +1.8% over 3 months. Evidence confidence 70/100.",
+      "catalyst": "Ceasing to be a substantial holder for OML 20 pages 196.4KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.0% per day; recent max drawdown 7.3%. No major price-overextension penalty is currently applied.",
       "history": []
+    },
+    {
+      "ticker": "WOW",
+      "name": "WOW",
+      "price": 39.65,
+      "opp": 56,
+      "edge": "WATCH",
+      "quality": 70,
+      "valuation": 50,
+      "growth": 54,
+      "momentum": 53,
+      "catalystScore": 52,
+      "risk": 31,
+      "confidence": 70,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4G and Corporate Governance Statement 30 pages 962.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Woolworths Group Nature Report 17 pages 3.7MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Woolworths Group Board update 2 pages 173.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Full Year Results Presentation 40 pages 8.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Full Year Results Announcement 26 pages 1.0MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Dividend/Distribution - WOW 5 pages 19.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4E and Annual Report 195 pages 13.5MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": 2.0,
+      "return1m": -0.3,
+      "return3m": 12.5,
+      "return6m": 12.4,
+      "return12m": 47.8,
+      "relative1m": -1.6,
+      "relative3m": 7.8,
+      "relative6m": 7.8,
+      "volumeRatio": 1.13,
+      "drawdown60": 5.2,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.6% over 1 month and +7.8% over 3 months. Evidence confidence 70/100.",
+      "catalyst": "Appendix 4G and Corporate Governance Statement 30 pages 962.5KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 1.1% per day; recent max drawdown 5.2%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "57 \u2192 56"
+        ]
+      ]
     },
     {
       "ticker": "CPU",
       "name": "CPU",
       "price": 39.27,
       "opp": 56,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 65,
       "valuation": 50,
       "growth": 56,
-      "momentum": 58,
-      "catalystScore": 51,
+      "momentum": 57,
+      "catalystScore": 52,
       "risk": 35,
-      "confidence": 51,
+      "confidence": 50,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
@@ -844,13 +1852,13 @@
       "return3m": 15.5,
       "return6m": 34.5,
       "return12m": 10.2,
-      "relative1m": -3.3,
-      "relative3m": 12.6,
-      "relative6m": 29.4,
+      "relative1m": -3.8,
+      "relative3m": 10.8,
+      "relative6m": 29.9,
       "volumeRatio": 0.66,
       "drawdown60": 8.4,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -3.3% over 1 month and +12.6% over 3 months. Evidence confidence 51/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -3.8% over 1 month and +10.8% over 3 months. Evidence confidence 50/100.",
+      "catalyst": "No material announcement headline detected in the last 10 days. No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.3% per day; recent max drawdown 8.4%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -859,32 +1867,78 @@
       "name": "ASX",
       "price": 55.32,
       "opp": 56,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 62,
       "valuation": 50,
       "growth": 53,
-      "momentum": 61,
+      "momentum": 60,
       "catalystScore": 48,
       "risk": 38,
-      "confidence": 53,
+      "confidence": 70,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 3Y - Luke Randell 4 pages 224.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 3Y - David Clarke 4 pages 229.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Ceasing to be a substantial holder 23 pages 1.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Ceasing to be a substantial holder 3 pages 141.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Becoming a substantial holder 48 pages 2.7MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Dividend Reinvestment Plan Update 1 page 129.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Becoming a substantial holder 53 pages 2.3MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Dividend Reinvestment Plan and Partial Underwriting 4 pages 246.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Appendix 3Y - Wayne Byres 3 pages 168.6KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -1.7,
       "return1m": 2.7,
       "return3m": 20.0,
       "return6m": 12.7,
       "return12m": -6.3,
-      "relative1m": 1.9,
-      "relative3m": 17.1,
-      "relative6m": 7.6,
+      "relative1m": 1.4,
+      "relative3m": 15.3,
+      "relative6m": 8.1,
       "volumeRatio": 0.51,
       "drawdown60": 7.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +1.9% over 1 month and +17.1% over 3 months. Evidence confidence 53/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +1.4% over 1 month and +15.3% over 3 months. Evidence confidence 70/100.",
+      "catalyst": "Appendix 3Y - Luke Randell 4 pages 224.8KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.9% per day; recent max drawdown 7.2%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -897,28 +1951,59 @@
       "quality": 42,
       "valuation": 50,
       "growth": 69,
-      "momentum": 46,
+      "momentum": 44,
       "catalystScore": 61,
       "risk": 54,
-      "confidence": 45,
+      "confidence": 63,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Appendix 4G 12 pages 390.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Corporate Governance Statement 33 pages 4.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Environmental, Social & Governance Report 41 pages 5.0MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Results Presentation 39 pages 4.3MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Results Announcement 7 pages 285.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "FY26 Annual Report & Appendix 4E 167 pages 8.1MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 1.5,
       "return1m": 3.8,
       "return3m": -15.3,
       "return6m": 8.8,
       "return12m": -15.8,
-      "relative1m": 3.0,
-      "relative3m": -18.1,
-      "relative6m": 3.7,
+      "relative1m": 2.5,
+      "relative3m": -19.9,
+      "relative6m": 4.2,
       "volumeRatio": 2.55,
       "drawdown60": 19.4,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +3.0% over 1 month and -18.1% over 3 months. Evidence confidence 45/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +2.5% over 1 month and -19.9% over 3 months. Evidence confidence 63/100.",
+      "catalyst": "FY26 Appendix 4G 12 pages 390.9KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.6% per day; recent max drawdown 19.4%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -931,131 +2016,60 @@
       "quality": 13,
       "valuation": 50,
       "growth": 80,
-      "momentum": 73,
+      "momentum": 72,
       "catalystScore": 57,
       "risk": 80,
-      "confidence": 46,
+      "confidence": 64,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Change in substantial holding 58 pages 5.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "FY26 Full Year Results Presentation 43 pages 5.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "FY26 Full Year Results 5 pages 289.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Dividend/Distribution - PLS 4 pages 16.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "2026 Corporate Governance Statement and Appendix 4G 35 pages 17.0MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "2026 Annual Report (incorporating Appendix 4E) 224 pages 20.1MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 5.7,
       "return1m": 29.2,
       "return3m": -12.7,
       "return6m": 14.8,
       "return12m": 135.1,
-      "relative1m": 28.4,
-      "relative3m": -15.6,
-      "relative6m": 9.7,
+      "relative1m": 27.9,
+      "relative3m": -17.4,
+      "relative6m": 10.2,
       "volumeRatio": 0.9,
       "drawdown60": 38.0,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +28.4% over 1 month and -15.6% over 3 months. Evidence confidence 46/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +27.9% over 1 month and -17.4% over 3 months. Evidence confidence 64/100.",
+      "catalyst": "Change in substantial holding 58 pages 5.9MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 3.5% per day; recent max drawdown 38.0%. The opportunity score is being penalised for price overextension.",
-      "history": []
-    },
-    {
-      "ticker": "PME",
-      "name": "PME",
-      "price": 181.48,
-      "opp": 56,
-      "edge": "MISPRICED",
-      "quality": 32,
-      "valuation": 50,
-      "growth": 63,
-      "momentum": 71,
-      "catalystScore": 51,
-      "risk": 62,
-      "confidence": 48,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -5.3,
-      "return1m": 11.9,
-      "return3m": 14.0,
-      "return6m": 29.9,
-      "return12m": -37.4,
-      "relative1m": 11.1,
-      "relative3m": 11.1,
-      "relative6m": 24.8,
-      "volumeRatio": 0.81,
-      "drawdown60": 25.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +11.1% over 1 month and +11.1% over 3 months. Evidence confidence 48/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 3.0% per day; recent max drawdown 25.2%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "BXB",
-      "name": "BXB",
-      "price": 19.75,
-      "opp": 55,
-      "edge": "MISPRICED",
-      "quality": 64,
-      "valuation": 50,
-      "growth": 54,
-      "momentum": 52,
-      "catalystScore": 52,
-      "risk": 36,
-      "confidence": 50,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": 3.5,
-      "return1m": 0.8,
-      "return3m": 16.2,
-      "return6m": -13.6,
-      "return12m": -21.8,
-      "relative1m": 0.0,
-      "relative3m": 13.4,
-      "relative6m": -18.7,
-      "volumeRatio": 1.2,
-      "drawdown60": 8.0,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +0.0% over 1 month and +13.4% over 3 months. Evidence confidence 50/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.5% per day; recent max drawdown 8.0%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "NEC",
-      "name": "NEC",
-      "price": 0.97,
-      "opp": 55,
-      "edge": "MISPRICED",
-      "quality": 61,
-      "valuation": 50,
-      "growth": 58,
-      "momentum": 51,
-      "catalystScore": 57,
-      "risk": 38,
-      "confidence": 46,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": 0.5,
-      "return1m": 1.0,
-      "return3m": 4.9,
-      "return6m": 5.4,
-      "return12m": -12.4,
-      "relative1m": 0.3,
-      "relative3m": 2.0,
-      "relative6m": 0.3,
-      "volumeRatio": 2.03,
-      "drawdown60": 7.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +0.3% over 1 month and +2.0% over 3 months. Evidence confidence 46/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.9% per day; recent max drawdown 7.2%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
@@ -1063,236 +2077,461 @@
       "name": "ANZ",
       "price": 36.73,
       "opp": 54,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 68,
       "valuation": 50,
       "growth": 54,
-      "momentum": 48,
+      "momentum": 47,
       "catalystScore": 48,
       "risk": 32,
-      "confidence": 50,
+      "confidence": 68,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Restated Initial Director's Interest Notice 3 pages 515.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification regarding unquoted securities - ANZ 6 pages 18.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Cleansing Notice 25 pages 546.2KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -1.1,
       "return1m": -1.6,
       "return3m": 6.5,
       "return6m": 0.7,
       "return12m": 17.2,
-      "relative1m": -2.3,
-      "relative3m": 3.7,
-      "relative6m": -4.4,
+      "relative1m": -2.8,
+      "relative3m": 1.8,
+      "relative6m": -3.9,
       "volumeRatio": 0.57,
       "drawdown60": 6.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -2.3% over 1 month and +3.7% over 3 months. Evidence confidence 50/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -2.8% over 1 month and +1.8% over 3 months. Evidence confidence 68/100.",
+      "catalyst": "Restated Initial Director's Interest Notice 3 pages 515.9KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.2% per day; recent max drawdown 6.2%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
-      "ticker": "ALL",
-      "name": "ALL",
-      "price": 60.54,
+      "ticker": "NEC",
+      "name": "NEC",
+      "price": 0.97,
       "opp": 54,
-      "edge": "MISPRICED",
-      "quality": 63,
-      "valuation": 50,
-      "growth": 45,
-      "momentum": 56,
-      "catalystScore": 47,
-      "risk": 36,
-      "confidence": 52,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -0.6,
-      "return1m": -5.5,
-      "return3m": 18.7,
-      "return6m": 31.6,
-      "return12m": -10.7,
-      "relative1m": -6.3,
-      "relative3m": 15.8,
-      "relative6m": 26.5,
-      "volumeRatio": 1.03,
-      "drawdown60": 9.3,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -6.3% over 1 month and +15.8% over 3 months. Evidence confidence 52/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.4% per day; recent max drawdown 9.3%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "MPL",
-      "name": "MPL",
-      "price": 4.78,
-      "opp": 54,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 61,
       "valuation": 50,
-      "growth": 54,
-      "momentum": 43,
-      "catalystScore": 51,
+      "growth": 58,
+      "momentum": 50,
+      "catalystScore": 57,
       "risk": 38,
-      "confidence": 49,
+      "confidence": 64,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -3.4,
-      "return1m": -7.5,
-      "return3m": 1.3,
-      "return6m": 16.6,
-      "return12m": 0.3,
-      "relative1m": -8.3,
-      "relative3m": -1.6,
-      "relative6m": 11.5,
-      "volumeRatio": 0.57,
-      "drawdown60": 10.8,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -8.3% over 1 month and -1.6% over 3 months. Evidence confidence 49/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.5% per day; recent max drawdown 10.8%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Change of Director's Interest Notice - Matthew Stanton 2 pages 318.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Ceasing to be a substantial holder 3 pages 1.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Notification of cessation of securities - NEC 4 pages 14.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Initial Director's Interest Notice - Leigh Terry 2 pages 159.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Dividend/Distribution - NEC 4 pages 15.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4G 27 pages 7.2MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Full year results presentation 35 pages 2.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Final Results 15 pages 479.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Annual Report & 4E 101 pages 9.2MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": 0.5,
+      "return1m": 1.0,
+      "return3m": 4.9,
+      "return6m": 5.4,
+      "return12m": -12.4,
+      "relative1m": -0.2,
+      "relative3m": 0.2,
+      "relative6m": 0.8,
+      "volumeRatio": 2.03,
+      "drawdown60": 7.2,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -0.2% over 1 month and +0.2% over 3 months. Evidence confidence 64/100.",
+      "catalyst": "Change of Director's Interest Notice - Matthew Stanton 2 pages 318.7KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 1.9% per day; recent max drawdown 7.2%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "55 \u2192 54"
+        ]
+      ]
     },
     {
       "ticker": "AIA",
       "name": "AIA",
       "price": 7.09,
       "opp": 54,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 70,
       "valuation": 50,
       "growth": 54,
-      "momentum": 47,
+      "momentum": 46,
       "catalystScore": 48,
       "risk": 30,
-      "confidence": 50,
+      "confidence": 68,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-21",
+          "headline": "AIA - Annual Meeting and Director Nomination 1 page 386.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Dividend/Distribution - AIA 6 pages 22.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "AIA - FY26 Annual Results 254 pages 29.5MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -1.5,
       "return1m": -2.1,
       "return3m": 4.4,
       "return6m": 2.4,
       "return12m": 7.0,
-      "relative1m": -2.9,
-      "relative3m": 1.5,
-      "relative6m": -2.7,
+      "relative1m": -3.4,
+      "relative3m": -0.3,
+      "relative6m": -2.2,
       "volumeRatio": 0.64,
       "drawdown60": 5.1,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -2.9% over 1 month and +1.5% over 3 months. Evidence confidence 50/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -3.4% over 1 month and -0.3% over 3 months. Evidence confidence 68/100.",
+      "catalyst": "AIA - Annual Meeting and Director Nomination 1 page 386.1KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.1% per day; recent max drawdown 5.1%. No major price-overextension penalty is currently applied.",
       "history": []
+    },
+    {
+      "ticker": "MPL",
+      "name": "MPL",
+      "price": 4.78,
+      "opp": 53,
+      "edge": "WATCH",
+      "quality": 61,
+      "valuation": 50,
+      "growth": 55,
+      "momentum": 42,
+      "catalystScore": 51,
+      "risk": 38,
+      "confidence": 67,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Change of Director's Interest - Jacqueline Hey 3 pages 396.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Results - Investor Presentation 37 pages 3.2MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Results - Media Release 5 pages 295.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Dividend/Distribution - MPL 4 pages 15.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Appendix 4E, Financial Report and Sustainability Report 127 pages 3.8MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": -3.4,
+      "return1m": -7.5,
+      "return3m": 1.3,
+      "return6m": 16.6,
+      "return12m": 0.3,
+      "relative1m": -8.8,
+      "relative3m": -3.4,
+      "relative6m": 12.0,
+      "volumeRatio": 0.57,
+      "drawdown60": 10.8,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -8.8% over 1 month and -3.4% over 3 months. Evidence confidence 67/100.",
+      "catalyst": "Change of Director's Interest - Jacqueline Hey 3 pages 396.8KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 1.5% per day; recent max drawdown 10.8%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "54 \u2192 53"
+        ]
+      ]
     },
     {
       "ticker": "LYC",
       "name": "LYC",
       "price": 16.26,
       "opp": 53,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 33,
       "valuation": 50,
       "growth": 64,
-      "momentum": 55,
+      "momentum": 54,
       "catalystScore": 51,
       "risk": 61,
-      "confidence": 46,
+      "confidence": 64,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4G and Corporate Governance Statement 27 pages 662.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Lynas Rare Earths FY26 Results Presentation 20 pages 3.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Lynas Rare Earths FY26 Results Announcement 4 pages 249.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4E and 2026 Annual Report 141 pages 9.0MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 0.3,
       "return1m": 15.4,
       "return3m": -13.1,
       "return6m": -8.2,
       "return12m": 13.6,
-      "relative1m": 14.6,
-      "relative3m": -16.0,
-      "relative6m": -13.3,
+      "relative1m": 14.1,
+      "relative3m": -17.8,
+      "relative6m": -12.8,
       "volumeRatio": 0.77,
       "drawdown60": 28.6,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +14.6% over 1 month and -16.0% over 3 months. Evidence confidence 46/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +14.1% over 1 month and -17.8% over 3 months. Evidence confidence 64/100.",
+      "catalyst": "Appendix 4G and Corporate Governance Statement 27 pages 662.2KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.4% per day; recent max drawdown 28.6%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
-      "ticker": "LTR",
-      "name": "LTR",
-      "price": 1.195,
+      "ticker": "WOR",
+      "name": "WOR",
+      "price": 10.24,
       "opp": 53,
-      "edge": "INFLECTING",
-      "quality": 0,
+      "edge": "UNDER-NOTICED",
+      "quality": 40,
       "valuation": 50,
-      "growth": 89,
-      "momentum": 44,
+      "growth": 45,
+      "momentum": 32,
       "catalystScore": 61,
-      "risk": 100,
-      "confidence": 36,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
+      "risk": 55,
+      "confidence": 58,
+      "announcementScore": 78,
+      "announcementSignal": 28,
+      "mismatchScore": 76,
       "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -5.9,
-      "return1m": 23.8,
-      "return3m": -47.6,
-      "return6m": -24.4,
-      "return12m": 35.8,
-      "relative1m": 23.0,
-      "relative3m": -50.5,
-      "relative6m": -29.5,
-      "volumeRatio": 0.9,
-      "drawdown60": 56.9,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +23.0% over 1 month and -50.5% over 3 months. Evidence confidence 36/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 4.7% per day; recent max drawdown 56.9%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Update - Notification of buy-back - WOR 6 pages 18.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Change in substantial holding 4 pages 230.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "BCEI awards contracts supporting US data center expansion 1 page 94.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4G 2026 12 pages 411.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Corporate Governance Statement 2026 15 pages 2.6MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Annual Report to shareholders 176 pages 26.0MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "ASX presentation - Full year results 2026 47 pages 5.7MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "ASX release - Full year results 2026 7 pages 381.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Dividend/Distribution - WOR 4 pages 15.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4E 2026 4 pages 197.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Change in substantial holding 19 pages 1.0MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": 8,
+      "return5d": -6.1,
+      "return1m": -3.1,
+      "return3m": -21.8,
+      "return6m": -1.5,
+      "return12m": -28.4,
+      "relative1m": -4.4,
+      "relative3m": -26.5,
+      "relative6m": -6.1,
+      "volumeRatio": 0.95,
+      "drawdown60": 24.2,
+      "thesis": "Positive announcement signal. Relative strength vs ASX 200 is -4.4% over 1 month and -26.5% over 3 months. Evidence confidence 58/100.",
+      "catalyst": "BCEI awards contracts supporting US data center expansion 1 page 94.2KB Price reaction appears muted relative to the positive news.",
+      "riskText": "60-day volatility 2.2% per day; recent max drawdown 24.2%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Announcement signal changed",
+          "0 \u2192 28"
+        ],
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "45 \u2192 53"
+        ]
+      ]
     },
     {
       "ticker": "WDS",
       "name": "WDS",
       "price": 32.27,
       "opp": 52,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 56,
       "valuation": 50,
       "growth": 53,
-      "momentum": 48,
+      "momentum": 46,
       "catalystScore": 48,
       "risk": 42,
-      "confidence": 48,
+      "confidence": 66,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "Half-Year 2026 Results Briefing Transcript 17 pages 328.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Half-Year 2026 Results Teleconference and Presentation 42 pages 10.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Dividend/Distribution - WDS 5 pages 19.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Half-Year 2026 Report 64 pages 934.5KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -4.5,
       "return1m": -2.1,
       "return3m": 3.0,
       "return6m": 6.9,
       "return12m": 27.8,
-      "relative1m": -2.8,
-      "relative3m": 0.1,
-      "relative6m": 1.8,
+      "relative1m": -3.4,
+      "relative3m": -1.7,
+      "relative6m": 2.3,
       "volumeRatio": 0.79,
       "drawdown60": 13.0,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -2.8% over 1 month and +0.1% over 3 months. Evidence confidence 48/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -3.4% over 1 month and -1.7% over 3 months. Evidence confidence 66/100.",
+      "catalyst": "Half-Year 2026 Results Briefing Transcript 17 pages 328.2KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.8% per day; recent max drawdown 13.0%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -1301,32 +2540,58 @@
       "name": "SEK",
       "price": 14.79,
       "opp": 52,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 40,
       "valuation": 50,
       "growth": 61,
-      "momentum": 53,
+      "momentum": 52,
       "catalystScore": 52,
       "risk": 55,
-      "confidence": 43,
+      "confidence": 61,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-24",
+          "headline": "Ceasing to be a substantial holder 10 pages 893.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Change in substantial holding 46 pages 1.2MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Appendix 3Y - Ian Narev 6 pages 723.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Notification of cessation of securities - SEK 5 pages 17.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Notification regarding unquoted securities - SEK 6 pages 20.0KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 3.1,
       "return1m": 0.7,
       "return3m": 13.9,
       "return6m": -4.8,
       "return12m": -43.4,
-      "relative1m": -0.1,
-      "relative3m": 11.0,
-      "relative6m": -10.0,
+      "relative1m": -0.6,
+      "relative3m": 9.2,
+      "relative6m": -9.4,
       "volumeRatio": 0.57,
       "drawdown60": 16.4,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -0.1% over 1 month and +11.0% over 3 months. Evidence confidence 43/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -0.6% over 1 month and +9.2% over 3 months. Evidence confidence 61/100.",
+      "catalyst": "Ceasing to be a substantial holder 10 pages 893.6KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 3.2% per day; recent max drawdown 16.4%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -1335,169 +2600,356 @@
       "name": "SHL",
       "price": 20.04,
       "opp": 52,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 52,
       "valuation": 50,
       "growth": 52,
-      "momentum": 39,
+      "momentum": 38,
       "catalystScore": 54,
       "risk": 45,
-      "confidence": 47,
+      "confidence": 65,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Change in substantial holding 101 pages 10.4MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Becoming a substantial holder 6 pages 303.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Financial and Operational Review - Year Ended 30 June 2026 35 pages 5.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Media Release - Full Year Results to 30 June 2026 2 pages 229.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Dividend/Distribution - SHL 4 pages 15.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Preliminary Final Report FY2026 23 pages 1.1MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -4.9,
       "return1m": -8.3,
       "return3m": 5.1,
       "return6m": -8.6,
       "return12m": -10.2,
-      "relative1m": -9.1,
-      "relative3m": 2.3,
-      "relative6m": -13.7,
+      "relative1m": -9.6,
+      "relative3m": 0.5,
+      "relative6m": -13.2,
       "volumeRatio": 1.28,
       "drawdown60": 14.9,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -9.1% over 1 month and +2.3% over 3 months. Evidence confidence 47/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -9.6% over 1 month and +0.5% over 3 months. Evidence confidence 65/100.",
+      "catalyst": "Change in substantial holding 101 pages 10.4MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 2.0% per day; recent max drawdown 14.9%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
-      "ticker": "CBA",
-      "name": "CBA",
-      "price": 157.25,
-      "opp": 50,
-      "edge": "MISPRICED",
-      "quality": 61,
+      "ticker": "LTR",
+      "name": "LTR",
+      "price": 1.195,
+      "opp": 52,
+      "edge": "INFLECTING",
+      "quality": 0,
       "valuation": 50,
-      "growth": 48,
-      "momentum": 35,
-      "catalystScore": 49,
-      "risk": 38,
-      "confidence": 46,
+      "growth": 89,
+      "momentum": 43,
+      "catalystScore": 61,
+      "risk": 100,
+      "confidence": 54,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -0.5,
-      "return1m": -9.9,
-      "return3m": -2.3,
-      "return6m": -6.9,
-      "return12m": -1.5,
-      "relative1m": -10.7,
-      "relative3m": -5.2,
-      "relative6m": -12.0,
-      "volumeRatio": 0.82,
-      "drawdown60": 12.8,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -10.7% over 1 month and -5.2% over 3 months. Evidence confidence 46/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.1% per day; recent max drawdown 12.8%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Results Webcast 1 page 160.1KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": -5.9,
+      "return1m": 23.8,
+      "return3m": -47.6,
+      "return6m": -24.4,
+      "return12m": 35.8,
+      "relative1m": 22.5,
+      "relative3m": -52.3,
+      "relative6m": -29.0,
+      "volumeRatio": 0.9,
+      "drawdown60": 56.9,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +22.5% over 1 month and -52.3% over 3 months. Evidence confidence 54/100.",
+      "catalyst": "FY26 Results Webcast 1 page 160.1KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 4.7% per day; recent max drawdown 56.9%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "53 \u2192 52"
+        ]
+      ]
     },
     {
       "ticker": "FMG",
       "name": "FMG",
       "price": 18.07,
       "opp": 50,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 55,
       "valuation": 50,
       "growth": 52,
-      "momentum": 37,
+      "momentum": 36,
       "catalystScore": 52,
       "risk": 43,
-      "confidence": 44,
+      "confidence": 62,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Change of Director's Interest Notice - Usha Rao-Monari 2 pages 386.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Change of Director's Interest Notice - Dr Larry Marshall 2 pages 384.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Change of Director's Interest Notice - Mark Barnaba 2 pages 387.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Initial Director's Interest Notice - Sigrid Kaag 2 pages 203.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Full Year Results Presentation 34 pages 8.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Blacksmith Project Mineral Resource and Ore Reserve Update 26 pages 1.6MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Full Year Results 6 pages 431.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Climate Transition Plan 2026 72 pages 12.3MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Sustainability Report 74 pages 4.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Dividend/Distribution - FMG 5 pages 18.7KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 4G 15 pages 403.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Annual Report and Appendix 4E 284 pages 19.8MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 1.8,
       "return1m": -2.4,
       "return3m": -14.0,
       "return6m": -6.2,
       "return12m": 1.6,
-      "relative1m": -3.2,
-      "relative3m": -16.9,
-      "relative6m": -11.3,
+      "relative1m": -3.7,
+      "relative3m": -18.7,
+      "relative6m": -10.8,
       "volumeRatio": 1.04,
       "drawdown60": 15.7,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -3.2% over 1 month and -16.9% over 3 months. Evidence confidence 44/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -3.7% over 1 month and -18.7% over 3 months. Evidence confidence 62/100.",
+      "catalyst": "Change of Director's Interest Notice - Usha Rao-Monari 2 pages 386.0KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.5% per day; recent max drawdown 15.7%. No major price-overextension penalty is currently applied.",
       "history": []
+    },
+    {
+      "ticker": "CBA",
+      "name": "CBA",
+      "price": 157.25,
+      "opp": 49,
+      "edge": "WATCH",
+      "quality": 61,
+      "valuation": 50,
+      "growth": 49,
+      "momentum": 33,
+      "catalystScore": 49,
+      "risk": 38,
+      "confidence": 64,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Becoming a substantial holder for KAR 14 pages 377.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Issue of SGD 325,000,000 worth of Subordinated Notes 21 pages 594.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Pricing Supplement - EMTN Programme 21 pages 442.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Application for quotation of securities - CBA 9 pages 25.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Agreement reached to settle class action 1 page 163.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Issue of GBP 650,000,000 worth of Subordinated Notes 14 pages 597.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Pricing Supplement - EMTN Programme 12 pages 475.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Information Memorandum - EMTN Programme 231 pages 2.6MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Application for quotation of securities - CBA 10 pages 27.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 3Y - Jane McAloon 2 pages 261.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 3Y - Alistair Currie 2 pages 257.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 3Y - Kate Howitt 2 pages 261.4KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": -0.5,
+      "return1m": -9.9,
+      "return3m": -2.3,
+      "return6m": -6.9,
+      "return12m": -1.5,
+      "relative1m": -11.2,
+      "relative3m": -7.0,
+      "relative6m": -11.5,
+      "volumeRatio": 0.82,
+      "drawdown60": 12.8,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -11.2% over 1 month and -7.0% over 3 months. Evidence confidence 64/100.",
+      "catalyst": "Becoming a substantial holder for KAR 14 pages 377.2KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 1.1% per day; recent max drawdown 12.8%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "50 \u2192 49"
+        ]
+      ]
     },
     {
       "ticker": "NAB",
       "name": "NAB",
       "price": 38.29,
       "opp": 49,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 61,
       "valuation": 50,
       "growth": 49,
-      "momentum": 38,
+      "momentum": 37,
       "catalystScore": 48,
       "risk": 38,
-      "confidence": 45,
+      "confidence": 63,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Application for quotation of securities - NAB 7 pages 21.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "NAB Covered Bond Programme - IM and Final Terms 471 pages 5.9MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "National Australia Bank updates its Debt Issuance Programme 104 pages 1.2MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 0.3,
       "return1m": -7.4,
       "return3m": 3.5,
       "return6m": -16.5,
       "return12m": -4.9,
-      "relative1m": -8.1,
-      "relative3m": 0.6,
-      "relative6m": -21.6,
+      "relative1m": -8.6,
+      "relative3m": -1.2,
+      "relative6m": -21.1,
       "volumeRatio": 0.76,
       "drawdown60": 11.4,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -8.1% over 1 month and +0.6% over 3 months. Evidence confidence 45/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -8.6% over 1 month and -1.2% over 3 months. Evidence confidence 63/100.",
+      "catalyst": "Application for quotation of securities - NAB 7 pages 21.4KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.4% per day; recent max drawdown 11.4%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "TCL",
-      "name": "TCL",
-      "price": 13.99,
-      "opp": 49,
-      "edge": "MISPRICED",
-      "quality": 66,
-      "valuation": 50,
-      "growth": 38,
-      "momentum": 40,
-      "catalystScore": 48,
-      "risk": 33,
-      "confidence": 46,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": 0.3,
-      "return1m": -5.5,
-      "return3m": -4.6,
-      "return6m": 1.5,
-      "return12m": 2.6,
-      "relative1m": -6.3,
-      "relative3m": -7.4,
-      "relative6m": -3.7,
-      "volumeRatio": 1.38,
-      "drawdown60": 9.0,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -6.3% over 1 month and -7.4% over 3 months. Evidence confidence 46/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 1.1% per day; recent max drawdown 9.0%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
@@ -1505,66 +2957,280 @@
       "name": "IAG",
       "price": 7.85,
       "opp": 49,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 57,
       "valuation": 50,
       "growth": 41,
-      "momentum": 49,
+      "momentum": 48,
       "catalystScore": 47,
       "risk": 41,
-      "confidence": 45,
+      "confidence": 63,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-25",
+          "headline": "Notification regarding unquoted securities - IAG 7 pages 23.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Change of Director's Interest Notice - Nick Hawkins 2 pages 196.0KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 2.3,
       "return1m": -5.1,
       "return3m": 6.8,
       "return6m": 21.5,
       "return12m": -5.6,
-      "relative1m": -5.9,
-      "relative3m": 4.0,
-      "relative6m": 16.4,
+      "relative1m": -6.4,
+      "relative3m": 2.1,
+      "relative6m": 16.9,
       "volumeRatio": 0.61,
       "drawdown60": 10.9,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -5.9% over 1 month and +4.0% over 3 months. Evidence confidence 45/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -6.4% over 1 month and +2.1% over 3 months. Evidence confidence 63/100.",
+      "catalyst": "Notification regarding unquoted securities - IAG 7 pages 23.3KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.9% per day; recent max drawdown 10.9%. No major price-overextension penalty is currently applied.",
       "history": []
+    },
+    {
+      "ticker": "ZIP",
+      "name": "ZIP",
+      "price": 2.54,
+      "opp": 49,
+      "edge": "WATCH",
+      "quality": 14,
+      "valuation": 50,
+      "growth": 44,
+      "momentum": 59,
+      "catalystScore": 52,
+      "risk": 77,
+      "confidence": 59,
+      "announcementScore": 58,
+      "announcementSignal": 8,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Change in substantial holding 26 pages 1.3MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "New US Funding Facility 2 pages 96.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Becoming a substantial holder 36 pages 4.3MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Notification of buy-back - ZIP 5 pages 15.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 4G and Corporate Governance Statement 36 pages 1.0MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Investor Presentation 56 pages 11.0MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Results Update 8 pages 113.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 4E and FY26 Annual Report 175 pages 9.7MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": 2,
+      "return5d": -1.2,
+      "return1m": -0.4,
+      "return3m": 8.5,
+      "return6m": 50.7,
+      "return12m": -38.6,
+      "relative1m": -1.7,
+      "relative3m": 3.9,
+      "relative6m": 46.1,
+      "volumeRatio": 0.69,
+      "drawdown60": 27.2,
+      "thesis": "Positive announcement signal. Relative strength vs ASX 200 is -1.7% over 1 month and +3.9% over 3 months. Evidence confidence 59/100.",
+      "catalyst": "Notification of buy-back - ZIP 5 pages 15.2KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 4.9% per day; recent max drawdown 27.2%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Announcement signal changed",
+          "0 \u2192 8"
+        ],
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "47 \u2192 49"
+        ]
+      ]
+    },
+    {
+      "ticker": "TCL",
+      "name": "TCL",
+      "price": 13.99,
+      "opp": 48,
+      "edge": "WATCH",
+      "quality": 66,
+      "valuation": 50,
+      "growth": 38,
+      "momentum": 38,
+      "catalystScore": 48,
+      "risk": 33,
+      "confidence": 64,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Appendix 3Y - Change of Director's Interest Notices x 2 4 pages 496.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Appendix 3Y - Change of Director's Interest Notice 2 pages 405.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "I-24 Choice Lanes Tennessee 1 page 83.9KB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": 0.3,
+      "return1m": -5.5,
+      "return3m": -4.6,
+      "return6m": 1.5,
+      "return12m": 2.6,
+      "relative1m": -6.8,
+      "relative3m": -9.2,
+      "relative6m": -3.1,
+      "volumeRatio": 1.38,
+      "drawdown60": 9.0,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -6.8% over 1 month and -9.2% over 3 months. Evidence confidence 64/100.",
+      "catalyst": "Appendix 3Y - Change of Director's Interest Notices x 2 4 pages 496.5KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 1.1% per day; recent max drawdown 9.0%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "49 \u2192 48"
+        ]
+      ]
     },
     {
       "ticker": "GMG",
       "name": "GMG",
       "price": 27.92,
       "opp": 47,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 54,
       "valuation": 50,
       "growth": 41,
-      "momentum": 37,
+      "momentum": 35,
       "catalystScore": 46,
       "risk": 44,
-      "confidence": 44,
+      "confidence": 62,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "Dispatch of 30 June 2026 distribution 2 pages 166.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Appendix 3Y x 3 8 pages 334.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "Notification of cessation of securities - GMG 4 pages 14.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Appendix 3Y x 2 4 pages 406.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "GMG Taxation Components and Fund Payment Notice 2 pages 187.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Full Year Results Presentation Updated 54 pages 16.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Goodman 30 June 2026 Full Year Results Updated 5 pages 274.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 4G and Corporate Governance Statement 29 pages 1.4MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Full Year Results Presentation 54 pages 16.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Goodman 30 June 2026 Full Year Results 5 pages 274.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Goodman 2026 Annual Report 292 pages 36.3MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 4E 2 pages 205.2KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 2.4,
       "return1m": -6.2,
       "return3m": -10.1,
       "return6m": 2.1,
       "return12m": -12.6,
-      "relative1m": -7.0,
-      "relative3m": -13.0,
-      "relative6m": -3.0,
+      "relative1m": -7.5,
+      "relative3m": -14.8,
+      "relative6m": -2.5,
       "volumeRatio": 0.83,
       "drawdown60": 16.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -7.0% over 1 month and -13.0% over 3 months. Evidence confidence 44/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -7.5% over 1 month and -14.8% over 3 months. Evidence confidence 62/100.",
+      "catalyst": "Dispatch of 30 June 2026 distribution 2 pages 166.1KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.6% per day; recent max drawdown 16.2%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -1573,101 +3239,59 @@
       "name": "TLS",
       "price": 4.61,
       "opp": 47,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 64,
       "valuation": 50,
       "growth": 44,
-      "momentum": 37,
+      "momentum": 36,
       "catalystScore": 48,
       "risk": 35,
-      "confidence": 42,
+      "confidence": 60,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-21",
+          "headline": "Change of Director's Interest Notice 5 pages 302.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Notification of cessation of securities - TLS 4 pages 15.1KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Notification regarding unquoted securities - TLS 6 pages 18.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Telstra announces NOK 2 billion bond issue 1 page 121.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Update - Dividend/Distribution - TLS 5 pages 18.7KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -0.3,
       "return1m": -6.1,
       "return3m": -5.1,
       "return6m": -8.8,
       "return12m": -0.6,
-      "relative1m": -6.9,
-      "relative3m": -8.0,
-      "relative6m": -13.9,
+      "relative1m": -7.4,
+      "relative3m": -9.8,
+      "relative6m": -13.4,
       "volumeRatio": 0.67,
       "drawdown60": 9.9,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -6.9% over 1 month and -8.0% over 3 months. Evidence confidence 42/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -7.4% over 1 month and -9.8% over 3 months. Evidence confidence 60/100.",
+      "catalyst": "Change of Director's Interest Notice 5 pages 302.0KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.1% per day; recent max drawdown 9.9%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "ZIP",
-      "name": "ZIP",
-      "price": 2.54,
-      "opp": 47,
-      "edge": "MISPRICED",
-      "quality": 14,
-      "valuation": 50,
-      "growth": 44,
-      "momentum": 61,
-      "catalystScore": 49,
-      "risk": 77,
-      "confidence": 41,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -1.2,
-      "return1m": -0.4,
-      "return3m": 8.5,
-      "return6m": 50.7,
-      "return12m": -38.6,
-      "relative1m": -1.2,
-      "relative3m": 5.7,
-      "relative6m": 45.6,
-      "volumeRatio": 0.69,
-      "drawdown60": 27.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.2% over 1 month and +5.7% over 3 months. Evidence confidence 41/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 4.9% per day; recent max drawdown 27.2%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "MP1",
-      "name": "MP1",
-      "price": 16.86,
-      "opp": 47,
-      "edge": "MISPRICED",
-      "quality": 23,
-      "valuation": 50,
-      "growth": 30,
-      "momentum": 64,
-      "catalystScore": 44,
-      "risk": 69,
-      "confidence": 44,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -8.3,
-      "return1m": -6.9,
-      "return3m": 5.1,
-      "return6m": 110.5,
-      "return12m": 12.5,
-      "relative1m": -7.6,
-      "relative3m": 2.2,
-      "relative6m": 105.4,
-      "volumeRatio": 1.05,
-      "drawdown60": 24.8,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -7.6% over 1 month and +2.2% over 3 months. Evidence confidence 44/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 4.2% per day; recent max drawdown 24.8%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
@@ -1675,66 +3299,204 @@
       "name": "WES",
       "price": 79.79,
       "opp": 46,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 56,
       "valuation": 50,
       "growth": 29,
-      "momentum": 38,
+      "momentum": 37,
       "catalystScore": 47,
       "risk": 42,
-      "confidence": 44,
+      "confidence": 62,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Change of Director's Interest Notice - R Scott 6 pages 312.3KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Application for quotation of securities - WES 7 pages 21.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Corporate Governance Statement and Appendix 4G 35 pages 6.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Full-year results briefing presentation 67 pages 9.2MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Full-year results 28 pages 1.2MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Dividend/Distribution - WES 5 pages 21.8KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "2026 Annual Report (including Appendix 4E) 212 pages 15.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Bunnings Group Managing Director retirement and appointment 2 pages 181.2KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -3.1,
       "return1m": -10.7,
       "return3m": 1.5,
       "return6m": 5.7,
       "return12m": -8.9,
-      "relative1m": -11.5,
-      "relative3m": -1.4,
-      "relative6m": 0.6,
+      "relative1m": -12.0,
+      "relative3m": -3.2,
+      "relative6m": 1.1,
       "volumeRatio": 1.62,
       "drawdown60": 14.5,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -11.5% over 1 month and -1.4% over 3 months. Evidence confidence 44/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -12.0% over 1 month and -3.2% over 3 months. Evidence confidence 62/100.",
+      "catalyst": "Change of Director's Interest Notice - R Scott 6 pages 312.3KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.5% per day; recent max drawdown 14.5%. No major price-overextension penalty is currently applied.",
       "history": []
+    },
+    {
+      "ticker": "MP1",
+      "name": "MP1",
+      "price": 16.86,
+      "opp": 46,
+      "edge": "WATCH",
+      "quality": 23,
+      "valuation": 50,
+      "growth": 30,
+      "momentum": 63,
+      "catalystScore": 44,
+      "risk": 69,
+      "confidence": 62,
+      "announcementScore": 50,
+      "announcementSignal": 0,
+      "mismatchScore": 50,
+      "priceSensitiveNews": false,
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Change in substantial holding 10 pages 417.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Corporate Governance Statement 27 pages 8.1MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 4G 13 pages 217.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Megaport Expands AI Infrastructure Portfolio 3 pages 118.5KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Full Year Results Announcement 6 pages 157.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "FY26 Full Year Investor Presentation 39 pages 12.8MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Appendix 4E and FY26 Annual Report 154 pages 4.2MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
+      "return5d": -8.3,
+      "return1m": -6.9,
+      "return3m": 5.1,
+      "return6m": 110.5,
+      "return12m": 12.5,
+      "relative1m": -8.1,
+      "relative3m": 0.4,
+      "relative6m": 105.9,
+      "volumeRatio": 1.05,
+      "drawdown60": 24.8,
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -8.1% over 1 month and +0.4% over 3 months. Evidence confidence 62/100.",
+      "catalyst": "Change in substantial holding 10 pages 417.0KB No strong news/price mismatch is currently detected.",
+      "riskText": "60-day volatility 4.2% per day; recent max drawdown 24.8%. No major price-overextension penalty is currently applied.",
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "47 \u2192 46"
+        ]
+      ]
     },
     {
       "ticker": "QBE",
       "name": "QBE",
       "price": 21.93,
       "opp": 45,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 56,
       "valuation": 50,
       "growth": 32,
-      "momentum": 38,
+      "momentum": 37,
       "catalystScore": 43,
       "risk": 42,
-      "confidence": 44,
+      "confidence": 61,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "A$ subordinated Notes Redemption - Completion 3 pages 200.2KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Change of Director's Interest Notice 10 pages 577.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Notification regarding unquoted securities - QBE 6 pages 19.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "Notification regarding unquoted securities - QBE 6 pages 19.1KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -0.6,
       "return1m": -10.0,
       "return3m": -0.6,
       "return6m": 8.6,
       "return12m": 7.9,
-      "relative1m": -10.8,
-      "relative3m": -3.5,
-      "relative6m": 3.5,
+      "relative1m": -11.3,
+      "relative3m": -5.3,
+      "relative6m": 4.0,
       "volumeRatio": 0.61,
       "drawdown60": 15.5,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -10.8% over 1 month and -3.5% over 3 months. Evidence confidence 44/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -11.3% over 1 month and -5.3% over 3 months. Evidence confidence 61/100.",
+      "catalyst": "A$ subordinated Notes Redemption - Completion 3 pages 200.2KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.4% per day; recent max drawdown 15.5%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -1743,67 +3505,39 @@
       "name": "BRN",
       "price": 0.135,
       "opp": 45,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 10,
       "valuation": 50,
       "growth": 57,
-      "momentum": 37,
+      "momentum": 36,
       "catalystScore": 46,
       "risk": 79,
-      "confidence": 39,
+      "confidence": 56,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4D and Half-Year Financial Report 29 pages 1.9MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 0.0,
       "return1m": 3.8,
       "return3m": -28.9,
       "return6m": -3.6,
       "return12m": -32.5,
-      "relative1m": 3.1,
-      "relative3m": -31.8,
-      "relative6m": -8.7,
+      "relative1m": 2.6,
+      "relative3m": -33.6,
+      "relative6m": -8.2,
       "volumeRatio": 0.59,
       "drawdown60": 39.5,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +3.1% over 1 month and -31.8% over 3 months. Evidence confidence 39/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +2.6% over 1 month and -33.6% over 3 months. Evidence confidence 56/100.",
+      "catalyst": "Appendix 4D and Half-Year Financial Report 29 pages 1.9MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 3.7% per day; recent max drawdown 39.5%. No major price-overextension penalty is currently applied.",
-      "history": []
-    },
-    {
-      "ticker": "WOR",
-      "name": "WOR",
-      "price": 10.24,
-      "opp": 45,
-      "edge": "MISPRICED",
-      "quality": 40,
-      "valuation": 50,
-      "growth": 45,
-      "momentum": 34,
-      "catalystScore": 48,
-      "risk": 55,
-      "confidence": 41,
-      "announcementScore": 50,
-      "announcementSignal": 0,
-      "mismatchScore": 50,
-      "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
-      "return5d": -6.1,
-      "return1m": -3.1,
-      "return3m": -21.8,
-      "return6m": -1.5,
-      "return12m": -28.4,
-      "relative1m": -3.9,
-      "relative3m": -24.7,
-      "relative6m": -6.6,
-      "volumeRatio": 0.95,
-      "drawdown60": 24.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -3.9% over 1 month and -24.7% over 3 months. Evidence confidence 41/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
-      "riskText": "60-day volatility 2.2% per day; recent max drawdown 24.2%. No major price-overextension penalty is currently applied.",
       "history": []
     },
     {
@@ -1811,32 +3545,38 @@
       "name": "WBC",
       "price": 33.9,
       "opp": 43,
-      "edge": "MISPRICED",
+      "edge": "WATCH",
       "quality": 59,
       "valuation": 50,
       "growth": 33,
-      "momentum": 32,
+      "momentum": 30,
       "catalystScore": 45,
       "risk": 39,
-      "confidence": 40,
+      "confidence": 58,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-20",
+          "headline": "Issue of Tier 2 Capital - Cleansing Notice 30 pages 1.3MB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": 0.2,
       "return1m": -10.5,
       "return3m": -3.8,
       "return6m": -15.3,
       "return12m": -5.1,
-      "relative1m": -11.3,
-      "relative3m": -6.7,
-      "relative6m": -20.4,
+      "relative1m": -11.8,
+      "relative3m": -8.5,
+      "relative6m": -19.9,
       "volumeRatio": 0.87,
       "drawdown60": 13.2,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -11.3% over 1 month and -6.7% over 3 months. Evidence confidence 40/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -11.8% over 1 month and -8.5% over 3 months. Evidence confidence 58/100.",
+      "catalyst": "Issue of Tier 2 Capital - Cleansing Notice 30 pages 1.3MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.3% per day; recent max drawdown 13.2%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -1849,28 +3589,59 @@
       "quality": 1,
       "valuation": 50,
       "growth": 66,
-      "momentum": 20,
+      "momentum": 19,
       "catalystScore": 58,
       "risk": 87,
-      "confidence": 27,
+      "confidence": 45,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
+      "announcements": [
+        {
+          "date": "2026-08-27",
+          "headline": "Application for quotation of securities - DRO 7 pages 21.6KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Change in substantial holding 4 pages 682.4KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "1H 2026 Investor Presentation 30 pages 2.4MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "1H 2026 Results - Sustained Growth and Investing for Scale 4 pages 310.0KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Half Yearly Report and Accounts 29 pages 941.9KB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-21",
+          "headline": "Change in substantial holding 5 pages 167.0KB",
+          "priceSensitive": false
+        }
+      ],
       "delta": 0,
       "return5d": -4.4,
       "return1m": 3.2,
       "return3m": -40.9,
       "return6m": -56.5,
       "return12m": -43.7,
-      "relative1m": 2.5,
-      "relative3m": -43.8,
-      "relative6m": -61.6,
+      "relative1m": 2.0,
+      "relative3m": -45.6,
+      "relative6m": -61.1,
       "volumeRatio": 1.06,
       "drawdown60": 42.7,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +2.5% over 1 month and -43.8% over 3 months. Evidence confidence 27/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is +2.0% over 1 month and -45.6% over 3 months. Evidence confidence 45/100.",
+      "catalyst": "Application for quotation of securities - DRO 7 pages 21.6KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 4.4% per day; recent max drawdown 42.7%. No major price-overextension penalty is currently applied.",
       "history": []
     },
@@ -1878,35 +3649,52 @@
       "ticker": "WBT",
       "name": "WBT",
       "price": 3.75,
-      "opp": 37,
-      "edge": "MISPRICED",
+      "opp": 36,
+      "edge": "WATCH",
       "quality": 0,
       "valuation": 50,
       "growth": 44,
-      "momentum": 8,
+      "momentum": 7,
       "catalystScore": 50,
       "risk": 100,
-      "confidence": 29,
+      "confidence": 47,
       "announcementScore": 50,
       "announcementSignal": 0,
       "mismatchScore": 50,
       "priceSensitiveNews": false,
-      "announcements": [],
-      "delta": 0,
+      "announcements": [
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 4G & 2026 Corporate Governance Statement 34 pages 1.5MB",
+          "priceSensitive": false
+        },
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 4E & 2026 Annual Report 104 pages 3.7MB",
+          "priceSensitive": false
+        }
+      ],
+      "delta": -1,
       "return5d": -6.0,
       "return1m": -13.0,
       "return3m": -47.5,
       "return6m": -20.6,
       "return12m": 53.7,
-      "relative1m": -13.8,
-      "relative3m": -50.4,
-      "relative6m": -25.7,
+      "relative1m": -14.3,
+      "relative3m": -52.2,
+      "relative6m": -25.1,
       "volumeRatio": 1.56,
       "drawdown60": 56.4,
-      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -13.8% over 1 month and -50.4% over 3 months. Evidence confidence 29/100.",
-      "catalyst": "No material announcement headline detected today. No strong news/price mismatch is currently detected.",
+      "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -14.3% over 1 month and -52.2% over 3 months. Evidence confidence 47/100.",
+      "catalyst": "Appendix 4G & 2026 Corporate Governance Statement 34 pages 1.5MB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 4.6% per day; recent max drawdown 56.4%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "history": [
+        [
+          "2026-08-29",
+          "Opportunity score changed",
+          "37 \u2192 36"
+        ]
+      ]
     }
   ]
 }
