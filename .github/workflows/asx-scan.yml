@@ -1,1 +1,308 @@
+name: ASX Edge Daily Scan
 
+on:
+  workflow_dispatch:
+  schedule:
+    # 7:15 UTC = 5:15pm Melbourne during AEST
+    - cron: "15 7 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run ASX scanner
+        shell: python
+        run: |
+          import json
+          import statistics
+          import urllib.request
+          import datetime
+          from pathlib import Path
+
+          TICKERS = [
+              "BHP","CBA","CSL","NAB","WBC","ANZ","WES","MQG","GMG","RIO",
+              "TLS","WOW","TCL","FMG","ALL","REA","XRO","WDS","QBE","RMD",
+              "MIN","JHX","CAR","SEK","CPU","ALD","STO","COL","S32","ORG",
+              "SUN","IAG","BXB","AMC","SHL","ASX","APA","MPL","TWE","NXT",
+              "WBT","BRN","LYC","PLS","LTR","ZIP","PME","MP1","DMP","NEC"
+          ]
+
+          HEADERS = {"User-Agent": "Mozilla/5.0"}
+
+          def clamp(x, lo=0, hi=100):
+              return max(lo, min(hi, x))
+
+          def pct(a, b):
+              return ((a / b) - 1) * 100 if b else 0
+
+          def fetch(ticker):
+              url = (
+                  "https://query1.finance.yahoo.com/v8/finance/chart/"
+                  + ticker
+                  + ".AX?range=1y&interval=1d"
+              )
+
+              req = urllib.request.Request(url, headers=HEADERS)
+
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  raw = json.load(response)
+
+              result = raw["chart"]["result"][0]
+
+              closes = result["indicators"]["adjclose"][0]["adjclose"]
+              volumes = result["indicators"]["quote"][0]["volume"]
+
+              rows = [
+                  (p, v or 0)
+                  for p, v in zip(closes, volumes)
+                  if p is not None
+              ]
+
+              return rows
+
+          def analyse(ticker, rows):
+
+              prices = [x[0] for x in rows]
+              volumes = [x[1] for x in rows]
+
+              price = prices[-1]
+
+              def ago(days):
+                  return prices[max(0, len(prices) - 1 - days)]
+
+              r20 = pct(price, ago(20))
+              r60 = pct(price, ago(60))
+              r120 = pct(price, ago(120))
+              r250 = pct(price, ago(250))
+
+              ma20 = sum(prices[-20:]) / min(20, len(prices))
+              ma60 = sum(prices[-60:]) / min(60, len(prices))
+              ma200 = sum(prices[-200:]) / min(200, len(prices))
+
+              daily_returns = [
+                  pct(prices[i], prices[i - 1])
+                  for i in range(max(1, len(prices) - 60), len(prices))
+              ]
+
+              volatility = (
+                  statistics.pstdev(daily_returns)
+                  if len(daily_returns) > 1
+                  else 0
+              )
+
+              avg_volume = (
+                  sum(volumes[-20:]) /
+                  max(1, min(20, len(volumes)))
+              )
+
+              volume_ratio = (
+                  volumes[-1] / avg_volume
+                  if avg_volume
+                  else 1
+              )
+
+              momentum = clamp(
+                  50
+                  + r20
+                  + r60 * 0.55
+                  + r120 * 0.25
+                  + (8 if price > ma60 else -8)
+                  + (8 if price > ma200 else -8)
+              )
+
+              inflecting = clamp(
+                  50
+                  + (r20 - r60 / 3) * 1.5
+                  + (12 if ma20 > ma60 else -5)
+                  + (
+                      8
+                      if volume_ratio > 1.5 and r20 > 0
+                      else 0
+                  )
+              )
+
+              quality_proxy = clamp(70 - volatility * 3)
+
+              risk = clamp(
+                  20
+                  + volatility * 5
+                  + (10 if price < ma200 else 0)
+              )
+
+              catalyst = clamp(
+                  45
+                  + (12 if volume_ratio > 1.5 else 0)
+                  + (10 if r20 > 10 else 0)
+              )
+
+              under_noticed = clamp(
+                  inflecting * 0.45
+                  + catalyst * 0.35
+                  + (100 - momentum) * 0.20
+              )
+
+              opportunity = clamp(
+                  momentum * 0.28
+                  + inflecting * 0.24
+                  + quality_proxy * 0.18
+                  + catalyst * 0.15
+                  + (100 - risk) * 0.15
+              )
+
+              edge = (
+                  "INFLECTING"
+                  if inflecting >= under_noticed
+                  else "UNDER-NOTICED"
+              )
+
+              return {
+                  "ticker": ticker,
+                  "name": ticker,
+                  "price": round(price, 3),
+                  "opp": round(opportunity),
+                  "edge": edge,
+                  "quality": round(quality_proxy),
+                  "valuation": 50,
+                  "growth": round(inflecting),
+                  "momentum": round(momentum),
+                  "catalystScore": round(catalyst),
+                  "risk": round(risk),
+                  "delta": 0,
+
+                  "return1m": round(r20, 1),
+                  "return3m": round(r60, 1),
+                  "return6m": round(r120, 1),
+                  "return12m": round(r250, 1),
+
+                  "volumeRatio": round(volume_ratio, 2),
+
+                  "thesis":
+                      f"1 month {r20:+.1f}%, "
+                      f"3 months {r60:+.1f}%. "
+                      f"Momentum score {round(momentum)}/100.",
+
+                  "catalyst":
+                      f"Volume is {volume_ratio:.1f}× its "
+                      "20-day average. "
+                      + (
+                          "Short-term trend is strengthening."
+                          if ma20 > ma60
+                          else "Short-term trend is not yet confirmed."
+                      ),
+
+                  "riskText":
+                      f"60-day daily volatility is "
+                      f"{volatility:.1f}%.",
+
+                  "history": []
+              }
+
+          previous = {}
+
+          path = Path("data.json")
+
+          if path.exists():
+              try:
+                  old = json.loads(path.read_text())
+                  previous = {
+                      row["ticker"]: row
+                      for row in old.get("stocks", [])
+                  }
+              except Exception:
+                  pass
+
+          stocks = []
+
+          for ticker in TICKERS:
+              try:
+                  print("Scanning", ticker)
+
+                  item = analyse(
+                      ticker,
+                      fetch(ticker)
+                  )
+
+                  if ticker in previous:
+                      old_score = previous[ticker].get(
+                          "opp",
+                          item["opp"]
+                      )
+
+                      item["delta"] = (
+                          item["opp"] - old_score
+                      )
+
+                      old_history = previous[ticker].get(
+                          "history",
+                          []
+                      )
+
+                      item["history"] = old_history[-9:]
+
+                      if item["delta"] != 0:
+                          item["history"].append([
+                              datetime.date.today().isoformat(),
+                              "Opportunity score changed",
+                              (
+                                  f"{old_score} → "
+                                  f"{item['opp']}"
+                              )
+                          ])
+
+                  stocks.append(item)
+
+              except Exception as error:
+                  print(
+                      "FAILED",
+                      ticker,
+                      error
+                  )
+
+          stocks.sort(
+              key=lambda x: x["opp"],
+              reverse=True
+          )
+
+          output = {
+              "updated":
+                  datetime.datetime.now(
+                      datetime.timezone.utc
+                  ).isoformat(),
+
+              "source":
+                  "Free daily market data",
+
+              "stocks": stocks
+          }
+
+          path.write_text(
+              json.dumps(
+                  output,
+                  indent=2
+              )
+          )
+
+          print(
+              "Finished:",
+              len(stocks),
+              "ASX companies"
+          )
+
+      - name: Commit updated market data
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+
+          git add data.json
+
+          git diff --cached --quiet || \
+          git commit -m "Update ASX Edge market data"
+
+          git push
