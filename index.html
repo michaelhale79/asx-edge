@@ -662,7 +662,7 @@ Settings
 
 <script>
 
-const stocks = [
+let stocks = [
 
 {
 ticker:"GRD",
@@ -1028,7 +1028,7 @@ $("#detailThesis").textContent =
 stock.thesis;
 
 $("#detailCatalyst").textContent =
-stock.catalyst;
+stock.catalystScore ?? stock.catalyst;
 
 $("#detailRisk").textContent =
 stock.riskText;
@@ -1159,7 +1159,66 @@ $("#refresh").textContent="↻";
 
 };
 
-render();
+async function loadLiveData(){
+
+  const notice =
+    document.querySelector("#home .notice");
+
+  try{
+
+    const response = await fetch(
+      "./data.json?v=" + Date.now(),
+      { cache:"no-store" }
+    );
+
+    if(!response.ok){
+      throw new Error(
+        "Could not load market data"
+      );
+    }
+
+    const live =
+      await response.json();
+
+    if(
+      Array.isArray(live.stocks) &&
+      live.stocks.length
+    ){
+
+      stocks = live.stocks;
+
+      const updated =
+        new Date(live.updated);
+
+      notice.textContent =
+        "LIVE DAILY ASX SCAN · " +
+        live.stocks.length +
+        " companies · Updated " +
+        updated.toLocaleString(
+          "en-AU",
+          {
+            dateStyle:"medium",
+            timeStyle:"short"
+          }
+        );
+
+    }
+
+  }
+  catch(error){
+
+    notice.textContent =
+      "Live market data could not be loaded. Showing cached data.";
+
+    console.error(error);
+
+  }
+
+  render();
+
+}
+
+loadLiveData();
 
 </script>
 
