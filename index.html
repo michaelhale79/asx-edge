@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1,viewport-fit=cover"
+>
+
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="ASX Edge">
-<meta name="theme-color" content="#0b1117">
 
 <title>ASX Edge</title>
 
 <style>
+
 :root{
   --bg:#0b1117;
   --panel:#141c25;
@@ -33,24 +38,24 @@ html,body{
   margin:0;
   background:var(--bg);
   color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    Arial,
+    sans-serif;
 }
 
 body{
   padding-top:env(safe-area-inset-top);
-  padding-bottom:calc(78px + env(safe-area-inset-bottom));
+  padding-bottom:calc(75px + env(safe-area-inset-bottom));
 }
 
-button,input{
+button,input,select{
   font:inherit;
 }
 
-button{
-  cursor:pointer;
-}
-
 .app{
-  width:100%;
   max-width:520px;
   margin:auto;
 }
@@ -58,8 +63,8 @@ button{
 header{
   position:sticky;
   top:0;
-  z-index:10;
-  padding:14px 16px 12px;
+  z-index:20;
+  padding:14px 15px 12px;
   background:rgba(11,17,23,.96);
   backdrop-filter:blur(18px);
   border-bottom:1px solid var(--line);
@@ -72,8 +77,8 @@ header{
 }
 
 h1{
-  font-size:23px;
   margin:0;
+  font-size:23px;
 }
 
 .subtitle{
@@ -89,7 +94,7 @@ h1{
   border:1px solid var(--line);
   background:var(--panel2);
   color:white;
-  font-size:22px;
+  font-size:21px;
 }
 
 .page{
@@ -101,29 +106,40 @@ h1{
   display:block;
 }
 
+.notice{
+  padding:11px 12px;
+  border:1px solid #31533e;
+  background:#17251d;
+  border-radius:14px;
+  color:#b9e8c8;
+  font-size:11px;
+  line-height:1.4;
+  margin-bottom:11px;
+}
+
 .hero{
   padding:17px;
   border:1px solid #28583b;
   background:linear-gradient(180deg,#17291f,#121d18);
-  border-radius:19px;
+  border-radius:18px;
 }
 
 .hero-label{
   color:#9aefba;
   font-size:10px;
-  letter-spacing:.08em;
   text-transform:uppercase;
+  letter-spacing:.08em;
 }
 
 .hero-title{
-  font-size:31px;
-  font-weight:800;
-  margin-top:5px;
+  font-size:30px;
+  font-weight:850;
+  margin-top:4px;
 }
 
 .hero-text{
   font-size:13px;
-  color:#cfd8e1;
+  color:#d0d8e0;
   line-height:1.45;
   margin-top:5px;
 }
@@ -136,25 +152,25 @@ h1{
 }
 
 .metric{
-  border:1px solid var(--line);
   background:var(--panel);
-  border-radius:15px;
-  padding:12px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:11px;
 }
 
 .metric-value{
-  font-size:24px;
-  font-weight:800;
+  font-size:23px;
+  font-weight:850;
 }
 
 .metric-label{
-  font-size:10px;
   color:var(--muted);
+  font-size:9px;
 }
 
 .section-title{
   font-size:16px;
-  font-weight:750;
+  font-weight:800;
   margin:20px 2px 9px;
 }
 
@@ -169,7 +185,7 @@ h1{
 .stock-top{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:9px;
 }
 
 .stock-name{
@@ -178,56 +194,41 @@ h1{
 }
 
 .ticker{
-  font-size:18px;
-  font-weight:800;
+  font-size:19px;
+  font-weight:850;
 }
 
 .company{
   color:var(--muted);
   font-size:11px;
-  white-space:nowrap;
   overflow:hidden;
+  white-space:nowrap;
   text-overflow:ellipsis;
 }
 
 .score{
   text-align:center;
-  min-width:48px;
-  font-size:21px;
-  font-weight:850;
+  font-size:22px;
+  font-weight:900;
+  min-width:52px;
 }
 
 .score small{
   display:block;
-  font-size:8px;
   color:var(--muted);
-}
-
-.star{
-  width:44px;
-  height:44px;
-  border:1px solid var(--line);
-  background:var(--panel2);
-  border-radius:12px;
-  color:white;
-  font-size:20px;
-}
-
-.star.on{
-  color:#ffd84f;
+  font-size:8px;
 }
 
 .delta{
-  font-size:11px;
-  margin-left:4px;
+  font-size:10px;
 }
 
 .up{
-  color:#82efa8;
+  color:#88efab;
 }
 
 .down{
-  color:#ff9999;
+  color:#ff9292;
 }
 
 .tags{
@@ -244,90 +245,93 @@ h1{
   font-size:9px;
 }
 
-.tag.green{
+.green{
   color:#a3f3bf;
   border-color:#286443;
 }
 
-.tag.amber{
+.amber{
   color:#ffd088;
-  border-color:#6c4f1d;
+  border-color:#705321;
 }
 
-.tag.blue{
+.blue{
   color:#a8d4ff;
-  border-color:#2d5b82;
+  border-color:#315b7b;
+}
+
+.red{
+  color:#ffadad;
+  border-color:#713737;
 }
 
 .thesis{
   font-size:12px;
   color:#cbd4dd;
-  margin-top:10px;
   line-height:1.45;
+  margin-top:9px;
 }
 
-.segment{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:7px;
-  margin-bottom:10px;
+.action{
+  font-size:10px;
+  font-weight:850;
+  border-radius:9px;
+  padding:6px 8px;
+  white-space:nowrap;
 }
 
-.segment button{
-  min-height:44px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--panel);
-  color:var(--muted);
-  font-size:11px;
+.action.add{
+  color:#9cf0b9;
+  background:#173421;
 }
 
-.segment button.active{
-  color:#b7f5ca;
-  border-color:#346848;
-  background:#19291f;
+.action.hold{
+  color:#b7cee7;
+  background:#1a2937;
+}
+
+.action.reduce{
+  color:#ffd38a;
+  background:#342816;
+}
+
+.action.exit{
+  color:#ffaaaa;
+  background:#391c1c;
 }
 
 .search{
   width:100%;
   height:46px;
-  background:var(--panel);
   border:1px solid var(--line);
   border-radius:13px;
+  background:var(--panel);
   color:white;
   padding:0 13px;
   font-size:16px;
   margin-bottom:10px;
 }
 
-.detail-back{
-  background:none;
-  border:none;
-  color:#87eca9;
-  padding:10px 0;
-  font-weight:700;
+.segment{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:6px;
+  margin-bottom:9px;
 }
 
-.detail-title-row{
-  display:flex;
-  justify-content:space-between;
-}
-
-.detail-ticker{
-  font-size:30px;
-  font-weight:850;
-}
-
-.detail-score{
-  font-size:36px;
-  font-weight:900;
-  text-align:right;
-}
-
-.detail-score small{
-  display:block;
-  font-size:8px;
+.segment button{
+  min-height:43px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  background:var(--panel);
   color:var(--muted);
+  font-size:10px;
+}
+
+.segment button.active{
+  border-color:#38694a;
+  background:#17261d;
+  color:#a9edbe;
 }
 
 .panel{
@@ -339,16 +343,16 @@ h1{
 }
 
 .panel-title{
-  font-weight:750;
   font-size:14px;
+  font-weight:800;
   margin-bottom:7px;
 }
 
 .panel p{
   margin:0;
-  color:#d5dde5;
-  line-height:1.5;
   font-size:13px;
+  line-height:1.5;
+  color:#d6dee6;
 }
 
 .score-grid{
@@ -364,33 +368,51 @@ h1{
   padding:10px;
 }
 
-.score-box-label{
+.score-label{
   color:var(--muted);
   font-size:9px;
 }
 
-.score-box-value{
+.score-value{
   font-size:20px;
-  font-weight:800;
+  font-weight:850;
 }
 
-.bar{
-  height:6px;
-  background:#293544;
-  border-radius:99px;
-  overflow:hidden;
-  margin-top:5px;
+.back{
+  background:none;
+  border:0;
+  color:#87eca9;
+  font-size:15px;
+  font-weight:750;
+  padding:8px 0 12px;
 }
 
-.bar span{
+.detail-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.detail-ticker{
+  font-size:31px;
+  font-weight:900;
+}
+
+.detail-score{
+  font-size:35px;
+  font-weight:900;
+  text-align:right;
+}
+
+.detail-score small{
   display:block;
-  height:100%;
-  background:#74869a;
+  color:var(--muted);
+  font-size:8px;
 }
 
 .event{
   border-left:2px solid var(--line);
-  padding:0 0 15px 11px;
+  padding:0 0 13px 10px;
 }
 
 .event-date{
@@ -399,39 +421,44 @@ h1{
 }
 
 .event-text{
-  font-size:13px;
-  margin-top:2px;
-}
-
-.event-change{
-  font-size:10px;
+  font-size:12px;
   margin-top:2px;
 }
 
 .empty{
-  text-align:center;
   color:var(--muted);
-  padding:35px 10px;
-  font-size:13px;
+  text-align:center;
+  padding:28px 12px;
+  font-size:12px;
 }
 
-.notice{
-  padding:12px;
-  border-radius:14px;
-  border:1px solid #604c1b;
-  background:#282215;
-  color:#f1cf86;
-  font-size:11px;
-  line-height:1.4;
-  margin-bottom:12px;
+.setting{
+  margin-top:12px;
+}
+
+.setting label{
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+  margin-bottom:5px;
+}
+
+.setting select{
+  width:100%;
+  height:44px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  background:var(--panel2);
+  color:white;
+  padding:0 10px;
 }
 
 .bottom-nav{
   position:fixed;
-  bottom:0;
   left:0;
   right:0;
-  z-index:20;
+  bottom:0;
+  z-index:30;
   background:rgba(13,19,26,.98);
   backdrop-filter:blur(18px);
   border-top:1px solid var(--line);
@@ -453,33 +480,16 @@ h1{
   font-size:10px;
 }
 
-.nav-icon{
-  display:block;
-  font-size:21px;
-  margin-bottom:2px;
-}
-
 .nav.active{
   color:#8bf0ac;
 }
 
-.settings-select{
-  width:100%;
-  min-height:46px;
-  border-radius:12px;
-  border:1px solid var(--line);
-  background:var(--panel2);
-  color:white;
-  font-size:16px;
-  padding:0 12px;
-  margin-top:6px;
+.nav-icon{
+  display:block;
+  font-size:20px;
+  margin-bottom:2px;
 }
 
-.settings-label{
-  color:var(--muted);
-  font-size:11px;
-  margin-top:12px;
-}
 </style>
 </head>
 
@@ -491,43 +501,66 @@ h1{
   <div class="header-row">
     <div>
       <h1>ASX Edge</h1>
-      <div class="subtitle">Find what the market may be missing</div>
+      <div class="subtitle">
+        Find what the market may be missing
+      </div>
     </div>
-    <button class="refresh" id="refresh">↻</button>
+
+    <button class="refresh" id="refresh">
+      ↻
+    </button>
   </div>
 </header>
 
 <section class="page active" id="home">
 
-  <div class="notice">
-    Demo intelligence is currently loaded. The next stage connects real ASX market and company data.
+  <div class="notice" id="liveStatus">
+    Loading ASX Edge data…
   </div>
 
   <div class="hero">
-    <div class="hero-label">Top opportunity</div>
-    <div class="hero-title" id="heroTitle"></div>
-    <div class="hero-text" id="heroText"></div>
+    <div class="hero-label">
+      Top opportunity
+    </div>
+
+    <div class="hero-title" id="heroTitle">
+      —
+    </div>
+
+    <div class="hero-text" id="heroText">
+      Loading…
+    </div>
   </div>
 
   <div class="metrics">
+
     <div class="metric">
-      <div class="metric-value" id="topCount"></div>
+      <div class="metric-value" id="topCount">—</div>
       <div class="metric-label">Top tier</div>
     </div>
+
     <div class="metric">
-      <div class="metric-value" id="changeCount"></div>
+      <div class="metric-value" id="changeCount">—</div>
       <div class="metric-label">Changed</div>
     </div>
+
     <div class="metric">
-      <div class="metric-value" id="watchCount"></div>
-      <div class="metric-label">Watchlist</div>
+      <div class="metric-value" id="holdingCount">13</div>
+      <div class="metric-label">Holdings</div>
     </div>
+
   </div>
 
-  <div class="section-title">Best opportunities now</div>
+  <div class="section-title">
+    Top 10 opportunities
+  </div>
+
   <div id="homeStocks"></div>
 
-  <div class="section-title">What changed</div>
+  <div class="section-title">
+    What changed
+  </div>
+
   <div id="changes"></div>
 
 </section>
@@ -535,52 +568,85 @@ h1{
 <section class="page" id="discover">
 
   <div class="segment">
-    <button class="edge active" data-edge="ALL">All</button>
-    <button class="edge" data-edge="INFLECTING">Inflecting</button>
-    <button class="edge" data-edge="UNDER-NOTICED">Under-noticed</button>
+
+    <button class="edge active" data-edge="ALL">
+      All
+    </button>
+
+    <button class="edge" data-edge="INFLECTING">
+      Inflecting
+    </button>
+
+    <button class="edge" data-edge="UNDER-NOTICED">
+      Under-noticed
+    </button>
+
   </div>
 
-  <input class="search" id="search" placeholder="Search ticker or company">
+  <input
+    class="search"
+    id="search"
+    placeholder="Search ticker"
+  >
 
   <div id="discoverStocks"></div>
 
 </section>
 
-<section class="page" id="watchlist">
+<section class="page" id="holdings">
 
-  <div class="section-title">Your watchlist</div>
+  <div class="section-title">
+    My Holdings
+  </div>
 
-  <div id="watchStocks"></div>
+  <div id="myHoldings"></div>
+
+  <div class="section-title">
+    Isobel & Oliver Holdings
+  </div>
+
+  <div id="kidsHoldings"></div>
 
 </section>
 
 <section class="page" id="settings">
 
-  <div class="notice">
-    Live financial API keys will not be stored on your iPhone. They will sit behind a secure data service.
+  <div class="panel">
+
+    <div class="panel-title">
+      Opportunity settings
+    </div>
+
+    <div class="setting">
+
+      <label>
+        Top-tier threshold
+      </label>
+
+      <select id="threshold">
+        <option value="65">65+</option>
+        <option value="70">70+</option>
+        <option value="75" selected>75+</option>
+        <option value="80">80+</option>
+      </select>
+
+    </div>
+
   </div>
 
   <div class="panel">
 
-    <div class="panel-title">Opportunity settings</div>
+    <div class="panel-title">
+      Signal meaning
+    </div>
 
-    <div class="settings-label">Top-tier threshold</div>
-
-    <select class="settings-select" id="threshold">
-      <option value="70">70+</option>
-      <option value="75" selected>75+</option>
-      <option value="80">80+</option>
-      <option value="85">85+</option>
-    </select>
-
-    <div class="settings-label">Primary hunting style</div>
-
-    <select class="settings-select">
-      <option>Balanced</option>
-      <option>Inflecting businesses</option>
-      <option>Mispriced quality</option>
-      <option>Under-noticed themes</option>
-    </select>
+    <p>
+      ADD REVIEW means the evidence currently supports
+      investigating whether adding is appropriate.
+      REDUCE REVIEW and EXIT REVIEW mean the evidence
+      has deteriorated enough to reassess the holding.
+      These are screening signals, not automatic trades.
+    </p>
 
   </div>
 
@@ -588,9 +654,11 @@ h1{
 
 <section class="page" id="detail">
 
-  <button class="detail-back" id="back">‹ Back</button>
+  <button class="back" id="back">
+    ‹ Back
+  </button>
 
-  <div class="detail-title-row">
+  <div class="detail-head">
 
     <div>
       <div class="detail-ticker" id="detailTicker"></div>
@@ -604,27 +672,42 @@ h1{
   <div class="tags" id="detailTags"></div>
 
   <div class="panel">
-    <div class="panel-title">Why this could outperform</div>
+    <div class="panel-title">
+      Why this could outperform
+    </div>
+
     <p id="detailThesis"></p>
   </div>
 
   <div class="panel">
-    <div class="panel-title">Why now</div>
+    <div class="panel-title">
+      Why now
+    </div>
+
     <p id="detailCatalyst"></p>
   </div>
 
   <div class="panel">
-    <div class="panel-title">What would prove it wrong</div>
+    <div class="panel-title">
+      What could prove it wrong
+    </div>
+
     <p id="detailRisk"></p>
   </div>
 
   <div class="panel">
-    <div class="panel-title">Score anatomy</div>
+    <div class="panel-title">
+      Score anatomy
+    </div>
+
     <div class="score-grid" id="scoreGrid"></div>
   </div>
 
   <div class="panel">
-    <div class="panel-title">Recent changes</div>
+    <div class="panel-title">
+      Recent changes
+    </div>
+
     <div id="timeline"></div>
   </div>
 
@@ -637,23 +720,23 @@ h1{
 <div class="bottom-inner">
 
 <button class="nav active" data-page="home">
-<span class="nav-icon">⌂</span>
-Home
+  <span class="nav-icon">⌂</span>
+  Home
 </button>
 
 <button class="nav" data-page="discover">
-<span class="nav-icon">⌕</span>
-Discover
+  <span class="nav-icon">⌕</span>
+  Discover
 </button>
 
-<button class="nav" data-page="watchlist">
-<span class="nav-icon">★</span>
-Watchlist
+<button class="nav" data-page="holdings">
+  <span class="nav-icon">▣</span>
+  Holdings
 </button>
 
 <button class="nav" data-page="settings">
-<span class="nav-icon">⚙︎</span>
-Settings
+  <span class="nav-icon">⚙︎</span>
+  Settings
 </button>
 
 </div>
@@ -662,565 +745,710 @@ Settings
 
 <script>
 
-let stocks = [
-
-{
-ticker:"GRD",
-name:"GridWorks Australia",
-opp:86,
-edge:"INFLECTING",
-quality:88,
-valuation:61,
-growth:90,
-momentum:73,
-catalyst:93,
-risk:30,
-delta:7,
-thesis:"Grid connection bottlenecks create a long-duration engineering backlog with pricing power.",
-catalyst:"Record contracted backlog and raised guidance indicate the operating inflection is already occurring.",
-riskText:"Labour shortages, project delays or weaker-than-expected margins would break the thesis.",
-history:[
-["29 Aug","Opportunity score rose from 79 to 86","+7"],
-["22 Aug","Management raised revenue guidance","Positive"],
-["14 Aug","Relative strength turned positive","Early signal"]
-]
-},
-
-{
-ticker:"NXT",
-name:"NexTech Infrastructure",
-opp:83,
-edge:"UNDER-NOTICED",
-quality:82,
-valuation:74,
-growth:86,
-momentum:62,
-catalyst:90,
-risk:35,
-delta:5,
-thesis:"Capacity expansion is converting structural demand into faster revenue and cash generation.",
-catalyst:"A new multi-year contract coincides with commissioning of additional capacity.",
-riskText:"Customer concentration and execution on the ramp are the key failure points.",
-history:[
-["28 Aug","Opportunity score rose from 78 to 83","+5"],
-["20 Aug","Multi-year contract announced","Positive"],
-["03 Aug","Capacity commissioning started","Watch"]
-]
-},
-
-{
-ticker:"QMS",
-name:"Quality Mining Services",
-opp:81,
-edge:"MISPRICED",
-quality:78,
-valuation:88,
-growth:64,
-momentum:55,
-catalyst:72,
-risk:28,
-delta:3,
-thesis:"High-return service business is deleveraging while still valued like a low-quality cyclical contractor.",
-catalyst:"Free cash flow is accelerating and net debt is falling faster than the market appears to expect.",
-riskText:"A sharp mining capex slowdown would reduce utilisation and pricing power.",
-history:[
-["27 Aug","Net debt estimate improved","Positive"],
-["15 Aug","Free cash flow trend strengthened","+3"],
-["01 Aug","No thesis change","Stable"]
-]
-},
-
-{
-ticker:"MED",
-name:"Niche Medical Systems",
-opp:79,
-edge:"UNDER-NOTICED",
-quality:94,
-valuation:52,
-growth:76,
-momentum:46,
-catalyst:65,
-risk:20,
-delta:2,
-thesis:"Dominant niche device platform with recurring consumables and unusually strong returns on capital.",
-catalyst:"A new geography approval adds growth before momentum or market attention has picked up.",
-riskText:"Regulatory reimbursement changes are the main structural risk.",
-history:[
-["25 Aug","New geography approved","Positive"],
-["09 Aug","Score increased from 77 to 79","+2"]
-]
-},
-
-{
-ticker:"DAT",
-name:"Data Cooling Solutions",
-opp:78,
-edge:"INFLECTING",
-quality:69,
-valuation:67,
-growth:96,
-momentum:81,
-catalyst:95,
-risk:52,
-delta:8,
-thesis:"Small supplier is positioned directly in the data-centre cooling build-out.",
-catalyst:"Its first hyperscale framework agreement materially changes the revenue ceiling.",
-riskText:"Execution risk and customer concentration are high and valuation could outrun fundamentals.",
-history:[
-["29 Aug","Hyperscale agreement","+8"],
-["18 Aug","Volume accumulation increased","Positive"]
-]
-},
-
-{
-ticker:"SFT",
-name:"Specialty Testing Group",
-opp:77,
-edge:"MISPRICED",
-quality:91,
-valuation:79,
-growth:58,
-momentum:41,
-catalyst:57,
-risk:18,
-delta:1,
-thesis:"Quiet oligopoly with recurring compliance revenue, pricing power and low market attention.",
-catalyst:"Pricing resets and cross-sell gains are improving earnings without requiring heroic growth.",
-riskText:"Poor acquisition integration would damage returns on capital.",
-history:[
-["24 Aug","Pricing trend improved","+1"],
-["11 Aug","Cash conversion remained strong","Stable"]
-]
-}
-
-];
-
-let watchlist = new Set(
-JSON.parse(localStorage.getItem("asxWatchlist") || "[]")
-);
+let stocks = [];
 
 let edgeFilter = "ALL";
 
 let previousPage = "home";
 
-const $ = x => document.querySelector(x);
+const myPortfolio = [
+  "WBT",
+  "CSL",
+  "RIO",
+  "DMP",
+  "DRO",
+  "ETPMAG",
+  "GOLD"
+];
 
-const $$ = x => [...document.querySelectorAll(x)];
+const kidsPortfolio = [
+  "CSL",
+  "S32",
+  "DTL",
+  "WOR",
+  "MIN",
+  "AIA"
+];
+
+const $ = selector =>
+  document.querySelector(selector);
+
+const $$ = selector =>
+  [...document.querySelectorAll(selector)];
 
 function edgeClass(edge){
 
-if(edge === "INFLECTING") return "amber";
+  if(edge === "INFLECTING"){
+    return "amber";
+  }
 
-if(edge === "UNDER-NOTICED") return "blue";
+  if(edge === "UNDER-NOTICED"){
+    return "blue";
+  }
 
-return "green";
+  return "green";
+}
 
+function deltaText(stock){
+
+  const delta = Number(stock.delta || 0);
+
+  return `
+    <span class="delta ${delta >= 0 ? "up" : "down"}">
+      ${delta >= 0 ? "+" : ""}${delta}
+    </span>
+  `;
 }
 
 function stockCard(stock){
 
-return `
+  return `
 
-<div class="stock" data-open="${stock.ticker}">
+    <div
+      class="stock"
+      data-open="${stock.ticker}"
+    >
 
-<div class="stock-top">
+      <div class="stock-top">
 
-<div class="stock-name">
+        <div class="stock-name">
 
-<div class="ticker">
-${stock.ticker}
-<span class="delta ${stock.delta >= 0 ? "up" : "down"}">
-${stock.delta >= 0 ? "+" : ""}${stock.delta}
-</span>
-</div>
+          <div class="ticker">
+            ${stock.ticker}
+            ${deltaText(stock)}
+          </div>
 
-<div class="company">${stock.name}</div>
+          <div class="company">
+            $${Number(stock.price || 0).toFixed(2)}
+          </div>
 
-</div>
+        </div>
 
-<button class="star ${watchlist.has(stock.ticker) ? "on" : ""}"
-data-watch="${stock.ticker}">
-${watchlist.has(stock.ticker) ? "★" : "☆"}
-</button>
+        <div class="score">
+          ${stock.opp}
+          <small>OPP.</small>
+        </div>
 
-<div class="score">
-${stock.opp}
-<small>OPP.</small>
-</div>
+      </div>
 
-</div>
+      <div class="tags">
 
-<div class="tags">
+        <span class="tag ${edgeClass(stock.edge)}">
+          ${stock.edge}
+        </span>
 
-<span class="tag ${edgeClass(stock.edge)}">
-${stock.edge}
-</span>
+        <span class="tag">
+          Risk ${stock.risk}
+        </span>
 
-<span class="tag">
-Quality ${stock.quality}
-</span>
+        ${
+          stock.confidence != null
+          ? `
+            <span class="tag">
+              Confidence ${stock.confidence}
+            </span>
+          `
+          : ""
+        }
 
-<span class="tag">
-Risk ${stock.risk}
-</span>
+      </div>
 
-</div>
+      <div class="thesis">
+        ${stock.thesis || ""}
+      </div>
 
-<div class="thesis">
-${stock.thesis}
-</div>
+    </div>
 
-</div>
+  `;
+}
 
-`;
+function holdingAction(stock){
 
+  if(!stock){
+
+    return {
+      label:"WAITING",
+      className:"hold",
+      reason:"Waiting for this ticker to be included in the scanner."
+    };
+  }
+
+  const ann =
+    Number(stock.announcementSignal || 0);
+
+  const confidence =
+    Number(stock.confidence ?? 50);
+
+  const opp =
+    Number(stock.opp || 0);
+
+  const risk =
+    Number(stock.risk || 0);
+
+  const delta =
+    Number(stock.delta || 0);
+
+  if(
+    ann <= -15 ||
+    opp < 40 ||
+    risk >= 75
+  ){
+
+    return {
+      label:"EXIT REVIEW",
+      className:"exit",
+      reason:
+        "Major deterioration detected. Reassess whether the original investment thesis remains valid."
+    };
+  }
+
+  if(
+    opp < 55 ||
+    delta <= -8 ||
+    risk >= 60
+  ){
+
+    return {
+      label:"REDUCE REVIEW",
+      className:"reduce",
+      reason:
+        "Opportunity or risk has deteriorated enough to reassess the position."
+    };
+  }
+
+  if(
+    opp >= 75 &&
+    risk < 50 &&
+    ann >= 0 &&
+    confidence >= 55
+  ){
+
+    return {
+      label:"ADD REVIEW",
+      className:"add",
+      reason:
+        "Strong opportunity score with acceptable risk and no major negative evidence."
+    };
+  }
+
+  return {
+    label:"HOLD",
+    className:"hold",
+    reason:
+      "No strong add or reduce signal at present."
+  };
+}
+
+function holdingCard(ticker){
+
+  const stock =
+    stocks.find(
+      item => item.ticker === ticker
+    );
+
+  const action =
+    holdingAction(stock);
+
+  if(!stock){
+
+    return `
+
+      <div class="stock">
+
+        <div class="stock-top">
+
+          <div class="stock-name">
+            <div class="ticker">${ticker}</div>
+          </div>
+
+          <div class="action ${action.className}">
+            ${action.label}
+          </div>
+
+        </div>
+
+        <div class="thesis">
+          ${action.reason}
+        </div>
+
+      </div>
+
+    `;
+  }
+
+  return `
+
+    <div
+      class="stock"
+      data-open="${ticker}"
+    >
+
+      <div class="stock-top">
+
+        <div class="stock-name">
+
+          <div class="ticker">
+            ${ticker}
+          </div>
+
+          <div class="company">
+            Opportunity ${stock.opp}
+            · $${Number(stock.price || 0).toFixed(2)}
+          </div>
+
+        </div>
+
+        <div class="action ${action.className}">
+          ${action.label}
+        </div>
+
+      </div>
+
+      <div class="tags">
+
+        <span class="tag">
+          Risk ${stock.risk}
+        </span>
+
+        <span class="tag">
+          Confidence ${stock.confidence ?? "—"}
+        </span>
+
+        <span class="tag">
+          Change ${Number(stock.delta || 0) >= 0 ? "+" : ""}
+          ${stock.delta || 0}
+        </span>
+
+      </div>
+
+      <div class="thesis">
+        ${action.reason}
+      </div>
+
+    </div>
+
+  `;
 }
 
 function render(){
 
-const sorted = [...stocks].sort((a,b)=>b.opp-a.opp);
+  if(!stocks.length){
+    return;
+  }
 
-const threshold = Number($("#threshold").value);
+  const sorted =
+    [...stocks].sort(
+      (a,b) => b.opp - a.opp
+    );
 
-$("#heroTitle").textContent =
-sorted[0].ticker + " · " + sorted[0].opp;
+  const threshold =
+    Number($("#threshold").value);
 
-$("#heroText").textContent =
-sorted[0].thesis;
+  const top =
+    sorted[0];
 
-$("#topCount").textContent =
-stocks.filter(x=>x.opp >= threshold).length;
+  $("#heroTitle").textContent =
+    `${top.ticker} · ${top.opp}`;
 
-$("#changeCount").textContent =
-stocks.filter(x=>Math.abs(x.delta) >= 4).length;
+  $("#heroText").textContent =
+    top.thesis || "";
 
-$("#watchCount").textContent =
-watchlist.size;
+  $("#topCount").textContent =
+    stocks.filter(
+      x => x.opp >= threshold
+    ).length;
 
-$("#homeStocks").innerHTML =
-sorted.slice(0,4).map(stockCard).join("");
+  $("#changeCount").textContent =
+    stocks.filter(
+      x => Math.abs(Number(x.delta || 0)) >= 4
+    ).length;
 
-$("#changes").innerHTML =
-sorted
-.filter(x=>Math.abs(x.delta)>=4)
-.map(stockCard)
-.join("");
+  $("#homeStocks").innerHTML =
+    sorted
+      .slice(0,10)
+      .map(stockCard)
+      .join("");
 
-renderDiscover();
+  const changed =
+    sorted.filter(
+      x => Math.abs(Number(x.delta || 0)) >= 4
+    );
 
-renderWatchlist();
+  $("#changes").innerHTML =
+    changed.length
+    ? changed
+        .slice(0,10)
+        .map(stockCard)
+        .join("")
+    : `
+      <div class="empty">
+        No major score changes today.
+      </div>
+    `;
 
-bindCards();
+  renderDiscover();
 
+  renderHoldings();
+
+  bindCards();
 }
 
 function renderDiscover(){
 
-const search = $("#search").value.toLowerCase();
+  const search =
+    $("#search").value
+      .trim()
+      .toLowerCase();
 
-const filtered = stocks.filter(stock=>{
+  const results =
+    stocks
+      .filter(stock => {
 
-const matchesEdge =
-edgeFilter === "ALL" ||
-stock.edge === edgeFilter;
+        const edgeMatch =
+          edgeFilter === "ALL" ||
+          stock.edge === edgeFilter;
 
-const matchesSearch =
-!search ||
-(stock.ticker + " " + stock.name)
-.toLowerCase()
-.includes(search);
+        const searchMatch =
+          !search ||
+          stock.ticker
+            .toLowerCase()
+            .includes(search) ||
+          String(stock.name || "")
+            .toLowerCase()
+            .includes(search);
 
-return matchesEdge && matchesSearch;
+        return edgeMatch && searchMatch;
 
-});
+      })
+      .sort(
+        (a,b) => b.opp - a.opp
+      );
 
-$("#discoverStocks").innerHTML =
-filtered.length
-? filtered.map(stockCard).join("")
-: '<div class="empty">No matching opportunities.</div>';
-
+  $("#discoverStocks").innerHTML =
+    results.length
+    ? results.map(stockCard).join("")
+    : `
+      <div class="empty">
+        No matching companies.
+      </div>
+    `;
 }
 
-function renderWatchlist(){
+function renderHoldings(){
 
-const selected =
-stocks.filter(x=>watchlist.has(x.ticker));
+  $("#myHoldings").innerHTML =
+    myPortfolio
+      .map(holdingCard)
+      .join("");
 
-$("#watchStocks").innerHTML =
-selected.length
-? selected.map(stockCard).join("")
-: '<div class="empty">Tap ☆ on any company to add it here.</div>';
-
+  $("#kidsHoldings").innerHTML =
+    kidsPortfolio
+      .map(holdingCard)
+      .join("");
 }
 
 function bindCards(){
 
-$$("[data-open]").forEach(card=>{
+  $$("[data-open]").forEach(card => {
 
-card.onclick = e=>{
+    card.onclick = () => {
+      openDetail(
+        card.dataset.open
+      );
+    };
 
-if(e.target.closest("[data-watch]")) return;
-
-openDetail(card.dataset.open);
-
-};
-
-});
-
-$$("[data-watch]").forEach(button=>{
-
-button.onclick = e=>{
-
-e.stopPropagation();
-
-const ticker = button.dataset.watch;
-
-if(watchlist.has(ticker))
-watchlist.delete(ticker);
-else
-watchlist.add(ticker);
-
-localStorage.setItem(
-"asxWatchlist",
-JSON.stringify([...watchlist])
-);
-
-render();
-
-};
-
-});
-
+  });
 }
 
 function openDetail(ticker){
 
-const stock =
-stocks.find(x=>x.ticker===ticker);
+  const stock =
+    stocks.find(
+      item => item.ticker === ticker
+    );
 
-if(!stock) return;
+  if(!stock){
+    return;
+  }
 
-previousPage =
-document.querySelector(".page.active").id;
+  previousPage =
+    document.querySelector(
+      ".page.active"
+    ).id;
 
-$("#detailTicker").textContent =
-stock.ticker;
+  $("#detailTicker").textContent =
+    stock.ticker;
 
-$("#detailName").textContent =
-stock.name;
+  $("#detailName").textContent =
+    `$${Number(stock.price || 0).toFixed(2)}`;
 
-$("#detailScore").innerHTML =
-stock.opp + "<small>OPPORTUNITY</small>";
+  $("#detailScore").innerHTML =
+    `${stock.opp}<small>OPPORTUNITY</small>`;
 
-$("#detailTags").innerHTML = `
+  $("#detailTags").innerHTML = `
 
-<span class="tag ${edgeClass(stock.edge)}">
-${stock.edge}
-</span>
+    <span class="tag ${edgeClass(stock.edge)}">
+      ${stock.edge}
+    </span>
 
-<span class="tag">
-Change +${stock.delta}
-</span>
+    <span class="tag">
+      Risk ${stock.risk}
+    </span>
 
-`;
+    <span class="tag">
+      Confidence ${stock.confidence ?? "—"}
+    </span>
 
-$("#detailThesis").textContent =
-stock.thesis;
+  `;
 
-$("#detailCatalyst").textContent =
-stock.catalystScore ?? stock.catalyst;
+  $("#detailThesis").textContent =
+    stock.thesis ||
+    "No thesis summary available.";
 
-$("#detailRisk").textContent =
-stock.riskText;
+  $("#detailCatalyst").textContent =
+    stock.catalyst ||
+    "No catalyst information available.";
 
-const metrics = [
+  $("#detailRisk").textContent =
+    stock.riskText ||
+    "No risk summary available.";
 
-["Quality",stock.quality],
-["Valuation",stock.valuation],
-["Growth",stock.growth],
-["Momentum",stock.momentum],
-["Catalyst",stock.catalyst],
-["Safety",100-stock.risk]
+  const metrics = [
 
-];
+    ["Quality",stock.quality ?? 50],
 
-$("#scoreGrid").innerHTML =
-metrics.map(([name,value])=>`
+    ["Valuation",stock.valuation ?? 50],
 
-<div class="score-box">
+    ["Growth",stock.growth ?? 50],
 
-<div class="score-box-label">
-${name}
-</div>
+    ["Momentum",stock.momentum ?? 50],
 
-<div class="score-box-value">
-${value}
-</div>
+    [
+      "Catalyst",
+      stock.catalystScore ?? 50
+    ],
 
-<div class="bar">
-<span style="width:${value}%"></span>
-</div>
+    [
+      "Safety",
+      100 - Number(stock.risk || 0)
+    ]
 
-</div>
+  ];
 
-`).join("");
+  $("#scoreGrid").innerHTML =
+    metrics
+      .map(
+        ([name,value]) => `
 
-$("#timeline").innerHTML =
-stock.history.map(event=>`
+          <div class="score-box">
 
-<div class="event">
+            <div class="score-label">
+              ${name}
+            </div>
 
-<div class="event-date">
-${event[0]}
-</div>
+            <div class="score-value">
+              ${Math.round(value)}
+            </div>
 
-<div class="event-text">
-${event[1]}
-</div>
+          </div>
 
-<div class="event-change">
-${event[2]}
-</div>
+        `
+      )
+      .join("");
 
-</div>
+  const history =
+    Array.isArray(stock.history)
+    ? stock.history
+    : [];
 
-`).join("");
+  $("#timeline").innerHTML =
+    history.length
+    ? history
+        .slice()
+        .reverse()
+        .map(
+          event => `
 
-showPage("detail");
+            <div class="event">
 
+              <div class="event-date">
+                ${event[0]}
+              </div>
+
+              <div class="event-text">
+                ${event[1]}
+              </div>
+
+              <div class="company">
+                ${event[2]}
+              </div>
+
+            </div>
+
+          `
+        )
+        .join("")
+    : `
+      <div class="empty">
+        No recorded score changes yet.
+      </div>
+    `;
+
+  showPage("detail");
 }
 
 function showPage(page){
 
-$$(".page").forEach(p=>
-p.classList.toggle(
-"active",
-p.id === page
-));
+  $$(".page").forEach(
+    element => {
 
-$$(".nav").forEach(button=>
-button.classList.toggle(
-"active",
-button.dataset.page === page
-));
+      element.classList.toggle(
+        "active",
+        element.id === page
+      );
 
-window.scrollTo(0,0);
+    }
+  );
 
+  $$(".nav").forEach(
+    button => {
+
+      button.classList.toggle(
+        "active",
+        button.dataset.page === page
+      );
+
+    }
+  );
+
+  window.scrollTo(0,0);
 }
 
-$$(".nav").forEach(button=>{
+async function loadData(){
 
-button.onclick =
-()=>showPage(button.dataset.page);
+  const status =
+    $("#liveStatus");
 
-});
-
-$$(".edge").forEach(button=>{
-
-button.onclick = ()=>{
-
-edgeFilter =
-button.dataset.edge;
-
-$$(".edge").forEach(x=>
-x.classList.toggle(
-"active",
-x===button
-));
-
-render();
-
-};
-
-});
-
-$("#search").oninput =
-()=>render();
-
-$("#threshold").onchange =
-()=>render();
-
-$("#back").onclick =
-()=>showPage(
-previousPage === "detail"
-? "home"
-: previousPage
-);
-
-$("#refresh").onclick = ()=>{
-
-$("#refresh").textContent = "✓";
-
-render();
-
-setTimeout(()=>{
-$("#refresh").textContent="↻";
-},700);
-
-};
-
-async function loadLiveData(){
-
-  const notice =
-    document.querySelector("#home .notice");
+  status.textContent =
+    "Updating live ASX scan…";
 
   try{
 
-    const response = await fetch(
-      "./data.json?v=" + Date.now(),
-      { cache:"no-store" }
-    );
+    const response =
+      await fetch(
+        "./data.json?v=" + Date.now(),
+        {
+          cache:"no-store"
+        }
+      );
 
     if(!response.ok){
       throw new Error(
-        "Could not load market data"
+        "Could not load data.json"
       );
     }
 
-    const live =
+    const data =
       await response.json();
 
-    if(
-      Array.isArray(live.stocks) &&
-      live.stocks.length
-    ){
+    stocks =
+      Array.isArray(data.stocks)
+      ? data.stocks
+      : [];
 
-      stocks = live.stocks;
+    const updated =
+      new Date(data.updated);
 
-      const updated =
-        new Date(live.updated);
+    status.textContent =
+      `LIVE ASX SCAN · ${stocks.length} companies · Updated ${updated.toLocaleString("en-AU")}`;
 
-      notice.textContent =
-        "LIVE DAILY ASX SCAN · " +
-        live.stocks.length +
-        " companies · Updated " +
-        updated.toLocaleString(
-          "en-AU",
-          {
-            dateStyle:"medium",
-            timeStyle:"short"
-          }
-        );
-
-    }
+    render();
 
   }
   catch(error){
 
-    notice.textContent =
-      "Live market data could not be loaded. Showing cached data.";
+    status.textContent =
+      "Could not load the live ASX scan.";
 
     console.error(error);
 
   }
-
-  render();
-
 }
 
-loadLiveData();
+$$(".nav").forEach(
+  button => {
+
+    button.onclick =
+      () => showPage(
+        button.dataset.page
+      );
+
+  }
+);
+
+$$(".edge").forEach(
+  button => {
+
+    button.onclick = () => {
+
+      edgeFilter =
+        button.dataset.edge;
+
+      $$(".edge").forEach(
+        item => item.classList.toggle(
+          "active",
+          item === button
+        )
+      );
+
+      renderDiscover();
+
+      bindCards();
+    };
+
+  }
+);
+
+$("#search").oninput = () => {
+
+  renderDiscover();
+
+  bindCards();
+};
+
+$("#threshold").onchange =
+  render;
+
+$("#back").onclick =
+  () => showPage(
+    previousPage === "detail"
+    ? "home"
+    : previousPage
+  );
+
+$("#refresh").onclick =
+  async () => {
+
+    $("#refresh").textContent =
+      "…";
+
+    await loadData();
+
+    $("#refresh").textContent =
+      "✓";
+
+    setTimeout(
+      () => {
+        $("#refresh").textContent =
+          "↻";
+      },
+      700
+    );
+  };
+
+loadData();
 
 </script>
 
 </body>
-</html>
+</html> 
