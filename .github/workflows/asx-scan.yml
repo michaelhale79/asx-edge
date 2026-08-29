@@ -23,10 +23,13 @@ jobs:
           import urllib.request
           import urllib.parse
           import datetime
+          import re
+          import time
           from pathlib import Path
           from html.parser import HTMLParser
 
-          VERSION = 3
+          VERSION = 3.1
+          LOOKBACK_DAYS = 10
 
           TICKERS = [
               "BHP","CBA","CSL","NAB","WBC","ANZ","WES","MQG","GMG","RIO",
@@ -34,12 +37,7 @@ jobs:
               "MIN","JHX","CAR","SEK","CPU","ALD","STO","COL","S32","ORG",
               "SUN","IAG","BXB","AMC","SHL","ASX","APA","MPL","TWE","NXT",
               "WBT","BRN","LYC","PLS","LTR","ZIP","PME","MP1","DMP","NEC",
-
-              # Michael holdings
-              "DRO","ETPMAG","GOLD",
-
-              # Isobel & Oliver holdings
-              "DTL","WOR","AIA"
+              "DRO","ETPMAG","GOLD","DTL","WOR","AIA"
           ]
 
           H = {
@@ -51,6 +49,7 @@ jobs:
               "upgrade":18,
               "upgrades":18,
               "guidance increased":20,
+              "guidance upgraded":20,
               "record":8,
               "contract":10,
               "awarded":12,
@@ -62,18 +61,23 @@ jobs:
               "revenue growth":12,
               "earnings growth":12,
               "cash flow positive":14,
+              "cashflow positive":14,
               "debt reduction":12,
               "resource upgrade":14,
               "reserve upgrade":14,
               "discovery":12,
               "production increase":10,
+              "production upgrade":12,
               "buy-back":8,
-              "buyback":8
+              "buyback":8,
+              "new customer":10,
+              "strategic partnership":8
           }
 
           NEGATIVE = {
               "downgrade":-22,
               "guidance reduced":-22,
+              "guidance downgraded":-22,
               "profit warning":-25,
               "trading halt":-4,
               "capital raising":-12,
@@ -101,7 +105,8 @@ jobs:
               "becoming a substantial holder",
               "notice of meeting",
               "results of meeting",
-              "cleansing notice"
+              "cleansing notice",
+              "corporate governance statement"
           ]
 
           def clamp(x):
@@ -153,7 +158,6 @@ jobs:
               )
 
               raw = fetch_json(url)
-
               result = raw["chart"]["result"][0]
 
               closes = (
@@ -203,7 +207,6 @@ jobs:
                   tag,
                   attrs
               ):
-
                   attrs = dict(attrs)
 
                   if tag == "tr":
@@ -226,7 +229,6 @@ jobs:
                           self.price_sensitive = True
 
               def handle_data(self, data):
-
                   if self.in_td:
                       self.cell += data
 
@@ -256,12 +258,47 @@ jobs:
 
                       self.in_tr = False
 
-          def fetch_announcements():
+          def parse_asx_date(text):
+
+              match = re.search(
+                  r"(\d{1,2})/(\d{1,2})/(\d{4})",
+                  text
+              )
+
+              if not match:
+                  return None
+
+              day = int(match.group(1))
+              month = int(match.group(2))
+              year = int(match.group(3))
+
+              try:
+                  return datetime.date(
+                      year,
+                      month,
+                      day
+                  )
+              except:
+                  return None
+
+          def fetch_company_announcements(ticker):
+
+              code = ticker[:3]
+
+              params = urllib.parse.urlencode(
+                  {
+                      "asxCode":code,
+                      "by":"asxCode",
+                      "period":"M6",
+                      "timeframe":"D"
+                  }
+              )
 
               url = (
                   "https://www.asx.com.au/"
                   "asx/v2/statistics/"
-                  "todayAnns.do"
+                  "announcements.do?"
+                  + params
               )
 
               try:
@@ -271,7 +308,14 @@ jobs:
                   parser = AnnouncementParser()
                   parser.feed(html)
 
-                  announcements = {}
+                  cutoff = (
+                      datetime.date.today()
+                      - datetime.timedelta(
+                          days=LOOKBACK_DAYS
+                      )
+                  )
+
+                  announcements = []
 
                   for row in parser.rows:
 
@@ -280,15 +324,16 @@ jobs:
                       if len(cells) < 2:
                           continue
 
-                      ticker = cells[0].strip().upper()
+                      date_text = cells[0]
 
-                      if not (
-                          2 <= len(ticker) <= 6
-                          and ticker.replace(
-                              ".",
-                              ""
-                          ).isalnum()
-                      ):
+                      ann_date = parse_asx_date(
+                          date_text
+                      )
+
+                      if not ann_date:
+                          continue
+
+                      if ann_date < cutoff:
                           continue
 
                       headline = cells[-1].strip()
@@ -296,32 +341,30 @@ jobs:
                       if not headline:
                           continue
 
-                      announcements.setdefault(
-                          ticker,
-                          []
-                      ).append(
+                      announcements.append(
                           {
-                              "headline":headline,
+                              "date":
+                              ann_date.isoformat(),
+
+                              "headline":
+                              headline,
+
                               "priceSensitive":
                               row["priceSensitive"]
                           }
                       )
-
-                  print(
-                      "Announcement tickers found:",
-                      len(announcements)
-                  )
 
                   return announcements
 
               except Exception as e:
 
                   print(
-                      "Announcement feed failed:",
+                      "ASX announcements failed",
+                      ticker,
                       e
                   )
 
-                  return {}
+                  return []
 
           def score_headline(item):
 
@@ -355,9 +398,32 @@ jobs:
 
               return signal
 
-          ANNOUNCEMENTS = fetch_announcements()
+          print(
+              "Loading recent ASX announcements..."
+          )
+
+          ANNOUNCEMENTS = {}
+
+          for ticker in TICKERS:
+
+              ANNOUNCEMENTS[ticker] = (
+                  fetch_company_announcements(
+                      ticker
+                  )
+              )
+
+              print(
+                  ticker,
+                  "announcements:",
+                  len(
+                      ANNOUNCEMENTS[ticker]
+                  )
+              )
+
+              time.sleep(0.20)
 
           bench_rows = fetch_market("^AXJO")
+
           bench_prices = [
               x[0]
               for x in bench_rows
@@ -514,10 +580,20 @@ jobs:
 
               announcement_signal = 0
 
+              scored_anns = []
+
               for item in ticker_anns:
-                  announcement_signal += (
-                      score_headline(item)
+
+                  score = score_headline(item)
+
+                  scored_anns.append(
+                      (
+                          item,
+                          score
+                      )
                   )
+
+                  announcement_signal += score
 
               announcement_signal = max(
                   -45,
@@ -579,19 +655,15 @@ jobs:
               )
 
               catalyst_score = clamp(
-                  (
-                      volume_score * .30
-                      + inflecting * .25
-                      + announcement_score * .45
-                  )
+                  volume_score * .30
+                  + inflecting * .25
+                  + announcement_score * .45
               )
 
               technical_confidence = clamp(
-                  (
-                      persistence * .35
-                      + stability * .30
-                      + relative * .35
-                  )
+                  persistence * .35
+                  + stability * .30
+                  + relative * .35
               )
 
               announcement_confidence = (
@@ -626,28 +698,26 @@ jobs:
                   edge = "INFLECTING"
 
               else:
-                  edge = "MISPRICED"
+                  edge = "WATCH"
 
-              if ticker_anns:
+              if scored_anns:
 
-                  top_announcement = max(
-                      ticker_anns,
-                      key=lambda x:
-                      abs(
-                          score_headline(x)
-                      )
+                  top_item, top_score = max(
+                      scored_anns,
+                      key=lambda pair:
+                      abs(pair[1])
                   )
 
                   top_headline = (
-                      top_announcement[
-                          "headline"
-                      ]
+                      top_item["headline"]
                   )
 
               else:
+
                   top_headline = (
                       "No material announcement "
-                      "headline detected today."
+                      "headline detected in the "
+                      f"last {LOOKBACK_DAYS} days."
                   )
 
               if announcement_signal > 0:
@@ -704,12 +774,14 @@ jobs:
               )
 
               if penalty > 0:
+
                   risk_text += (
                       "The opportunity score is being "
                       "penalised for price overextension."
                   )
 
               else:
+
                   risk_text += (
                       "No major price-overextension "
                       "penalty is currently applied."
@@ -723,16 +795,14 @@ jobs:
                   "opp":round(opportunity),
                   "edge":edge,
 
-                  # Stability proxy for now
                   "quality":round(stability),
-
-                  # Real valuation data is not yet available
                   "valuation":50,
-
                   "growth":round(inflecting),
                   "momentum":round(relative),
+
                   "catalystScore":
                   round(catalyst_score),
+
                   "risk":round(risk),
 
                   "confidence":
@@ -751,7 +821,7 @@ jobs:
                   price_sensitive_news,
 
                   "announcements":
-                  ticker_anns[:10],
+                  ticker_anns[:15],
 
                   "delta":0,
 
@@ -810,10 +880,8 @@ jobs:
                       path.read_text()
                   )
 
-                  old_version = (
-                      old.get(
-                          "engineVersion"
-                      )
+                  old_version = old.get(
+                      "engineVersion"
                   )
 
                   previous = {
@@ -852,10 +920,7 @@ jobs:
                       rows
                   )
 
-                  if (
-                      ticker in previous
-                      and old_version == VERSION
-                  ):
+                  if ticker in previous:
 
                       old_item = (
                           previous[ticker]
@@ -936,6 +1001,9 @@ jobs:
 
           output = {
               "engineVersion":VERSION,
+
+              "announcementLookbackDays":
+              LOOKBACK_DAYS,
 
               "updated":
               datetime.datetime.now(
