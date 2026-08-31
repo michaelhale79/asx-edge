@@ -1,0 +1,33 @@
+name: Fix ASX Evidence Fetch
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch-asx-evidence-fetch.py'
+      - '.github/workflows/fix-evidence-fetch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Patch ASX PDF resolver
+        run: python scripts/patch-asx-evidence-fetch.py
+      - name: Verify patch
+        run: |
+          grep -q "resolve_pdf_bytes" scripts/evidence_research.py
+          grep -q "NO_DOCUMENTS" scripts/evidence_research.py
+      - name: Commit resolver fix
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add scripts/evidence_research.py
+          git diff --cached --quiet || git commit -m "Resolve real ASX announcement PDFs"
+          git pull --rebase origin main
+          git push
