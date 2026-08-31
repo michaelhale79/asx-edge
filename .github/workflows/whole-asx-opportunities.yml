@@ -27,6 +27,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install ASX universe reader
+        run: python -m pip install --disable-pip-version-check xlrd
+
       - name: Scan entire ASX for opportunities
         run: python scripts/whole_asx_runner.py
 
