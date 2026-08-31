@@ -1,0 +1,43 @@
+name: Expand ASX Edge Opportunity Universe
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/expand-asx-universe.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Expand scanner universe
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path('.github/workflows/asx-scan.yml')
+          s = p.read_text()
+
+          old_on = 'on:\n  workflow_dispatch:\n  schedule:'
+          new_on = "on:\n  workflow_dispatch:\n  push:\n    paths:\n      - '.github/workflows/asx-scan.yml'\n  schedule:"
+          if old_on in s and "paths:\n      - '.github/workflows/asx-scan.yml'" not in s:
+              s = s.replace(old_on, new_on, 1)
+
+          old_tail = '              "DRO","ETPMAG","GOLD","DTL","WOR","AIA"\n          ]'
+          new_tail = '              "DRO","ETPMAG","GOLD","DTL","WOR","AIA",\n              "EOS","ASB","NST","EVN","NEM","KAR","BPT","PDN","BOE","DYL",\n              "SFR","29M","IGO","ILU"\n          ]'
+          if old_tail not in s:
+              raise SystemExit('Ticker list anchor not found; refusing partial update')
+          s = s.replace(old_tail, new_tail, 1)
+          p.write_text(s)
+
+      - name: Commit scanner expansion
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add .github/workflows/asx-scan.yml
+          git diff --cached --quiet || git commit -m "Expand ASX scan universe for global themes"
+          git push
