@@ -49,7 +49,8 @@ jobs:
         run: |
           git config user.name "ASX Edge Bot"
           git config user.email "asx-edge@users.noreply.github.com"
-          git add data.json study/ai-event-analysis.json study/event-hypotheses.json 2>/dev/null || true
+          git add data.json study/ai-event-analysis.json
+          if [ -f study/event-hypotheses.json ]; then git add study/event-hypotheses.json; fi
           git diff --cached --quiet || git commit -m "Update AI event opportunities"
           git pull --rebase origin main
           git push
