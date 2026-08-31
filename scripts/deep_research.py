@@ -75,11 +75,9 @@ def fetch_announcements(ticker):
         print("announcement research failed",ticker,e); return []
 
 def infer_intent(announcements):
-    scores={k:0 for k in INTENT_RULES}
-    evidence={k:[] for k in INTENT_RULES}
+    scores={k:0 for k in INTENT_RULES}; evidence={k:[] for k in INTENT_RULES}
     for a in announcements:
-        h=a.get("headline","").lower()
-        weight=2 if a.get("priceSensitive") else 1
+        h=a.get("headline","").lower(); weight=2 if a.get("priceSensitive") else 1
         for label, phrases in INTENT_RULES.items():
             if any(p in h for p in phrases):
                 scores[label]+=weight
@@ -94,6 +92,17 @@ def world_theme_names(stock):
         elif isinstance(item,dict): out.append(str(item.get("theme") or item.get("name") or item.get("label") or ""))
     return [x for x in out if x][:5]
 
+def evidence_context(stock):
+    score=n(stock.get("evidenceScore"),50); risk=n(stock.get("evidenceRisk"),50); delivery=n(stock.get("managementDeliveryScore"),50)
+    positives=stock.get("evidencePositives") or []; flags=stock.get("evidenceFlags") or []
+    if stock.get("documentsRead") is None:
+        return score,risk,delivery,"Disclosure-document evidence has not yet been completed for this company."
+    parts=[]
+    if positives: parts.append("Disclosure positives: "+" ".join(str(x) for x in positives[:2]))
+    if flags: parts.append("Disclosure risks: "+" ".join(str(x.get("text") if isinstance(x,dict) else x) for x in flags[:2]))
+    if not parts: parts.append(stock.get("evidenceSummary") or "No dominant disclosure-document signal was detected.")
+    return score,risk,delivery," ".join(parts)
+
 def classify(stock, intents):
     opp=n(stock.get("opp")); momentum=n(stock.get("momentum"),50); catalyst=n(stock.get("catalystScore"),50)
     risk=n(stock.get("risk"),50); conf=n(stock.get("confidence"),50); quality=n(stock.get("quality"),50)
@@ -102,10 +111,10 @@ def classify(stock, intents):
     r6=n(stock.get("return6m")); r12=n(stock.get("return12m"))
     fundamental=n(stock.get("fundamentalScore"),50); fundamental_risk=n(stock.get("fundamentalRisk"),50)
     balance=n(stock.get("balanceSheetScore"),50); cashflow=n(stock.get("cashflowScore"),50); dilution=n(stock.get("dilutionScore"),50)
-    short_term=clamp(opp*.24+momentum*.19+catalyst*.16+conf*.10+(100-risk)*.08+clamp(50+rel1*2)*.07+clamp(50+(volume-1)*25)*.05+clamp(50+ann)*.04+clamp(50+gt)*.03+fundamental*.02+(100-fundamental_risk)*.02)
-    durable_trend=clamp(50+r6*.35+r12*.18+rel3*.45)
-    strategic_bonus=min(7,len(intents)*1.75)
-    long_term=clamp(fundamental*.28+balance*.10+cashflow*.08+dilution*.06+quality*.10+growth*.08+value*.08+conf*.08+(100-fundamental_risk)*.07+(100-risk)*.03+durable_trend*.02+clamp(50+gt)*.02+strategic_bonus)
+    ev_score,ev_risk,delivery,_=evidence_context(stock)
+    short_term=clamp(opp*.23+momentum*.18+catalyst*.15+conf*.10+(100-risk)*.08+clamp(50+rel1*2)*.07+clamp(50+(volume-1)*25)*.05+clamp(50+ann)*.04+clamp(50+gt)*.03+fundamental*.02+(100-fundamental_risk)*.02+ev_score*.02+(100-ev_risk)*.01)
+    durable_trend=clamp(50+r6*.35+r12*.18+rel3*.45); strategic_bonus=min(5,len(intents)*1.25)
+    long_term=clamp(fundamental*.23+balance*.09+cashflow*.07+dilution*.05+quality*.08+growth*.07+value*.07+conf*.06+(100-fundamental_risk)*.06+(100-risk)*.03+durable_trend*.02+clamp(50+gt)*.02+ev_score*.09+(100-ev_risk)*.07+delivery*.05+strategic_bonus)
     if long_term>=70 and short_term>=68: play="BOTH"
     elif long_term>=70: play="LONG_TERM"
     elif short_term>=70: play="SHORT_TERM"
@@ -120,22 +129,21 @@ def main():
     for s in ranked:
         t=str(s.get("ticker","")).upper()
         if not t or t in seen: continue
-        if len(picked)<MAX_RESEARCH or t in CORE:
-            picked.append(s); seen.add(t)
+        if len(picked)<MAX_RESEARCH or t in CORE: picked.append(s); seen.add(t)
         if len(picked)>=MAX_RESEARCH and CORE.issubset(seen): break
     output=[]
     for i,s in enumerate(picked,1):
         t=str(s.get("ticker","")).upper(); anns=fetch_announcements(t); intents,evidence=infer_intent(anns); themes=world_theme_names(s)
-        st,lt,play=classify(s,intents)
+        st,lt,play=classify(s,intents); _,_,_,ev_text=evidence_context(s)
         strategy=("Recent announcements suggest focus on "+", ".join(intents)+"." if intents else "No clear strategic direction was detected from recent announcement headlines alone.")
         world=("Relevant world themes: "+", ".join(themes)+"." if themes else "No strong mapped global theme is currently attached to this company.")
-        horizon_reason=f"Short-term score {st}/100 versus long-term score {lt}/100. {strategy} {world}"
-        rec={"ticker":t,"name":s.get("name",t),"sector":s.get("sector"),"industry":s.get("industry"),"shortTermScore":st,"longTermScore":lt,"playType":play,"strategicThemes":intents,"strategicEvidence":evidence,"worldThemes":themes,"strategySummary":strategy,"worldContext":world,"horizonReason":horizon_reason,"researchedAt":dt.datetime.now(dt.timezone.utc).isoformat(),"recentAnnouncements":anns[:12]}
+        horizon_reason=f"Short-term score {st}/100 versus long-term score {lt}/100. {strategy} {ev_text} {world}"
+        rec={"ticker":t,"name":s.get("name",t),"sector":s.get("sector"),"industry":s.get("industry"),"shortTermScore":st,"longTermScore":lt,"playType":play,"strategicThemes":intents,"strategicEvidence":evidence,"worldThemes":themes,"strategySummary":strategy,"evidenceContext":ev_text,"worldContext":world,"horizonReason":horizon_reason,"researchedAt":dt.datetime.now(dt.timezone.utc).isoformat(),"recentAnnouncements":anns[:12]}
         output.append(rec)
-        s.update({k:rec[k] for k in ["shortTermScore","longTermScore","playType","strategicThemes","strategySummary","worldContext","horizonReason"]})
+        s.update({k:rec[k] for k in ["shortTermScore","longTermScore","playType","strategicThemes","strategySummary","evidenceContext","worldContext","horizonReason"]})
         if anns: s["announcements"]=anns[:12]
         print(i,t,play,st,lt); time.sleep(.15)
     data["deepResearchUpdated"]=dt.datetime.now(dt.timezone.utc).isoformat(); DATA_PATH.write_text(json.dumps(data,indent=2),encoding="utf-8")
-    OUT_PATH.parent.mkdir(parents=True,exist_ok=True); OUT_PATH.write_text(json.dumps({"updated":dt.datetime.now(dt.timezone.utc).isoformat(),"method":"Second-stage research on leading ASX Edge candidates: recent ASX announcement headlines + market/quality/risk metrics + mapped global themes. Classification is evidence-based but not a substitute for full fundamental due diligence.","companies":output},indent=2),encoding="utf-8")
+    OUT_PATH.parent.mkdir(parents=True,exist_ok=True); OUT_PATH.write_text(json.dumps({"updated":dt.datetime.now(dt.timezone.utc).isoformat(),"method":"Second-stage research on leading ASX Edge candidates: recent ASX announcement headlines + financial fundamentals + company disclosure evidence + market/quality/risk metrics + mapped global themes. Disclosure evidence includes guidance, funding/dilution, debt/liquidity, cash burn, capex, customer concentration and execution signals where source documents can be read.","companies":output},indent=2),encoding="utf-8")
 
 if __name__=="__main__": main()
