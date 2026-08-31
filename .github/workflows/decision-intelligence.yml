@@ -1,0 +1,46 @@
+name: ASX Edge Decision Intelligence
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/decision_intelligence.py'
+      - '.github/workflows/decision-intelligence.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: asx-edge-data
+  cancel-in-progress: false
+
+jobs:
+  intelligence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build evidence audit management history and theses
+        run: python scripts/decision_intelligence.py
+      - name: Verify decision intelligence output
+        run: |
+          python - <<'PY'
+          import json
+          a=json.load(open('study/evidence-quality-audit.json'))
+          h=json.load(open('study/management-history.json'))
+          t=json.load(open('study/investment-theses.json'))
+          assert a.get('companies'), 'audit empty'
+          assert h.get('companies'), 'management history empty'
+          assert t.get('companies'), 'theses empty'
+          assert any(x.get('corrections') for x in a['companies']), 'expected at least one quality correction'
+          print('audit',len(a['companies']),'management',len(h['companies']),'theses',len(t['companies']))
+          PY
+      - name: Commit decision intelligence
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add data.json study/evidence-quality-audit.json study/management-history.json study/investment-theses.json
+          git diff --cached --quiet || git commit -m "Update ASX decision intelligence"
+          git pull --rebase origin main
+          git push
