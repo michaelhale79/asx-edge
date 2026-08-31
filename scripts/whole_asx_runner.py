@@ -4,7 +4,7 @@ import re
 
 import whole_asx_opportunities as base
 
-ISIN_URL = "https://www.asx.com.au/programs/ISIN.xls"
+ISIN_URL = "https://www.asx.com.au/content/dam/asx/issuers/ISIN.xls"
 EXCLUDE = {
     "AUD", "USD", "NZD", "GBP", "EUR", "JPY", "HKD", "CAD", "CHF",
     "ORD", "CDI", "ETF", "ETP", "ETC", "FPO", "PREF", "NCP", "CAP"
@@ -35,10 +35,8 @@ def load_universe_resilient():
     except Exception as e:
         print("Primary ASX universe source failed", e)
 
-    # ASX also publishes the complete ISIN directory. Despite the .xls suffix,
-    # this endpoint has historically been tab-delimited text. We deliberately
-    # collect only issuer-like 3-character codes; the Yahoo price-history stage
-    # then validates that each code is an actually tradeable .AX security.
+    # Current official ASX ISIN directory. It is delivered with an .xls suffix
+    # but remains usable as tab-delimited text for extracting issuer codes.
     raw = base.fetch_bytes(ISIN_URL).decode("latin-1", errors="ignore")
     found = []
     seen = set()
