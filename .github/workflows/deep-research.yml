@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/deep_research.py'
+      - 'study/fundamentals.json'
       - '.github/workflows/deep-research.yml'
 
 permissions:
