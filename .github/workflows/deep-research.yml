@@ -1,0 +1,34 @@
+name: ASX Edge Deep Research
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/deep_research.py'
+      - '.github/workflows/deep-research.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: asx-edge-data
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Research company strategy and investment horizon
+        run: python scripts/deep_research.py
+      - name: Commit deep research
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add data.json study/deep-research.json
+          git diff --cached --quiet || git commit -m "Update strategic company research"
+          git pull --rebase origin main
+          git push
