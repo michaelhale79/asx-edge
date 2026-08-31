@@ -26,10 +26,19 @@ def n(v, default=None):
 
 def clamp(x, lo=0, hi=100): return max(lo,min(hi,x))
 
+
 def pct(v):
+    """Convert Yahoo decimal ratio fields to percentage points only as fallback."""
     x=n(v)
     if x is None: return None
     return x*100 if abs(x)<=2 else x
+
+
+def ratio_pct(num, den):
+    a=n(num); b=n(den)
+    if a is None or b in (None,0): return None
+    return a/b*100
+
 
 class Yahoo:
     def __init__(self):
@@ -92,9 +101,16 @@ class Yahoo:
 
 def module_raw(mod,key): return n((mod or {}).get(key))
 
+
 def latest_statement(mod, key):
     arr=(mod or {}).get(key) or []
     return arr[0] if arr else {}
+
+
+def history_growth(hist, key):
+    rows=sorted(hist.get(key) or [],key=lambda x:x[0] or "")
+    if len(rows)<2 or rows[-2][1] in (None,0): return None
+    return (rows[-1][1]/rows[-2][1]-1)*100
 
 
 def calc_dilution(hist):
@@ -116,18 +132,43 @@ def analyse(stock, y):
     if quote_type in {"ETF","MUTUALFUND"} or ticker in {"GOLD","ETPMAG"}:
         return {"ticker":ticker,"status":"NOT_APPLICABLE","reason":"Exchange-traded product; company balance-sheet analysis is not meaningful."}
 
+    currency=pr.get("financialCurrency") or pr.get("currency") or stock.get("currency")
     market_cap=module_raw(pr,"marketCap") or module_raw(sd,"marketCap")
     revenue=module_raw(fd,"totalRevenue") or module_raw(inc,"totalRevenue")
-    revenue_growth=pct(fd.get("revenueGrowth"))
-    earnings_growth=pct(fd.get("earningsGrowth"))
-    gross_margin=pct(fd.get("grossMargins")); operating_margin=pct(fd.get("operatingMargins")); profit_margin=pct(fd.get("profitMargins"))
+
+    # Prefer ratios derived from reported annual statements/time-series. Yahoo's
+    # convenience percentage fields are not consistently scaled across issuers.
+    revenue_growth=history_growth(hist,"annualTotalRevenue")
+    if revenue_growth is None: revenue_growth=pct(fd.get("revenueGrowth"))
+    earnings_growth=history_growth(hist,"annualNetIncome")
+    if earnings_growth is None: earnings_growth=pct(fd.get("earningsGrowth"))
+
+    stmt_revenue=module_raw(inc,"totalRevenue") or revenue
+    gross_margin=ratio_pct(module_raw(inc,"grossProfit"),stmt_revenue)
+    operating_margin=ratio_pct(module_raw(inc,"operatingIncome"),stmt_revenue)
+    profit_margin=ratio_pct(module_raw(inc,"netIncome"),stmt_revenue)
+    if gross_margin is None: gross_margin=pct(fd.get("grossMargins"))
+    if operating_margin is None: operating_margin=pct(fd.get("operatingMargins"))
+    if profit_margin is None: profit_margin=pct(fd.get("profitMargins"))
+
     op_cash=module_raw(fd,"operatingCashflow") or module_raw(cf,"totalCashFromOperatingActivities")
     fcf=module_raw(fd,"freeCashflow")
+    if fcf is None:
+        fcf_rows=sorted(hist.get("annualFreeCashFlow") or [],key=lambda x:x[0] or "")
+        fcf=fcf_rows[-1][1] if fcf_rows else None
     cash=module_raw(fd,"totalCash") or module_raw(bal,"cash")
     debt=module_raw(fd,"totalDebt") or module_raw(bal,"totalDebt")
     debt_equity=module_raw(fd,"debtToEquity")
     current_ratio=module_raw(fd,"currentRatio"); quick_ratio=module_raw(fd,"quickRatio")
-    roe=pct(fd.get("returnOnEquity")); roa=pct(fd.get("returnOnAssets"))
+
+    net_income=module_raw(inc,"netIncome")
+    equity=module_raw(bal,"totalStockholderEquity") or module_raw(bal,"stockholdersEquity")
+    assets=module_raw(bal,"totalAssets")
+    roe=ratio_pct(net_income,equity)
+    roa=ratio_pct(net_income,assets)
+    if roe is None: roe=pct(fd.get("returnOnEquity"))
+    if roa is None: roa=pct(fd.get("returnOnAssets"))
+
     pe=module_raw(sd,"trailingPE"); forward_pe=module_raw(ks,"forwardPE") or module_raw(sd,"forwardPE")
     pb=module_raw(ks,"priceToBook"); ev_ebitda=module_raw(ks,"enterpriseToEbitda")
     div_yield=pct(sd.get("dividendYield"))
@@ -145,7 +186,7 @@ def analyse(stock, y):
     if fcf is not None and fcf<0: flag("MEDIUM","Free cash flow is negative.")
     if cash_runway is not None and cash_runway<1.5: flag("HIGH",f"Estimated cash runway is only about {cash_runway:.1f} years at the current FCF burn rate.")
     if profit_margin is not None and profit_margin<0: flag("MEDIUM","Company is currently loss-making on reported profit margin.")
-    if revenue_growth is not None and revenue_growth<-10: flag("MEDIUM",f"Revenue is shrinking ({revenue_growth:.1f}% growth).")
+    if revenue_growth is not None and revenue_growth<-10: flag("MEDIUM",f"Revenue is shrinking ({revenue_growth:.1f}% year-on-year).")
     if dilution is not None and dilution>15: flag("HIGH",f"Heavy annual share dilution ({dilution:.1f}%).")
     elif dilution is not None and dilution>7: flag("MEDIUM",f"Meaningful annual share dilution ({dilution:.1f}%).")
     if pe is not None and pe>60: flag("MEDIUM",f"High trailing P/E ({pe:.1f}x).")
@@ -173,12 +214,12 @@ def analyse(stock, y):
     risk=clamp(25+high*18+med*8+(100-balance)*.25+(100-dilution_score)*.15)
 
     return {
-      "ticker":ticker,"status":"OK","marketCap":market_cap,"revenue":revenue,"revenueGrowthPct":revenue_growth,"earningsGrowthPct":earnings_growth,
+      "ticker":ticker,"status":"OK","financialCurrency":currency,"marketCap":market_cap,"revenue":revenue,"revenueGrowthPct":revenue_growth,"earningsGrowthPct":earnings_growth,
       "grossMarginPct":gross_margin,"operatingMarginPct":operating_margin,"profitMarginPct":profit_margin,"operatingCashflow":op_cash,"freeCashflow":fcf,
       "cash":cash,"debt":debt,"netCash":net_cash,"debtToEquityPct":debt_equity,"currentRatio":current_ratio,"quickRatio":quick_ratio,"returnOnEquityPct":roe,"returnOnAssetsPct":roa,
       "trailingPE":pe,"forwardPE":forward_pe,"priceToBook":pb,"evToEbitda":ev_ebitda,"dividendYieldPct":div_yield,"annualDilutionPct":dilution,"cashRunwayYears":cash_runway,
       "profitabilityScore":round(profitability),"growthFundamentalScore":round(growth),"balanceSheetScore":round(clamp(balance)),"cashflowScore":round(cashflow),"dilutionScore":round(dilution_score),"valuationFundamentalScore":round(valuation),
-      "fundamentalScore":round(fundamental),"fundamentalRisk":round(risk),"riskFlags":flags,"source":"Yahoo Finance financial modules/time-series","analysedAt":dt.datetime.now(dt.timezone.utc).isoformat()
+      "fundamentalScore":round(fundamental),"fundamentalRisk":round(risk),"riskFlags":flags,"source":"Yahoo Finance reported financial modules/time-series; derived ratios preferred over convenience percentages","analysedAt":dt.datetime.now(dt.timezone.utc).isoformat()
     }
 
 
@@ -198,13 +239,12 @@ def main():
         if rec.get("status")=="OK":
             for k,v in rec.items():
                 if k not in {"ticker","status","source","analysedAt"}: s[k]=v
-            # Replace old placeholder valuation with a real fundamentals-derived score where available.
             s["valuation"]=rec["valuationFundamentalScore"]
             s["fundamentalUpdated"]=rec["analysedAt"]
         print(i,rec.get("ticker"),rec.get("status"),rec.get("fundamentalScore"),rec.get("fundamentalRisk")); time.sleep(.12)
     now=dt.datetime.now(dt.timezone.utc).isoformat(); data["fundamentalsUpdated"]=now
     DATA_PATH.write_text(json.dumps(data,indent=2),encoding="utf-8")
     OUT_PATH.parent.mkdir(parents=True,exist_ok=True)
-    OUT_PATH.write_text(json.dumps({"updated":now,"coverage":len(out),"method":"Financial statement, balance sheet, cash-flow, valuation and dilution enrichment. Missing source fields remain null rather than being guessed.","companies":out},indent=2),encoding="utf-8")
+    OUT_PATH.write_text(json.dumps({"updated":now,"coverage":len(out),"method":"Financial statement, balance sheet, cash-flow, valuation and dilution enrichment. Growth and margins are derived from reported annual data where available; missing fields remain null rather than being guessed.","companies":out},indent=2),encoding="utf-8")
 
 if __name__=="__main__": main()
