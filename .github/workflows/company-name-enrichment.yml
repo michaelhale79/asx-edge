@@ -1,0 +1,29 @@
+name: ASX Edge Company Name Enrichment
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch-company-names.py'
+      - '.github/workflows/company-name-enrichment.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Patch whole ASX scanner company names
+        run: python scripts/patch-company-names.py
+      - name: Commit scanner enhancement
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add scripts/whole_asx_opportunities.py
+          git diff --cached --quiet || git commit -m "Enrich ASX company names"
+          git pull --rebase origin main
+          git push
