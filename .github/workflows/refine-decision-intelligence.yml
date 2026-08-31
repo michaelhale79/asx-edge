@@ -1,0 +1,29 @@
+name: Refine Decision Intelligence Context
+
+on:
+  push:
+    paths:
+      - 'scripts/refine_decision_intelligence.py'
+      - '.github/workflows/refine-decision-intelligence.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refine context filters
+        run: python scripts/refine_decision_intelligence.py
+      - name: Verify refinement
+        run: |
+          grep -q "deferred share unit" scripts/decision_intelligence.py
+          grep -q "successful_planned_shutdown" scripts/decision_intelligence.py
+      - name: Commit refinement
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add scripts/decision_intelligence.py
+          git diff --cached --quiet || git commit -m "Refine evidence context interpretation"
+          git push
