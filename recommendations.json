@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-31T08:50:03.243878+00:00",
+  "updated": "2026-08-31T09:37:33.736411+00:00",
   "threshold": 75,
   "scoringNote": "Final opportunity already includes backend short/global adjustments; frontend must not add short adjustment again.",
   "calls": {
@@ -2980,13 +2980,13 @@
       "outcome": "TRACKING"
     },
     "LAU": {
-      "id": "LAU-20260831T085003Z",
+      "id": "LAU-20260831T093733Z",
       "ticker": "LAU",
-      "label": "BUY",
+      "label": "HOLD",
       "startPrice": 0.755,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 30,
-      "opportunity": 75.0,
+      "startDate": "2026-08-31T09:37:33.736411+00:00",
+      "horizon": 20,
+      "opportunity": 73.0,
       "risk": 42.0,
       "confidence": 80.0,
       "signals": {
@@ -2994,7 +2994,7 @@
         "relativeStrength": true,
         "announcements": false,
         "globalTrend": false,
-        "lowShorts": true,
+        "lowShorts": false,
         "value": false,
         "volume": false
       },
@@ -3005,7 +3005,7 @@
         "valuation": 50.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
-        "shortInterestPct": 0.26,
+        "shortInterestPct": null,
         "volumeRatio": 1.18
       },
       "currentPrice": 0.755,
@@ -3015,13 +3015,13 @@
       "outcome": "TRACKING"
     },
     "ACL": {
-      "id": "ACL-20260831T085003Z",
+      "id": "ACL-20260831T093733Z",
       "ticker": "ACL",
-      "label": "HOLD",
+      "label": "BUY",
       "startPrice": 2.78,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 20,
-      "opportunity": 74.0,
+      "startDate": "2026-08-31T09:37:33.736411+00:00",
+      "horizon": 30,
+      "opportunity": 78.0,
       "risk": 44.0,
       "confidence": 81.0,
       "signals": {
@@ -3040,7 +3040,7 @@
         "valuation": 50.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
-        "shortInterestPct": 5.41,
+        "shortInterestPct": null,
         "volumeRatio": 0.49
       },
       "currentPrice": 2.78,
@@ -5640,7 +5640,82 @@
       "outcome": "TRACKING"
     }
   },
-  "completed": [],
+  "completed": [
+    {
+      "id": "ACL-20260831T085003Z",
+      "ticker": "ACL",
+      "label": "HOLD",
+      "startPrice": 2.78,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 20,
+      "opportunity": 74.0,
+      "risk": 44.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 17.7,
+        "relative3m": 29.7,
+        "momentum": 95.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "shortInterestPct": 5.41,
+        "volumeRatio": 0.49
+      },
+      "currentPrice": 2.78,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-08-31T09:37:33.736411+00:00",
+      "endPrice": 2.78
+    },
+    {
+      "id": "LAU-20260831T085003Z",
+      "ticker": "LAU",
+      "label": "BUY",
+      "startPrice": 0.755,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 30,
+      "opportunity": 75.0,
+      "risk": 42.0,
+      "confidence": 80.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "lowShorts": true,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 10.4,
+        "relative3m": 32.0,
+        "momentum": 88.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "shortInterestPct": 0.26,
+        "volumeRatio": 1.18
+      },
+      "currentPrice": 0.755,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-08-31T09:37:33.736411+00:00",
+      "endPrice": 0.755
+    }
+  ],
   "summary": {
     "BUY": {
       "completed": 0,
