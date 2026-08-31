@@ -1,0 +1,27 @@
+name: ASX Edge Recommendation History
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/update-recommendations.py'
+      - '.github/workflows/recommendation-history.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update recommendation history
+        run: python scripts/update-recommendations.py
+      - name: Commit recommendation history
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add recommendations.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update recommendation history"
+          git push
