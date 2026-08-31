@@ -1,0 +1,38 @@
+name: ASX Edge Home Buy Tabs V2
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch-home-buy-tabs-v2.py'
+      - '.github/workflows/home-buy-tabs-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply Top Buys and Near Buy tabs
+        run: python scripts/patch-home-buy-tabs-v2.py
+      - name: Verify home tabs
+        run: |
+          python - <<'PY'
+          s=open('index.html').read()
+          for x in ['Top Buys','Near Buy','Tracking','nearBuyStocks','function buyBlockers(s)','function refreshHomeBuyTabs()','No stocks currently pass every BUY rule']:
+              assert x in s, x
+          assert 'grid-template-columns:repeat(3,1fr)' in s
+          print('Top Buys / Near Buy / Tracking verified')
+          PY
+      - name: Commit app update
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Separate Top Buys from Near Buy opportunities"
+          git pull --rebase origin main
+          git push
