@@ -2,9 +2,6 @@ name: ASX Edge Intraday Refresh
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/intraday-refresh.yml'
   schedule:
     # Covers both AEST and AEDT. The Melbourne-time gate below resolves the
     # intended 8am/10am/12pm/2pm/4pm slot and tolerates delayed GitHub starts.
@@ -17,7 +14,7 @@ permissions:
 jobs:
   intraday-refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 210
 
     steps:
       - uses: actions/checkout@v4
@@ -55,9 +52,9 @@ jobs:
           slot_key = slot.strftime("%Y-%m-%dT%H:00%z") if slot else ""
           should_run = bool(slot) and now.weekday() < 5 and health.get("lastSlotKey") != slot_key
 
-          if event in {"workflow_dispatch", "push"}:
+          if event == "workflow_dispatch":
               should_run = True
-              slot_key = ("SMOKE" if event == "push" else "MANUAL") + "-" + now.strftime("%Y-%m-%dT%H:%M%z")
+              slot_key = "MANUAL-" + now.strftime("%Y-%m-%dT%H:%M%z")
 
           print("Melbourne time:", now.isoformat())
           print("Resolved slot:", slot_key or "none")
@@ -128,6 +125,7 @@ jobs:
           dispatch_and_wait "global-asx-candidates.yml" "Global-trend ASX candidates"
           dispatch_and_wait "company-profiles.yml" "Company sector and profile enrichment"
           dispatch_and_wait "fundamental-risk.yml" "Financials, debt, dilution and balance-sheet risk"
+          dispatch_and_wait "company-evidence.yml" "ASX disclosure evidence, guidance, funding, debt and execution"
           dispatch_and_wait "deep-research.yml" "Company strategy and short-vs-long-term research"
           dispatch_and_wait "recommendation-history.yml" "Persistent recommendation tracking and learning diagnostics"
           dispatch_and_wait "14-day-study-analysis.yml" "Fourteen-day missed-opportunity analysis"
@@ -146,7 +144,7 @@ jobs:
               "lastSlotKey":os.environ.get("REFRESH_SLOT",""),
               "completedAtMelbourne":now.isoformat(),
               "status":"SUCCESS",
-              "pipeline":["asx-scan","whole-asx","global-trends","global-candidates","company-profiles","fundamentals","deep-research","recommendation-history","14-day-study-analysis"]
+              "pipeline":["asx-scan","whole-asx","global-trends","global-candidates","company-profiles","fundamentals","company-evidence","deep-research","recommendation-history","14-day-study-analysis"]
           }
           open("refresh-health.json","w",encoding="utf-8").write(json.dumps(payload,indent=2))
           PY
