@@ -14,7 +14,7 @@ permissions:
 jobs:
   intraday-refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 180
 
     steps:
       - uses: actions/checkout@v4
@@ -124,6 +124,7 @@ jobs:
           dispatch_and_wait "global-trends.yml" "World-news trend scoring"
           dispatch_and_wait "global-asx-candidates.yml" "Global-trend ASX candidates"
           dispatch_and_wait "company-profiles.yml" "Company sector and profile enrichment"
+          dispatch_and_wait "fundamental-risk.yml" "Financials, debt, dilution and balance-sheet risk"
           dispatch_and_wait "deep-research.yml" "Company strategy and short-vs-long-term research"
           dispatch_and_wait "recommendation-history.yml" "Persistent recommendation tracking and learning diagnostics"
           dispatch_and_wait "14-day-study-analysis.yml" "Fourteen-day missed-opportunity analysis"
@@ -136,7 +137,7 @@ jobs:
               "lastSlotKey":os.environ.get("REFRESH_SLOT",""),
               "completedAtMelbourne":now.isoformat(),
               "status":"SUCCESS",
-              "pipeline":["asx-scan","whole-asx","global-trends","global-candidates","company-profiles","deep-research","recommendation-history","14-day-study-analysis"]
+              "pipeline":["asx-scan","whole-asx","global-trends","global-candidates","company-profiles","fundamentals","deep-research","recommendation-history","14-day-study-analysis"]
           }
           open("refresh-health.json","w",encoding="utf-8").write(json.dumps(payload,indent=2))
           PY
