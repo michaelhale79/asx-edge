@@ -2,12 +2,14 @@ import csv
 import io
 import re
 
+import xlrd
 import whole_asx_opportunities as base
 
 ISIN_URL = "https://www.asx.com.au/content/dam/asx/issuers/ISIN.xls"
 EXCLUDE = {
     "AUD", "USD", "NZD", "GBP", "EUR", "JPY", "HKD", "CAD", "CHF",
-    "ORD", "CDI", "ETF", "ETP", "ETC", "FPO", "PREF", "NCP", "CAP"
+    "ORD", "CDI", "ETF", "ETP", "ETC", "FPO", "PREF", "NCP", "CAP",
+    "ASX", "ISIN"
 }
 
 
@@ -35,33 +37,52 @@ def load_universe_resilient():
     except Exception as e:
         print("Primary ASX universe source failed", e)
 
-    # Current official ASX ISIN directory. It is delivered with an .xls suffix
-    # but remains usable as tab-delimited text for extracting issuer codes.
-    raw = base.fetch_bytes(ISIN_URL).decode("latin-1", errors="ignore")
+    # Current official ASX ISIN directory is a real legacy Excel workbook.
+    raw = base.fetch_bytes(ISIN_URL)
+    book = xlrd.open_workbook(file_contents=raw)
     found = []
     seen = set()
-    for line in raw.splitlines():
-        if "\t" not in line:
-            continue
-        fields = [x.strip() for x in line.split("\t")]
-        if not any(re.fullmatch(r"AU[A-Z0-9]{10}", x.upper()) for x in fields):
-            continue
-        candidates = []
-        for field in fields:
-            token = field.upper().strip()
-            if re.fullmatch(r"[A-Z0-9]{3}", token) and token not in EXCLUDE:
-                candidates.append(token)
-        if not candidates:
-            continue
-        code = candidates[0]
-        if code in seen:
-            continue
-        seen.add(code)
-        name = next((x for x in fields if len(x) > 5 and not re.fullmatch(r"AU[A-Z0-9]{10}", x.upper())), code)
-        found.append({"ticker": code, "name": name})
+
+    for sheet in book.sheets():
+        for r in range(sheet.nrows):
+            fields = []
+            for c in range(sheet.ncols):
+                value = sheet.cell_value(r, c)
+                text = str(value).strip()
+                if text.endswith(".0") and text[:-2].isdigit():
+                    text = text[:-2]
+                fields.append(text)
+
+            upper = [x.upper() for x in fields if x]
+            if not any(re.fullmatch(r"AU[A-Z0-9]{10}", x) for x in upper):
+                continue
+
+            candidates = [
+                x for x in upper
+                if re.fullmatch(r"[A-Z0-9]{3}", x) and x not in EXCLUDE
+            ]
+            if not candidates:
+                continue
+
+            code = candidates[0]
+            if code in seen:
+                continue
+
+            seen.add(code)
+            name = next(
+                (
+                    x for x in fields
+                    if len(x) > 5
+                    and not re.fullmatch(r"AU[A-Z0-9]{10}", x.upper())
+                    and x.upper() != code
+                ),
+                code,
+            )
+            found.append({"ticker": code, "name": name})
 
     if len(found) < 1000:
         raise RuntimeError(f"ASX ISIN universe unexpectedly small: {len(found)}")
+
     print("Universe source: ASX ISIN directory", len(found))
     return found
 
