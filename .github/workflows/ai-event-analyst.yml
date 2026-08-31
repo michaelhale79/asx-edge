@@ -2,6 +2,10 @@ name: ASX Edge AI Event Analyst
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/ai_event_analyst.py'
+      - '.github/workflows/ai-event-analyst.yml'
   schedule:
     - cron: "20 0-6,21-23 * * 1-5"
 
