@@ -84,7 +84,12 @@
       "shortInterestPct": 0.92,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 66
     },
     {
       "ticker": "BXB",
@@ -210,13 +215,18 @@
       "shortInterestPct": 0.72,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 66
     },
     {
       "ticker": "XRO",
       "name": "XRO",
       "price": 85.64,
-      "opp": 58,
+      "opp": 56,
       "edge": "INFLECTING",
       "quality": 36,
       "valuation": 50,
@@ -280,7 +290,36 @@
       "shortInterestPct": 5.06,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": -21,
+          "direction": "NEGATIVE",
+          "weight": 0.3,
+          "headlines": [
+            {
+              "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jackson Hole speech - PBS",
+              "source": "PBS",
+              "signal": -2
+            },
+            {
+              "title": "Fed Chair Warsh signals rate hikes may be needed with inflation still elevated - ABC News - Breaking News, Latest News and Videos",
+              "source": "ABC News - Breaking News, Latest News and Videos",
+              "signal": -2
+            },
+            {
+              "title": "More U.S. rate hikes possible with inflation still elevated, Federal Reserve chair Kevin Warsh says - CBC",
+              "source": "CBC",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 58,
+      "globalTrendScore": -21,
+      "globalTrendAdjustment": -2,
+      "globalTrendSignal": "BEARISH"
     },
     {
       "ticker": "TWE",
@@ -325,13 +364,18 @@
       "shortInterestPct": 11.96,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "DTL",
       "name": "DTL",
       "price": 11.16,
-      "opp": 62,
+      "opp": 64,
       "edge": "INFLECTING",
       "quality": 53,
       "valuation": 50,
@@ -390,13 +434,42 @@
       "shortInterestPct": 2.56,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 24,
+          "direction": "POSITIVE",
+          "weight": 0.65,
+          "headlines": [
+            {
+              "title": "Marvell: Data Center Revenue Growth Accelerates To 46% As AI Demand Drives Record $2.74 Billion Quarter - Pulse 2.0",
+              "source": "Pulse 2.0",
+              "signal": 4
+            },
+            {
+              "title": "Can NEXTDC (ASX:NXT) Turn AI Demand Into Lasting Growth? - Kalkine Media",
+              "source": "Kalkine Media",
+              "signal": 2
+            },
+            {
+              "title": "AI Data Center Boom Fuels Surge in Traditional Heavy Industries - \uc870\uc120\uc77c\ubcf4",
+              "source": "\uc870\uc120\uc77c\ubcf4",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 62,
+      "globalTrendScore": 24,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "S32",
       "name": "S32",
       "price": 5.25,
-      "opp": 61,
+      "opp": 63,
       "edge": "INFLECTING",
       "quality": 42,
       "valuation": 50,
@@ -491,13 +564,42 @@
       "shortInterestPct": 1.03,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 19,
+          "direction": "POSITIVE",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Rob McEwen Sees New Mining Cycle as Gold, Copper Demand Rise - Streetwise Reports",
+              "source": "Streetwise Reports",
+              "signal": 2
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 61,
+      "globalTrendScore": 19,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "BHP",
       "name": "BHP",
       "price": 67.3,
-      "opp": 60,
+      "opp": 61,
       "edge": "INFLECTING",
       "quality": 55,
       "valuation": 50,
@@ -567,13 +669,65 @@
       "shortInterestPct": 1.25,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 19,
+          "direction": "POSITIVE",
+          "weight": 0.6,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Rob McEwen Sees New Mining Cycle as Gold, Copper Demand Rise - Streetwise Reports",
+              "source": "Streetwise Reports",
+              "signal": 2
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 6,
+          "direction": "NEUTRAL",
+          "weight": 0.7,
+          "headlines": [
+            {
+              "title": "\u3010Feng Hsin Steel FY2026 Q2 Earnings Call\u3011Wire Rod Spread Hits Two-Year High, Net Profit Jumps 61% QoQ, Rebar Share Falls Below 50% - finance.biggo.com",
+              "source": "finance.biggo.com",
+              "signal": -2
+            },
+            {
+              "title": "China's planner accelerates infrastructure and private investment push - investingLive",
+              "source": "investingLive",
+              "signal": 1
+            },
+            {
+              "title": "Steel demand outruns capacity as prices stage comeback from monsoon slump: Kotak - ET Infra",
+              "source": "ET Infra",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 60,
+      "globalTrendScore": 12,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "MIN",
       "name": "MIN",
       "price": 65.46,
-      "opp": 60,
+      "opp": 61,
       "edge": "INFLECTING",
       "quality": 33,
       "valuation": 50,
@@ -642,7 +796,59 @@
       "shortInterestPct": 4.16,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "Conducting Carbon Black Additive Market to Reach 1.9M Tonnes by 2035 on EV Battery Demand - IndexBox",
+              "source": "IndexBox",
+              "signal": 2
+            },
+            {
+              "title": "Lithium price: BMI raises forecast, warns rally has outrun fundamentals - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "H1 2026 Profit Recovery: CATL, EVE Energy, CALB, Gotion, Great Power, REPT, Desay - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 6,
+          "direction": "NEUTRAL",
+          "weight": 0.55,
+          "headlines": [
+            {
+              "title": "\u3010Feng Hsin Steel FY2026 Q2 Earnings Call\u3011Wire Rod Spread Hits Two-Year High, Net Profit Jumps 61% QoQ, Rebar Share Falls Below 50% - finance.biggo.com",
+              "source": "finance.biggo.com",
+              "signal": -2
+            },
+            {
+              "title": "China's planner accelerates infrastructure and private investment push - investingLive",
+              "source": "investingLive",
+              "signal": 1
+            },
+            {
+              "title": "Steel demand outruns capacity as prices stage comeback from monsoon slump: Kotak - ET Infra",
+              "source": "ET Infra",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 60,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "DMP",
@@ -722,7 +928,12 @@
       "shortInterestPct": 12.33,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 48
     },
     {
       "ticker": "JHX",
@@ -843,13 +1054,18 @@
       "shortInterestPct": 3.54,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "CAR",
       "name": "CAR",
       "price": 27.57,
-      "opp": 47,
+      "opp": 45,
       "edge": "INFLECTING",
       "quality": 48,
       "valuation": 50,
@@ -933,7 +1149,36 @@
       "shortInterestPct": 12.03,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": -21,
+          "direction": "NEGATIVE",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jackson Hole speech - PBS",
+              "source": "PBS",
+              "signal": -2
+            },
+            {
+              "title": "Fed Chair Warsh signals rate hikes may be needed with inflation still elevated - ABC News - Breaking News, Latest News and Videos",
+              "source": "ABC News - Breaking News, Latest News and Videos",
+              "signal": -2
+            },
+            {
+              "title": "More U.S. rate hikes possible with inflation still elevated, Federal Reserve chair Kevin Warsh says - CBC",
+              "source": "CBC",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 47,
+      "globalTrendScore": -21,
+      "globalTrendAdjustment": -2,
+      "globalTrendSignal": "BEARISH"
     },
     {
       "ticker": "APA",
@@ -1008,7 +1253,12 @@
       "shortInterestPct": 1.55,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "PME",
@@ -1064,13 +1314,18 @@
       "shortInterestPct": 4.42,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "RIO",
       "name": "RIO",
       "price": 178.04,
-      "opp": 50,
+      "opp": 51,
       "edge": "INFLECTING",
       "quality": 53,
       "valuation": 50,
@@ -1103,13 +1358,65 @@
       "shortInterestPct": 9.74,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 19,
+          "direction": "POSITIVE",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Rob McEwen Sees New Mining Cycle as Gold, Copper Demand Rise - Streetwise Reports",
+              "source": "Streetwise Reports",
+              "signal": 2
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 6,
+          "direction": "NEUTRAL",
+          "weight": 0.85,
+          "headlines": [
+            {
+              "title": "\u3010Feng Hsin Steel FY2026 Q2 Earnings Call\u3011Wire Rod Spread Hits Two-Year High, Net Profit Jumps 61% QoQ, Rebar Share Falls Below 50% - finance.biggo.com",
+              "source": "finance.biggo.com",
+              "signal": -2
+            },
+            {
+              "title": "China's planner accelerates infrastructure and private investment push - investingLive",
+              "source": "investingLive",
+              "signal": 1
+            },
+            {
+              "title": "Steel demand outruns capacity as prices stage comeback from monsoon slump: Kotak - ET Infra",
+              "source": "ET Infra",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 50,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "REA",
       "name": "REA",
       "price": 176.32,
-      "opp": 58,
+      "opp": 56,
       "edge": "INFLECTING",
       "quality": 49,
       "valuation": 50,
@@ -1154,7 +1461,36 @@
       "shortInterestPct": 4.0,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": -21,
+          "direction": "NEGATIVE",
+          "weight": 0.35,
+          "headlines": [
+            {
+              "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jackson Hole speech - PBS",
+              "source": "PBS",
+              "signal": -2
+            },
+            {
+              "title": "Fed Chair Warsh signals rate hikes may be needed with inflation still elevated - ABC News - Breaking News, Latest News and Videos",
+              "source": "ABC News - Breaking News, Latest News and Videos",
+              "signal": -2
+            },
+            {
+              "title": "More U.S. rate hikes possible with inflation still elevated, Federal Reserve chair Kevin Warsh says - CBC",
+              "source": "CBC",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 58,
+      "globalTrendScore": -21,
+      "globalTrendAdjustment": -2,
+      "globalTrendSignal": "BEARISH"
     },
     {
       "ticker": "ALD",
@@ -1225,7 +1561,12 @@
       "shortInterestPct": 1.78,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "ORG",
@@ -1290,7 +1631,36 @@
       "shortInterestPct": 1.25,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 3,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Iran\u2019s NISOC crude production capacity rises by 120 kbpd: NISOC CEO - IranOilGas",
+              "source": "IranOilGas",
+              "signal": 2
+            },
+            {
+              "title": "Oil prices rise to $90.55 a barrel as geopolitical tensions persist - eciks.org",
+              "source": "eciks.org",
+              "signal": 1
+            },
+            {
+              "title": "U.S. Oil Rig Count Falls by 5 as Gas Rigs Rise - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 58,
+      "globalTrendScore": 3,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "SUN",
@@ -1355,13 +1725,18 @@
       "shortInterestPct": 1.34,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "GOLD",
       "name": "GOLD",
       "price": 58.3,
-      "opp": 58,
+      "opp": 59,
       "edge": "INFLECTING",
       "quality": 65,
       "valuation": 50,
@@ -1394,7 +1769,36 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Gold Weekly Forecast: Bulls Take a Breather Following Three-Week Rally - CryptoRank",
+              "source": "CryptoRank",
+              "signal": 1
+            },
+            {
+              "title": "Gold Weekly Forecast: Bulls Take a Breather Following Three-Week Rally - CryptoRank",
+              "source": "CryptoRank",
+              "signal": 1
+            },
+            {
+              "title": "Gold Rally: Should Investors Buy Now? - Rediff",
+              "source": "Rediff",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 58,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "CSL",
@@ -1490,7 +1894,12 @@
       "shortInterestPct": 1.59,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "RMD",
@@ -1540,7 +1949,12 @@
       "shortInterestPct": 0.49,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "STO",
@@ -1600,7 +2014,36 @@
       "shortInterestPct": 0.36,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 3,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Iran\u2019s NISOC crude production capacity rises by 120 kbpd: NISOC CEO - IranOilGas",
+              "source": "IranOilGas",
+              "signal": 2
+            },
+            {
+              "title": "Oil prices rise to $90.55 a barrel as geopolitical tensions persist - eciks.org",
+              "source": "eciks.org",
+              "signal": 1
+            },
+            {
+              "title": "U.S. Oil Rig Count Falls by 5 as Gas Rigs Rise - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 59,
+      "globalTrendScore": 3,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "COL",
@@ -1675,7 +2118,12 @@
       "shortInterestPct": 1.03,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "AMC",
@@ -1720,7 +2168,12 @@
       "shortInterestPct": 1.14,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "ETPMAG",
@@ -1765,7 +2218,12 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "MQG",
@@ -1880,7 +2338,12 @@
       "shortInterestPct": 0.39,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "WOW",
@@ -1961,7 +2424,12 @@
       "shortInterestPct": 1.11,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "CPU",
@@ -2000,7 +2468,12 @@
       "shortInterestPct": 0.54,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "ASX",
@@ -2085,13 +2558,18 @@
       "shortInterestPct": 5.38,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "NXT",
       "name": "NXT",
       "price": 13.87,
-      "opp": 52,
+      "opp": 53,
       "edge": "INFLECTING",
       "quality": 42,
       "valuation": 50,
@@ -2155,13 +2633,65 @@
       "shortInterestPct": 7.68,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 24,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Marvell: Data Center Revenue Growth Accelerates To 46% As AI Demand Drives Record $2.74 Billion Quarter - Pulse 2.0",
+              "source": "Pulse 2.0",
+              "signal": 4
+            },
+            {
+              "title": "Can NEXTDC (ASX:NXT) Turn AI Demand Into Lasting Growth? - Kalkine Media",
+              "source": "Kalkine Media",
+              "signal": 2
+            },
+            {
+              "title": "AI Data Center Boom Fuels Surge in Traditional Heavy Industries - \uc870\uc120\uc77c\ubcf4",
+              "source": "\uc870\uc120\uc77c\ubcf4",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": -21,
+          "direction": "NEGATIVE",
+          "weight": 0.45,
+          "headlines": [
+            {
+              "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jackson Hole speech - PBS",
+              "source": "PBS",
+              "signal": -2
+            },
+            {
+              "title": "Fed Chair Warsh signals rate hikes may be needed with inflation still elevated - ABC News - Breaking News, Latest News and Videos",
+              "source": "ABC News - Breaking News, Latest News and Videos",
+              "signal": -2
+            },
+            {
+              "title": "More U.S. rate hikes possible with inflation still elevated, Federal Reserve chair Kevin Warsh says - CBC",
+              "source": "CBC",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "PLS",
       "name": "PLS",
       "price": 5.36,
-      "opp": 48,
+      "opp": 49,
       "edge": "INFLECTING",
       "quality": 13,
       "valuation": 50,
@@ -2225,7 +2755,36 @@
       "shortInterestPct": 11.22,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Conducting Carbon Black Additive Market to Reach 1.9M Tonnes by 2035 on EV Battery Demand - IndexBox",
+              "source": "IndexBox",
+              "signal": 2
+            },
+            {
+              "title": "Lithium price: BMI raises forecast, warns rally has outrun fundamentals - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "H1 2026 Profit Recovery: CATL, EVE Energy, CALB, Gotion, Great Power, REPT, Desay - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 48,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "ANZ",
@@ -2280,7 +2839,12 @@
       "shortInterestPct": 0.96,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "NEC",
@@ -2371,7 +2935,12 @@
       "shortInterestPct": 2.52,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "AIA",
@@ -2426,7 +2995,12 @@
       "shortInterestPct": 1.02,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "MPL",
@@ -2497,13 +3071,18 @@
       "shortInterestPct": 2.98,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "LYC",
       "name": "LYC",
       "price": 16.26,
-      "opp": 45,
+      "opp": 46,
       "edge": "WATCH",
       "quality": 33,
       "valuation": 50,
@@ -2557,7 +3136,36 @@
       "shortInterestPct": 10.29,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "RARE EARTHS",
+          "score": 16,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Brazilian Rare Earths (ASX:BRE) Advances Rocha da Rocha Project as Critical Minerals Demand Grows - Kalkine",
+              "source": "Kalkine",
+              "signal": 2
+            },
+            {
+              "title": "Lynas Rare Earths (ASX:LYC) Advances Global Rare Earth Strategy as Critical Minerals Demand Strengthens - Kalkine",
+              "source": "Kalkine",
+              "signal": 2
+            },
+            {
+              "title": "Is There an Inelastic Demand for Rare Earths? - InvestorNews",
+              "source": "InvestorNews",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 45,
+      "globalTrendScore": 16,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "WOR",
@@ -2663,7 +3271,12 @@
       "shortInterestPct": 1.79,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "WDS",
@@ -2723,7 +3336,36 @@
       "shortInterestPct": 3.32,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 3,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Iran\u2019s NISOC crude production capacity rises by 120 kbpd: NISOC CEO - IranOilGas",
+              "source": "IranOilGas",
+              "signal": 2
+            },
+            {
+              "title": "Oil prices rise to $90.55 a barrel as geopolitical tensions persist - eciks.org",
+              "source": "eciks.org",
+              "signal": 1
+            },
+            {
+              "title": "U.S. Oil Rig Count Falls by 5 as Gas Rigs Rise - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": 3,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "SEK",
@@ -2788,7 +3430,12 @@
       "shortInterestPct": 1.81,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "SHL",
@@ -2858,13 +3505,18 @@
       "shortInterestPct": 7.95,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 48
     },
     {
       "ticker": "LTR",
       "name": "LTR",
       "price": 1.195,
-      "opp": 52,
+      "opp": 53,
       "edge": "INFLECTING",
       "quality": 0,
       "valuation": 50,
@@ -2909,7 +3561,36 @@
       "shortInterestPct": 4.18,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Conducting Carbon Black Additive Market to Reach 1.9M Tonnes by 2035 on EV Battery Demand - IndexBox",
+              "source": "IndexBox",
+              "signal": 2
+            },
+            {
+              "title": "Lithium price: BMI raises forecast, warns rally has outrun fundamentals - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "H1 2026 Profit Recovery: CATL, EVE Energy, CALB, Gotion, Great Power, REPT, Desay - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "FMG",
@@ -3009,7 +3690,36 @@
       "shortInterestPct": 3.05,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 6,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "\u3010Feng Hsin Steel FY2026 Q2 Earnings Call\u3011Wire Rod Spread Hits Two-Year High, Net Profit Jumps 61% QoQ, Rebar Share Falls Below 50% - finance.biggo.com",
+              "source": "finance.biggo.com",
+              "signal": -2
+            },
+            {
+              "title": "China's planner accelerates infrastructure and private investment push - investingLive",
+              "source": "investingLive",
+              "signal": 1
+            },
+            {
+              "title": "Steel demand outruns capacity as prices stage comeback from monsoon slump: Kotak - ET Infra",
+              "source": "ET Infra",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 50,
+      "globalTrendScore": 6,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "CBA",
@@ -3115,7 +3825,12 @@
       "shortInterestPct": 2.08,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 49
     },
     {
       "ticker": "NAB",
@@ -3170,7 +3885,12 @@
       "shortInterestPct": 1.31,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 49
     },
     {
       "ticker": "IAG",
@@ -3220,7 +3940,12 @@
       "shortInterestPct": 1.02,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 49
     },
     {
       "ticker": "ZIP",
@@ -3311,7 +4036,12 @@
       "shortInterestPct": 10.61,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 41
     },
     {
       "ticker": "TCL",
@@ -3372,7 +4102,12 @@
       "shortInterestPct": 1.45,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 48
     },
     {
       "ticker": "GMG",
@@ -3472,7 +4207,12 @@
       "shortInterestPct": 1.5,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "TLS",
@@ -3537,7 +4277,12 @@
       "shortInterestPct": 1.23,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "WES",
@@ -3617,13 +4362,18 @@
       "shortInterestPct": 1.34,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 46
     },
     {
       "ticker": "MP1",
       "name": "MP1",
       "price": 16.86,
-      "opp": 46,
+      "opp": 47,
       "edge": "WATCH",
       "quality": 23,
       "valuation": 50,
@@ -3698,7 +4448,59 @@
       "shortInterestPct": 2.53,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 24,
+          "direction": "POSITIVE",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "Marvell: Data Center Revenue Growth Accelerates To 46% As AI Demand Drives Record $2.74 Billion Quarter - Pulse 2.0",
+              "source": "Pulse 2.0",
+              "signal": 4
+            },
+            {
+              "title": "Can NEXTDC (ASX:NXT) Turn AI Demand Into Lasting Growth? - Kalkine Media",
+              "source": "Kalkine Media",
+              "signal": 2
+            },
+            {
+              "title": "AI Data Center Boom Fuels Surge in Traditional Heavy Industries - \uc870\uc120\uc77c\ubcf4",
+              "source": "\uc870\uc120\uc77c\ubcf4",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": -21,
+          "direction": "NEGATIVE",
+          "weight": 0.25,
+          "headlines": [
+            {
+              "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jackson Hole speech - PBS",
+              "source": "PBS",
+              "signal": -2
+            },
+            {
+              "title": "Fed Chair Warsh signals rate hikes may be needed with inflation still elevated - ABC News - Breaking News, Latest News and Videos",
+              "source": "ABC News - Breaking News, Latest News and Videos",
+              "signal": -2
+            },
+            {
+              "title": "More U.S. rate hikes possible with inflation still elevated, Federal Reserve chair Kevin Warsh says - CBC",
+              "source": "CBC",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 46,
+      "globalTrendScore": 13,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "QBE",
@@ -3758,7 +4560,12 @@
       "shortInterestPct": 0.19,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "BRN",
@@ -3803,7 +4610,12 @@
       "shortInterestPct": 1.79,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 45
     },
     {
       "ticker": "WBC",
@@ -3848,13 +4660,18 @@
       "shortInterestPct": 1.95,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 43
     },
     {
       "ticker": "DRO",
       "name": "DRO",
       "price": 1.75,
-      "opp": 29,
+      "opp": 30,
       "edge": "INFLECTING",
       "quality": 1,
       "valuation": 50,
@@ -3918,13 +4735,65 @@
       "shortInterestPct": 14.35,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "DEFENCE",
+          "score": 14,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "DroneShield Unveils RfRecon as Global Counter-Drone Demand Builds \u2014 Could Defence Spending Power the Next Leg? - Kalkine",
+              "source": "Kalkine",
+              "signal": 2
+            },
+            {
+              "title": "Counter-Drone Defense Project Secures Funding Boost - Mirage News",
+              "source": "Mirage News",
+              "signal": 1
+            },
+            {
+              "title": "EU opens innovation funding to military tech, raising civilian harm concerns - The New Humanitarian",
+              "source": "The New Humanitarian",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 24,
+          "direction": "POSITIVE",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "Marvell: Data Center Revenue Growth Accelerates To 46% As AI Demand Drives Record $2.74 Billion Quarter - Pulse 2.0",
+              "source": "Pulse 2.0",
+              "signal": 4
+            },
+            {
+              "title": "Can NEXTDC (ASX:NXT) Turn AI Demand Into Lasting Growth? - Kalkine Media",
+              "source": "Kalkine Media",
+              "signal": 2
+            },
+            {
+              "title": "AI Data Center Boom Fuels Surge in Traditional Heavy Industries - \uc870\uc120\uc77c\ubcf4",
+              "source": "\uc870\uc120\uc77c\ubcf4",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 29,
+      "globalTrendScore": 16,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "WBT",
       "name": "WBT",
       "price": 3.75,
-      "opp": 36,
+      "opp": 38,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 50,
@@ -3974,11 +4843,364 @@
       "shortInterestPct": 1.61,
       "shortInterestDate": "2026-08-25",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 24,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Marvell: Data Center Revenue Growth Accelerates To 46% As AI Demand Drives Record $2.74 Billion Quarter - Pulse 2.0",
+              "source": "Pulse 2.0",
+              "signal": 4
+            },
+            {
+              "title": "Can NEXTDC (ASX:NXT) Turn AI Demand Into Lasting Growth? - Kalkine Media",
+              "source": "Kalkine Media",
+              "signal": 2
+            },
+            {
+              "title": "AI Data Center Boom Fuels Surge in Traditional Heavy Industries - \uc870\uc120\uc77c\ubcf4",
+              "source": "\uc870\uc120\uc77c\ubcf4",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 36,
+      "globalTrendScore": 24,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     }
   ],
   "shortInterestSource": "ASIC daily aggregated short positions",
   "shortInterestReportDate": "2026-08-25",
   "shortInterestReportUrl": "https://download.asic.gov.au/short-selling/RR20260825-001-SSDailyAggShortPos.pdf",
-  "shortInterestMatched": 54
+  "shortInterestMatched": 54,
+  "globalTrendUpdated": "2026-08-31T04:36:28.949807+00:00",
+  "globalTrendSource": "Google News RSS world-news headlines, weighted toward major news sources",
+  "globalTrendThemes": [
+    {
+      "name": "AI / DATA CENTRES",
+      "score": 24,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Marvell: Data Center Revenue Growth Accelerates To 46% As AI Demand Drives Record $2.74 Billion Quarter - Pulse 2.0",
+          "source": "Pulse 2.0",
+          "signal": 4
+        },
+        {
+          "title": "Can NEXTDC (ASX:NXT) Turn AI Demand Into Lasting Growth? - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": 2
+        },
+        {
+          "title": "AI Data Center Boom Fuels Surge in Traditional Heavy Industries - \uc870\uc120\uc77c\ubcf4",
+          "source": "\uc870\uc120\uc77c\ubcf4",
+          "signal": 2
+        },
+        {
+          "title": "AI Infrastructure Stocks Riding Data Center Demand Beyond Nvidia - simplywall.st",
+          "source": "simplywall.st",
+          "signal": 1
+        },
+        {
+          "title": "Platz 2 weltweit? Das falsche Ma\u00df der Dinge: Warum Deutschlands riesige Rechenzentren f\u00fcr den KI-Boom trotzdem nicht ausreichen - Xpert.Digital - Konrad Wolfenstein",
+          "source": "Xpert.Digital - Konrad Wolfenstein",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "DEFENCE",
+      "score": 14,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "DroneShield Unveils RfRecon as Global Counter-Drone Demand Builds \u2014 Could Defence Spending Power the Next Leg? - Kalkine",
+          "source": "Kalkine",
+          "signal": 2
+        },
+        {
+          "title": "Counter-Drone Defense Project Secures Funding Boost - Mirage News",
+          "source": "Mirage News",
+          "signal": 1
+        },
+        {
+          "title": "EU opens innovation funding to military tech, raising civilian harm concerns - The New Humanitarian",
+          "source": "The New Humanitarian",
+          "signal": 1
+        },
+        {
+          "title": "UK weapons manufacturing jobs rise 51% as defence spending increases | National Security News - National Security News",
+          "source": "National Security News",
+          "signal": 1
+        },
+        {
+          "title": "Europe moves to connect the drones, satellites and ships watching its maritime borders - Escudo Digital",
+          "source": "Escudo Digital",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "GOLD",
+      "score": 7,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Gold Weekly Forecast: Bulls Take a Breather Following Three-Week Rally - CryptoRank",
+          "source": "CryptoRank",
+          "signal": 1
+        },
+        {
+          "title": "Gold Weekly Forecast: Bulls Take a Breather Following Three-Week Rally - CryptoRank",
+          "source": "CryptoRank",
+          "signal": 1
+        },
+        {
+          "title": "Gold Rally: Should Investors Buy Now? - Rediff",
+          "source": "Rediff",
+          "signal": 1
+        },
+        {
+          "title": "Gold Mining Stocks Rally 43%, Beating Chip Stocks\u2019 Best 2026 Month - CryptoRank",
+          "source": "CryptoRank",
+          "signal": 1
+        },
+        {
+          "title": "CZ Says Bitcoin Could Overtake Gold, But India\u2019s Gold Rally Tests His Bet - CryptoRank",
+          "source": "CryptoRank",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "OIL / ENERGY",
+      "score": 3,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Iran\u2019s NISOC crude production capacity rises by 120 kbpd: NISOC CEO - IranOilGas",
+          "source": "IranOilGas",
+          "signal": 2
+        },
+        {
+          "title": "Oil prices rise to $90.55 a barrel as geopolitical tensions persist - eciks.org",
+          "source": "eciks.org",
+          "signal": 1
+        },
+        {
+          "title": "U.S. Oil Rig Count Falls by 5 as Gas Rigs Rise - Crude Oil Prices Today | OilPrice.com",
+          "source": "Crude Oil Prices Today | OilPrice.com",
+          "signal": -1
+        },
+        {
+          "title": "'Soap Cocktails' Help U.S. Shale Boost Oil Production - Crude Oil Prices Today | OilPrice.com",
+          "source": "Crude Oil Prices Today | OilPrice.com",
+          "signal": 0
+        },
+        {
+          "title": "Crude Calculations: Why the Iran War Hasn\u2019t Yet Caused an Oil Shock - Council on Foreign Relations",
+          "source": "Council on Foreign Relations",
+          "signal": 0
+        }
+      ]
+    },
+    {
+      "name": "URANIUM",
+      "score": 12,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Nuclear Energy Stocks Backed By Uranium And Reactor Services - simplywall.st",
+          "source": "simplywall.st",
+          "signal": 1
+        },
+        {
+          "title": "Uranium Prices Surge as Nuclear Demand Accelerates - Crude Oil Prices Today | OilPrice.com",
+          "source": "Crude Oil Prices Today | OilPrice.com",
+          "signal": 1
+        },
+        {
+          "title": "Uranium contracting gap widens as utilities face supply crunch - Mining.com.au",
+          "source": "Mining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "Cameco (TSX:CCO) Stock Rises 3.96% as Uranium Prices, Nuclear Power Demand and Westinghouse IPO Plans Drive Investor Attention - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": 1
+        },
+        {
+          "title": "Ur-Energy Inc. (TSX:URE) Gains Momentum as Uranium Production Growth and Nuclear Energy Demand Support Investor Optimism - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "COPPER",
+      "score": 19,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+          "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+          "signal": 2
+        },
+        {
+          "title": "Rob McEwen Sees New Mining Cycle as Gold, Copper Demand Rise - Streetwise Reports",
+          "source": "Streetwise Reports",
+          "signal": 2
+        },
+        {
+          "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+          "source": "U.S. Department of War (.gov)",
+          "signal": 1
+        },
+        {
+          "title": "Freeport Stock And 2 Copper Miners Built For Higher Bond Yields - simplywall.st",
+          "source": "simplywall.st",
+          "signal": 1
+        },
+        {
+          "title": "Copper Edges Lower as Dollar Strengthens - TradingView",
+          "source": "TradingView",
+          "signal": -1
+        }
+      ]
+    },
+    {
+      "name": "LITHIUM",
+      "score": 9,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Conducting Carbon Black Additive Market to Reach 1.9M Tonnes by 2035 on EV Battery Demand - IndexBox",
+          "source": "IndexBox",
+          "signal": 2
+        },
+        {
+          "title": "Lithium price: BMI raises forecast, warns rally has outrun fundamentals - Mining.com",
+          "source": "Mining.com",
+          "signal": 1
+        },
+        {
+          "title": "H1 2026 Profit Recovery: CATL, EVE Energy, CALB, Gotion, Great Power, REPT, Desay - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        },
+        {
+          "title": "Nano One Advances Global LFP Cathode Strategy as Demand from Energy Storage, EV and Defence Applications Accelerates - Business Wire",
+          "source": "Business Wire",
+          "signal": 1
+        },
+        {
+          "title": "This American Battery Could Break China\u2019s Grip On The EV Supply Chain - InsideEVs",
+          "source": "InsideEVs",
+          "signal": 0
+        }
+      ]
+    },
+    {
+      "name": "CHINA / IRON ORE",
+      "score": 6,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "\u3010Feng Hsin Steel FY2026 Q2 Earnings Call\u3011Wire Rod Spread Hits Two-Year High, Net Profit Jumps 61% QoQ, Rebar Share Falls Below 50% - finance.biggo.com",
+          "source": "finance.biggo.com",
+          "signal": -2
+        },
+        {
+          "title": "China's planner accelerates infrastructure and private investment push - investingLive",
+          "source": "investingLive",
+          "signal": 1
+        },
+        {
+          "title": "Steel demand outruns capacity as prices stage comeback from monsoon slump: Kotak - ET Infra",
+          "source": "ET Infra",
+          "signal": 1
+        },
+        {
+          "title": "Can BHP (ASX:BHP) Rally Further on Record High? - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": 1
+        },
+        {
+          "title": "Indian Metal Sector Turns a Corner as Demand Signals Improve - Whalesbook",
+          "source": "Whalesbook",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RARE EARTHS",
+      "score": 16,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Brazilian Rare Earths (ASX:BRE) Advances Rocha da Rocha Project as Critical Minerals Demand Grows - Kalkine",
+          "source": "Kalkine",
+          "signal": 2
+        },
+        {
+          "title": "Lynas Rare Earths (ASX:LYC) Advances Global Rare Earth Strategy as Critical Minerals Demand Strengthens - Kalkine",
+          "source": "Kalkine",
+          "signal": 2
+        },
+        {
+          "title": "Is There an Inelastic Demand for Rare Earths? - InvestorNews",
+          "source": "InvestorNews",
+          "signal": 1
+        },
+        {
+          "title": "NT's logistics edge puts critical minerals on the fast track - The Cairns Post",
+          "source": "The Cairns Post",
+          "signal": 1
+        },
+        {
+          "title": "Australia: A critical minerals cornerstone - Metal Tech News",
+          "source": "Metal Tech News",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RATE EASING",
+      "score": -21,
+      "direction": "NEGATIVE",
+      "headlines": [
+        {
+          "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jackson Hole speech - PBS",
+          "source": "PBS",
+          "signal": -2
+        },
+        {
+          "title": "Fed Chair Warsh signals rate hikes may be needed with inflation still elevated - ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "signal": -2
+        },
+        {
+          "title": "More U.S. rate hikes possible with inflation still elevated, Federal Reserve chair Kevin Warsh says - CBC",
+          "source": "CBC",
+          "signal": -2
+        },
+        {
+          "title": "Rate Hikes Strain Public Finances, Cuts Risk Inflation as Central Banks Face Dilemma - bloomingbit",
+          "source": "bloomingbit",
+          "signal": -2
+        },
+        {
+          "title": "Warsh Sounds Hawkish, but Will There Be a September Rate Hike? - Morningstar",
+          "source": "Morningstar",
+          "signal": -2
+        }
+      ]
+    }
+  ]
 }
