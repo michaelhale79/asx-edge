@@ -1,0 +1,99 @@
+name: ASX Edge Intraday Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Covers both AEST and AEDT. The Melbourne-time gate below decides whether
+    # this UTC trigger is one of the requested 8am/10am/12pm/2pm/4pm slots.
+    - cron: "0 21-7 * * *"
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  intraday-refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Check Melbourne refresh slot
+        id: melbourne
+        shell: python
+        run: |
+          import datetime
+          from zoneinfo import ZoneInfo
+          import os
+
+          now = datetime.datetime.now(ZoneInfo("Australia/Melbourne"))
+          valid_hours = {8, 10, 12, 14, 16}
+          should_run = now.weekday() < 5 and now.hour in valid_hours
+
+          # A manual workflow_dispatch always runs, which is useful for testing.
+          if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
+              should_run = True
+
+          print("Melbourne time:", now.isoformat())
+          print("Refresh slot:", should_run)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"run={'true' if should_run else 'false'}\n")
+
+      - name: Refresh ASX Edge market and news pipeline
+        if: steps.melbourne.outputs.run == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          dispatch_and_wait() {
+            workflow="$1"
+            label="$2"
+
+            echo "Starting $label ($workflow)"
+            previous="$(gh run list --workflow "$workflow" --event workflow_dispatch --limit 1 --json databaseId --jq '.[0].databaseId // 0')"
+            gh workflow run "$workflow" --ref main
+
+            run_id=""
+            for _ in $(seq 1 30); do
+              sleep 5
+              latest="$(gh run list --workflow "$workflow" --event workflow_dispatch --limit 1 --json databaseId,status,conclusion --jq '.[0] // {}')"
+              candidate="$(printf '%s' "$latest" | jq -r '.databaseId // 0')"
+              if [ "$candidate" != "0" ] && [ "$candidate" != "$previous" ]; then
+                run_id="$candidate"
+                break
+              fi
+            done
+
+            if [ -z "$run_id" ]; then
+              echo "Could not locate new run for $workflow"
+              return 1
+            fi
+
+            echo "$label run id: $run_id"
+            for _ in $(seq 1 180); do
+              state="$(gh run view "$run_id" --json status,conclusion --jq '.status + "|" + (.conclusion // "")')"
+              status="${state%%|*}"
+              conclusion="${state#*|}"
+              if [ "$status" = "completed" ]; then
+                if [ "$conclusion" != "success" ]; then
+                  echo "$label finished with $conclusion"
+                  gh run view "$run_id" --log-failed || true
+                  return 1
+                fi
+                echo "$label completed successfully"
+                return 0
+              fi
+              sleep 10
+            done
+
+            echo "$label timed out while waiting"
+            return 1
+          }
+
+          # Run sequentially so multiple jobs do not overwrite data.json at once.
+          dispatch_and_wait "asx-scan.yml" "ASX prices and announcements"
+          dispatch_and_wait "whole-asx-opportunities.yml" "Whole-ASX opportunity discovery"
+          dispatch_and_wait "global-trends.yml" "World-news trend scoring"
+          dispatch_and_wait "global-asx-candidates.yml" "Global-trend ASX candidates"
