@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/whole_asx_opportunities.py'
+      - 'scripts/whole_asx_runner.py'
       - '.github/workflows/whole-asx-opportunities.yml'
   schedule:
     - cron: "35 7 * * 1-5"
@@ -27,7 +28,7 @@ jobs:
           fetch-depth: 0
 
       - name: Scan entire ASX for opportunities
-        run: python scripts/whole_asx_opportunities.py
+        run: python scripts/whole_asx_runner.py
 
       - name: Commit whole-ASX discoveries
         run: |
