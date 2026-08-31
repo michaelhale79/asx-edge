@@ -34,3 +34,5 @@ jobs:
           git diff --cached --quiet || git commit -m "Update ASX company evidence"
           git pull --rebase origin main
           git push
+
+# validation trigger: resolved ASX pdfURL wrappers
