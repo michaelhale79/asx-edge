@@ -1,0 +1,51 @@
+name: ASX Edge AI Event Analyst
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 0-6,21-23 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: asx-edge-data
+  cancel-in-progress: false
+
+jobs:
+  ai-event-analysis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ASX_EDGE_AI_MODEL: gpt-5.4-mini
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Analyse current events and ASX consequences
+        run: python scripts/ai_event_analyst.py
+      - name: Verify output safety
+        run: |
+          python - <<'PY'
+          import json
+          x=json.load(open('study/ai-event-analysis.json'))
+          assert x.get('status') in ('ACTIVE','NEEDS_API_KEY')
+          if x.get('status')=='ACTIVE':
+              assert isinstance(x.get('events'),list)
+              for e in x['events']:
+                  assert e.get('sources'), f"event missing sources: {e.get('event')}"
+                  for c in e.get('candidates',[]):
+                      assert c.get('ticker') and c.get('mechanism')
+              h=json.load(open('study/event-hypotheses.json'))
+              assert isinstance(h.get('active'),list)
+          print('AI event status:',x.get('status'),'events:',len(x.get('events',[])))
+          PY
+      - name: Commit AI event reasoning
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add data.json study/ai-event-analysis.json study/event-hypotheses.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Update AI event opportunities"
+          git pull --rebase origin main
+          git push
