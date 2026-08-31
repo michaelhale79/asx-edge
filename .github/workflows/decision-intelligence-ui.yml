@@ -1,0 +1,32 @@
+name: ASX Edge Decision Intelligence UI
+
+on:
+  push:
+    paths:
+      - 'scripts/patch-decision-intelligence-ui.py'
+      - '.github/workflows/decision-intelligence-ui.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply decision intelligence UI
+        run: python scripts/patch-decision-intelligence-ui.py
+      - name: Verify UI integration
+        run: |
+          grep -q 'Investment thesis & management' index.html
+          grep -q 'managementCredibilityScore' index.html
+          grep -q 'qualityEvidenceRisk' index.html
+          grep -q 'structuredThesisHtml' index.html
+      - name: Commit app update
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Show management credibility and structured investment thesis"
+          git pull --rebase origin main
+          git push
