@@ -1,0 +1,34 @@
+name: ASX Edge Company Evidence UI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch-evidence-ui.py'
+      - '.github/workflows/evidence-ui.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply company evidence UI
+        run: python scripts/patch-evidence-ui.py
+      - name: Verify evidence UI
+        run: |
+          grep -q 'Company disclosure evidence' index.html
+          grep -q 'detailEvidence' index.html
+          grep -q 'Mgmt delivery' index.html
+      - name: Commit UI update
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Show ASX company disclosure evidence"
+          git pull --rebase origin main
+          git push
