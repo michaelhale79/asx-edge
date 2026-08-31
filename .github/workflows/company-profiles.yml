@@ -1,0 +1,34 @@
+name: ASX Edge Company Profiles
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/enrich_company_profiles.py'
+      - '.github/workflows/company-profiles.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: asx-edge-data
+  cancel-in-progress: false
+
+jobs:
+  enrich-profiles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Enrich company sector and description
+        run: python scripts/enrich_company_profiles.py
+      - name: Commit company profiles
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "Update ASX company profiles"
+          git pull --rebase origin main
+          git push
