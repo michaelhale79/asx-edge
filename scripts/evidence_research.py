@@ -101,7 +101,7 @@ def announcement_rows(ticker):
         d=parse_date(cells[0])
         if not d or d<cutoff: continue
         headline=cells[-1].strip()
-        href=next((h for h in row.get("links",[]) if "asxpdf" in h.lower() or h.lower().endswith(".pdf")),None)
+        href=next((h for h in row.get("links",[]) if "displayannouncement.do" in h.lower() or "asxpdf" in h.lower() or h.lower().endswith(".pdf")),None)
         out.append({"date":d.isoformat(),"headline":headline,"priceSensitive":bool(row.get("priceSensitive")),"url":urljoin("https://www.asx.com.au",href) if href else None})
     return out
 
