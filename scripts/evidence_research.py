@@ -111,13 +111,58 @@ def priority(a):
         if k in h: score += max(2,10-i//3)
     return score
 
+def resolve_pdf_bytes(url):
+    raw=fetch_bytes(url,35)
+    if raw.startswith(b"%PDF"):
+        return raw, url
+
+    # ASX displayAnnouncement pages are consent wrappers. They expose the
+    # underlying document path in a hidden input named pdfURL. Read that
+    # path rather than treating the HTML wrapper as a PDF.
+    html=raw.decode("utf-8",errors="ignore")
+    m=re.search(r'name=["\']pdfURL["\'][^>]*value=["\']([^"\']+)',html,re.I)
+    if not m:
+        m=re.search(r'value=["\']([^"\']+)["\'][^>]*name=["\']pdfURL["\']',html,re.I)
+    if not m:
+        # Defensive fallback for wrappers containing an absolute direct link.
+        m=re.search(r'https?://(?:announcements\.)?asx\.com\.au/asxpdf/[^"\'<> ]+\.pdf',html,re.I)
+        if m:
+            candidates=[m.group(0)]
+        else:
+            raise ValueError("ASX wrapper did not expose a PDF URL")
+    else:
+        path=m.group(1).replace('&amp;','&')
+        candidates=[]
+        if path.startswith('http'):
+            candidates.append(path)
+        else:
+            candidates.extend([
+                'https://announcements.asx.com.au'+path,
+                'https://www.asx.com.au'+path,
+            ])
+
+    last=None
+    for direct in candidates:
+        try:
+            pdf=fetch_bytes(direct,35)
+            if pdf.startswith(b"%PDF"):
+                return pdf,direct
+            last=f"non-PDF response {pdf[:20]!r}"
+        except Exception as e:
+            last=str(e)
+    raise ValueError("Could not retrieve resolved ASX PDF: "+str(last))
+
 def pdf_text(url):
-    raw=fetch_bytes(url,35); reader=PdfReader(io.BytesIO(raw)); chunks=[]
+    raw,direct_url=resolve_pdf_bytes(url)
+    reader=PdfReader(io.BytesIO(raw)); chunks=[]
     for page in reader.pages[:MAX_PDF_PAGES]:
         try: chunks.append(page.extract_text() or "")
         except Exception: pass
         if sum(len(x) for x in chunks)>=MAX_TEXT_CHARS: break
-    return "\n".join(chunks)[:MAX_TEXT_CHARS]
+    text="\n".join(chunks)[:MAX_TEXT_CHARS]
+    if not text.strip():
+        raise ValueError("PDF contained no extractable text: "+direct_url)
+    return text
 
 def clean_snippet(text, start, end, pad=150):
     s=max(0,start-pad); e=min(len(text),end+pad); x=" ".join(text[s:e].split())
@@ -168,7 +213,9 @@ def analyse_company(stock):
             doc_meta.append({"date":a["date"],"headline":a["headline"],"priceSensitive":a["priceSensitive"],"url":a["url"],"error":str(e)[:160]})
         time.sleep(.08)
     text="\n".join(combined)
-    evidence={k:find_evidence(text,p) for k,p in RULES.items()} if text else {k:[] for k in RULES}
+    if not text.strip():
+        return {"ticker":ticker,"status":"NO_DOCUMENTS","reason":"No ASX disclosure PDFs could be read; evidence score intentionally withheld.","announcementsReviewed":len(anns),"documentsRead":0,"evidenceDocuments":doc_meta,"analysedAt":dt.datetime.now(dt.timezone.utc).isoformat()}
+    evidence={k:find_evidence(text,p) for k,p in RULES.items()}
     score=50; risk=30; positives=[]; flags=[]
     def pos(delta,label):
         nonlocal score; score+=delta; positives.append(label)
