@@ -1,0 +1,27 @@
+name: Apply Financial Currency Display
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch_financial_currency.py'
+      - '.github/workflows/patch-financial-currency.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: python scripts/patch_financial_currency.py
+      - run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Show financial statement currency"
+          git pull --rebase origin main
+          git push
