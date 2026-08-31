@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T11:12:20.963433+00:00",
+  "updated": "2026-08-31T22:19:27.822658+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -11,19 +11,6 @@
       "qualityEvidenceRisk": 30,
       "corrections": [
         "Removed non-operating deferred/accounting language, successful planned shutdowns, or generic forward-looking risk boilerplate from execution-delay detection."
-      ],
-      "managementCredibilityScore": 58,
-      "assessment": "PASS_WITH_CORRECTIONS"
-    },
-    {
-      "ticker": "QML",
-      "documentsRead": 3,
-      "rawEvidenceScore": 50,
-      "rawEvidenceRisk": 40,
-      "qualityEvidenceScore": 60,
-      "qualityEvidenceRisk": 33,
-      "corrections": [
-        "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation."
       ],
       "managementCredibilityScore": 58,
       "assessment": "PASS_WITH_CORRECTIONS"
@@ -43,23 +30,23 @@
       "assessment": "PASS_WITH_CORRECTIONS"
     },
     {
-      "ticker": "CSL",
-      "documentsRead": 3,
-      "rawEvidenceScore": 42,
-      "rawEvidenceRisk": 45,
-      "qualityEvidenceScore": 42,
-      "qualityEvidenceRisk": 45,
-      "corrections": [],
-      "managementCredibilityScore": 38,
-      "assessment": "PASS"
-    },
-    {
       "ticker": "MIN",
       "documentsRead": 3,
       "rawEvidenceScore": 39,
       "rawEvidenceRisk": 49,
       "qualityEvidenceScore": 39,
       "qualityEvidenceRisk": 49,
+      "corrections": [],
+      "managementCredibilityScore": 38,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "CSL",
+      "documentsRead": 3,
+      "rawEvidenceScore": 42,
+      "rawEvidenceRisk": 45,
+      "qualityEvidenceScore": 42,
+      "qualityEvidenceRisk": 45,
       "corrections": [],
       "managementCredibilityScore": 38,
       "assessment": "PASS"
