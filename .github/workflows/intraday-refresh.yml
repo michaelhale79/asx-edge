@@ -29,7 +29,6 @@ jobs:
           valid_hours = {8, 10, 12, 14, 16}
           should_run = now.weekday() < 5 and now.hour in valid_hours
 
-          # A manual workflow_dispatch always runs, which is useful for testing.
           if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
               should_run = True
 
@@ -92,8 +91,8 @@ jobs:
             return 1
           }
 
-          # Run sequentially so multiple jobs do not overwrite data.json at once.
           dispatch_and_wait "asx-scan.yml" "ASX prices and announcements"
           dispatch_and_wait "whole-asx-opportunities.yml" "Whole-ASX opportunity discovery"
           dispatch_and_wait "global-trends.yml" "World-news trend scoring"
           dispatch_and_wait "global-asx-candidates.yml" "Global-trend ASX candidates"
+          dispatch_and_wait "company-profiles.yml" "Company sector and profile enrichment"
