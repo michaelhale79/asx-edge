@@ -91,8 +91,10 @@ jobs:
             return 1
           }
 
+          # Run sequentially so multiple jobs do not overwrite shared data files at once.
           dispatch_and_wait "asx-scan.yml" "ASX prices and announcements"
           dispatch_and_wait "whole-asx-opportunities.yml" "Whole-ASX opportunity discovery"
           dispatch_and_wait "global-trends.yml" "World-news trend scoring"
           dispatch_and_wait "global-asx-candidates.yml" "Global-trend ASX candidates"
           dispatch_and_wait "company-profiles.yml" "Company sector and profile enrichment"
+          dispatch_and_wait "recommendation-history.yml" "Persistent recommendation tracking and learning diagnostics"
