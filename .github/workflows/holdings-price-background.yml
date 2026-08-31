@@ -1,0 +1,37 @@
+name: ASX Edge Holdings Price Background
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch-holdings-price-background.py'
+      - '.github/workflows/holdings-price-background.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply holdings price/background update
+        run: python scripts/patch-holdings-price-background.py
+      - name: Verify update
+        run: |
+          python - <<'PY'
+          s=open('index.html').read()
+          for x in ['Holdings price alignment + fixed financial backdrop','holding-title-line','holding-price','font-size:15.75px','ASX  ·  PRICE  ·  FLOW  ·  RISK  ·  SIGNAL']:
+              assert x in s, x
+          print('holdings price/background verified')
+          PY
+      - name: Commit app update
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Move holding prices beside tickers and fix finance backdrop"
+          git pull --rebase origin main
+          git push
