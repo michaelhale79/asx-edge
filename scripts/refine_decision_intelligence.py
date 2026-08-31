@@ -1,0 +1,8 @@
+from pathlib import Path
+p=Path('scripts/decision_intelligence.py')
+s=p.read_text()
+s=s.replace("risk_words=['uncertainties','risks inherent','risk factors','may be subject','could adversely','possibility that','forward-looking','cannot assure','no assurance','speculative nature']", "risk_words=['uncertainties','risks inherent','risk factors','may be subject','could adversely','possibility that','forward-looking','cannot assure','no assurance','speculative nature','risks arising','risks related','delays in obtaining','subject to unforeseen delays']")
+s=s.replace("def real_execution_negative(items):\n    return [s for s in items if not boilerplate(s)]", "def real_execution_negative(items):\n    out=[]\n    for s in items:\n        x=s.lower()\n        accounting_deferred=any(k in x for k in ['deferred share unit','deferred tax','tax deferred','deferred revenue','deferred consideration'])\n        successful_planned_shutdown=('planned shutdown' in x and any(k in x for k in ['completed','ahead of schedule','on schedule']))\n        if accounting_deferred or successful_planned_shutdown or boilerplate(s):\n            continue\n        out.append(s)\n    return out")
+s=s.replace("if raw_neg and not clean_neg: corrections.append('Removed execution-delay hits that were only generic forward-looking risk boilerplate.')", "if raw_neg and len(clean_neg)<len(raw_neg): corrections.append('Removed non-operating deferred/accounting language, successful planned shutdowns, or generic forward-looking risk boilerplate from execution-delay detection.')")
+p.write_text(s)
+print('refined decision intelligence context rules')
