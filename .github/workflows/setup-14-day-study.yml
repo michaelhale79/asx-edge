@@ -26,4 +26,5 @@ jobs:
           git add scripts/whole_asx_opportunities.py
           git diff --cached --quiet && exit 0
           git commit -m "Collect market-wide 14-day study data"
+          git pull --rebase origin main
           git push
