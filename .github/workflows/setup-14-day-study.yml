@@ -1,0 +1,29 @@
+name: ASX Edge 14 Day Study Setup
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/setup_14_day_study.py'
+      - '.github/workflows/setup-14-day-study.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Patch study collection and intraday pipeline
+        run: python scripts/setup_14_day_study.py
+      - name: Commit setup
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add scripts/whole_asx_opportunities.py .github/workflows/whole-asx-opportunities.yml .github/workflows/intraday-refresh.yml
+          git diff --cached --quiet && exit 0
+          git commit -m "Collect market-wide 14-day study data"
+          git push
