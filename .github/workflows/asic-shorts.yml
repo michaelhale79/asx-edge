@@ -1,0 +1,159 @@
+name: ASX Edge ASIC Short Interest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 7 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  enrich-shorts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PDF reader
+        run: pip install pypdf
+
+      - name: Add ASIC short-interest data
+        shell: python
+        run: |
+          import datetime
+          import json
+          import re
+          import urllib.request
+          from pathlib import Path
+          from pypdf import PdfReader
+
+          DATA_PATH = Path("data.json")
+          if not DATA_PATH.exists():
+              raise SystemExit("data.json not found")
+
+          data = json.loads(DATA_PATH.read_text())
+          stocks = data.get("stocks", [])
+          tickers = {str(s.get("ticker", "")).upper() for s in stocks if s.get("ticker")}
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (compatible; ASXEdge/1.0)"
+          }
+
+          def download(url):
+              req = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return r.read()
+
+          def find_latest_report():
+              today = datetime.date.today()
+              for days_back in range(0, 18):
+                  day = today - datetime.timedelta(days=days_back)
+                  if day.weekday() >= 5:
+                      continue
+                  stamp = day.strftime("%Y%m%d")
+                  for seq in ("001", "002", "003", "004"):
+                      url = (
+                          "https://download.asic.gov.au/short-selling/"
+                          f"RR{stamp}-{seq}-SSDailyAggShortPos.pdf"
+                      )
+                      try:
+                          pdf = download(url)
+                          if pdf.startswith(b"%PDF"):
+                              return day, url, pdf
+                      except Exception:
+                          pass
+              return None, None, None
+
+          report_date, report_url, pdf_bytes = find_latest_report()
+          if not pdf_bytes:
+              raise SystemExit("No recent ASIC daily short-position PDF found")
+
+          pdf_path = Path("asic-shorts.pdf")
+          pdf_path.write_bytes(pdf_bytes)
+
+          reader = PdfReader(str(pdf_path))
+          text = "\n".join((page.extract_text() or "") for page in reader.pages)
+
+          shorts = {}
+          for ticker in sorted(tickers, key=len, reverse=True):
+              # ASIC rows contain: product name, product code, reported shorts,
+              # total product in issue, then percentage short.
+              pattern = re.compile(
+                  rf"\b{re.escape(ticker)}\b\s+"
+                  r"([\d,]+)\s+([\d,]+)\s+(\d+(?:\.\d+)?)\b"
+              )
+              match = pattern.search(text)
+              if match:
+                  shorts[ticker] = float(match.group(3))
+
+          def short_adjustment(pct):
+              if pct is None:
+                  return 0, "N/A"
+              if pct < 1.0:
+                  return 2, "LOW / SUPPORTIVE"
+              if pct < 5.0:
+                  return 0, "NORMAL"
+              if pct < 8.0:
+                  return -4, "ELEVATED / BEARISH"
+              if pct < 12.0:
+                  return -8, "HIGH / BEARISH"
+              return -12, "VERY HIGH / BEARISH"
+
+          matched = 0
+          for stock in stocks:
+              ticker = str(stock.get("ticker", "")).upper()
+              pct = shorts.get(ticker)
+
+              # Preserve the scanner's pre-short score so repeated manual runs
+              # never apply the short adjustment twice.
+              base_opp = stock.get("oppPreShort", stock.get("opp", 0))
+              try:
+                  base_opp = float(base_opp)
+              except Exception:
+                  base_opp = 0
+
+              stock["oppPreShort"] = round(base_opp)
+
+              if pct is None:
+                  stock["shortInterestPct"] = None
+                  stock["shortInterestDate"] = report_date.isoformat()
+                  stock["shortSignal"] = "N/A"
+                  stock["shortAdjustment"] = 0
+                  stock["opp"] = round(base_opp)
+                  continue
+
+              matched += 1
+              adjustment, signal = short_adjustment(pct)
+              stock["shortInterestPct"] = round(pct, 2)
+              stock["shortInterestDate"] = report_date.isoformat()
+              stock["shortSignal"] = signal
+              stock["shortAdjustment"] = adjustment
+              stock["opp"] = round(max(0, min(100, base_opp + adjustment)))
+
+          data["shortInterestSource"] = "ASIC daily aggregated short positions"
+          data["shortInterestReportDate"] = report_date.isoformat()
+          data["shortInterestReportUrl"] = report_url
+          data["shortInterestMatched"] = matched
+          data["stocks"] = stocks
+
+          DATA_PATH.write_text(json.dumps(data, indent=2))
+
+          print(f"ASIC report date: {report_date}")
+          print(f"Matched {matched} of {len(stocks)} scanner tickers")
+          for stock in stocks:
+              if stock.get("shortInterestPct") is not None:
+                  print(
+                      stock["ticker"],
+                      f"{stock['shortInterestPct']:.2f}% short",
+                      stock["shortSignal"],
+                      f"score adjustment {stock['shortAdjustment']:+d}"
+                  )
+
+      - name: Commit enriched short data
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "Update ASIC short interest data"
+          git push
