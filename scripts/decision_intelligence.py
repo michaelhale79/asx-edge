@@ -24,12 +24,20 @@ def snippets(rec, key): return list((rec.get('evidenceSignals') or {}).get(key) 
 
 def boilerplate(s):
     x=s.lower()
-    risk_words=['uncertainties','risks inherent','risk factors','may be subject','could adversely','possibility that','forward-looking','cannot assure','no assurance','speculative nature']
+    risk_words=['uncertainties','risks inherent','risk factors','may be subject','could adversely','possibility that','forward-looking','cannot assure','no assurance','speculative nature','risks arising','risks related','delays in obtaining','subject to unforeseen delays']
     actual_words=['has been delayed','was delayed','is delayed','suspended operations','production suspended','shutdown occurred','terminated the contract','missed guidance','guidance withdrawn','guidance reduced','cost overrun']
     return any(k in x for k in risk_words) and not any(k in x for k in actual_words)
 
 def real_execution_negative(items):
-    return [s for s in items if not boilerplate(s)]
+    out=[]
+    for s in items:
+        x=s.lower()
+        accounting_deferred=any(k in x for k in ['deferred share unit','deferred tax','tax deferred','deferred revenue','deferred consideration'])
+        successful_planned_shutdown=('planned shutdown' in x and any(k in x for k in ['completed','ahead of schedule','on schedule']))
+        if accounting_deferred or successful_planned_shutdown or boilerplate(s):
+            continue
+        out.append(s)
+    return out
 
 def real_cash_burn(items):
     out=[]
@@ -64,7 +72,7 @@ def quality_evidence(stock, rec):
     if sig.get('execution_positive'): add(8,'Recent disclosures show milestones or execution being delivered.')
 
     raw_neg=snippets(rec,'execution_negative'); clean_neg=real_execution_negative(raw_neg)
-    if raw_neg and not clean_neg: corrections.append('Removed execution-delay hits that were only generic forward-looking risk boilerplate.')
+    if raw_neg and len(clean_neg)<len(raw_neg): corrections.append('Removed non-operating deferred/accounting language, successful planned shutdowns, or generic forward-looking risk boilerplate from execution-delay detection.')
     if clean_neg: sub(8,9,'Current disclosures contain actual delay, deferral or operating interruption language.')
 
     raises=snippets(rec,'capital_raise'); good_raise,bad_raise=supportive_raise(raises)
