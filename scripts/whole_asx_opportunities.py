@@ -257,6 +257,15 @@ def main():
 
     # Keep the existing detailed universe intact, then add/mark whole-ASX discoveries.
     merged = list(data.get("stocks", []))
+    # Fill proper company names from the official ASX universe when the older
+    # detailed scanner only stored the ticker as its name.
+    universe_names = {str(x.get("ticker", "")).upper(): str(x.get("name", "")).strip() for x in universe}
+    for stock in merged:
+        ticker = str(stock.get("ticker", "")).upper()
+        current_name = str(stock.get("name", "") or "").strip()
+        better_name = universe_names.get(ticker, "")
+        if better_name and (not current_name or current_name.upper() == ticker):
+            stock["name"] = better_name
     positions = {str(s.get("ticker", "")).upper(): i for i, s in enumerate(merged)}
     rank_map = {}
     for rank, candidate in enumerate(surfaced, 1):
