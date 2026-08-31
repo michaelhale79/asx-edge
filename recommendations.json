@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-31T09:37:33.736411+00:00",
+  "updated": "2026-08-31T10:18:58.491537+00:00",
   "threshold": 75,
   "scoringNote": "Final opportunity already includes backend short/global adjustments; frontend must not add short adjustment again.",
   "calls": {
@@ -5634,6 +5634,41 @@
         "volumeRatio": 0.77
       },
       "currentPrice": 1.765,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "RSG": {
+      "id": "RSG-20260831T101858Z",
+      "ticker": "RSG",
+      "label": "HOLD",
+      "startPrice": 1.37,
+      "startDate": "2026-08-31T10:18:58.491537+00:00",
+      "horizon": 20,
+      "opportunity": 73.0,
+      "risk": 69.0,
+      "confidence": 74.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 45.9,
+        "relative3m": 15.5,
+        "momentum": 100.0,
+        "valuation": 70.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.57
+      },
+      "currentPrice": 1.37,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
