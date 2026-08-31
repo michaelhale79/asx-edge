@@ -1,6 +1,6 @@
 name: ASX Edge Decision Intelligence
 
-# later-evidence management validation rerun
+# final thesis-quality validation rerun
 on:
   workflow_dispatch:
   push:
@@ -35,13 +35,18 @@ jobs:
           assert h.get('companies'), 'management history empty'
           assert t.get('companies'), 'theses empty'
           assert any(x.get('corrections') for x in a['companies']), 'expected at least one quality correction'
-          # New promises must not self-resolve from the evidence that created them.
           bad=[]
           for ticker,c in h.get('companies',{}).items():
               for x in c.get('commitments',[]):
                   if x.get('resolvedAt') and x.get('resolvedAt')==x.get('firstSeen'):
                       bad.append((ticker,x.get('id')))
           assert not bad, f'same-run commitment resolutions remain: {bad[:5]}'
+          by={x['ticker']:x['thesis'] for x in t['companies']}
+          if 'PYC' in by:
+              assert 'clinical' in by['PYC'].get('objective','').lower(), 'PYC clinical objective not inferred'
+          for x in t['companies']:
+              for m in x['thesis'].get('keyMilestones',[]):
+                  assert 'anything in it shall form the basis' not in m.lower(), 'generic disclaimer leaked into milestone'
           print('audit',len(a['companies']),'management',len(h['companies']),'theses',len(t['companies']))
           PY
       - name: Commit decision intelligence
