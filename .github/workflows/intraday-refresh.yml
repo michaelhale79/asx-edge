@@ -3,45 +3,73 @@ name: ASX Edge Intraday Refresh
 on:
   workflow_dispatch:
   schedule:
-    # Covers both AEST and AEDT. The Melbourne-time gate below decides whether
-    # this UTC trigger is one of the requested 8am/10am/12pm/2pm/4pm slots.
+    # Covers both AEST and AEDT. The Melbourne-time gate below resolves the
+    # intended 8am/10am/12pm/2pm/4pm slot and tolerates delayed GitHub starts.
     - cron: "0 0-6,21-23 * * *"
 
 permissions:
   actions: write
-  contents: read
+  contents: write
 
 jobs:
   intraday-refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 150
 
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Check Melbourne refresh slot
         id: melbourne
         shell: python
         run: |
           import datetime
-          from zoneinfo import ZoneInfo
+          import json
           import os
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
 
           now = datetime.datetime.now(ZoneInfo("Australia/Melbourne"))
-          valid_hours = {8, 10, 12, 14, 16}
-          should_run = now.weekday() < 5 and now.hour in valid_hours
+          valid_hours = [8, 10, 12, 14, 16]
+          slot = None
+          for hour in valid_hours:
+              target = now.replace(hour=hour, minute=0, second=0, microsecond=0)
+              age_minutes = (now - target).total_seconds() / 60
+              if 0 <= age_minutes <= 90:
+                  slot = target
 
-          if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
+          hp = Path("refresh-health.json")
+          health = {}
+          if hp.exists():
+              try:
+                  health = json.loads(hp.read_text(encoding="utf-8"))
+              except Exception:
+                  health = {}
+
+          event = os.environ.get("GITHUB_EVENT_NAME")
+          slot_key = slot.strftime("%Y-%m-%dT%H:00%z") if slot else ""
+          should_run = bool(slot) and now.weekday() < 5 and health.get("lastSlotKey") != slot_key
+
+          if event == "workflow_dispatch":
               should_run = True
+              slot_key = "MANUAL-" + now.strftime("%Y-%m-%dT%H:%M%z")
 
           print("Melbourne time:", now.isoformat())
+          print("Resolved slot:", slot_key or "none")
+          print("Last completed slot:", health.get("lastSlotKey"))
           print("Refresh slot:", should_run)
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
               fh.write(f"run={'true' if should_run else 'false'}\n")
+              fh.write(f"slot={slot_key}\n")
 
       - name: Refresh ASX Edge market and news pipeline
         if: steps.melbourne.outputs.run == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
+          REFRESH_SLOT: ${{ steps.melbourne.outputs.slot }}
         shell: bash
         run: |
           set -euo pipefail
@@ -93,8 +121,30 @@ jobs:
 
           # Run sequentially so multiple jobs do not overwrite shared data files at once.
           dispatch_and_wait "asx-scan.yml" "ASX prices and announcements"
-          dispatch_and_wait "whole-asx-opportunities.yml" "Whole-ASX opportunity discovery"
+          dispatch_and_wait "whole-asx-opportunities.yml" "Whole-ASX opportunity discovery and market study capture"
           dispatch_and_wait "global-trends.yml" "World-news trend scoring"
           dispatch_and_wait "global-asx-candidates.yml" "Global-trend ASX candidates"
           dispatch_and_wait "company-profiles.yml" "Company sector and profile enrichment"
+          dispatch_and_wait "deep-research.yml" "Company strategy and short-vs-long-term research"
           dispatch_and_wait "recommendation-history.yml" "Persistent recommendation tracking and learning diagnostics"
+          dispatch_and_wait "14-day-study-analysis.yml" "Fourteen-day missed-opportunity analysis"
+
+          python - <<'PY'
+          import datetime, json, os
+          from zoneinfo import ZoneInfo
+          now=datetime.datetime.now(ZoneInfo("Australia/Melbourne"))
+          payload={
+              "lastSlotKey":os.environ.get("REFRESH_SLOT",""),
+              "completedAtMelbourne":now.isoformat(),
+              "status":"SUCCESS",
+              "pipeline":["asx-scan","whole-asx","global-trends","global-candidates","company-profiles","deep-research","recommendation-history","14-day-study-analysis"]
+          }
+          open("refresh-health.json","w",encoding="utf-8").write(json.dumps(payload,indent=2))
+          PY
+
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git pull --rebase origin main
+          git add refresh-health.json
+          git diff --cached --quiet || git commit -m "Record successful intraday refresh"
+          git push
