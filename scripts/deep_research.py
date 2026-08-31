@@ -100,10 +100,12 @@ def classify(stock, intents):
     growth=n(stock.get("growth"),50); value=n(stock.get("valuation"),50); rel1=n(stock.get("relative1m")); rel3=n(stock.get("relative3m"))
     volume=n(stock.get("volumeRatio"),1); ann=n(stock.get("announcementSignal")); gt=n(stock.get("globalTrendScore"))
     r6=n(stock.get("return6m")); r12=n(stock.get("return12m"))
-    short_term=clamp(opp*.26+momentum*.20+catalyst*.17+conf*.10+(100-risk)*.08+clamp(50+rel1*2)*.07+clamp(50+(volume-1)*25)*.05+clamp(50+ann)*.04+clamp(50+gt)*.03)
+    fundamental=n(stock.get("fundamentalScore"),50); fundamental_risk=n(stock.get("fundamentalRisk"),50)
+    balance=n(stock.get("balanceSheetScore"),50); cashflow=n(stock.get("cashflowScore"),50); dilution=n(stock.get("dilutionScore"),50)
+    short_term=clamp(opp*.24+momentum*.19+catalyst*.16+conf*.10+(100-risk)*.08+clamp(50+rel1*2)*.07+clamp(50+(volume-1)*25)*.05+clamp(50+ann)*.04+clamp(50+gt)*.03+fundamental*.02+(100-fundamental_risk)*.02)
     durable_trend=clamp(50+r6*.35+r12*.18+rel3*.45)
-    strategic_bonus=min(8,len(intents)*2)
-    long_term=clamp(quality*.24+growth*.20+value*.15+conf*.14+(100-risk)*.14+durable_trend*.08+clamp(50+gt)*.05+strategic_bonus)
+    strategic_bonus=min(7,len(intents)*1.75)
+    long_term=clamp(fundamental*.28+balance*.10+cashflow*.08+dilution*.06+quality*.10+growth*.08+value*.08+conf*.08+(100-fundamental_risk)*.07+(100-risk)*.03+durable_trend*.02+clamp(50+gt)*.02+strategic_bonus)
     if long_term>=70 and short_term>=68: play="BOTH"
     elif long_term>=70: play="LONG_TERM"
     elif short_term>=70: play="SHORT_TERM"
