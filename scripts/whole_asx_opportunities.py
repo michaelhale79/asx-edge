@@ -1,5 +1,6 @@
 import csv
 import datetime as dt
+import gzip
 import io
 import json
 import math
@@ -10,6 +11,7 @@ import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 DATA_PATH = Path("data.json")
 ASX_LIST_URL = "https://www.asx.com.au/asx/research/ASXListedCompanies.csv"
@@ -19,6 +21,9 @@ MIN_HISTORY = 80
 MIN_DOLLAR_TURNOVER_20D = 100_000
 MAX_NEW_CANDIDATES = 100
 MIN_SURFACE_SCORE = 55
+STUDY_START = dt.date(2026, 8, 31)
+STUDY_END = dt.date(2026, 9, 14)
+STUDY_DIR = Path("study/market_snapshots")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15"
@@ -213,6 +218,34 @@ def analyse(ticker, name, rows, bench):
         "wholeAsxCandidate": True,
         "opportunitySource": "WHOLE_ASX"
     }
+
+def write_study_snapshot(valid, surfaced):
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    mel = now_utc.astimezone(ZoneInfo("Australia/Melbourne"))
+    if not (STUDY_START <= mel.date() <= STUDY_END):
+        return
+    selected = {x["ticker"] for x in surfaced}
+    STUDY_DIR.mkdir(parents=True, exist_ok=True)
+    stocks = []
+    keys = ["ticker","name","price","opp","risk","confidence","momentum","quality","growth","valuation","catalystScore","return5d","return1m","return3m","return6m","return12m","relative1m","relative3m","relative6m","volumeRatio","drawdown60","dollarTurnover20d"]
+    for row in valid:
+        compact = {k: row.get(k) for k in keys}
+        compact["selected"] = row.get("ticker") in selected
+        stocks.append(compact)
+    payload = {
+        "capturedAt": now_utc.isoformat(),
+        "melbourneDate": mel.date().isoformat(),
+        "studyStart": STUDY_START.isoformat(),
+        "studyEnd": STUDY_END.isoformat(),
+        "companyCount": len(stocks),
+        "selectedCount": len(selected),
+        "stocks": stocks,
+    }
+    path = STUDY_DIR / (mel.strftime("%Y-%m-%dT%H%M%z") + ".json.gz")
+    with gzip.open(path, "wt", encoding="utf-8", compresslevel=9) as fh:
+        json.dump(payload, fh, separators=(",", ":"))
+    print("study snapshot", path, len(stocks))
+
 
 
 def main():
