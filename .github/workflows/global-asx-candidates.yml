@@ -1,0 +1,145 @@
+name: ASX Edge Global Trend Candidates
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/global-asx-candidates.yml'
+  schedule:
+    - cron: "0 8 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  add-global-candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Find ASX candidates linked to global trends
+        shell: python
+        run: |
+          import json
+          import math
+          import statistics
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          path = Path('data.json')
+          data = json.loads(path.read_text())
+          stocks = data.get('stocks', [])
+          existing = {str(x.get('ticker','')).upper(): x for x in stocks}
+          theme_results = {x.get('name'): x for x in data.get('globalTrendThemes', []) if x.get('name')}
+
+          CANDIDATES = {
+              'EOS': {'DEFENCE': 1.0},
+              'ASB': {'DEFENCE': 0.85},
+              'NST': {'GOLD': 1.0},
+              'EVN': {'GOLD': 1.0},
+              'NEM': {'GOLD': 1.0},
+              'KAR': {'OIL / ENERGY': 0.85},
+              'BPT': {'OIL / ENERGY': 0.80},
+              'PDN': {'URANIUM': 1.0},
+              'BOE': {'URANIUM': 1.0},
+              'DYL': {'URANIUM': 1.0},
+              'SFR': {'COPPER': 1.0},
+              '29M': {'COPPER': 1.0},
+              'IGO': {'LITHIUM': 0.70},
+              'ILU': {'RARE EARTHS': 0.65},
+          }
+
+          H = {'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)'}
+
+          def clamp(x): return max(0, min(100, x))
+          def pct(a,b): return ((a/b)-1)*100 if b else 0
+          def ret(p,days):
+              i=max(0,len(p)-1-days)
+              return pct(p[-1],p[i])
+          def avg(v,n):
+              b=v[-min(n,len(v)):]
+              return sum(b)/len(b) if b else 0
+          def drawdown(p,n=60):
+              b=p[-min(n,len(p)):]
+              peak=b[0]; worst=0
+              for x in b:
+                  peak=max(peak,x); worst=min(worst,pct(x,peak))
+              return abs(worst)
+          def fetch_market(ticker):
+              url='https://query1.finance.yahoo.com/v8/finance/chart/'+urllib.parse.quote(ticker+'.AX')+'?range=1y&interval=1d'
+              req=urllib.request.Request(url,headers=H)
+              with urllib.request.urlopen(req,timeout=25) as r: raw=json.load(r)
+              result=raw['chart']['result'][0]
+              closes=result['indicators']['adjclose'][0]['adjclose']
+              vols=result['indicators']['quote'][0]['volume']
+              rows=[(float(c),float(v or 0)) for c,v in zip(closes,vols) if c is not None]
+              if len(rows)<80: raise Exception('not enough history')
+              return rows
+
+          def theme_score(exposure):
+              weighted=0; total=0; cards=[]
+              for name,w in exposure.items():
+                  tr=theme_results.get(name,{'score':0,'direction':'UNAVAILABLE','headlines':[]})
+                  score=float(tr.get('score',0) or 0)
+                  weighted += score*w; total += abs(w)
+                  cards.append({'theme':name,'score':round(score),'direction':tr.get('direction','NEUTRAL'),'weight':w,'headlines':tr.get('headlines',[])[:3]})
+              value=round(weighted/total) if total else 0
+              return value, sorted(cards,key=lambda x:abs(x['score']*x['weight']),reverse=True)
+
+          added=[]
+          for ticker, exposure in CANDIDATES.items():
+              if ticker in existing:
+                  continue
+              try:
+                  rows=fetch_market(ticker)
+                  prices=[x[0] for x in rows]; volumes=[x[1] for x in rows]
+                  price=prices[-1]; r5=ret(prices,5); r20=ret(prices,20); r60=ret(prices,60); r120=ret(prices,120)
+                  ma20=avg(prices,20); ma60=avg(prices,60); ma200=avg(prices,200)
+                  daily=[pct(prices[i],prices[i-1]) for i in range(max(1,len(prices)-60),len(prices))]
+                  vol=statistics.pstdev(daily) if len(daily)>1 else 0
+                  dd=drawdown(prices); vol20=avg(volumes,20); volume_ratio=volumes[-1]/vol20 if vol20 else 1
+                  trend_stack=int(price>ma20)+int(ma20>ma60)+int(ma60>ma200)
+                  momentum=clamp(50+r20*1.0+r60*.35+r120*.12)
+                  growth=clamp(50+(r5-r20/4)*1.2+(8 if ma20>ma60 else -8))
+                  quality=clamp(82-vol*7-dd*.9+trend_stack*3)
+                  risk=clamp(20+vol*7+dd*.85+(8 if r20>25 else 0))
+                  tscore,cards=theme_score(exposure)
+                  tadj=round(max(-8,min(8,tscore*.08)))
+                  technical=clamp(momentum*.38+growth*.28+quality*.24+clamp(50+(volume_ratio-1)*20)*.10-risk*.16)
+                  opp=round(clamp(technical+tadj))
+                  signal='BULLISH' if tscore>=12 else 'BEARISH' if tscore<=-12 else 'NEUTRAL'
+                  top_theme=cards[0]['theme'] if cards else 'GLOBAL TREND'
+                  item={
+                    'ticker':ticker,'name':ticker,'price':round(price,3),'opp':opp,'edge':'GLOBAL-TREND',
+                    'quality':round(quality),'valuation':50,'growth':round(growth),'momentum':round(momentum),
+                    'catalystScore':round(clamp(50+tscore*.45)),'risk':round(risk),'confidence':62,
+                    'announcementScore':50,'announcementSignal':0,'mismatchScore':50,'priceSensitiveNews':False,
+                    'announcements':[],'delta':0,'return5d':round(r5,1),'return1m':round(r20,1),'return3m':round(r60,1),
+                    'return6m':round(r120,1),'return12m':round(ret(prices,250),1),'relative1m':0,'relative3m':0,'relative6m':0,
+                    'volumeRatio':round(volume_ratio,2),'drawdown60':round(dd,1),
+                    'thesis':f'Global trend candidate: {top_theme}. Trend score {tscore:+d}/100 combined with current ASX price momentum and risk.',
+                    'catalyst':f'World-news theme signal for {top_theme} is {signal.lower()}.',
+                    'riskText':f'60-day volatility {vol:.1f}% per day; recent max drawdown {dd:.1f}%. This candidate has not yet had the full ASX-announcement scan.',
+                    'history':[],'shortInterestPct':None,'shortSignal':'N/A','shortAdjustment':0,
+                    'globalTrendScore':tscore,'globalTrendAdjustment':tadj,'globalTrendSignal':signal,'globalThemes':cards,
+                    'trendCandidate':True,'opportunitySource':'GLOBAL_TRENDS'
+                  }
+                  stocks.append(item); added.append(ticker)
+                  print('ADDED',ticker,'opp',opp,'trend',tscore,signal)
+              except Exception as e:
+                  print('SKIP',ticker,e)
+
+          stocks.sort(key=lambda x:x.get('opp',0),reverse=True)
+          data['stocks']=stocks
+          data['globalTrendCandidatesAdded']=added
+          data['globalTrendCandidateUniverse']=list(CANDIDATES.keys())
+          path.write_text(json.dumps(data,indent=2))
+
+      - name: Commit ASX global-trend candidates
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "Add ASX candidates from global trends"
+          git push
