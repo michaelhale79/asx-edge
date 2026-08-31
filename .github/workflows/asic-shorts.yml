@@ -2,6 +2,10 @@ name: ASX Edge ASIC Short Interest
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/asic-shorts.yml"
   schedule:
     - cron: "35 7 * * 1-5"
 
@@ -77,8 +81,6 @@ jobs:
 
           shorts = {}
           for ticker in sorted(tickers, key=len, reverse=True):
-              # ASIC rows contain: product name, product code, reported shorts,
-              # total product in issue, then percentage short.
               pattern = re.compile(
                   rf"\b{re.escape(ticker)}\b\s+"
                   r"([\d,]+)\s+([\d,]+)\s+(\d+(?:\.\d+)?)\b"
@@ -105,8 +107,6 @@ jobs:
               ticker = str(stock.get("ticker", "")).upper()
               pct = shorts.get(ticker)
 
-              # Preserve the scanner's pre-short score so repeated manual runs
-              # never apply the short adjustment twice.
               base_opp = stock.get("oppPreShort", stock.get("opp", 0))
               try:
                   base_opp = float(base_opp)
