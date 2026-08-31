@@ -1,0 +1,88 @@
+{
+  "updated": "2026-08-31T11:04:32.792863+00:00",
+  "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
+  "companies": [
+    {
+      "ticker": "DPM",
+      "documentsRead": 3,
+      "rawEvidenceScore": 55,
+      "rawEvidenceRisk": 39,
+      "qualityEvidenceScore": 55,
+      "qualityEvidenceRisk": 39,
+      "corrections": [],
+      "managementCredibilityScore": 46,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "QML",
+      "documentsRead": 3,
+      "rawEvidenceScore": 50,
+      "rawEvidenceRisk": 40,
+      "qualityEvidenceScore": 60,
+      "qualityEvidenceRisk": 33,
+      "corrections": [
+        "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation."
+      ],
+      "managementCredibilityScore": 58,
+      "assessment": "PASS_WITH_CORRECTIONS"
+    },
+    {
+      "ticker": "PYC",
+      "documentsRead": 3,
+      "rawEvidenceScore": 30,
+      "rawEvidenceRisk": 55,
+      "qualityEvidenceScore": 40,
+      "qualityEvidenceRisk": 48,
+      "corrections": [
+        "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation.",
+        "Removed positive cash-runway wording from cash-burn risk detection."
+      ],
+      "managementCredibilityScore": 50,
+      "assessment": "PASS_WITH_CORRECTIONS"
+    },
+    {
+      "ticker": "CSL",
+      "documentsRead": 3,
+      "rawEvidenceScore": 42,
+      "rawEvidenceRisk": 45,
+      "qualityEvidenceScore": 42,
+      "qualityEvidenceRisk": 45,
+      "corrections": [],
+      "managementCredibilityScore": 38,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "MIN",
+      "documentsRead": 3,
+      "rawEvidenceScore": 39,
+      "rawEvidenceRisk": 49,
+      "qualityEvidenceScore": 39,
+      "qualityEvidenceRisk": 49,
+      "corrections": [],
+      "managementCredibilityScore": 38,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "DRO",
+      "documentsRead": 3,
+      "rawEvidenceScore": 50,
+      "rawEvidenceRisk": 30,
+      "qualityEvidenceScore": 50,
+      "qualityEvidenceRisk": 30,
+      "corrections": [],
+      "managementCredibilityScore": 50,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "WBT",
+      "documentsRead": 3,
+      "rawEvidenceScore": 46,
+      "rawEvidenceRisk": 55,
+      "qualityEvidenceScore": 46,
+      "qualityEvidenceRisk": 55,
+      "corrections": [],
+      "managementCredibilityScore": 46,
+      "assessment": "PASS"
+    }
+  ]
+}
