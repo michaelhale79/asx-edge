@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '.github/scripts/patch_ui.py'
       - '.github/workflows/ui-security-patch.yml'
 
 permissions:
@@ -15,12 +14,45 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Patch app
-        run: python .github/scripts/patch_ui.py
+        shell: python
+        run: |
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+
+          css='''
+.trade-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding:12px 14px;border-radius:13px;font-weight:950}.trade-banner.buy{background:#0f5a2c;color:#fff}.trade-banner.hold{background:#234968;color:#fff}.trade-banner.sell{background:#7d2525;color:#fff}.trade-word{font-size:22px}.trade-note{font-size:10px;font-weight:700;opacity:.85}.stock.buy{border:2px solid #2f9f5b}.stock.hold{border:2px solid #47779d}.stock.sell{border:2px solid #b34d4d}.action{font-size:14px!important;padding:9px 12px!important}.action.buy{background:#0f5a2c;color:#fff}.action.hold{background:#234968;color:#fff}.action.sell{background:#7d2525;color:#fff}.holding-readonly{display:block}.holding-edit{display:none}.holding-card.editing .holding-readonly{display:none}.holding-card.editing .holding-edit{display:block}.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0 14px}.legend div{padding:9px 6px;border-radius:10px;text-align:center;font-size:11px;font-weight:900}.legend .buy{background:#0f5a2c}.legend .hold{background:#234968}.legend .sell{background:#7d2525}
+'''
+          if '.trade-banner{' not in s:
+              s=s.replace('</style>',css+'</style>')
+
+          s=s.replace('<div class="portfolio-tabs">','<div class="legend"><div class="buy">BUY</div><div class="hold">HOLD</div><div class="sell">SELL</div></div><div class="portfolio-tabs">',1)
+          s=s.replace('let stocks=[],edgeFilter="ALL",previousPage="home";','let stocks=[],edgeFilter="ALL",previousPage="home",editingHolding=null;')
+
+          a=s.index('function stockCard(s){')
+          b=s.index('function holdingCard(',a)
+          s=s[:a]+'''function stockCard(s){const r=recommendation(s),sh=shortSignal(s);syncCall(s);const co=callOutcome(s);return `<div class="stock ${r.className}" data-open="${s.ticker}"><div class="stock-top"><div class="stock-name"><div class="ticker">${s.ticker} ${deltaText(s)}</div><div class="company">${money(s.price)} · Opportunity ${s.opp}</div></div><div class="action ${r.className}">${r.label}</div></div><div class="trade-banner ${r.className}"><span class="trade-word">${r.label}</span><span class="trade-note">${r.horizon} day review</span></div><div class="tags"><span class="tag ${edgeClass(s.edge)}">${s.edge}</span><span class="tag">Risk ${s.risk}</span><span class="tag">Conf ${s.confidence??"—"}</span><span class="tag ${sh.className}">${sh.label}</span>${co?`<span class="tag ${co.outcome==="FAIL"?"red":co.outcome==="SUCCESS"?"green":"blue"}">${co.outcome} · ${pctText(co.ret)}</span>`:""}</div><div class="thesis">${r.reason}</div></div>`}
+'''+s[b:]
+
+          a=s.index('function holdingCard(p,key,i){')
+          b=s.index('function render(){',a)
+          s=s[:a]+'''function holdingCard(p,key,i){const st=stockOf(p.ticker),r=recommendation(st);if(st&&!p.dayZeroPrice){p.dayZeroPrice=Number(st.price||0);p.dayZeroDate=new Date().toISOString();savePortfolios()}const price=Number(st?.price||0),pl=p.buyPrice&&p.qty?(price-p.buyPrice)*p.qty:NaN,plPct=p.buyPrice?((price/p.buyPrice)-1)*100:NaN,dz=p.dayZeroPrice?((price/p.dayZeroPrice)-1)*100:NaN,id=`${key}:${i}`,editing=editingHolding===id;return `<div class="stock ${r.className} holding-card ${editing?"editing":""}"><div class="stock-top"><div class="stock-name"><div class="ticker" data-open="${p.ticker}">${p.ticker||"NEW HOLDING"}</div><div class="company">${st?`${money(price)} · Opportunity ${st.opp}`:"Waiting for scanner"}</div></div><div class="action ${r.className}">${r.label}</div></div><div class="trade-banner ${r.className}"><span class="trade-word">${r.label}</span><span class="trade-note">${r.horizon} day review</span></div><div class="holding-readonly"><div class="perf"><div class="perf-box"><div class="small">P/L</div><div class="perf-value ${pl>=0?"up":"down"}">${isFinite(pl)?money(pl):"—"}</div><div class="small">${pctText(plPct)}</div></div><div class="perf-box"><div class="small">Day Zero</div><div class="perf-value ${dz>=0?"up":"down"}">${pctText(dz)}</div><div class="small">${p.dayZeroDate?new Date(p.dayZeroDate).toLocaleDateString("en-AU"):"Set on first live price"}</div></div><div class="perf-box"><div class="small">Position</div><div class="perf-value">${p.qty||0}</div><div class="small">@ ${p.buyPrice?money(p.buyPrice):"—"}</div></div></div><div class="editor-actions"><button class="btn" data-editholding="${key}" data-i="${i}">Edit</button></div></div><div class="holding-edit"><div class="editor"><div class="field"><label>Ticker</label><input data-edit="ticker" data-key="${key}" data-i="${i}" value="${p.ticker}"></div><div class="field"><label>Qty</label><input inputmode="decimal" data-edit="qty" data-key="${key}" data-i="${i}" value="${p.qty||""}"></div><div class="field"><label>Buy price</label><input inputmode="decimal" data-edit="buyPrice" data-key="${key}" data-i="${i}" value="${p.buyPrice||""}"></div></div><div class="editor-actions"><button class="btn primary" data-saveholding="${key}" data-i="${i}">Save</button><button class="btn" data-cancelholding="${key}" data-i="${i}">Cancel</button><button class="btn danger" data-deleteholding="${key}" data-i="${i}">Delete</button></div></div><div class="thesis">${r.reason}</div></div>`}
+'''+s[b:]
+
+          a=s.index('function bind(){')
+          b=s.index('function openDetail(',a)
+          s=s[:a]+'''function bind(){$$("[data-open]").forEach(x=>x.onclick=e=>{if(e.target.tagName==="INPUT"||e.target.tagName==="BUTTON")return;openDetail(x.dataset.open)});$$('[data-editholding]').forEach(b=>b.onclick=()=>{editingHolding=`${b.dataset.editholding}:${Number(b.dataset.i)}`;renderHoldings()});$$('[data-cancelholding]').forEach(b=>b.onclick=()=>{editingHolding=null;renderHoldings()});$$('[data-saveholding]').forEach(b=>b.onclick=()=>{const key=b.dataset.saveholding,i=Number(b.dataset.i),p=portfolios[key][i];$$(`[data-key="${key}"][data-i="${i}"]`).forEach(inp=>{const f=inp.dataset.edit;p[f]=f==="ticker"?inp.value.trim().toUpperCase():Number(inp.value||0)});const st=stockOf(p.ticker);if(st&&!p.dayZeroPrice){p.dayZeroPrice=Number(st.price||0);p.dayZeroDate=new Date().toISOString()}savePortfolios();editingHolding=null;render()});$$('[data-deleteholding]').forEach(b=>b.onclick=()=>{portfolios[b.dataset.deleteholding].splice(Number(b.dataset.i),1);savePortfolios();editingHolding=null;render()})}
+'''+s[b:]
+
+          s=s.replace('savePortfolios();activePortfolio=b.dataset.add;renderHoldings()','savePortfolios();activePortfolio=b.dataset.add;editingHolding=`${b.dataset.add}:${portfolios[b.dataset.add].length-1}`;renderHoldings()')
+          p.write_text(s)
+
       - name: Commit app
         run: |
           git config user.name "ASX Edge Bot"
           git config user.email "asx-edge@users.noreply.github.com"
           git add index.html
-          git diff --cached --quiet || git commit -m "Add portfolio tabs and hashed PIN lock"
+          git diff --cached --quiet || git commit -m "Fix holdings edit state and clarify trade signals"
           git push
