@@ -85,6 +85,20 @@ button:active,.btn:active,.home-tab:active,.portfolio-tab:active,.detail-icon-ta
 .holding-card .holding-readonly>.editor-actions{display:none!important}
 @media(max-width:360px){.holding-summary{grid-template-columns:1fr 1fr}.holding-stat:last-child{grid-column:1/-1}}
 
+
+/* Holdings price alignment + fixed financial backdrop */
+.holding-title-line{display:flex;align-items:baseline;gap:8px;min-width:0;flex-wrap:wrap}
+.holding-card .holding-price{font-size:15.75px;line-height:1;font-weight:750;color:#c3d0dc;opacity:.94;white-space:nowrap;letter-spacing:-.01em}
+.holding-card .company{margin-top:4px}
+body{background-attachment:fixed!important}
+body:before{background-attachment:fixed!important}
+body:after{content:'ASX  ·  PRICE  ·  FLOW  ·  RISK  ·  SIGNAL  ·  VOLUME  ·  DATA  ·  TREND'!important;top:132px!important;font-size:9px!important;letter-spacing:5px!important;color:rgba(117,192,255,.052)!important;transform:rotate(-7deg)!important}
+body{background-image:
+ radial-gradient(circle at 18% -5%,rgba(64,162,255,.15),transparent 30%),
+ radial-gradient(circle at 88% 18%,rgba(50,220,135,.12),transparent 26%),
+ repeating-linear-gradient(0deg,rgba(95,142,176,.025) 0,rgba(95,142,176,.025) 1px,transparent 1px,transparent 7px),
+ linear-gradient(180deg,#08111b 0%,#071019 46%,#050b11 100%)!important;background-attachment:fixed!important}
+
 </style></head><body><div class="lock-screen" id="lockScreen"><div class="lock-card"><div class="lock-logo">ASX Edge</div><div class="lock-sub">Enter PIN to continue</div><input class="pin-input" id="pinInput" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off"><button class="unlock-btn" id="unlockBtn">Unlock</button><div class="pin-error" id="pinError"></div></div></div><div class="app">
 <header><div class="header-row"><div><h1>ASX Edge</h1><div class="subtitle">Find what the market may be missing</div></div><button class="refresh" id="refresh">↻</button></div></header>
 <section class="page active" id="home"><div class="quick-search"><input class="search" id="quickSearch" placeholder="Search ASX ticker or company"><div class="quick-results" id="quickResults"></div></div><div class="notice" id="liveStatus">Loading ASX Edge data…</div><div class="hero"><div class="hero-label">Best Opportunity</div><div class="hero-title" id="heroTitle">—</div><div class="hero-text" id="heroText">Loading…</div></div><div class="metrics"><div class="metric clickable" id="buyMetric"><div class="metric-value" id="buyCount">—</div><div class="metric-label">BUY signals · tap to view</div></div><div class="metric"><div class="metric-value" id="changeCount">—</div><div class="metric-label">Changed</div></div><div class="metric"><div class="metric-value" id="holdingCount">—</div><div class="metric-label">Holdings</div></div></div><div class="home-tabs"><button class="home-tab active" data-home-tab="buys">Top Buys</button><button class="home-tab" data-home-tab="nearbuy">Near Buy</button><button class="home-tab" data-home-tab="tracking">Tracking</button></div><div class="home-pane active" data-home-pane="buys"><div class="small" style="margin:0 2px 10px">Only stocks that pass every current BUY rule appear here. The list is not padded to ten.</div><div id="homeStocks"></div></div><div class="home-pane" data-home-pane="nearbuy"><div class="small" style="margin:0 2px 10px">Highest-ranked HOLDs that are closest to becoming a BUY, with the blocking rule shown.</div><div id="nearBuyStocks"></div></div><div class="home-pane" data-home-pane="tracking"><div id="scorecard"></div></div></section>
