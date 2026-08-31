@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T11:04:32.792863+00:00",
+  "updated": "2026-08-31T11:06:38.931773+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -7,11 +7,13 @@
       "documentsRead": 3,
       "rawEvidenceScore": 55,
       "rawEvidenceRisk": 39,
-      "qualityEvidenceScore": 55,
-      "qualityEvidenceRisk": 39,
-      "corrections": [],
-      "managementCredibilityScore": 46,
-      "assessment": "PASS"
+      "qualityEvidenceScore": 63,
+      "qualityEvidenceRisk": 30,
+      "corrections": [
+        "Removed non-operating deferred/accounting language, successful planned shutdowns, or generic forward-looking risk boilerplate from execution-delay detection."
+      ],
+      "managementCredibilityScore": 54,
+      "assessment": "PASS_WITH_CORRECTIONS"
     },
     {
       "ticker": "QML",
