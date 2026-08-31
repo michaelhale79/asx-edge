@@ -1,0 +1,33 @@
+name: ASX Edge 14 Day Study Analysis
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/analyse_14_day_study.py'
+      - '.github/workflows/14-day-study-analysis.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: asx-edge-data
+  cancel-in-progress: false
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Analyse market-wide observation study
+        run: python scripts/analyse_14_day_study.py
+      - name: Commit study analysis
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add study/14-day-analysis.json
+          git diff --cached --quiet || git commit -m "Update 14-day market study analysis"
+          git pull --rebase origin main
+          git push
