@@ -1,0 +1,29 @@
+name: ASX Edge Company Analysis UI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch-company-analysis.py'
+      - '.github/workflows/company-analysis-ui.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Patch company analysis UI
+        run: python scripts/patch-company-analysis.py
+      - name: Commit company analysis UI
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Expand holdings company analysis"
+          git pull --rebase origin main
+          git push
