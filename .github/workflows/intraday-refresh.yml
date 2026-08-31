@@ -132,6 +132,12 @@ jobs:
           dispatch_and_wait "recommendation-history.yml" "Persistent recommendation tracking and learning diagnostics"
           dispatch_and_wait "14-day-study-analysis.yml" "Fourteen-day missed-opportunity analysis"
 
+          # Child workflows commit updated data to main. Update this checkout first,
+          # then write the health marker so rebase is never blocked by a local change.
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git pull --rebase origin main
+
           python - <<'PY'
           import datetime, json, os
           from zoneinfo import ZoneInfo
@@ -145,9 +151,6 @@ jobs:
           open("refresh-health.json","w",encoding="utf-8").write(json.dumps(payload,indent=2))
           PY
 
-          git config user.name "ASX Edge Bot"
-          git config user.email "asx-edge@users.noreply.github.com"
-          git pull --rebase origin main
           git add refresh-health.json
           git diff --cached --quiet || git commit -m "Record successful intraday refresh"
           git push
