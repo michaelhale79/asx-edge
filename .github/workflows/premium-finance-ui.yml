@@ -1,0 +1,37 @@
+name: ASX Edge Premium Finance UI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/patch-premium-finance-ui.py'
+      - '.github/workflows/premium-finance-ui.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply premium finance UI
+        run: python scripts/patch-premium-finance-ui.py
+      - name: Verify premium UI
+        run: |
+          python - <<'PY'
+          s=open('index.html').read()
+          for x in ['Premium finance / Apple-style visual system','body:before','body:after','.home-tab.active','.detail-icon-tab.active','.bottom-nav{background:rgba(8,16,24,.72)']:
+              assert x in s, x
+          print('premium finance UI verified')
+          PY
+      - name: Commit app update
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Give ASX Edge a premium finance interface"
+          git pull --rebase origin main
+          git push
