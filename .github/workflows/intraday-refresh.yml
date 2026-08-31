@@ -5,7 +5,7 @@ on:
   schedule:
     # Covers both AEST and AEDT. The Melbourne-time gate below decides whether
     # this UTC trigger is one of the requested 8am/10am/12pm/2pm/4pm slots.
-    - cron: "0 21-7 * * *"
+    - cron: "0 0-6,21-23 * * *"
 
 permissions:
   actions: write
