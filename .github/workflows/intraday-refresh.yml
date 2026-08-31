@@ -128,6 +128,7 @@ jobs:
           dispatch_and_wait "company-evidence.yml" "ASX disclosure evidence, guidance, funding, debt and execution"
           dispatch_and_wait "deep-research.yml" "Company strategy and short-vs-long-term research"
           dispatch_and_wait "decision-intelligence.yml" "Evidence quality, management credibility and structured investment thesis"
+          dispatch_and_wait "ai-event-analyst.yml" "AI world/local event reasoning and ASX opportunity hypotheses"
           dispatch_and_wait "recommendation-history.yml" "Persistent recommendation tracking and learning diagnostics"
           dispatch_and_wait "14-day-study-analysis.yml" "Fourteen-day missed-opportunity analysis"
 
@@ -145,7 +146,7 @@ jobs:
               "lastSlotKey":os.environ.get("REFRESH_SLOT",""),
               "completedAtMelbourne":now.isoformat(),
               "status":"SUCCESS",
-              "pipeline":["asx-scan","whole-asx","global-trends","global-candidates","company-profiles","fundamentals","company-evidence","deep-research","decision-intelligence","recommendation-history","14-day-study-analysis"]
+              "pipeline":["asx-scan","whole-asx","global-trends","global-candidates","company-profiles","fundamentals","company-evidence","deep-research","decision-intelligence","ai-event-analyst","recommendation-history","14-day-study-analysis"]
           }
           open("refresh-health.json","w",encoding="utf-8").write(json.dumps(payload,indent=2))
           PY
