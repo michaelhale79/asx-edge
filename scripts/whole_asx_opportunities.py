@@ -1,7 +1,6 @@
 import csv
 import datetime as dt
 import gzip
-import gzip
 import io
 import json
 import math
@@ -13,7 +12,6 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from zoneinfo import ZoneInfo
 
 DATA_PATH = Path("data.json")
 ASX_LIST_URL = "https://www.asx.com.au/asx/research/ASXListedCompanies.csv"
@@ -23,9 +21,6 @@ MIN_HISTORY = 80
 MIN_DOLLAR_TURNOVER_20D = 100_000
 MAX_NEW_CANDIDATES = 100
 MIN_SURFACE_SCORE = 55
-STUDY_START = dt.date(2026, 8, 31)
-STUDY_END = dt.date(2026, 9, 14)
-STUDY_DIR = Path("study/market_snapshots")
 STUDY_START = dt.date(2026, 8, 31)
 STUDY_END = dt.date(2026, 9, 14)
 STUDY_DIR = Path("study/market_snapshots")
@@ -292,6 +287,7 @@ def main():
 
     valid.sort(key=lambda x: (x["opp"], x["confidence"], x["dollarTurnover20d"]), reverse=True)
     surfaced = [x for x in valid if x["opp"] >= MIN_SURFACE_SCORE][:MAX_NEW_CANDIDATES]
+    write_study_snapshot(valid, surfaced)
 
     # Keep the existing detailed universe intact, then add/mark whole-ASX discoveries.
     merged = list(data.get("stocks", []))
