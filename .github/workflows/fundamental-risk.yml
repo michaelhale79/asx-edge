@@ -1,0 +1,34 @@
+name: ASX Edge Fundamentals and Risk
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/fundamental_risk.py'
+      - '.github/workflows/fundamental-risk.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: asx-edge-data
+  cancel-in-progress: false
+
+jobs:
+  fundamentals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Analyse financials debt dilution and risk
+        run: python scripts/fundamental_risk.py
+      - name: Commit fundamental analysis
+        run: |
+          git config user.name "ASX Edge Bot"
+          git config user.email "asx-edge@users.noreply.github.com"
+          git add data.json study/fundamentals.json
+          git diff --cached --quiet || git commit -m "Update company fundamentals and risk"
+          git pull --rebase origin main
+          git push
