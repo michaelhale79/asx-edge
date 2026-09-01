@@ -50,7 +50,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 1
+      "wholeAsxRank": 1,
+      "oppPreTrend": 100
     },
     {
       "ticker": "DPM",
@@ -97,7 +98,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 2
+      "wholeAsxRank": 2,
+      "oppPreTrend": 98
     },
     {
       "ticker": "QML",
@@ -144,7 +146,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 3
+      "wholeAsxRank": 3,
+      "oppPreTrend": 97
     },
     {
       "ticker": "PYC",
@@ -191,7 +194,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 4
+      "wholeAsxRank": 4,
+      "oppPreTrend": 95
     },
     {
       "ticker": "ANN",
@@ -238,7 +242,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 5
+      "wholeAsxRank": 5,
+      "oppPreTrend": 94
     },
     {
       "ticker": "AMI",
@@ -285,7 +290,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 6
+      "wholeAsxRank": 6,
+      "oppPreTrend": 94
     },
     {
       "ticker": "BLS",
@@ -332,7 +338,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 7
+      "wholeAsxRank": 7,
+      "oppPreTrend": 92
     },
     {
       "ticker": "L1G",
@@ -379,7 +386,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 8
+      "wholeAsxRank": 8,
+      "oppPreTrend": 89
     },
     {
       "ticker": "CUP",
@@ -426,7 +434,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 9
+      "wholeAsxRank": 9,
+      "oppPreTrend": 89
     },
     {
       "ticker": "BET",
@@ -473,7 +482,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 10
+      "wholeAsxRank": 10,
+      "oppPreTrend": 89
     },
     {
       "ticker": "DDR",
@@ -520,7 +530,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 11
+      "wholeAsxRank": 11,
+      "oppPreTrend": 88
     },
     {
       "ticker": "BVS",
@@ -567,7 +578,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 12
+      "wholeAsxRank": 12,
+      "oppPreTrend": 88
     },
     {
       "ticker": "ALR",
@@ -614,7 +626,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 13
+      "wholeAsxRank": 13,
+      "oppPreTrend": 88
     },
     {
       "ticker": "ALK",
@@ -661,7 +674,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 14
+      "wholeAsxRank": 14,
+      "oppPreTrend": 87
     },
     {
       "ticker": "GNG",
@@ -708,7 +722,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 15
+      "wholeAsxRank": 15,
+      "oppPreTrend": 87
     },
     {
       "ticker": "HGO",
@@ -755,13 +770,14 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 16
+      "wholeAsxRank": 16,
+      "oppPreTrend": 87
     },
     {
       "ticker": "EVN",
       "name": "EVOLUTION MINING LIMITED",
       "price": 14.88,
-      "opp": 87,
+      "opp": 88,
       "wholeAsxTechnicalScore": 87,
       "edge": "MARKET-WIDE",
       "quality": 57,
@@ -795,14 +811,39 @@
       "shortInterestPct": null,
       "shortSignal": "N/A",
       "shortAdjustment": 0,
-      "globalTrendScore": 0,
-      "globalTrendAdjustment": 0,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
       "globalTrendSignal": "NEUTRAL",
-      "globalThemes": [],
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "CFTC Data Shows CAD Short Covering Leads, Gold Buying Surges - CryptoRank",
+              "source": "CryptoRank",
+              "signal": 2
+            },
+            {
+              "title": "Gold Drops To $4,397: Rebound To $4,600 Or Slide To $4,200? - Bitcoin World",
+              "source": "Bitcoin World",
+              "signal": -2
+            },
+            {
+              "title": "Gold price extends slide, but Goldman Sachs sees upside - mining.com.au",
+              "source": "mining.com.au",
+              "signal": 1
+            }
+          ]
+        }
+      ],
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 17
+      "wholeAsxRank": 17,
+      "oppPreTrend": 87
     },
     {
       "ticker": "WAF",
@@ -849,7 +890,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 18
+      "wholeAsxRank": 18,
+      "oppPreTrend": 87
     },
     {
       "ticker": "FPR",
@@ -896,7 +938,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 19
+      "wholeAsxRank": 19,
+      "oppPreTrend": 85
     },
     {
       "ticker": "MM8",
@@ -943,7 +986,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 20
+      "wholeAsxRank": 20,
+      "oppPreTrend": 85
     },
     {
       "ticker": "TCG",
@@ -990,7 +1034,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 21
+      "wholeAsxRank": 21,
+      "oppPreTrend": 85
     },
     {
       "ticker": "CGS",
@@ -1037,7 +1082,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 22
+      "wholeAsxRank": 22,
+      "oppPreTrend": 84
     },
     {
       "ticker": "LGF",
@@ -1084,7 +1130,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 23
+      "wholeAsxRank": 23,
+      "oppPreTrend": 84
     },
     {
       "ticker": "BCI",
@@ -1131,7 +1178,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 24
+      "wholeAsxRank": 24,
+      "oppPreTrend": 84
     },
     {
       "ticker": "AS1",
@@ -1178,7 +1226,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 25
+      "wholeAsxRank": 25,
+      "oppPreTrend": 84
     },
     {
       "ticker": "NMG",
@@ -1225,7 +1274,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 26
+      "wholeAsxRank": 26,
+      "oppPreTrend": 84
     },
     {
       "ticker": "HWK",
@@ -1272,13 +1322,14 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 27
+      "wholeAsxRank": 27,
+      "oppPreTrend": 84
     },
     {
       "ticker": "SFR",
       "name": "SANDFIRE RESOURCES LIMITED",
       "price": 22.94,
-      "opp": 83,
+      "opp": 84,
       "wholeAsxTechnicalScore": 83,
       "edge": "MARKET-WIDE",
       "quality": 65,
@@ -1312,14 +1363,39 @@
       "shortInterestPct": null,
       "shortSignal": "N/A",
       "shortAdjustment": 0,
-      "globalTrendScore": 0,
-      "globalTrendAdjustment": 0,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
       "globalTrendSignal": "NEUTRAL",
-      "globalThemes": [],
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Levels as LME Inventories Sink on Tariff Fears - investingnews.com",
+              "source": "investingnews.com",
+              "signal": 1
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        }
+      ],
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 28
+      "wholeAsxRank": 28,
+      "oppPreTrend": 83
     },
     {
       "ticker": "CMM",
@@ -1366,7 +1442,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 29
+      "wholeAsxRank": 29,
+      "oppPreTrend": 83
     },
     {
       "ticker": "MLX",
@@ -1413,7 +1490,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 30
+      "wholeAsxRank": 30,
+      "oppPreTrend": 83
     },
     {
       "ticker": "VMC",
@@ -1460,7 +1538,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 31
+      "wholeAsxRank": 31,
+      "oppPreTrend": 83
     },
     {
       "ticker": "PAR",
@@ -1507,7 +1586,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 32
+      "wholeAsxRank": 32,
+      "oppPreTrend": 83
     },
     {
       "ticker": "RHC",
@@ -1554,7 +1634,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 33
+      "wholeAsxRank": 33,
+      "oppPreTrend": 82
     },
     {
       "ticker": "AUZ",
@@ -1601,7 +1682,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 34
+      "wholeAsxRank": 34,
+      "oppPreTrend": 82
     },
     {
       "ticker": "PLA",
@@ -1648,7 +1730,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 35
+      "wholeAsxRank": 35,
+      "oppPreTrend": 82
     },
     {
       "ticker": "G6M",
@@ -1695,7 +1778,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 36
+      "wholeAsxRank": 36,
+      "oppPreTrend": 82
     },
     {
       "ticker": "WGX",
@@ -1742,13 +1826,14 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 37
+      "wholeAsxRank": 37,
+      "oppPreTrend": 82
     },
     {
       "ticker": "29M",
       "name": "29METALS LIMITED",
       "price": 0.38,
-      "opp": 82,
+      "opp": 83,
       "wholeAsxTechnicalScore": 82,
       "edge": "MARKET-WIDE",
       "quality": 56,
@@ -1782,14 +1867,39 @@
       "shortInterestPct": null,
       "shortSignal": "N/A",
       "shortAdjustment": 0,
-      "globalTrendScore": 0,
-      "globalTrendAdjustment": 0,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
       "globalTrendSignal": "NEUTRAL",
-      "globalThemes": [],
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Levels as LME Inventories Sink on Tariff Fears - investingnews.com",
+              "source": "investingnews.com",
+              "signal": 1
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        }
+      ],
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 38
+      "wholeAsxRank": 38,
+      "oppPreTrend": 82
     },
     {
       "ticker": "LFG",
@@ -1836,7 +1946,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 39
+      "wholeAsxRank": 39,
+      "oppPreTrend": 82
     },
     {
       "ticker": "RMC",
@@ -1883,7 +1994,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 40
+      "wholeAsxRank": 40,
+      "oppPreTrend": 82
     },
     {
       "ticker": "CDA",
@@ -1930,7 +2042,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 41
+      "wholeAsxRank": 41,
+      "oppPreTrend": 81
     },
     {
       "ticker": "PRU",
@@ -1977,7 +2090,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 42
+      "wholeAsxRank": 42,
+      "oppPreTrend": 81
     },
     {
       "ticker": "MKR",
@@ -2024,7 +2138,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 43
+      "wholeAsxRank": 43,
+      "oppPreTrend": 81
     },
     {
       "ticker": "CAF",
@@ -2071,7 +2186,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 44
+      "wholeAsxRank": 44,
+      "oppPreTrend": 81
     },
     {
       "ticker": "BCN",
@@ -2118,7 +2234,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 45
+      "wholeAsxRank": 45,
+      "oppPreTrend": 81
     },
     {
       "ticker": "VAU",
@@ -2165,7 +2282,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 46
+      "wholeAsxRank": 46,
+      "oppPreTrend": 80
     },
     {
       "ticker": "SX2",
@@ -2212,7 +2330,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 47
+      "wholeAsxRank": 47,
+      "oppPreTrend": 80
     },
     {
       "ticker": "TGF",
@@ -2259,7 +2378,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 48
+      "wholeAsxRank": 48,
+      "oppPreTrend": 80
     },
     {
       "ticker": "EWC",
@@ -2306,7 +2426,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 49
+      "wholeAsxRank": 49,
+      "oppPreTrend": 80
     },
     {
       "ticker": "OBM",
@@ -2353,7 +2474,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 50
+      "wholeAsxRank": 50,
+      "oppPreTrend": 80
     },
     {
       "ticker": "SRG",
@@ -2400,7 +2522,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 51
+      "wholeAsxRank": 51,
+      "oppPreTrend": 80
     },
     {
       "ticker": "AMP",
@@ -2447,7 +2570,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 52
+      "wholeAsxRank": 52,
+      "oppPreTrend": 79
     },
     {
       "ticker": "TEA",
@@ -2494,7 +2618,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 53
+      "wholeAsxRank": 53,
+      "oppPreTrend": 79
     },
     {
       "ticker": "SMR",
@@ -2541,7 +2666,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 54
+      "wholeAsxRank": 54,
+      "oppPreTrend": 79
     },
     {
       "ticker": "MM1",
@@ -2588,7 +2714,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 55
+      "wholeAsxRank": 55,
+      "oppPreTrend": 79
     },
     {
       "ticker": "CLX",
@@ -2635,7 +2762,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 56
+      "wholeAsxRank": 56,
+      "oppPreTrend": 79
     },
     {
       "ticker": "GMD",
@@ -2682,7 +2810,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 57
+      "wholeAsxRank": 57,
+      "oppPreTrend": 79
     },
     {
       "ticker": "GDX",
@@ -2729,7 +2858,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 58
+      "wholeAsxRank": 58,
+      "oppPreTrend": 79
     },
     {
       "ticker": "GL1",
@@ -2776,7 +2906,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 59
+      "wholeAsxRank": 59,
+      "oppPreTrend": 79
     },
     {
       "ticker": "CSC",
@@ -2823,7 +2954,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 60
+      "wholeAsxRank": 60,
+      "oppPreTrend": 78
     },
     {
       "ticker": "CNB",
@@ -2870,7 +3002,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 61
+      "wholeAsxRank": 61,
+      "oppPreTrend": 78
     },
     {
       "ticker": "SHA",
@@ -2917,7 +3050,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 62
+      "wholeAsxRank": 62,
+      "oppPreTrend": 78
     },
     {
       "ticker": "RMS",
@@ -2964,7 +3098,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 63
+      "wholeAsxRank": 63,
+      "oppPreTrend": 78
     },
     {
       "ticker": "EMR",
@@ -3011,7 +3146,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 64
+      "wholeAsxRank": 64,
+      "oppPreTrend": 78
     },
     {
       "ticker": "AIS",
@@ -3058,7 +3194,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 65
+      "wholeAsxRank": 65,
+      "oppPreTrend": 78
     },
     {
       "ticker": "STX",
@@ -3105,7 +3242,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 66
+      "wholeAsxRank": 66,
+      "oppPreTrend": 78
     },
     {
       "ticker": "BGD",
@@ -3152,7 +3290,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 67
+      "wholeAsxRank": 67,
+      "oppPreTrend": 78
     },
     {
       "ticker": "KZR",
@@ -3199,7 +3338,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 68
+      "wholeAsxRank": 68,
+      "oppPreTrend": 78
     },
     {
       "ticker": "RWC",
@@ -3246,7 +3386,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 69
+      "wholeAsxRank": 69,
+      "oppPreTrend": 77
     },
     {
       "ticker": "ACL",
@@ -3293,7 +3434,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 70
+      "wholeAsxRank": 70,
+      "oppPreTrend": 77
     },
     {
       "ticker": "AEU",
@@ -3340,7 +3482,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 71
+      "wholeAsxRank": 71,
+      "oppPreTrend": 77
     },
     {
       "ticker": "GW1",
@@ -3387,13 +3530,14 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 72
+      "wholeAsxRank": 72,
+      "oppPreTrend": 77
     },
     {
       "ticker": "NEM",
       "name": "NEWMONT CORPORATION",
       "price": 177.1,
-      "opp": 77,
+      "opp": 78,
       "wholeAsxTechnicalScore": 77,
       "edge": "MARKET-WIDE",
       "quality": 60,
@@ -3427,14 +3571,39 @@
       "shortInterestPct": null,
       "shortSignal": "N/A",
       "shortAdjustment": 0,
-      "globalTrendScore": 0,
-      "globalTrendAdjustment": 0,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
       "globalTrendSignal": "NEUTRAL",
-      "globalThemes": [],
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "CFTC Data Shows CAD Short Covering Leads, Gold Buying Surges - CryptoRank",
+              "source": "CryptoRank",
+              "signal": 2
+            },
+            {
+              "title": "Gold Drops To $4,397: Rebound To $4,600 Or Slide To $4,200? - Bitcoin World",
+              "source": "Bitcoin World",
+              "signal": -2
+            },
+            {
+              "title": "Gold price extends slide, but Goldman Sachs sees upside - mining.com.au",
+              "source": "mining.com.au",
+              "signal": 1
+            }
+          ]
+        }
+      ],
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 73
+      "wholeAsxRank": 73,
+      "oppPreTrend": 77
     },
     {
       "ticker": "POL",
@@ -3481,7 +3650,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 74
+      "wholeAsxRank": 74,
+      "oppPreTrend": 77
     },
     {
       "ticker": "VEA",
@@ -3528,7 +3698,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 76
+      "wholeAsxRank": 76,
+      "oppPreTrend": 76
     },
     {
       "ticker": "MMS",
@@ -3575,7 +3746,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 78
+      "wholeAsxRank": 78,
+      "oppPreTrend": 76
     },
     {
       "ticker": "RRL",
@@ -3622,7 +3794,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 80
+      "wholeAsxRank": 80,
+      "oppPreTrend": 76
     },
     {
       "ticker": "MI6",
@@ -3669,7 +3842,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 81
+      "wholeAsxRank": 81,
+      "oppPreTrend": 75
     },
     {
       "ticker": "PNR",
@@ -3716,7 +3890,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 82
+      "wholeAsxRank": 82,
+      "oppPreTrend": 75
     },
     {
       "ticker": "BGL",
@@ -3763,7 +3938,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 83
+      "wholeAsxRank": 83,
+      "oppPreTrend": 75
     },
     {
       "ticker": "BMN",
@@ -3810,7 +3986,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 84
+      "wholeAsxRank": 84,
+      "oppPreTrend": 75
     },
     {
       "ticker": "OMA",
@@ -3857,7 +4034,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 85
+      "wholeAsxRank": 85,
+      "oppPreTrend": 75
     },
     {
       "ticker": "RTR",
@@ -3904,7 +4082,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 86
+      "wholeAsxRank": 86,
+      "oppPreTrend": 75
     },
     {
       "ticker": "FRI",
@@ -3951,7 +4130,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 87
+      "wholeAsxRank": 87,
+      "oppPreTrend": 75
     },
     {
       "ticker": "NWS",
@@ -3998,7 +4178,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 88
+      "wholeAsxRank": 88,
+      "oppPreTrend": 74
     },
     {
       "ticker": "CXO",
@@ -4045,7 +4226,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 89
+      "wholeAsxRank": 89,
+      "oppPreTrend": 74
     },
     {
       "ticker": "PWH",
@@ -4092,13 +4274,14 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 90
+      "wholeAsxRank": 90,
+      "oppPreTrend": 74
     },
     {
       "ticker": "NST",
       "name": "NORTHERN STAR RESOURCES LTD",
       "price": 23.44,
-      "opp": 74,
+      "opp": 75,
       "wholeAsxTechnicalScore": 74,
       "edge": "MARKET-WIDE",
       "quality": 58,
@@ -4132,14 +4315,39 @@
       "shortInterestPct": null,
       "shortSignal": "N/A",
       "shortAdjustment": 0,
-      "globalTrendScore": 0,
-      "globalTrendAdjustment": 0,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
       "globalTrendSignal": "NEUTRAL",
-      "globalThemes": [],
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "CFTC Data Shows CAD Short Covering Leads, Gold Buying Surges - CryptoRank",
+              "source": "CryptoRank",
+              "signal": 2
+            },
+            {
+              "title": "Gold Drops To $4,397: Rebound To $4,600 Or Slide To $4,200? - Bitcoin World",
+              "source": "Bitcoin World",
+              "signal": -2
+            },
+            {
+              "title": "Gold price extends slide, but Goldman Sachs sees upside - mining.com.au",
+              "source": "mining.com.au",
+              "signal": 1
+            }
+          ]
+        }
+      ],
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 91
+      "wholeAsxRank": 91,
+      "oppPreTrend": 74
     },
     {
       "ticker": "COH",
@@ -4186,7 +4394,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 92
+      "wholeAsxRank": 92,
+      "oppPreTrend": 74
     },
     {
       "ticker": "RSG",
@@ -4233,7 +4442,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 93
+      "wholeAsxRank": 93,
+      "oppPreTrend": 74
     },
     {
       "ticker": "VMM",
@@ -4280,7 +4490,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 94
+      "wholeAsxRank": 94,
+      "oppPreTrend": 74
     },
     {
       "ticker": "MTO",
@@ -4327,7 +4538,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 95
+      "wholeAsxRank": 95,
+      "oppPreTrend": 74
     },
     {
       "ticker": "NMR",
@@ -4374,7 +4586,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 96
+      "wholeAsxRank": 96,
+      "oppPreTrend": 74
     },
     {
       "ticker": "SDF",
@@ -4421,7 +4634,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 97
+      "wholeAsxRank": 97,
+      "oppPreTrend": 73
     },
     {
       "ticker": "EVT",
@@ -4468,7 +4682,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 99
+      "wholeAsxRank": 99,
+      "oppPreTrend": 73
     },
     {
       "ticker": "ASL",
@@ -4515,7 +4730,8 @@
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
-      "wholeAsxRank": 100
+      "wholeAsxRank": 100,
+      "oppPreTrend": 73
     },
     {
       "ticker": "ALL",
@@ -4611,7 +4827,12 @@
           "Opportunity score changed",
           "63 \u2192 64"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 64
     },
     {
       "ticker": "BXB",
@@ -4757,7 +4978,12 @@
           "Opportunity score changed",
           "65 \u2192 64"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 64
     },
     {
       "ticker": "APA",
@@ -4813,13 +5039,18 @@
       "wholeAsxTechnicalScore": 73,
       "wholeAsxDollarTurnover20d": 29112782,
       "wholeAsxRelative1m": 4.4,
-      "wholeAsxRelative3m": 3.2
+      "wholeAsxRelative3m": 3.2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 64
     },
     {
       "ticker": "DTL",
       "name": "DATA#3 LIMITED",
       "price": 11.02,
-      "opp": 63,
+      "opp": 65,
       "edge": "INFLECTING",
       "quality": 53,
       "valuation": 50,
@@ -4910,7 +5141,36 @@
       "wholeAsxTechnicalScore": 76,
       "wholeAsxDollarTurnover20d": 6114025,
       "wholeAsxRelative1m": 12.0,
-      "wholeAsxRelative3m": 11.2
+      "wholeAsxRelative3m": 11.2,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 22,
+          "direction": "POSITIVE",
+          "weight": 0.65,
+          "headlines": [
+            {
+              "title": "Goodman Group (ASX:GMG): Data-Centre Expansion Drives Growth as AI Demand Meets Higher Rates - Kalkine",
+              "source": "Kalkine",
+              "signal": 3
+            },
+            {
+              "title": "Broadcom Stock And 2 AI Infrastructure Picks With Strong Earnings Growth - simplywall.st",
+              "source": "simplywall.st",
+              "signal": 2
+            },
+            {
+              "title": "New event targets Australia\u2019s data-centre boom - Energy Magazine",
+              "source": "Energy Magazine",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 63,
+      "globalTrendScore": 22,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "SUN",
@@ -4971,13 +5231,18 @@
           "Opportunity score changed",
           "58 \u2192 61"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "BHP",
       "name": "BHP GROUP LIMITED",
       "price": 66.23,
-      "opp": 61,
+      "opp": 62,
       "edge": "WATCH",
       "quality": 55,
       "valuation": 50,
@@ -5053,7 +5318,59 @@
       "wholeAsxTechnicalScore": 76,
       "wholeAsxDollarTurnover20d": 500094937,
       "wholeAsxRelative1m": 7.8,
-      "wholeAsxRelative3m": 3.5
+      "wholeAsxRelative3m": 3.5,
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.7,
+          "headlines": [
+            {
+              "title": "Steel Rebar Market to Reach 201.56 Million Tons by 2031 as Infrastructure Spending and Low-Carbon Steelmaking Drive Demand, Reports Mordor Intelligence - PR Newswire UK",
+              "source": "PR Newswire UK",
+              "signal": 2
+            },
+            {
+              "title": "Nifty Metal Falls 2.30% as Steel Stocks Lead Decline \u2014 August 31, 2026 - The Eastern Herald",
+              "source": "The Eastern Herald",
+              "signal": -2
+            },
+            {
+              "title": "Limited recovery expected in China\u2019s steel market in September-October - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "COPPER",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 0.6,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Levels as LME Inventories Sink on Tariff Fears - investingnews.com",
+              "source": "investingnews.com",
+              "signal": 1
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 61,
+      "globalTrendScore": 13,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "REA",
@@ -5129,13 +5446,42 @@
           "Opportunity score changed",
           "58 \u2192 61"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.35,
+          "headlines": [
+            {
+              "title": "Europe Economy 2026: Rising Energy Prices Put ECB Rate Cuts and Growth Outlook at Risk - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": 2
+            },
+            {
+              "title": "Coleman CEO Predicts Interest Rate Cuts in Coming Months - nigeriahousingmarket.com",
+              "source": "nigeriahousingmarket.com",
+              "signal": 2
+            },
+            {
+              "title": "Gold Price Steadies Near $4,400 as Fed Rate Hike Bets Intensify: XAU/USD Outlook - CryptoRank",
+              "source": "CryptoRank",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 61,
+      "globalTrendScore": 5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "S32",
       "name": "SOUTH32 LIMITED",
       "price": 5.16,
-      "opp": 61,
+      "opp": 62,
       "edge": "INFLECTING",
       "quality": 45,
       "valuation": 50,
@@ -5255,7 +5601,36 @@
           "Opportunity score changed",
           "62 \u2192 61"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Levels as LME Inventories Sink on Tariff Fears - investingnews.com",
+              "source": "investingnews.com",
+              "signal": 1
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 61,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "CSL",
@@ -5372,7 +5747,12 @@
       "wholeAsxTechnicalScore": 76,
       "wholeAsxDollarTurnover20d": 268685460,
       "wholeAsxRelative1m": 36.7,
-      "wholeAsxRelative3m": 70.6
+      "wholeAsxRelative3m": 70.6,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "WOW",
@@ -5463,7 +5843,12 @@
           "Opportunity score changed",
           "56 \u2192 60"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "ALD",
@@ -5544,7 +5929,12 @@
           "Opportunity score changed",
           "58 \u2192 60"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "CAR",
@@ -5635,7 +6025,36 @@
           "Opportunity score changed",
           "59 \u2192 60"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "Europe Economy 2026: Rising Energy Prices Put ECB Rate Cuts and Growth Outlook at Risk - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": 2
+            },
+            {
+              "title": "Coleman CEO Predicts Interest Rate Cuts in Coming Months - nigeriahousingmarket.com",
+              "source": "nigeriahousingmarket.com",
+              "signal": 2
+            },
+            {
+              "title": "Gold Price Steadies Near $4,400 as Fed Rate Hike Bets Intensify: XAU/USD Outlook - CryptoRank",
+              "source": "CryptoRank",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 60,
+      "globalTrendScore": 5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "JHX",
@@ -5736,7 +6155,12 @@
           "Opportunity score changed",
           "60 \u2192 59"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "STO",
@@ -5802,7 +6226,36 @@
           "Opportunity score changed",
           "57 \u2192 59"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Petrobras Eyes LNG Exports to Asia as Gas Demand Surges - TradingView",
+              "source": "TradingView",
+              "signal": 2
+            },
+            {
+              "title": "Lithium Miners Cash In as Battery Storage Demand Surges - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": 2
+            },
+            {
+              "title": "Trump announced a massive oil deal with Venezuela. Why it won't lower gas prices anytime soon - CNBC",
+              "source": "CNBC",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 59,
+      "globalTrendScore": 2,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "COL",
@@ -5888,7 +6341,12 @@
           "Opportunity score changed",
           "57 \u2192 59"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "ASX",
@@ -5989,7 +6447,12 @@
           "Opportunity score changed",
           "56 \u2192 59"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "DMP",
@@ -6080,7 +6543,12 @@
           "Opportunity score changed",
           "60 \u2192 59"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "XRO",
@@ -6176,7 +6644,36 @@
           "Opportunity score changed",
           "62 \u2192 59"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.3,
+          "headlines": [
+            {
+              "title": "Europe Economy 2026: Rising Energy Prices Put ECB Rate Cuts and Growth Outlook at Risk - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": 2
+            },
+            {
+              "title": "Coleman CEO Predicts Interest Rate Cuts in Coming Months - nigeriahousingmarket.com",
+              "source": "nigeriahousingmarket.com",
+              "signal": 2
+            },
+            {
+              "title": "Gold Price Steadies Near $4,400 as Fed Rate Hike Bets Intensify: XAU/USD Outlook - CryptoRank",
+              "source": "CryptoRank",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 59,
+      "globalTrendScore": 5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "TWE",
@@ -6231,7 +6728,12 @@
           "Opportunity score changed",
           "62 \u2192 59"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "ORG",
@@ -6312,7 +6814,36 @@
           "Opportunity score changed",
           "59 \u2192 58"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Petrobras Eyes LNG Exports to Asia as Gas Demand Surges - TradingView",
+              "source": "TradingView",
+              "signal": 2
+            },
+            {
+              "title": "Lithium Miners Cash In as Battery Storage Demand Surges - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": 2
+            },
+            {
+              "title": "Trump announced a massive oil deal with Venezuela. Why it won't lower gas prices anytime soon - CNBC",
+              "source": "CNBC",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 58,
+      "globalTrendScore": 2,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "RMD",
@@ -6378,7 +6909,12 @@
           "Opportunity score changed",
           "57 \u2192 58"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "AMC",
@@ -6434,7 +6970,12 @@
           "Opportunity score changed",
           "58 \u2192 57"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "MQG",
@@ -6550,7 +7091,12 @@
           "Opportunity score changed",
           "56 \u2192 57"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "CPU",
@@ -6616,13 +7162,18 @@
           "Opportunity score changed",
           "56 \u2192 57"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "MIN",
       "name": "MINERAL RESOURCES LIMITED",
       "price": 64.63,
-      "opp": 57,
+      "opp": 58,
       "edge": "INFLECTING",
       "quality": 34,
       "valuation": 50,
@@ -6712,13 +7263,65 @@
           "Opportunity score changed",
           "61 \u2192 57"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.55,
+          "headlines": [
+            {
+              "title": "Steel Rebar Market to Reach 201.56 Million Tons by 2031 as Infrastructure Spending and Low-Carbon Steelmaking Drive Demand, Reports Mordor Intelligence - PR Newswire UK",
+              "source": "PR Newswire UK",
+              "signal": 2
+            },
+            {
+              "title": "Nifty Metal Falls 2.30% as Steel Stocks Lead Decline \u2014 August 31, 2026 - The Eastern Herald",
+              "source": "The Eastern Herald",
+              "signal": -2
+            },
+            {
+              "title": "Limited recovery expected in China\u2019s steel market in September-October - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "LITHIUM",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "PMET Resources (TSX:PMET) Falls 4.69% as Lithium Development Risks and Critical Minerals Volatility Pressure Investor Sentiment - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": -2
+            },
+            {
+              "title": "Lithium miners post big profits as battery storage demand surges - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "Lithium Iron Phosphate Batteries Market to Reach USD 164.15 Billion by 2035, Driven by EV Demand & Energy Storage Growth - EIN Presswire",
+              "source": "EIN Presswire",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 57,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "RIO",
       "name": "RIO TINTO LIMITED",
       "price": 174.81,
-      "opp": 57,
+      "opp": 58,
       "edge": "WATCH",
       "quality": 53,
       "valuation": 50,
@@ -6767,7 +7370,59 @@
           "Opportunity score changed",
           "59 \u2192 57"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.85,
+          "headlines": [
+            {
+              "title": "Steel Rebar Market to Reach 201.56 Million Tons by 2031 as Infrastructure Spending and Low-Carbon Steelmaking Drive Demand, Reports Mordor Intelligence - PR Newswire UK",
+              "source": "PR Newswire UK",
+              "signal": 2
+            },
+            {
+              "title": "Nifty Metal Falls 2.30% as Steel Stocks Lead Decline \u2014 August 31, 2026 - The Eastern Herald",
+              "source": "The Eastern Herald",
+              "signal": -2
+            },
+            {
+              "title": "Limited recovery expected in China\u2019s steel market in September-October - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "COPPER",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Levels as LME Inventories Sink on Tariff Fears - investingnews.com",
+              "source": "investingnews.com",
+              "signal": 1
+            },
+            {
+              "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+              "source": "U.S. Department of War (.gov)",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 57,
+      "globalTrendScore": 13,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "ANZ",
@@ -6828,7 +7483,12 @@
           "Opportunity score changed",
           "54 \u2192 56"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "AIA",
@@ -6878,13 +7538,18 @@
           "Opportunity score changed",
           "54 \u2192 56"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "PLS",
       "name": "PLS GROUP LIMITED",
       "price": 5.4,
-      "opp": 55,
+      "opp": 56,
       "edge": "INFLECTING",
       "quality": 13,
       "valuation": 50,
@@ -6984,7 +7649,36 @@
           "Opportunity score changed",
           "56 \u2192 55"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "PMET Resources (TSX:PMET) Falls 4.69% as Lithium Development Risks and Critical Minerals Volatility Pressure Investor Sentiment - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": -2
+            },
+            {
+              "title": "Lithium miners post big profits as battery storage demand surges - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "Lithium Iron Phosphate Batteries Market to Reach USD 164.15 Billion by 2035, Driven by EV Demand & Energy Storage Growth - EIN Presswire",
+              "source": "EIN Presswire",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 55,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "WOR",
@@ -7115,13 +7809,18 @@
           "Opportunity score changed",
           "54 \u2192 55"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 55
     },
     {
       "ticker": "GOLD",
       "name": "GOLD",
       "price": 56.56,
-      "opp": 55,
+      "opp": 56,
       "edge": "WATCH",
       "quality": 66,
       "valuation": 50,
@@ -7180,7 +7879,36 @@
           "Opportunity score changed",
           "59 \u2192 55"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "CFTC Data Shows CAD Short Covering Leads, Gold Buying Surges - CryptoRank",
+              "source": "CryptoRank",
+              "signal": 2
+            },
+            {
+              "title": "Gold Drops To $4,397: Rebound To $4,600 Or Slide To $4,200? - Bitcoin World",
+              "source": "Bitcoin World",
+              "signal": -2
+            },
+            {
+              "title": "Gold price extends slide, but Goldman Sachs sees upside - mining.com.au",
+              "source": "mining.com.au",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 55,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "ETPMAG",
@@ -7235,7 +7963,12 @@
           "Opportunity score changed",
           "57 \u2192 55"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 55
     },
     {
       "ticker": "WDS",
@@ -7321,7 +8054,36 @@
           "Opportunity score changed",
           "52 \u2192 54"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Petrobras Eyes LNG Exports to Asia as Gas Demand Surges - TradingView",
+              "source": "TradingView",
+              "signal": 2
+            },
+            {
+              "title": "Lithium Miners Cash In as Battery Storage Demand Surges - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": 2
+            },
+            {
+              "title": "Trump announced a massive oil deal with Venezuela. Why it won't lower gas prices anytime soon - CNBC",
+              "source": "CNBC",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 54,
+      "globalTrendScore": 2,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "TCL",
@@ -7382,7 +8144,12 @@
           "Opportunity score changed",
           "48 \u2192 54"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "NEC",
@@ -7468,7 +8235,12 @@
           "Opportunity score changed",
           "55 \u2192 54"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "SHL",
@@ -7529,13 +8301,18 @@
           "Opportunity score changed",
           "52 \u2192 54"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "NXT",
       "name": "NEXTDC LIMITED",
       "price": 13.81,
-      "opp": 54,
+      "opp": 55,
       "edge": "INFLECTING",
       "quality": 42,
       "valuation": 50,
@@ -7625,7 +8402,59 @@
           "Opportunity score changed",
           "57 \u2192 54"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 22,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Goodman Group (ASX:GMG): Data-Centre Expansion Drives Growth as AI Demand Meets Higher Rates - Kalkine",
+              "source": "Kalkine",
+              "signal": 3
+            },
+            {
+              "title": "Broadcom Stock And 2 AI Infrastructure Picks With Strong Earnings Growth - simplywall.st",
+              "source": "simplywall.st",
+              "signal": 2
+            },
+            {
+              "title": "New event targets Australia\u2019s data-centre boom - Energy Magazine",
+              "source": "Energy Magazine",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.45,
+          "headlines": [
+            {
+              "title": "Europe Economy 2026: Rising Energy Prices Put ECB Rate Cuts and Growth Outlook at Risk - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": 2
+            },
+            {
+              "title": "Coleman CEO Predicts Interest Rate Cuts in Coming Months - nigeriahousingmarket.com",
+              "source": "nigeriahousingmarket.com",
+              "signal": 2
+            },
+            {
+              "title": "Gold Price Steadies Near $4,400 as Fed Rate Hike Bets Intensify: XAU/USD Outlook - CryptoRank",
+              "source": "CryptoRank",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 54,
+      "globalTrendScore": 17,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "PME",
@@ -7690,7 +8519,12 @@
           "Opportunity score changed",
           "59 \u2192 54"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "SEK",
@@ -7730,13 +8564,18 @@
       "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -1.2% over 1 month and +8.8% over 3 months. Evidence confidence 61/100.",
       "catalyst": "Ceasing to be a substantial holder 10 pages 893.6KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 3.2% per day; recent max drawdown 16.4%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "history": [],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "LYC",
       "name": "LYNAS RARE EARTHS LIMITED",
       "price": 15.94,
-      "opp": 52,
+      "opp": 53,
       "edge": "WATCH",
       "quality": 33,
       "valuation": 50,
@@ -7811,7 +8650,36 @@
           "Opportunity score changed",
           "54 \u2192 52"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "RARE EARTHS",
+          "score": 18,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Brazilian Rare Earths (ASX:BRE) Advances Rocha da Rocha Project as Critical Minerals Demand Grows - Kalkine",
+              "source": "Kalkine",
+              "signal": 2
+            },
+            {
+              "title": "Lynas Rare Earths (ASX:LYC) Advances Global Rare Earth Strategy as Critical Minerals Demand Strengthens - Kalkine",
+              "source": "Kalkine",
+              "signal": 2
+            },
+            {
+              "title": "Is There an Inelastic Demand for Rare Earths? - InvestorNews",
+              "source": "InvestorNews",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": 18,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "MPL",
@@ -7872,7 +8740,12 @@
           "Opportunity score changed",
           "53 \u2192 51"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "NAB",
@@ -7943,13 +8816,18 @@
           "Opportunity score changed",
           "49 \u2192 51"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "FMG",
       "name": "FORTESCUE LTD",
       "price": 17.24,
-      "opp": 50,
+      "opp": 51,
       "edge": "WATCH",
       "quality": 55,
       "valuation": 50,
@@ -8009,13 +8887,42 @@
           "Opportunity score changed",
           "51 \u2192 50"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Steel Rebar Market to Reach 201.56 Million Tons by 2031 as Infrastructure Spending and Low-Carbon Steelmaking Drive Demand, Reports Mordor Intelligence - PR Newswire UK",
+              "source": "PR Newswire UK",
+              "signal": 2
+            },
+            {
+              "title": "Nifty Metal Falls 2.30% as Steel Stocks Lead Decline \u2014 August 31, 2026 - The Eastern Herald",
+              "source": "The Eastern Herald",
+              "signal": -2
+            },
+            {
+              "title": "Limited recovery expected in China\u2019s steel market in September-October - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 50,
+      "globalTrendScore": 15,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "LTR",
       "name": "LIONTOWN LIMITED",
       "price": 1.225,
-      "opp": 50,
+      "opp": 51,
       "edge": "INFLECTING",
       "quality": 0,
       "valuation": 50,
@@ -8115,7 +9022,36 @@
           "Opportunity score changed",
           "52 \u2192 50"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "PMET Resources (TSX:PMET) Falls 4.69% as Lithium Development Risks and Critical Minerals Volatility Pressure Investor Sentiment - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": -2
+            },
+            {
+              "title": "Lithium miners post big profits as battery storage demand surges - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "Lithium Iron Phosphate Batteries Market to Reach USD 164.15 Billion by 2035, Driven by EV Demand & Energy Storage Growth - EIN Presswire",
+              "source": "EIN Presswire",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 50,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "IAG",
@@ -8160,7 +9096,12 @@
       "thesis": "No strong announcement signal. Relative strength vs ASX 200 is -7.0% over 1 month and +1.9% over 3 months. Evidence confidence 62/100.",
       "catalyst": "Notification regarding unquoted securities - IAG 7 pages 23.3KB No strong news/price mismatch is currently detected.",
       "riskText": "60-day volatility 1.9% per day; recent max drawdown 10.9%. No major price-overextension penalty is currently applied.",
-      "history": []
+      "history": [],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 49
     },
     {
       "ticker": "GMG",
@@ -8241,7 +9182,12 @@
           "Opportunity score changed",
           "47 \u2192 48"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 48
     },
     {
       "ticker": "TLS",
@@ -8302,7 +9248,12 @@
           "Opportunity score changed",
           "47 \u2192 48"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 48
     },
     {
       "ticker": "CBA",
@@ -8388,7 +9339,12 @@
           "Opportunity score changed",
           "49 \u2192 47"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "QBE",
@@ -8449,13 +9405,18 @@
           "Opportunity score changed",
           "45 \u2192 47"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "MP1",
       "name": "MEGAPORT LIMITED",
       "price": 16.54,
-      "opp": 47,
+      "opp": 48,
       "edge": "WATCH",
       "quality": 27,
       "valuation": 50,
@@ -8520,7 +9481,59 @@
           "Opportunity score changed",
           "48 \u2192 46"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 22,
+          "direction": "POSITIVE",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "Goodman Group (ASX:GMG): Data-Centre Expansion Drives Growth as AI Demand Meets Higher Rates - Kalkine",
+              "source": "Kalkine",
+              "signal": 3
+            },
+            {
+              "title": "Broadcom Stock And 2 AI Infrastructure Picks With Strong Earnings Growth - simplywall.st",
+              "source": "simplywall.st",
+              "signal": 2
+            },
+            {
+              "title": "New event targets Australia\u2019s data-centre boom - Energy Magazine",
+              "source": "Energy Magazine",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.25,
+          "headlines": [
+            {
+              "title": "Europe Economy 2026: Rising Energy Prices Put ECB Rate Cuts and Growth Outlook at Risk - kalkine.ca",
+              "source": "kalkine.ca",
+              "signal": 2
+            },
+            {
+              "title": "Coleman CEO Predicts Interest Rate Cuts in Coming Months - nigeriahousingmarket.com",
+              "source": "nigeriahousingmarket.com",
+              "signal": 2
+            },
+            {
+              "title": "Gold Price Steadies Near $4,400 as Fed Rate Hike Bets Intensify: XAU/USD Outlook - CryptoRank",
+              "source": "CryptoRank",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 47,
+      "globalTrendScore": 18,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "BRN",
@@ -8576,7 +9589,12 @@
           "Opportunity score changed",
           "45 \u2192 47"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "ZIP",
@@ -8657,7 +9675,12 @@
           "Opportunity score changed",
           "47 \u2192 46"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 46
     },
     {
       "ticker": "WES",
@@ -8748,7 +9771,12 @@
           "Opportunity score changed",
           "46 \u2192 45"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 45
     },
     {
       "ticker": "WBC",
@@ -8798,13 +9826,18 @@
           "Opportunity score changed",
           "43 \u2192 45"
         ]
-      ]
+      ],
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 45
     },
     {
       "ticker": "DRO",
       "name": "DRONESHIELD LIMITED",
       "price": 1.765,
-      "opp": 38,
+      "opp": 39,
       "edge": "WATCH",
       "quality": 1,
       "valuation": 50,
@@ -8889,13 +9922,65 @@
           "Opportunity score changed",
           "42 \u2192 38"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "DEFENCE",
+          "score": 17,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Northrop Grumman CEO says Australia solid rocket motor project expands sovereign missile production and long-range strike capacity - Defence Industry Europe",
+              "source": "Defence Industry Europe",
+              "signal": 2
+            },
+            {
+              "title": "DroneShield Unveils RfRecon as Global Counter-Drone Demand Builds \u2014 Could Defence Spending Power the Next Leg? - Kalkine",
+              "source": "Kalkine",
+              "signal": 2
+            },
+            {
+              "title": "UAE\u2019s Edge chases European defence spending surge - Arabian Gulf Business Insight | AGBI",
+              "source": "Arabian Gulf Business Insight | AGBI",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 22,
+          "direction": "POSITIVE",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "Goodman Group (ASX:GMG): Data-Centre Expansion Drives Growth as AI Demand Meets Higher Rates - Kalkine",
+              "source": "Kalkine",
+              "signal": 3
+            },
+            {
+              "title": "Broadcom Stock And 2 AI Infrastructure Picks With Strong Earnings Growth - simplywall.st",
+              "source": "simplywall.st",
+              "signal": 2
+            },
+            {
+              "title": "New event targets Australia\u2019s data-centre boom - Energy Magazine",
+              "source": "Energy Magazine",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 38,
+      "globalTrendScore": 18,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "WBT",
       "name": "WEEBIT NANO LTD",
       "price": 3.74,
-      "opp": 36,
+      "opp": 38,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 50,
@@ -8970,7 +10055,36 @@
           "Opportunity score changed",
           "38 \u2192 36"
         ]
-      ]
+      ],
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 22,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Goodman Group (ASX:GMG): Data-Centre Expansion Drives Growth as AI Demand Meets Higher Rates - Kalkine",
+              "source": "Kalkine",
+              "signal": 3
+            },
+            {
+              "title": "Broadcom Stock And 2 AI Infrastructure Picks With Strong Earnings Growth - simplywall.st",
+              "source": "simplywall.st",
+              "signal": 2
+            },
+            {
+              "title": "New event targets Australia\u2019s data-centre boom - Energy Magazine",
+              "source": "Energy Magazine",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 36,
+      "globalTrendScore": 22,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     }
   ],
   "wholeAsxScan": {
@@ -9104,5 +10218,329 @@
         "rank": 20
       }
     ]
-  }
+  },
+  "globalTrendUpdated": "2026-09-01T00:16:07.105389+00:00",
+  "globalTrendSource": "Google News RSS world-news headlines, weighted toward major news sources",
+  "globalTrendThemes": [
+    {
+      "name": "AI / DATA CENTRES",
+      "score": 22,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Goodman Group (ASX:GMG): Data-Centre Expansion Drives Growth as AI Demand Meets Higher Rates - Kalkine",
+          "source": "Kalkine",
+          "signal": 3
+        },
+        {
+          "title": "Broadcom Stock And 2 AI Infrastructure Picks With Strong Earnings Growth - simplywall.st",
+          "source": "simplywall.st",
+          "signal": 2
+        },
+        {
+          "title": "New event targets Australia\u2019s data-centre boom - Energy Magazine",
+          "source": "Energy Magazine",
+          "signal": 1
+        },
+        {
+          "title": "AI Data Center Boom Could Reach $7 Trillion By 2030. Who Wins? - Forbes",
+          "source": "Forbes",
+          "signal": 1
+        },
+        {
+          "title": "Nvidia partners with Cloverleaf to accelerate data center development - Channel Dive",
+          "source": "Channel Dive",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "DEFENCE",
+      "score": 17,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Northrop Grumman CEO says Australia solid rocket motor project expands sovereign missile production and long-range strike capacity - Defence Industry Europe",
+          "source": "Defence Industry Europe",
+          "signal": 2
+        },
+        {
+          "title": "DroneShield Unveils RfRecon as Global Counter-Drone Demand Builds \u2014 Could Defence Spending Power the Next Leg? - Kalkine",
+          "source": "Kalkine",
+          "signal": 2
+        },
+        {
+          "title": "UAE\u2019s Edge chases European defence spending surge - Arabian Gulf Business Insight | AGBI",
+          "source": "Arabian Gulf Business Insight | AGBI",
+          "signal": 1
+        },
+        {
+          "title": "Counter-Drone Defense Project Secures Funding Boost - Mirage News",
+          "source": "Mirage News",
+          "signal": 1
+        },
+        {
+          "title": "UK weapons manufacturing jobs rise 51% as defence spending increases | National Security News - nationalsecuritynews.com",
+          "source": "nationalsecuritynews.com",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "GOLD",
+      "score": 8,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "CFTC Data Shows CAD Short Covering Leads, Gold Buying Surges - CryptoRank",
+          "source": "CryptoRank",
+          "signal": 2
+        },
+        {
+          "title": "Gold Drops To $4,397: Rebound To $4,600 Or Slide To $4,200? - Bitcoin World",
+          "source": "Bitcoin World",
+          "signal": -2
+        },
+        {
+          "title": "Gold price extends slide, but Goldman Sachs sees upside - mining.com.au",
+          "source": "mining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "Gold Price Forecast: XAU/USD Holds Key Support as Iran and Fed Risks Mount - CryptoRank",
+          "source": "CryptoRank",
+          "signal": 1
+        },
+        {
+          "title": "Gold Rally: Should Investors Buy Now? - Rediff",
+          "source": "Rediff",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "OIL / ENERGY",
+      "score": 2,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Petrobras Eyes LNG Exports to Asia as Gas Demand Surges - TradingView",
+          "source": "TradingView",
+          "signal": 2
+        },
+        {
+          "title": "Lithium Miners Cash In as Battery Storage Demand Surges - Crude Oil Prices Today | OilPrice.com",
+          "source": "Crude Oil Prices Today | OilPrice.com",
+          "signal": 2
+        },
+        {
+          "title": "Trump announced a massive oil deal with Venezuela. Why it won't lower gas prices anytime soon - CNBC",
+          "source": "CNBC",
+          "signal": -1
+        },
+        {
+          "title": "ConocoPhillips (NYSE:COP) Gets Fresh Attention Amid Oil Surge - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": 1
+        },
+        {
+          "title": "Occidental Petroleum (NYSE:OXY) In Focus As Oil Surge Builds - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "URANIUM",
+      "score": 10,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Nuclear Energy Stocks Backed By Uranium And Reactor Services - simplywall.st",
+          "source": "simplywall.st",
+          "signal": 1
+        },
+        {
+          "title": "Uranium Prices Surge as Nuclear Demand Accelerates - Crude Oil Prices Today | OilPrice.com",
+          "source": "Crude Oil Prices Today | OilPrice.com",
+          "signal": 1
+        },
+        {
+          "title": "Cameco (TSX:CCO) Stock Rises 3.96% as Uranium Prices, Nuclear Power Demand and Westinghouse IPO Plans Drive Investor Attention - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": 1
+        },
+        {
+          "title": "Ur-Energy Inc. (TSX:URE) Gains Momentum as Uranium Production Growth and Nuclear Energy Demand Support Investor Optimism - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": 1
+        },
+        {
+          "title": "Boss Energy (ASX:BOE) in Focus as Honeymoon Expansion and Uranium Demand Shape Investor Sentiment - Kalkine",
+          "source": "Kalkine",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "COPPER",
+      "score": 10,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "VIDEO: Higher copper prices boost BHP shares on electrification trade - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+          "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+          "signal": 2
+        },
+        {
+          "title": "Copper Prices Near Record Levels as LME Inventories Sink on Tariff Fears - investingnews.com",
+          "source": "investingnews.com",
+          "signal": 1
+        },
+        {
+          "title": "Department of War Announces $35.6 Million Strategic Equity Investment in Trilogy Metals to - U.S. Department of War (.gov)",
+          "source": "U.S. Department of War (.gov)",
+          "signal": 1
+        },
+        {
+          "title": "A 540,000-Tonne Target Cannot Fix Today\u2019s Copper Shortage - Crux Investor",
+          "source": "Crux Investor",
+          "signal": 1
+        },
+        {
+          "title": "Copper price eases nears record - The Northern Miner",
+          "source": "The Northern Miner",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "LITHIUM",
+      "score": 7,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "PMET Resources (TSX:PMET) Falls 4.69% as Lithium Development Risks and Critical Minerals Volatility Pressure Investor Sentiment - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": -2
+        },
+        {
+          "title": "Lithium miners post big profits as battery storage demand surges - Mining.com",
+          "source": "Mining.com",
+          "signal": 1
+        },
+        {
+          "title": "Lithium Iron Phosphate Batteries Market to Reach USD 164.15 Billion by 2035, Driven by EV Demand & Energy Storage Growth - EIN Presswire",
+          "source": "EIN Presswire",
+          "signal": 1
+        },
+        {
+          "title": "Lithium Miners Cash In as Battery Storage Demand Surges - Baystreet.ca",
+          "source": "Baystreet.ca",
+          "signal": 1
+        },
+        {
+          "title": "Battery Market to Reach USD 854.90 Billion by 2035, Driven by EV Revolution and Energy Storage Demand - EIN News",
+          "source": "EIN News",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "CHINA / IRON ORE",
+      "score": 15,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Steel Rebar Market to Reach 201.56 Million Tons by 2031 as Infrastructure Spending and Low-Carbon Steelmaking Drive Demand, Reports Mordor Intelligence - PR Newswire UK",
+          "source": "PR Newswire UK",
+          "signal": 2
+        },
+        {
+          "title": "Nifty Metal Falls 2.30% as Steel Stocks Lead Decline \u2014 August 31, 2026 - The Eastern Herald",
+          "source": "The Eastern Herald",
+          "signal": -2
+        },
+        {
+          "title": "Limited recovery expected in China\u2019s steel market in September-October - SteelRadar",
+          "source": "SteelRadar",
+          "signal": 1
+        },
+        {
+          "title": "China Economy 2026: Manufacturing Shows Signs of Stabilisation as Global Markets Watch Demand - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": 1
+        },
+        {
+          "title": "Steel demand outruns capacity as prices stage comeback from monsoon slump: Kotak - ET Infra",
+          "source": "ET Infra",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RARE EARTHS",
+      "score": 18,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Brazilian Rare Earths (ASX:BRE) Advances Rocha da Rocha Project as Critical Minerals Demand Grows - Kalkine",
+          "source": "Kalkine",
+          "signal": 2
+        },
+        {
+          "title": "Lynas Rare Earths (ASX:LYC) Advances Global Rare Earth Strategy as Critical Minerals Demand Strengthens - Kalkine",
+          "source": "Kalkine",
+          "signal": 2
+        },
+        {
+          "title": "Is There an Inelastic Demand for Rare Earths? - InvestorNews",
+          "source": "InvestorNews",
+          "signal": 1
+        },
+        {
+          "title": "Lynas rides global rare earths demand for record revenue - australianmining.com.au",
+          "source": "australianmining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "NT's logistics edge puts critical minerals on the fast track - The Cairns Post",
+          "source": "The Cairns Post",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RATE EASING",
+      "score": 5,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Europe Economy 2026: Rising Energy Prices Put ECB Rate Cuts and Growth Outlook at Risk - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": 2
+        },
+        {
+          "title": "Coleman CEO Predicts Interest Rate Cuts in Coming Months - nigeriahousingmarket.com",
+          "source": "nigeriahousingmarket.com",
+          "signal": 2
+        },
+        {
+          "title": "Gold Price Steadies Near $4,400 as Fed Rate Hike Bets Intensify: XAU/USD Outlook - CryptoRank",
+          "source": "CryptoRank",
+          "signal": -1
+        },
+        {
+          "title": "Fed\u2019s Goolsbee Says Inflation Is \u2018Main Issue\u2019 as Rate Cut Hopes Fade - CryptoRank",
+          "source": "CryptoRank",
+          "signal": 1
+        },
+        {
+          "title": "Fed Chair emphasizes discipline over timeline, pushing September rate hike probability from 35% to 57% - \u5bcc\u9014\u725b\u725b",
+          "source": "\u5bcc\u9014\u725b\u725b",
+          "signal": -1
+        }
+      ]
+    }
+  ]
 }
