@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-09-01T00:28:45.857454+00:00",
+  "updated": "2026-09-01T02:27:16.050214+00:00",
   "threshold": 75,
   "scoringNote": "Deterministic opportunity is the base score. AI world-event reasoning is a separate capped +/-5 overlay and is tracked as its own signal.",
   "calls": {
@@ -33,9 +33,9 @@
         "shortInterestPct": 0.03,
         "volumeRatio": 2.32
       },
-      "currentPrice": 64.84,
+      "currentPrice": 63.17,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.58,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -103,9 +103,9 @@
         "shortInterestPct": 0.14,
         "volumeRatio": 3.67
       },
-      "currentPrice": 2.32,
+      "currentPrice": 2.34,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.86,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -138,9 +138,9 @@
         "shortInterestPct": 0.02,
         "volumeRatio": 1.65
       },
-      "currentPrice": 0.455,
+      "currentPrice": 0.465,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 2.2,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -173,9 +173,9 @@
         "shortInterestPct": 1.9,
         "volumeRatio": 1.45
       },
-      "currentPrice": 40.77,
+      "currentPrice": 41.22,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.1,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -208,9 +208,9 @@
         "shortInterestPct": 0.0,
         "volumeRatio": 0.95
       },
-      "currentPrice": 22.92,
+      "currentPrice": 22.89,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.13,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -243,42 +243,46 @@
         "shortInterestPct": 0.01,
         "volumeRatio": 6.03
       },
-      "currentPrice": 1.06,
+      "currentPrice": 1.1,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 3.77,
       "due": false,
       "outcome": "TRACKING"
     },
     "DDR": {
-      "id": "DDR-20260831T085003Z",
+      "id": "DDR-20260901T022716Z",
       "ticker": "DDR",
-      "label": "BUY",
-      "startPrice": 14.64,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 30,
-      "opportunity": 91.0,
-      "risk": 47.0,
+      "label": "HOLD",
+      "startPrice": 14.26,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 71.0,
+      "aiEventAdjustment": 0,
+      "risk": 48.0,
       "confidence": 81.0,
       "signals": {
         "momentum": true,
         "relativeStrength": true,
         "announcements": false,
         "globalTrend": false,
-        "lowShorts": true,
+        "aiEvent": false,
+        "lowShorts": false,
         "value": false,
-        "volume": true
+        "volume": false
       },
       "snapshot": {
-        "relative1m": 16.6,
-        "relative3m": 27.1,
-        "momentum": 93.0,
-        "valuation": 50.0,
+        "relative1m": 14.0,
+        "relative3m": 24.2,
+        "momentum": 89.0,
+        "valuation": 43.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
-        "shortInterestPct": 0.46,
-        "volumeRatio": 2.82
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.46
       },
-      "currentPrice": 14.64,
+      "currentPrice": 14.26,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -348,9 +352,9 @@
         "shortInterestPct": 0.65,
         "volumeRatio": 0.77
       },
-      "currentPrice": 3.16,
+      "currentPrice": 3.17,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.32,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -383,9 +387,9 @@
         "shortInterestPct": 0.82,
         "volumeRatio": 1.24
       },
-      "currentPrice": 1.3,
+      "currentPrice": 1.267,
       "days": 0,
-      "returnPct": -1.52,
+      "returnPct": -4.02,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -418,9 +422,9 @@
         "shortInterestPct": 0.0,
         "volumeRatio": 3.22
       },
-      "currentPrice": 6.59,
+      "currentPrice": 6.68,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.37,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -453,9 +457,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.64
       },
-      "currentPrice": 1.45,
+      "currentPrice": 1.455,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.34,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -488,9 +492,9 @@
         "shortInterestPct": 0.82,
         "volumeRatio": 1.64
       },
-      "currentPrice": 1.9,
+      "currentPrice": 1.91,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.53,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -523,9 +527,9 @@
         "shortInterestPct": 0.0,
         "volumeRatio": 1.15
       },
-      "currentPrice": 1.1,
+      "currentPrice": 1.06,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -3.64,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -558,9 +562,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.76
       },
-      "currentPrice": 0.051,
+      "currentPrice": 0.053,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 3.92,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -597,9 +601,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.26
       },
-      "currentPrice": 4.18,
+      "currentPrice": 4.19,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.24,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -632,9 +636,9 @@
         "shortInterestPct": 0.23,
         "volumeRatio": 1.2
       },
-      "currentPrice": 0.515,
+      "currentPrice": 0.51,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.97,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -667,9 +671,9 @@
         "shortInterestPct": 0.24,
         "volumeRatio": 1.75
       },
-      "currentPrice": 3.75,
+      "currentPrice": 3.775,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.67,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -702,9 +706,9 @@
         "shortInterestPct": 0.03,
         "volumeRatio": 0.18
       },
-      "currentPrice": 3.08,
+      "currentPrice": 3.04,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.3,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -741,9 +745,9 @@
         "shortInterestPct": null,
         "volumeRatio": 3.28
       },
-      "currentPrice": 0.495,
+      "currentPrice": 0.525,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 6.06,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -811,9 +815,9 @@
         "shortInterestPct": 0.0,
         "volumeRatio": 1.87
       },
-      "currentPrice": 0.069,
+      "currentPrice": 0.073,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 5.8,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -846,9 +850,9 @@
         "shortInterestPct": 2.26,
         "volumeRatio": 2.89
       },
-      "currentPrice": 0.815,
+      "currentPrice": 0.825,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.23,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -881,9 +885,9 @@
         "shortInterestPct": 4.19,
         "volumeRatio": 1.63
       },
-      "currentPrice": 14.88,
+      "currentPrice": 14.83,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.34,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -916,9 +920,9 @@
         "shortInterestPct": 0.58,
         "volumeRatio": 1.07
       },
-      "currentPrice": 16.48,
+      "currentPrice": 16.63,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.91,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -955,42 +959,46 @@
         "shortInterestPct": null,
         "volumeRatio": 1.54
       },
-      "currentPrice": 0.225,
+      "currentPrice": 0.215,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -4.44,
       "due": false,
       "outcome": "TRACKING"
     },
     "29M": {
-      "id": "29M-20260831T085003Z",
+      "id": "29M-20260901T022716Z",
       "ticker": "29M",
-      "label": "HOLD",
-      "startPrice": 0.38,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 20,
-      "opportunity": 85.0,
-      "risk": 69.0,
-      "confidence": 74.0,
+      "label": "SELL",
+      "startPrice": 0.375,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 54.0,
+      "aiEventAdjustment": 0,
+      "risk": 78.0,
+      "confidence": 62.0,
       "signals": {
         "momentum": true,
-        "relativeStrength": true,
+        "relativeStrength": false,
         "announcements": false,
-        "globalTrend": true,
-        "lowShorts": true,
-        "value": false,
-        "volume": true
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": false
       },
       "snapshot": {
-        "relative1m": 42.8,
-        "relative3m": 40.9,
+        "relative1m": 0.0,
+        "relative3m": 0.0,
         "momentum": 100.0,
-        "valuation": 50.0,
+        "valuation": 63.0,
         "announcementSignal": 0.0,
-        "globalTrendScore": 17.0,
-        "shortInterestPct": 0.66,
-        "volumeRatio": 2.33
+        "globalTrendScore": 10.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.15
       },
-      "currentPrice": 0.38,
+      "currentPrice": 0.375,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -1095,9 +1103,9 @@
         "shortInterestPct": 0.15,
         "volumeRatio": 1.31
       },
-      "currentPrice": 46.68,
+      "currentPrice": 47.375,
       "days": 0,
-      "returnPct": -0.62,
+      "returnPct": 0.86,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1137,35 +1145,39 @@
       "outcome": "TRACKING"
     },
     "PLA": {
-      "id": "PLA-20260831T085003Z",
+      "id": "PLA-20260901T022716Z",
       "ticker": "PLA",
-      "label": "BUY",
-      "startPrice": 0.435,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 30,
-      "opportunity": 84.0,
-      "risk": 47.0,
+      "label": "HOLD",
+      "startPrice": 0.405,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 71.0,
+      "aiEventAdjustment": 0,
+      "risk": 49.0,
       "confidence": 80.0,
       "signals": {
         "momentum": true,
         "relativeStrength": true,
         "announcements": false,
         "globalTrend": false,
-        "lowShorts": true,
+        "aiEvent": false,
+        "lowShorts": false,
         "value": false,
         "volume": false
       },
       "snapshot": {
-        "relative1m": 20.2,
-        "relative3m": 12.3,
-        "momentum": 92.0,
-        "valuation": 50.0,
+        "relative1m": 12.3,
+        "relative3m": 4.7,
+        "momentum": 80.0,
+        "valuation": 58.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
-        "shortInterestPct": 0.0,
-        "volumeRatio": 1.07
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.16
       },
-      "currentPrice": 0.435,
+      "currentPrice": 0.405,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -1200,9 +1212,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.37
       },
-      "currentPrice": 0.365,
+      "currentPrice": 0.37,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.37,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1235,9 +1247,9 @@
         "shortInterestPct": 2.5,
         "volumeRatio": 1.14
       },
-      "currentPrice": 22.94,
+      "currentPrice": 22.735,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.89,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1375,9 +1387,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.32
       },
-      "currentPrice": 0.031,
+      "currentPrice": 0.03,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -3.23,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1414,9 +1426,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.22
       },
-      "currentPrice": 3.6,
+      "currentPrice": 3.7,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 2.78,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1453,9 +1465,9 @@
         "shortInterestPct": null,
         "volumeRatio": 2.33
       },
-      "currentPrice": 3.7,
+      "currentPrice": 3.65,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.35,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1527,9 +1539,9 @@
         "shortInterestPct": 0.21,
         "volumeRatio": 0.87
       },
-      "currentPrice": 6.67,
+      "currentPrice": 6.8,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.95,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1562,9 +1574,9 @@
         "shortInterestPct": 0.35,
         "volumeRatio": 1.23
       },
-      "currentPrice": 6.48,
+      "currentPrice": 6.56,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.23,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1597,9 +1609,9 @@
         "shortInterestPct": 1.03,
         "volumeRatio": 1.5
       },
-      "currentPrice": 6.37,
+      "currentPrice": 6.395,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.39,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1636,9 +1648,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.62
       },
-      "currentPrice": 2.38,
+      "currentPrice": 2.405,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.05,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1675,9 +1687,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.81
       },
-      "currentPrice": 2.74,
+      "currentPrice": 2.89,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 5.47,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1710,9 +1722,9 @@
         "shortInterestPct": 0.05,
         "volumeRatio": 0.24
       },
-      "currentPrice": 0.7,
+      "currentPrice": 0.68,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.86,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1745,9 +1757,9 @@
         "shortInterestPct": 1.1,
         "volumeRatio": 2.01
       },
-      "currentPrice": 9.4,
+      "currentPrice": 9.74,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 3.62,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1780,9 +1792,9 @@
         "shortInterestPct": 2.12,
         "volumeRatio": 0.39
       },
-      "currentPrice": 12.15,
+      "currentPrice": 12.05,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.82,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1815,9 +1827,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.16
       },
-      "currentPrice": 2.86,
+      "currentPrice": 2.91,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.75,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1854,9 +1866,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.32
       },
-      "currentPrice": 0.07,
+      "currentPrice": 0.069,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.43,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -1928,9 +1940,9 @@
         "shortInterestPct": 0.56,
         "volumeRatio": 1.17
       },
-      "currentPrice": 16.24,
+      "currentPrice": 16.26,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.12,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2072,9 +2084,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.16
       },
-      "currentPrice": 51.28,
+      "currentPrice": 52.39,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 2.16,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2107,9 +2119,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.61
       },
-      "currentPrice": 0.965,
+      "currentPrice": 0.962,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.31,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2142,9 +2154,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.13
       },
-      "currentPrice": 1.3,
+      "currentPrice": 1.305,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.38,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2177,9 +2189,9 @@
         "shortInterestPct": 1.22,
         "volumeRatio": 1.46
       },
-      "currentPrice": 3.83,
+      "currentPrice": 3.86,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.78,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2212,9 +2224,9 @@
         "shortInterestPct": 2.88,
         "volumeRatio": 1.31
       },
-      "currentPrice": 1.53,
+      "currentPrice": 1.537,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.46,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2247,9 +2259,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.14
       },
-      "currentPrice": 118.98,
+      "currentPrice": 118.6,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.32,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2286,9 +2298,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.71
       },
-      "currentPrice": 1.0,
+      "currentPrice": 0.995,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.5,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2321,20 +2333,21 @@
         "shortInterestPct": 1.08,
         "volumeRatio": 0.55
       },
-      "currentPrice": 4.19,
+      "currentPrice": 4.18,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.24,
       "due": false,
       "outcome": "TRACKING"
     },
     "SHA": {
-      "id": "SHA-20260831T085003Z",
+      "id": "SHA-20260901T022716Z",
       "ticker": "SHA",
-      "label": "BUY",
-      "startPrice": 7.21,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 30,
-      "opportunity": 78.0,
+      "label": "HOLD",
+      "startPrice": 7.24,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 73.0,
+      "aiEventAdjustment": 0,
       "risk": 43.0,
       "confidence": 81.0,
       "signals": {
@@ -2342,21 +2355,24 @@
         "relativeStrength": true,
         "announcements": false,
         "globalTrend": false,
-        "lowShorts": true,
+        "aiEvent": false,
+        "lowShorts": false,
         "value": false,
         "volume": false
       },
       "snapshot": {
-        "relative1m": 16.7,
-        "relative3m": 3.9,
-        "momentum": 85.0,
-        "valuation": 50.0,
+        "relative1m": 17.6,
+        "relative3m": 4.9,
+        "momentum": 86.0,
+        "valuation": 49.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
-        "shortInterestPct": 1.17,
-        "volumeRatio": 1.14
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.28
       },
-      "currentPrice": 7.21,
+      "currentPrice": 7.24,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -2395,9 +2411,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.49
       },
-      "currentPrice": 0.1,
+      "currentPrice": 0.096,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -4.0,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2430,9 +2446,9 @@
         "shortInterestPct": 2.46,
         "volumeRatio": 1.39
       },
-      "currentPrice": 6.97,
+      "currentPrice": 7.06,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.29,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2500,9 +2516,9 @@
         "shortInterestPct": 2.69,
         "volumeRatio": 1.03
       },
-      "currentPrice": 177.1,
+      "currentPrice": 174.55,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.44,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2546,13 +2562,14 @@
       "outcome": "TRACKING"
     },
     "FRI": {
-      "id": "FRI-20260831T085003Z",
+      "id": "FRI-20260901T022716Z",
       "ticker": "FRI",
-      "label": "BUY",
-      "startPrice": 0.8,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 30,
-      "opportunity": 78.0,
+      "label": "HOLD",
+      "startPrice": 0.795,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 72.0,
+      "aiEventAdjustment": 0,
       "risk": 36.0,
       "confidence": 72.0,
       "signals": {
@@ -2560,21 +2577,24 @@
         "relativeStrength": true,
         "announcements": false,
         "globalTrend": false,
-        "lowShorts": true,
-        "value": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
         "volume": false
       },
       "snapshot": {
-        "relative1m": 17.9,
-        "relative3m": 9.9,
+        "relative1m": 17.6,
+        "relative3m": 9.6,
         "momentum": 83.0,
-        "valuation": 50.0,
+        "valuation": 67.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
-        "shortInterestPct": 0.0,
-        "volumeRatio": 0.82
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.0
       },
-      "currentPrice": 0.8,
+      "currentPrice": 0.795,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -2648,9 +2668,9 @@
         "shortInterestPct": 0.05,
         "volumeRatio": 0.67
       },
-      "currentPrice": 0.65,
+      "currentPrice": 0.665,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 2.31,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2718,9 +2738,9 @@
         "shortInterestPct": 0.23,
         "volumeRatio": 0.78
       },
-      "currentPrice": 0.38,
+      "currentPrice": 0.382,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.53,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2753,9 +2773,9 @@
         "shortInterestPct": 0.0,
         "volumeRatio": 0.46
       },
-      "currentPrice": 3.03,
+      "currentPrice": 2.92,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -3.63,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2827,9 +2847,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.37
       },
-      "currentPrice": 48.74,
+      "currentPrice": 47.99,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.54,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -2866,9 +2886,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.31
       },
-      "currentPrice": 11.51,
+      "currentPrice": 11.54,
       "days": 0,
-      "returnPct": -2.13,
+      "returnPct": -1.87,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3119,9 +3139,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.45
       },
-      "currentPrice": 2.78,
+      "currentPrice": 2.785,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.18,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3224,9 +3244,9 @@
         "shortInterestPct": 1.25,
         "volumeRatio": 1.7
       },
-      "currentPrice": 4.1,
+      "currentPrice": 4.27,
       "days": 0,
-      "returnPct": -0.97,
+      "returnPct": 3.14,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3259,9 +3279,9 @@
         "shortInterestPct": 1.22,
         "volumeRatio": 0.75
       },
-      "currentPrice": 5.84,
+      "currentPrice": 5.83,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.17,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3298,9 +3318,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.61
       },
-      "currentPrice": 15.2,
+      "currentPrice": 14.97,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.51,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3333,9 +3353,9 @@
         "shortInterestPct": 9.38,
         "volumeRatio": 1.25
       },
-      "currentPrice": 8.22,
+      "currentPrice": 8.345,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.52,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3368,9 +3388,9 @@
         "shortInterestPct": 6.88,
         "volumeRatio": 1.08
       },
-      "currentPrice": 4.45,
+      "currentPrice": 4.46,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.22,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3473,9 +3493,9 @@
         "shortInterestPct": 0.92,
         "volumeRatio": 1.58
       },
-      "currentPrice": 60.92,
+      "currentPrice": 60.19,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.2,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3512,9 +3532,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.45
       },
-      "currentPrice": 19.59,
+      "currentPrice": 19.38,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.07,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3547,9 +3567,9 @@
         "shortInterestPct": 2.56,
         "volumeRatio": 1.06
       },
-      "currentPrice": 11.02,
+      "currentPrice": 10.95,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.64,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3586,9 +3606,9 @@
         "shortInterestPct": null,
         "volumeRatio": 4.57
       },
-      "currentPrice": 10.89,
+      "currentPrice": 10.81,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.73,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3621,9 +3641,9 @@
         "shortInterestPct": 1.25,
         "volumeRatio": 1.85
       },
-      "currentPrice": 66.23,
+      "currentPrice": 66.35,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.18,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3656,9 +3676,9 @@
         "shortInterestPct": 1.03,
         "volumeRatio": 1.15
       },
-      "currentPrice": 5.16,
+      "currentPrice": 5.235,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.45,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3691,9 +3711,9 @@
         "shortInterestPct": 0.36,
         "volumeRatio": 1.14
       },
-      "currentPrice": 8.14,
+      "currentPrice": 8.295,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.9,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3726,9 +3746,9 @@
         "shortInterestPct": 1.34,
         "volumeRatio": 1.07
       },
-      "currentPrice": 18.86,
+      "currentPrice": 18.8,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.32,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3761,9 +3781,9 @@
         "shortInterestPct": 1.59,
         "volumeRatio": 0.93
       },
-      "currentPrice": 171.57,
+      "currentPrice": 173.63,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.2,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3800,9 +3820,9 @@
         "shortInterestPct": null,
         "volumeRatio": 2.21
       },
-      "currentPrice": 39.79,
+      "currentPrice": 39.15,
       "days": 0,
-      "returnPct": -1.29,
+      "returnPct": -2.88,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3839,9 +3859,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.29
       },
-      "currentPrice": 43.06,
+      "currentPrice": 43.73,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.56,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3874,9 +3894,9 @@
         "shortInterestPct": 0.49,
         "volumeRatio": 0.9
       },
-      "currentPrice": 33.04,
+      "currentPrice": 33.24,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.61,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3909,9 +3929,9 @@
         "shortInterestPct": 4.0,
         "volumeRatio": 1.83
       },
-      "currentPrice": 177.24,
+      "currentPrice": 170.775,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -3.65,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3944,9 +3964,9 @@
         "shortInterestPct": 3.54,
         "volumeRatio": 0.45
       },
-      "currentPrice": 41.49,
+      "currentPrice": 41.3,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.46,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -3983,9 +4003,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.77
       },
-      "currentPrice": 24.04,
+      "currentPrice": 23.81,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.96,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4018,9 +4038,9 @@
         "shortInterestPct": 1.25,
         "volumeRatio": 1.1
       },
-      "currentPrice": 11.62,
+      "currentPrice": 11.795,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.51,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4053,9 +4073,9 @@
         "shortInterestPct": 4.16,
         "volumeRatio": 1.65
       },
-      "currentPrice": 64.63,
+      "currentPrice": 63.975,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.01,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4088,9 +4108,9 @@
         "shortInterestPct": 0.39,
         "volumeRatio": 1.73
       },
-      "currentPrice": 250.59,
+      "currentPrice": 248.34,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.9,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4123,9 +4143,9 @@
         "shortInterestPct": 0.54,
         "volumeRatio": 1.8
       },
-      "currentPrice": 39.76,
+      "currentPrice": 39.61,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.38,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4158,9 +4178,9 @@
         "shortInterestPct": 1.14,
         "volumeRatio": 0.77
       },
-      "currentPrice": 64.78,
+      "currentPrice": 64.12,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.02,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4193,9 +4213,9 @@
         "shortInterestPct": 4.42,
         "volumeRatio": 0.85
       },
-      "currentPrice": 179.39,
+      "currentPrice": 174.77,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.58,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4263,9 +4283,9 @@
         "shortInterestPct": 0.96,
         "volumeRatio": 1.39
       },
-      "currentPrice": 37.2,
+      "currentPrice": 37.28,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.22,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4298,9 +4318,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.58
       },
-      "currentPrice": 56.56,
+      "currentPrice": 56.66,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.18,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4337,9 +4357,9 @@
         "shortInterestPct": null,
         "volumeRatio": 2.06
       },
-      "currentPrice": 7.23,
+      "currentPrice": 7.09,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.94,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4372,9 +4392,9 @@
         "shortInterestPct": 3.32,
         "volumeRatio": 1.4
       },
-      "currentPrice": 32.42,
+      "currentPrice": 32.92,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.54,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4407,23 +4427,23 @@
         "shortInterestPct": 5.38,
         "volumeRatio": 1.28
       },
-      "currentPrice": 56.14,
+      "currentPrice": 55.56,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.03,
       "due": false,
       "outcome": "TRACKING"
     },
     "TCL": {
-      "id": "TCL-20260901T002845Z",
+      "id": "TCL-20260901T022716Z",
       "ticker": "TCL",
-      "label": "SELL",
-      "startPrice": 14.3,
-      "startDate": "2026-09-01T00:28:45.857454+00:00",
-      "horizon": 14,
-      "opportunity": 54.0,
+      "label": "HOLD",
+      "startPrice": 14.005,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 48.0,
       "aiEventAdjustment": 0,
       "risk": 34.0,
-      "confidence": 66.0,
+      "confidence": 63.0,
       "signals": {
         "momentum": false,
         "relativeStrength": false,
@@ -4432,21 +4452,21 @@
         "aiEvent": false,
         "lowShorts": false,
         "value": false,
-        "volume": true
+        "volume": false
       },
       "snapshot": {
-        "relative1m": -5.7,
-        "relative3m": -7.6,
+        "relative1m": -4.8,
+        "relative3m": -10.3,
         "momentum": 40.0,
-        "valuation": 11.0,
+        "valuation": 50.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
         "aiEventAdjustment": 0,
         "aiEventScore": 0,
         "shortInterestPct": null,
-        "volumeRatio": 5.04
+        "volumeRatio": 0.34
       },
-      "currentPrice": 14.3,
+      "currentPrice": 14.005,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -4485,9 +4505,9 @@
         "shortInterestPct": null,
         "volumeRatio": 2.34
       },
-      "currentPrice": 0.965,
+      "currentPrice": 0.957,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.83,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4520,9 +4540,9 @@
         "shortInterestPct": 1.79,
         "volumeRatio": 1.25
       },
-      "currentPrice": 9.97,
+      "currentPrice": 9.93,
       "days": 0,
-      "returnPct": -2.45,
+      "returnPct": -2.84,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4555,9 +4575,9 @@
         "shortInterestPct": 4.18,
         "volumeRatio": 1.16
       },
-      "currentPrice": 1.225,
+      "currentPrice": 1.257,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 2.61,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4590,9 +4610,9 @@
         "shortInterestPct": 5.06,
         "volumeRatio": 1.45
       },
-      "currentPrice": 82.87,
+      "currentPrice": 83.02,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.18,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4629,9 +4649,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.79
       },
-      "currentPrice": 14.69,
+      "currentPrice": 14.27,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.86,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4664,9 +4684,9 @@
         "shortInterestPct": 11.96,
         "volumeRatio": 0.64
       },
-      "currentPrice": 5.48,
+      "currentPrice": 5.485,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.09,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4703,9 +4723,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.6
       },
-      "currentPrice": 13.81,
+      "currentPrice": 13.16,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -4.71,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4738,9 +4758,9 @@
         "shortInterestPct": 2.98,
         "volumeRatio": 1.45
       },
-      "currentPrice": 4.84,
+      "currentPrice": 4.815,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.52,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4773,9 +4793,9 @@
         "shortInterestPct": 1.31,
         "volumeRatio": 2.03
       },
-      "currentPrice": 38.63,
+      "currentPrice": 38.48,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.39,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4808,9 +4828,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.26
       },
-      "currentPrice": 23.44,
+      "currentPrice": 23.545,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.45,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4843,9 +4863,9 @@
         "shortInterestPct": 9.74,
         "volumeRatio": 1.02
       },
-      "currentPrice": 174.81,
+      "currentPrice": 175.43,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.35,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4878,9 +4898,9 @@
         "shortInterestPct": 7.95,
         "volumeRatio": 8.7
       },
-      "currentPrice": 19.59,
+      "currentPrice": 19.595,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.03,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4913,9 +4933,9 @@
         "shortInterestPct": 3.05,
         "volumeRatio": 1.38
       },
-      "currentPrice": 17.24,
+      "currentPrice": 17.305,
       "days": 0,
-      "returnPct": -2.6,
+      "returnPct": -2.23,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4948,9 +4968,9 @@
         "shortInterestPct": 1.02,
         "volumeRatio": 0.8
       },
-      "currentPrice": 7.85,
+      "currentPrice": 7.81,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.51,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4983,9 +5003,9 @@
         "shortInterestPct": 0.19,
         "volumeRatio": 1.68
       },
-      "currentPrice": 22.26,
+      "currentPrice": 22.205,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.25,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5022,9 +5042,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.74
       },
-      "currentPrice": 20.535,
+      "currentPrice": 20.51,
       "days": 0,
-      "returnPct": -1.56,
+      "returnPct": -1.68,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5057,9 +5077,9 @@
         "shortInterestPct": 11.22,
         "volumeRatio": 1.23
       },
-      "currentPrice": 5.4,
+      "currentPrice": 5.455,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.02,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5092,9 +5112,9 @@
         "shortInterestPct": 1.5,
         "volumeRatio": 1.5
       },
-      "currentPrice": 27.73,
+      "currentPrice": 27.42,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.12,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5127,9 +5147,9 @@
         "shortInterestPct": 1.23,
         "volumeRatio": 1.09
       },
-      "currentPrice": 4.67,
+      "currentPrice": 4.62,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.07,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5162,9 +5182,9 @@
         "shortInterestPct": 2.53,
         "volumeRatio": 0.87
       },
-      "currentPrice": 16.54,
+      "currentPrice": 16.2,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.06,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5197,9 +5217,9 @@
         "shortInterestPct": 2.08,
         "volumeRatio": 1.7
       },
-      "currentPrice": 159.9,
+      "currentPrice": 159.07,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.52,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5232,22 +5252,22 @@
         "shortInterestPct": 1.79,
         "volumeRatio": 3.12
       },
-      "currentPrice": 0.13,
+      "currentPrice": 0.132,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.54,
       "due": false,
       "outcome": "TRACKING"
     },
     "PDN": {
-      "id": "PDN-20260831T222002Z",
+      "id": "PDN-20260901T022716Z",
       "ticker": "PDN",
-      "label": "SELL",
-      "startPrice": 11.82,
-      "startDate": "2026-08-31T22:20:02.611093+00:00",
-      "horizon": 14,
-      "opportunity": 50.0,
+      "label": "HOLD",
+      "startPrice": 11.665,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 46.0,
       "aiEventAdjustment": 0,
-      "risk": 78.0,
+      "risk": 67.0,
       "confidence": 62.0,
       "signals": {
         "momentum": true,
@@ -5262,16 +5282,16 @@
       "snapshot": {
         "relative1m": 0.0,
         "relative3m": 0.0,
-        "momentum": 78.0,
+        "momentum": 75.0,
         "valuation": 50.0,
         "announcementSignal": 0.0,
-        "globalTrendScore": 10.0,
+        "globalTrendScore": 9.0,
         "aiEventAdjustment": 0,
         "aiEventScore": 0,
         "shortInterestPct": null,
-        "volumeRatio": 0.71
+        "volumeRatio": 0.13
       },
-      "currentPrice": 11.82,
+      "currentPrice": 11.665,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -5306,9 +5326,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.09
       },
-      "currentPrice": 8.58,
+      "currentPrice": 8.39,
       "days": 0,
-      "returnPct": -1.27,
+      "returnPct": -3.45,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5341,9 +5361,9 @@
         "shortInterestPct": 12.03,
         "volumeRatio": 9.25
       },
-      "currentPrice": 27.65,
+      "currentPrice": 26.905,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.69,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5376,9 +5396,9 @@
         "shortInterestPct": 10.29,
         "volumeRatio": 1.99
       },
-      "currentPrice": 15.94,
+      "currentPrice": 15.385,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -3.48,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5411,9 +5431,9 @@
         "shortInterestPct": 1.34,
         "volumeRatio": 1.63
       },
-      "currentPrice": 78.24,
+      "currentPrice": 76.6,
       "days": 0,
-      "returnPct": -1.51,
+      "returnPct": -3.58,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5446,9 +5466,9 @@
         "shortInterestPct": 1.95,
         "volumeRatio": 1.67
       },
-      "currentPrice": 34.55,
+      "currentPrice": 34.48,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.2,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5481,9 +5501,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.11
       },
-      "currentPrice": 10.05,
+      "currentPrice": 9.65,
       "days": 0,
-      "returnPct": 2.34,
+      "returnPct": -1.73,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5516,20 +5536,21 @@
         "shortInterestPct": null,
         "volumeRatio": 1.07
       },
-      "currentPrice": 1.715,
+      "currentPrice": 1.64,
       "days": 0,
-      "returnPct": 4.57,
+      "returnPct": 0.0,
       "due": false,
       "outcome": "TRACKING"
     },
     "ILU": {
-      "id": "ILU-20260831T085003Z",
+      "id": "ILU-20260901T022716Z",
       "ticker": "ILU",
-      "label": "HOLD",
-      "startPrice": 6.86,
-      "startDate": "2026-08-31T08:50:03.243878+00:00",
-      "horizon": 20,
-      "opportunity": 40.0,
+      "label": "SELL",
+      "startPrice": 6.785,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 37.0,
+      "aiEventAdjustment": 0,
       "risk": 67.0,
       "confidence": 62.0,
       "signals": {
@@ -5537,6 +5558,7 @@
         "relativeStrength": false,
         "announcements": false,
         "globalTrend": true,
+        "aiEvent": false,
         "lowShorts": false,
         "value": false,
         "volume": false
@@ -5544,16 +5566,18 @@
       "snapshot": {
         "relative1m": 0.0,
         "relative3m": 0.0,
-        "momentum": 57.0,
+        "momentum": 56.0,
         "valuation": 50.0,
         "announcementSignal": 0.0,
-        "globalTrendScore": 16.0,
+        "globalTrendScore": 18.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
         "shortInterestPct": null,
-        "volumeRatio": 1.12
+        "volumeRatio": 0.2
       },
-      "currentPrice": 7.02,
+      "currentPrice": 6.785,
       "days": 0,
-      "returnPct": 2.33,
+      "returnPct": 0.0,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5586,9 +5610,9 @@
         "shortInterestPct": 10.61,
         "volumeRatio": 0.83
       },
-      "currentPrice": 2.5,
+      "currentPrice": 2.51,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 0.4,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5621,22 +5645,22 @@
         "shortInterestPct": 1.61,
         "volumeRatio": 1.09
       },
-      "currentPrice": 3.74,
+      "currentPrice": 3.635,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.81,
       "due": false,
       "outcome": "TRACKING"
     },
     "BOE": {
-      "id": "BOE-20260831T222002Z",
+      "id": "BOE-20260901T022716Z",
       "ticker": "BOE",
-      "label": "HOLD",
-      "startPrice": 1.445,
-      "startDate": "2026-08-31T22:20:02.611093+00:00",
-      "horizon": 20,
-      "opportunity": 43.0,
+      "label": "SELL",
+      "startPrice": 1.417,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 35.0,
       "aiEventAdjustment": 0,
-      "risk": 73.0,
+      "risk": 74.0,
       "confidence": 62.0,
       "signals": {
         "momentum": true,
@@ -5646,21 +5670,21 @@
         "aiEvent": false,
         "lowShorts": false,
         "value": false,
-        "volume": true
+        "volume": false
       },
       "snapshot": {
         "relative1m": 0.0,
         "relative3m": 0.0,
-        "momentum": 72.0,
+        "momentum": 69.0,
         "valuation": 50.0,
         "announcementSignal": 0.0,
-        "globalTrendScore": 10.0,
+        "globalTrendScore": 9.0,
         "aiEventAdjustment": 0,
         "aiEventScore": 0,
         "shortInterestPct": null,
-        "volumeRatio": 1.74
+        "volumeRatio": 0.28
       },
-      "currentPrice": 1.445,
+      "currentPrice": 1.417,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -5695,9 +5719,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.8
       },
-      "currentPrice": 0.86,
+      "currentPrice": 0.877,
       "days": 0,
-      "returnPct": -0.58,
+      "returnPct": 1.39,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5730,9 +5754,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.31
       },
-      "currentPrice": 1.745,
+      "currentPrice": 1.787,
       "days": 0,
-      "returnPct": -0.29,
+      "returnPct": 2.11,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5765,9 +5789,9 @@
         "shortInterestPct": 14.35,
         "volumeRatio": 0.77
       },
-      "currentPrice": 1.765,
+      "currentPrice": 1.71,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -3.12,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -5807,15 +5831,15 @@
       "outcome": "TRACKING"
     },
     "KOA": {
-      "id": "KOA-20260831T222002Z",
+      "id": "KOA-20260901T022716Z",
       "ticker": "KOA",
-      "label": "BUY",
-      "startPrice": 3.96,
-      "startDate": "2026-08-31T22:20:02.611093+00:00",
-      "horizon": 30,
-      "opportunity": 93.0,
+      "label": "HOLD",
+      "startPrice": 4.16,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 70.0,
       "aiEventAdjustment": 0,
-      "risk": 40.0,
+      "risk": 41.0,
       "confidence": 74.0,
       "signals": {
         "momentum": true,
@@ -5825,21 +5849,21 @@
         "aiEvent": false,
         "lowShorts": false,
         "value": false,
-        "volume": true
+        "volume": false
       },
       "snapshot": {
-        "relative1m": 28.5,
-        "relative3m": 23.5,
+        "relative1m": 34.0,
+        "relative3m": 33.9,
         "momentum": 100.0,
-        "valuation": 56.0,
+        "valuation": 57.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
         "aiEventAdjustment": 0,
         "aiEventScore": 0,
         "shortInterestPct": null,
-        "volumeRatio": 15.83
+        "volumeRatio": 0.02
       },
-      "currentPrice": 3.96,
+      "currentPrice": 4.16,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -5995,9 +6019,9 @@
         "shortInterestPct": null,
         "volumeRatio": 2.11
       },
-      "currentPrice": 0.17,
+      "currentPrice": 0.167,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.76,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -6041,16 +6065,16 @@
       "outcome": "TRACKING"
     },
     "ORE": {
-      "id": "ORE-20260831T222002Z",
+      "id": "ORE-20260901T022716Z",
       "ticker": "ORE",
-      "label": "SELL",
-      "startPrice": 2.85,
-      "startDate": "2026-08-31T22:20:02.611093+00:00",
-      "horizon": 14,
-      "opportunity": 82.0,
+      "label": "HOLD",
+      "startPrice": 2.69,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 72.0,
       "aiEventAdjustment": 0,
-      "risk": 65.0,
-      "confidence": 81.0,
+      "risk": 64.0,
+      "confidence": 74.0,
       "signals": {
         "momentum": true,
         "relativeStrength": true,
@@ -6062,9 +6086,9 @@
         "volume": false
       },
       "snapshot": {
-        "relative1m": 26.5,
-        "relative3m": 5.4,
-        "momentum": 96.0,
+        "relative1m": 22.7,
+        "relative3m": -2.1,
+        "momentum": 84.0,
         "valuation": 66.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
@@ -6073,7 +6097,7 @@
         "shortInterestPct": null,
         "volumeRatio": 0.01
       },
-      "currentPrice": 2.85,
+      "currentPrice": 2.69,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -6385,9 +6409,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.25
       },
-      "currentPrice": 0.55,
+      "currentPrice": 0.535,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.73,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -6463,9 +6487,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.21
       },
-      "currentPrice": 1.06,
+      "currentPrice": 1.055,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -0.47,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -6658,9 +6682,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.38
       },
-      "currentPrice": 17.17,
+      "currentPrice": 16.96,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -1.22,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -7048,9 +7072,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.34
       },
-      "currentPrice": 0.535,
+      "currentPrice": 0.545,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": 1.87,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -7282,9 +7306,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.77
       },
-      "currentPrice": 0.17,
+      "currentPrice": 0.165,
       "days": 0,
-      "returnPct": 0.0,
+      "returnPct": -2.94,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -7361,6 +7385,708 @@
         "volumeRatio": 0.0
       },
       "currentPrice": 2.84,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "QRE": {
+      "id": "QRE-20260901T022716Z",
+      "ticker": "QRE",
+      "label": "BUY",
+      "startPrice": 10.88,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 30,
+      "opportunity": 86.0,
+      "aiEventAdjustment": 0,
+      "risk": 40.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 12.0,
+        "relative3m": 0.9,
+        "momentum": 78.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 14.56
+      },
+      "currentPrice": 10.88,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "TGN": {
+      "id": "TGN-20260901T022716Z",
+      "ticker": "TGN",
+      "label": "HOLD",
+      "startPrice": 0.285,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 80.0,
+      "aiEventAdjustment": 0,
+      "risk": 60.0,
+      "confidence": 74.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 42.3,
+        "relative3m": 24.8,
+        "momentum": 100.0,
+        "valuation": 52.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 2.83
+      },
+      "currentPrice": 0.285,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "COG": {
+      "id": "COG-20260901T022716Z",
+      "ticker": "COG",
+      "label": "SELL",
+      "startPrice": 1.527,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 80.0,
+      "aiEventAdjustment": 0,
+      "risk": 53.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 13.0,
+        "relative3m": -0.3,
+        "momentum": 74.0,
+        "valuation": 70.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 2.23
+      },
+      "currentPrice": 1.527,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "MVF": {
+      "id": "MVF-20260901T022716Z",
+      "ticker": "MVF",
+      "label": "HOLD",
+      "startPrice": 0.77,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 76.0,
+      "aiEventAdjustment": 0,
+      "risk": 47.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 12.2,
+        "relative3m": 6.0,
+        "momentum": 76.0,
+        "valuation": 62.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 2.69
+      },
+      "currentPrice": 0.77,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "CVN": {
+      "id": "CVN-20260901T022716Z",
+      "ticker": "CVN",
+      "label": "HOLD",
+      "startPrice": 0.115,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 74.0,
+      "aiEventAdjustment": 0,
+      "risk": 63.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 19.6,
+        "relative3m": -8.9,
+        "momentum": 78.0,
+        "valuation": 59.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.58
+      },
+      "currentPrice": 0.115,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "TBN": {
+      "id": "TBN-20260901T022716Z",
+      "ticker": "TBN",
+      "label": "HOLD",
+      "startPrice": 0.28,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 73.0,
+      "aiEventAdjustment": 0,
+      "risk": 58.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 19.0,
+        "relative3m": 9.5,
+        "momentum": 89.0,
+        "valuation": 58.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.88
+      },
+      "currentPrice": 0.28,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "EZL": {
+      "id": "EZL-20260901T022716Z",
+      "ticker": "EZL",
+      "label": "HOLD",
+      "startPrice": 1.425,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 73.0,
+      "aiEventAdjustment": 0,
+      "risk": 34.0,
+      "confidence": 80.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 7.0,
+        "relative3m": 6.1,
+        "momentum": 75.0,
+        "valuation": 62.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.45
+      },
+      "currentPrice": 1.425,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "GML": {
+      "id": "GML-20260901T022716Z",
+      "ticker": "GML",
+      "label": "HOLD",
+      "startPrice": 0.082,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 73.0,
+      "aiEventAdjustment": 0,
+      "risk": 72.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 60.6,
+        "relative3m": 41.7,
+        "momentum": 100.0,
+        "valuation": 58.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.38
+      },
+      "currentPrice": 0.082,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "NHC": {
+      "id": "NHC-20260901T022716Z",
+      "ticker": "NHC",
+      "label": "HOLD",
+      "startPrice": 6.15,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 72.0,
+      "aiEventAdjustment": 0,
+      "risk": 50.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 19.2,
+        "relative3m": -3.6,
+        "momentum": 85.0,
+        "valuation": 61.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.4
+      },
+      "currentPrice": 6.15,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "OML": {
+      "id": "OML-20260901T022716Z",
+      "ticker": "OML",
+      "label": "SELL",
+      "startPrice": 1.637,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 70.0,
+      "aiEventAdjustment": 0,
+      "risk": 37.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 5.0,
+        "relative3m": 27.3,
+        "momentum": 80.0,
+        "valuation": 65.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.13
+      },
+      "currentPrice": 1.637,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "BMC": {
+      "id": "BMC-20260901T022716Z",
+      "ticker": "BMC",
+      "label": "SELL",
+      "startPrice": 3.06,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 70.0,
+      "aiEventAdjustment": 0,
+      "risk": 65.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 20.8,
+        "relative3m": 0.4,
+        "momentum": 88.0,
+        "valuation": 44.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.04
+      },
+      "currentPrice": 3.06,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "OR3": {
+      "id": "OR3-20260901T022716Z",
+      "ticker": "OR3",
+      "label": "HOLD",
+      "startPrice": 0.083,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 70.0,
+      "aiEventAdjustment": 0,
+      "risk": 71.0,
+      "confidence": 72.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 18.4,
+        "relative3m": -2.3,
+        "momentum": 79.0,
+        "valuation": 58.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.01
+      },
+      "currentPrice": 0.083,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "VAL": {
+      "id": "VAL-20260901T022716Z",
+      "ticker": "VAL",
+      "label": "HOLD",
+      "startPrice": 0.25,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 69.0,
+      "aiEventAdjustment": 0,
+      "risk": 72.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 18.9,
+        "relative3m": 6.4,
+        "momentum": 83.0,
+        "valuation": 55.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.13
+      },
+      "currentPrice": 0.25,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "KAU": {
+      "id": "KAU-20260901T022716Z",
+      "ticker": "KAU",
+      "label": "HOLD",
+      "startPrice": 0.24,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 69.0,
+      "aiEventAdjustment": 0,
+      "risk": 66.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 29.6,
+        "relative3m": 1.9,
+        "momentum": 93.0,
+        "valuation": 79.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.09
+      },
+      "currentPrice": 0.24,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "GHY": {
+      "id": "GHY-20260901T022716Z",
+      "ticker": "GHY",
+      "label": "SELL",
+      "startPrice": 0.485,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 69.0,
+      "aiEventAdjustment": 0,
+      "risk": 75.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 11.3,
+        "relative3m": -4.8,
+        "momentum": 71.0,
+        "valuation": 58.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.92
+      },
+      "currentPrice": 0.485,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "CCL": {
+      "id": "CCL-20260901T022716Z",
+      "ticker": "CCL",
+      "label": "HOLD",
+      "startPrice": 5.57,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 20,
+      "opportunity": 68.0,
+      "aiEventAdjustment": 0,
+      "risk": 38.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 11.3,
+        "relative3m": 9.1,
+        "momentum": 81.0,
+        "valuation": 59.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.16
+      },
+      "currentPrice": 5.57,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "CBE": {
+      "id": "CBE-20260901T022716Z",
+      "ticker": "CBE",
+      "label": "SELL",
+      "startPrice": 0.41,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 68.0,
+      "aiEventAdjustment": 0,
+      "risk": 88.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 54.5,
+        "relative3m": 23.4,
+        "momentum": 100.0,
+        "valuation": 24.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.38
+      },
+      "currentPrice": 0.41,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING"
+    },
+    "BCM": {
+      "id": "BCM-20260901T022716Z",
+      "ticker": "BCM",
+      "label": "SELL",
+      "startPrice": 0.067,
+      "startDate": "2026-09-01T02:27:16.050214+00:00",
+      "horizon": 14,
+      "opportunity": 68.0,
+      "aiEventAdjustment": 0,
+      "risk": 96.0,
+      "confidence": 80.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 55.6,
+        "relative3m": 54.8,
+        "momentum": 100.0,
+        "valuation": 44.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.75
+      },
+      "currentPrice": 0.067,
       "days": 0,
       "returnPct": 0.0,
       "due": false,
@@ -8826,6 +9552,433 @@
       "outcome": "TRACKING",
       "endDate": "2026-09-01T00:28:45.857454+00:00",
       "endPrice": 14.69
+    },
+    {
+      "id": "SHA-20260831T085003Z",
+      "ticker": "SHA",
+      "label": "BUY",
+      "startPrice": 7.21,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 30,
+      "opportunity": 78.0,
+      "risk": 43.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "lowShorts": true,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 16.7,
+        "relative3m": 3.9,
+        "momentum": 85.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "shortInterestPct": 1.17,
+        "volumeRatio": 1.14
+      },
+      "currentPrice": 7.21,
+      "days": 0,
+      "returnPct": 0.42,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 7.24
+    },
+    {
+      "id": "ORE-20260831T222002Z",
+      "ticker": "ORE",
+      "label": "SELL",
+      "startPrice": 2.85,
+      "startDate": "2026-08-31T22:20:02.611093+00:00",
+      "horizon": 14,
+      "opportunity": 82.0,
+      "aiEventAdjustment": 0,
+      "risk": 65.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": true,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 26.5,
+        "relative3m": 5.4,
+        "momentum": 96.0,
+        "valuation": 66.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.01
+      },
+      "currentPrice": 2.85,
+      "days": 0,
+      "returnPct": -5.61,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 2.69
+    },
+    {
+      "id": "FRI-20260831T085003Z",
+      "ticker": "FRI",
+      "label": "BUY",
+      "startPrice": 0.8,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 30,
+      "opportunity": 78.0,
+      "risk": 36.0,
+      "confidence": 72.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "lowShorts": true,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 17.9,
+        "relative3m": 9.9,
+        "momentum": 83.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "shortInterestPct": 0.0,
+        "volumeRatio": 0.82
+      },
+      "currentPrice": 0.8,
+      "days": 0,
+      "returnPct": -0.62,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 0.795
+    },
+    {
+      "id": "DDR-20260831T085003Z",
+      "ticker": "DDR",
+      "label": "BUY",
+      "startPrice": 14.64,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 30,
+      "opportunity": 91.0,
+      "risk": 47.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "lowShorts": true,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 16.6,
+        "relative3m": 27.1,
+        "momentum": 93.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "shortInterestPct": 0.46,
+        "volumeRatio": 2.82
+      },
+      "currentPrice": 14.64,
+      "days": 0,
+      "returnPct": -2.6,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 14.26
+    },
+    {
+      "id": "PLA-20260831T085003Z",
+      "ticker": "PLA",
+      "label": "BUY",
+      "startPrice": 0.435,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 30,
+      "opportunity": 84.0,
+      "risk": 47.0,
+      "confidence": 80.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "lowShorts": true,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 20.2,
+        "relative3m": 12.3,
+        "momentum": 92.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "shortInterestPct": 0.0,
+        "volumeRatio": 1.07
+      },
+      "currentPrice": 0.435,
+      "days": 0,
+      "returnPct": -6.9,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 0.405
+    },
+    {
+      "id": "KOA-20260831T222002Z",
+      "ticker": "KOA",
+      "label": "BUY",
+      "startPrice": 3.96,
+      "startDate": "2026-08-31T22:20:02.611093+00:00",
+      "horizon": 30,
+      "opportunity": 93.0,
+      "aiEventAdjustment": 0,
+      "risk": 40.0,
+      "confidence": 74.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 28.5,
+        "relative3m": 23.5,
+        "momentum": 100.0,
+        "valuation": 56.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 15.83
+      },
+      "currentPrice": 3.96,
+      "days": 0,
+      "returnPct": 5.05,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 4.16
+    },
+    {
+      "id": "29M-20260831T085003Z",
+      "ticker": "29M",
+      "label": "HOLD",
+      "startPrice": 0.38,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 20,
+      "opportunity": 85.0,
+      "risk": 69.0,
+      "confidence": 74.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": true,
+        "lowShorts": true,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 42.8,
+        "relative3m": 40.9,
+        "momentum": 100.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 17.0,
+        "shortInterestPct": 0.66,
+        "volumeRatio": 2.33
+      },
+      "currentPrice": 0.38,
+      "days": 0,
+      "returnPct": -1.32,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 0.375
+    },
+    {
+      "id": "TCL-20260901T002845Z",
+      "ticker": "TCL",
+      "label": "SELL",
+      "startPrice": 14.3,
+      "startDate": "2026-09-01T00:28:45.857454+00:00",
+      "horizon": 14,
+      "opportunity": 54.0,
+      "aiEventAdjustment": 0,
+      "risk": 34.0,
+      "confidence": 66.0,
+      "signals": {
+        "momentum": false,
+        "relativeStrength": false,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": -5.7,
+        "relative3m": -7.6,
+        "momentum": 40.0,
+        "valuation": 11.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 5.04
+      },
+      "currentPrice": 14.3,
+      "days": 0,
+      "returnPct": -2.06,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 14.005
+    },
+    {
+      "id": "PDN-20260831T222002Z",
+      "ticker": "PDN",
+      "label": "SELL",
+      "startPrice": 11.82,
+      "startDate": "2026-08-31T22:20:02.611093+00:00",
+      "horizon": 14,
+      "opportunity": 50.0,
+      "aiEventAdjustment": 0,
+      "risk": 78.0,
+      "confidence": 62.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": false,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 0.0,
+        "relative3m": 0.0,
+        "momentum": 78.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 10.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.71
+      },
+      "currentPrice": 11.82,
+      "days": 0,
+      "returnPct": -1.31,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 11.665
+    },
+    {
+      "id": "ILU-20260831T085003Z",
+      "ticker": "ILU",
+      "label": "HOLD",
+      "startPrice": 6.86,
+      "startDate": "2026-08-31T08:50:03.243878+00:00",
+      "horizon": 20,
+      "opportunity": 40.0,
+      "risk": 67.0,
+      "confidence": 62.0,
+      "signals": {
+        "momentum": false,
+        "relativeStrength": false,
+        "announcements": false,
+        "globalTrend": true,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 0.0,
+        "relative3m": 0.0,
+        "momentum": 57.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 16.0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.12
+      },
+      "currentPrice": 7.02,
+      "days": 0,
+      "returnPct": -1.09,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 6.785
+    },
+    {
+      "id": "BOE-20260831T222002Z",
+      "ticker": "BOE",
+      "label": "HOLD",
+      "startPrice": 1.445,
+      "startDate": "2026-08-31T22:20:02.611093+00:00",
+      "horizon": 20,
+      "opportunity": 43.0,
+      "aiEventAdjustment": 0,
+      "risk": 73.0,
+      "confidence": 62.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": false,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 0.0,
+        "relative3m": 0.0,
+        "momentum": 72.0,
+        "valuation": 50.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 10.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.74
+      },
+      "currentPrice": 1.445,
+      "days": 0,
+      "returnPct": -1.94,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-01T02:27:16.050214+00:00",
+      "endPrice": 1.417
     }
   ],
   "summary": {
