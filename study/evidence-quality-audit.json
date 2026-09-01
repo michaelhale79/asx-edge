@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01T00:28:10.781986+00:00",
+  "updated": "2026-09-01T02:26:37.205334+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -11,19 +11,6 @@
       "qualityEvidenceRisk": 30,
       "corrections": [
         "Removed non-operating deferred/accounting language, successful planned shutdowns, or generic forward-looking risk boilerplate from execution-delay detection."
-      ],
-      "managementCredibilityScore": 58,
-      "assessment": "PASS_WITH_CORRECTIONS"
-    },
-    {
-      "ticker": "QML",
-      "documentsRead": 3,
-      "rawEvidenceScore": 50,
-      "rawEvidenceRisk": 40,
-      "qualityEvidenceScore": 60,
-      "qualityEvidenceRisk": 33,
-      "corrections": [
-        "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation."
       ],
       "managementCredibilityScore": 58,
       "assessment": "PASS_WITH_CORRECTIONS"
@@ -65,17 +52,6 @@
       "assessment": "PASS"
     },
     {
-      "ticker": "DRO",
-      "documentsRead": 3,
-      "rawEvidenceScore": 50,
-      "rawEvidenceRisk": 30,
-      "qualityEvidenceScore": 50,
-      "qualityEvidenceRisk": 30,
-      "corrections": [],
-      "managementCredibilityScore": 50,
-      "assessment": "PASS"
-    },
-    {
       "ticker": "WBT",
       "documentsRead": 3,
       "rawEvidenceScore": 46,
@@ -84,6 +60,17 @@
       "qualityEvidenceRisk": 55,
       "corrections": [],
       "managementCredibilityScore": 46,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "DRO",
+      "documentsRead": 3,
+      "rawEvidenceScore": 50,
+      "rawEvidenceRisk": 30,
+      "qualityEvidenceScore": 50,
+      "qualityEvidenceRisk": 30,
+      "corrections": [],
+      "managementCredibilityScore": 50,
       "assessment": "PASS"
     }
   ]
