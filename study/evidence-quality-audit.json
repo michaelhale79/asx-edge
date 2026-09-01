@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01T04:21:46.175153+00:00",
+  "updated": "2026-09-01T06:25:59.519986+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -26,6 +26,20 @@
         "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation."
       ],
       "managementCredibilityScore": 58,
+      "assessment": "PASS_WITH_CORRECTIONS"
+    },
+    {
+      "ticker": "PYC",
+      "documentsRead": 3,
+      "rawEvidenceScore": 30,
+      "rawEvidenceRisk": 55,
+      "qualityEvidenceScore": 40,
+      "qualityEvidenceRisk": 48,
+      "corrections": [
+        "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation.",
+        "Removed positive cash-runway wording from cash-burn risk detection."
+      ],
+      "managementCredibilityScore": 50,
       "assessment": "PASS_WITH_CORRECTIONS"
     },
     {
