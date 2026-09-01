@@ -2,6 +2,11 @@ name: ASX Edge Company Evidence
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - ASX Edge Fundamentals and Risk
+    types:
+      - completed
   push:
     paths:
       - 'scripts/evidence_research.py'
@@ -16,6 +21,7 @@ concurrency:
 
 jobs:
   evidence:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -34,5 +40,3 @@ jobs:
           git diff --cached --quiet || git commit -m "Update ASX company evidence"
           git pull --rebase origin main
           git push
-
-# validation trigger: resolved ASX pdfURL wrappers
