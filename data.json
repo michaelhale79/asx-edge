@@ -86,7 +86,75 @@
       "fundamentalScore": 75,
       "fundamentalRisk": 33,
       "riskFlags": [],
-      "fundamentalUpdated": "2026-09-01T22:13:34.635526+00:00"
+      "fundamentalUpdated": "2026-09-01T22:13:34.635526+00:00",
+      "evidenceScore": 42,
+      "evidenceRisk": 39,
+      "managementDeliveryScore": 40,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "nd a commitment to high-quality work, reflected in broad current exposure 6 (30-Jun-26) $4.9 billion managed capex of projects in delivery >50 resource projects ~9 million\u00b9 controlled service hours2 1. Actual hours recorded \u2013 8,961,088 2. Controlled service h"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": [
+          "rojects to land earlier this year, but the extended duration of the conflict in the Middle East and the uncertainty surrounding its resolution, has delayed decision making and impacted the award and commencement of new projects. We had initially expected FY27 to be a record year for the Company, with re"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "FY27 guidance: o Revenue of $540 - $580 million; and o Net profit after tax (NPAT) of $54 - $58 million \u2022 Committed contracts of $661 million \u2022 Webinar to be held 11:00am AEST today, Wednesday 19 August 2026 (click to register) Commenting o"
+        },
+        {
+          "metric": "capex",
+          "evidence": "y work, reflected in broad current exposure 6 (30-Jun-26) $4.9 billion managed capex of projects in delivery >50 resource projects ~9 million\u00b9 controlled service hours2 1. Actual hours recorded \u2013 8,9"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-19",
+          "headline": "FY2026 Full Year Results Announcement 4 pages 254.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126759",
+          "textChars": 11515
+        },
+        {
+          "date": "2026-07-27",
+          "headline": "FY2026 Results Notification and Webinar 1 page 157.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03118426",
+          "textChars": 2126
+        },
+        {
+          "date": "2026-08-19",
+          "headline": "FY2026 Investor Presentation 29 pages 6.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126770",
+          "textChars": 5074
+        }
+      ],
+      "documentsRead": 3,
+      "evidenceUpdated": "2026-09-01T22:15:40.654843+00:00"
     },
     {
       "ticker": "AMI",
@@ -649,7 +717,61 @@
           "text": "Company is currently loss-making on reported profit margin."
         }
       ],
-      "fundamentalUpdated": "2026-09-01T22:13:36.200412+00:00"
+      "fundamentalUpdated": "2026-09-01T22:13:36.200412+00:00",
+      "evidenceScore": 58,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 58,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [
+          "quarter, the Company also advanced all major DFS workstreams, with consultant mobilisation, geotechnical drilling and technical studi es progressing on schedule, demonstrating rapid execution following completion of the funding package. Following completion of the investment, QMines welcomed representative"
+        ],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-07-31",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 29 pages 2.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120310",
+          "textChars": 18103
+        },
+        {
+          "date": "2026-04-30",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 24 pages 1.8MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088161",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "date": "2026-03-16",
+          "headline": "Half Year Accounts 35 pages 3.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072612",
+          "error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "documentsRead": 1,
+      "evidenceUpdated": "2026-09-01T22:15:56.698798+00:00"
     },
     {
       "ticker": "G6M",
@@ -18059,5 +18181,6 @@
     "enrichedCount": 0,
     "source": "Yahoo Finance company profile data with curated fallback for core holdings"
   },
-  "fundamentalsUpdated": "2026-09-01T22:14:12.778195+00:00"
+  "fundamentalsUpdated": "2026-09-01T22:14:12.778195+00:00",
+  "companyEvidenceUpdated": "2026-09-01T22:16:23.178007+00:00"
 }
