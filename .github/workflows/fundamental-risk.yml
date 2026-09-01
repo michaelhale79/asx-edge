@@ -2,6 +2,11 @@ name: ASX Edge Fundamentals and Risk
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - ASX Edge Daily Scan
+    types:
+      - completed
   push:
     paths:
       - 'scripts/fundamental_risk.py'
@@ -16,6 +21,7 @@ concurrency:
 
 jobs:
   fundamentals:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
