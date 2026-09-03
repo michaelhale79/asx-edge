@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T05:38:15.343980+00:00",
+  "updated": "2026-09-03T06:26:50.598203+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -14,19 +14,6 @@
         "Removed positive cash-runway wording from cash-burn risk detection."
       ],
       "managementCredibilityScore": 50,
-      "assessment": "PASS_WITH_CORRECTIONS"
-    },
-    {
-      "ticker": "DPM",
-      "documentsRead": 3,
-      "rawEvidenceScore": 55,
-      "rawEvidenceRisk": 39,
-      "qualityEvidenceScore": 63,
-      "qualityEvidenceRisk": 30,
-      "corrections": [
-        "Removed non-operating deferred/accounting language, successful planned shutdowns, or generic forward-looking risk boilerplate from execution-delay detection."
-      ],
-      "managementCredibilityScore": 58,
       "assessment": "PASS_WITH_CORRECTIONS"
     },
     {
