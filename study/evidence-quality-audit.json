@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T00:28:13.496855+00:00",
+  "updated": "2026-09-03T02:26:40.980677+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -17,14 +17,14 @@
       "assessment": "PASS_WITH_CORRECTIONS"
     },
     {
-      "ticker": "QML",
+      "ticker": "DPM",
       "documentsRead": 3,
-      "rawEvidenceScore": 50,
-      "rawEvidenceRisk": 40,
-      "qualityEvidenceScore": 60,
-      "qualityEvidenceRisk": 33,
+      "rawEvidenceScore": 55,
+      "rawEvidenceRisk": 39,
+      "qualityEvidenceScore": 63,
+      "qualityEvidenceRisk": 30,
       "corrections": [
-        "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation."
+        "Removed non-operating deferred/accounting language, successful planned shutdowns, or generic forward-looking risk boilerplate from execution-delay detection."
       ],
       "managementCredibilityScore": 58,
       "assessment": "PASS_WITH_CORRECTIONS"
