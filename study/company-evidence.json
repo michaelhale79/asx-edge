@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T04:20:21.731508+00:00",
+  "updated": "2026-09-07T06:25:57.199947+00:00",
   "coverage": 52,
   "method": "Reads selected recent ASX announcement PDFs for leading candidates and core holdings. Detects guidance, capital raising/dilution, debt/liquidity, cash burn, capex, customer concentration, contracts and execution evidence, plus sector-specific disclosure snippets. Evidence is heuristic and retained with source document metadata for auditability.",
   "companies": [
@@ -78,7 +78,7 @@
       ],
       "announcementsReviewed": 50,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:14:14.136121+00:00"
+      "analysedAt": "2026-09-07T06:18:40.508906+00:00"
     },
     {
       "ticker": "VMC",
@@ -152,9 +152,9 @@
           "textChars": 20392
         }
       ],
-      "announcementsReviewed": 26,
+      "announcementsReviewed": 27,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:14:22.022175+00:00"
+      "analysedAt": "2026-09-07T06:18:50.223848+00:00"
     },
     {
       "ticker": "HGO",
@@ -227,99 +227,7 @@
       ],
       "announcementsReviewed": 54,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:14:27.813883+00:00"
-    },
-    {
-      "ticker": "BCI",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 49,
-      "managementDeliveryScore": 48,
-      "evidencePositives": [
-        "Recent disclosures contain contract/customer win evidence.",
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        },
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "DOCUMENT 2026-04-21 March Quarterly Report Advisory - Replacement 2 pages 161.6KB REPLACEMENT ANNOUNCEMENT MARCH QUARTERLY REPORT ADVISORY BCI Minerals Limited (ASX: BCI) refers to the Company\u2019s announ",
-          "DOCUMENT 2026-04-21 March Quarterly Report Advisory - Replacement 2 pages 161.6KB REPLACEMENT ANNOUNCEMENT MARCH QUARTERLY REPORT ADVISORY BCI Minerals Limited (ASX: BCI) refers to the Company\u2019s announcement dated 21 April 2026 titled \u2018",
-          "SX: BCI) refers to the Company\u2019s announcement dated 21 April 2026 titled \u2018March Quarterly Report Advisory\u2019 (Announcement). The Company provides a replacement of the Announcement which includes an updated link for the registration to the conference call. -END- This ASX announcement has been authoris"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "equency Rate 4.4 4.1 3.9 3.1 Construction progress1 F0F0 F1 85% 81% 77% 74% Cumulative Mardie expenditure $1,479M $1,369M $1,298M $1,221M Mardie construction cost to date $1,185M $1,110M $1,043M $1,002M Estimated construction cost to complete $258M $333M $400M $441M Available funds1 F1F 2 $423M $522M $601M $6",
-          "77% 74% Cumulative Mardie expenditure $1,479M $1,369M $1,298M $1,221M Mardie construction cost to date $1,185M $1,110M $1,043M $1,002M Estimated construction cost to complete $258M $333M $400M $441M Available funds1 F1F 2 $423M $522M $601M $676M Crystallised salt (kt) 49 0 0 0 1 Construction Progress exclu",
-          "jury Frequency Rate 4.1 3.9 3.1 2.3 Construction progress1 81% 77% 74% 69% Cumulative Mardie expenditure $1,369M $1,298M $1,221M $1,113M Mardie construction cost to date $1,110M $1,043M $1,002M $935M Estimated construction cost to complete $333M $400M $441M $508M Available funds2 $522M $601M $676M $753M Pon"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [
-          "CI dispatched salt samples to offtake partners for their own internal analysis. All samples successfully met the specifications contained in BCI\u2019s offtake agreements. To further support BCI\u2019s customer engagement, BCI management travelled to Asia to meet with a number of chemical companies to discuss their CY20"
-        ],
-        "contract_loss": [],
-        "execution_positive": [
-          "ve resumed with pond density increasing and salt is reforming in the crystallisers. \u2022 Concrete installation works for the salt wash plant commenced on schedule. \u2022 KTMS (SOP) trial crystallisers transitioned from batch testing to steady-state operation. \u2022 Overall construction progressed to 815 per cent com",
-          "or personal use only June 2026 Quarterly Report 20 July 2026 4 Quality control measures remain a key focus as the operation progresses towards first production . This milestone reflects the successful completion of major brine movement activities across the pond network and provides a strong foundation for"
-        ],
-        "execution_negative": [
-          "e and without loss of brine with remediation works underway. \u2022 The cyclones brought a higher -than-anticipated amount of rainwater into the circuit, delaying the crystalliser lining program and reducing pond density levels. \u2022 As indicated in prior updates, the timing of First Salt on Ship (FSOS) 4 re",
-          "for Tropical Cyclone Narelle in March varied between three and four times the March average. This level of rainfall reduc ed pond density levels and delayed the crystalliser lining program. Brine density is strongly influenced by seasonal evaporation rates, which peak over the summer period. The revis"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "es for the construction of the pilot plant are being progressed in parallel with the FEED study, with the construction contract expected to be awarded during the September 2026 quarter. BCI CORPORATE Capital Management During the quarter, BCI"
-        },
-        {
-          "metric": "utilisation",
-          "evidence": "86.6 million. In addition to the draw n debt , outstanding bank guarantees totalled $48.9 million which takes total utilisation of the syndicated debt facilities to $635.5 million. Table 1 outlines the funding available on 30 June under each com"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-04-21",
-          "headline": "March Quarterly Report Advisory - Replacement 2 pages 161.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084605",
-          "textChars": 1815
-        },
-        {
-          "date": "2026-07-20",
-          "headline": "June 2026 Quarterly Activities Report 10 pages 1.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03116117",
-          "textChars": 22730
-        },
-        {
-          "date": "2026-04-28",
-          "headline": "March 2026 Quarterly Activities Report 10 pages 1.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03086736",
-          "textChars": 19059
-        }
-      ],
-      "announcementsReviewed": 22,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:14:34.183682+00:00"
+      "analysedAt": "2026-09-07T06:18:55.601038+00:00"
     },
     {
       "ticker": "TEA",
@@ -427,79 +335,10 @@
       ],
       "announcementsReviewed": 49,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:14:39.559994+00:00"
+      "analysedAt": "2026-09-07T06:19:03.839889+00:00"
     },
     {
-      "ticker": "GML",
-      "status": "OK",
-      "evidenceScore": 46,
-      "evidenceRisk": 35,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
-        }
-      ],
-      "evidenceSummary": "Risks: Options, performance rights or convertibles may add future dilution.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [
-          "nced its registered office, principal place of business and postal address had changed to: Level 4, 15 Ogilvie Road, Mt Pleasant WA 6153 Issue of Performance Rights During the Quarter, the following Performance Rights were issued under the Company\u2019s Incentive Plan: Item Performance Rights (Class 1) Perform",
-          "and postal address had changed to: Level 4, 15 Ogilvie Road, Mt Pleasant WA 6153 Issue of Performance Rights During the Quarter, the following Performance Rights were issued under the Company\u2019s Incentive Plan: Item Performance Rights (Class 1) Performance Rights (Class 2) Performance Rights (Class 3)",
-          "t WA 6153 Issue of Performance Rights During the Quarter, the following Performance Rights were issued under the Company\u2019s Incentive Plan: Item Performance Rights (Class 1) Performance Rights (Class 2) Performance Rights (Class 3) Number of Performance Rights 8,250,000 8,250,000 8,250,000 Vesting con"
-        ],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "piry Date 31 December 2028 31 December 2029 27 November 2030 The issue of these performance rights is to employees and contractors who are non-related parties and were issued pursuant to Listing Rule 7.2 Exception 13. This release has been aut"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-07-31",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 19 pages 2.4MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120906",
-          "textChars": 14047
-        },
-        {
-          "date": "2026-04-30",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 19 pages 2.6MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088974",
-          "textChars": 16155
-        },
-        {
-          "date": "2026-03-13",
-          "headline": "Half Yearly Report and Accounts 42 pages 6.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072017",
-          "textChars": 15738
-        }
-      ],
-      "announcementsReviewed": 31,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:14:46.925831+00:00"
-    },
-    {
-      "ticker": "MM1",
+      "ticker": "RTR",
       "status": "OK",
       "evidenceScore": 42,
       "evidenceRisk": 40,
@@ -514,9 +353,8 @@
       "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
-          "mond drill holes (3,358m) on T-13 Deposit and 93 RC holes (11,353m) completed at Spaatzu and Merwe prospects during the Quarter \uf0a7 $28 million Share Placement (before costs) completed at $.75 per share to advance Otavi exploration and development. Midas Minerals Ltd (ACN 625 128 770) (\u201cMidas\u201d or \u201cthe C",
-          "TS, CANADA There were no substantive exploration activities undertaken on Midas\u2019 Canadian projects during the quarter. CORPORATE $28 million Share Placement In April, Midas announced it had received firm commitments from institutional, professional and sophisticated investors to raise $28 million (befor",
-          "had received firm commitments from institutional, professional and sophisticated investors to raise $28 million (before costs) via a single-tranche Placement to advance exploration at Otavi. Midas issued 37,333,334 new fully paid ordinary shares (\u201cNew Shares\u201d) at a price of $0.75 per New Share under the"
+          "e Company announced the completion of its acquisition of the remaining 70% interest in the Thunderstorm Gold Project from IGO Limited. Following the issue of 8,794,589 ordinary shares , Rumble Resources secured 100% ownership of the project located in the Fraser Range region of Western Australia. No other events occurred of a m",
+          ") 261,819 Net cash provided by/ (used in) investing activities (2,953,920) (1,836,384) CASH FLOWS FROM FINANCING ACTIVITIES Proceeds from issue of shares 8,451,094 7,716,657 Payment of principal portion of lease liabilities (13,848) (62,327) Net cash provided by/ (used in) financing activities 8,4"
         ],
         "options_issue": [],
         "guidance_raise": [],
@@ -525,7 +363,10 @@
         "debt_refi_positive": [],
         "debt_stress": [],
         "cash_burn": [],
-        "capex": [],
+        "capex": [
+          "commenced with various parties to determine metal payability and freight costs for the Scoping Study\u2019s financial model. Flowsheet Optimisation and Capex Reduction Rumble commenced evaluation of the accelerated \"coarse-liberation\" concept, which seeks to recover scheelite from the mill's recirculatin",
+          "les and freight logistics, providing the critical pricing data required to finalise the Scoping Study\u2019s financial model. Flowsheet Optimisation and Capex Reduction Engineering studies are evaluating a further accelerated \"coarse -liberation\" concept, which seeks to recover scheelite from the mill's"
+        ],
         "capex_overrun": [],
         "major_customer": [],
         "contract_win": [],
@@ -534,41 +375,51 @@
         "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
+      "sectorEvidence": [
         {
-          "date": "2026-07-27",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 24 pages 5.6MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03118575",
-          "textChars": 11533
+          "metric": "contract",
+          "evidence": "ivery of the Feasibility Study with AMC Consultants progressing detailed mine design and the Company advancing mining contractor selection and pre-development planning. \u2022 Continued technical, commercial and permitting workstreams to support a fu"
         },
         {
-          "date": "2026-04-28",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 16 pages 1.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03087229",
-          "textChars": 23639
-        },
-        {
-          "date": "2026-03-27",
-          "headline": "Annual Report to shareholders 87 pages 7.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03076964",
-          "textChars": 10710
+          "metric": "capex",
+          "evidence": "s to determine metal payability and freight costs for the Scoping Study\u2019s financial model. Flowsheet Optimisation and Capex Reduction Rumble commenced evaluation of the accelerated \"coarse-liberation\" concept, which seeks to recover scheelite"
         }
       ],
-      "announcementsReviewed": 39,
+      "evidenceDocuments": [
+        {
+          "date": "2026-07-31",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 20 pages 3.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120301",
+          "textChars": 25258
+        },
+        {
+          "date": "2026-04-30",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 23 pages 5.7MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089051",
+          "textChars": 15065
+        },
+        {
+          "date": "2026-03-16",
+          "headline": "Half Year Accounts - 31 December 2025 21 pages 2.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072630",
+          "textChars": 12723
+        }
+      ],
+      "announcementsReviewed": 18,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:14:54.998013+00:00"
+      "analysedAt": "2026-09-07T06:19:14.331848+00:00"
     },
     {
-      "ticker": "ANX",
+      "ticker": "GNG",
       "status": "OK",
-      "evidenceScore": 38,
-      "evidenceRisk": 54,
+      "evidenceScore": 50,
+      "evidenceRisk": 49,
       "managementDeliveryScore": 48,
       "evidencePositives": [
+        "Recent disclosures contain contract/customer win evidence.",
         "Recent disclosures show delivery/commissioning milestones being achieved."
       ],
       "evidenceFlags": [
@@ -579,24 +430,16 @@
         {
           "severity": "MEDIUM",
           "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        },
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
         }
       ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk. Options, performance rights or convertibles may add future dilution.",
+      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
-          "ent completed in June 2026. Figure 4: Phase 1 diamond drill rig on pad at Mons Cupri, Whim Creek Project, Pilbara WA For personal use only 7 Capital Raisings Tranche 2 March 2026 Placement Following shareholder approval at the General Meeting held on 19 May 2026, the Company completed Tranche 2 of t",
-          "9. Strategic Outlook First Half of 2026; 5 February 2026 10. Whim Creek DFS Update Confirms Outstanding Economics; 24 February 2026 11. $10 Million Capital Raising; 18 March 2026 12. Tranche 1 Placement Completed and Cleansing Notice; 26 March 2026 13. Tranche 2 Placement Completed and Cleansing Notice; 25",
-          "Mt Ore Reserve o Modest development capital of ~$91M with payback of ~14 months, with Anax to contribute $76M (including corporate costs) \uf0a7 $10M capital raising to institutional and sophisticated investors announced to repay Jetosea Loan, support Project development, exploration and working capital. \uf0a7 Tr"
+          "itutional and sophisticated investors (Placement) in conjunction with a non-underwritten share purchase plan (SPP) of New Shares (collectively, the Capital Raising). This presentation does not constitute an offer to sell, or a solicitation of an offer to buy any securities in any jurisdiction. The distributi",
+          "ach GR Engineering Party may rely on information provided by or on behalf of institutional investors in connection with managing and conducting the Capital Raising without independently verifying that information and each GR Engineering Party does not assume responsibility for the currency, accuracy, reliabi",
+          "financial information or financial measures included in this presentation. This presentation contains pro forma financial information reflecting the Capital Raising and the Company. The pro forma financial information provided in this presentation is for illustrative purposes only and is not represented as b"
         ],
-        "options_issue": [
-          "ring three years from the date of issue with an exercise price of $0.0345) for a subscription price of A$0.00001 per option (Lead Manager Options). Issue of the Lead Manager Options is subject to shareholder approval, to be sought at the GM. Jetosea $3.5M Loan Repayment On 8 December 2025 17, the Company announced it had enter",
-          "2027 ex $0.0165 25,000,000 Unlisted options expiring 27 Sep 2027 ex $0.0225 56,896,552 Unlisted options expiring 25 May 2029 ex $0.0345 20,000,000 Performance Rights* 153,375,000 * Various vesting and performance milestones During the Quarter: \u25aa 350,000 listed options (ANXO) were exercised at $0.025 per option",
-          "026 ex. $0.06 each) expired unexercised; \u25aa 10,000,000 unlisted options (expiring 30 June 2026 ex. $0.03 each) expired unexercised; and \u25aa 15,000,000 performance rights were issued to eligible participants and 4,500,000 performance rights forfeited pursuant to the Company\u2019s Employee Securities Incentive Plan. Avail"
-        ],
+        "options_issue": [],
         "guidance_raise": [],
         "guidance_reaffirm": [],
         "guidance_cut": [],
@@ -606,251 +449,60 @@
         "capex": [],
         "capex_overrun": [],
         "major_customer": [],
-        "contract_win": [],
+        "contract_win": [
+          "f $6.31 and nil discount to the 10-day VWAP of $6.10. \u25aa Proceeds of the Placement and the SPP will be used to fund working capital for recent and new contract awards, provide funding flexibility for future acquisition opportunities, and fund the build-out of internal IT infrastructure and resourcing. \u25aa Pro forma",
+          "2026 for further information. For personal use only \u25aa GRPS has been able to successfully increase its revenue and earnings visibility based on new contract awards during FY26, including the five-year contract with the Sturt Plateau Compression Facility Sub Pty Ltd, for the provision of operations and maintena",
+          "an, Ok Tedi Mining, HudBay and other smaller conglomerates. The contracted pipeline for the process controls business has increased based on recent contract awards in the second half of FY26. 6 Refer to the ASX announcement titled \u201cEPC Contract \u2013 Laverton Processing Plant\u201d dated 26 May 2026 for further in"
+        ],
         "contract_loss": [],
         "execution_positive": [
-          "ED, Final Investment Decision, procurement, construction, commissioning and steady -state operations, with a mandate to deliver the Project safely, on schedule and within its committed capital envelope. Corporate & Compliance In accordance with Listing Rule 5.3.1, during the Quarter the C ompany incurred e"
+          "ls Limited for the Stage 1 and Stage 2 Upgrade for the King of the Hills Operations in Western Australia. Stage 1 works were completed in March 2026 on schedule. Stage 2 works are ongo ing and will be completed in the second quarter of FY27.8 \uf0a7 Eloise Copper Expansion Project - $78 million EPC Contract with"
         ],
         "execution_negative": [
-          "ational Cashflow $M (LOM) 845 Free cashflow $M (LOM) 723 IRR % 98% Payback Months 14 NPV (7%) $M 501 Total pre-production capital costs $M 77.2 Deferred and sustaining capital costs $M 11.6 Total Operating Cost (including royalties) $M 930.9 Total Operating Cost (including royalties) $/t Ore 189.5",
-          "Operational Cashflow $M (LOM) 845 Free cashflow $M (LOM) 723 IRR % 98% Payback Months 14 NPV7 $M 501 Total pre-production capital costs $M 77.2 Deferred and sustaining capital costs $M 11.6 Total Operating Cost (including royalties) $M 930.9 Total Operating Cost (including royalties) $/t Ore 189.5"
+          "upport to the Ichthys LNG upstream and downstream facilities, supplying product ion and technical personnel to INPEX and assisting with maintenance shutdown planning and execution support. On 4 May 2026, GRPS was awarded a 5 year contract by Sturt Plateau Compression Facility Sub Pty Ltd as trustee for t"
         ]
       },
       "sectorEvidenceFamily": "industrials",
       "sectorEvidence": [
         {
-          "metric": "contract",
-          "evidence": "project management, mining, process, metallurgy and modular plant expertise within a unified delivery framework. Early Contractor Involvement is intended to improve constructability, validate market pricing, optimise procurement and strengthen ex"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-07-30",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 18 pages 1.6MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03119792",
-          "textChars": 22062
+          "metric": "order book",
+          "evidence": "A margin percentage was consistent with the half year results. Mineral Processing GRES\u2019 design and construction order book of current work includes: \uf0a7 Yitirrti (Sulphur Springs) Copper-Silver-Zinc Project - $275 million EPC Contract with V"
         },
-        {
-          "date": "2026-04-29",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 18 pages 804.4KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03087578",
-          "textChars": 19252
-        },
-        {
-          "date": "2026-03-13",
-          "headline": "Half Year Accounts 41 pages 2.9MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03071633",
-          "textChars": 18596
-        }
-      ],
-      "announcementsReviewed": 54,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:02.904809+00:00"
-    },
-    {
-      "ticker": "ANN",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "Higher costs offset \u2713 Pricing flexibility maintained Middle East crisis effects offset through\u2026 \u2713 \u201cCash is king\u201d approach \u2713 Prioritised strategic capex Ansell\u2019s leading positions in premium market segments where customers prefer differentiated safety solutions that help them solve complex safety pro",
-          "5%. \u2022 One-off pre-tax costs (Significant Items, excluded from Adjusted EPS1) of ~$15m, primarily in relation to ERP system implementation costs. \u2022 Capex of $45m to $55m, with spend focused on higher growth business segments. FY26 Full Year Results Webcast Nathalie Ahlstr\u00f6m (Managing Director and"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
         {
           "metric": "contract",
-          "evidence": "iption for, purchase or sale of any security and neither this document, nor anything in it shall form the basis of any contract or commitment. Before making any investment decision, you should seek appropriate financial advice, which may take into"
+          "evidence": "in any jurisdiction. Neither this presentation nor any of the information contained herein will form the basis of any contract or commitment to sell, subscribe for or acquire securities in the Company or any other financial product. The Placemen"
         },
         {
-          "metric": "capex",
-          "evidence": "flexibility maintained Middle East crisis effects offset through\u2026 \u2713 \u201cCash is king\u201d approach \u2713 Prioritised strategic capex Ansell\u2019s leading positions in premium market segments where customers prefer differentiated safety solutions that help"
+          "metric": "ebitda margin",
+          "evidence": "contracted and near-term pipeline of work for FY27 and FY28. \uf0a7 FY26 delivered a record EBITDA result and a consistent EBITDA margin percentage with HY26. \uf0a7 Increase in the final dividend to 13.0 cents per share, resulting in total FY26 dividends of 2"
         }
       ],
       "evidenceDocuments": [
         {
           "date": "2026-08-24",
-          "headline": "FY26 Full Year Results Investor Presentation 34 pages 3.0MB",
+          "headline": "FY26 Results, Guidance and Equity Raising 29 pages 1.9MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128535",
-          "textChars": 8647
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128900",
+          "textChars": 24746
         },
         {
           "date": "2026-08-24",
-          "headline": "Ansell Full Year Statutory Accounts and 2026 Annual Report 174 pages 11.5MB",
+          "headline": "Media Release - FY26 Results, Guidance and Equity Raising 8 pages 297.2KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128533",
-          "textChars": 15096
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128899",
+          "textChars": 25760
         },
         {
-          "date": "2026-08-24",
-          "headline": "FY26 Full Year Results & Buyback ASX Announcement 6 pages 331.3KB",
+          "date": "2026-07-24",
+          "headline": "EPC Contract - Yandi Eastern Front-End Facility Upgrade 1 page 100.3KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128534",
-          "textChars": 18126
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03117809",
+          "textChars": 2218
         }
       ],
-      "announcementsReviewed": 83,
+      "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:15.956522+00:00"
-    },
-    {
-      "ticker": "ACL",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "ntinuation of the on-market buyback program subject to ongoing review of funding requirements, including strategic investments and stay-in- business capital expenditure. Investor and Analyst Results Briefing ACL Chief Executive Officer and Executive Director, Melinda McGrath, Incoming Chief Executive Officer,"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "ges in the operating environment and responded with innovative thinking, including reshaping our collection centre and contract portfolio, accelerating digital billing, applying automation and AI to important workflows, and using the strength of"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-17",
-          "headline": "FY26 financial results investor presentation 28 pages 4.4MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125555",
-          "textChars": 14677
-        },
-        {
-          "date": "2026-08-10",
-          "headline": "FY26 Results Investor Webinar 2 pages 143.4KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03123640",
-          "textChars": 3773
-        },
-        {
-          "date": "2026-08-31",
-          "headline": "Initial Director's Interest Notice - G Horan 2 pages 193.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03133704",
-          "textChars": 2083
-        }
-      ],
-      "announcementsReviewed": 98,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:20.669397+00:00"
-    },
-    {
-      "ticker": "AUC",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 40,
-      "managementDeliveryScore": 58,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          ", Traditional Owners and regulators throughout the year as permitting and project planning activities advanced. Corporate \u2022 Successful A$35 million capital raise in July 2025 and A$90 million equity raising in November 2025 comprising an underwritten institutional placement and Share Purchase Plan, providing",
-          "de enhancement and improved continuity within key lodes, while lower reconciliations in a minority of holes are interpreted to reflect local dyke emplacement, providin g additional geological knowledge that will help to further refine the resource model. An ongoing diamond drilling program aimed at co",
-          "orate \u2022 Successful A$35 million capital raise in July 2025 and A$90 million equity raising in November 2025 comprising an underwritten institutional placement and Share Purchase Plan, providing funding to accelerate development activities, progress permitting, undertake extensive drilling programs and stre"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "f FID where appropriate. This approach is intended to reduce execution risk, and accelerate the development of the KGP by shortening the construction schedule following FID and ensure construction activities can commence efficiently following receipt of all necessary approvals and a Board investment decisi"
-        ],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "ment a ctivities accelerated at the Katanning Gold Project , with an Early Works Agreement executed with preferred EPC contractor, Lycopodium, enabling the commencement of detailed engineering and project execution planning ahead of a final inves"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-07-13",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 29 pages 3.4MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03114182",
-          "textChars": 22068
-        },
-        {
-          "date": "2026-04-20",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 22 pages 2.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084071",
-          "textChars": 18485
-        },
-        {
-          "date": "2026-09-01",
-          "headline": "2026 Annual Report 100 pages 12.9MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03133946",
-          "textChars": 25051
-        }
-      ],
-      "announcementsReviewed": 38,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:29.505039+00:00"
+      "analysedAt": "2026-09-07T06:19:21.798116+00:00"
     },
     {
       "ticker": "TBN",
@@ -943,33 +595,38 @@
       ],
       "announcementsReviewed": 68,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:37.927510+00:00"
+      "analysedAt": "2026-09-07T06:19:32.540729+00:00"
     },
     {
-      "ticker": "AMA",
+      "ticker": "MVF",
       "status": "OK",
-      "evidenceScore": 42,
+      "evidenceScore": 47,
       "evidenceRisk": 39,
       "managementDeliveryScore": 40,
-      "evidencePositives": [],
+      "evidencePositives": [
+        "Recent disclosures show refinancing, facility extension or liquidity support."
+      ],
       "evidenceFlags": [
         {
           "severity": "MEDIUM",
           "text": "Recent disclosures contain delay, deferral or operating interruption language."
         }
       ],
-      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language.",
+      "evidenceSummary": "Positive evidence: Recent disclosures show refinancing, facility extension or liquidity support. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
       "evidenceSignals": {
         "capital_raise": [],
         "options_issue": [],
         "guidance_raise": [],
         "guidance_reaffirm": [],
         "guidance_cut": [],
-        "debt_refi_positive": [],
+        "debt_refi_positive": [
+          "cting the completion of major infrastructure investments. \u2022 Net debt was $101.2 million at 30 June 2026, with leverage of 1.9x. \u2022 The Group's debt facility was increased to $130 million and extended for three years. FY27 outlook and priorities The Company enters FY27 with improving momentum, strengthened growth platforms and a clear strategy f"
+        ],
         "debt_stress": [],
         "cash_burn": [],
         "capex": [
-          "ns a disciplined approach to capital management and with our strong balance sheet & operating cashflows; we are well placed to actively manage: \u2022 Capital expenditure to deliver organic growth; \u2022 Funding of M&A activity to deliver inorganic growth; \u2022 Initiation of dividend program, first time since 2019; and For"
+          "d to $36.7 million, compared with $12.9 million in FY25. \u2022 Free cash flow improved to $12.9 million, compared with negative $4.5 million in FY25. \u2022 Capital expenditure was $23.8 million, reflecting the completion of major infrastructure investments. \u2022 Net debt was $101.2 million at 30 June 2026, with leverage of 1",
+          "al leadership. \u2022 Lead the future of reproductive care through regulatory readiness, precision pathways, research, science and innovation. \u2022 Reduce capital expenditure by approximately 50%. For personal use only 3 \u2022 Reignite organic growth through market share gains, patient demand and conversion, with a focu"
         ],
         "capex_overrun": [],
         "major_customer": [],
@@ -977,75 +634,75 @@
         "contract_loss": [],
         "execution_positive": [],
         "execution_negative": [
-          "iveable repairs since the outbreak of the conflict in the Middle East in March has reduced the amount of available work, with reduced road use and delays of minor repairs. Capital SMART\u2019s relationship with Suncorp is strong, delivering improved customer outcomes as reflected in industry leading benc",
-          "tart of the geopolitical events in the Middle East, which commenced in March, which has reduced the amount of available work largely from customers delaying minor repairs and some reduced road use \uf0a7 3 new sites opened through FY26, in SA, NSW & TAS in areas where the network was underrepresented \u2010 2 s",
-          "Wales Wales delivered a modest result for FY26. A shift in work mix, including reduced claim volumes and fewer large-scale repairs, as well as the deferral of non-urgent repairs, in particular in NSW and WA, impacted on financial performance. These factors are expected to abate with more large-scale r"
+          ".9% compared with FY25, while Underlying EBITDA decreased by 19.5%, reflecting domestic stimulated cycle volume and market share pressures in 1H26, deferred pricing increases across key East Coast markets, wage and supplier cost inflation and the predominantly fixed nature of the clinical operating cost"
         ]
       },
       "sectorEvidenceFamily": "industrials",
       "sectorEvidence": [
         {
+          "metric": "utilisation",
+          "evidence": "uctural productivity program underway, with initiatives across centralised procurement, workforce efficiency and asset utilisation expected to improve operating leverage and earnings quality. \u2022 Genetics and ancillary services continued to grow, wit"
+        },
+        {
           "metric": "ebitda margin",
-          "evidence": "SB 16 EBITDA to be in the range of $75 - $80 million. AMA Group continues to progress towards achieving a pre-AASB 16 EBITDA margin of 10 per cent within 3 years, by leveraging our vertically integrated structure. Notes: Normalised EBITDA is Earning"
+          "evidence": "nue was $269.5 million, down 0.9% compared with FY25. \u2022 Underlying EBITDA was $53.4 million, down 19.5%. \u2022 Underlying EBITDA margin was 19.8%. \u2022 Underlying EBIT was $28.4 million, down 34.0%. \u2022 Underlying NPAT was $16.1 million, down 41.2%. \u2022 Repor"
         }
       ],
       "evidenceDocuments": [
         {
-          "date": "2026-08-21",
-          "headline": "FY26 Appendix 4E and Annual Report 139 pages 6.3MB",
+          "date": "2026-08-31",
+          "headline": "MVF FY26 Results Announcement 3 pages 365.7KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128079",
-          "textChars": 18255
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132881",
+          "textChars": 7815
         },
         {
-          "date": "2026-08-21",
-          "headline": "FY26 Results Presentation 25 pages 808.6KB",
+          "date": "2026-08-24",
+          "headline": "FY2026 Results release postponed to 31 August 2026 1 page 181.5KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128095",
-          "textChars": 9874
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128656",
+          "textChars": 1090
         },
         {
-          "date": "2026-08-21",
-          "headline": "FY26 Results Release 3 pages 195.7KB",
+          "date": "2026-08-31",
+          "headline": "MVF FY26 Investor Presentation 36 pages 3.5MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128091",
-          "textChars": 8754
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132915",
+          "textChars": 8004
         }
       ],
-      "announcementsReviewed": 43,
+      "announcementsReviewed": 20,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:44.631604+00:00"
+      "analysedAt": "2026-09-07T06:19:37.763225+00:00"
     },
     {
-      "ticker": "RTR",
+      "ticker": "GML",
       "status": "OK",
-      "evidenceScore": 42,
-      "evidenceRisk": 40,
+      "evidenceScore": 46,
+      "evidenceRisk": 35,
       "managementDeliveryScore": 50,
       "evidencePositives": [],
       "evidenceFlags": [
         {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+          "severity": "LOW",
+          "text": "Options, performance rights or convertibles may add future dilution."
         }
       ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSummary": "Risks: Options, performance rights or convertibles may add future dilution.",
       "evidenceSignals": {
-        "capital_raise": [
-          "e Company announced the completion of its acquisition of the remaining 70% interest in the Thunderstorm Gold Project from IGO Limited. Following the issue of 8,794,589 ordinary shares , Rumble Resources secured 100% ownership of the project located in the Fraser Range region of Western Australia. No other events occurred of a m",
-          ") 261,819 Net cash provided by/ (used in) investing activities (2,953,920) (1,836,384) CASH FLOWS FROM FINANCING ACTIVITIES Proceeds from issue of shares 8,451,094 7,716,657 Payment of principal portion of lease liabilities (13,848) (62,327) Net cash provided by/ (used in) financing activities 8,4"
+        "capital_raise": [],
+        "options_issue": [
+          "nced its registered office, principal place of business and postal address had changed to: Level 4, 15 Ogilvie Road, Mt Pleasant WA 6153 Issue of Performance Rights During the Quarter, the following Performance Rights were issued under the Company\u2019s Incentive Plan: Item Performance Rights (Class 1) Perform",
+          "and postal address had changed to: Level 4, 15 Ogilvie Road, Mt Pleasant WA 6153 Issue of Performance Rights During the Quarter, the following Performance Rights were issued under the Company\u2019s Incentive Plan: Item Performance Rights (Class 1) Performance Rights (Class 2) Performance Rights (Class 3)",
+          "t WA 6153 Issue of Performance Rights During the Quarter, the following Performance Rights were issued under the Company\u2019s Incentive Plan: Item Performance Rights (Class 1) Performance Rights (Class 2) Performance Rights (Class 3) Number of Performance Rights 8,250,000 8,250,000 8,250,000 Vesting con"
         ],
-        "options_issue": [],
         "guidance_raise": [],
         "guidance_reaffirm": [],
         "guidance_cut": [],
         "debt_refi_positive": [],
         "debt_stress": [],
         "cash_burn": [],
-        "capex": [
-          "commenced with various parties to determine metal payability and freight costs for the Scoping Study\u2019s financial model. Flowsheet Optimisation and Capex Reduction Rumble commenced evaluation of the accelerated \"coarse-liberation\" concept, which seeks to recover scheelite from the mill's recirculatin",
-          "les and freight logistics, providing the critical pricing data required to finalise the Scoping Study\u2019s financial model. Flowsheet Optimisation and Capex Reduction Engineering studies are evaluating a further accelerated \"coarse -liberation\" concept, which seeks to recover scheelite from the mill's"
-        ],
+        "capex": [],
         "capex_overrun": [],
         "major_customer": [],
         "contract_win": [],
@@ -1057,39 +714,35 @@
       "sectorEvidence": [
         {
           "metric": "contract",
-          "evidence": "ivery of the Feasibility Study with AMC Consultants progressing detailed mine design and the Company advancing mining contractor selection and pre-development planning. \u2022 Continued technical, commercial and permitting workstreams to support a fu"
-        },
-        {
-          "metric": "capex",
-          "evidence": "s to determine metal payability and freight costs for the Scoping Study\u2019s financial model. Flowsheet Optimisation and Capex Reduction Rumble commenced evaluation of the accelerated \"coarse-liberation\" concept, which seeks to recover scheelite"
+          "evidence": "piry Date 31 December 2028 31 December 2029 27 November 2030 The issue of these performance rights is to employees and contractors who are non-related parties and were issued pursuant to Listing Rule 7.2 Exception 13. This release has been aut"
         }
       ],
       "evidenceDocuments": [
         {
           "date": "2026-07-31",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 20 pages 3.4MB",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 19 pages 2.4MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120301",
-          "textChars": 25258
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120906",
+          "textChars": 14047
         },
         {
           "date": "2026-04-30",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 23 pages 5.7MB",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 19 pages 2.6MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089051",
-          "textChars": 15065
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088974",
+          "textChars": 16155
         },
         {
-          "date": "2026-03-16",
-          "headline": "Half Year Accounts - 31 December 2025 21 pages 2.2MB",
+          "date": "2026-03-13",
+          "headline": "Half Yearly Report and Accounts 42 pages 6.2MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072630",
-          "textChars": 12723
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072017",
+          "textChars": 15738
         }
       ],
-      "announcementsReviewed": 18,
+      "announcementsReviewed": 31,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:53.308220+00:00"
+      "analysedAt": "2026-09-07T06:19:47.836972+00:00"
     },
     {
       "ticker": "SMR",
@@ -1168,10 +821,291 @@
       ],
       "announcementsReviewed": 16,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:15:58.793664+00:00"
+      "analysedAt": "2026-09-07T06:19:53.661166+00:00"
     },
     {
-      "ticker": "GNG",
+      "ticker": "ANX",
+      "status": "OK",
+      "evidenceScore": 38,
+      "evidenceRisk": 54,
+      "managementDeliveryScore": 48,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        },
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        },
+        {
+          "severity": "LOW",
+          "text": "Options, performance rights or convertibles may add future dilution."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk. Options, performance rights or convertibles may add future dilution.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "ent completed in June 2026. Figure 4: Phase 1 diamond drill rig on pad at Mons Cupri, Whim Creek Project, Pilbara WA For personal use only 7 Capital Raisings Tranche 2 March 2026 Placement Following shareholder approval at the General Meeting held on 19 May 2026, the Company completed Tranche 2 of t",
+          "9. Strategic Outlook First Half of 2026; 5 February 2026 10. Whim Creek DFS Update Confirms Outstanding Economics; 24 February 2026 11. $10 Million Capital Raising; 18 March 2026 12. Tranche 1 Placement Completed and Cleansing Notice; 26 March 2026 13. Tranche 2 Placement Completed and Cleansing Notice; 25",
+          "Mt Ore Reserve o Modest development capital of ~$91M with payback of ~14 months, with Anax to contribute $76M (including corporate costs) \uf0a7 $10M capital raising to institutional and sophisticated investors announced to repay Jetosea Loan, support Project development, exploration and working capital. \uf0a7 Tr"
+        ],
+        "options_issue": [
+          "ring three years from the date of issue with an exercise price of $0.0345) for a subscription price of A$0.00001 per option (Lead Manager Options). Issue of the Lead Manager Options is subject to shareholder approval, to be sought at the GM. Jetosea $3.5M Loan Repayment On 8 December 2025 17, the Company announced it had enter",
+          "2027 ex $0.0165 25,000,000 Unlisted options expiring 27 Sep 2027 ex $0.0225 56,896,552 Unlisted options expiring 25 May 2029 ex $0.0345 20,000,000 Performance Rights* 153,375,000 * Various vesting and performance milestones During the Quarter: \u25aa 350,000 listed options (ANXO) were exercised at $0.025 per option",
+          "026 ex. $0.06 each) expired unexercised; \u25aa 10,000,000 unlisted options (expiring 30 June 2026 ex. $0.03 each) expired unexercised; and \u25aa 15,000,000 performance rights were issued to eligible participants and 4,500,000 performance rights forfeited pursuant to the Company\u2019s Employee Securities Incentive Plan. Avail"
+        ],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [
+          "ED, Final Investment Decision, procurement, construction, commissioning and steady -state operations, with a mandate to deliver the Project safely, on schedule and within its committed capital envelope. Corporate & Compliance In accordance with Listing Rule 5.3.1, during the Quarter the C ompany incurred e"
+        ],
+        "execution_negative": [
+          "ational Cashflow $M (LOM) 845 Free cashflow $M (LOM) 723 IRR % 98% Payback Months 14 NPV (7%) $M 501 Total pre-production capital costs $M 77.2 Deferred and sustaining capital costs $M 11.6 Total Operating Cost (including royalties) $M 930.9 Total Operating Cost (including royalties) $/t Ore 189.5",
+          "Operational Cashflow $M (LOM) 845 Free cashflow $M (LOM) 723 IRR % 98% Payback Months 14 NPV7 $M 501 Total pre-production capital costs $M 77.2 Deferred and sustaining capital costs $M 11.6 Total Operating Cost (including royalties) $M 930.9 Total Operating Cost (including royalties) $/t Ore 189.5"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "project management, mining, process, metallurgy and modular plant expertise within a unified delivery framework. Early Contractor Involvement is intended to improve constructability, validate market pricing, optimise procurement and strengthen ex"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-07-30",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 18 pages 1.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03119792",
+          "textChars": 22062
+        },
+        {
+          "date": "2026-04-29",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 18 pages 804.4KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03087578",
+          "textChars": 19252
+        },
+        {
+          "date": "2026-03-13",
+          "headline": "Half Year Accounts 41 pages 2.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03071633",
+          "textChars": 18596
+        }
+      ],
+      "announcementsReviewed": 54,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:20:01.704671+00:00"
+    },
+    {
+      "ticker": "MM1",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "mond drill holes (3,358m) on T-13 Deposit and 93 RC holes (11,353m) completed at Spaatzu and Merwe prospects during the Quarter \uf0a7 $28 million Share Placement (before costs) completed at $.75 per share to advance Otavi exploration and development. Midas Minerals Ltd (ACN 625 128 770) (\u201cMidas\u201d or \u201cthe C",
+          "TS, CANADA There were no substantive exploration activities undertaken on Midas\u2019 Canadian projects during the quarter. CORPORATE $28 million Share Placement In April, Midas announced it had received firm commitments from institutional, professional and sophisticated investors to raise $28 million (befor",
+          "had received firm commitments from institutional, professional and sophisticated investors to raise $28 million (before costs) via a single-tranche Placement to advance exploration at Otavi. Midas issued 37,333,334 new fully paid ordinary shares (\u201cNew Shares\u201d) at a price of $0.75 per New Share under the"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-07-27",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 24 pages 5.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03118575",
+          "textChars": 11533
+        },
+        {
+          "date": "2026-04-28",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 16 pages 1.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03087229",
+          "textChars": 23639
+        },
+        {
+          "date": "2026-03-27",
+          "headline": "Annual Report to shareholders 87 pages 7.0MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03076964",
+          "textChars": 10710
+        }
+      ],
+      "announcementsReviewed": 39,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:20:10.547583+00:00"
+    },
+    {
+      "ticker": "ANN",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "Higher costs offset \u2713 Pricing flexibility maintained Middle East crisis effects offset through\u2026 \u2713 \u201cCash is king\u201d approach \u2713 Prioritised strategic capex Ansell\u2019s leading positions in premium market segments where customers prefer differentiated safety solutions that help them solve complex safety pro",
+          "5%. \u2022 One-off pre-tax costs (Significant Items, excluded from Adjusted EPS1) of ~$15m, primarily in relation to ERP system implementation costs. \u2022 Capex of $45m to $55m, with spend focused on higher growth business segments. FY26 Full Year Results Webcast Nathalie Ahlstr\u00f6m (Managing Director and"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "iption for, purchase or sale of any security and neither this document, nor anything in it shall form the basis of any contract or commitment. Before making any investment decision, you should seek appropriate financial advice, which may take into"
+        },
+        {
+          "metric": "capex",
+          "evidence": "flexibility maintained Middle East crisis effects offset through\u2026 \u2713 \u201cCash is king\u201d approach \u2713 Prioritised strategic capex Ansell\u2019s leading positions in premium market segments where customers prefer differentiated safety solutions that help"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-24",
+          "headline": "FY26 Full Year Results Investor Presentation 34 pages 3.0MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128535",
+          "textChars": 8647
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "Ansell Full Year Statutory Accounts and 2026 Annual Report 174 pages 11.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128533",
+          "textChars": 15096
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "FY26 Full Year Results & Buyback ASX Announcement 6 pages 331.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128534",
+          "textChars": 18126
+        }
+      ],
+      "announcementsReviewed": 83,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:20:25.897411+00:00"
+    },
+    {
+      "ticker": "ACL",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "ntinuation of the on-market buyback program subject to ongoing review of funding requirements, including strategic investments and stay-in- business capital expenditure. Investor and Analyst Results Briefing ACL Chief Executive Officer and Executive Director, Melinda McGrath, Incoming Chief Executive Officer,"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "ges in the operating environment and responded with innovative thinking, including reshaping our collection centre and contract portfolio, accelerating digital billing, applying automation and AI to important workflows, and using the strength of"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-17",
+          "headline": "FY26 financial results investor presentation 28 pages 4.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125555",
+          "textChars": 14677
+        },
+        {
+          "date": "2026-08-10",
+          "headline": "FY26 Results Investor Webinar 2 pages 143.4KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03123640",
+          "textChars": 3773
+        },
+        {
+          "date": "2026-08-31",
+          "headline": "Initial Director's Interest Notice - G Horan 2 pages 193.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03133704",
+          "textChars": 2083
+        }
+      ],
+      "announcementsReviewed": 98,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:20:32.051670+00:00"
+    },
+    {
+      "ticker": "BCI",
       "status": "OK",
       "evidenceScore": 50,
       "evidenceRisk": 49,
@@ -1193,9 +1127,94 @@
       "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
-          "itutional and sophisticated investors (Placement) in conjunction with a non-underwritten share purchase plan (SPP) of New Shares (collectively, the Capital Raising). This presentation does not constitute an offer to sell, or a solicitation of an offer to buy any securities in any jurisdiction. The distributi",
-          "ach GR Engineering Party may rely on information provided by or on behalf of institutional investors in connection with managing and conducting the Capital Raising without independently verifying that information and each GR Engineering Party does not assume responsibility for the currency, accuracy, reliabi",
-          "financial information or financial measures included in this presentation. This presentation contains pro forma financial information reflecting the Capital Raising and the Company. The pro forma financial information provided in this presentation is for illustrative purposes only and is not represented as b"
+          "DOCUMENT 2026-04-21 March Quarterly Report Advisory - Replacement 2 pages 161.6KB REPLACEMENT ANNOUNCEMENT MARCH QUARTERLY REPORT ADVISORY BCI Minerals Limited (ASX: BCI) refers to the Company\u2019s announ",
+          "DOCUMENT 2026-04-21 March Quarterly Report Advisory - Replacement 2 pages 161.6KB REPLACEMENT ANNOUNCEMENT MARCH QUARTERLY REPORT ADVISORY BCI Minerals Limited (ASX: BCI) refers to the Company\u2019s announcement dated 21 April 2026 titled \u2018",
+          "SX: BCI) refers to the Company\u2019s announcement dated 21 April 2026 titled \u2018March Quarterly Report Advisory\u2019 (Announcement). The Company provides a replacement of the Announcement which includes an updated link for the registration to the conference call. -END- This ASX announcement has been authoris"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "equency Rate 4.4 4.1 3.9 3.1 Construction progress1 F0F0 F1 85% 81% 77% 74% Cumulative Mardie expenditure $1,479M $1,369M $1,298M $1,221M Mardie construction cost to date $1,185M $1,110M $1,043M $1,002M Estimated construction cost to complete $258M $333M $400M $441M Available funds1 F1F 2 $423M $522M $601M $6",
+          "77% 74% Cumulative Mardie expenditure $1,479M $1,369M $1,298M $1,221M Mardie construction cost to date $1,185M $1,110M $1,043M $1,002M Estimated construction cost to complete $258M $333M $400M $441M Available funds1 F1F 2 $423M $522M $601M $676M Crystallised salt (kt) 49 0 0 0 1 Construction Progress exclu",
+          "jury Frequency Rate 4.1 3.9 3.1 2.3 Construction progress1 81% 77% 74% 69% Cumulative Mardie expenditure $1,369M $1,298M $1,221M $1,113M Mardie construction cost to date $1,110M $1,043M $1,002M $935M Estimated construction cost to complete $333M $400M $441M $508M Available funds2 $522M $601M $676M $753M Pon"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [
+          "CI dispatched salt samples to offtake partners for their own internal analysis. All samples successfully met the specifications contained in BCI\u2019s offtake agreements. To further support BCI\u2019s customer engagement, BCI management travelled to Asia to meet with a number of chemical companies to discuss their CY20"
+        ],
+        "contract_loss": [],
+        "execution_positive": [
+          "ve resumed with pond density increasing and salt is reforming in the crystallisers. \u2022 Concrete installation works for the salt wash plant commenced on schedule. \u2022 KTMS (SOP) trial crystallisers transitioned from batch testing to steady-state operation. \u2022 Overall construction progressed to 815 per cent com",
+          "or personal use only June 2026 Quarterly Report 20 July 2026 4 Quality control measures remain a key focus as the operation progresses towards first production . This milestone reflects the successful completion of major brine movement activities across the pond network and provides a strong foundation for"
+        ],
+        "execution_negative": [
+          "e and without loss of brine with remediation works underway. \u2022 The cyclones brought a higher -than-anticipated amount of rainwater into the circuit, delaying the crystalliser lining program and reducing pond density levels. \u2022 As indicated in prior updates, the timing of First Salt on Ship (FSOS) 4 re",
+          "for Tropical Cyclone Narelle in March varied between three and four times the March average. This level of rainfall reduc ed pond density levels and delayed the crystalliser lining program. Brine density is strongly influenced by seasonal evaporation rates, which peak over the summer period. The revis"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "es for the construction of the pilot plant are being progressed in parallel with the FEED study, with the construction contract expected to be awarded during the September 2026 quarter. BCI CORPORATE Capital Management During the quarter, BCI"
+        },
+        {
+          "metric": "utilisation",
+          "evidence": "86.6 million. In addition to the draw n debt , outstanding bank guarantees totalled $48.9 million which takes total utilisation of the syndicated debt facilities to $635.5 million. Table 1 outlines the funding available on 30 June under each com"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-04-21",
+          "headline": "March Quarterly Report Advisory - Replacement 2 pages 161.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084605",
+          "textChars": 1815
+        },
+        {
+          "date": "2026-07-20",
+          "headline": "June 2026 Quarterly Activities Report 10 pages 1.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03116117",
+          "textChars": 22730
+        },
+        {
+          "date": "2026-04-28",
+          "headline": "March 2026 Quarterly Activities Report 10 pages 1.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03086736",
+          "textChars": 19059
+        }
+      ],
+      "announcementsReviewed": 22,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:20:38.142198+00:00"
+    },
+    {
+      "ticker": "ALR",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "hursday 30 July 2026 ASX : ALR June 2026 Quarterly Activities Report & Appendix 5B Key Quarterly Highlights \u25aa A$28.2 million strategic placement completed to Endeavour Gold Corporation , a wholly owned subsidiary of Endeavour Mining plc (LSE: EDV, TSX: EDV, OTCQX: EDVMF), at $0.043 per share3",
+          "nt with soil geochemical highs 33. \u25aa Magnetic Inversion modelling has defined a structurally complex system considered highly favourable for gold emplacement 33. For personal use only 30 July 2026 June 2026 Quarterly Activities 2 Page 2 of 22 NP \u2013 North Peters \u25aa Relogging and remodelling of hist",
+          "Appendix 5B Key Quarterly Highlights \u25aa Strong cash balance as at 31 March 2026 of $10.2 million, with a further $28.2 million raised via strategic placement to Endeavour Gold Corporation, a wholly owned subsidiary of Endeavour Mining plc. subsequent to the end of the quarter 36 \u25aa Acquisition of historic"
         ],
         "options_issue": [],
         "guidance_raise": [],
@@ -1207,60 +1226,245 @@
         "capex": [],
         "capex_overrun": [],
         "major_customer": [],
-        "contract_win": [
-          "f $6.31 and nil discount to the 10-day VWAP of $6.10. \u25aa Proceeds of the Placement and the SPP will be used to fund working capital for recent and new contract awards, provide funding flexibility for future acquisition opportunities, and fund the build-out of internal IT infrastructure and resourcing. \u25aa Pro forma",
-          "2026 for further information. For personal use only \u25aa GRPS has been able to successfully increase its revenue and earnings visibility based on new contract awards during FY26, including the five-year contract with the Sturt Plateau Compression Facility Sub Pty Ltd, for the provision of operations and maintena",
-          "an, Ok Tedi Mining, HudBay and other smaller conglomerates. The contracted pipeline for the process controls business has increased based on recent contract awards in the second half of FY26. 6 Refer to the ASX announcement titled \u201cEPC Contract \u2013 Laverton Processing Plant\u201d dated 26 May 2026 for further in"
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-07-30",
+          "headline": "ALR June 2026 Quarterly Activities Report & Appendix 5B 27 pages 3.1MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03119817",
+          "textChars": 18820
+        },
+        {
+          "date": "2026-04-30",
+          "headline": "ALR March 2026 Quarterly Activities Report & Appendix 5B 30 pages 4.1MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088809",
+          "textChars": 17133
+        },
+        {
+          "date": "2026-03-16",
+          "headline": "Half Year Financial Report - 31 December 2025 32 pages 2.7MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072587",
+          "textChars": 16370
+        }
+      ],
+      "announcementsReviewed": 33,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:20:47.953737+00:00"
+    },
+    {
+      "ticker": "AUC",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 58,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          ", Traditional Owners and regulators throughout the year as permitting and project planning activities advanced. Corporate \u2022 Successful A$35 million capital raise in July 2025 and A$90 million equity raising in November 2025 comprising an underwritten institutional placement and Share Purchase Plan, providing",
+          "de enhancement and improved continuity within key lodes, while lower reconciliations in a minority of holes are interpreted to reflect local dyke emplacement, providin g additional geological knowledge that will help to further refine the resource model. An ongoing diamond drilling program aimed at co",
+          "orate \u2022 Successful A$35 million capital raise in July 2025 and A$90 million equity raising in November 2025 comprising an underwritten institutional placement and Share Purchase Plan, providing funding to accelerate development activities, progress permitting, undertake extensive drilling programs and stre"
         ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
         "contract_loss": [],
         "execution_positive": [
-          "ls Limited for the Stage 1 and Stage 2 Upgrade for the King of the Hills Operations in Western Australia. Stage 1 works were completed in March 2026 on schedule. Stage 2 works are ongo ing and will be completed in the second quarter of FY27.8 \uf0a7 Eloise Copper Expansion Project - $78 million EPC Contract with"
+          "f FID where appropriate. This approach is intended to reduce execution risk, and accelerate the development of the KGP by shortening the construction schedule following FID and ensure construction activities can commence efficiently following receipt of all necessary approvals and a Board investment decisi"
         ],
-        "execution_negative": [
-          "upport to the Ichthys LNG upstream and downstream facilities, supplying product ion and technical personnel to INPEX and assisting with maintenance shutdown planning and execution support. On 4 May 2026, GRPS was awarded a 5 year contract by Sturt Plateau Compression Facility Sub Pty Ltd as trustee for t"
-        ]
+        "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
       "sectorEvidence": [
         {
-          "metric": "order book",
-          "evidence": "A margin percentage was consistent with the half year results. Mineral Processing GRES\u2019 design and construction order book of current work includes: \uf0a7 Yitirrti (Sulphur Springs) Copper-Silver-Zinc Project - $275 million EPC Contract with V"
-        },
-        {
           "metric": "contract",
-          "evidence": "in any jurisdiction. Neither this presentation nor any of the information contained herein will form the basis of any contract or commitment to sell, subscribe for or acquire securities in the Company or any other financial product. The Placemen"
-        },
-        {
-          "metric": "ebitda margin",
-          "evidence": "contracted and near-term pipeline of work for FY27 and FY28. \uf0a7 FY26 delivered a record EBITDA result and a consistent EBITDA margin percentage with HY26. \uf0a7 Increase in the final dividend to 13.0 cents per share, resulting in total FY26 dividends of 2"
+          "evidence": "ment a ctivities accelerated at the Katanning Gold Project , with an Early Works Agreement executed with preferred EPC contractor, Lycopodium, enabling the commencement of detailed engineering and project execution planning ahead of a final inves"
         }
       ],
       "evidenceDocuments": [
         {
-          "date": "2026-08-24",
-          "headline": "FY26 Results, Guidance and Equity Raising 29 pages 1.9MB",
+          "date": "2026-07-13",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 29 pages 3.4MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128900",
-          "textChars": 24746
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03114182",
+          "textChars": 22068
         },
         {
-          "date": "2026-08-24",
-          "headline": "Media Release - FY26 Results, Guidance and Equity Raising 8 pages 297.2KB",
+          "date": "2026-04-20",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 22 pages 2.0MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128899",
-          "textChars": 25760
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084071",
+          "textChars": 18485
         },
         {
-          "date": "2026-07-24",
-          "headline": "EPC Contract - Yandi Eastern Front-End Facility Upgrade 1 page 100.3KB",
+          "date": "2026-09-01",
+          "headline": "2026 Annual Report 100 pages 12.9MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03117809",
-          "textChars": 2218
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03133946",
+          "textChars": 25051
         }
       ],
-      "announcementsReviewed": 42,
+      "announcementsReviewed": 38,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:04.953092+00:00"
+      "analysedAt": "2026-09-07T06:20:57.877343+00:00"
+    },
+    {
+      "ticker": "RHC",
+      "status": "OK",
+      "evidenceScore": 58,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [
+        "Recent disclosures contain contract/customer win evidence."
+      ],
+      "evidenceFlags": [],
+      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "ying EBIT (9.9) (15.3) 35.3% Underlying EBIT contribution 639.8 575.5 11.2% Underlying EBIT margin (%) 9.40% 9.10% 30bps ROCE (%)\u200b\u00b3 17.4% 16.5% 90bps Capital Expenditure\u200b 365.4 361.8 1.0% Volume metrics Admissions ('000) (like for like)\u2074 1,234.3 1,194.7 3.3% Day admissions as % of total admissions\u200b (like for like)\u2074 68",
+          "tion of the March 2025 and the January 2026 tariffs, as well as receivables\u2019 collection efforts. For personal use only 6 Tangible and intangible capital expenditure net of disposals of \u20ac113.0m for this period is lower than last year\u2019s period \u20ac116.6m thanks to tighter selection of capex proposals. It included ma",
+          "t management \uf0fc Elysium turnaround gained traction through site and ward closures to match demand and reduction in central and agency costs \uf0fc Group capex below revised range at $729m (cc), growth & development spend focused on Australia and procedural capacity \uf0fc Funding Group ROCE +150bps to 14.8% \uf0fc"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [
+          "new contract to provide care at St. G\u00f6ran's Hospital on behalf of the Stockholm region on 5 January 2026. As previously announced, Capio had been awarded this new contract on 22 October 2024, for a term of at least eight years, with the right for Region Stockholm to extend the agreement for a maximum of four years for",
+          "n accordance with its ongoing disclosure obligations. Capio enters into new St. G\u00f6ran's contract in January 2026 : Capio has transitioned into a new contract to provide care at St. G\u00f6ran's Hospital on behalf of the Stockholm region on 5 January 2026. As previously announced, Capio had been awarded this",
+          "to provide care at St. G\u00f6ran's Hospital on behalf of the Stockholm region on 5 January 2026. As previously announced, Capio had been awarded this new contract on 22 October 2024, for a term of at least eight years, with the right for Region Stockholm to extend the agreement for a maximum of four years for"
+        ],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "FY26 Results Presentation 5 +11.8% EBIT and +22.9% NPAT underlying growth, Funding Group Leverage <2.0x 1. Revenue from contracts with customers. 2. Details on items excluded from underlying EBIT and underlying NPAT refer to the Appendix slides 39"
+        },
+        {
+          "metric": "utilisation",
+          "evidence": "rket-leading Australian hospital business \uf0fc Activity growth 3.3%\u00b9, growth in admitting VMOs 3.3% and improved theatre utilisation +90bps \uf0fc Improved revenue indexation relative to cost inflation \uf0fc Underlying EBIT growth 11.2% and margin expansion"
+        },
+        {
+          "metric": "capex",
+          "evidence": "ound gained traction through site and ward closures to match demand and reduction in central and agency costs \uf0fc Group capex below revised range at $729m (cc), growth & development spend focused on Australia and procedural capacity \uf0fc Funding"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-27",
+          "headline": "Investor Presentation & Speech FY26 Results Briefing 53 pages 4.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130912",
+          "textChars": 16607
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Financial Results for the Year Ended 30 June 2026 4 pages 614.4KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130903",
+          "textChars": 17871
+        },
+        {
+          "date": "2026-05-08",
+          "headline": "RAMSAY SANTE - Results for 9 months to 31 March 2026 14 pages 938.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03091889",
+          "textChars": 25324
+        }
+      ],
+      "announcementsReviewed": 25,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:21:05.726449+00:00"
+    },
+    {
+      "ticker": "ELD",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-05-18",
+          "headline": "Elders Limited Half Year Results Investor Presentation 39 pages 3.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03094694",
+          "textChars": 8738
+        },
+        {
+          "date": "2026-05-18",
+          "headline": "Elders Limited Half Year Results Announcement 4 pages 228.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03094688",
+          "textChars": 11158
+        },
+        {
+          "date": "2026-05-18",
+          "headline": "Half Yearly Report and Accounts 44 pages 19.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03094677",
+          "textChars": 14198
+        }
+      ],
+      "announcementsReviewed": 20,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:21:15.958792+00:00"
     },
     {
       "ticker": "TER",
@@ -1339,22 +1543,112 @@
       ],
       "announcementsReviewed": 23,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:11.454345+00:00"
+      "analysedAt": "2026-09-07T06:21:21.837326+00:00"
     },
     {
-      "ticker": "RHC",
+      "ticker": "IFN",
       "status": "OK",
-      "evidenceScore": 58,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
+      "evidenceScore": 47,
+      "evidenceRisk": 39,
+      "managementDeliveryScore": 40,
       "evidencePositives": [
-        "Recent disclosures contain contract/customer win evidence."
+        "Recent disclosures show refinancing, facility extension or liquidity support."
       ],
-      "evidenceFlags": [],
-      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence.",
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures show refinancing, facility extension or liquidity support. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
       "evidenceSignals": {
         "capital_raise": [],
         "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [
+          "l number (rather than Infragreen\u2019s share) Mackay 8 Chinchilla Dandenong SouthLaverton North For personal use only Strong Acquisition Pipeline \u2713 $10m undrawn debt facility put in place to fund acquisitions \u2713 Appetite from funders to increase facility size pending review of acquisition New platforms \u2022 57 opportunities"
+        ],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "(4) Underlying free cash flow calculated as Infragreen\u2019s share of operating cash flow for the Businesses and Infragreen, less Infragreen\u2019s share of capital expenditure (excluding new site and business acquisitions), and less dividend income received by Infragreen (5) Underlying NPAT adjusts statutory NPAT for selec",
+          "second half on higher hazardous waste volumes with growth in waste and industrial water revenue in some locations. Significant investment in growth capex over last 24 months expected to drive continued earnings growth in FY27 $8.2m Scrap metal recycling Ferrous prices and volumes were softer in Q2\u2013Q3"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": [
+          "y, plant and equipment 10 11,929,981 12,707,298 Right-of-use assets 9 8,904,847 9,584,981 Intangible assets 11 10,975,927 11,583,727 Deferred tax 12 1,117,376 1,166,354 Total non-current assets 32,928,131 35,042,360 Total assets 45,986,797 49,936,147 Liab"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "except where there is a lack of good faith. During the financial year, the company paid a premium in respect of a contract to insur e the directors and executives of the company against a liability to the extent permitted by the Corporations"
+        },
+        {
+          "metric": "capex",
+          "evidence": "s waste volumes with growth in waste and industrial water revenue in some locations. Significant investment in growth capex over last 24 months expected to drive continued earnings growth in FY27 $8.2m Scrap metal recycling Ferrous prices and"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-26",
+          "headline": "Minemet Recycling Group Pty Ltd - FY26 Annual Report 34 pages 2.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130660",
+          "textChars": 12690
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4E and FY26 Annual Report 93 pages 7.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130637",
+          "textChars": 15416
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Annual Results Presentation 33 pages 3.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130640",
+          "textChars": 9344
+        }
+      ],
+      "announcementsReviewed": 43,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:21:32.198384+00:00"
+    },
+    {
+      "ticker": "NHC",
+      "status": "OK",
+      "evidenceScore": 46,
+      "evidenceRisk": 44,
+      "managementDeliveryScore": 48,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        },
+        {
+          "severity": "LOW",
+          "text": "Options, performance rights or convertibles may add future dilution."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Options, performance rights or convertibles may add future dilution.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [
+          "t 31 July 2026 was $778.5 million, consisting of $484.8 million in cash and cash equivalents and $293.7 million in fixed income investments. Senior convertible notes During the quarter the Company revised the terms of certain cash-settled call options (Capped Call Transactions) such that they now apply to a por",
+          "revised the terms of certain cash-settled call options (Capped Call Transactions) such that they now apply to a portion of the new senior unsecured convertible notes. The Capped Call Transactions provide the Company with an economic hedge up to a cap price. The Capped Call Transactions are designed to manage po"
+        ],
         "guidance_raise": [],
         "guidance_reaffirm": [],
         "guidance_cut": [],
@@ -1362,135 +1656,47 @@
         "debt_stress": [],
         "cash_burn": [],
         "capex": [
-          "ying EBIT (9.9) (15.3) 35.3% Underlying EBIT contribution 639.8 575.5 11.2% Underlying EBIT margin (%) 9.40% 9.10% 30bps ROCE (%)\u200b\u00b3 17.4% 16.5% 90bps Capital Expenditure\u200b 365.4 361.8 1.0% Volume metrics Admissions ('000) (like for like)\u2074 1,234.3 1,194.7 3.3% Day admissions as % of total admissions\u200b (like for like)\u2074 68",
-          "tion of the March 2025 and the January 2026 tariffs, as well as receivables\u2019 collection efforts. For personal use only 6 Tangible and intangible capital expenditure net of disposals of \u20ac113.0m for this period is lower than last year\u2019s period \u20ac116.6m thanks to tighter selection of capex proposals. It included ma",
-          "t management \uf0fc Elysium turnaround gained traction through site and ward closures to match demand and reduction in central and agency costs \uf0fc Group capex below revised range at $729m (cc), growth & development spend focused on Australia and procedural capacity \uf0fc Funding Group ROCE +150bps to 14.8% \uf0fc"
+          "elated road works will be completed progressively as mining advances, with forecast expenditure of $65 to $75 million supporting the mine\u2019s growth. Capital expenditure on the additional fleet required to support the mine\u2019s growth also remains on schedule, with most items now committed or on site and ready for work."
         ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [
-          "new contract to provide care at St. G\u00f6ran's Hospital on behalf of the Stockholm region on 5 January 2026. As previously announced, Capio had been awarded this new contract on 22 October 2024, for a term of at least eight years, with the right for Region Stockholm to extend the agreement for a maximum of four years for",
-          "n accordance with its ongoing disclosure obligations. Capio enters into new St. G\u00f6ran's contract in January 2026 : Capio has transitioned into a new contract to provide care at St. G\u00f6ran's Hospital on behalf of the Stockholm region on 5 January 2026. As previously announced, Capio had been awarded this",
-          "to provide care at St. G\u00f6ran's Hospital on behalf of the Stockholm region on 5 January 2026. As previously announced, Capio had been awarded this new contract on 22 October 2024, for a term of at least eight years, with the right for Region Stockholm to extend the agreement for a maximum of four years for"
-        ],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "FY26 Results Presentation 5 +11.8% EBIT and +22.9% NPAT underlying growth, Funding Group Leverage <2.0x 1. Revenue from contracts with customers. 2. Details on items excluded from underlying EBIT and underlying NPAT refer to the Appendix slides 39"
-        },
-        {
-          "metric": "utilisation",
-          "evidence": "rket-leading Australian hospital business \uf0fc Activity growth 3.3%\u00b9, growth in admitting VMOs 3.3% and improved theatre utilisation +90bps \uf0fc Improved revenue indexation relative to cost inflation \uf0fc Underlying EBIT growth 11.2% and margin expansion"
-        },
-        {
-          "metric": "capex",
-          "evidence": "ound gained traction through site and ward closures to match demand and reduction in central and agency costs \uf0fc Group capex below revised range at $729m (cc), growth & development spend focused on Australia and procedural capacity \uf0fc Funding"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-27",
-          "headline": "Investor Presentation & Speech FY26 Results Briefing 53 pages 4.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130912",
-          "textChars": 16607
-        },
-        {
-          "date": "2026-08-27",
-          "headline": "Financial Results for the Year Ended 30 June 2026 4 pages 614.4KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130903",
-          "textChars": 17871
-        },
-        {
-          "date": "2026-05-08",
-          "headline": "RAMSAY SANTE - Results for 9 months to 31 March 2026 14 pages 938.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03091889",
-          "textChars": 25324
-        }
-      ],
-      "announcementsReviewed": 25,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:17.197911+00:00"
-    },
-    {
-      "ticker": "SNX",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 40,
-      "managementDeliveryScore": 58,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "ve Plan 4. Approval of Issue of Performance Shares to Robert Gray (or his nominee(s)) under the Company\u2019s Equity Incentive Plan 5. Approval of 10% Placement Capacity. Cash balance At 30 June 2026, SNX held a cash balance of US$1.9 million (31 March 2026: $4.9 million). ASX Listing Rule 5.3.1 - Explora",
-          "rilling there imminently. I thank our shareholders for your ongoing support, including those new and existing holders who supported our two-tranche Placement in September, which raised A$9.65 million (before costs). The proceeds from the Placement will be used to advance exploration and drilling at our pr",
-          "ose new and existing holders who supported our two-tranche Placement in September, which raised A$9.65 million (before costs). The proceeds from the Placement will be used to advance exploration and drilling at our projects in Nevada, USA and Saudi Arabia and also fund ongoing business development in both"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
         "capex_overrun": [],
         "major_customer": [],
         "contract_win": [],
         "contract_loss": [],
         "execution_positive": [
-          "ked to establish baseline data to support planned bulk sampling programs with a view to enabling the reopening of the high-grade mines for potential commercial production. As part of these work programs, SNX commissioned geotechnical consultant Call & Nicholas Inc. to perform a preliminary geotechnical assessment of t"
+          "ess to the Manning Vale West pit in the second half of 2026. The major public road realignment required to enable access to the mining area remains on schedule and within budget, with minimal wet-weather disruption to date. The remaining approval-related road works will be completed progressively as mining"
         ],
-        "execution_negative": []
+        "execution_negative": [
+          "er cent increase. Saleable coal production was 0.8Mt, a 13.2 per cent decrease compared to the previous quarter, reflecting planned CHPP maintenance shutdowns, together with operating constraints associated with noise limits under approval conditions, which were more pronounced during cooler months. Coal"
+        ]
       },
       "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "f AAM provides SNX with a dedicated in -country operating platform, enabling the Company to hold exploration licences, contract local services, and directly execute exploration programs in compliance with Saudi regulatory requirements. This mil"
-        }
-      ],
+      "sectorEvidence": [],
       "evidenceDocuments": [
         {
-          "date": "2026-07-31",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 15 pages 1.5MB",
+          "date": "2026-03-17",
+          "headline": "Half Year Results Presentation 19 pages 3.8MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120806",
-          "textChars": 17566
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072858",
+          "textChars": 8853
         },
         {
-          "date": "2026-04-30",
-          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 11 pages 1.0MB",
+          "date": "2026-03-17",
+          "headline": "FY26 Half Year Results 3 pages 257.9KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088379",
-          "textChars": 21885
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072856",
+          "textChars": 6032
         },
         {
-          "date": "2026-03-25",
-          "headline": "Annual Report - 31 December 2025 66 pages 1.6MB",
+          "date": "2026-08-17",
+          "headline": "Quarterly Activities Report 10 pages 560.7KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03075874",
-          "textChars": 20099
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125654",
+          "textChars": 23958
         }
       ],
-      "announcementsReviewed": 45,
+      "announcementsReviewed": 33,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:24.281361+00:00"
+      "analysedAt": "2026-09-07T06:21:40.397853+00:00"
     },
     {
       "ticker": "ALK",
@@ -1554,7 +1760,7 @@
       ],
       "announcementsReviewed": 46,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:29.704680+00:00"
+      "analysedAt": "2026-09-07T06:21:47.454044+00:00"
     },
     {
       "ticker": "AMI",
@@ -1656,27 +1862,29 @@
       ],
       "announcementsReviewed": 37,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:37.424454+00:00"
+      "analysedAt": "2026-09-07T06:21:55.949143+00:00"
     },
     {
-      "ticker": "ALR",
+      "ticker": "SNX",
       "status": "OK",
-      "evidenceScore": 42,
+      "evidenceScore": 50,
       "evidenceRisk": 40,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
+      "managementDeliveryScore": 58,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
       "evidenceFlags": [
         {
           "severity": "MEDIUM",
           "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
         }
       ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
-          "hursday 30 July 2026 ASX : ALR June 2026 Quarterly Activities Report & Appendix 5B Key Quarterly Highlights \u25aa A$28.2 million strategic placement completed to Endeavour Gold Corporation , a wholly owned subsidiary of Endeavour Mining plc (LSE: EDV, TSX: EDV, OTCQX: EDVMF), at $0.043 per share3",
-          "nt with soil geochemical highs 33. \u25aa Magnetic Inversion modelling has defined a structurally complex system considered highly favourable for gold emplacement 33. For personal use only 30 July 2026 June 2026 Quarterly Activities 2 Page 2 of 22 NP \u2013 North Peters \u25aa Relogging and remodelling of hist",
-          "Appendix 5B Key Quarterly Highlights \u25aa Strong cash balance as at 31 March 2026 of $10.2 million, with a further $28.2 million raised via strategic placement to Endeavour Gold Corporation, a wholly owned subsidiary of Endeavour Mining plc. subsequent to the end of the quarter 36 \u25aa Acquisition of historic"
+          "ve Plan 4. Approval of Issue of Performance Shares to Robert Gray (or his nominee(s)) under the Company\u2019s Equity Incentive Plan 5. Approval of 10% Placement Capacity. Cash balance At 30 June 2026, SNX held a cash balance of US$1.9 million (31 March 2026: $4.9 million). ASX Listing Rule 5.3.1 - Explora",
+          "rilling there imminently. I thank our shareholders for your ongoing support, including those new and existing holders who supported our two-tranche Placement in September, which raised A$9.65 million (before costs). The proceeds from the Placement will be used to advance exploration and drilling at our pr",
+          "ose new and existing holders who supported our two-tranche Placement in September, which raised A$9.65 million (before costs). The proceeds from the Placement will be used to advance exploration and drilling at our projects in Nevada, USA and Saudi Arabia and also fund ongoing business development in both"
         ],
         "options_issue": [],
         "guidance_raise": [],
@@ -1690,115 +1898,44 @@
         "major_customer": [],
         "contract_win": [],
         "contract_loss": [],
-        "execution_positive": [],
+        "execution_positive": [
+          "ked to establish baseline data to support planned bulk sampling programs with a view to enabling the reopening of the high-grade mines for potential commercial production. As part of these work programs, SNX commissioned geotechnical consultant Call & Nicholas Inc. to perform a preliminary geotechnical assessment of t"
+        ],
         "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-07-30",
-          "headline": "ALR June 2026 Quarterly Activities Report & Appendix 5B 27 pages 3.1MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03119817",
-          "textChars": 18820
-        },
-        {
-          "date": "2026-04-30",
-          "headline": "ALR March 2026 Quarterly Activities Report & Appendix 5B 30 pages 4.1MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088809",
-          "textChars": 17133
-        },
-        {
-          "date": "2026-03-16",
-          "headline": "Half Year Financial Report - 31 December 2025 32 pages 2.7MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072587",
-          "textChars": 16370
-        }
-      ],
-      "announcementsReviewed": 33,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:44.969120+00:00"
-    },
-    {
-      "ticker": "IFN",
-      "status": "OK",
-      "evidenceScore": 47,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 40,
-      "evidencePositives": [
-        "Recent disclosures show refinancing, facility extension or liquidity support."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show refinancing, facility extension or liquidity support. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [
-          "l number (rather than Infragreen\u2019s share) Mackay 8 Chinchilla Dandenong SouthLaverton North For personal use only Strong Acquisition Pipeline \u2713 $10m undrawn debt facility put in place to fund acquisitions \u2713 Appetite from funders to increase facility size pending review of acquisition New platforms \u2022 57 opportunities"
-        ],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "(4) Underlying free cash flow calculated as Infragreen\u2019s share of operating cash flow for the Businesses and Infragreen, less Infragreen\u2019s share of capital expenditure (excluding new site and business acquisitions), and less dividend income received by Infragreen (5) Underlying NPAT adjusts statutory NPAT for selec",
-          "second half on higher hazardous waste volumes with growth in waste and industrial water revenue in some locations. Significant investment in growth capex over last 24 months expected to drive continued earnings growth in FY27 $8.2m Scrap metal recycling Ferrous prices and volumes were softer in Q2\u2013Q3"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": [
-          "y, plant and equipment 10 11,929,981 12,707,298 Right-of-use assets 9 8,904,847 9,584,981 Intangible assets 11 10,975,927 11,583,727 Deferred tax 12 1,117,376 1,166,354 Total non-current assets 32,928,131 35,042,360 Total assets 45,986,797 49,936,147 Liab"
-        ]
       },
       "sectorEvidenceFamily": "industrials",
       "sectorEvidence": [
         {
           "metric": "contract",
-          "evidence": "except where there is a lack of good faith. During the financial year, the company paid a premium in respect of a contract to insur e the directors and executives of the company against a liability to the extent permitted by the Corporations"
-        },
-        {
-          "metric": "capex",
-          "evidence": "s waste volumes with growth in waste and industrial water revenue in some locations. Significant investment in growth capex over last 24 months expected to drive continued earnings growth in FY27 $8.2m Scrap metal recycling Ferrous prices and"
+          "evidence": "f AAM provides SNX with a dedicated in -country operating platform, enabling the Company to hold exploration licences, contract local services, and directly execute exploration programs in compliance with Saudi regulatory requirements. This mil"
         }
       ],
       "evidenceDocuments": [
         {
-          "date": "2026-08-26",
-          "headline": "Minemet Recycling Group Pty Ltd - FY26 Annual Report 34 pages 2.4MB",
+          "date": "2026-07-31",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 15 pages 1.5MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130660",
-          "textChars": 12690
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120806",
+          "textChars": 17566
         },
         {
-          "date": "2026-08-26",
-          "headline": "Appendix 4E and FY26 Annual Report 93 pages 7.6MB",
+          "date": "2026-04-30",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 11 pages 1.0MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130637",
-          "textChars": 15416
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088379",
+          "textChars": 21885
         },
         {
-          "date": "2026-08-26",
-          "headline": "FY26 Annual Results Presentation 33 pages 3.2MB",
+          "date": "2026-03-25",
+          "headline": "Annual Report - 31 December 2025 66 pages 1.6MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130640",
-          "textChars": 9344
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03075874",
+          "textChars": 20099
         }
       ],
-      "announcementsReviewed": 43,
+      "announcementsReviewed": 45,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:16:53.630525+00:00"
+      "analysedAt": "2026-09-07T06:22:05.765224+00:00"
     },
     {
       "ticker": "NMG",
@@ -1858,35 +1995,29 @@
       ],
       "announcementsReviewed": 25,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:01.052520+00:00"
+      "analysedAt": "2026-09-07T06:22:15.649594+00:00"
     },
     {
-      "ticker": "KOA",
+      "ticker": "PNN",
       "status": "OK",
-      "evidenceScore": 38,
-      "evidenceRisk": 45,
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
       "managementDeliveryScore": 50,
       "evidencePositives": [],
       "evidenceFlags": [
         {
           "severity": "MEDIUM",
           "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        },
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
         }
       ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk. Options, performance rights or convertibles may add future dilution.",
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
-          "me/(loss) for the year - - 1,945 - (1,387) 558 Transactions with owners in their capacity as owners: Share-based payments (note 32) - - - 909 - 909 Issue of ordinary shares upon exercise of options 31,980 - - - - 31,980 Balance at 30 June 2024 32,295 2 2,142 5,495 (85,470) (45,536) For personal use only K Sleep Holdings"
+          "ts findings have the potential to materially influence project economics, process design, operating and capital costs, and influence future product placement strategies. Results are also expected to support future resource statements, metallurgical outcomes, environmental approvals and radiation manage",
+          "nnounced it had executed a binding Subscription Agreement with a resource sector institutional investment fund for an A$1.7 million strategic equity placement (Placement) of new fully paid ordinary shares. Under the Placement, the fund subscribed for 11,724,138 fully paid ordinary PNN shares (Subscriptio",
+          "had executed a binding Subscription Agreement with a resource sector institutional investment fund for an A$1.7 million strategic equity placement (Placement) of new fully paid ordinary shares. Under the Placement, the fund subscribed for 11,724,138 fully paid ordinary PNN shares (Subscription Shares)"
         ],
-        "options_issue": [
-          "rmer directorships (last 3 years): None Interest in shares: 105,677 ordinary shares Interest in options: 425,000 options Interest in rights: 385,000 performance rights (unvested) Name: Laura Mineo Title: Non-Executive Director Qualifications: B. Commerce (Liberal Studies), Finance & Econometrics (Univ. of Sydney) Ex",
-          "ed and charity partners, reducing landfill waste through circular design principles. Significant changes in the state of affairs On 01 January 2025, convertible notes with a subscription value of $2,300,000 were converted to equity by the holder of the notes. On 04 April 2025, Koala Furniture Ltd changed name to",
-          "tions Pty Ltd. On 02 May 2025, K Sleep Holdings Pty Ltd converted to a public company and changed name to The Koala Company Limited. On 25 June 2025, convertible notes with a subscription value of $10,000,000 were converted to equity by the holder of the notes. There were no other significant changes in the state"
-        ],
+        "options_issue": [],
         "guidance_raise": [],
         "guidance_reaffirm": [],
         "guidance_cut": [],
@@ -1905,268 +2036,118 @@
       "sectorEvidence": [
         {
           "metric": "contract",
-          "evidence": "able, except where there is a lack of good faith. During the financial year, the Company paid a premium in respect of a contract to insure the directors and executives of the Company against a liability to the extent permitted by the Corporations"
-        },
-        {
-          "metric": "ebitda margin",
-          "evidence": "8.0M +31.2% vs FY25 Contribution Margin (%) 26.5% +2.2pp vs FY25 Pro forma EBITDA ($)2 $27.9M +139.2% vs FY25 Pro forma EBITDA Margin (%)2 8.4% +4.2pp vs FY25 1. Constant Currency: Current period revenue from foreign market operations is translated usin"
+          "evidence": "acquisition completion include: \u2022 Completion of resource planning and drill program design \u2022 Engagement of drilling contractors and mobilisation of equipment to site \u2022 Establishment of field operations and logistical support \u2022 Geological re"
         }
       ],
       "evidenceDocuments": [
         {
-          "date": "2026-08-26",
-          "headline": "Appendix 4E and Annual Report 60 pages 4.7MB",
+          "date": "2026-07-30",
+          "headline": "Quarterly Activities Report & Appendix 5B 21 pages 1.7MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130230",
-          "textChars": 20933
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120036",
+          "textChars": 21861
         },
         {
-          "date": "2026-03-30",
-          "headline": "Annual Report - 30 June 2025 62 pages 1.4MB",
+          "date": "2026-04-30",
+          "headline": "Quarterly Activities Report & Appendix 5B 27 pages 1.9MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03077268",
-          "textChars": 19869
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088075",
+          "textChars": 24036
         },
         {
-          "date": "2026-03-30",
-          "headline": "Annual Report - 30 June 2024 39 pages 392.3KB",
+          "date": "2026-03-10",
+          "headline": "Half Yearly Report and Accounts - 31 December 2025 25 pages 1.1MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03077267",
-          "textChars": 17269
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03070519",
+          "textChars": 29208
         }
       ],
-      "announcementsReviewed": 45,
+      "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:07.295196+00:00"
+      "analysedAt": "2026-09-07T06:22:24.678444+00:00"
     },
     {
-      "ticker": "MVF",
+      "ticker": "GW1",
       "status": "OK",
-      "evidenceScore": 47,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 40,
-      "evidencePositives": [
-        "Recent disclosures show refinancing, facility extension or liquidity support."
-      ],
+      "evidenceScore": 34,
+      "evidenceRisk": 50,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
       "evidenceFlags": [
         {
           "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        },
+        {
+          "severity": "MEDIUM",
+          "text": "Disclosure evidence reinforces negative cash-flow/cash-runway risk."
         }
       ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show refinancing, facility extension or liquidity support. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk. Disclosure evidence reinforces negative cash-flow/cash-runway risk.",
       "evidenceSignals": {
-        "capital_raise": [],
+        "capital_raise": [
+          "in Argentina, the Graphmada Graphite Mining Complex in Madagascar, and the Que River Polymetallic Project in Tasmania. Following completion of the capital raising, the Company commenced work programs at both San Jorge and Que River designed to define value, progress development pathways and support potenti",
+          "ss for the quarter ended 31 March 2026. HIGHLIGHTS CORPORATE \u2022 Greenwing announced a $5.5 million equity raising during the quarter, comprising a placement to professional and sophisticated investors and to related parties1. \u2022 The raising received strong support from existing major shareholders and inc",
+          "allel w ith appropriate technical, regulatory and commercial workstreams. Updated Metals Price Analysis During the quarter, Greenwing released a replacement announcement updating Que River scoping study outcomes for prevailing metals prices19. Since the October 2025 scoping study20, spot prices for rele"
+        ],
         "options_issue": [],
         "guidance_raise": [],
         "guidance_reaffirm": [],
         "guidance_cut": [],
-        "debt_refi_positive": [
-          "cting the completion of major infrastructure investments. \u2022 Net debt was $101.2 million at 30 June 2026, with leverage of 1.9x. \u2022 The Group's debt facility was increased to $130 million and extended for three years. FY27 outlook and priorities The Company enters FY27 with improving momentum, strengthened growth platforms and a clear strategy f"
-        ],
+        "debt_refi_positive": [],
         "debt_stress": [],
-        "cash_burn": [],
+        "cash_burn": [
+          "resources.com Greenwing Resources Ltd | ABN 31 109 933 995 9 ASX LISTING RULE 5.3 DISCLOSURES For the quarter ended 30 June 2026, the Company had net cash outflows of A$438k in expensed and capitalised exploration and evaluation activities. The total amount paid to directors of the entity and their associates"
+        ],
         "capex": [
-          "d to $36.7 million, compared with $12.9 million in FY25. \u2022 Free cash flow improved to $12.9 million, compared with negative $4.5 million in FY25. \u2022 Capital expenditure was $23.8 million, reflecting the completion of major infrastructure investments. \u2022 Net debt was $101.2 million at 30 June 2026, with leverage of 1",
-          "al leadership. \u2022 Lead the future of reproductive care through regulatory readiness, precision pathways, research, science and innovation. \u2022 Reduce capital expenditure by approximately 50%. For personal use only 3 \u2022 Reignite organic growth through market share gains, patient demand and conversion, with a focu"
+          "STUDY DELIVERS MATERIALLY IMPROVED OUTCOMES\u2019 5 ASX ANNOUNCEMENT DATED 8 OCTOBER 2025 \u2018QUE RIVER PROJECT: SCOPING STUDY COMPLETED HIGHLIGHTING LOW CAPEX PATHWAY TO POTENTIAL CASH FLOW\u2019. 6 ASX ANNOUNCEMENT DATED 25 MARCH 2026 \u2018GREENWING COMMENCES PRE-FEASIBILITY STUDY TO ADVANCE QUE RIVER MINING REST",
+          "Resource Estimate for Que River in March 2025 16 and subsequently completed a scoping study in October 2025 17, which highlighted a potential low - capex pathway to early cash flow through open pit mining and third -party processing. During the March quarter, Greenwing materially advanced the Que Riv",
+          "POLYMETALLIC MINERAL RESOURCE AT QUE RIVER\u2019 17 ASX ANNOUNCEMENT DATED 8 OCTOBER 2025 \u2018QUE RIVER PROJECT: SCOPING STUDY COMPLETED HIGHLIGHTING LOW CAPEX PATHWAY TO POTENTIAL CASH FLOW\u2019. For personal use only ASX:GW1 | greenwingresources.com Greenwing Resources Ltd | ABN 31 109 933 995 9 Su"
         ],
         "capex_overrun": [],
         "major_customer": [],
         "contract_win": [],
         "contract_loss": [],
         "execution_positive": [],
-        "execution_negative": [
-          ".9% compared with FY25, while Underlying EBITDA decreased by 19.5%, reflecting domestic stimulated cycle volume and market share pressures in 1H26, deferred pricing increases across key East Coast markets, wage and supplier cost inflation and the predominantly fixed nature of the clinical operating cost"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "utilisation",
-          "evidence": "uctural productivity program underway, with initiatives across centralised procurement, workforce efficiency and asset utilisation expected to improve operating leverage and earnings quality. \u2022 Genetics and ancillary services continued to grow, wit"
-        },
-        {
-          "metric": "ebitda margin",
-          "evidence": "nue was $269.5 million, down 0.9% compared with FY25. \u2022 Underlying EBITDA was $53.4 million, down 19.5%. \u2022 Underlying EBITDA margin was 19.8%. \u2022 Underlying EBIT was $28.4 million, down 34.0%. \u2022 Underlying NPAT was $16.1 million, down 41.2%. \u2022 Repor"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-31",
-          "headline": "MVF FY26 Results Announcement 3 pages 365.7KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132881",
-          "textChars": 7815
-        },
-        {
-          "date": "2026-08-24",
-          "headline": "FY2026 Results release postponed to 31 August 2026 1 page 181.5KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128656",
-          "textChars": 1090
-        },
-        {
-          "date": "2026-08-31",
-          "headline": "MVF FY26 Investor Presentation 36 pages 3.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132915",
-          "textChars": 8004
-        }
-      ],
-      "announcementsReviewed": 20,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:12.597871+00:00"
-    },
-    {
-      "ticker": "NHC",
-      "status": "OK",
-      "evidenceScore": 46,
-      "evidenceRisk": 44,
-      "managementDeliveryScore": 48,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        },
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Options, performance rights or convertibles may add future dilution.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [
-          "t 31 July 2026 was $778.5 million, consisting of $484.8 million in cash and cash equivalents and $293.7 million in fixed income investments. Senior convertible notes During the quarter the Company revised the terms of certain cash-settled call options (Capped Call Transactions) such that they now apply to a por",
-          "revised the terms of certain cash-settled call options (Capped Call Transactions) such that they now apply to a portion of the new senior unsecured convertible notes. The Capped Call Transactions provide the Company with an economic hedge up to a cap price. The Capped Call Transactions are designed to manage po"
-        ],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "elated road works will be completed progressively as mining advances, with forecast expenditure of $65 to $75 million supporting the mine\u2019s growth. Capital expenditure on the additional fleet required to support the mine\u2019s growth also remains on schedule, with most items now committed or on site and ready for work."
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "ess to the Manning Vale West pit in the second half of 2026. The major public road realignment required to enable access to the mining area remains on schedule and within budget, with minimal wet-weather disruption to date. The remaining approval-related road works will be completed progressively as mining"
-        ],
-        "execution_negative": [
-          "er cent increase. Saleable coal production was 0.8Mt, a 13.2 per cent decrease compared to the previous quarter, reflecting planned CHPP maintenance shutdowns, together with operating constraints associated with noise limits under approval conditions, which were more pronounced during cooler months. Coal"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-03-17",
-          "headline": "Half Year Results Presentation 19 pages 3.8MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072858",
-          "textChars": 8853
-        },
-        {
-          "date": "2026-03-17",
-          "headline": "FY26 Half Year Results 3 pages 257.9KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03072856",
-          "textChars": 6032
-        },
-        {
-          "date": "2026-08-17",
-          "headline": "Quarterly Activities Report 10 pages 560.7KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125654",
-          "textChars": 23958
-        }
-      ],
-      "announcementsReviewed": 33,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:19.420008+00:00"
-    },
-    {
-      "ticker": "SRG",
-      "status": "OK",
-      "evidenceScore": 62,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 52,
-      "evidencePositives": [
-        "Management has raised or beaten guidance in recent disclosures.",
-        "Recent disclosures contain contract/customer win evidence."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Management has raised or beaten guidance in recent disclosures. Recent disclosures contain contract/customer win evidence. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [
-          "er the conclusion of the briefing. For personal use only 2 18 August 2026 SRG Global delivers record result and dividend, exceeds upgraded FY26 guidance and upgrades FY27 guidance SRG Global Ltd (ASX: SRG) has delivered its financial results for the twelve months ended 30 June 2026 (\u201cFY26\u201d) and increases its profit guidance",
-          "- $205m EBITDA and $150m - $160m EBIT(A) Table 1: Financial Performance Note: FY26 EBITDA of $170.1m exceeds upgraded FY26 EBITDA guidance of top end of $164m to $168m provided in June 2026 For personal use only 3 Commenting on the FY26 results, David Macgeorge, Managing Directo",
-          "h-West North-West North Island Geographic split 50 % East 45 % West 5 % New Zealand 4 S&P/ASX For personal use only FY26 ResultsWay Forward Exceeded Upgraded FY26 Guidance1 $170.1m FY26 EBITDA of Up 34% on FY25 EBIT(A) of $131.8m, up 41% on FY25 Returns to Shareholders 13.8cps EPS(A) of Up 34% on FY25 2H Dividend of 4."
-        ],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [
-          "ce & industrial services SRG Global\u2019s Maintenance & Industrial Services segment continued its sustained growth in FY26 with numerous long-term contract awards and extensions. SRG GLOBAL 2026 ANNUAL REPORT6 For personal use only What we do Our Maintenance and Industrial Services teams bring an engineering"
-        ],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": [
-          "assets easier. We are an embedded partner to our clients delivering integrated program management and continuous maintenance services, large-scale shutdown solutions and sustaining capital projects. The breadth of our skills and capabilities encompasses integrated asset monitoring, inspection & testin"
-        ]
+        "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
       "sectorEvidence": [
         {
           "metric": "contract",
-          "evidence": "Global\u2019s Maintenance & Industrial Services segment continued its sustained growth in FY26 with numerous long-term contract awards and extensions. SRG GLOBAL 2026 ANNUAL REPORT6 For personal use only What we do Our Maintenance and Industrial"
+          "evidence": "7 Cu 9300 t 93 10kg 25% 2.1 Au 2800 oz 90 g 40% 3.3 Ag 31 oz 1.0 g 40% 0.04 Metal price Price per ore tonne Bass Metals Contract For personal use only ASX:GW1 | greenwingresources.com Greenwing Resources Ltd | ABN 31 109 933 995 10 The"
+        },
+        {
+          "metric": "capex",
+          "evidence": "PROVED OUTCOMES\u2019 5 ASX ANNOUNCEMENT DATED 8 OCTOBER 2025 \u2018QUE RIVER PROJECT: SCOPING STUDY COMPLETED HIGHLIGHTING LOW CAPEX PATHWAY TO POTENTIAL CASH FLOW\u2019. 6 ASX ANNOUNCEMENT DATED 25 MARCH 2026 \u2018GREENWING COMMENCES PRE-FEASIBILITY STUDY TO"
         }
       ],
       "evidenceDocuments": [
         {
-          "date": "2026-08-18",
-          "headline": "FY26 Annual Report and Appendix 4E 161 pages 17.6MB",
+          "date": "2026-07-30",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 17 pages 661.4KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126077",
-          "textChars": 5451
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120019",
+          "textChars": 26362
         },
         {
-          "date": "2026-08-18",
-          "headline": "FY26 Full Year Results Announcement 6 pages 1.3MB",
+          "date": "2026-04-30",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 21 pages 916.2KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126081",
-          "textChars": 5967
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03088526",
+          "textChars": 25285
         },
         {
-          "date": "2026-08-18",
-          "headline": "FY26 Full Year Results Presentation 30 pages 10.8MB",
+          "date": "2026-04-16",
+          "headline": "Results of Meeting 1 page 148.0KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126080",
-          "textChars": 4338
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03083334",
+          "textChars": 1934
         }
       ],
-      "announcementsReviewed": 35,
+      "announcementsReviewed": 40,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:28.599928+00:00"
+      "analysedAt": "2026-09-07T06:22:31.465416+00:00"
     },
     {
       "ticker": "BTR",
@@ -2251,7 +2232,7 @@
       ],
       "announcementsReviewed": 55,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:35.989742+00:00"
+      "analysedAt": "2026-09-07T06:22:41.015159+00:00"
     },
     {
       "ticker": "EHL",
@@ -2333,10 +2314,156 @@
       ],
       "announcementsReviewed": 26,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:44.240823+00:00"
+      "analysedAt": "2026-09-07T06:22:51.914705+00:00"
     },
     {
-      "ticker": "SDF",
+      "ticker": "TGF",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "Hycroft in September 2025 , following an extensive on-site due diligence process involving multiple members of the team. TGF cornerstoned a US$60m capital raise , which enabled Hycroft to pay down restrictive debt and invest in a hugely prospective exploration program. The Hycroft mine had operated at vari",
+          "ars , after the Investment Manager identified the early stage prospectivity of Terra \u2019s Western Australian tenements. In 2025 , TGF cornerstoned two capital raises alongside two other strategic shareholders. This capital allo wed Terra to aggressively expand its exploration program. Since then , Terra has co"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "\u2013 Global military expenditure is making new highs, lifting demand for critical minerals; and Artificial Intelligence (AI) \u2013 Hyperscaler data centre capex is largest physical commodity bid ever assembled. \u2022 Key Ideas: Portfolio remains heavily skewed to Critical, Base and Precious Metals as well as Ener"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "capex",
+          "evidence": "is making new highs, lifting demand for critical minerals; and Artificial Intelligence (AI) \u2013 Hyperscaler data centre capex is largest physical commodity bid ever assembled. \u2022 Key Ideas: Portfolio remains heavily skewed to Critical, Base and P"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-28",
+          "headline": "Appendix 4E and Annual Report 78 pages 1.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132012",
+          "textChars": 14487
+        },
+        {
+          "date": "2026-09-01",
+          "headline": "Investor Presentation 31 pages 9.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03134122",
+          "textChars": 14672
+        },
+        {
+          "date": "2026-09-07",
+          "headline": "Estimated Weekly NTA as of 04 September 2026 1 page 294.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03136565",
+          "textChars": 3184
+        }
+      ],
+      "announcementsReviewed": 42,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:22:58.222987+00:00"
+    },
+    {
+      "ticker": "SHN",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "nsent to the transfer of associated agreements. Completion is expected in or before August 2026. For personal use only Corporate Capital Raising The Company announced a $22 million capital raising, comprising a $19 million two- tranche placement and a share purchase plan (SPP) to raise",
+          "etion is expected in or before August 2026. For personal use only Corporate Capital Raising The Company announced a $22 million capital raising, comprising a $19 million two- tranche placement and a share purchase plan (SPP) to raise up to $3 million at A$0.027 per share. The Placemen",
+          "lowable under the SPP, showing significant shareholder alignment. The Company issued a total of 284,999,876 new listed shares. Proceeds from the capital raising will fund the upfront cash consideration for the Mt Moss Acquisition along with Liontown mine start-up, exploration and resource development and"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "@ 3.9g/t AuEq for 929koz AuEq recoverable (or 10.9% ZnEq)12. Amid strong gold and silver prices, Sunshine is following a strategic pathway to low CAPEX cashflow by targeting shallow oxide gold <50m from surface across Ravenswood. A Mining Study over the shallow gold at Liontown (Mining Study) w",
+          "Gold Room 6.4 Reagent storage 2.5 General site expenses camp, workshop, water and power also assessed 5.1 Total 28.5 Table 1: Refurbishment and construction costed estimates by plant area For personal use only Figure 3 - Shallow oxide gold prospects at Ravenswood and proximity to established min"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "wn4,5 were not incorporated into the Mining Study. - Mining and environmental approvals are well advanced, with early contractor engagement underway to support a potential commencement in late 2026. - The Mining Study and current resource will"
+        },
+        {
+          "metric": "capex",
+          "evidence": "recoverable (or 10.9% ZnEq)12. Amid strong gold and silver prices, Sunshine is following a strategic pathway to low CAPEX cashflow by targeting shallow oxide gold <50m from surface across Ravenswood. A Mining Study over the shallow gold"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-07-30",
+          "headline": "Quarterly Activities Report 13 pages 3.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03119860",
+          "textChars": 18345
+        },
+        {
+          "date": "2026-04-27",
+          "headline": "Quarterly Activities Report 10 pages 957.1KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03086423",
+          "textChars": 20818
+        },
+        {
+          "date": "2026-07-30",
+          "headline": "Appendix 5B Cash Flow Report 5 pages 227.1KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03119865",
+          "textChars": 9771
+        }
+      ],
+      "announcementsReviewed": 50,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:23:07.264055+00:00"
+    },
+    {
+      "ticker": "COG",
       "status": "OK",
       "evidenceScore": 34,
       "evidenceRisk": 49,
@@ -2355,7 +2482,7 @@
       "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
-          "st insurance products in niche market segments to the open market. Steadfast also owns an established Lloyd's broking operation, offering wholesale placement for brokers and agents around the world as well as direct insurance solutions. For personal use only"
+          "enture funding program. Prior to joining Liberty Financial, Peter was a partner at Deloitte where he advised on buy and sell -side M&A transactions, capital raising and securitisation facilities to a range of banks and non - banks. Peter was also a member of the Deloitte Top 40 Leadership group representing th"
         ],
         "options_issue": [],
         "guidance_raise": [],
@@ -2371,39 +2498,46 @@
         "contract_loss": [],
         "execution_positive": [],
         "execution_negative": [
-          "attributable to owners of Steadfast Group Limited 269.1 334.9 Adjustments for non-trading items (net of tax and non-controlling interest): Net deferred/contingent consideration expense (excluding Rothbury Group and Sure Insurance) 16.2 8.8 Net adjustment related to Rothbury Group (1.3)1 (157.4",
-          "ents 27.6 3.9 Underlying NPAT attributable to owners of Steadfast Group Limited 319.5 295.5 For personal use only Appendix 4E | 2 1. Includes deferred/contingent consideration remeasurement gain of $13.2 million and foreign exchange gain of $13.8 million, partly offset by discount unwind of $10. 1",
-          "up recorded a one-time gain of $157.4 million as a result of gaining control of Rothbury Group. 3. The FY25 net adjustment of $5.8 million comprises deferred/contingent consideration income of $43.2 million partly offset by impairment expense of $38.5 million ($37.4 million net of tax). Refer to Note 7F i"
+          "uncertainty. Statutory NPAT to Underlying NPATA reconciliation (1) Acquisition-related expenses include a $1.2m earn -out adjustment for the deferred consideration associated with AAA Finance acquisition (May 2025). (2) Adjustment related to associates reflects COG\u2019s 21.45% and 19.89% proportiona"
         ]
       },
       "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
+      "sectorEvidence": [
         {
-          "date": "2026-08-25",
-          "headline": "FY26 Results - Investor Presentation 67 pages 5.7MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03129873",
-          "textChars": 7469
+          "metric": "contract",
+          "evidence": "n Broking & Aggregation segment. Prior period numbers are restated where relevant to ensure comparability. Revenues contracted by 9% to $ 38.1m. Revenues for the year are reflective of a lower contribution from Westlawn primarily due to reduc"
         },
         {
-          "date": "2026-08-25",
-          "headline": "FY26 Appendix 4E and Annual Report 201 pages 12.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03129862",
-          "textChars": 14303
-        },
-        {
-          "date": "2026-08-25",
-          "headline": "FY26 Results 3 pages 226.2KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03129867",
-          "textChars": 5831
+          "metric": "ebitda margin",
+          "evidence": "butions from acquisitions of $17.6m, partially offset by lower revenue from both Lending and Other segments of $3.7m. EBITDA margin1 improved to 17.3% (FY25:16.6%1), supported by strong momentum in the Salary Packaging segment and the continued resil"
         }
       ],
-      "announcementsReviewed": 40,
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4E, Audited Financial Statements and Annual Report 86 pages 2.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130214",
+          "textChars": 24338
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "FY2026 Results Presentation 34 pages 2.7MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130297",
+          "textChars": 7109
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "30 June 2026 Results 3 pages 326.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130284",
+          "textChars": 6195
+        }
+      ],
+      "announcementsReviewed": 18,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:52.385866+00:00"
+      "analysedAt": "2026-09-07T06:23:14.907665+00:00"
     },
     {
       "ticker": "CDA",
@@ -2474,7 +2608,83 @@
       ],
       "announcementsReviewed": 29,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:17:58.790576+00:00"
+      "analysedAt": "2026-09-07T06:23:22.087689+00:00"
+    },
+    {
+      "ticker": "SRG",
+      "status": "OK",
+      "evidenceScore": 62,
+      "evidenceRisk": 39,
+      "managementDeliveryScore": 52,
+      "evidencePositives": [
+        "Management has raised or beaten guidance in recent disclosures.",
+        "Recent disclosures contain contract/customer win evidence."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Management has raised or beaten guidance in recent disclosures. Recent disclosures contain contract/customer win evidence. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [
+          "er the conclusion of the briefing. For personal use only 2 18 August 2026 SRG Global delivers record result and dividend, exceeds upgraded FY26 guidance and upgrades FY27 guidance SRG Global Ltd (ASX: SRG) has delivered its financial results for the twelve months ended 30 June 2026 (\u201cFY26\u201d) and increases its profit guidance",
+          "- $205m EBITDA and $150m - $160m EBIT(A) Table 1: Financial Performance Note: FY26 EBITDA of $170.1m exceeds upgraded FY26 EBITDA guidance of top end of $164m to $168m provided in June 2026 For personal use only 3 Commenting on the FY26 results, David Macgeorge, Managing Directo",
+          "h-West North-West North Island Geographic split 50 % East 45 % West 5 % New Zealand 4 S&P/ASX For personal use only FY26 ResultsWay Forward Exceeded Upgraded FY26 Guidance1 $170.1m FY26 EBITDA of Up 34% on FY25 EBIT(A) of $131.8m, up 41% on FY25 Returns to Shareholders 13.8cps EPS(A) of Up 34% on FY25 2H Dividend of 4."
+        ],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [
+          "ce & industrial services SRG Global\u2019s Maintenance & Industrial Services segment continued its sustained growth in FY26 with numerous long-term contract awards and extensions. SRG GLOBAL 2026 ANNUAL REPORT6 For personal use only What we do Our Maintenance and Industrial Services teams bring an engineering"
+        ],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": [
+          "assets easier. We are an embedded partner to our clients delivering integrated program management and continuous maintenance services, large-scale shutdown solutions and sustaining capital projects. The breadth of our skills and capabilities encompasses integrated asset monitoring, inspection & testin"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "Global\u2019s Maintenance & Industrial Services segment continued its sustained growth in FY26 with numerous long-term contract awards and extensions. SRG GLOBAL 2026 ANNUAL REPORT6 For personal use only What we do Our Maintenance and Industrial"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-18",
+          "headline": "FY26 Annual Report and Appendix 4E 161 pages 17.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126077",
+          "textChars": 5451
+        },
+        {
+          "date": "2026-08-18",
+          "headline": "FY26 Full Year Results Announcement 6 pages 1.3MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126081",
+          "textChars": 5967
+        },
+        {
+          "date": "2026-08-18",
+          "headline": "FY26 Full Year Results Presentation 30 pages 10.8MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126080",
+          "textChars": 4338
+        }
+      ],
+      "announcementsReviewed": 35,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:23:32.794854+00:00"
     },
     {
       "ticker": "SHV",
@@ -2554,80 +2764,7 @@
       ],
       "announcementsReviewed": 80,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:18:06.625258+00:00"
-    },
-    {
-      "ticker": "LYL",
-      "status": "OK",
-      "evidenceScore": 42,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 40,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "nd a commitment to high-quality work, reflected in broad current exposure 6 (30-Jun-26) $4.9 billion managed capex of projects in delivery >50 resource projects ~9 million\u00b9 controlled service hours2 1. Actual hours recorded \u2013 8,961,088 2. Controlled service h"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": [
-          "rojects to land earlier this year, but the extended duration of the conflict in the Middle East and the uncertainty surrounding its resolution, has delayed decision making and impacted the award and commencement of new projects. We had initially expected FY27 to be a record year for the Company, with re"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "FY27 guidance: o Revenue of $540 - $580 million; and o Net profit after tax (NPAT) of $54 - $58 million \u2022 Committed contracts of $661 million \u2022 Webinar to be held 11:00am AEST today, Wednesday 19 August 2026 (click to register) Commenting o"
-        },
-        {
-          "metric": "capex",
-          "evidence": "y work, reflected in broad current exposure 6 (30-Jun-26) $4.9 billion managed capex of projects in delivery >50 resource projects ~9 million\u00b9 controlled service hours2 1. Actual hours recorded \u2013 8,9"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-19",
-          "headline": "FY2026 Full Year Results Announcement 4 pages 254.8KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126759",
-          "textChars": 11515
-        },
-        {
-          "date": "2026-07-27",
-          "headline": "FY2026 Results Notification and Webinar 1 page 157.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03118426",
-          "textChars": 2126
-        },
-        {
-          "date": "2026-08-19",
-          "headline": "FY2026 Investor Presentation 29 pages 6.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126770",
-          "textChars": 5074
-        }
-      ],
-      "announcementsReviewed": 15,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:18:10.857816+00:00"
+      "analysedAt": "2026-09-07T06:23:42.433854+00:00"
     },
     {
       "ticker": "CGS",
@@ -2701,10 +2838,10 @@
       ],
       "announcementsReviewed": 43,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:18:18.972076+00:00"
+      "analysedAt": "2026-09-07T06:23:52.888824+00:00"
     },
     {
-      "ticker": "ATG",
+      "ticker": "GNC",
       "status": "OK",
       "evidenceScore": 50,
       "evidenceRisk": 30,
@@ -2721,9 +2858,7 @@
         "debt_refi_positive": [],
         "debt_stress": [],
         "cash_burn": [],
-        "capex": [
-          "investing in the Indian tech hub? Will there be increased capitalised product development as H2 product development CAPEX seems to be higher already? Derek Yung, Group CFO: Yeah, I can take that as well. So a great question. Than"
-        ],
+        "capex": [],
         "capex_overrun": [],
         "major_customer": [],
         "contract_win": [],
@@ -2734,36 +2869,135 @@
       "sectorEvidenceFamily": "industrials",
       "sectorEvidence": [
         {
-          "metric": "capex",
-          "evidence": "tech hub? Will there be increased capitalised product development as H2 product development CAPEX seems to be higher already? Derek Yung, Group CFO: Yeah, I can take that as well. So"
+          "metric": "contract",
+          "evidence": "erated well with a strong export program in 1H26 \u2022 Result includes earnings impact of ($7.6m) under the Crop Production Contract 2 \u2022 Continued growth in bulk materials contribution International \u2022 Record Western Australian winter crop production o"
         }
       ],
       "evidenceDocuments": [
         {
-          "date": "2026-08-28",
-          "headline": "FY2026 Results Investor Presentation 25 pages 7.2MB",
+          "date": "2026-05-14",
+          "headline": "Half Year Accounts 29 pages 1.7MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132055",
-          "textChars": 6004
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093755",
+          "textChars": 11497
         },
         {
-          "date": "2026-08-28",
-          "headline": "FY2026 Annual Report 90 pages 14.8MB",
+          "date": "2026-09-04",
+          "headline": "S&P DJI Announces September 2026 Quarterly Rebalance 6 pages 227.0KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132065",
-          "textChars": 19754
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03136141",
+          "textChars": 6650
         },
         {
-          "date": "2026-08-31",
-          "headline": "FY26 results webcast transcript 11 pages 345.9KB",
+          "date": "2026-05-08",
+          "headline": "Details of 1H26 Results Briefing 1 page 191.6KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03133016",
-          "textChars": 45000
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03092097",
+          "textChars": 2077
         }
       ],
-      "announcementsReviewed": 99,
+      "announcementsReviewed": 29,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:18:28.167791+00:00"
+      "analysedAt": "2026-09-07T06:23:58.922228+00:00"
+    },
+    {
+      "ticker": "RXL",
+      "status": "OK",
+      "evidenceScore": 38,
+      "evidenceRisk": 63,
+      "managementDeliveryScore": 48,
+      "evidencePositives": [
+        "Recent disclosures contain contract/customer win evidence.",
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        },
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        },
+        {
+          "severity": "HIGH",
+          "text": "Recent disclosures indicate rising project/capital costs."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk. Recent disclosures indicate rising project/capital costs.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "me the new Run-of-Mine (ROM)). The MDCP approval , supported by A$350 million credit commitments from a syndicate of banks and the A$200 million placement plus A$18 million share purchase plan, completed in the previous quarter, allowed the Board to approve the FID for Youanmi. Mining Operations at U",
+          "Page 10 Pathway to Production Rox\u2019s indicative pathway to production remains on track (see Figure 9 ): \u2022 DFS released in November 2025 \u2022 $200m Placement + $18m SPP completed December 2025 to finalise the equity funding component \u2022 $350m Debt Financing facilities secured in March 2026 \u2022 MDCP approv",
+          "year 2026. For personal use only Rox Resources Limited Half Year Report - 31 December 2025 9 Directors\u2019 Report Corporate Institutional Placement The Group completed a two-tranche institutional placement to a select group of high-quality international and domestic investors, raising approxima"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "0 million (before costs). The placement fully funds the equity component required for the developmen t of Youanmi, including: \u2022 Project development capex: o Processing plant and equipment on an EPC basis, site infrastructure including a 350 -room camp and wastewater treatment facilities, upgrading si",
+          "after tax for the half -year ended 31 December 202 5 was $ 18,531k (202 4: $ 6,978k). This loss is predominantly attributable to expenditure on mine development expenditure of $9,545k (2024: $nil), exploration and evaluation activities during the period totalling $ 4,537k (2024: $5,182k), share based payments totalling"
+        ],
+        "capex_overrun": [
+          "to fund development of Youanmi. The key terms of the facilities include: \u2022 A$300 million Senior Secured Project Term Loan Facility \u2022 A$20 million Cost Overrun Facility \u2022 A$30 million Bank Guarantee Facility \u2022 Loan term in respect of the Senior Secured Project Term Loan Facility and Bank Guarantee Facility",
+          "espect of the Senior Secured Project Term Loan Facility and Bank Guarantee Facility of 5.5 years from financial close \u2022 Loan term in respect of the Cost Overrun Facility of 3 years from financial close \u2022 No restrictions or financial penalty for early repayment of the Debt Facilities \u2022 A highly competitive i"
+        ],
+        "major_customer": [],
+        "contract_win": [
+          "personal use only Rox Resources Limited Half Year Report - 31 December 2025 8 Directors\u2019 Report Construction of site infrastructure The Group awarded a contract to ADD Group for construction of the phase one camp expansion. This included the supply and installation of 60 additional rooms to deliver high-qual"
+        ],
+        "contract_loss": [],
+        "execution_positive": [
+          "evelopment advance of 1,117m , bringing total advance to 2,130m acro*ss the Youanmi Gold Mine. Underground development rates at United North remain ahead of schedule, with approximately 1,025m of advance completed in the quarter to 30 June 2026, bringing total advance metres to 2,037m (see Figure 1). Ore drive",
+          "ems such as the ball mill, IsaMill, Albion leach tanks and Cyanide in Leach (CIL) tanks are well underway (Figure 6) with the delivery and construction schedule in line with EPC construction schedule and Rox\u2019s plan to pour gold in mid-CY2027. Contract negotiations for the last remaining major contracts, inc",
+          "rter, allowed the Board to approve the FID for Youanmi. Mining Operations at United North Underground development rates at United North continue on schedule, with approximately 726m of advance completed in the quarter to 31 March 2026, bringing total advance metres to 1,013m, with 623m of this completed"
+        ],
+        "execution_negative": [
+          "to fund development of Youanmi. The key terms of the facilities include: \u2022 A$300 million Senior Secured Project Term Loan Facility \u2022 A$20 million Cost Overrun Facility \u2022 A$30 million Bank Guarantee Facility \u2022 Loan term in respect of the Senior Secured Project Term Loan Facility and Bank Guarantee Facility",
+          "espect of the Senior Secured Project Term Loan Facility and Bank Guarantee Facility of 5.5 years from financial close \u2022 Loan term in respect of the Cost Overrun Facility of 3 years from financial close \u2022 No restrictions or financial penalty for early repayment of the Debt Facilities \u2022 A highly competitive i"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "l works approval granted after end of the quarter \u2022 Processing plant construction commenced following execution of EPC contract \u2022 Mining at Youanmi and Pollard Declines commence d with ore stockpile building from United North \u2022 1,117m of later"
+        },
+        {
+          "metric": "capex",
+          "evidence": "placement fully funds the equity component required for the developmen t of Youanmi, including: \u2022 Project development capex: o Processing plant and equipment on an EPC basis, site infrastructure including a 350 -room camp and wastewater trea"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-07-22",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 24 pages 4.3MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03117007",
+          "textChars": 9632
+        },
+        {
+          "date": "2026-04-17",
+          "headline": "Quarterly Activities/Appendix 5B Cash Flow Report 21 pages 3.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03083528",
+          "textChars": 11329
+        },
+        {
+          "date": "2026-03-12",
+          "headline": "Half-Year Financial Report - 31 December 2025 25 pages 3.0MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03071442",
+          "textChars": 17041
+        }
+      ],
+      "announcementsReviewed": 35,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-07T06:24:07.604249+00:00"
     },
     {
       "ticker": "RWC",
@@ -2835,241 +3069,7 @@
       ],
       "announcementsReviewed": 70,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:18:38.927443+00:00"
-    },
-    {
-      "ticker": "PYC",
-      "status": "OK",
-      "evidenceScore": 30,
-      "evidenceRisk": 55,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        },
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
-        },
-        {
-          "severity": "MEDIUM",
-          "text": "Disclosure evidence reinforces negative cash-flow/cash-runway risk."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk. Options, performance rights or convertibles may add future dilution. Disclosure evidence reinforces negative cash-flow/cash-runway risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "1 \u2022 Highlights of the Company's progress in Q1 CY26 include: o Corporate \uf0a7 Strengthening of the Company\u2019s balance sheet by $600m through a capital raise that introduced a syndicate of leading global life sciences specialist investors to the Company\u2019s share register2 o Polycystic Kidney Disease (P",
-          "ther clinical development pathway for the program. Financial Position and Shareholder Support A defining event during the year was the successful capital raising completed in early 2026. The Company strengthened its balance sheet by approximately $600 million and welcomed leading global specialist life sc"
-        ],
-        "options_issue": [
-          "uly 15th, 2026 where three resolutions covering a Long-Term Incentive Plan, the constitutional cap on Non-Executive Directors remuneration and the issue of options to Dr Rohan Hockings were carried14. PERTH, Australia and SAN FRANCISCO, California \u2013 29 July 2026 PYC Therapeutics Limited (ASX:PYC) (PYC or the"
-        ],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [
-          "rs to the PYC share register. PYC now has the financial resources to advance all four programs through multiple important clinical milestones, with funding runway extending into 2030. This provides considerable flexibility as the programs progress through clinical development and towards potential commercial",
-          "CN 098 391 961 9 candidate). This data will assist in the finalisation of the progression of VP -001 into a registrational study38. Funding and Cash Runway As of 30 June 2026, the Company had $669 million of cash on hand. Research and development payments during the quarter related to the continuation",
-          "nd uncertainties outlined in the Company\u2019s ASX disclosures of 2 February 2026 For personal use only pyctx.com | ACN 098 391 961 7 Funding and Cash Runway As of 31 March 2026, the Company had $667 million of cash on hand. Subsequently, on April 23, 2026, PYC received an additional $23 million attribu"
-        ],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-07-29",
-          "headline": "Quarterly Activities/Appendix 4C Cash Flow Report 16 pages 1.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03119194",
-          "textChars": 18081
-        },
-        {
-          "date": "2026-04-28",
-          "headline": "Quarterly Activities/Appendix 4C Cash Flow Report 13 pages 3.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03086823",
-          "textChars": 17352
-        },
-        {
-          "date": "2026-08-28",
-          "headline": "2026 Annual Report to Shareholders 96 pages 6.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03132719",
-          "textChars": 15294
-        }
-      ],
-      "announcementsReviewed": 44,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:18:47.379300+00:00"
-    },
-    {
-      "ticker": "BVS",
-      "status": "OK",
-      "evidenceScore": 54,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 52,
-      "evidencePositives": [
-        "Management has raised or beaten guidance in recent disclosures."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Management has raised or beaten guidance in recent disclosures. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [
-          "We have delivered strong performance for FY26, with Cash EBITDA of $77.1m (up 76% on FY25) and revenue of $283.6m (up 10% on FY25) meeting recently upgraded market guidance01 02 03 FY26 Highlights 04 A combined debt facility of up to $100m to optimise capital efficiency and support growth opportunities, and a 12 month o"
-        ],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": [
-          "any of the figures reported above necessary to enable the figures to be understood: Underlying NPAT for FY26 is calculated by excluding the effect of Deferred Tax Asset recognition which had a $47.8m impact on the statement of profit and loss. Revenue from continuing shareholder activities and underlying N",
-          "nts Cents Net tangible asset backing per ordinary security\u00b9 7.0 10.4 Net assets per ordinary security 26.7 20.9 1. NTA is calculated by deducting net deferred tax assets, intangible, and contract assets from net assets. -1- For personal use only Control gained over entities during the financial year Name o",
-          "the Fidelity Sonata software for a one-off licence fee of GBP 29 million (AUD 56.2 million). 3. Group underlying NPAT excludes the $47.8m effect of Deferred Taxation Asset recognition for FY26 and the post-tax effect of the Fidelity licence sale for FY25 4. Underlying Cash EBITDA for FY25 excludes the pr"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "4 Net assets per ordinary security 26.7 20.9 1. NTA is calculated by deducting net deferred tax assets, intangible, and contract assets from net assets. -1- For personal use only Control gained over entities during the financial year Name of entit"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-28",
-          "headline": "Correction to Annual Report 1 page 248.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03131924",
-          "textChars": 1971
-        },
-        {
-          "date": "2026-08-12",
-          "headline": "Appendix 4E and Annual Report for FY26 86 pages 8.3MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124267",
-          "textChars": 16960
-        },
-        {
-          "date": "2026-08-12",
-          "headline": "FY26 Results Presentation 25 pages 901.0KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124423",
-          "textChars": 5056
-        }
-      ],
-      "announcementsReviewed": 31,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:18:52.801596+00:00"
-    },
-    {
-      "ticker": "WEC",
-      "status": "OK",
-      "evidenceScore": 24,
-      "evidenceRisk": 72,
-      "managementDeliveryScore": 58,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        },
-        {
-          "severity": "HIGH",
-          "text": "Recent disclosures contain debt, covenant, going-concern or liquidity stress language."
-        },
-        {
-          "severity": "MEDIUM",
-          "text": "Disclosure evidence reinforces negative cash-flow/cash-runway risk."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk. Recent disclosures contain debt, covenant, going-concern or liquidity stress language. Disclosure evidence reinforces negative cash-flow/cash-runway risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "e Energy enters into Non-Binding Indicative Term Sheet for proposed acquisition of US metallurgical coal and Surat Basin coal assets and proposed capital raising \u2022 Drilling program and preliminary geochemical results identify multiple copper\u2013gold\u2013silver hydrothermal vectors at Specimen Hill Project near",
-          "the half-year for the Lora Creek project. The EL 6957 licence is in place until April 2029. General corporate The funds from the March 2025 capital raise of $3.7 million (net) were progressively used during the remainder of 2025 by the Company for mineral exploration activities such as ionic and rock",
-          "ams and mapping to identify drill targets, a drilling campaign and general corporate purposes. The Company strengthened its financial position by a capital raise of $3.2 million (net) that was completed in December 2025, with funds to be used for mineral exploration activities and general corporate purposes."
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [
-          "TDA has not been subject to any specific review procedures by our auditor but has been extracted from the accompanying interim financial report. Going concern The Group recorded a total comprehensive income for the half- year ended 31 December 2025 of $ 31,652,000 (2024: loss of $27,460,000), had net cash",
-          "re yet to be completed, these conditions give rise to a material uncertainty that may cast significant doubt on the Group\u2019s ability to continue as a going concern. However, the Directors believe that the Group will be successful in raising funds through one or more of the above actions and that it will be able",
-          "ttle its debts as and when they fall due and payable in the normal course of business. Accordingly, the financial statements have been prepared on a going concern basis. For personal use only"
-        ],
-        "cash_burn": [
-          "concern The Group recorded a total comprehensive income for the half- year ended 31 December 2025 of $ 31,652,000 (2024: loss of $27,460,000), had net cash outflows from operations of $1,768,000 (2024: $961,000) and a cash balance excluding restricted cash of $2,923,000 (30 June 2025: $3,107,000). The Group has"
-        ],
-        "capex": [
-          "or capital projects: The Directors believe, based on past experience, that they can raise third party debt financing to part fund any future project capital expenditure requirements. 4. Loans from minority shareholders: The Group\u2019s 51% owned subsidiary, River Energy JV Limited , continues to have access to fund"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "ad alteration and indicia of copper-gold mineralisation at Specimen Hill Project near Biloela in Queensland, with assays pending \u2022 Second Earn In milestone achieved for a further 25% interest in the Specimen Hill Project, that will bring White Energy\u2019s total interest to 76% \u2022 Analysis of large-scale ionic sam"
-        ],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-07-31",
-          "headline": "Quarterly Activities Report and Appendix 5B 32 pages 11.6MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03120891",
-          "textChars": 19485
-        },
-        {
-          "date": "2026-04-30",
-          "headline": "Quarterly Activities Report and Appendix 5B 23 pages 1.3MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089007",
-          "textChars": 27890
-        },
-        {
-          "date": "2026-03-11",
-          "headline": "Half Yearly Report and Accounts 36 pages 2.1MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03070910",
-          "textChars": 35939
-        }
-      ],
-      "announcementsReviewed": 22,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:19:00.971190+00:00"
+      "analysedAt": "2026-09-07T06:24:17.564665+00:00"
     },
     {
       "ticker": "CSL",
@@ -3149,7 +3149,7 @@
       ],
       "announcementsReviewed": 77,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:19:05.185378+00:00"
+      "analysedAt": "2026-09-07T06:24:24.301969+00:00"
     },
     {
       "ticker": "DTL",
@@ -3217,7 +3217,7 @@
       ],
       "announcementsReviewed": 12,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:19:11.509711+00:00"
+      "analysedAt": "2026-09-07T06:24:30.838767+00:00"
     },
     {
       "ticker": "S32",
@@ -3313,7 +3313,7 @@
       ],
       "announcementsReviewed": 40,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:19:22.504579+00:00"
+      "analysedAt": "2026-09-07T06:24:43.646161+00:00"
     },
     {
       "ticker": "DMP",
@@ -3377,7 +3377,7 @@
       ],
       "announcementsReviewed": 35,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:19:28.781022+00:00"
+      "analysedAt": "2026-09-07T06:24:51.268016+00:00"
     },
     {
       "ticker": "WOR",
@@ -3454,7 +3454,7 @@
       ],
       "announcementsReviewed": 86,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:19:46.223755+00:00"
+      "analysedAt": "2026-09-07T06:25:14.092472+00:00"
     },
     {
       "ticker": "RIO",
@@ -3571,7 +3571,7 @@
       ],
       "announcementsReviewed": 41,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:19:53.153763+00:00"
+      "analysedAt": "2026-09-07T06:25:22.558612+00:00"
     },
     {
       "ticker": "GOLD",
@@ -3633,7 +3633,7 @@
       ],
       "announcementsReviewed": 24,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:20:01.328261+00:00"
+      "analysedAt": "2026-09-07T06:25:32.411001+00:00"
     },
     {
       "ticker": "MIN",
@@ -3714,7 +3714,7 @@
       ],
       "announcementsReviewed": 35,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:20:09.331258+00:00"
+      "analysedAt": "2026-09-07T06:25:41.867546+00:00"
     },
     {
       "ticker": "ETPMAG",
@@ -3814,7 +3814,7 @@
       ],
       "announcementsReviewed": 61,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:20:15.474713+00:00"
+      "analysedAt": "2026-09-07T06:25:49.215072+00:00"
     },
     {
       "ticker": "DRO",
@@ -3878,7 +3878,7 @@
       ],
       "announcementsReviewed": 65,
       "documentsRead": 3,
-      "analysedAt": "2026-09-07T04:20:21.731456+00:00"
+      "analysedAt": "2026-09-07T06:25:57.199889+00:00"
     }
   ]
 }
