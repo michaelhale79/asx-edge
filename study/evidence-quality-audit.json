@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T06:25:46.482056+00:00",
+  "updated": "2026-09-08T22:22:49.570973+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -19,10 +19,10 @@
     {
       "ticker": "CSL",
       "documentsRead": 3,
-      "rawEvidenceScore": 34,
-      "rawEvidenceRisk": 55,
-      "qualityEvidenceScore": 34,
-      "qualityEvidenceRisk": 55,
+      "rawEvidenceScore": 42,
+      "rawEvidenceRisk": 45,
+      "qualityEvidenceScore": 42,
+      "qualityEvidenceRisk": 45,
       "corrections": [],
       "managementCredibilityScore": 38,
       "assessment": "PASS"
@@ -39,17 +39,6 @@
       "assessment": "PASS"
     },
     {
-      "ticker": "DRO",
-      "documentsRead": 3,
-      "rawEvidenceScore": 50,
-      "rawEvidenceRisk": 30,
-      "qualityEvidenceScore": 50,
-      "qualityEvidenceRisk": 30,
-      "corrections": [],
-      "managementCredibilityScore": 50,
-      "assessment": "PASS"
-    },
-    {
       "ticker": "WBT",
       "documentsRead": 3,
       "rawEvidenceScore": 46,
@@ -58,6 +47,17 @@
       "qualityEvidenceRisk": 55,
       "corrections": [],
       "managementCredibilityScore": 46,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "DRO",
+      "documentsRead": 3,
+      "rawEvidenceScore": 50,
+      "rawEvidenceRisk": 30,
+      "qualityEvidenceScore": 50,
+      "qualityEvidenceRisk": 30,
+      "corrections": [],
+      "managementCredibilityScore": 50,
       "assessment": "PASS"
     }
   ]
