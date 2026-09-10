@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-09-09T22:24:53.069909+00:00",
+  "updated": "2026-09-10T00:30:15.510894+00:00",
   "threshold": 75,
   "scoringNote": "Deterministic opportunity is the base score. AI world-event reasoning is a separate capped +/-5 overlay and is tracked as its own signal.",
   "calls": {
@@ -1042,7 +1042,7 @@
         "volumeRatio": 1.94
       },
       "currentPrice": 2.26,
-      "days": 8,
+      "days": 9,
       "returnPct": -0.88,
       "due": false,
       "outcome": "TRACKING"
@@ -4268,9 +4268,9 @@
         "shortInterestPct": null,
         "volumeRatio": 0.86
       },
-      "currentPrice": 84.22,
+      "currentPrice": 84.63,
       "days": 9,
-      "returnPct": -4.14,
+      "returnPct": -3.68,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -4338,9 +4338,9 @@
         "shortInterestPct": null,
         "volumeRatio": 1.58
       },
-      "currentPrice": 55.89,
+      "currentPrice": 55.58,
       "days": 9,
-      "returnPct": -1.18,
+      "returnPct": -1.73,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -8603,7 +8603,7 @@
         "volumeRatio": 2.06
       },
       "currentPrice": 6.94,
-      "days": 7,
+      "days": 8,
       "returnPct": 10.86,
       "due": false,
       "outcome": "TRACKING"
@@ -8642,7 +8642,7 @@
         "volumeRatio": 1.37
       },
       "currentPrice": 1.3,
-      "days": 7,
+      "days": 8,
       "returnPct": -1.89,
       "due": false,
       "outcome": "TRACKING"
@@ -8681,7 +8681,7 @@
         "volumeRatio": 1.35
       },
       "currentPrice": 7.87,
-      "days": 7,
+      "days": 8,
       "returnPct": 0.64,
       "due": false,
       "outcome": "TRACKING"
@@ -8999,15 +8999,15 @@
       "outcome": "TRACKING"
     },
     "TER": {
-      "id": "TER-20260907T022311Z",
+      "id": "TER-20260910T003015Z",
       "ticker": "TER",
-      "label": "SELL",
-      "startPrice": 0.081,
-      "startDate": "2026-09-07T02:23:11.646628+00:00",
-      "horizon": 14,
-      "opportunity": 78.0,
+      "label": "HOLD",
+      "startPrice": 0.08,
+      "startDate": "2026-09-10T00:30:15.510894+00:00",
+      "horizon": 20,
+      "opportunity": 73.0,
       "aiEventAdjustment": 0,
-      "risk": 63.0,
+      "risk": 56.0,
       "confidence": 73.0,
       "signals": {
         "momentum": true,
@@ -9017,23 +9017,23 @@
         "aiEvent": false,
         "lowShorts": false,
         "value": false,
-        "volume": true
+        "volume": false
       },
       "snapshot": {
-        "relative1m": 31.0,
-        "relative3m": -1.1,
-        "momentum": 94.0,
-        "valuation": 59.0,
+        "relative1m": 24.8,
+        "relative3m": 14.3,
+        "momentum": 92.0,
+        "valuation": 55.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
         "aiEventAdjustment": 0,
         "aiEventScore": 0,
         "shortInterestPct": null,
-        "volumeRatio": 1.38
+        "volumeRatio": 0.61
       },
       "currentPrice": 0.08,
-      "days": 2,
-      "returnPct": -1.23,
+      "days": 0,
+      "returnPct": 0.0,
       "due": false,
       "outcome": "TRACKING"
     },
@@ -11300,12 +11300,12 @@
       "outcome": "TRACKING"
     },
     "HCW": {
-      "id": "HCW-20260909T222453Z",
+      "id": "HCW-20260910T003015Z",
       "ticker": "HCW",
-      "label": "HOLD",
+      "label": "SELL",
       "startPrice": 0.77,
-      "startDate": "2026-09-09T22:24:53.069909+00:00",
-      "horizon": 20,
+      "startDate": "2026-09-10T00:30:15.510894+00:00",
+      "horizon": 14,
       "opportunity": 72.0,
       "aiEventAdjustment": 0,
       "risk": 33.0,
@@ -11317,14 +11317,14 @@
         "globalTrend": false,
         "aiEvent": false,
         "lowShorts": false,
-        "value": false,
+        "value": true,
         "volume": false
       },
       "snapshot": {
         "relative1m": 11.3,
         "relative3m": 9.2,
         "momentum": 81.0,
-        "valuation": 55.0,
+        "valuation": 61.0,
         "announcementSignal": 0.0,
         "globalTrendScore": 0.0,
         "aiEventAdjustment": 0,
@@ -17737,6 +17737,88 @@
       "outcome": "TRACKING",
       "endDate": "2026-09-09T22:24:53.069909+00:00",
       "endPrice": 1.62
+    },
+    {
+      "id": "TER-20260907T022311Z",
+      "ticker": "TER",
+      "label": "SELL",
+      "startPrice": 0.081,
+      "startDate": "2026-09-07T02:23:11.646628+00:00",
+      "horizon": 14,
+      "opportunity": 78.0,
+      "aiEventAdjustment": 0,
+      "risk": 63.0,
+      "confidence": 73.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": true
+      },
+      "snapshot": {
+        "relative1m": 31.0,
+        "relative3m": -1.1,
+        "momentum": 94.0,
+        "valuation": 59.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 1.38
+      },
+      "currentPrice": 0.08,
+      "days": 2,
+      "returnPct": -1.23,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-10T00:30:15.510894+00:00",
+      "endPrice": 0.08
+    },
+    {
+      "id": "HCW-20260909T222453Z",
+      "ticker": "HCW",
+      "label": "HOLD",
+      "startPrice": 0.77,
+      "startDate": "2026-09-09T22:24:53.069909+00:00",
+      "horizon": 20,
+      "opportunity": 72.0,
+      "aiEventAdjustment": 0,
+      "risk": 33.0,
+      "confidence": 81.0,
+      "signals": {
+        "momentum": true,
+        "relativeStrength": true,
+        "announcements": false,
+        "globalTrend": false,
+        "aiEvent": false,
+        "lowShorts": false,
+        "value": false,
+        "volume": false
+      },
+      "snapshot": {
+        "relative1m": 11.3,
+        "relative3m": 9.2,
+        "momentum": 81.0,
+        "valuation": 55.0,
+        "announcementSignal": 0.0,
+        "globalTrendScore": 0.0,
+        "aiEventAdjustment": 0,
+        "aiEventScore": 0,
+        "shortInterestPct": null,
+        "volumeRatio": 0.57
+      },
+      "currentPrice": 0.77,
+      "days": 0,
+      "returnPct": 0.0,
+      "due": false,
+      "outcome": "TRACKING",
+      "endDate": "2026-09-10T00:30:15.510894+00:00",
+      "endPrice": 0.77
     }
   ],
   "summary": {
