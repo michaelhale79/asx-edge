@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T22:24:14.146816+00:00",
+  "updated": "2026-09-15T00:25:34.137419+00:00",
   "coverage": 52,
   "method": "Reads selected recent ASX announcement PDFs for leading candidates and core holdings. Detects guidance, capital raising/dilution, debt/liquidity, cash burn, capex, customer concentration, contracts and execution evidence, plus sector-specific disclosure snippets. Evidence is heuristic and retained with source document metadata for auditability.",
   "companies": [
@@ -61,7 +61,7 @@
       ],
       "announcementsReviewed": 28,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:14:51.413249+00:00"
+      "analysedAt": "2026-09-15T00:17:53.799956+00:00"
     },
     {
       "ticker": "SNX",
@@ -130,7 +130,7 @@
       ],
       "announcementsReviewed": 46,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:15:01.489484+00:00"
+      "analysedAt": "2026-09-15T00:18:02.219210+00:00"
     },
     {
       "ticker": "IFN",
@@ -208,32 +208,19 @@
       ],
       "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:15:14.629520+00:00"
+      "analysedAt": "2026-09-15T00:18:12.409508+00:00"
     },
     {
       "ticker": "LM1",
       "status": "OK",
-      "evidenceScore": 34,
-      "evidenceRisk": 49,
-      "managementDeliveryScore": 40,
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
       "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        },
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
       "evidenceSignals": {
-        "capital_raise": [
-          "Announcement Type New announcement Date of this announcement 10/9/2026 The Proposed issue is: Total number of +securities proposed to be issued for a placement or other type of issue ASX +security code +Security description Maximum Number of +securities to be issued LM1 ORDINARY FULLY PAID 350,000 Proposed +",
-          "of +securities to be issued LM1 ORDINARY FULLY PAID 350,000 Proposed +issue date 17/9/2026 Refer to next page for full details of the announcement A placement or other type of issue For personal use only Appendix 3B - Proposed issue of securities Appendix 3B - Proposed issue of securities 2 / 5 Part 1 - Ent",
-          "Registration Number 82656057215 1.3 ASX issuer code LM1 1.4 The announcement is 1.5 Date of this announcement 10/9/2026 1.6 The Proposed issue is: A placement or other type of issue New announcement For personal use only Appendix 3B - Proposed issue of securities Appendix 3B - Proposed issue of securities 3"
-        ],
+        "capital_raise": [],
         "options_issue": [],
         "guidance_raise": [],
         "guidance_reaffirm": [],
@@ -247,9 +234,7 @@
         "contract_win": [],
         "contract_loss": [],
         "execution_positive": [],
-        "execution_negative": [
-          "ASX the following information about a proposed issue of +securities and, if ASX agrees to +quote any of the +securities (including any rights) on a +deferred settlement basis, we agree to the matters set out in Appendix 3B of the ASX Listing Rules. If the +securities are being offered under a +disclosure d"
-        ]
+        "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
       "sectorEvidence": [
@@ -274,16 +259,16 @@
           "textChars": 19094
         },
         {
-          "date": "2026-09-10",
-          "headline": "Proposed issue of securities - LM1 5 pages 13.4KB",
+          "date": "2026-09-15",
+          "headline": "Leeuwin Appoints Chief Development Officer 4 pages 520.5KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03137992",
-          "textChars": 5493
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03139566",
+          "textChars": 11928
         }
       ],
-      "announcementsReviewed": 36,
+      "announcementsReviewed": 37,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:15:23.917337+00:00"
+      "analysedAt": "2026-09-15T00:18:20.879374+00:00"
     },
     {
       "ticker": "MXI",
@@ -362,7 +347,7 @@
       ],
       "announcementsReviewed": 18,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:15:32.475661+00:00"
+      "analysedAt": "2026-09-15T00:18:27.056992+00:00"
     },
     {
       "ticker": "BAS",
@@ -442,7 +427,7 @@
       ],
       "announcementsReviewed": 49,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:15:42.668704+00:00"
+      "analysedAt": "2026-09-15T00:18:37.064317+00:00"
     },
     {
       "ticker": "HCW",
@@ -508,7 +493,7 @@
       ],
       "announcementsReviewed": 11,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:15:51.898224+00:00"
+      "analysedAt": "2026-09-15T00:18:45.071736+00:00"
     },
     {
       "ticker": "LYL",
@@ -581,7 +566,7 @@
       ],
       "announcementsReviewed": 17,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:16:01.288271+00:00"
+      "analysedAt": "2026-09-15T00:18:51.953325+00:00"
     },
     {
       "ticker": "KOA",
@@ -660,7 +645,7 @@
       ],
       "announcementsReviewed": 47,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:16:12.459276+00:00"
+      "analysedAt": "2026-09-15T00:19:01.596324+00:00"
     },
     {
       "ticker": "TCG",
@@ -719,7 +704,7 @@
       ],
       "announcementsReviewed": 50,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:16:22.099937+00:00"
+      "analysedAt": "2026-09-15T00:19:11.090841+00:00"
     },
     {
       "ticker": "ANN",
@@ -786,7 +771,7 @@
       ],
       "announcementsReviewed": 79,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:16:37.423917+00:00"
+      "analysedAt": "2026-09-15T00:19:25.733521+00:00"
     },
     {
       "ticker": "RWC",
@@ -858,7 +843,7 @@
       ],
       "announcementsReviewed": 65,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:16:52.410407+00:00"
+      "analysedAt": "2026-09-15T00:19:36.979384+00:00"
     },
     {
       "ticker": "GNG",
@@ -950,7 +935,7 @@
       ],
       "announcementsReviewed": 41,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:17:01.466634+00:00"
+      "analysedAt": "2026-09-15T00:19:44.037965+00:00"
     },
     {
       "ticker": "RTR",
@@ -1025,7 +1010,7 @@
       ],
       "announcementsReviewed": 18,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:17:16.949964+00:00"
+      "analysedAt": "2026-09-15T00:19:54.526527+00:00"
     },
     {
       "ticker": "CY5",
@@ -1108,7 +1093,7 @@
       ],
       "announcementsReviewed": 53,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:17:28.989469+00:00"
+      "analysedAt": "2026-09-15T00:20:03.235911+00:00"
     },
     {
       "ticker": "FPR",
@@ -1186,7 +1171,7 @@
       ],
       "announcementsReviewed": 90,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:17:38.348683+00:00"
+      "analysedAt": "2026-09-15T00:20:11.425585+00:00"
     },
     {
       "ticker": "RHC",
@@ -1264,7 +1249,7 @@
       ],
       "announcementsReviewed": 25,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:17:48.619016+00:00"
+      "analysedAt": "2026-09-15T00:20:18.174058+00:00"
     },
     {
       "ticker": "ALK",
@@ -1328,7 +1313,7 @@
       ],
       "announcementsReviewed": 57,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:17:57.911167+00:00"
+      "analysedAt": "2026-09-15T00:20:25.372484+00:00"
     },
     {
       "ticker": "BCI",
@@ -1420,7 +1405,7 @@
       ],
       "announcementsReviewed": 21,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:18:07.926302+00:00"
+      "analysedAt": "2026-09-15T00:20:32.101763+00:00"
     },
     {
       "ticker": "MVF",
@@ -1498,7 +1483,7 @@
       ],
       "announcementsReviewed": 20,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:18:16.718054+00:00"
+      "analysedAt": "2026-09-15T00:20:37.975218+00:00"
     },
     {
       "ticker": "BTR",
@@ -1583,7 +1568,7 @@
       ],
       "announcementsReviewed": 56,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:18:29.323231+00:00"
+      "analysedAt": "2026-09-15T00:20:48.715394+00:00"
     },
     {
       "ticker": "CXO",
@@ -1667,7 +1652,7 @@
       ],
       "announcementsReviewed": 54,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:18:39.430820+00:00"
+      "analysedAt": "2026-09-15T00:20:57.164863+00:00"
     },
     {
       "ticker": "ATG",
@@ -1729,7 +1714,7 @@
       ],
       "announcementsReviewed": 98,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:18:56.080528+00:00"
+      "analysedAt": "2026-09-15T00:21:09.598294+00:00"
     },
     {
       "ticker": "SBM",
@@ -1810,7 +1795,7 @@
       ],
       "announcementsReviewed": 34,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:19:07.255456+00:00"
+      "analysedAt": "2026-09-15T00:21:20.398136+00:00"
     },
     {
       "ticker": "AUC",
@@ -1883,7 +1868,7 @@
       ],
       "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:19:20.539744+00:00"
+      "analysedAt": "2026-09-15T00:21:30.676099+00:00"
     },
     {
       "ticker": "EQT",
@@ -1943,7 +1928,7 @@
       ],
       "announcementsReviewed": 26,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:19:30.076564+00:00"
+      "analysedAt": "2026-09-15T00:21:38.072208+00:00"
     },
     {
       "ticker": "NOL",
@@ -2004,7 +1989,7 @@
       ],
       "announcementsReviewed": 20,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:19:41.678234+00:00"
+      "analysedAt": "2026-09-15T00:21:48.253272+00:00"
     },
     {
       "ticker": "PRU",
@@ -2077,7 +2062,7 @@
       ],
       "announcementsReviewed": 86,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:19:53.319346+00:00"
+      "analysedAt": "2026-09-15T00:21:59.762107+00:00"
     },
     {
       "ticker": "VEA",
@@ -2155,7 +2140,7 @@
       ],
       "announcementsReviewed": 71,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:20:03.587529+00:00"
+      "analysedAt": "2026-09-15T00:22:06.821483+00:00"
     },
     {
       "ticker": "OMA",
@@ -2226,7 +2211,7 @@
       ],
       "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:20:12.590651+00:00"
+      "analysedAt": "2026-09-15T00:22:13.927629+00:00"
     },
     {
       "ticker": "COG",
@@ -2303,7 +2288,7 @@
       ],
       "announcementsReviewed": 18,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:20:21.715999+00:00"
+      "analysedAt": "2026-09-15T00:22:22.127849+00:00"
     },
     {
       "ticker": "WAF",
@@ -2389,7 +2374,7 @@
       ],
       "announcementsReviewed": 95,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:20:32.905020+00:00"
+      "analysedAt": "2026-09-15T00:22:31.100486+00:00"
     },
     {
       "ticker": "BUB",
@@ -2464,7 +2449,7 @@
       ],
       "announcementsReviewed": 28,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:20:41.062590+00:00"
+      "analysedAt": "2026-09-15T00:22:38.632772+00:00"
     },
     {
       "ticker": "EQR",
@@ -2550,9 +2535,9 @@
           "textChars": 6650
         }
       ],
-      "announcementsReviewed": 151,
+      "announcementsReviewed": 152,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:20:52.993582+00:00"
+      "analysedAt": "2026-09-15T00:22:47.628218+00:00"
     },
     {
       "ticker": "CCP",
@@ -2612,7 +2597,7 @@
       ],
       "announcementsReviewed": 46,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:21:03.481850+00:00"
+      "analysedAt": "2026-09-15T00:22:57.631025+00:00"
     },
     {
       "ticker": "CUP",
@@ -2689,7 +2674,7 @@
       ],
       "announcementsReviewed": 50,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:21:15.835643+00:00"
+      "analysedAt": "2026-09-15T00:23:08.278406+00:00"
     },
     {
       "ticker": "QML",
@@ -2757,7 +2742,7 @@
       ],
       "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:21:27.442030+00:00"
+      "analysedAt": "2026-09-15T00:23:16.443455+00:00"
     },
     {
       "ticker": "CWY",
@@ -2845,7 +2830,7 @@
       ],
       "announcementsReviewed": 39,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:21:42.362159+00:00"
+      "analysedAt": "2026-09-15T00:23:28.530352+00:00"
     },
     {
       "ticker": "FWD",
@@ -2929,7 +2914,7 @@
       ],
       "announcementsReviewed": 82,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:21:53.165158+00:00"
+      "analysedAt": "2026-09-15T00:23:35.301778+00:00"
     },
     {
       "ticker": "MSV",
@@ -3008,7 +2993,7 @@
       ],
       "announcementsReviewed": 22,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:22:06.340652+00:00"
+      "analysedAt": "2026-09-15T00:23:46.241553+00:00"
     },
     {
       "ticker": "CSL",
@@ -3082,7 +3067,7 @@
       ],
       "announcementsReviewed": 76,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:22:16.584094+00:00"
+      "analysedAt": "2026-09-15T00:23:52.126523+00:00"
     },
     {
       "ticker": "DTL",
@@ -3150,7 +3135,7 @@
       ],
       "announcementsReviewed": 14,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:22:24.966968+00:00"
+      "analysedAt": "2026-09-15T00:23:58.497047+00:00"
     },
     {
       "ticker": "S32",
@@ -3246,7 +3231,7 @@
       ],
       "announcementsReviewed": 46,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:22:41.928523+00:00"
+      "analysedAt": "2026-09-15T00:24:14.202975+00:00"
     },
     {
       "ticker": "RIO",
@@ -3363,7 +3348,7 @@
       ],
       "announcementsReviewed": 41,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:22:50.862695+00:00"
+      "analysedAt": "2026-09-15T00:24:22.040123+00:00"
     },
     {
       "ticker": "DMP",
@@ -3427,7 +3412,7 @@
       ],
       "announcementsReviewed": 36,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:23:00.420519+00:00"
+      "analysedAt": "2026-09-15T00:24:30.780929+00:00"
     },
     {
       "ticker": "GOLD",
@@ -3507,9 +3492,9 @@
           "textChars": 21166
         }
       ],
-      "announcementsReviewed": 80,
+      "announcementsReviewed": 81,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:23:25.532821+00:00"
+      "analysedAt": "2026-09-15T00:24:51.080654+00:00"
     },
     {
       "ticker": "AIA",
@@ -3566,7 +3551,7 @@
       ],
       "announcementsReviewed": 27,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:23:39.542624+00:00"
+      "analysedAt": "2026-09-15T00:25:04.947090+00:00"
     },
     {
       "ticker": "ETPMAG",
@@ -3652,7 +3637,71 @@
       ],
       "announcementsReviewed": 39,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:23:53.812871+00:00"
+      "analysedAt": "2026-09-15T00:25:16.822382+00:00"
+    },
+    {
+      "ticker": "DRO",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "Notes: Committed Revenue FY2026 is as at 20 April 2026 and is based on revenue recognition estimates for current contracts. Committed SaaS revenue is currently 13% of FY2026 Committed Revenue. Financial information for FY2026 is unaudited"
+        },
+        {
+          "metric": "utilisation",
+          "evidence": "g existing end-users in Europe and the UK. \u2022 In the United States, the Co mpany continued to benefit from increased utilisation of centralised inter-agency procurement panels, with DroneShield becoming an approved supplier on such portals. \u2022 Ma"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-04-22",
+          "headline": "Quarterly Activities/Appendix 4C Cash Flow Report 9 pages 589.5KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084960",
+          "textChars": 14455
+        },
+        {
+          "date": "2026-04-22",
+          "headline": "1Q26 4C Results - Investor Presentation 29 pages 3.3MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084980",
+          "textChars": 17669
+        },
+        {
+          "date": "2026-08-26",
+          "headline": "Half Yearly Report and Accounts 29 pages 941.9KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130270",
+          "textChars": 19609
+        }
+      ],
+      "announcementsReviewed": 65,
+      "documentsRead": 3,
+      "analysedAt": "2026-09-15T00:25:24.895818+00:00"
     },
     {
       "ticker": "WBT",
@@ -3747,71 +3796,7 @@
       ],
       "announcementsReviewed": 61,
       "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:24:04.272885+00:00"
-    },
-    {
-      "ticker": "DRO",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "Notes: Committed Revenue FY2026 is as at 20 April 2026 and is based on revenue recognition estimates for current contracts. Committed SaaS revenue is currently 13% of FY2026 Committed Revenue. Financial information for FY2026 is unaudited"
-        },
-        {
-          "metric": "utilisation",
-          "evidence": "g existing end-users in Europe and the UK. \u2022 In the United States, the Co mpany continued to benefit from increased utilisation of centralised inter-agency procurement panels, with DroneShield becoming an approved supplier on such portals. \u2022 Ma"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-04-22",
-          "headline": "Quarterly Activities/Appendix 4C Cash Flow Report 9 pages 589.5KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084960",
-          "textChars": 14455
-        },
-        {
-          "date": "2026-04-22",
-          "headline": "1Q26 4C Results - Investor Presentation 29 pages 3.3MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03084980",
-          "textChars": 17669
-        },
-        {
-          "date": "2026-08-26",
-          "headline": "Half Yearly Report and Accounts 29 pages 941.9KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130270",
-          "textChars": 19609
-        }
-      ],
-      "announcementsReviewed": 65,
-      "documentsRead": 3,
-      "analysedAt": "2026-09-14T22:24:14.146770+00:00"
+      "analysedAt": "2026-09-15T00:25:34.137385+00:00"
     }
   ]
 }
