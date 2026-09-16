@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T22:20:28.489865+00:00",
+  "updated": "2026-09-16T23:21:52.205833+00:00",
   "coverage": 52,
   "method": "Reads selected recent ASX announcement PDFs for leading candidates and core holdings. Detects guidance, capital raising/dilution, debt/liquidity, cash burn, capex, customer concentration, contracts and execution evidence, plus sector-specific disclosure snippets. Evidence is heuristic and retained with source document metadata for auditability.",
   "companies": [
@@ -91,9 +91,9 @@
           "textChars": 19059
         }
       ],
-      "announcementsReviewed": 21,
+      "announcementsReviewed": 22,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:04.430002+00:00"
+      "analysedAt": "2026-09-16T23:13:52.837959+00:00"
     },
     {
       "ticker": "ALK",
@@ -157,7 +157,7 @@
       ],
       "announcementsReviewed": 56,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:10.432989+00:00"
+      "analysedAt": "2026-09-16T23:14:00.874985+00:00"
     },
     {
       "ticker": "CDA",
@@ -228,7 +228,7 @@
       ],
       "announcementsReviewed": 30,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:17.933932+00:00"
+      "analysedAt": "2026-09-16T23:14:10.810133+00:00"
     },
     {
       "ticker": "KLI",
@@ -305,7 +305,7 @@
       ],
       "announcementsReviewed": 62,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:24.807548+00:00"
+      "analysedAt": "2026-09-16T23:14:19.535189+00:00"
     },
     {
       "ticker": "RHC",
@@ -383,7 +383,7 @@
       ],
       "announcementsReviewed": 25,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:31.642070+00:00"
+      "analysedAt": "2026-09-16T23:14:27.799131+00:00"
     },
     {
       "ticker": "GNG",
@@ -475,7 +475,7 @@
       ],
       "announcementsReviewed": 41,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:37.995274+00:00"
+      "analysedAt": "2026-09-16T23:14:34.926776+00:00"
     },
     {
       "ticker": "NHC",
@@ -550,7 +550,7 @@
       ],
       "announcementsReviewed": 40,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:45.004711+00:00"
+      "analysedAt": "2026-09-16T23:14:43.755856+00:00"
     },
     {
       "ticker": "CCL",
@@ -610,7 +610,7 @@
       ],
       "announcementsReviewed": 37,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:14:53.375290+00:00"
+      "analysedAt": "2026-09-16T23:14:55.405879+00:00"
     },
     {
       "ticker": "KOA",
@@ -689,7 +689,7 @@
       ],
       "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:15:01.757896+00:00"
+      "analysedAt": "2026-09-16T23:15:05.960544+00:00"
     },
     {
       "ticker": "ANN",
@@ -756,7 +756,7 @@
       ],
       "announcementsReviewed": 79,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:15:14.701822+00:00"
+      "analysedAt": "2026-09-16T23:15:21.607145+00:00"
     },
     {
       "ticker": "EQR",
@@ -842,9 +842,9 @@
           "textChars": 6650
         }
       ],
-      "announcementsReviewed": 148,
+      "announcementsReviewed": 150,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:15:23.479333+00:00"
+      "analysedAt": "2026-09-16T23:15:31.129680+00:00"
     },
     {
       "ticker": "PRU",
@@ -917,7 +917,7 @@
       ],
       "announcementsReviewed": 85,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:15:31.817847+00:00"
+      "analysedAt": "2026-09-16T23:15:43.479093+00:00"
     },
     {
       "ticker": "NMG",
@@ -977,7 +977,7 @@
       ],
       "announcementsReviewed": 28,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:15:39.698792+00:00"
+      "analysedAt": "2026-09-16T23:15:52.848264+00:00"
     },
     {
       "ticker": "WCN",
@@ -1049,7 +1049,7 @@
       ],
       "announcementsReviewed": 103,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:15:48.711323+00:00"
+      "analysedAt": "2026-09-16T23:16:03.501943+00:00"
     },
     {
       "ticker": "RTR",
@@ -1116,39 +1116,32 @@
       ],
       "announcementsReviewed": 17,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:15:56.799235+00:00"
+      "analysedAt": "2026-09-16T23:16:13.109075+00:00"
     },
     {
       "ticker": "AVL",
       "status": "OK",
-      "evidenceScore": 46,
-      "evidenceRisk": 45,
-      "managementDeliveryScore": 50,
+      "evidenceScore": 58,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 58,
       "evidencePositives": [
-        "Recent disclosures contain contract/customer win evidence."
+        "Recent disclosures contain contract/customer win evidence.",
+        "Recent disclosures show delivery/commissioning milestones being achieved."
       ],
       "evidenceFlags": [
         {
           "severity": "MEDIUM",
           "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        },
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
         }
       ],
-      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk. Options, performance rights or convertibles may add future dilution.",
+      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
           "ning and metals, hot climate, data centres and grid connected VFB BESS projects. For personal use only ASX: AVL | www.avl.au 2 Corporate \u2022 Capital raising to support strategy: Completed a $7.5 million institutional placement, including participation from Resource Capital Funds, to advance its vertic",
           "storage ecosystem. Figure 4: AVL CEO Graham Arvidson and the Australian Trade and Investment Commission (Austrade) Critical Minerals Delegation Capital Raising to support strategy During the quarter, the Company completed a $7.5 million placement to institutional investors, including participation from",
           "cts. For personal use only ASX: AVL | www.avl.au 2 Corporate \u2022 Capital raising to support strategy: Completed a $7.5 million institutional placement, including participation from Resource Capital Funds, to advance its vertically integrated strategy. Proceeds will support activities across the Au"
         ],
-        "options_issue": [
-          "of +securities to be issued/transferred ASX +security code Security description Total number of +securities to be issued/transferred Issue date AVLAS PERFORMANCE RIGHTS 6,195,000 14/09/2026 Refer to next page for full details of the announcement +Other securities issued under an +employee incentive scheme that are no",
-          "f this notification (existing class) where issue has not previously been notified to ASX in an Appendix 3B ASX +security code and description AVLAS : PERFORMANCE RIGHTS Date the +securities the subject of this notification were issued 14/9/2026 Will these +securities rank equally in all respects from their issue date",
-          "ted on ASX) ASX +security code and description Total number of +securities on issue AVLAD : OPTION EXPIRING 23-OCT-2030 EX $0.3475 17,269,317 AVLAS : PERFORMANCE RIGHTS 11,032,746 AVLAT : OPTION EXPIRING 12-MAR-2029 EX $0.455 2,000,000 For personal use only Appendix 3G - Notification of issue, conversion or payment u"
-        ],
+        "options_issue": [],
         "guidance_raise": [],
         "guidance_reaffirm": [],
         "guidance_cut": [],
@@ -1164,7 +1157,9 @@
           "t selection. This engagement forms part of AVL's broader international business development activities and does not represent a funding commitment, contract award or procurement outcome. 2 See ASX announcement dated 19 February 2026 \u2018OFS Enhancement to Address Evolving High Purity Demand\u2019 For personal use o"
         ],
         "contract_loss": [],
-        "execution_positive": [],
+        "execution_positive": [
+          "ments and provide AVL with technical and other information it holds in relation to those tenements. The transaction is unconditional, with completion scheduled to occur two business days after the date of the agreement. Proceeds from the transaction will mainly be used to progress Albright Metals\u2019 Golden"
+        ],
         "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
@@ -1194,16 +1189,16 @@
           "textChars": 23001
         },
         {
-          "date": "2026-09-14",
-          "headline": "Notification regarding unquoted securities - AVL 6 pages 15.0KB",
+          "date": "2026-09-17",
+          "headline": "ABR: Gabanintha Mineral Rights Transaction 3 pages 158.1KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03139363",
-          "textChars": 4865
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03140417",
+          "textChars": 6081
         }
       ],
-      "announcementsReviewed": 14,
+      "announcementsReviewed": 17,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:16:03.741827+00:00"
+      "analysedAt": "2026-09-16T23:16:22.738058+00:00"
     },
     {
       "ticker": "FPR",
@@ -1281,7 +1276,7 @@
       ],
       "announcementsReviewed": 92,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:16:10.578128+00:00"
+      "analysedAt": "2026-09-16T23:16:30.351014+00:00"
     },
     {
       "ticker": "IVZ",
@@ -1358,9 +1353,9 @@
           "textChars": 3766
         }
       ],
-      "announcementsReviewed": 41,
+      "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:16:17.937655+00:00"
+      "analysedAt": "2026-09-16T23:16:39.266416+00:00"
     },
     {
       "ticker": "CUP",
@@ -1437,7 +1432,7 @@
       ],
       "announcementsReviewed": 50,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:16:27.643889+00:00"
+      "analysedAt": "2026-09-16T23:16:50.736457+00:00"
     },
     {
       "ticker": "ATG",
@@ -1497,9 +1492,9 @@
           "textChars": 45000
         }
       ],
-      "announcementsReviewed": 99,
+      "announcementsReviewed": 100,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:16:38.104071+00:00"
+      "analysedAt": "2026-09-16T23:17:03.826108+00:00"
     },
     {
       "ticker": "BPM",
@@ -1580,7 +1575,7 @@
       ],
       "announcementsReviewed": 33,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:16:46.311511+00:00"
+      "analysedAt": "2026-09-16T23:17:13.513794+00:00"
     },
     {
       "ticker": "RWC",
@@ -1652,7 +1647,7 @@
       ],
       "announcementsReviewed": 64,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:16:54.846984+00:00"
+      "analysedAt": "2026-09-16T23:17:26.916196+00:00"
     },
     {
       "ticker": "AMI",
@@ -1754,7 +1749,7 @@
       ],
       "announcementsReviewed": 37,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:02.485151+00:00"
+      "analysedAt": "2026-09-16T23:17:36.086691+00:00"
     },
     {
       "ticker": "MVF",
@@ -1832,7 +1827,7 @@
       ],
       "announcementsReviewed": 20,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:07.827708+00:00"
+      "analysedAt": "2026-09-16T23:17:43.264604+00:00"
     },
     {
       "ticker": "CLX",
@@ -1910,7 +1905,7 @@
       ],
       "announcementsReviewed": 16,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:12.934408+00:00"
+      "analysedAt": "2026-09-16T23:17:49.675546+00:00"
     },
     {
       "ticker": "VEA",
@@ -1988,7 +1983,7 @@
       ],
       "announcementsReviewed": 74,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:18.962014+00:00"
+      "analysedAt": "2026-09-16T23:17:57.952204+00:00"
     },
     {
       "ticker": "DDR",
@@ -2043,7 +2038,7 @@
       ],
       "announcementsReviewed": 24,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:24.638655+00:00"
+      "analysedAt": "2026-09-16T23:18:06.022031+00:00"
     },
     {
       "ticker": "MSV",
@@ -2120,9 +2115,9 @@
           "textChars": 1778
         }
       ],
-      "announcementsReviewed": 22,
+      "announcementsReviewed": 23,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:35.577705+00:00"
+      "analysedAt": "2026-09-16T23:18:17.533960+00:00"
     },
     {
       "ticker": "SLB",
@@ -2192,7 +2187,7 @@
       ],
       "announcementsReviewed": 47,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:42.236073+00:00"
+      "analysedAt": "2026-09-16T23:18:24.464107+00:00"
     },
     {
       "ticker": "SBM",
@@ -2273,7 +2268,7 @@
       ],
       "announcementsReviewed": 34,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:17:51.426416+00:00"
+      "analysedAt": "2026-09-16T23:18:36.337564+00:00"
     },
     {
       "ticker": "BTR",
@@ -2358,7 +2353,7 @@
       ],
       "announcementsReviewed": 58,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:00.676833+00:00"
+      "analysedAt": "2026-09-16T23:18:45.967094+00:00"
     },
     {
       "ticker": "CY5",
@@ -2441,7 +2436,7 @@
       ],
       "announcementsReviewed": 56,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:10.150341+00:00"
+      "analysedAt": "2026-09-16T23:18:56.951354+00:00"
     },
     {
       "ticker": "MRD",
@@ -2503,7 +2498,7 @@
       ],
       "announcementsReviewed": 43,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:18.500373+00:00"
+      "analysedAt": "2026-09-16T23:19:06.023452+00:00"
     },
     {
       "ticker": "BAS",
@@ -2583,7 +2578,7 @@
       ],
       "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:25.723747+00:00"
+      "analysedAt": "2026-09-16T23:19:13.926992+00:00"
     },
     {
       "ticker": "MI6",
@@ -2651,7 +2646,7 @@
       ],
       "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:31.103564+00:00"
+      "analysedAt": "2026-09-16T23:19:20.647042+00:00"
     },
     {
       "ticker": "CGS",
@@ -2725,7 +2720,7 @@
       ],
       "announcementsReviewed": 45,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:40.231530+00:00"
+      "analysedAt": "2026-09-16T23:19:32.230772+00:00"
     },
     {
       "ticker": "AUB",
@@ -2798,7 +2793,7 @@
       ],
       "announcementsReviewed": 24,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:47.837014+00:00"
+      "analysedAt": "2026-09-16T23:19:40.943948+00:00"
     },
     {
       "ticker": "LYL",
@@ -2871,7 +2866,7 @@
       ],
       "announcementsReviewed": 17,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:18:53.916848+00:00"
+      "analysedAt": "2026-09-16T23:19:47.661820+00:00"
     },
     {
       "ticker": "BNZ",
@@ -2935,7 +2930,7 @@
       ],
       "announcementsReviewed": 37,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:00.133699+00:00"
+      "analysedAt": "2026-09-16T23:19:54.782586+00:00"
     },
     {
       "ticker": "FWD",
@@ -3019,7 +3014,7 @@
       ],
       "announcementsReviewed": 82,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:05.820270+00:00"
+      "analysedAt": "2026-09-16T23:20:04.310968+00:00"
     },
     {
       "ticker": "DTL",
@@ -3087,7 +3082,7 @@
       ],
       "announcementsReviewed": 14,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:11.617549+00:00"
+      "analysedAt": "2026-09-16T23:20:11.857476+00:00"
     },
     {
       "ticker": "CSL",
@@ -3152,16 +3147,16 @@
           "textChars": 11925
         },
         {
-          "date": "2026-09-16",
+          "date": "2026-09-17",
           "headline": "Update - Notification of buy-back - CSL 6 pages 14.3KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03139907",
-          "textChars": 4675
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03140378",
+          "textChars": 4677
         }
       ],
-      "announcementsReviewed": 76,
+      "announcementsReviewed": 78,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:17.024830+00:00"
+      "analysedAt": "2026-09-16T23:20:17.034761+00:00"
     },
     {
       "ticker": "S32",
@@ -3257,7 +3252,7 @@
       ],
       "announcementsReviewed": 46,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:25.657832+00:00"
+      "analysedAt": "2026-09-16T23:20:31.581881+00:00"
     },
     {
       "ticker": "RIO",
@@ -3374,7 +3369,7 @@
       ],
       "announcementsReviewed": 44,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:32.447854+00:00"
+      "analysedAt": "2026-09-16T23:20:38.613370+00:00"
     },
     {
       "ticker": "DMP",
@@ -3438,7 +3433,7 @@
       ],
       "announcementsReviewed": 36,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:38.405224+00:00"
+      "analysedAt": "2026-09-16T23:20:46.644812+00:00"
     },
     {
       "ticker": "WOR",
@@ -3513,9 +3508,9 @@
           "textChars": 21166
         }
       ],
-      "announcementsReviewed": 80,
+      "announcementsReviewed": 81,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:19:57.624724+00:00"
+      "analysedAt": "2026-09-16T23:21:10.851960+00:00"
     },
     {
       "ticker": "GOLD",
@@ -3582,7 +3577,7 @@
       ],
       "announcementsReviewed": 26,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:20:06.583835+00:00"
+      "analysedAt": "2026-09-16T23:21:24.686216+00:00"
     },
     {
       "ticker": "MIN",
@@ -3663,7 +3658,7 @@
       ],
       "announcementsReviewed": 39,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:20:15.436364+00:00"
+      "analysedAt": "2026-09-16T23:21:37.637591+00:00"
     },
     {
       "ticker": "DRO",
@@ -3727,7 +3722,7 @@
       ],
       "announcementsReviewed": 65,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:20:21.985540+00:00"
+      "analysedAt": "2026-09-16T23:21:44.277480+00:00"
     },
     {
       "ticker": "WBT",
@@ -3822,7 +3817,7 @@
       ],
       "announcementsReviewed": 61,
       "documentsRead": 3,
-      "analysedAt": "2026-09-16T22:20:28.489813+00:00"
+      "analysedAt": "2026-09-16T23:21:52.205771+00:00"
     }
   ]
 }
