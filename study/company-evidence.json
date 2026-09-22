@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T22:20:21.201473+00:00",
+  "updated": "2026-09-22T00:23:24.465860+00:00",
   "coverage": 52,
   "method": "Reads selected recent ASX announcement PDFs for leading candidates and core holdings. Detects guidance, capital raising/dilution, debt/liquidity, cash burn, capex, customer concentration, contracts and execution evidence, plus sector-specific disclosure snippets. Evidence is heuristic and retained with source document metadata for auditability.",
   "companies": [
@@ -78,7 +78,7 @@
       ],
       "announcementsReviewed": 18,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:14:08.336858+00:00"
+      "analysedAt": "2026-09-22T00:17:10.105802+00:00"
     },
     {
       "ticker": "EQR",
@@ -166,7 +166,7 @@
       ],
       "announcementsReviewed": 148,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:14:16.833170+00:00"
+      "analysedAt": "2026-09-22T00:17:17.911622+00:00"
     },
     {
       "ticker": "SLS",
@@ -184,9 +184,9 @@
       "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
       "evidenceSignals": {
         "capital_raise": [
+          "well as having unexplored gold potential, and provides optionality in the portfolio should the nickel market improve. Following the \ufb01rst signi\ufb01cant capital raising at $1.00, \ufb01ve times our IPO price and strong cash position of $45m presents an excellent opportunity to materially advance Nanadie, whilst lookin",
           "eralisation and test key plunge and depth extensions beyond the operating limit of RC drilling. \u27a2 The Company completed a highly successful $32.6M Placement (before costs) , attracting new domestic and international institutional investors alongside existing shareholders. Combined with existing cash and",
-          "ant copper-gold project in WA. \u201cWe were delighted by the strong support received from both new and existing institutional investors in our recent Placement, including the addition of a North American fund as a substantial holder. The strong institutional support will enable us to accelerate our work. T",
-          "North American fund as a substantial holder. The strong institutional support will enable us to accelerate our work. This was the first significant Placement Solstice has undertaken since listing and it was completed at five times our IPO price \u2013 which reflects the significant interest in Nanadie and its"
+          "ant copper-gold project in WA. \u201cWe were delighted by the strong support received from both new and existing institutional investors in our recent Placement, including the addition of a North American fund as a substantial holder. The strong institutional support will enable us to accelerate our work. T"
         ],
         "options_issue": [],
         "guidance_raise": [],
@@ -204,7 +204,12 @@
         "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "imises its impact on the environment. The Company seeks to ensure that throughout all phases of activity personnel and contractors give appropriate consideration to the care of the community, \ufb02ora, fauna, land, air and water. To ful\ufb01l this commit"
+        }
+      ],
       "evidenceDocuments": [
         {
           "date": "2026-07-21",
@@ -221,16 +226,16 @@
           "textChars": 19106
         },
         {
-          "date": "2026-09-04",
-          "headline": "S&P DJI Announces September 2026 Quarterly Rebalance 6 pages 227.0KB",
+          "date": "2026-09-22",
+          "headline": "Annual Report to shareholders 96 pages 2.9MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03136141",
-          "textChars": 6650
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03142101",
+          "textChars": 18276
         }
       ],
-      "announcementsReviewed": 46,
+      "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:14:24.833628+00:00"
+      "analysedAt": "2026-09-22T00:17:26.799699+00:00"
     },
     {
       "ticker": "PYC",
@@ -307,7 +312,7 @@
       ],
       "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:14:33.662030+00:00"
+      "analysedAt": "2026-09-22T00:17:34.670642+00:00"
     },
     {
       "ticker": "SGR",
@@ -396,7 +401,7 @@
       ],
       "announcementsReviewed": 24,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:14:40.368133+00:00"
+      "analysedAt": "2026-09-22T00:17:42.850255+00:00"
     },
     {
       "ticker": "GNG",
@@ -488,7 +493,7 @@
       ],
       "announcementsReviewed": 42,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:14:46.443746+00:00"
+      "analysedAt": "2026-09-22T00:17:49.507075+00:00"
     },
     {
       "ticker": "KOA",
@@ -567,7 +572,7 @@
       ],
       "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:14:54.285845+00:00"
+      "analysedAt": "2026-09-22T00:17:57.529390+00:00"
     },
     {
       "ticker": "BCI",
@@ -659,7 +664,7 @@
       ],
       "announcementsReviewed": 22,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:00.709353+00:00"
+      "analysedAt": "2026-09-22T00:18:03.711620+00:00"
     },
     {
       "ticker": "ACW",
@@ -737,7 +742,7 @@
       ],
       "announcementsReviewed": 61,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:07.561243+00:00"
+      "analysedAt": "2026-09-22T00:18:09.510588+00:00"
     },
     {
       "ticker": "RHC",
@@ -815,7 +820,7 @@
       ],
       "announcementsReviewed": 28,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:13.209530+00:00"
+      "analysedAt": "2026-09-22T00:18:15.933149+00:00"
     },
     {
       "ticker": "TEA",
@@ -923,7 +928,7 @@
       ],
       "announcementsReviewed": 47,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:19.798466+00:00"
+      "analysedAt": "2026-09-22T00:18:21.982576+00:00"
     },
     {
       "ticker": "AMI",
@@ -1025,7 +1030,7 @@
       ],
       "announcementsReviewed": 37,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:27.909743+00:00"
+      "analysedAt": "2026-09-22T00:18:29.463244+00:00"
     },
     {
       "ticker": "ORE",
@@ -1131,7 +1136,7 @@
       ],
       "announcementsReviewed": 59,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:35.869094+00:00"
+      "analysedAt": "2026-09-22T00:18:37.930039+00:00"
     },
     {
       "ticker": "BNZ",
@@ -1195,7 +1200,7 @@
       ],
       "announcementsReviewed": 34,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:42.417443+00:00"
+      "analysedAt": "2026-09-22T00:18:44.478799+00:00"
     },
     {
       "ticker": "CLX",
@@ -1273,7 +1278,7 @@
       ],
       "announcementsReviewed": 15,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:47.622499+00:00"
+      "analysedAt": "2026-09-22T00:18:49.387802+00:00"
     },
     {
       "ticker": "ATG",
@@ -1333,9 +1338,9 @@
           "textChars": 45000
         }
       ],
-      "announcementsReviewed": 102,
+      "announcementsReviewed": 103,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:15:57.899956+00:00"
+      "analysedAt": "2026-09-22T00:19:00.799870+00:00"
     },
     {
       "ticker": "DDR",
@@ -1390,7 +1395,7 @@
       ],
       "announcementsReviewed": 22,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:03.221369+00:00"
+      "analysedAt": "2026-09-22T00:19:05.489519+00:00"
     },
     {
       "ticker": "IFN",
@@ -1468,7 +1473,7 @@
       ],
       "announcementsReviewed": 40,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:11.402467+00:00"
+      "analysedAt": "2026-09-22T00:19:14.051433+00:00"
     },
     {
       "ticker": "TGN",
@@ -1560,9 +1565,9 @@
           "textChars": 26397
         }
       ],
-      "announcementsReviewed": 24,
+      "announcementsReviewed": 26,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:19.216024+00:00"
+      "analysedAt": "2026-09-22T00:19:20.472443+00:00"
     },
     {
       "ticker": "SPL",
@@ -1643,7 +1648,7 @@
       ],
       "announcementsReviewed": 40,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:24.974995+00:00"
+      "analysedAt": "2026-09-22T00:19:27.174859+00:00"
     },
     {
       "ticker": "SBM",
@@ -1724,7 +1729,7 @@
       ],
       "announcementsReviewed": 34,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:33.542260+00:00"
+      "analysedAt": "2026-09-22T00:19:36.634989+00:00"
     },
     {
       "ticker": "BUB",
@@ -1799,7 +1804,7 @@
       ],
       "announcementsReviewed": 28,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:40.214965+00:00"
+      "analysedAt": "2026-09-22T00:19:41.936272+00:00"
     },
     {
       "ticker": "GHM",
@@ -1884,7 +1889,7 @@
       ],
       "announcementsReviewed": 31,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:47.909480+00:00"
+      "analysedAt": "2026-09-22T00:19:49.631173+00:00"
     },
     {
       "ticker": "AVL",
@@ -1963,7 +1968,7 @@
       ],
       "announcementsReviewed": 19,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:16:54.587406+00:00"
+      "analysedAt": "2026-09-22T00:19:56.422540+00:00"
     },
     {
       "ticker": "BPM",
@@ -2044,7 +2049,7 @@
       ],
       "announcementsReviewed": 32,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:01.434427+00:00"
+      "analysedAt": "2026-09-22T00:20:02.845712+00:00"
     },
     {
       "ticker": "ANN",
@@ -2111,7 +2116,7 @@
       ],
       "announcementsReviewed": 75,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:13.505884+00:00"
+      "analysedAt": "2026-09-22T00:20:14.873584+00:00"
     },
     {
       "ticker": "RWC",
@@ -2183,7 +2188,7 @@
       ],
       "announcementsReviewed": 62,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:23.238436+00:00"
+      "analysedAt": "2026-09-22T00:20:24.840276+00:00"
     },
     {
       "ticker": "MLX",
@@ -2280,7 +2285,7 @@
       ],
       "announcementsReviewed": 16,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:30.271476+00:00"
+      "analysedAt": "2026-09-22T00:20:31.937639+00:00"
     },
     {
       "ticker": "MXI",
@@ -2357,9 +2362,9 @@
           "textChars": 1428
         }
       ],
-      "announcementsReviewed": 15,
+      "announcementsReviewed": 16,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:35.557578+00:00"
+      "analysedAt": "2026-09-22T00:20:36.134212+00:00"
     },
     {
       "ticker": "MAH",
@@ -2429,7 +2434,7 @@
       ],
       "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:43.935641+00:00"
+      "analysedAt": "2026-09-22T00:20:43.199703+00:00"
     },
     {
       "ticker": "LYL",
@@ -2502,7 +2507,7 @@
       ],
       "announcementsReviewed": 19,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:48.517357+00:00"
+      "analysedAt": "2026-09-22T00:20:49.067448+00:00"
     },
     {
       "ticker": "OMA",
@@ -2574,7 +2579,7 @@
       ],
       "announcementsReviewed": 52,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:17:56.857882+00:00"
+      "analysedAt": "2026-09-22T00:20:57.562491+00:00"
     },
     {
       "ticker": "MVF",
@@ -2652,7 +2657,7 @@
       ],
       "announcementsReviewed": 20,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:02.600432+00:00"
+      "analysedAt": "2026-09-22T00:21:02.604621+00:00"
     },
     {
       "ticker": "BAS",
@@ -2730,9 +2735,9 @@
           "textChars": 4758
         }
       ],
-      "announcementsReviewed": 47,
+      "announcementsReviewed": 48,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:09.619937+00:00"
+      "analysedAt": "2026-09-22T00:21:09.928517+00:00"
     },
     {
       "ticker": "CCL",
@@ -2792,7 +2797,7 @@
       ],
       "announcementsReviewed": 38,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:17.343098+00:00"
+      "analysedAt": "2026-09-22T00:21:17.239264+00:00"
     },
     {
       "ticker": "PVE",
@@ -2873,7 +2878,7 @@
       ],
       "announcementsReviewed": 14,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:23.855125+00:00"
+      "analysedAt": "2026-09-22T00:21:24.102917+00:00"
     },
     {
       "ticker": "PXX",
@@ -2935,7 +2940,7 @@
       ],
       "announcementsReviewed": 14,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:31.343796+00:00"
+      "analysedAt": "2026-09-22T00:21:33.294626+00:00"
     },
     {
       "ticker": "SRL",
@@ -3018,7 +3023,7 @@
       ],
       "announcementsReviewed": 69,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:38.707408+00:00"
+      "analysedAt": "2026-09-22T00:21:40.261072+00:00"
     },
     {
       "ticker": "WEC",
@@ -3092,7 +3097,7 @@
       ],
       "announcementsReviewed": 30,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:45.949945+00:00"
+      "analysedAt": "2026-09-22T00:21:47.528128+00:00"
     },
     {
       "ticker": "GW1",
@@ -3175,7 +3180,7 @@
       ],
       "announcementsReviewed": 38,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:50.675444+00:00"
+      "analysedAt": "2026-09-22T00:21:54.262406+00:00"
     },
     {
       "ticker": "CSL",
@@ -3240,16 +3245,16 @@
           "textChars": 11925
         },
         {
-          "date": "2026-09-18",
+          "date": "2026-09-22",
           "headline": "Update - Notification of buy-back - CSL 6 pages 14.3KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03140832",
-          "textChars": 4677
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03141954",
+          "textChars": 4676
         }
       ],
-      "announcementsReviewed": 74,
+      "announcementsReviewed": 75,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:18:56.440881+00:00"
+      "analysedAt": "2026-09-22T00:21:59.681458+00:00"
     },
     {
       "ticker": "DTL",
@@ -3330,7 +3335,7 @@
       ],
       "announcementsReviewed": 16,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:19:03.574654+00:00"
+      "analysedAt": "2026-09-22T00:22:07.461853+00:00"
     },
     {
       "ticker": "S32",
@@ -3424,9 +3429,9 @@
           "textChars": 44501
         }
       ],
-      "announcementsReviewed": 48,
+      "announcementsReviewed": 49,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:19:14.133550+00:00"
+      "analysedAt": "2026-09-22T00:22:18.952405+00:00"
     },
     {
       "ticker": "DMP",
@@ -3490,7 +3495,7 @@
       ],
       "announcementsReviewed": 37,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:19:20.686669+00:00"
+      "analysedAt": "2026-09-22T00:22:26.879315+00:00"
     },
     {
       "ticker": "RIO",
@@ -3607,7 +3612,7 @@
       ],
       "announcementsReviewed": 43,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:19:27.592761+00:00"
+      "analysedAt": "2026-09-22T00:22:32.190517+00:00"
     },
     {
       "ticker": "ETPMAG",
@@ -3687,9 +3692,9 @@
           "textChars": 21166
         }
       ],
-      "announcementsReviewed": 76,
+      "announcementsReviewed": 77,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:19:47.418015+00:00"
+      "analysedAt": "2026-09-22T00:22:51.883428+00:00"
     },
     {
       "ticker": "AIA",
@@ -3751,7 +3756,7 @@
       ],
       "announcementsReviewed": 27,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:19:57.160919+00:00"
+      "analysedAt": "2026-09-22T00:23:01.228916+00:00"
     },
     {
       "ticker": "GOLD",
@@ -3837,7 +3842,7 @@
       ],
       "announcementsReviewed": 40,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:20:06.234971+00:00"
+      "analysedAt": "2026-09-22T00:23:10.481713+00:00"
     },
     {
       "ticker": "WBT",
@@ -3932,7 +3937,7 @@
       ],
       "announcementsReviewed": 62,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:20:13.385346+00:00"
+      "analysedAt": "2026-09-22T00:23:18.659900+00:00"
     },
     {
       "ticker": "DRO",
@@ -3996,7 +4001,7 @@
       ],
       "announcementsReviewed": 64,
       "documentsRead": 3,
-      "analysedAt": "2026-09-21T22:20:21.201412+00:00"
+      "analysedAt": "2026-09-22T00:23:24.465810+00:00"
     }
   ]
 }
