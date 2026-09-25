@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T00:27:26.617325+00:00",
+  "updated": "2026-09-25T02:24:06.091280+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
     {
@@ -28,17 +28,6 @@
       "assessment": "PASS"
     },
     {
-      "ticker": "MIN",
-      "documentsRead": 3,
-      "rawEvidenceScore": 42,
-      "rawEvidenceRisk": 40,
-      "qualityEvidenceScore": 42,
-      "qualityEvidenceRisk": 40,
-      "corrections": [],
-      "managementCredibilityScore": 50,
-      "assessment": "PASS"
-    },
-    {
       "ticker": "WBT",
       "documentsRead": 3,
       "rawEvidenceScore": 46,
@@ -47,6 +36,17 @@
       "qualityEvidenceRisk": 55,
       "corrections": [],
       "managementCredibilityScore": 46,
+      "assessment": "PASS"
+    },
+    {
+      "ticker": "MIN",
+      "documentsRead": 3,
+      "rawEvidenceScore": 42,
+      "rawEvidenceRisk": 40,
+      "qualityEvidenceScore": 42,
+      "qualityEvidenceRisk": 40,
+      "corrections": [],
+      "managementCredibilityScore": 50,
       "assessment": "PASS"
     },
     {
