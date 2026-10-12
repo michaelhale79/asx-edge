@@ -1,21 +1,7 @@
 {
-  "updated": "2026-10-07T00:36:21.913579+00:00",
+  "updated": "2026-10-12T00:25:37.473162+00:00",
   "purpose": "Quality audit of actual ASX disclosure interpretation on a mixed company set. Raw scores are retained; quality-adjusted scores filter boilerplate and context errors.",
   "companies": [
-    {
-      "ticker": "PYC",
-      "documentsRead": 3,
-      "rawEvidenceScore": 30,
-      "rawEvidenceRisk": 55,
-      "qualityEvidenceScore": 40,
-      "qualityEvidenceRisk": 48,
-      "corrections": [
-        "Capital raising treated as funding-strengthening rather than automatic funding distress where the document explicitly supports that interpretation.",
-        "Removed positive cash-runway wording from cash-burn risk detection."
-      ],
-      "managementCredibilityScore": 50,
-      "assessment": "PASS_WITH_CORRECTIONS"
-    },
     {
       "ticker": "QML",
       "documentsRead": 3,
@@ -41,6 +27,17 @@
       "assessment": "PASS"
     },
     {
+      "ticker": "MIN",
+      "documentsRead": 3,
+      "rawEvidenceScore": 42,
+      "rawEvidenceRisk": 40,
+      "qualityEvidenceScore": 42,
+      "qualityEvidenceRisk": 40,
+      "corrections": [],
+      "managementCredibilityScore": 50,
+      "assessment": "PASS"
+    },
+    {
       "ticker": "DRO",
       "documentsRead": 3,
       "rawEvidenceScore": 50,
@@ -60,17 +57,6 @@
       "qualityEvidenceRisk": 55,
       "corrections": [],
       "managementCredibilityScore": 46,
-      "assessment": "PASS"
-    },
-    {
-      "ticker": "MIN",
-      "documentsRead": 3,
-      "rawEvidenceScore": 42,
-      "rawEvidenceRisk": 40,
-      "qualityEvidenceScore": 42,
-      "qualityEvidenceRisk": 40,
-      "corrections": [],
-      "managementCredibilityScore": 50,
       "assessment": "PASS"
     }
   ]
