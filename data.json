@@ -9,7 +9,7 @@
       "ticker": "DTL",
       "name": "DTL",
       "price": 13.47,
-      "opp": 65,
+      "opp": 66,
       "edge": "INFLECTING",
       "quality": 44,
       "valuation": 27,
@@ -207,7 +207,36 @@
       "shortInterestPct": 2.67,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.65,
+          "headlines": [
+            {
+              "title": "3 Stocks Riding Southeast Asia AI Data Center Demand Before Capacity Tightens - Yahoo Finance",
+              "source": "Yahoo Finance",
+              "signal": 2
+            },
+            {
+              "title": "\"The Core of AI Hegemony is Power\" - The U.S. Accelerates Data Center Efficiency and Power Facility Expansion, Heightening Competition with China Leveraging Low-Cost Electricity - ",
+              "source": "https://economy.ac/",
+              "signal": 2
+            },
+            {
+              "title": "Microsoft to expand Azure AI chips with Maia 300 in 2027 - Cloud Computing News",
+              "source": "Cloud Computing News",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 65,
+      "globalTrendScore": 15,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "ASX",
@@ -420,7 +449,12 @@
       "shortInterestPct": 5.6,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "TLS",
@@ -681,13 +715,18 @@
       "shortInterestPct": 1.43,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "S32",
       "name": "S32",
       "price": 4.83,
-      "opp": 61,
+      "opp": 62,
       "edge": "UNDER-NOTICED",
       "quality": 59,
       "valuation": 51,
@@ -911,7 +950,36 @@
       "shortInterestPct": 1.28,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Cooper Metals Targets Philippine Copper Opportunity as Electrification Drives Demand - AZoMining",
+              "source": "AZoMining",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Highs; UBS Says Supply Deficit to Persist Into Early 2030s - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": 2
+            },
+            {
+              "title": "AI's Impact on Copper Demand: New Buyers, Supply Constraints, and Mining Innovation - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 61,
+      "globalTrendScore": 15,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "DMP",
@@ -1142,7 +1210,12 @@
       "shortInterestPct": 11.85,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "QBE",
@@ -1342,7 +1415,12 @@
       "shortInterestPct": 0.46,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 62
     },
     {
       "ticker": "SUN",
@@ -1569,7 +1647,12 @@
       "shortInterestPct": 1.69,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "BXB",
@@ -1837,7 +1920,12 @@
       "shortInterestPct": 1.57,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "APA",
@@ -2067,7 +2155,12 @@
       "shortInterestPct": 1.71,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "CSL",
@@ -2285,7 +2378,12 @@
       "shortInterestPct": 1.08,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "ANZ",
@@ -2483,7 +2581,12 @@
       "shortInterestPct": 1.48,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "STO",
@@ -2676,7 +2779,36 @@
       "shortInterestPct": 0.27,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "OPEC+ Oil Production Rises 900,000 bbl/d in September Despite Hormuz Disruptions \u2013 Monthly Report Says - Egypt Oil & Gas",
+              "source": "Egypt Oil & Gas",
+              "signal": 2
+            },
+            {
+              "title": "Oil prices fall as traders assess Russian diesel supply prospects and Saudi-Houthi conflict - CNBC",
+              "source": "CNBC",
+              "signal": -1
+            },
+            {
+              "title": "OPEC Cuts Demand Growth Forecast Again as Gulf Supply Risks Mount - WSJ",
+              "source": "WSJ",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 61,
+      "globalTrendScore": 5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "TWE",
@@ -2885,7 +3017,12 @@
       "shortInterestPct": 10.58,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "CPU",
@@ -3107,7 +3244,12 @@
       "shortInterestPct": 0.75,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "ALD",
@@ -3337,7 +3479,12 @@
       "shortInterestPct": 2.39,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "MQG",
@@ -3592,7 +3739,12 @@
       "shortInterestPct": 0.46,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "RMD",
@@ -3792,7 +3944,12 @@
       "shortInterestPct": 0.51,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "ORG",
@@ -3998,13 +4155,42 @@
       "shortInterestPct": 1.14,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "OPEC+ Oil Production Rises 900,000 bbl/d in September Despite Hormuz Disruptions \u2013 Monthly Report Says - Egypt Oil & Gas",
+              "source": "Egypt Oil & Gas",
+              "signal": 2
+            },
+            {
+              "title": "Oil prices fall as traders assess Russian diesel supply prospects and Saudi-Houthi conflict - CNBC",
+              "source": "CNBC",
+              "signal": -1
+            },
+            {
+              "title": "OPEC Cuts Demand Growth Forecast Again as Gulf Supply Risks Mount - WSJ",
+              "source": "WSJ",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 56,
+      "globalTrendScore": 5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "MP1",
       "name": "MP1",
       "price": 17.73,
-      "opp": 55,
+      "opp": 56,
       "edge": "WATCH",
       "quality": 22,
       "valuation": 54,
@@ -4228,7 +4414,59 @@
       "shortInterestPct": 3.03,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "3 Stocks Riding Southeast Asia AI Data Center Demand Before Capacity Tightens - Yahoo Finance",
+              "source": "Yahoo Finance",
+              "signal": 2
+            },
+            {
+              "title": "\"The Core of AI Hegemony is Power\" - The U.S. Accelerates Data Center Efficiency and Power Facility Expansion, Heightening Competition with China Leveraging Low-Cost Electricity - ",
+              "source": "https://economy.ac/",
+              "signal": 2
+            },
+            {
+              "title": "Microsoft to expand Azure AI chips with Maia 300 in 2027 - Cloud Computing News",
+              "source": "Cloud Computing News",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": 1,
+          "direction": "NEUTRAL",
+          "weight": 0.25,
+          "headlines": [
+            {
+              "title": "T\u00fcrkiye inflation falls below 30% after 58 months; rate cuts back in play - T\u00fcrkiye Today",
+              "source": "T\u00fcrkiye Today",
+              "signal": 3
+            },
+            {
+              "title": "Navigating the Shift: Russian Central Bank Interest Rate Cuts and Crypto Market Implications - KuCoin",
+              "source": "KuCoin",
+              "signal": 2
+            },
+            {
+              "title": "Bond Selloff May Mean Fewer Rate Hikes From Global Central Banks - Bloomberg.com",
+              "source": "Bloomberg.com",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 55,
+      "globalTrendScore": 12,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "WES",
@@ -4435,7 +4673,12 @@
       "shortInterestPct": 1.87,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "WOW",
@@ -4630,7 +4873,12 @@
       "shortInterestPct": 1.39,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "ALL",
@@ -4859,7 +5107,12 @@
       "shortInterestPct": 1.21,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "IAG",
@@ -5048,13 +5301,18 @@
       "shortInterestPct": 1.35,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "BHP",
       "name": "BHP",
       "price": 61.28,
-      "opp": 52,
+      "opp": 53,
       "edge": "WATCH",
       "quality": 59,
       "valuation": 48,
@@ -5267,7 +5525,59 @@
       "shortInterestPct": 1.56,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.6,
+          "headlines": [
+            {
+              "title": "Cooper Metals Targets Philippine Copper Opportunity as Electrification Drives Demand - AZoMining",
+              "source": "AZoMining",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Highs; UBS Says Supply Deficit to Persist Into Early 2030s - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": 2
+            },
+            {
+              "title": "AI's Impact on Copper Demand: New Buyers, Supply Constraints, and Mining Innovation - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 12,
+          "direction": "POSITIVE",
+          "weight": 0.7,
+          "headlines": [
+            {
+              "title": "Can Chinese stimulus help mineral resources recover? - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            },
+            {
+              "title": "worldsteel revises global steel demand forecasts downward - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            },
+            {
+              "title": "Iron-ore rises on expected Chinese steel mill restocking - Engineering News",
+              "source": "Engineering News",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": 13,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "WDS",
@@ -5495,7 +5805,36 @@
       "shortInterestPct": 2.93,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "OPEC+ Oil Production Rises 900,000 bbl/d in September Despite Hormuz Disruptions \u2013 Monthly Report Says - Egypt Oil & Gas",
+              "source": "Egypt Oil & Gas",
+              "signal": 2
+            },
+            {
+              "title": "Oil prices fall as traders assess Russian diesel supply prospects and Saudi-Houthi conflict - CNBC",
+              "source": "CNBC",
+              "signal": -1
+            },
+            {
+              "title": "OPEC Cuts Demand Growth Forecast Again as Gulf Supply Risks Mount - WSJ",
+              "source": "WSJ",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": 5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "COL",
@@ -5693,7 +6032,12 @@
       "shortInterestPct": 1.3,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "AIA",
@@ -5888,7 +6232,12 @@
       "shortInterestPct": 1.0,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "WBC",
@@ -6070,7 +6419,12 @@
       "shortInterestPct": 2.89,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "GMG",
@@ -6263,7 +6617,12 @@
       "shortInterestPct": 1.47,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "TCL",
@@ -6487,7 +6846,12 @@
       "shortInterestPct": 2.13,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "WOR",
@@ -6720,7 +7084,12 @@
       "shortInterestPct": 2.02,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "NAB",
@@ -6911,7 +7280,12 @@
       "shortInterestPct": 2.14,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 50
     },
     {
       "ticker": "AMC",
@@ -7111,7 +7485,12 @@
       "shortInterestPct": 0.87,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "MPL",
@@ -7315,13 +7694,18 @@
       "shortInterestPct": 3.72,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 50
     },
     {
       "ticker": "RIO",
       "name": "RIO",
       "price": 161.0,
-      "opp": 41,
+      "opp": 42,
       "edge": "WATCH",
       "quality": 61,
       "valuation": 55,
@@ -7589,7 +7973,59 @@
       "shortInterestPct": 9.74,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 12,
+          "direction": "POSITIVE",
+          "weight": 0.85,
+          "headlines": [
+            {
+              "title": "Can Chinese stimulus help mineral resources recover? - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            },
+            {
+              "title": "worldsteel revises global steel demand forecasts downward - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            },
+            {
+              "title": "Iron-ore rises on expected Chinese steel mill restocking - Engineering News",
+              "source": "Engineering News",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "COPPER",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Cooper Metals Targets Philippine Copper Opportunity as Electrification Drives Demand - AZoMining",
+              "source": "AZoMining",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices Near Record Highs; UBS Says Supply Deficit to Persist Into Early 2030s - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": 2
+            },
+            {
+              "title": "AI's Impact on Copper Demand: New Buyers, Supply Constraints, and Mining Innovation - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 41,
+      "globalTrendScore": 13,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "REA",
@@ -7802,7 +8238,36 @@
       "shortInterestPct": 3.85,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 1,
+          "direction": "NEUTRAL",
+          "weight": 0.35,
+          "headlines": [
+            {
+              "title": "T\u00fcrkiye inflation falls below 30% after 58 months; rate cuts back in play - T\u00fcrkiye Today",
+              "source": "T\u00fcrkiye Today",
+              "signal": 3
+            },
+            {
+              "title": "Navigating the Shift: Russian Central Bank Interest Rate Cuts and Crypto Market Implications - KuCoin",
+              "source": "KuCoin",
+              "signal": 2
+            },
+            {
+              "title": "Bond Selloff May Mean Fewer Rate Hikes From Global Central Banks - Bloomberg.com",
+              "source": "Bloomberg.com",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 49,
+      "globalTrendScore": 1,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "PME",
@@ -8002,13 +8467,18 @@
       "shortInterestPct": 4.08,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 49
     },
     {
       "ticker": "GOLD",
       "name": "GOLD",
       "price": 55.09,
-      "opp": 49,
+      "opp": 51,
       "edge": "WATCH",
       "quality": 65,
       "valuation": 50,
@@ -8087,7 +8557,36 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 27,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Investment demand fuels China's gold buying - chinadailyhk",
+              "source": "chinadailyhk",
+              "signal": 2
+            },
+            {
+              "title": "Investment demand fuels China's gold buying - China Daily",
+              "source": "China Daily",
+              "signal": 2
+            },
+            {
+              "title": "Why China is buying so much gold: Decoding its record-breaking bullion rush - TradingView",
+              "source": "TradingView",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 49,
+      "globalTrendScore": 27,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "CBA",
@@ -8305,7 +8804,12 @@
       "shortInterestPct": 2.6,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "SEK",
@@ -8516,7 +9020,12 @@
       "shortInterestPct": 1.15,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 46
     },
     {
       "ticker": "ETPMAG",
@@ -8601,13 +9110,18 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 45
     },
     {
       "ticker": "FMG",
       "name": "FMG",
       "price": 15.32,
-      "opp": 44,
+      "opp": 45,
       "edge": "WATCH",
       "quality": 52,
       "valuation": 53,
@@ -8757,7 +9271,36 @@
       "shortInterestPct": 3.64,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 12,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Can Chinese stimulus help mineral resources recover? - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            },
+            {
+              "title": "worldsteel revises global steel demand forecasts downward - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            },
+            {
+              "title": "Iron-ore rises on expected Chinese steel mill restocking - Engineering News",
+              "source": "Engineering News",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 44,
+      "globalTrendScore": 12,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "JHX",
@@ -8932,7 +9475,12 @@
       "shortInterestPct": 3.09,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 43
     },
     {
       "ticker": "SHL",
@@ -9061,7 +9609,12 @@
       "shortInterestPct": 1.14,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 43
     },
     {
       "ticker": "CAR",
@@ -9212,7 +9765,36 @@
       "shortInterestPct": 4.75,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 1,
+          "direction": "NEUTRAL",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "T\u00fcrkiye inflation falls below 30% after 58 months; rate cuts back in play - T\u00fcrkiye Today",
+              "source": "T\u00fcrkiye Today",
+              "signal": 3
+            },
+            {
+              "title": "Navigating the Shift: Russian Central Bank Interest Rate Cuts and Crypto Market Implications - KuCoin",
+              "source": "KuCoin",
+              "signal": 2
+            },
+            {
+              "title": "Bond Selloff May Mean Fewer Rate Hikes From Global Central Banks - Bloomberg.com",
+              "source": "Bloomberg.com",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 42,
+      "globalTrendScore": 1,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "BRN",
@@ -9346,7 +9928,12 @@
       "shortInterestPct": 1.4,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 42
     },
     {
       "ticker": "ZIP",
@@ -9505,7 +10092,12 @@
       "shortInterestPct": 12.75,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 30
     },
     {
       "ticker": "XRO",
@@ -9646,13 +10238,42 @@
       "shortInterestPct": 5.79,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 1,
+          "direction": "NEUTRAL",
+          "weight": 0.3,
+          "headlines": [
+            {
+              "title": "T\u00fcrkiye inflation falls below 30% after 58 months; rate cuts back in play - T\u00fcrkiye Today",
+              "source": "T\u00fcrkiye Today",
+              "signal": 3
+            },
+            {
+              "title": "Navigating the Shift: Russian Central Bank Interest Rate Cuts and Crypto Market Implications - KuCoin",
+              "source": "KuCoin",
+              "signal": 2
+            },
+            {
+              "title": "Bond Selloff May Mean Fewer Rate Hikes From Global Central Banks - Bloomberg.com",
+              "source": "Bloomberg.com",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 36,
+      "globalTrendScore": 1,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "MIN",
       "name": "MIN",
       "price": 45.81,
-      "opp": 39,
+      "opp": 40,
       "edge": "WATCH",
       "quality": 28,
       "valuation": 64,
@@ -9878,13 +10499,65 @@
       "shortInterestPct": 4.55,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 12,
+          "direction": "POSITIVE",
+          "weight": 0.55,
+          "headlines": [
+            {
+              "title": "Can Chinese stimulus help mineral resources recover? - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            },
+            {
+              "title": "worldsteel revises global steel demand forecasts downward - SteelRadar",
+              "source": "SteelRadar",
+              "signal": 1
+            },
+            {
+              "title": "Iron-ore rises on expected Chinese steel mill restocking - Engineering News",
+              "source": "Engineering News",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "LITHIUM",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "[SMM Cobalt-Lithium Morning Meeting Summary] Raw material price trends diverge; supply-demand support for battery materials varies in strength - Shanghai Metals Market",
+              "source": "Shanghai Metals Market",
+              "signal": 1
+            },
+            {
+              "title": "Chinese lithium prices tumble to nearly 10-month low on demand concerns - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "Advance Battery Technologies Market To 2035: Next-Gen Chemistries Drive Growth as Grid Storage and EV Demand Accelerates - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 39,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "LYC",
       "name": "LYC",
       "price": 11.67,
-      "opp": 31,
+      "opp": 32,
       "edge": "WATCH",
       "quality": 28,
       "valuation": 61,
@@ -10008,13 +10681,42 @@
       "shortInterestPct": 11.67,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "RARE EARTHS",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Defence restrictions, robotics fuel new race for rare earths - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            },
+            {
+              "title": "Critical Metals, Trump Demand and Christopher Ecclestone\u2019s Warning on What Comes Next - InvestorNews",
+              "source": "InvestorNews",
+              "signal": 1
+            },
+            {
+              "title": "Who Controls the Critical Minerals Powering AI? - Elements by Visual Capitalist",
+              "source": "Elements by Visual Capitalist",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 31,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "NXT",
       "name": "NXT",
       "price": 9.38,
-      "opp": 29,
+      "opp": 30,
       "edge": "WATCH",
       "quality": 24,
       "valuation": 15,
@@ -10161,13 +10863,65 @@
       "shortInterestPct": 8.55,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "3 Stocks Riding Southeast Asia AI Data Center Demand Before Capacity Tightens - Yahoo Finance",
+              "source": "Yahoo Finance",
+              "signal": 2
+            },
+            {
+              "title": "\"The Core of AI Hegemony is Power\" - The U.S. Accelerates Data Center Efficiency and Power Facility Expansion, Heightening Competition with China Leveraging Low-Cost Electricity - ",
+              "source": "https://economy.ac/",
+              "signal": 2
+            },
+            {
+              "title": "Microsoft to expand Azure AI chips with Maia 300 in 2027 - Cloud Computing News",
+              "source": "Cloud Computing News",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": 1,
+          "direction": "NEUTRAL",
+          "weight": 0.45,
+          "headlines": [
+            {
+              "title": "T\u00fcrkiye inflation falls below 30% after 58 months; rate cuts back in play - T\u00fcrkiye Today",
+              "source": "T\u00fcrkiye Today",
+              "signal": 3
+            },
+            {
+              "title": "Navigating the Shift: Russian Central Bank Interest Rate Cuts and Crypto Market Implications - KuCoin",
+              "source": "KuCoin",
+              "signal": 2
+            },
+            {
+              "title": "Bond Selloff May Mean Fewer Rate Hikes From Global Central Banks - Bloomberg.com",
+              "source": "Bloomberg.com",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 29,
+      "globalTrendScore": 11,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "DRO",
       "name": "DRO",
       "price": 1.53,
-      "opp": 25,
+      "opp": 26,
       "edge": "WATCH",
       "quality": 12,
       "valuation": 11,
@@ -10366,7 +11120,59 @@
       "shortInterestPct": 15.06,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "DEFENCE",
+          "score": 17,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Fareham business leader demands defence spending boost at Budget - Portsmouth News",
+              "source": "Portsmouth News",
+              "signal": 2
+            },
+            {
+              "title": "Taiwan's leader says increasing defence spending to 'deter war' - RFI",
+              "source": "RFI",
+              "signal": 1
+            },
+            {
+              "title": "Ministers preparing to slash heat pump subsidies to fund defence spending - The Guardian",
+              "source": "The Guardian",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "3 Stocks Riding Southeast Asia AI Data Center Demand Before Capacity Tightens - Yahoo Finance",
+              "source": "Yahoo Finance",
+              "signal": 2
+            },
+            {
+              "title": "\"The Core of AI Hegemony is Power\" - The U.S. Accelerates Data Center Efficiency and Power Facility Expansion, Heightening Competition with China Leveraging Low-Cost Electricity - ",
+              "source": "https://economy.ac/",
+              "signal": 2
+            },
+            {
+              "title": "Microsoft to expand Azure AI chips with Maia 300 in 2027 - Cloud Computing News",
+              "source": "Cloud Computing News",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 25,
+      "globalTrendScore": 17,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "NEC",
@@ -10514,13 +11320,18 @@
       "shortInterestPct": 5.47,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 31
     },
     {
       "ticker": "WBT",
       "name": "WBT",
       "price": 2.62,
-      "opp": 34,
+      "opp": 35,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 56,
@@ -10751,13 +11562,42 @@
       "shortInterestPct": 3.05,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 15,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "3 Stocks Riding Southeast Asia AI Data Center Demand Before Capacity Tightens - Yahoo Finance",
+              "source": "Yahoo Finance",
+              "signal": 2
+            },
+            {
+              "title": "\"The Core of AI Hegemony is Power\" - The U.S. Accelerates Data Center Efficiency and Power Facility Expansion, Heightening Competition with China Leveraging Low-Cost Electricity - ",
+              "source": "https://economy.ac/",
+              "signal": 2
+            },
+            {
+              "title": "Microsoft to expand Azure AI chips with Maia 300 in 2027 - Cloud Computing News",
+              "source": "Cloud Computing News",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 34,
+      "globalTrendScore": 15,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "PLS",
       "name": "PLS",
       "price": 3.08,
-      "opp": 19,
+      "opp": 20,
       "edge": "WATCH",
       "quality": 8,
       "valuation": 63,
@@ -10887,13 +11727,42 @@
       "shortInterestPct": 13.03,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "[SMM Cobalt-Lithium Morning Meeting Summary] Raw material price trends diverge; supply-demand support for battery materials varies in strength - Shanghai Metals Market",
+              "source": "Shanghai Metals Market",
+              "signal": 1
+            },
+            {
+              "title": "Chinese lithium prices tumble to nearly 10-month low on demand concerns - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "Advance Battery Technologies Market To 2035: Next-Gen Chemistries Drive Growth as Grid Storage and EV Demand Accelerates - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 19,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "LTR",
       "name": "LTR",
       "price": 0.715,
-      "opp": 24,
+      "opp": 25,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 70,
@@ -11012,7 +11881,36 @@
       "shortInterestPct": 6.74,
       "shortInterestDate": "2026-10-07",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "[SMM Cobalt-Lithium Morning Meeting Summary] Raw material price trends diverge; supply-demand support for battery materials varies in strength - Shanghai Metals Market",
+              "source": "Shanghai Metals Market",
+              "signal": 1
+            },
+            {
+              "title": "Chinese lithium prices tumble to nearly 10-month low on demand concerns - Mining.com",
+              "source": "Mining.com",
+              "signal": 1
+            },
+            {
+              "title": "Advance Battery Technologies Market To 2035: Next-Gen Chemistries Drive Growth as Grid Storage and EV Demand Accelerates - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 24,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     }
   ],
   "fundamentalsUpdated": "2026-10-13T15:01:25.042234+00:00",
@@ -11020,5 +11918,329 @@
   "shortInterestSource": "ASIC daily aggregated short positions",
   "shortInterestReportDate": "2026-10-07",
   "shortInterestReportUrl": "https://download.asic.gov.au/short-selling/RR20261007-001-SSDailyAggShortPos.pdf",
-  "shortInterestMatched": 54
+  "shortInterestMatched": 54,
+  "globalTrendUpdated": "2026-10-13T15:16:56.360438+00:00",
+  "globalTrendSource": "Google News RSS world-news headlines, weighted toward major news sources",
+  "globalTrendThemes": [
+    {
+      "name": "AI / DATA CENTRES",
+      "score": 15,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "3 Stocks Riding Southeast Asia AI Data Center Demand Before Capacity Tightens - Yahoo Finance",
+          "source": "Yahoo Finance",
+          "signal": 2
+        },
+        {
+          "title": "\"The Core of AI Hegemony is Power\" - The U.S. Accelerates Data Center Efficiency and Power Facility Expansion, Heightening Competition with China Leveraging Low-Cost Electricity - ",
+          "source": "https://economy.ac/",
+          "signal": 2
+        },
+        {
+          "title": "Microsoft to expand Azure AI chips with Maia 300 in 2027 - Cloud Computing News",
+          "source": "Cloud Computing News",
+          "signal": 1
+        },
+        {
+          "title": "National Compute Grid Launches to Pool Idle AI Capacity Across Providers - HPCwire",
+          "source": "HPCwire",
+          "signal": 1
+        },
+        {
+          "title": "Navitas shares surge 5% on Nvidia AI infrastructure partnership - Yahoo Finance Australia",
+          "source": "Yahoo Finance Australia",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "DEFENCE",
+      "score": 17,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Fareham business leader demands defence spending boost at Budget - Portsmouth News",
+          "source": "Portsmouth News",
+          "signal": 2
+        },
+        {
+          "title": "Taiwan's leader says increasing defence spending to 'deter war' - RFI",
+          "source": "RFI",
+          "signal": 1
+        },
+        {
+          "title": "Ministers preparing to slash heat pump subsidies to fund defence spending - The Guardian",
+          "source": "The Guardian",
+          "signal": 1
+        },
+        {
+          "title": "Business leader urges Chancellor to prioritise defence spending - Daily Echo",
+          "source": "Daily Echo",
+          "signal": 1
+        },
+        {
+          "title": "Operational readiness key to effective defence, security spending, says expert - The Malaysian Reserve",
+          "source": "The Malaysian Reserve",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "GOLD",
+      "score": 27,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Investment demand fuels China's gold buying - chinadailyhk",
+          "source": "chinadailyhk",
+          "signal": 2
+        },
+        {
+          "title": "Investment demand fuels China's gold buying - China Daily",
+          "source": "China Daily",
+          "signal": 2
+        },
+        {
+          "title": "Why China is buying so much gold: Decoding its record-breaking bullion rush - TradingView",
+          "source": "TradingView",
+          "signal": 2
+        },
+        {
+          "title": "Why China is buying record amounts of gold \u2014 and what it means for India - CNBC TV18",
+          "source": "CNBC TV18",
+          "signal": 2
+        },
+        {
+          "title": "Gold Price - XAU/USD Q4 2026: Can the Support Drive a Recovery? for OANDA:XAUUSD by tohaitrieu - TradingView",
+          "source": "TradingView",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "OIL / ENERGY",
+      "score": 5,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "OPEC+ Oil Production Rises 900,000 bbl/d in September Despite Hormuz Disruptions \u2013 Monthly Report Says - Egypt Oil & Gas",
+          "source": "Egypt Oil & Gas",
+          "signal": 2
+        },
+        {
+          "title": "Oil prices fall as traders assess Russian diesel supply prospects and Saudi-Houthi conflict - CNBC",
+          "source": "CNBC",
+          "signal": -1
+        },
+        {
+          "title": "OPEC Cuts Demand Growth Forecast Again as Gulf Supply Risks Mount - WSJ",
+          "source": "WSJ",
+          "signal": 1
+        },
+        {
+          "title": "HIGHLIGHTS: World Petroleum Congress in Riyadh: Energy Security, Rising Oil Demand and Global Supply Risks Dominate Opening Day - EnergyNow.com",
+          "source": "EnergyNow.com",
+          "signal": 1
+        },
+        {
+          "title": "Japan cabinet backs plan to help oil importers pay for higher transport costs - Reuters",
+          "source": "Reuters",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "URANIUM",
+      "score": 14,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Existing Reactor Life Extensions Could Sustain Uranium Demand Through 2050 - Crux Investor",
+          "source": "Crux Investor",
+          "signal": 2
+        },
+        {
+          "title": "Purepoint Uranium CEO warns supply deficit could worsen as nuclear demand grows - Yahoo Finance",
+          "source": "Yahoo Finance",
+          "signal": 2
+        },
+        {
+          "title": "Nuclear Tripling Target Pulls Uranium Supply Investment Forward - Crux Investor",
+          "source": "Crux Investor",
+          "signal": 1
+        },
+        {
+          "title": "Kazatomprom Shareholders Approve Major Chinese Uranium Contract, Reject Deal With Russia - NucNet",
+          "source": "NucNet",
+          "signal": 1
+        },
+        {
+          "title": "Cameco Corporation (TSX:CCJ): Canada's Nuclear Renaissance Player Navigates Global Uranium Demand Surge - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "COPPER",
+      "score": 15,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Cooper Metals Targets Philippine Copper Opportunity as Electrification Drives Demand - AZoMining",
+          "source": "AZoMining",
+          "signal": 2
+        },
+        {
+          "title": "Copper Prices Near Record Highs; UBS Says Supply Deficit to Persist Into Early 2030s - BigGo Finance",
+          "source": "BigGo Finance",
+          "signal": 2
+        },
+        {
+          "title": "AI's Impact on Copper Demand: New Buyers, Supply Constraints, and Mining Innovation - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        },
+        {
+          "title": "Op-Ed: AI will not just add copper demand. It could change who sets the price - Mining.com",
+          "source": "Mining.com",
+          "signal": 1
+        },
+        {
+          "title": "Exclusive: Giraffe Bio aims its bespoke biomolecules at the looming copper shortage - TechCrunch",
+          "source": "TechCrunch",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "LITHIUM",
+      "score": 8,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "[SMM Cobalt-Lithium Morning Meeting Summary] Raw material price trends diverge; supply-demand support for battery materials varies in strength - Shanghai Metals Market",
+          "source": "Shanghai Metals Market",
+          "signal": 1
+        },
+        {
+          "title": "Chinese lithium prices tumble to nearly 10-month low on demand concerns - Mining.com",
+          "source": "Mining.com",
+          "signal": 1
+        },
+        {
+          "title": "Advance Battery Technologies Market To 2035: Next-Gen Chemistries Drive Growth as Grid Storage and EV Demand Accelerates - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        },
+        {
+          "title": "Rechargeable Battery Materials Market To 2035: EV Demand and Localization Drive Growth - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        },
+        {
+          "title": "Energy Storage Chemicals Market to Accelerate on EV and Grid Demand, Reaching 2035 Expansion - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "CHINA / IRON ORE",
+      "score": 12,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Can Chinese stimulus help mineral resources recover? - Mining.com.au",
+          "source": "Mining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "worldsteel revises global steel demand forecasts downward - SteelRadar",
+          "source": "SteelRadar",
+          "signal": 1
+        },
+        {
+          "title": "Iron-ore rises on expected Chinese steel mill restocking - Engineering News",
+          "source": "Engineering News",
+          "signal": 1
+        },
+        {
+          "title": "Worldsteel lowers global steel demand outlook as China's downturn delays recovery - SteelOrbis",
+          "source": "SteelOrbis",
+          "signal": 1
+        },
+        {
+          "title": "How Is ASX 200 Stock Fortescue (ASX:FMG) Faring as Mills Restock Slowly? - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": 0
+        }
+      ]
+    },
+    {
+      "name": "RARE EARTHS",
+      "score": 9,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Defence restrictions, robotics fuel new race for rare earths - Mining.com.au",
+          "source": "Mining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "Critical Metals, Trump Demand and Christopher Ecclestone\u2019s Warning on What Comes Next - InvestorNews",
+          "source": "InvestorNews",
+          "signal": 1
+        },
+        {
+          "title": "Who Controls the Critical Minerals Powering AI? - Elements by Visual Capitalist",
+          "source": "Elements by Visual Capitalist",
+          "signal": 1
+        },
+        {
+          "title": "US critical minerals stockpile could drive prices higher, industry warns - Mining.com.au",
+          "source": "Mining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "USA Rare Earth (USAR) Could Be Very Overvalued Following Its Mine To Magnet Funding News - Simply Wall Street",
+          "source": "Simply Wall Street",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RATE EASING",
+      "score": 1,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "T\u00fcrkiye inflation falls below 30% after 58 months; rate cuts back in play - T\u00fcrkiye Today",
+          "source": "T\u00fcrkiye Today",
+          "signal": 3
+        },
+        {
+          "title": "Navigating the Shift: Russian Central Bank Interest Rate Cuts and Crypto Market Implications - KuCoin",
+          "source": "KuCoin",
+          "signal": 2
+        },
+        {
+          "title": "Bond Selloff May Mean Fewer Rate Hikes From Global Central Banks - Bloomberg.com",
+          "source": "Bloomberg.com",
+          "signal": -2
+        },
+        {
+          "title": "Bond Market Sell-off Brings \u201cUnexpected Turn\u201d: Could Global Central Banks Reduce the Number of Rate Hikes? - \u5bcc\u9014\u725b\u725b",
+          "source": "\u5bcc\u9014\u725b\u725b",
+          "signal": -2
+        },
+        {
+          "title": "Romania\u2019s Inflation Surprise Keeps Rate Cuts On Ice - Finimize",
+          "source": "Finimize",
+          "signal": 2
+        }
+      ]
+    }
+  ]
 }
