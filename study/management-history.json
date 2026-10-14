@@ -1170,6 +1170,13 @@
           "deliveredSignals": 0,
           "missedSignals": 1,
           "openCommitments": 0
+        },
+        {
+          "at": "2026-10-14T06:01:05.335437+00:00",
+          "score": 39,
+          "deliveredSignals": 0,
+          "missedSignals": 1,
+          "openCommitments": 0
         }
       ]
     },
@@ -1606,6 +1613,13 @@
         {
           "at": "2026-10-14T00:20:27.502812+00:00",
           "score": 56,
+          "deliveredSignals": 1,
+          "missedSignals": 0,
+          "openCommitments": 1
+        },
+        {
+          "at": "2026-10-14T06:01:05.335437+00:00",
+          "score": 57,
           "deliveredSignals": 1,
           "missedSignals": 0,
           "openCommitments": 1
@@ -4941,7 +4955,19 @@
           "openCommitments": 0
         }
       ]
+    },
+    "CAA": {
+      "commitments": [],
+      "snapshots": [
+        {
+          "at": "2026-10-14T06:01:05.335437+00:00",
+          "score": 50,
+          "deliveredSignals": 0,
+          "missedSignals": 0,
+          "openCommitments": 0
+        }
+      ]
     }
   },
-  "updated": "2026-10-14T00:20:27.502812+00:00"
+  "updated": "2026-10-14T06:01:05.335437+00:00"
 }
