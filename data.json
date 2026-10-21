@@ -52,7 +52,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 1,
       "oppPreShort": 92,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 92
     },
     {
       "ticker": "CGF",
@@ -101,7 +102,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 2,
       "oppPreShort": 86,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 88
     },
     {
       "ticker": "FMR",
@@ -150,7 +152,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 3,
       "oppPreShort": 84,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 86
     },
     {
       "ticker": "LNQ",
@@ -199,7 +202,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 4,
       "oppPreShort": 82,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 82
     },
     {
       "ticker": "NTI",
@@ -248,7 +252,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 5,
       "oppPreShort": 80,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 80
     },
     {
       "ticker": "PWH",
@@ -297,7 +302,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 6,
       "oppPreShort": 78,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 78
     },
     {
       "ticker": "AVH",
@@ -346,7 +352,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 7,
       "oppPreShort": 77,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 79
     },
     {
       "ticker": "VBC",
@@ -395,7 +402,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 8,
       "oppPreShort": 77,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 77
     },
     {
       "ticker": "BKY",
@@ -444,13 +452,14 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 11,
       "oppPreShort": 74,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 76
     },
     {
       "ticker": "BPT",
       "name": "BEACH ENERGY LIMITED",
       "price": 0.96,
-      "opp": 70,
+      "opp": 71,
       "wholeAsxTechnicalScore": 74,
       "edge": "MARKET-WIDE",
       "quality": 61,
@@ -484,22 +493,47 @@
       "shortInterestPct": 7.85,
       "shortSignal": "ELEVATED / BEARISH",
       "shortAdjustment": -4,
-      "globalTrendScore": 0,
-      "globalTrendAdjustment": 0,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
       "globalTrendSignal": "NEUTRAL",
-      "globalThemes": [],
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 0.8,
+          "headlines": [
+            {
+              "title": "Oil rises as Iran tensions, US crude stock draw fuel supply concerns - Anadolu Ajans\u0131",
+              "source": "Anadolu Ajans\u0131",
+              "signal": 2
+            },
+            {
+              "title": "Oil Futures Settle Lower in Volatile Session - WSJ",
+              "source": "WSJ",
+              "signal": -1
+            },
+            {
+              "title": "Global LNG market faces demand cuts as Hormuz disruptions strain supply - Oil & Gas Journal",
+              "source": "Oil & Gas Journal",
+              "signal": 1
+            }
+          ]
+        }
+      ],
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 12,
       "oppPreShort": 74,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 70
     },
     {
       "ticker": "NST",
       "name": "NORTHERN STAR RESOURCES LTD",
       "price": 25.06,
-      "opp": 73,
+      "opp": 74,
       "wholeAsxTechnicalScore": 73,
       "edge": "MARKET-WIDE",
       "quality": 66,
@@ -533,16 +567,41 @@
       "shortInterestPct": 3.4,
       "shortSignal": "NORMAL",
       "shortAdjustment": 0,
-      "globalTrendScore": 0,
-      "globalTrendAdjustment": 0,
-      "globalTrendSignal": "NEUTRAL",
-      "globalThemes": [],
+      "globalTrendScore": 18,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH",
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 18,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "How safe havens stack up as tech, energy and France fears grip markets - Reuters",
+              "source": "Reuters",
+              "signal": 2
+            },
+            {
+              "title": "Gold, silver, platinum, and palladium rebound; platinum main contract rises for two consecutive days; precious metals sector strengthens; spot silver trading overall sluggish [SMM ",
+              "source": "Shanghai Metals Market",
+              "signal": 2
+            },
+            {
+              "title": "Gold's Crosscurrents: Record Central-Bank Buying Meets an Inflation-Fueled Yield Squeeze - ad-hoc-news.de",
+              "source": "ad-hoc-news.de",
+              "signal": 2
+            }
+          ]
+        }
+      ],
       "trendCandidate": false,
       "wholeAsxCandidate": true,
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 13,
       "oppPreShort": 73,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 73
     },
     {
       "ticker": "EVT",
@@ -591,7 +650,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 15,
       "oppPreShort": 72,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 72
     },
     {
       "ticker": "GYG",
@@ -640,7 +700,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 18,
       "oppPreShort": 71,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 71
     },
     {
       "ticker": "MEI",
@@ -689,7 +750,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 19,
       "oppPreShort": 71,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 73
     },
     {
       "ticker": "PSC",
@@ -738,7 +800,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 20,
       "oppPreShort": 71,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 73
     },
     {
       "ticker": "FPH",
@@ -787,7 +850,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 22,
       "oppPreShort": 70,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 72
     },
     {
       "ticker": "MPK",
@@ -836,7 +900,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 23,
       "oppPreShort": 70,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 70
     },
     {
       "ticker": "NHC",
@@ -885,7 +950,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 28,
       "oppPreShort": 68,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 68
     },
     {
       "ticker": "MTS",
@@ -934,7 +1000,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 29,
       "oppPreShort": 68,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 68
     },
     {
       "ticker": "VGL",
@@ -983,7 +1050,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 30,
       "oppPreShort": 68,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 70
     },
     {
       "ticker": "BOQ",
@@ -1032,7 +1100,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 33,
       "oppPreShort": 67,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 67
     },
     {
       "ticker": "FPR",
@@ -1081,7 +1150,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 34,
       "oppPreShort": 67,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 69
     },
     {
       "ticker": "MSV",
@@ -1130,7 +1200,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 35,
       "oppPreShort": 67,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 69
     },
     {
       "ticker": "OBL",
@@ -1179,7 +1250,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 37,
       "oppPreShort": 67,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 67
     },
     {
       "ticker": "SUL",
@@ -1228,7 +1300,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 39,
       "oppPreShort": 66,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "CLV",
@@ -1277,7 +1350,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 40,
       "oppPreShort": 66,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 68
     },
     {
       "ticker": "TLS",
@@ -1548,7 +1622,12 @@
       "shortInterestPct": 1.36,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 66
     },
     {
       "ticker": "WTC",
@@ -1597,7 +1676,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 41,
       "oppPreShort": 66,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 58
     },
     {
       "ticker": "BCA",
@@ -1646,7 +1726,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 42,
       "oppPreShort": 66,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 66
     },
     {
       "ticker": "ANN",
@@ -1695,7 +1776,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 45,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "CGS",
@@ -1744,7 +1826,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 46,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 67
     },
     {
       "ticker": "SYI",
@@ -1793,7 +1876,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 47,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "CAA",
@@ -1842,13 +1926,14 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 48,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "DTL",
       "name": "DATA#3 LIMITED",
       "price": 13.14,
-      "opp": 65,
+      "opp": 67,
       "edge": "WATCH",
       "quality": 44,
       "valuation": 28,
@@ -2047,7 +2132,36 @@
       "shortInterestPct": 2.68,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 28,
+          "direction": "POSITIVE",
+          "weight": 0.65,
+          "headlines": [
+            {
+              "title": "Data boom supports ruthenium demand - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 3
+            },
+            {
+              "title": "DP World expands US data centre logistics as AI demand rises - Supply Chain Digital",
+              "source": "Supply Chain Digital",
+              "signal": 2
+            },
+            {
+              "title": "AI's spending boom faces a 'gut check': Who can actually make money? - CNBC",
+              "source": "CNBC",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 65,
+      "globalTrendScore": 28,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "PMM",
@@ -2096,7 +2210,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 49,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "COH",
@@ -2145,7 +2260,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 50,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "TNE",
@@ -2194,7 +2310,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 51,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "PMV",
@@ -2243,7 +2360,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 52,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "CKF",
@@ -2292,7 +2410,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 53,
       "oppPreShort": 65,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "SUN",
@@ -2570,7 +2689,12 @@
       "shortInterestPct": 1.47,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 65
     },
     {
       "ticker": "AUB",
@@ -2619,7 +2743,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 55,
       "oppPreShort": 64,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 60
     },
     {
       "ticker": "BSL",
@@ -2668,7 +2793,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 56,
       "oppPreShort": 63,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "MYS",
@@ -2717,7 +2843,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 57,
       "oppPreShort": 63,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "XRF",
@@ -2766,7 +2893,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 58,
       "oppPreShort": 63,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 63
     },
     {
       "ticker": "DMP",
@@ -2993,7 +3121,12 @@
       "shortInterestPct": 11.89,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 55
     },
     {
       "ticker": "CDA",
@@ -3042,7 +3175,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 59,
       "oppPreShort": 63,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "AEL",
@@ -3091,7 +3225,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 60,
       "oppPreShort": 63,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 65
     },
     {
       "ticker": "REH",
@@ -3140,7 +3275,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 61,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "BTR",
@@ -3189,7 +3325,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 62,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "MRD",
@@ -3238,7 +3375,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 63,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 64
     },
     {
       "ticker": "WEB",
@@ -3287,7 +3425,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 64,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "C79",
@@ -3336,7 +3475,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 65,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 64
     },
     {
       "ticker": "QBE",
@@ -3532,7 +3672,12 @@
       "shortInterestPct": 0.44,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 64
     },
     {
       "ticker": "SFY",
@@ -3581,7 +3726,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 66,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "HTM",
@@ -3630,7 +3776,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 67,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "LGI",
@@ -3679,7 +3826,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 68,
       "oppPreShort": 62,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 64
     },
     {
       "ticker": "APA",
@@ -3899,7 +4047,12 @@
       "shortInterestPct": 1.76,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 62
     },
     {
       "ticker": "SBM",
@@ -3948,7 +4101,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 71,
       "oppPreShort": 61,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "BVS",
@@ -3997,7 +4151,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 72,
       "oppPreShort": 61,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 63
     },
     {
       "ticker": "IXR",
@@ -4046,7 +4201,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 73,
       "oppPreShort": 61,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 63
     },
     {
       "ticker": "CSL",
@@ -4266,13 +4422,18 @@
       "shortInterestPct": 1.03,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "STO",
       "name": "SANTOS LIMITED",
       "price": 9.31,
-      "opp": 63,
+      "opp": 64,
       "edge": "WATCH",
       "quality": 70,
       "valuation": 62,
@@ -4501,7 +4662,36 @@
       "shortInterestPct": 0.43,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Oil rises as Iran tensions, US crude stock draw fuel supply concerns - Anadolu Ajans\u0131",
+              "source": "Anadolu Ajans\u0131",
+              "signal": 2
+            },
+            {
+              "title": "Oil Futures Settle Lower in Volatile Session - WSJ",
+              "source": "WSJ",
+              "signal": -1
+            },
+            {
+              "title": "Global LNG market faces demand cuts as Hormuz disruptions strain supply - Oil & Gas Journal",
+              "source": "Oil & Gas Journal",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 63,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "ASX",
@@ -4710,7 +4900,12 @@
       "shortInterestPct": 5.53,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "VSL",
@@ -4759,7 +4954,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 74,
       "oppPreShort": 61,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 63
     },
     {
       "ticker": "M24",
@@ -4808,7 +5004,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 75,
       "oppPreShort": 61,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "IAG",
@@ -5003,7 +5200,12 @@
       "shortInterestPct": 1.51,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "SIG",
@@ -5052,7 +5254,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 76,
       "oppPreShort": 61,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 57
     },
     {
       "ticker": "RMD",
@@ -5247,7 +5450,12 @@
       "shortInterestPct": 0.53,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 63
     },
     {
       "ticker": "WOW",
@@ -5448,7 +5656,12 @@
       "shortInterestPct": 1.37,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "BGA",
@@ -5497,7 +5710,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 78,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "CCP",
@@ -5546,7 +5760,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 79,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 60
     },
     {
       "ticker": "KOA",
@@ -5595,7 +5810,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 80,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 60
     },
     {
       "ticker": "ACL",
@@ -5644,7 +5860,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 81,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 60
     },
     {
       "ticker": "AUI",
@@ -5693,7 +5910,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 82,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 60
     },
     {
       "ticker": "INA",
@@ -5742,7 +5960,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 84,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 60
     },
     {
       "ticker": "MVF",
@@ -5791,13 +6010,14 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 85,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 60
     },
     {
       "ticker": "ORG",
       "name": "ORIGIN ENERGY LIMITED",
       "price": 12.05,
-      "opp": 60,
+      "opp": 61,
       "edge": "WATCH",
       "quality": 63,
       "valuation": 56,
@@ -6035,13 +6255,42 @@
       "shortInterestPct": 1.1,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Oil rises as Iran tensions, US crude stock draw fuel supply concerns - Anadolu Ajans\u0131",
+              "source": "Anadolu Ajans\u0131",
+              "signal": 2
+            },
+            {
+              "title": "Oil Futures Settle Lower in Volatile Session - WSJ",
+              "source": "WSJ",
+              "signal": -1
+            },
+            {
+              "title": "Global LNG market faces demand cuts as Hormuz disruptions strain supply - Oil & Gas Journal",
+              "source": "Oil & Gas Journal",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 60,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "WDS",
       "name": "WOODSIDE ENERGY GROUP LTD",
       "price": 33.96,
-      "opp": 60,
+      "opp": 61,
       "edge": "WATCH",
       "quality": 65,
       "valuation": 60,
@@ -6254,7 +6503,36 @@
       "shortInterestPct": 2.77,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 7,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Oil rises as Iran tensions, US crude stock draw fuel supply concerns - Anadolu Ajans\u0131",
+              "source": "Anadolu Ajans\u0131",
+              "signal": 2
+            },
+            {
+              "title": "Oil Futures Settle Lower in Volatile Session - WSJ",
+              "source": "WSJ",
+              "signal": -1
+            },
+            {
+              "title": "Global LNG market faces demand cuts as Hormuz disruptions strain supply - Oil & Gas Journal",
+              "source": "Oil & Gas Journal",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 60,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "GDG",
@@ -6303,7 +6581,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 86,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 52
     },
     {
       "ticker": "GTK",
@@ -6352,7 +6631,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 87,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "GBR",
@@ -6401,7 +6681,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 88,
       "oppPreShort": 60,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 62
     },
     {
       "ticker": "DAL",
@@ -6450,7 +6731,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 89,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 59
     },
     {
       "ticker": "RWC",
@@ -6499,7 +6781,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 91,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 59
     },
     {
       "ticker": "EHL",
@@ -6548,7 +6831,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 92,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "ANZ",
@@ -6757,7 +7041,12 @@
       "shortInterestPct": 1.63,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "BOA",
@@ -6806,7 +7095,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 93,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 59
     },
     {
       "ticker": "TWE",
@@ -7048,7 +7338,12 @@
       "shortInterestPct": 9.9,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "LKY",
@@ -7097,7 +7392,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 94,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "PME",
@@ -7309,7 +7605,12 @@
       "shortInterestPct": 4.22,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "CHC",
@@ -7358,7 +7659,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 95,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 59
     },
     {
       "ticker": "EBO",
@@ -7407,7 +7709,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 96,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "WIA",
@@ -7456,7 +7759,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 97,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "GWA",
@@ -7505,7 +7809,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 98,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "BLX",
@@ -7554,7 +7859,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 99,
       "oppPreShort": 59,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 61
     },
     {
       "ticker": "COL",
@@ -7757,7 +8063,12 @@
       "shortInterestPct": 1.29,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "DBI",
@@ -7806,7 +8117,8 @@
       "opportunitySource": "WHOLE_ASX",
       "wholeAsxRank": 100,
       "oppPreShort": 58,
-      "shortInterestDate": "2026-10-15"
+      "shortInterestDate": "2026-10-15",
+      "oppPreTrend": 58
     },
     {
       "ticker": "CPU",
@@ -8024,7 +8336,12 @@
       "shortInterestPct": 0.8,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "BXB",
@@ -8232,7 +8549,12 @@
       "shortInterestPct": 1.43,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "ALL",
@@ -8446,7 +8768,12 @@
       "shortInterestPct": 1.01,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "REA",
@@ -8640,7 +8967,36 @@
       "shortInterestPct": 3.67,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 0.35,
+          "headlines": [
+            {
+              "title": "Bank of Israel expected to pause rate cuts ahead of October 27 election - Mezha.net",
+              "source": "Mezha.net",
+              "signal": 2
+            },
+            {
+              "title": "Bank of Israel to pause rate cuts ahead of October 27 election: Reuters poll - Rock Hill Herald",
+              "source": "Rock Hill Herald",
+              "signal": 2
+            },
+            {
+              "title": "Fed Restarts Rate Hikes Alongside Balance-Sheet Runoff as China's Central Bank Cuts Rates 'On Its Own Terms' \u2014 Possibly by Changing Its Policy Anchor - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 55,
+      "globalTrendScore": 2,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "SEK",
@@ -8872,7 +9228,12 @@
       "shortInterestPct": 1.28,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 55
     },
     {
       "ticker": "WOR",
@@ -9110,7 +9471,12 @@
       "shortInterestPct": 1.77,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 55
     },
     {
       "ticker": "MQG",
@@ -9360,7 +9726,12 @@
       "shortInterestPct": 0.47,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "TCL",
@@ -9601,7 +9972,12 @@
       "shortInterestPct": 2.4,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "WES",
@@ -9808,7 +10184,12 @@
       "shortInterestPct": 1.91,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "AMC",
@@ -9992,7 +10373,12 @@
       "shortInterestPct": 0.81,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 55
     },
     {
       "ticker": "MPL",
@@ -10185,7 +10571,12 @@
       "shortInterestPct": 3.8,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 53
     },
     {
       "ticker": "NAB",
@@ -10371,7 +10762,12 @@
       "shortInterestPct": 2.2,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "ALD",
@@ -10586,7 +10982,12 @@
       "shortInterestPct": 2.61,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "WBC",
@@ -10794,13 +11195,18 @@
       "shortInterestPct": 2.94,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 51
     },
     {
       "ticker": "S32",
       "name": "SOUTH32 LIMITED",
       "price": 4.32,
-      "opp": 51,
+      "opp": 52,
       "edge": "UNDER-NOTICED",
       "quality": 48,
       "valuation": 55,
@@ -11026,7 +11432,36 @@
       "shortInterestPct": 1.51,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 11,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Copper surplus masks looming $332B mine shortfall - Mining.com",
+              "source": "Mining.com",
+              "signal": -2
+            },
+            {
+              "title": "LME Week: Copper supply struggles to keep pace with electrification demand - S&P Global",
+              "source": "S&P Global",
+              "signal": 2
+            },
+            {
+              "title": "BloombergNEF\u2019s Transition Metals Outlook 2026: Global Metal Supply Shortages Set to Ease, but Copper Faces a $332 Billion Investment Gap - BloombergNEF",
+              "source": "BloombergNEF",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 51,
+      "globalTrendScore": 11,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "JHX",
@@ -11260,7 +11695,12 @@
       "shortInterestPct": 3.23,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 50
     },
     {
       "ticker": "CBA",
@@ -11476,7 +11916,12 @@
       "shortInterestPct": 2.62,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 50
     },
     {
       "ticker": "CAR",
@@ -11687,13 +12132,42 @@
       "shortInterestPct": 5.02,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "Bank of Israel expected to pause rate cuts ahead of October 27 election - Mezha.net",
+              "source": "Mezha.net",
+              "signal": 2
+            },
+            {
+              "title": "Bank of Israel to pause rate cuts ahead of October 27 election: Reuters poll - Rock Hill Herald",
+              "source": "Rock Hill Herald",
+              "signal": 2
+            },
+            {
+              "title": "Fed Restarts Rate Hikes Alongside Balance-Sheet Runoff as China's Central Bank Cuts Rates 'On Its Own Terms' \u2014 Possibly by Changing Its Policy Anchor - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 46,
+      "globalTrendScore": 2,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "BHP",
       "name": "BHP GROUP LIMITED",
       "price": 58.54,
-      "opp": 49,
+      "opp": 50,
       "edge": "WATCH",
       "quality": 56,
       "valuation": 49,
@@ -11911,13 +12385,65 @@
       "shortInterestPct": 1.65,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 11,
+          "direction": "NEUTRAL",
+          "weight": 0.6,
+          "headlines": [
+            {
+              "title": "Copper surplus masks looming $332B mine shortfall - Mining.com",
+              "source": "Mining.com",
+              "signal": -2
+            },
+            {
+              "title": "LME Week: Copper supply struggles to keep pace with electrification demand - S&P Global",
+              "source": "S&P Global",
+              "signal": 2
+            },
+            {
+              "title": "BloombergNEF\u2019s Transition Metals Outlook 2026: Global Metal Supply Shortages Set to Ease, but Copper Faces a $332 Billion Investment Gap - BloombergNEF",
+              "source": "BloombergNEF",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 3,
+          "direction": "NEUTRAL",
+          "weight": 0.7,
+          "headlines": [
+            {
+              "title": "China growth beats forecasts but property slump clouds outlook for Australian miners - Proactive Investors Australia",
+              "source": "Proactive Investors Australia",
+              "signal": -1
+            },
+            {
+              "title": "Iron ore outlook lifted higher - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 1
+            },
+            {
+              "title": "Australia urged to diversify green iron markets as China\u2019s steel demand weakens - BioEnergy Times",
+              "source": "BioEnergy Times",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 49,
+      "globalTrendScore": 7,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "MP1",
       "name": "MEGAPORT LIMITED",
       "price": 16.18,
-      "opp": 49,
+      "opp": 51,
       "edge": "WATCH",
       "quality": 14,
       "valuation": 57,
@@ -12146,7 +12672,59 @@
       "shortInterestPct": 2.81,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 28,
+          "direction": "POSITIVE",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "Data boom supports ruthenium demand - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 3
+            },
+            {
+              "title": "DP World expands US data centre logistics as AI demand rises - Supply Chain Digital",
+              "source": "Supply Chain Digital",
+              "signal": 2
+            },
+            {
+              "title": "AI's spending boom faces a 'gut check': Who can actually make money? - CNBC",
+              "source": "CNBC",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 0.25,
+          "headlines": [
+            {
+              "title": "Bank of Israel expected to pause rate cuts ahead of October 27 election - Mezha.net",
+              "source": "Mezha.net",
+              "signal": 2
+            },
+            {
+              "title": "Bank of Israel to pause rate cuts ahead of October 27 election: Reuters poll - Rock Hill Herald",
+              "source": "Rock Hill Herald",
+              "signal": 2
+            },
+            {
+              "title": "Fed Restarts Rate Hikes Alongside Balance-Sheet Runoff as China's Central Bank Cuts Rates 'On Its Own Terms' \u2014 Possibly by Changing Its Policy Anchor - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 49,
+      "globalTrendScore": 22,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "AIA",
@@ -12346,7 +12924,12 @@
       "shortInterestPct": 1.03,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 48
     },
     {
       "ticker": "XRO",
@@ -12542,7 +13125,36 @@
       "shortInterestPct": 5.95,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 0.3,
+          "headlines": [
+            {
+              "title": "Bank of Israel expected to pause rate cuts ahead of October 27 election - Mezha.net",
+              "source": "Mezha.net",
+              "signal": 2
+            },
+            {
+              "title": "Bank of Israel to pause rate cuts ahead of October 27 election: Reuters poll - Rock Hill Herald",
+              "source": "Rock Hill Herald",
+              "signal": 2
+            },
+            {
+              "title": "Fed Restarts Rate Hikes Alongside Balance-Sheet Runoff as China's Central Bank Cuts Rates 'On Its Own Terms' \u2014 Possibly by Changing Its Policy Anchor - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 44,
+      "globalTrendScore": 2,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "RIO",
@@ -12794,7 +13406,59 @@
       "shortInterestPct": 9.1,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 11,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Copper surplus masks looming $332B mine shortfall - Mining.com",
+              "source": "Mining.com",
+              "signal": -2
+            },
+            {
+              "title": "LME Week: Copper supply struggles to keep pace with electrification demand - S&P Global",
+              "source": "S&P Global",
+              "signal": 2
+            },
+            {
+              "title": "BloombergNEF\u2019s Transition Metals Outlook 2026: Global Metal Supply Shortages Set to Ease, but Copper Faces a $332 Billion Investment Gap - BloombergNEF",
+              "source": "BloombergNEF",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 3,
+          "direction": "NEUTRAL",
+          "weight": 0.85,
+          "headlines": [
+            {
+              "title": "China growth beats forecasts but property slump clouds outlook for Australian miners - Proactive Investors Australia",
+              "source": "Proactive Investors Australia",
+              "signal": -1
+            },
+            {
+              "title": "Iron ore outlook lifted higher - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 1
+            },
+            {
+              "title": "Australia urged to diversify green iron markets as China\u2019s steel demand weakens - BioEnergy Times",
+              "source": "BioEnergy Times",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 39,
+      "globalTrendScore": 6,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "SHL",
@@ -12934,7 +13598,12 @@
       "shortInterestPct": 1.15,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 47
     },
     {
       "ticker": "GMG",
@@ -13065,13 +13734,18 @@
       "shortInterestPct": 1.75,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 46
     },
     {
       "ticker": "GOLD",
       "name": "GOLD",
       "price": 53.66,
-      "opp": 46,
+      "opp": 47,
       "edge": "WATCH",
       "quality": 65,
       "valuation": 50,
@@ -13155,7 +13829,36 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": 18,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "How safe havens stack up as tech, energy and France fears grip markets - Reuters",
+              "source": "Reuters",
+              "signal": 2
+            },
+            {
+              "title": "Gold, silver, platinum, and palladium rebound; platinum main contract rises for two consecutive days; precious metals sector strengthens; spot silver trading overall sluggish [SMM ",
+              "source": "Shanghai Metals Market",
+              "signal": 2
+            },
+            {
+              "title": "Gold's Crosscurrents: Record Central-Bank Buying Meets an Inflation-Fueled Yield Squeeze - ad-hoc-news.de",
+              "source": "ad-hoc-news.de",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 46,
+      "globalTrendScore": 18,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "FMG",
@@ -13316,7 +14019,36 @@
       "shortInterestPct": 3.44,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 3,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "China growth beats forecasts but property slump clouds outlook for Australian miners - Proactive Investors Australia",
+              "source": "Proactive Investors Australia",
+              "signal": -1
+            },
+            {
+              "title": "Iron ore outlook lifted higher - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 1
+            },
+            {
+              "title": "Australia urged to diversify green iron markets as China\u2019s steel demand weakens - BioEnergy Times",
+              "source": "BioEnergy Times",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 44,
+      "globalTrendScore": 3,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "NEC",
@@ -13464,7 +14196,12 @@
       "shortInterestPct": 5.22,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 40
     },
     {
       "ticker": "ZIP",
@@ -13648,7 +14385,12 @@
       "shortInterestPct": 13.59,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 31
     },
     {
       "ticker": "ETPMAG",
@@ -13733,7 +14475,12 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 42
     },
     {
       "ticker": "BRN",
@@ -13888,7 +14635,12 @@
       "shortInterestPct": 1.5,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 37
     },
     {
       "ticker": "MIN",
@@ -14125,13 +14877,65 @@
       "shortInterestPct": 4.58,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "Lithium Prices Slump on Oversupply Fears, Raising Battery Market Uncertainty - THE ELEC, Korea Electronics Industry Media",
+              "source": "THE ELEC, Korea Electronics Industry Media",
+              "signal": -2
+            },
+            {
+              "title": "Cutting battery demand could reduce emissions more than cleaner manufacturing, study finds - \ub514\uc9c0\ud138\ud22c\ub370\uc774",
+              "source": "\ub514\uc9c0\ud138\ud22c\ub370\uc774",
+              "signal": 2
+            },
+            {
+              "title": "Chinese $8.56 billion investment in Morocco could reshape lithium demand - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 3,
+          "direction": "NEUTRAL",
+          "weight": 0.55,
+          "headlines": [
+            {
+              "title": "China growth beats forecasts but property slump clouds outlook for Australian miners - Proactive Investors Australia",
+              "source": "Proactive Investors Australia",
+              "signal": -1
+            },
+            {
+              "title": "Iron ore outlook lifted higher - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 1
+            },
+            {
+              "title": "Australia urged to diversify green iron markets as China\u2019s steel demand weakens - BioEnergy Times",
+              "source": "BioEnergy Times",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 37,
+      "globalTrendScore": 6,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "LYC",
       "name": "LYNAS RARE EARTHS LIMITED",
       "price": 11.55,
-      "opp": 29,
+      "opp": 30,
       "edge": "WATCH",
       "quality": 22,
       "valuation": 61,
@@ -14286,13 +15090,42 @@
       "shortInterestPct": 11.73,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "RARE EARTHS",
+          "score": 8,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "The Race for Malaysia\u2019s Rare Earths: An Indo-Pacific Strategy - CSIS | Center for Strategic and International Studies",
+              "source": "CSIS | Center for Strategic and International Studies",
+              "signal": 1
+            },
+            {
+              "title": "US-China failed deal boosts Australian rare earths - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 1
+            },
+            {
+              "title": "In demand: ASX explorer Heavy Rare Earths ready to catch the tiger by the tail - Stockhead",
+              "source": "Stockhead",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 29,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "DRO",
       "name": "DRONESHIELD LIMITED",
       "price": 1.52,
-      "opp": 24,
+      "opp": 26,
       "edge": "WATCH",
       "quality": 8,
       "valuation": 11,
@@ -14491,13 +15324,65 @@
       "shortInterestPct": 16.4,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "DEFENCE",
+          "score": 24,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Defence spending and Asian demand drive manufacturing opportunities - Industry Update",
+              "source": "Industry Update",
+              "signal": 2
+            },
+            {
+              "title": "Europe\u2019s defence spending is surging, but fragmented procurement is holding industry back - Escudo Digital",
+              "source": "Escudo Digital",
+              "signal": 2
+            },
+            {
+              "title": "Neways and SRC sign agreement to expand European production and support for U.S. defense technologies - Defence Industry Europe",
+              "source": "Defence Industry Europe",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 28,
+          "direction": "POSITIVE",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "Data boom supports ruthenium demand - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 3
+            },
+            {
+              "title": "DP World expands US data centre logistics as AI demand rises - Supply Chain Digital",
+              "source": "Supply Chain Digital",
+              "signal": 2
+            },
+            {
+              "title": "AI's spending boom faces a 'gut check': Who can actually make money? - CNBC",
+              "source": "CNBC",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 24,
+      "globalTrendScore": 25,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "PLS",
       "name": "PLS GROUP LIMITED",
       "price": 2.91,
-      "opp": 19,
+      "opp": 20,
       "edge": "WATCH",
       "quality": 4,
       "valuation": 64,
@@ -14692,13 +15577,42 @@
       "shortInterestPct": 13.08,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Lithium Prices Slump on Oversupply Fears, Raising Battery Market Uncertainty - THE ELEC, Korea Electronics Industry Media",
+              "source": "THE ELEC, Korea Electronics Industry Media",
+              "signal": -2
+            },
+            {
+              "title": "Cutting battery demand could reduce emissions more than cleaner manufacturing, study finds - \ub514\uc9c0\ud138\ud22c\ub370\uc774",
+              "source": "\ub514\uc9c0\ud138\ud22c\ub370\uc774",
+              "signal": 2
+            },
+            {
+              "title": "Chinese $8.56 billion investment in Morocco could reshape lithium demand - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 19,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "WBT",
       "name": "WEEBIT NANO LTD",
       "price": 2.55,
-      "opp": 30,
+      "opp": 32,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 56,
@@ -14931,13 +15845,42 @@
       "shortInterestPct": 3.28,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 28,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Data boom supports ruthenium demand - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 3
+            },
+            {
+              "title": "DP World expands US data centre logistics as AI demand rises - Supply Chain Digital",
+              "source": "Supply Chain Digital",
+              "signal": 2
+            },
+            {
+              "title": "AI's spending boom faces a 'gut check': Who can actually make money? - CNBC",
+              "source": "CNBC",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 30,
+      "globalTrendScore": 28,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "LTR",
       "name": "LIONTOWN LIMITED",
       "price": 0.685,
-      "opp": 20,
+      "opp": 21,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 71,
@@ -15067,13 +16010,42 @@
       "shortInterestPct": 8.01,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Lithium Prices Slump on Oversupply Fears, Raising Battery Market Uncertainty - THE ELEC, Korea Electronics Industry Media",
+              "source": "THE ELEC, Korea Electronics Industry Media",
+              "signal": -2
+            },
+            {
+              "title": "Cutting battery demand could reduce emissions more than cleaner manufacturing, study finds - \ub514\uc9c0\ud138\ud22c\ub370\uc774",
+              "source": "\ub514\uc9c0\ud138\ud22c\ub370\uc774",
+              "signal": 2
+            },
+            {
+              "title": "Chinese $8.56 billion investment in Morocco could reshape lithium demand - Mining.com.au",
+              "source": "Mining.com.au",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 20,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "NXT",
       "name": "NEXTDC LIMITED",
       "price": 5.35,
-      "opp": 18,
+      "opp": 20,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 32,
@@ -15221,7 +16193,59 @@
       "shortInterestPct": 8.35,
       "shortInterestDate": "2026-10-15",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 28,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Data boom supports ruthenium demand - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 3
+            },
+            {
+              "title": "DP World expands US data centre logistics as AI demand rises - Supply Chain Digital",
+              "source": "Supply Chain Digital",
+              "signal": 2
+            },
+            {
+              "title": "AI's spending boom faces a 'gut check': Who can actually make money? - CNBC",
+              "source": "CNBC",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": 2,
+          "direction": "NEUTRAL",
+          "weight": 0.45,
+          "headlines": [
+            {
+              "title": "Bank of Israel expected to pause rate cuts ahead of October 27 election - Mezha.net",
+              "source": "Mezha.net",
+              "signal": 2
+            },
+            {
+              "title": "Bank of Israel to pause rate cuts ahead of October 27 election: Reuters poll - Rock Hill Herald",
+              "source": "Rock Hill Herald",
+              "signal": 2
+            },
+            {
+              "title": "Fed Restarts Rate Hikes Alongside Balance-Sheet Runoff as China's Central Bank Cuts Rates 'On Its Own Terms' \u2014 Possibly by Changing Its Policy Anchor - BigGo Finance",
+              "source": "BigGo Finance",
+              "signal": -2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 18,
+      "globalTrendScore": 20,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     }
   ],
   "fundamentalsUpdated": "2026-10-21T12:56:16.497440+00:00",
@@ -15361,5 +16385,329 @@
   "shortInterestSource": "ASIC daily aggregated short positions",
   "shortInterestReportDate": "2026-10-15",
   "shortInterestReportUrl": "https://download.asic.gov.au/short-selling/RR20261015-001-SSDailyAggShortPos.pdf",
-  "shortInterestMatched": 116
+  "shortInterestMatched": 116,
+  "globalTrendUpdated": "2026-10-21T13:14:51.899029+00:00",
+  "globalTrendSource": "Google News RSS world-news headlines, weighted toward major news sources",
+  "globalTrendThemes": [
+    {
+      "name": "AI / DATA CENTRES",
+      "score": 28,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Data boom supports ruthenium demand - Australian Resources & Investment",
+          "source": "Australian Resources & Investment",
+          "signal": 3
+        },
+        {
+          "title": "DP World expands US data centre logistics as AI demand rises - Supply Chain Digital",
+          "source": "Supply Chain Digital",
+          "signal": 2
+        },
+        {
+          "title": "AI's spending boom faces a 'gut check': Who can actually make money? - CNBC",
+          "source": "CNBC",
+          "signal": 2
+        },
+        {
+          "title": "Microsoft expands sovereign cloud offerings as data control concerns grow - CIO",
+          "source": "CIO",
+          "signal": 1
+        },
+        {
+          "title": "Teradata expands sovereign AI with air-gapped cloud - IT Brief Australia",
+          "source": "IT Brief Australia",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "DEFENCE",
+      "score": 24,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Defence spending and Asian demand drive manufacturing opportunities - Industry Update",
+          "source": "Industry Update",
+          "signal": 2
+        },
+        {
+          "title": "Europe\u2019s defence spending is surging, but fragmented procurement is holding industry back - Escudo Digital",
+          "source": "Escudo Digital",
+          "signal": 2
+        },
+        {
+          "title": "Neways and SRC sign agreement to expand European production and support for U.S. defense technologies - Defence Industry Europe",
+          "source": "Defence Industry Europe",
+          "signal": 2
+        },
+        {
+          "title": "Poland Seeks Indian Investment Beyond Defence - www.daily-sun.com",
+          "source": "www.daily-sun.com",
+          "signal": 1
+        },
+        {
+          "title": "Defense Stocks To Watch As Gulf Tensions Put Military Spending In Focus - Simply Wall Street",
+          "source": "Simply Wall Street",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "GOLD",
+      "score": 18,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "How safe havens stack up as tech, energy and France fears grip markets - Reuters",
+          "source": "Reuters",
+          "signal": 2
+        },
+        {
+          "title": "Gold, silver, platinum, and palladium rebound; platinum main contract rises for two consecutive days; precious metals sector strengthens; spot silver trading overall sluggish [SMM ",
+          "source": "Shanghai Metals Market",
+          "signal": 2
+        },
+        {
+          "title": "Gold's Crosscurrents: Record Central-Bank Buying Meets an Inflation-Fueled Yield Squeeze - ad-hoc-news.de",
+          "source": "ad-hoc-news.de",
+          "signal": 2
+        },
+        {
+          "title": "Safe haven gold: what are investors and central banks seeking protection from? - World Finance",
+          "source": "World Finance",
+          "signal": 1
+        },
+        {
+          "title": "Gold Price Forecast: High Treasury Yields Put $4,000 Support in Focus - FXEmpire",
+          "source": "FXEmpire",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "OIL / ENERGY",
+      "score": 7,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Oil rises as Iran tensions, US crude stock draw fuel supply concerns - Anadolu Ajans\u0131",
+          "source": "Anadolu Ajans\u0131",
+          "signal": 2
+        },
+        {
+          "title": "Oil Futures Settle Lower in Volatile Session - WSJ",
+          "source": "WSJ",
+          "signal": -1
+        },
+        {
+          "title": "Global LNG market faces demand cuts as Hormuz disruptions strain supply - Oil & Gas Journal",
+          "source": "Oil & Gas Journal",
+          "signal": 1
+        },
+        {
+          "title": "Natural Gas and Oil Forecast: Diesel Shortage Draws Washington In, Can WTI Break $101.38? - FXEmpire",
+          "source": "FXEmpire",
+          "signal": 1
+        },
+        {
+          "title": "Oil prices rise as Brent hits $110 on WA supply concerns - Mehr News Agency",
+          "source": "Mehr News Agency",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "URANIUM",
+      "score": 9,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Boss Energy shares jump amid uranium rally - Australian Resources & Investment",
+          "source": "Australian Resources & Investment",
+          "signal": 2
+        },
+        {
+          "title": "Global nuclear expansion faces uranium supply challenge as existing mines decline: IAEA - ANI News",
+          "source": "ANI News",
+          "signal": 1
+        },
+        {
+          "title": "Geiger Counter highlights strong uranium market fundamentals and growing nuclear demand - DirectorsTalk Interviews",
+          "source": "DirectorsTalk Interviews",
+          "signal": 1
+        },
+        {
+          "title": "How Is Yellow Cake (LSE:YCA) Adding To Its Uranium Pile As Nuclear Demand Builds? - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": 1
+        },
+        {
+          "title": "5 Best-performing Canadian Uranium Stocks in 2026 - Investing News Network",
+          "source": "Investing News Network",
+          "signal": 0
+        }
+      ]
+    },
+    {
+      "name": "COPPER",
+      "score": 11,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Copper surplus masks looming $332B mine shortfall - Mining.com",
+          "source": "Mining.com",
+          "signal": -2
+        },
+        {
+          "title": "LME Week: Copper supply struggles to keep pace with electrification demand - S&P Global",
+          "source": "S&P Global",
+          "signal": 2
+        },
+        {
+          "title": "BloombergNEF\u2019s Transition Metals Outlook 2026: Global Metal Supply Shortages Set to Ease, but Copper Faces a $332 Billion Investment Gap - BloombergNEF",
+          "source": "BloombergNEF",
+          "signal": 2
+        },
+        {
+          "title": "Mitsubishi Corporation Formally Approves Arizona Copper Mine Development, Total Investment \u00a5152.6 Billion with Production to Begin in 2029 - BigGo Finance",
+          "source": "BigGo Finance",
+          "signal": 1
+        },
+        {
+          "title": "Copper falls as inventories rise, supply worries ease - TradingView",
+          "source": "TradingView",
+          "signal": -1
+        }
+      ]
+    },
+    {
+      "name": "LITHIUM",
+      "score": 9,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Lithium Prices Slump on Oversupply Fears, Raising Battery Market Uncertainty - THE ELEC, Korea Electronics Industry Media",
+          "source": "THE ELEC, Korea Electronics Industry Media",
+          "signal": -2
+        },
+        {
+          "title": "Cutting battery demand could reduce emissions more than cleaner manufacturing, study finds - \ub514\uc9c0\ud138\ud22c\ub370\uc774",
+          "source": "\ub514\uc9c0\ud138\ud22c\ub370\uc774",
+          "signal": 2
+        },
+        {
+          "title": "Chinese $8.56 billion investment in Morocco could reshape lithium demand - Mining.com.au",
+          "source": "Mining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "Chinese $6B Battery Investment in Morocco Reshapes EU Lithium Demand Amid Tariff Shifts - Shanghai Metals Market",
+          "source": "Shanghai Metals Market",
+          "signal": 1
+        },
+        {
+          "title": "LG Energy\u2019s Poland plant set to swing to profit as Europe EV demand revives - KED Global",
+          "source": "KED Global",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "CHINA / IRON ORE",
+      "score": 3,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "China growth beats forecasts but property slump clouds outlook for Australian miners - Proactive Investors Australia",
+          "source": "Proactive Investors Australia",
+          "signal": -1
+        },
+        {
+          "title": "Iron ore outlook lifted higher - Australian Resources & Investment",
+          "source": "Australian Resources & Investment",
+          "signal": 1
+        },
+        {
+          "title": "Australia urged to diversify green iron markets as China\u2019s steel demand weakens - BioEnergy Times",
+          "source": "BioEnergy Times",
+          "signal": 1
+        },
+        {
+          "title": "Commodity market: Soybean and iron ore prices fall sharply. - Vietnam.vn",
+          "source": "Vietnam.vn",
+          "signal": -1
+        },
+        {
+          "title": "Why India's steel demand is defying global weakness - The Economic Times",
+          "source": "The Economic Times",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RARE EARTHS",
+      "score": 8,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "The Race for Malaysia\u2019s Rare Earths: An Indo-Pacific Strategy - CSIS | Center for Strategic and International Studies",
+          "source": "CSIS | Center for Strategic and International Studies",
+          "signal": 1
+        },
+        {
+          "title": "US-China failed deal boosts Australian rare earths - Australian Resources & Investment",
+          "source": "Australian Resources & Investment",
+          "signal": 1
+        },
+        {
+          "title": "In demand: ASX explorer Heavy Rare Earths ready to catch the tiger by the tail - Stockhead",
+          "source": "Stockhead",
+          "signal": 1
+        },
+        {
+          "title": "Rainbow Rare Earths highlights fundamental shift in attitudes toward critical minerals - Proactive financial news",
+          "source": "Proactive financial news",
+          "signal": 1
+        },
+        {
+          "title": "EU seeks Vietnam critical minerals to reduce China reliance - Mining.com.au",
+          "source": "Mining.com.au",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RATE EASING",
+      "score": 2,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Bank of Israel expected to pause rate cuts ahead of October 27 election - Mezha.net",
+          "source": "Mezha.net",
+          "signal": 2
+        },
+        {
+          "title": "Bank of Israel to pause rate cuts ahead of October 27 election: Reuters poll - Rock Hill Herald",
+          "source": "Rock Hill Herald",
+          "signal": 2
+        },
+        {
+          "title": "Fed Restarts Rate Hikes Alongside Balance-Sheet Runoff as China's Central Bank Cuts Rates 'On Its Own Terms' \u2014 Possibly by Changing Its Policy Anchor - BigGo Finance",
+          "source": "BigGo Finance",
+          "signal": -2
+        },
+        {
+          "title": "Markets and some economists pivot to believing a BoC rate hike is imminent - The Globe and Mail",
+          "source": "The Globe and Mail",
+          "signal": -1
+        },
+        {
+          "title": "Can 10-year bond rates reach 7pc? History says so - AFR",
+          "source": "AFR",
+          "signal": 0
+        }
+      ]
+    }
+  ]
 }
