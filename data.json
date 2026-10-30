@@ -224,7 +224,12 @@
       "shortInterestPct": 4.69,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 67
     },
     {
       "ticker": "CSL",
@@ -467,7 +472,12 @@
       "shortInterestPct": 0.99,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 68
     },
     {
       "ticker": "TLS",
@@ -733,7 +743,12 @@
       "shortInterestPct": 1.28,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 66
     },
     {
       "ticker": "BXB",
@@ -1010,7 +1025,12 @@
       "shortInterestPct": 1.89,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 66
     },
     {
       "ticker": "RMD",
@@ -1215,7 +1235,12 @@
       "shortInterestPct": 0.53,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 67
     },
     {
       "ticker": "IAG",
@@ -1413,7 +1438,12 @@
       "shortInterestPct": 1.83,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 65
     },
     {
       "ticker": "TWE",
@@ -1624,7 +1654,12 @@
       "shortInterestPct": 9.53,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "QBE",
@@ -1819,13 +1854,18 @@
       "shortInterestPct": 0.48,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 64
     },
     {
       "ticker": "ORG",
       "name": "ORG",
       "price": 12.23,
-      "opp": 62,
+      "opp": 63,
       "edge": "WATCH",
       "quality": 64,
       "valuation": 56,
@@ -2044,13 +2084,42 @@
       "shortInterestPct": 1.16,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Oil rises as reports of possible US strikes on Iran raise supply concerns - Anadolu Ajans\u0131",
+              "source": "Anadolu Ajans\u0131",
+              "signal": 2
+            },
+            {
+              "title": "Crude Oil Price Forecast \u2013 Oil Continues to Grind Higher - FXEmpire",
+              "source": "FXEmpire",
+              "signal": 1
+            },
+            {
+              "title": "What's Next for Global Natural Gas Demand - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 62,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "DTL",
       "name": "DTL",
       "price": 14.76,
-      "opp": 62,
+      "opp": 65,
       "edge": "WATCH",
       "quality": 43,
       "valuation": 26,
@@ -2247,7 +2316,36 @@
       "shortInterestPct": 2.2,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 32,
+          "direction": "POSITIVE",
+          "weight": 0.65,
+          "headlines": [
+            {
+              "title": "Westcon-Comstor posts record US$3.37B first-half sales as APAC demand for AI, cloud and cyber accelerates - ARNnet",
+              "source": "ARNnet",
+              "signal": 3
+            },
+            {
+              "title": "AI accelerates data centre demand in next phase of growth: CBRE - realestatesource",
+              "source": "realestatesource",
+              "signal": 3
+            },
+            {
+              "title": "Stream Mission Critical Expands Stream Hyperscale Warehousing as AI Data Center Buildout Drives Demand for Coordinated Infrastructure Logistics - markets.businessinsider.com",
+              "source": "markets.businessinsider.com",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 62,
+      "globalTrendScore": 32,
+      "globalTrendAdjustment": 3,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "ANZ",
@@ -2435,7 +2533,12 @@
       "shortInterestPct": 1.76,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "ALL",
@@ -2643,7 +2746,12 @@
       "shortInterestPct": 0.97,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 63
     },
     {
       "ticker": "CPU",
@@ -2845,13 +2953,18 @@
       "shortInterestPct": 0.82,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 63
     },
     {
       "ticker": "STO",
       "name": "STO",
       "price": 9.25,
-      "opp": 63,
+      "opp": 64,
       "edge": "WATCH",
       "quality": 69,
       "valuation": 64,
@@ -3049,7 +3162,36 @@
       "shortInterestPct": 0.33,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Oil rises as reports of possible US strikes on Iran raise supply concerns - Anadolu Ajans\u0131",
+              "source": "Anadolu Ajans\u0131",
+              "signal": 2
+            },
+            {
+              "title": "Crude Oil Price Forecast \u2013 Oil Continues to Grind Higher - FXEmpire",
+              "source": "FXEmpire",
+              "signal": 1
+            },
+            {
+              "title": "What's Next for Global Natural Gas Demand - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 63,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "AMC",
@@ -3244,7 +3386,12 @@
       "shortInterestPct": 1.02,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "ASX",
@@ -3473,7 +3620,12 @@
       "shortInterestPct": 5.61,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 57
     },
     {
       "ticker": "APA",
@@ -3703,7 +3855,12 @@
       "shortInterestPct": 1.97,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 61
     },
     {
       "ticker": "WBC",
@@ -3891,7 +4048,12 @@
       "shortInterestPct": 3.01,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "WOW",
@@ -4102,7 +4264,12 @@
       "shortInterestPct": 1.51,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "SUN",
@@ -4329,7 +4496,12 @@
       "shortInterestPct": 1.59,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "MPL",
@@ -4522,7 +4694,12 @@
       "shortInterestPct": 3.92,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 60
     },
     {
       "ticker": "DMP",
@@ -4744,13 +4921,18 @@
       "shortInterestPct": 10.71,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "WDS",
       "name": "WDS",
       "price": 33.33,
-      "opp": 59,
+      "opp": 60,
       "edge": "WATCH",
       "quality": 65,
       "valuation": 61,
@@ -4972,7 +5154,36 @@
       "shortInterestPct": 2.89,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "OIL / ENERGY",
+          "score": 9,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Oil rises as reports of possible US strikes on Iran raise supply concerns - Anadolu Ajans\u0131",
+              "source": "Anadolu Ajans\u0131",
+              "signal": 2
+            },
+            {
+              "title": "Crude Oil Price Forecast \u2013 Oil Continues to Grind Higher - FXEmpire",
+              "source": "FXEmpire",
+              "signal": 1
+            },
+            {
+              "title": "What's Next for Global Natural Gas Demand - Crude Oil Prices Today | OilPrice.com",
+              "source": "Crude Oil Prices Today | OilPrice.com",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 59,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "CBA",
@@ -5188,7 +5399,12 @@
       "shortInterestPct": 2.74,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "NAB",
@@ -5374,7 +5590,12 @@
       "shortInterestPct": 2.47,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 58
     },
     {
       "ticker": "MQG",
@@ -5614,7 +5835,12 @@
       "shortInterestPct": 0.44,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "LOW / SUPPORTIVE",
-      "shortAdjustment": 2
+      "shortAdjustment": 2,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 59
     },
     {
       "ticker": "COL",
@@ -5813,7 +6039,12 @@
       "shortInterestPct": 1.5,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "WOR",
@@ -6046,7 +6277,12 @@
       "shortInterestPct": 1.82,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 56
     },
     {
       "ticker": "JHX",
@@ -6275,7 +6511,12 @@
       "shortInterestPct": 3.38,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 54
     },
     {
       "ticker": "WES",
@@ -6485,7 +6726,12 @@
       "shortInterestPct": 2.09,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "TCL",
@@ -6751,13 +6997,18 @@
       "shortInterestPct": 2.69,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 52
     },
     {
       "ticker": "REA",
       "name": "REA",
       "price": 159.48,
-      "opp": 52,
+      "opp": 51,
       "edge": "WATCH",
       "quality": 52,
       "valuation": 39,
@@ -6949,13 +7200,42 @@
       "shortInterestPct": 3.48,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": -12,
+          "direction": "NEGATIVE",
+          "weight": 0.35,
+          "headlines": [
+            {
+              "title": "Australia Inflation Rises Yet Again Stoking Rate Hike Pressure - Forbes",
+              "source": "Forbes",
+              "signal": -2
+            },
+            {
+              "title": "Favoured Bond Markets Amid Fed Rate Hikes - BusinessToday Malaysia",
+              "source": "BusinessToday Malaysia",
+              "signal": -2
+            },
+            {
+              "title": "Experts outline ways to sustain interest rate cuts - Vietnam Investment Review - VIR",
+              "source": "Vietnam Investment Review - VIR",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": -12,
+      "globalTrendAdjustment": -1,
+      "globalTrendSignal": "BEARISH"
     },
     {
       "ticker": "CAR",
       "name": "CAR",
       "price": 24.5,
-      "opp": 48,
+      "opp": 47,
       "edge": "WATCH",
       "quality": 38,
       "valuation": 55,
@@ -7182,13 +7462,42 @@
       "shortInterestPct": 5.7,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": -12,
+          "direction": "NEGATIVE",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "Australia Inflation Rises Yet Again Stoking Rate Hike Pressure - Forbes",
+              "source": "Forbes",
+              "signal": -2
+            },
+            {
+              "title": "Favoured Bond Markets Amid Fed Rate Hikes - BusinessToday Malaysia",
+              "source": "BusinessToday Malaysia",
+              "signal": -2
+            },
+            {
+              "title": "Experts outline ways to sustain interest rate cuts - Vietnam Investment Review - VIR",
+              "source": "Vietnam Investment Review - VIR",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 48,
+      "globalTrendScore": -12,
+      "globalTrendAdjustment": -1,
+      "globalTrendSignal": "BEARISH"
     },
     {
       "ticker": "S32",
       "name": "S32",
       "price": 4.34,
-      "opp": 52,
+      "opp": 53,
       "edge": "UNDER-NOTICED",
       "quality": 44,
       "valuation": 55,
@@ -7424,7 +7733,36 @@
       "shortInterestPct": 1.48,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 17,
+          "direction": "POSITIVE",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Copper Falls Toward $6.5 on Tech Earnings Selloff and Fed Rate Fears - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": -2
+            },
+            {
+              "title": "Copper slips 5% from record as Comex stocks hit 800,000 t; Freeport earnings hinge on AI demand - Shanghai Metals Market",
+              "source": "Shanghai Metals Market",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices in 2026: Will Mine Shortages Sustain the AI-Driven Rally? - CarbonCredits.com",
+              "source": "CarbonCredits.com",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 52,
+      "globalTrendScore": 17,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "SEK",
@@ -7640,7 +7978,12 @@
       "shortInterestPct": 1.14,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 50
     },
     {
       "ticker": "AIA",
@@ -7860,7 +8203,12 @@
       "shortInterestPct": 1.15,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 50
     },
     {
       "ticker": "GMG",
@@ -8048,7 +8396,12 @@
       "shortInterestPct": 1.55,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 49
     },
     {
       "ticker": "SHL",
@@ -8275,13 +8628,18 @@
       "shortInterestPct": 1.25,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 49
     },
     {
       "ticker": "XRO",
       "name": "XRO",
       "price": 62.1,
-      "opp": 44,
+      "opp": 43,
       "edge": "WATCH",
       "quality": 20,
       "valuation": 45,
@@ -8455,13 +8813,42 @@
       "shortInterestPct": 6.22,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "RATE EASING",
+          "score": -12,
+          "direction": "NEGATIVE",
+          "weight": 0.3,
+          "headlines": [
+            {
+              "title": "Australia Inflation Rises Yet Again Stoking Rate Hike Pressure - Forbes",
+              "source": "Forbes",
+              "signal": -2
+            },
+            {
+              "title": "Favoured Bond Markets Amid Fed Rate Hikes - BusinessToday Malaysia",
+              "source": "BusinessToday Malaysia",
+              "signal": -2
+            },
+            {
+              "title": "Experts outline ways to sustain interest rate cuts - Vietnam Investment Review - VIR",
+              "source": "Vietnam Investment Review - VIR",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 44,
+      "globalTrendScore": -12,
+      "globalTrendAdjustment": -1,
+      "globalTrendSignal": "BEARISH"
     },
     {
       "ticker": "BHP",
       "name": "BHP",
       "price": 57.56,
-      "opp": 46,
+      "opp": 47,
       "edge": "WATCH",
       "quality": 50,
       "valuation": 50,
@@ -8673,7 +9060,59 @@
       "shortInterestPct": 1.62,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 17,
+          "direction": "POSITIVE",
+          "weight": 0.6,
+          "headlines": [
+            {
+              "title": "Copper Falls Toward $6.5 on Tech Earnings Selloff and Fed Rate Fears - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": -2
+            },
+            {
+              "title": "Copper slips 5% from record as Comex stocks hit 800,000 t; Freeport earnings hinge on AI demand - Shanghai Metals Market",
+              "source": "Shanghai Metals Market",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices in 2026: Will Mine Shortages Sustain the AI-Driven Rally? - CarbonCredits.com",
+              "source": "CarbonCredits.com",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.7,
+          "headlines": [
+            {
+              "title": "Iron Ore Prices Face a Reality Check as China\u2019s Steel Demand Slows - Kalkine",
+              "source": "Kalkine",
+              "signal": 1
+            },
+            {
+              "title": "Australia PPI September Quarter 2026: Final Demand Up 1.1%, 3.6% Annually - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            },
+            {
+              "title": "Iron ore hits 2-year low as concerns over China demand dominate - Business Recorder",
+              "source": "Business Recorder",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 46,
+      "globalTrendScore": 11,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "GOLD",
@@ -8763,13 +9202,42 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "GOLD",
+          "score": -5,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Gold Price Forecast: XAU/USD falls below $4,000 as strong US data strengthen case for Fed rate hike - FXStreet",
+              "source": "FXStreet",
+              "signal": -2
+            },
+            {
+              "title": "Gold Price Forecast: XAU/USD drops as oil price rebounds, Fed\u2019s policy eyed - FXStreet",
+              "source": "FXStreet",
+              "signal": -2
+            },
+            {
+              "title": "Gold prices could fall to $3,900, silver to $50 as Fed tightening pressures precious metals \u2013 Sucden Financial - Kitco",
+              "source": "Kitco",
+              "signal": -1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 46,
+      "globalTrendScore": -5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "RIO",
       "name": "RIO",
       "price": 147.31,
-      "opp": 36,
+      "opp": 37,
       "edge": "WATCH",
       "quality": 51,
       "valuation": 57,
@@ -9010,13 +9478,65 @@
       "shortInterestPct": 8.73,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "COPPER",
+          "score": 17,
+          "direction": "POSITIVE",
+          "weight": 0.4,
+          "headlines": [
+            {
+              "title": "Copper Falls Toward $6.5 on Tech Earnings Selloff and Fed Rate Fears - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": -2
+            },
+            {
+              "title": "Copper slips 5% from record as Comex stocks hit 800,000 t; Freeport earnings hinge on AI demand - Shanghai Metals Market",
+              "source": "Shanghai Metals Market",
+              "signal": 2
+            },
+            {
+              "title": "Copper Prices in 2026: Will Mine Shortages Sustain the AI-Driven Rally? - CarbonCredits.com",
+              "source": "CarbonCredits.com",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.85,
+          "headlines": [
+            {
+              "title": "Iron Ore Prices Face a Reality Check as China\u2019s Steel Demand Slows - Kalkine",
+              "source": "Kalkine",
+              "signal": 1
+            },
+            {
+              "title": "Australia PPI September Quarter 2026: Final Demand Up 1.1%, 3.6% Annually - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            },
+            {
+              "title": "Iron ore hits 2-year low as concerns over China demand dominate - Business Recorder",
+              "source": "Business Recorder",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 36,
+      "globalTrendScore": 9,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "LYC",
       "name": "LYC",
       "price": 12.1,
-      "opp": 32,
+      "opp": 33,
       "edge": "WATCH",
       "quality": 19,
       "valuation": 59,
@@ -9160,7 +9680,36 @@
       "shortInterestPct": 12.7,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "RARE EARTHS",
+          "score": 11,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "The Race for Critical Minerals: Investing in the Supply Chains of Tomorrow - FII Institute",
+              "source": "FII Institute",
+              "signal": 1
+            },
+            {
+              "title": "Lynas posts highest quarterly sales since 2022 - Australian Resources & Investment",
+              "source": "Australian Resources & Investment",
+              "signal": 1
+            },
+            {
+              "title": "EU weighs mirroring Donald Trump in securing critical minerals - Financial Times",
+              "source": "Financial Times",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 32,
+      "globalTrendScore": 11,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "ALD",
@@ -9302,7 +9851,12 @@
       "shortInterestPct": 2.62,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 43
     },
     {
       "ticker": "NEC",
@@ -9444,7 +9998,12 @@
       "shortInterestPct": 5.38,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 39
     },
     {
       "ticker": "FMG",
@@ -9595,7 +10154,36 @@
       "shortInterestPct": 3.4,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Iron Ore Prices Face a Reality Check as China\u2019s Steel Demand Slows - Kalkine",
+              "source": "Kalkine",
+              "signal": 1
+            },
+            {
+              "title": "Australia PPI September Quarter 2026: Final Demand Up 1.1%, 3.6% Annually - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            },
+            {
+              "title": "Iron ore hits 2-year low as concerns over China demand dominate - Business Recorder",
+              "source": "Business Recorder",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 42,
+      "globalTrendScore": 5,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "ZIP",
@@ -9809,13 +10397,18 @@
       "shortInterestPct": 15.67,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 30
     },
     {
       "ticker": "MIN",
       "name": "MIN",
       "price": 44.09,
-      "opp": 34,
+      "opp": 35,
       "edge": "WATCH",
       "quality": 23,
       "valuation": 63,
@@ -10043,13 +10636,65 @@
       "shortInterestPct": 5.09,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "ELEVATED / BEARISH",
-      "shortAdjustment": -4
+      "shortAdjustment": -4,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "Samsung SDI swings to profit in Q3 on ESS battery demand - The Korea Times",
+              "source": "The Korea Times",
+              "signal": 2
+            },
+            {
+              "title": "Chinese battery storage makers seen gaining from Middle East demand - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            },
+            {
+              "title": "Lithium Needs $100 Billion and 134 New Mines to Meet 2050 Demand and Power the EV Boom - CarbonCredits.com",
+              "source": "CarbonCredits.com",
+              "signal": 1
+            }
+          ]
+        },
+        {
+          "theme": "CHINA / IRON ORE",
+          "score": 5,
+          "direction": "NEUTRAL",
+          "weight": 0.55,
+          "headlines": [
+            {
+              "title": "Iron Ore Prices Face a Reality Check as China\u2019s Steel Demand Slows - Kalkine",
+              "source": "Kalkine",
+              "signal": 1
+            },
+            {
+              "title": "Australia PPI September Quarter 2026: Final Demand Up 1.1%, 3.6% Annually - News and Statistics - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            },
+            {
+              "title": "Iron ore hits 2-year low as concerns over China demand dominate - Business Recorder",
+              "source": "Business Recorder",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 34,
+      "globalTrendScore": 8,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "MP1",
       "name": "MP1",
       "price": 17.61,
-      "opp": 38,
+      "opp": 40,
       "edge": "WATCH",
       "quality": 14,
       "valuation": 55,
@@ -10198,7 +10843,59 @@
       "shortInterestPct": 3.81,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 32,
+          "direction": "POSITIVE",
+          "weight": 0.75,
+          "headlines": [
+            {
+              "title": "Westcon-Comstor posts record US$3.37B first-half sales as APAC demand for AI, cloud and cyber accelerates - ARNnet",
+              "source": "ARNnet",
+              "signal": 3
+            },
+            {
+              "title": "AI accelerates data centre demand in next phase of growth: CBRE - realestatesource",
+              "source": "realestatesource",
+              "signal": 3
+            },
+            {
+              "title": "Stream Mission Critical Expands Stream Hyperscale Warehousing as AI Data Center Buildout Drives Demand for Coordinated Infrastructure Logistics - markets.businessinsider.com",
+              "source": "markets.businessinsider.com",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": -12,
+          "direction": "NEGATIVE",
+          "weight": 0.25,
+          "headlines": [
+            {
+              "title": "Australia Inflation Rises Yet Again Stoking Rate Hike Pressure - Forbes",
+              "source": "Forbes",
+              "signal": -2
+            },
+            {
+              "title": "Favoured Bond Markets Amid Fed Rate Hikes - BusinessToday Malaysia",
+              "source": "BusinessToday Malaysia",
+              "signal": -2
+            },
+            {
+              "title": "Experts outline ways to sustain interest rate cuts - Vietnam Investment Review - VIR",
+              "source": "Vietnam Investment Review - VIR",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 38,
+      "globalTrendScore": 21,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "ETPMAG",
@@ -10288,7 +10985,12 @@
       "shortInterestPct": null,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "N/A",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 38
     },
     {
       "ticker": "BRN",
@@ -10428,13 +11130,18 @@
       "shortInterestPct": 1.48,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [],
+      "globalTrendScore": 0,
+      "globalTrendAdjustment": 0,
+      "globalTrendSignal": "NEUTRAL",
+      "oppPreTrend": 34
     },
     {
       "ticker": "NXT",
       "name": "NXT",
       "price": 5.87,
-      "opp": 21,
+      "opp": 22,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 22,
@@ -10617,13 +11324,65 @@
       "shortInterestPct": 9.15,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 32,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Westcon-Comstor posts record US$3.37B first-half sales as APAC demand for AI, cloud and cyber accelerates - ARNnet",
+              "source": "ARNnet",
+              "signal": 3
+            },
+            {
+              "title": "AI accelerates data centre demand in next phase of growth: CBRE - realestatesource",
+              "source": "realestatesource",
+              "signal": 3
+            },
+            {
+              "title": "Stream Mission Critical Expands Stream Hyperscale Warehousing as AI Data Center Buildout Drives Demand for Coordinated Infrastructure Logistics - markets.businessinsider.com",
+              "source": "markets.businessinsider.com",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "RATE EASING",
+          "score": -12,
+          "direction": "NEGATIVE",
+          "weight": 0.45,
+          "headlines": [
+            {
+              "title": "Australia Inflation Rises Yet Again Stoking Rate Hike Pressure - Forbes",
+              "source": "Forbes",
+              "signal": -2
+            },
+            {
+              "title": "Favoured Bond Markets Amid Fed Rate Hikes - BusinessToday Malaysia",
+              "source": "BusinessToday Malaysia",
+              "signal": -2
+            },
+            {
+              "title": "Experts outline ways to sustain interest rate cuts - Vietnam Investment Review - VIR",
+              "source": "Vietnam Investment Review - VIR",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 21,
+      "globalTrendScore": 18,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "PLS",
       "name": "PLS",
       "price": 2.64,
-      "opp": 17,
+      "opp": 18,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 64,
@@ -10818,13 +11577,42 @@
       "shortInterestPct": 15.37,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Samsung SDI swings to profit in Q3 on ESS battery demand - The Korea Times",
+              "source": "The Korea Times",
+              "signal": 2
+            },
+            {
+              "title": "Chinese battery storage makers seen gaining from Middle East demand - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            },
+            {
+              "title": "Lithium Needs $100 Billion and 134 New Mines to Meet 2050 Demand and Power the EV Boom - CarbonCredits.com",
+              "source": "CarbonCredits.com",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 17,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "LTR",
       "name": "LTR",
       "price": 0.62,
-      "opp": 21,
+      "opp": 22,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 72,
@@ -10994,13 +11782,42 @@
       "shortInterestPct": 9.03,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "HIGH / BEARISH",
-      "shortAdjustment": -8
+      "shortAdjustment": -8,
+      "globalThemes": [
+        {
+          "theme": "LITHIUM",
+          "score": 10,
+          "direction": "NEUTRAL",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Samsung SDI swings to profit in Q3 on ESS battery demand - The Korea Times",
+              "source": "The Korea Times",
+              "signal": 2
+            },
+            {
+              "title": "Chinese battery storage makers seen gaining from Middle East demand - IndexBox",
+              "source": "IndexBox",
+              "signal": 1
+            },
+            {
+              "title": "Lithium Needs $100 Billion and 134 New Mines to Meet 2050 Demand and Power the EV Boom - CarbonCredits.com",
+              "source": "CarbonCredits.com",
+              "signal": 1
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 21,
+      "globalTrendScore": 10,
+      "globalTrendAdjustment": 1,
+      "globalTrendSignal": "NEUTRAL"
     },
     {
       "ticker": "DRO",
       "name": "DRO",
       "price": 1.37,
-      "opp": 17,
+      "opp": 19,
       "edge": "WATCH",
       "quality": 16,
       "valuation": 12,
@@ -11200,13 +12017,65 @@
       "shortInterestPct": 16.13,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "VERY HIGH / BEARISH",
-      "shortAdjustment": -12
+      "shortAdjustment": -12,
+      "globalThemes": [
+        {
+          "theme": "DEFENCE",
+          "score": 27,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "UK budget sets 2030 defence spending target and expands investment in military technologies - Digital Watch Observatory",
+              "source": "Digital Watch Observatory",
+              "signal": 3
+            },
+            {
+              "title": "Autumn Budget 2026: Defence funding and investment - Mishcon de Reya LLP",
+              "source": "Mishcon de Reya LLP",
+              "signal": 2
+            },
+            {
+              "title": "UK suppliers risk missing out on extra defence spending unless Government speeds up procurement, businesses warn - WebWire",
+              "source": "WebWire",
+              "signal": 2
+            }
+          ]
+        },
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 32,
+          "direction": "POSITIVE",
+          "weight": 0.2,
+          "headlines": [
+            {
+              "title": "Westcon-Comstor posts record US$3.37B first-half sales as APAC demand for AI, cloud and cyber accelerates - ARNnet",
+              "source": "ARNnet",
+              "signal": 3
+            },
+            {
+              "title": "AI accelerates data centre demand in next phase of growth: CBRE - realestatesource",
+              "source": "realestatesource",
+              "signal": 3
+            },
+            {
+              "title": "Stream Mission Critical Expands Stream Hyperscale Warehousing as AI Data Center Buildout Drives Demand for Coordinated Infrastructure Logistics - markets.businessinsider.com",
+              "source": "markets.businessinsider.com",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 17,
+      "globalTrendScore": 28,
+      "globalTrendAdjustment": 2,
+      "globalTrendSignal": "BULLISH"
     },
     {
       "ticker": "WBT",
       "name": "WBT",
       "price": 2.37,
-      "opp": 25,
+      "opp": 28,
       "edge": "WATCH",
       "quality": 0,
       "valuation": 56,
@@ -11439,7 +12308,36 @@
       "shortInterestPct": 3.75,
       "shortInterestDate": "2026-10-26",
       "shortSignal": "NORMAL",
-      "shortAdjustment": 0
+      "shortAdjustment": 0,
+      "globalThemes": [
+        {
+          "theme": "AI / DATA CENTRES",
+          "score": 32,
+          "direction": "POSITIVE",
+          "weight": 1.0,
+          "headlines": [
+            {
+              "title": "Westcon-Comstor posts record US$3.37B first-half sales as APAC demand for AI, cloud and cyber accelerates - ARNnet",
+              "source": "ARNnet",
+              "signal": 3
+            },
+            {
+              "title": "AI accelerates data centre demand in next phase of growth: CBRE - realestatesource",
+              "source": "realestatesource",
+              "signal": 3
+            },
+            {
+              "title": "Stream Mission Critical Expands Stream Hyperscale Warehousing as AI Data Center Buildout Drives Demand for Coordinated Infrastructure Logistics - markets.businessinsider.com",
+              "source": "markets.businessinsider.com",
+              "signal": 2
+            }
+          ]
+        }
+      ],
+      "oppPreTrend": 25,
+      "globalTrendScore": 32,
+      "globalTrendAdjustment": 3,
+      "globalTrendSignal": "BULLISH"
     }
   ],
   "fundamentalsUpdated": "2026-10-30T14:06:47.465323+00:00",
@@ -11447,5 +12345,329 @@
   "shortInterestSource": "ASIC daily aggregated short positions",
   "shortInterestReportDate": "2026-10-26",
   "shortInterestReportUrl": "https://download.asic.gov.au/short-selling/RR20261026-001-SSDailyAggShortPos.pdf",
-  "shortInterestMatched": 54
+  "shortInterestMatched": 54,
+  "globalTrendUpdated": "2026-10-30T14:31:34.431669+00:00",
+  "globalTrendSource": "Google News RSS world-news headlines, weighted toward major news sources",
+  "globalTrendThemes": [
+    {
+      "name": "AI / DATA CENTRES",
+      "score": 32,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Westcon-Comstor posts record US$3.37B first-half sales as APAC demand for AI, cloud and cyber accelerates - ARNnet",
+          "source": "ARNnet",
+          "signal": 3
+        },
+        {
+          "title": "AI accelerates data centre demand in next phase of growth: CBRE - realestatesource",
+          "source": "realestatesource",
+          "signal": 3
+        },
+        {
+          "title": "Stream Mission Critical Expands Stream Hyperscale Warehousing as AI Data Center Buildout Drives Demand for Coordinated Infrastructure Logistics - markets.businessinsider.com",
+          "source": "markets.businessinsider.com",
+          "signal": 2
+        },
+        {
+          "title": "Data centre confusion risks investment pipeline, operators warn - AFR",
+          "source": "AFR",
+          "signal": 1
+        },
+        {
+          "title": "Melbourne overtakes Sydney in Australia data centre boom - DataCenterNews Asia Pacific",
+          "source": "DataCenterNews Asia Pacific",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "DEFENCE",
+      "score": 27,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "UK budget sets 2030 defence spending target and expands investment in military technologies - Digital Watch Observatory",
+          "source": "Digital Watch Observatory",
+          "signal": 3
+        },
+        {
+          "title": "Autumn Budget 2026: Defence funding and investment - Mishcon de Reya LLP",
+          "source": "Mishcon de Reya LLP",
+          "signal": 2
+        },
+        {
+          "title": "UK suppliers risk missing out on extra defence spending unless Government speeds up procurement, businesses warn - WebWire",
+          "source": "WebWire",
+          "signal": 2
+        },
+        {
+          "title": "Did arms firms help shape MoD spending rules while Palantir secured \u00a3240m contract? - Action on Armed Violence - AOAV",
+          "source": "Action on Armed Violence - AOAV",
+          "signal": 2
+        },
+        {
+          "title": "UK Government Launches Defence Finance Taskforce with \u00a315bn Investment Commitment - FF News",
+          "source": "FF News",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "GOLD",
+      "score": -5,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Gold Price Forecast: XAU/USD falls below $4,000 as strong US data strengthen case for Fed rate hike - FXStreet",
+          "source": "FXStreet",
+          "signal": -2
+        },
+        {
+          "title": "Gold Price Forecast: XAU/USD drops as oil price rebounds, Fed\u2019s policy eyed - FXStreet",
+          "source": "FXStreet",
+          "signal": -2
+        },
+        {
+          "title": "Gold prices could fall to $3,900, silver to $50 as Fed tightening pressures precious metals \u2013 Sucden Financial - Kitco",
+          "source": "Kitco",
+          "signal": -1
+        },
+        {
+          "title": "Gold Price - XAU/USD Q4 2026: Can the Support Drive a Recovery? for OANDA:XAUUSD by tohaitrieu - TradingView",
+          "source": "TradingView",
+          "signal": 1
+        },
+        {
+          "title": "$4,070 area: Gold price forecast as XAU/USD rebound stalls below former support - www.tmgm.com",
+          "source": "www.tmgm.com",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "OIL / ENERGY",
+      "score": 9,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Oil rises as reports of possible US strikes on Iran raise supply concerns - Anadolu Ajans\u0131",
+          "source": "Anadolu Ajans\u0131",
+          "signal": 2
+        },
+        {
+          "title": "Crude Oil Price Forecast \u2013 Oil Continues to Grind Higher - FXEmpire",
+          "source": "FXEmpire",
+          "signal": 1
+        },
+        {
+          "title": "What's Next for Global Natural Gas Demand - Crude Oil Prices Today | OilPrice.com",
+          "source": "Crude Oil Prices Today | OilPrice.com",
+          "signal": 1
+        },
+        {
+          "title": "Sinopec's Q3 Profits Soar on Higher Oil Prices - Rigzone",
+          "source": "Rigzone",
+          "signal": 1
+        },
+        {
+          "title": "Oil prices surge towards $120 as Trump weighs fresh Iran strikes: what's next? - TradingView",
+          "source": "TradingView",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "URANIUM",
+      "score": 22,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Nuclear Expansion Strengthens Long-term Outlook For Uranium Demand - DirectorsTalk Interviews",
+          "source": "DirectorsTalk Interviews",
+          "signal": 2
+        },
+        {
+          "title": "Google and Amazon agreements highlight growing hyperscaler nuclear demand amid already-tight uranium market - Benchmark Mineral Intelligence",
+          "source": "Benchmark Mineral Intelligence",
+          "signal": 1
+        },
+        {
+          "title": "Uranium poised for long-term structural deficit as AI boom spurs unprecedented nuclear demand - Mining Weekly",
+          "source": "Mining Weekly",
+          "signal": 1
+        },
+        {
+          "title": "Uranium Selloff Overlooks Producers Despite Record Contract Prices - Crux Investor",
+          "source": "Crux Investor",
+          "signal": 1
+        },
+        {
+          "title": "Can Nuclear Energy Attract $6 Trillion in Investment by 2050? WNA Sees Massive Opportunity - CarbonCredits.com",
+          "source": "CarbonCredits.com",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "COPPER",
+      "score": 17,
+      "direction": "POSITIVE",
+      "headlines": [
+        {
+          "title": "Copper Falls Toward $6.5 on Tech Earnings Selloff and Fed Rate Fears - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "signal": -2
+        },
+        {
+          "title": "Copper slips 5% from record as Comex stocks hit 800,000 t; Freeport earnings hinge on AI demand - Shanghai Metals Market",
+          "source": "Shanghai Metals Market",
+          "signal": 2
+        },
+        {
+          "title": "Copper Prices in 2026: Will Mine Shortages Sustain the AI-Driven Rally? - CarbonCredits.com",
+          "source": "CarbonCredits.com",
+          "signal": 2
+        },
+        {
+          "title": "China copper premium hits record as supply tightens in world\u2019s top consumer - Mining.com.au",
+          "source": "Mining.com.au",
+          "signal": 1
+        },
+        {
+          "title": "Copper Market Struggles with Tax Changes and Supply Shortages in October 2026 - Shanghai Metals Market",
+          "source": "Shanghai Metals Market",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "LITHIUM",
+      "score": 10,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Samsung SDI swings to profit in Q3 on ESS battery demand - The Korea Times",
+          "source": "The Korea Times",
+          "signal": 2
+        },
+        {
+          "title": "Chinese battery storage makers seen gaining from Middle East demand - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        },
+        {
+          "title": "Lithium Needs $100 Billion and 134 New Mines to Meet 2050 Demand and Power the EV Boom - CarbonCredits.com",
+          "source": "CarbonCredits.com",
+          "signal": 1
+        },
+        {
+          "title": "Why Did Surge Battery Metals (TSXV:NILI) Fall 3.077% on October 26, 2026? - kalkine.ca",
+          "source": "kalkine.ca",
+          "signal": -1
+        },
+        {
+          "title": "Lithium futures jump 11% in China as AI data center demand collides with EV market - Startup Fortune",
+          "source": "Startup Fortune",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "CHINA / IRON ORE",
+      "score": 5,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "Iron Ore Prices Face a Reality Check as China\u2019s Steel Demand Slows - Kalkine",
+          "source": "Kalkine",
+          "signal": 1
+        },
+        {
+          "title": "Australia PPI September Quarter 2026: Final Demand Up 1.1%, 3.6% Annually - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        },
+        {
+          "title": "Iron ore hits 2-year low as concerns over China demand dominate - Business Recorder",
+          "source": "Business Recorder",
+          "signal": 1
+        },
+        {
+          "title": "Vale (NYSE:VALE) Lowers Forquilha Dam Alert Ahead Of Quarterly Report - Kalkine Media",
+          "source": "Kalkine Media",
+          "signal": -1
+        },
+        {
+          "title": "China\u2019s huge mining move 11,000km away sparks grave fears for Australia - Yahoo News Australia",
+          "source": "Yahoo News Australia",
+          "signal": 0
+        }
+      ]
+    },
+    {
+      "name": "RARE EARTHS",
+      "score": 11,
+      "direction": "NEUTRAL",
+      "headlines": [
+        {
+          "title": "The Race for Critical Minerals: Investing in the Supply Chains of Tomorrow - FII Institute",
+          "source": "FII Institute",
+          "signal": 1
+        },
+        {
+          "title": "Lynas posts highest quarterly sales since 2022 - Australian Resources & Investment",
+          "source": "Australian Resources & Investment",
+          "signal": 1
+        },
+        {
+          "title": "EU weighs mirroring Donald Trump in securing critical minerals - Financial Times",
+          "source": "Financial Times",
+          "signal": 1
+        },
+        {
+          "title": "Op-Ed: Boosting Western supply of refined critical metals means de-risking investment. But how? - Mining.com",
+          "source": "Mining.com",
+          "signal": 1
+        },
+        {
+          "title": "Financiers at IMARC: Governments Should Back Infrastructure, Not Pick Critical Minerals Projects - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "signal": 1
+        }
+      ]
+    },
+    {
+      "name": "RATE EASING",
+      "score": -12,
+      "direction": "NEGATIVE",
+      "headlines": [
+        {
+          "title": "Australia Inflation Rises Yet Again Stoking Rate Hike Pressure - Forbes",
+          "source": "Forbes",
+          "signal": -2
+        },
+        {
+          "title": "Favoured Bond Markets Amid Fed Rate Hikes - BusinessToday Malaysia",
+          "source": "BusinessToday Malaysia",
+          "signal": -2
+        },
+        {
+          "title": "Experts outline ways to sustain interest rate cuts - Vietnam Investment Review - VIR",
+          "source": "Vietnam Investment Review - VIR",
+          "signal": 2
+        },
+        {
+          "title": "US central bank keeps interest rates unchanged as it waits for clearer signs of easing inflation - The News Pakistan",
+          "source": "The News Pakistan",
+          "signal": 1
+        },
+        {
+          "title": "BoE to kick off short and precautionary tightening cycle in November - Financial Times",
+          "source": "Financial Times",
+          "signal": -1
+        }
+      ]
+    }
+  ]
 }
