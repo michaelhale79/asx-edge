@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-02T17:09:40.205074+00:00",
-  "coverage": 45,
+  "updated": "2026-11-03T15:13:00.106685+00:00",
+  "coverage": 46,
   "method": "Reads selected recent ASX announcement PDFs for leading candidates and core holdings. Detects guidance, capital raising/dilution, debt/liquidity, cash burn, capex, customer concentration, contracts and execution evidence, plus sector-specific disclosure snippets. Evidence is heuristic and retained with source document metadata for auditability.",
   "companies": [
     {
@@ -79,7 +79,7 @@
       ],
       "announcementsReviewed": 67,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:02:41.161595+00:00"
+      "analysedAt": "2026-11-03T15:05:48.488255+00:00"
     },
     {
       "ticker": "BXB",
@@ -148,7 +148,7 @@
       ],
       "announcementsReviewed": 197,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:02:47.723154+00:00"
+      "analysedAt": "2026-11-03T15:05:55.645095+00:00"
     },
     {
       "ticker": "TLS",
@@ -230,576 +230,7 @@
       ],
       "announcementsReviewed": 80,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:02:58.517079+00:00"
-    },
-    {
-      "ticker": "TWE",
-      "status": "OK",
-      "evidenceScore": 46,
-      "evidenceRisk": 35,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
-        }
-      ],
-      "evidenceSummary": "Risks: Options, performance rights or convertibles may add future dilution.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [
-          "lculating the required majority on a poll. 3 Adoption of the Remuneration Report Ordinary 10,661,258 1.86% 4 Grant of F27 Long Term Incentive Plan Performance Rights to the Chief Executive Officer and Managing Director Ordinary 5,597,354 0.98% 1/1 For personal use only DOCUMENT 2026-08-13 2026 Annual Results"
-        ],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-13",
-          "headline": "TWE 2026 Annual Report 199 pages 18.6MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124706",
-          "textChars": 14408
-        },
-        {
-          "date": "2026-10-15",
-          "headline": "TWE 2026 AGM Voting Results 2 pages 262.9KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03152848",
-          "textChars": 3012
-        },
-        {
-          "date": "2026-08-13",
-          "headline": "2026 Annual Results Investor and Analyst Presentation 33 pages 3.1MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124711",
-          "textChars": 10138
-        }
-      ],
-      "announcementsReviewed": 47,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:03:08.278414+00:00"
-    },
-    {
-      "ticker": "PME",
-      "status": "OK",
-      "evidenceScore": 62,
-      "evidenceRisk": 35,
-      "managementDeliveryScore": 58,
-      "evidencePositives": [
-        "Recent disclosures contain contract/customer win evidence.",
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Recent disclosures show delivery/commissioning milestones being achieved. Risks: Options, performance rights or convertibles may add future dilution.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [
-          "vanced our AI strategy further, entering a Heads of Agreement, with Sydney based AI cardiology company EchoIQ committing an initial A$10 million via convertible notes (with an option for a further A$10 million upon FDA clearance of EchoSolv HF). The Master Agreement for the convertible note was signed on 14 Augu",
-          "tial A$10 million via convertible notes (with an option for a further A$10 million upon FDA clearance of EchoSolv HF). The Master Agreement for the convertible note was signed on 14 August 2026. The Heads of Agreement also envisages that the company will become a reseller of the EchoSolv suite. This is in line w"
-        ],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [
-          "plus cardiology announced in July 2025 and a 7-year A$90 million contract with Beth Israel Lahey Health announced in May 2026, with a further seven new contract wins across multiple market segments in North America. The company also successfully renewed six client contracts, each for a full 5-year term maint"
-        ],
-        "contract_loss": [],
-        "execution_positive": [
-          "urope, 9 US contracts signed worth total of $407m \u2022 Renewals \u2013 Renewed 6 out of 6 contracts on long term, 5-year extensions \u2022 Implementations \u2013 On or ahead of schedule \u2022 Cardiology \u2013 gaining traction UC Health Colorado, Vancouver Clinic & Others \u2022 New Products \u2013 Digital pathology and AI optimized Reporting module \u2022"
-        ],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "to $273.5m, an increase of 28.4% (refer to financial outcomes Page 19 for details of constant currency). \u2022 Minimum contracted revenue over the next 5 years increased to $1.3b, +41%. \u2022 Net cash inflows from operating activities for the curre"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-18",
-          "headline": "Annual Report FY26 98 pages 2.4MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126343",
-          "textChars": 28547
-        },
-        {
-          "date": "2026-08-18",
-          "headline": "PME FY26 results presentation 67 pages 5.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126318",
-          "textChars": 4744
-        },
-        {
-          "date": "2026-08-18",
-          "headline": "CEO Interview FY26 Results 6 pages 313.2KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126309",
-          "textChars": 12679
-        }
-      ],
-      "announcementsReviewed": 30,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:03:18.062715+00:00"
-    },
-    {
-      "ticker": "ORG",
-      "status": "OK",
-      "evidenceScore": 38,
-      "evidenceRisk": 44,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "HIGH",
-          "text": "Recent disclosures indicate rising project/capital costs."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent disclosures indicate rising project/capital costs.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "egrated Gas Energy Markets Capital Expenditure Data Tables Conversion & abbreviation Analyst notes Directory QUARTERLY REPORT SEPTEMBER 2026 APLNG capital expenditure Quarterly APLNG1 capex (APLNG 100%) 278278278 236236236 226226 228228 5151 88 Sustain and Other Exploration and Appraisal Jun-26 QTR Sep-26 QTR (1) A",
-          "of the battery portfolio. Australia Pacific LNG production is estimated at 625\u2013670 PJ (APLNG 100 per cent), reflecting natural field decline. Total capital expenditure and operating expenditure is expected to be $3.0\u2013$3.3 billion with increased drilling activity planned to partially offset natural field decline in",
-          ") Energy Markets Electricity sales TWh 9.5 9.4 1% 9.2 3% 9.5 9.2 3% Natural gas sales PJ 48.1 39.2 22% 51.9 (7%) 48.1 51.9 (7%) Origin consolidated Capex $m 152 226 (33%) 199 (23%) 152 199 (23%) Investments $m 210 8 n/m (0) n/m 210 (0) n/m For further information: MEDIA INVESTORS Anneliis Allen Liam Ba"
-        ],
-        "capex_overrun": [
-          "28228 3636 88 Sustain and Other Exploration and Appraisal FYTD-26 (Sep-25 QTR) FYTD-27 (Sep-26 QTR) (1) APLNG capex is reported on an accrual basis \u2022 Capex in FYTD-27 increased by $17 million driven by higher well delivery activity, partially offset by lower exploration spend and timing of non-operated development. For per"
-        ],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "et by a change in sales mix with lower LNG spot sales. \u2013 Domestic revenue up 14% primarily driven by higher short-term contract volumes. FYTD-26 vs FYTD-27 (APLNG 100%) ($m) 2,1242,1242,124 2,6012,6012,601 372372 (166)(166) (29)(29) 177177 1,7521,"
-        },
-        {
-          "metric": "capex",
-          "evidence": "sales TWh 9.5 9.4 1% 9.2 3% 9.5 9.2 3% Natural gas sales PJ 48.1 39.2 22% 51.9 (7%) 48.1 51.9 (7%) Origin consolidated Capex $m 152 226 (33%) 199 (23%) 152 199 (23%) Investments $m 210 8 n/m (0) n/m 210 (0) n/m For further information: MEDIA IN"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-10-30",
-          "headline": "September 2026 Quarterly Report 28 pages 1.8MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159707",
-          "textChars": 10138
-        },
-        {
-          "date": "2026-10-14",
-          "headline": "2026 Annual General Meeting - Results of Meeting 2 pages 156.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03152251",
-          "textChars": 1867
-        },
-        {
-          "date": "2026-08-13",
-          "headline": "Full Year Results 2026 5 pages 280.1KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124676",
-          "textChars": 9580
-        }
-      ],
-      "announcementsReviewed": 30,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:03:27.356893+00:00"
-    },
-    {
-      "ticker": "IAG",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 36,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Customer-concentration language appears in recent disclosures; dependency should be checked."
-        }
-      ],
-      "evidenceSummary": "Risks: Customer-concentration language appears in recent disclosures; dependency should be checked.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [
-          "d members. Our enterprise technology investments will help ensure we remain relevant and competitive in the world of agentic search. We serve all major customer groups: members, individuals and families, rural and regional customers, and small and commercial businesses in our target segments. And we reach"
-        ],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-13",
-          "headline": "IAG FY26 Appendix 4E and Annual Report 206 pages 16.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124614",
-          "textChars": 33879
-        },
-        {
-          "date": "2026-10-22",
-          "headline": "2026 IAG AGM Voting Results 2 pages 860.5KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155786",
-          "textChars": 3591
-        },
-        {
-          "date": "2026-08-13",
-          "headline": "IAG FY26 Results Presentation 40 pages 1.8MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124617",
-          "textChars": 12383
-        }
-      ],
-      "announcementsReviewed": 40,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:03:36.323197+00:00"
-    },
-    {
-      "ticker": "DTL",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 40,
-      "evidencePositives": [
-        "Recent disclosures contain contract/customer win evidence."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [
-          "ata and Transformation and Governance. Managed Services continued to perform well, with growth of more than 9% supported by solid renewal rates and new contract wins, while Maintenance Services delivered a strong second half, supported by Cisco EA renewals, to achieve full-year growth of more than 11%. Thi"
-        ],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": [
-          "ionary pressures, geopolitical uncertainty and higher hardware prices related to global memory shortages. These conditions caused some customers to delay decisions and reconsider discretionary technology spend, which affected parts of the Services business. Pleasingly, demand remained resilient for",
-          "ts and margin pressure from a more competitive market. Renewal performance and activity levels remained strong, but conversions were constrained by delayed customer decisions, cash rate pressure and a tight market for specialist candidates. Maintenance Services delivered another solid result, with sales"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "cy (\u201cDTA\u201d) as the sole panel provider of Microsoft products and services to the Australian Government. This five-year contract, the largest in Data#3\u2019s history, reinforces the Company\u2019s long-standing public sector credentials and provides a sig"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-09-17",
-          "headline": "2026 Annual Report 60 pages 5.9MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03140567",
-          "textChars": 39807
-        },
-        {
-          "date": "2026-10-28",
-          "headline": "Results of Meeting 2 pages 189.5KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158504",
-          "textChars": 599
-        },
-        {
-          "date": "2026-08-24",
-          "headline": "DTL FY26 Results Briefing 44 pages 3.7MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128831",
-          "textChars": 4622
-        }
-      ],
-      "announcementsReviewed": 18,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:03:45.483280+00:00"
-    },
-    {
-      "ticker": "ALL",
-      "status": "OK",
-      "evidenceScore": 34,
-      "evidenceRisk": 49,
-      "managementDeliveryScore": 40,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        },
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "$202 million, down from $231 million in the prior corresponding period, reflected continued investment in the installed base aligned with net unit placements of ~2,000 units in this period compared to ~2,500 units in the prior corresponding period. Reconciliation of statutory profit to normalised NPATA",
-          "on Total number of +securities on issue ALL : ORDINARY FULLY PAID 592,348,586 3.2 Unquoted +equity securities (total number of each +class of +equity securities issued but not quoted on ASX) ASX +security code and description Total number of +securities on issue ALLAA : PERFORMANCE SHARE RIGHTS 4,063,878 Note: the f"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "gs mix for the period. Fully funded organic investment continued in the priority areas of Design and Development (D&D), User Acquisition (UA) and Capital Expenditure (Capex), to drive near and longer-term competitiveness, capability and superior returns. D&D investment of $407 million grew by 1%, or 7% on a con",
-          "6) (275.3) 28.2 Interest and tax (419.5) (318.8) (31.6) Other cash and non-cash movements 119.2 118.2 0.8 Operating cash flow 820.1 772.6 6.1 Net capital expenditure (189.2) (230.9) 18.1 Acquisitions and divestments (169.4) 880.8 n/a Investing cash flow (358.6) 649.9 n/a Dividends and cash returned to sharehol",
-          "n provisions. The prior corresponding period reflected the gain on sale of Plarium partially offset by the impairment of the Big Fish assets. Net capital expenditure reflected priority investment to support continued growth in the North America Gaming Operations installed base, net of the proceeds on the sale of"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": [
-          "gration and other related costs from acquisitions (46.8) (39.2) Costs associated with the exit of the White Label business (27.1) (26.1) Changes in deferred tax asset relating to historical Group structure changes - (5.7) Net gain from significant items 131.7 80.1 1 The total Light & Wonder S",
-          "y movements. 1 Net working capital includes current trade and other receivables, inventories, trade and other payables and deferred revenue. 2 Net working capital/revenue from continuing operations % is calculated as Net working capital divided by revenue from continuing operatio"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "strong Outright Sales volumes at the end of financial year 2025. This was partly offset by amortisation of customer contracts within the Group\u2019s 50% joint venture investment in NeoPollard Interactive (NPI JV). Non-current borrowings: The decr"
-        },
-        {
-          "metric": "capex",
-          "evidence": "tment continued in the priority areas of Design and Development (D&D), User Acquisition (UA) and Capital Expenditure (Capex), to drive near and longer-term competitiveness, capability and superior returns. D&D investment of $407 million gre"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-05-13",
-          "headline": "HY26 Results Announcement 35 pages 3.1MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093298",
-          "textChars": 22509
-        },
-        {
-          "date": "2026-05-13",
-          "headline": "HY26 Investor Presentation 32 pages 2.7MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093331",
-          "textChars": 9004
-        },
-        {
-          "date": "2026-10-09",
-          "headline": "Notification of cessation of securities - ALL 4 pages 10.8KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03150703",
-          "textChars": 3213
-        }
-      ],
-      "announcementsReviewed": 82,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:03:54.086385+00:00"
-    },
-    {
-      "ticker": "QBE",
-      "status": "OK",
-      "evidenceScore": 42,
-      "evidenceRisk": 40,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "15% ROAC1 3yr avg \u2022 Diversification drives performance \u2022 Structural shift towards greater facilitisation \u2022 Access to broad market data \u2022 Efficient placement for customer, broker and carrier \u2022 Product shift to lower-volatility proportional reinsurance improves earnings stability \u2022 Increased relevance wi",
-          "an and Bonus Share Plan will operate with no discount applicable to shares allocated under the plans. The Bonus Share Plan will be satisfied by the issue of shares, and the Dividend Reinvestment Plan is anticipated to be satisfied by the on-market purchase of shares. To the extent that the on-market purchase i",
-          "nt that the on-market purchase is not able to be completed for any reason, obligations under the Dividend Reinvestment Plan will be satisfied by the issue of shares. The interim dividend will be 30% franked. The unfranked part of the dividend is declared to be conduit foreign income. The share issue price for th"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-14",
-          "headline": "2026 Half Year Results Presentation 24 pages 1.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125041",
-          "textChars": 12425
-        },
-        {
-          "date": "2026-08-14",
-          "headline": "Market Release 2026 Half Year Results 6 pages 356.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125039",
-          "textChars": 15630
-        },
-        {
-          "date": "2026-08-14",
-          "headline": "2026 Half Year Results and Financial Statements 34 pages 1.3MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125036",
-          "textChars": 45000
-        }
-      ],
-      "announcementsReviewed": 52,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:04:02.883614+00:00"
-    },
-    {
-      "ticker": "CPU",
-      "status": "OK",
-      "evidenceScore": 70,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 70,
-      "evidencePositives": [
-        "Management has raised or beaten guidance in recent disclosures.",
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [],
-      "evidenceSummary": "Positive evidence: Management has raised or beaten guidance in recent disclosures. Recent disclosures show delivery/commissioning milestones being achieved.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [
-          "mployee Share Plans again produced excellent results for shareholders. Management EPS increased by 7% to 145 cents per share, slightly ahead of the guidance upgraded during the year, while Management Revenue increased 3% to $3.2 billion. This was a strong outcome in a changing interest rate environment, reflecti"
-        ],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "is broadly flat at 65%, im pacted by prepayments of certain long-term technology contracts. I expect this to trend to 70% over the coming years. \u2022 Capex fell a little, over $7m down on the PCP. This is more timing related; I expect this to increase to around $65m in FY27 due to planned investments i",
-          "ongoing business lines in FY26 ($18.7m in 1H and $21.5m in 2H). \u2022 Below the line costs down 34% vs. PCP, trending to zero by the end of FY27. \u2022 FY26 capex spend of $39.2m, FY27 expected to be around $65m \u2013 reflects investment in property, AI and technology infrastructure. 60.6 14.1 6.6 - 83.5 81.5"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "e increased 9%, with higher issuance supporting growth in client balances. The business delivered the $80 million Wells Fargo synergy target a year ahead of schedule, helping EBIT excluding Margin Income margins expand to more than 17%. CEO\u2019s report Issuer Services Management Revenue $1,310.6m UP 4.4% Management",
-          "rly impressed by our people\u2019s ability to stay focused and execute despite everything going on around the globe. We delivered acquisition synergies ahead of schedule in Corporate Trust, continued to embrace new technologies and supported many of our clients through a number of complex global transactions. Our P",
-          "larly impressed by the team\u2019s ability to stay focused and execute, despite everything going on around the globe. We delivered acquisition synergies ahead of schedule, continued to embrace new technologies, and supported many of our clients through a number of complex global transactions. That discipline has been"
-        ],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "ement on Slide 11: \u2022 Cash conversion is broadly flat at 65%, im pacted by prepayments of certain long-term technology contracts. I expect this to trend to 70% over the coming years. \u2022 Capex fell a little, over $7m down on the PCP. This is more"
-        },
-        {
-          "metric": "capex",
-          "evidence": "ted by prepayments of certain long-term technology contracts. I expect this to trend to 70% over the coming years. \u2022 Capex fell a little, over $7m down on the PCP. This is more timing related; I expect this to increase to around $65m in FY2"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-09-01",
-          "headline": "Annual Report - FY26 144 pages 3.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03133935",
-          "textChars": 20583
-        },
-        {
-          "date": "2026-08-12",
-          "headline": "FY26 Results - CEO and CFO conference call script 7 pages 132.7KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124433",
-          "textChars": 15062
-        },
-        {
-          "date": "2026-08-11",
-          "headline": "CPU FY26 Results Presentation 52 pages 1.4MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124057",
-          "textChars": 10947
-        }
-      ],
-      "announcementsReviewed": 26,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:04:10.487657+00:00"
+      "analysedAt": "2026-11-03T15:06:06.639454+00:00"
     },
     {
       "ticker": "AMC",
@@ -859,364 +290,7 @@
       ],
       "announcementsReviewed": 29,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:04:21.404609+00:00"
-    },
-    {
-      "ticker": "ASX",
-      "status": "OK",
-      "evidenceScore": 38,
-      "evidenceRisk": 45,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        },
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk. Options, performance rights or convertibles may add future dilution.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "more resilient and modern network foundation for our trading platforms, supporting future enhancements to the cash market trading platform and the replacement of our derivatives trading system. The replacement of our futures clearing system, a key component of our derivatives clearing project, has entered",
-          "trading platforms, supporting future enhancements to the cash market trading platform and the replacement of our derivatives trading system. The replacement of our futures clearing system, a key component of our derivatives clearing project, has entered the testing phase, following the launch of the indu"
-        ],
-        "options_issue": [
-          "2,993,021 397,908 103,751,538 22,843,222 279,402 Carried 79.81% 17.01% 0.46% 2.40% 0.32% 81.96% 18.04% 525 Holders 488 Holders 92 Holders 4 GRANT OF PERFORMANCE RIGHTS TO THE MANAGING DIRECTOR AND CEO NA 119,907,857 1,213,124 566,900 162,144 2,841,899 534,867 125,003,144 1,749,580 162,491 Carried 95.88% 0.97% 0.45%"
-        ],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "$37.1b Total net new capital quoted $2.3t Total cash market value traded 223m Total futures and options on futures contracts traded Strategic report Governance Financial statements Additional 3 1. Based on Segment information presented in Note"
-        },
-        {
-          "metric": "ebitda margin",
-          "evidence": "lower end of the target range. Underlying return on equity improved to 13.7%, up 10 basis points on the pcp. The EBITDA margin decreased 180 basis points to 61.0%, as expense growth exceeded revenue growth. This included the costs associated wit"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-13",
-          "headline": "Appendix 4E and ASX Annual Report 2026 162 pages 11.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124741",
-          "textChars": 17804
-        },
-        {
-          "date": "2026-10-22",
-          "headline": "Results of Annual General Meeting 2 pages 106.1KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155781",
-          "textChars": 3314
-        },
-        {
-          "date": "2026-08-13",
-          "headline": "2026 Full-Year Results Presentation and Speaking Notes 26 pages 2.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124747",
-          "textChars": 12672
-        }
-      ],
-      "announcementsReviewed": 55,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:04:31.243191+00:00"
-    },
-    {
-      "ticker": "RMD",
-      "status": "OK",
-      "evidenceScore": 42,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 40,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": [
-          "bility to execute our strategy due to changes in our industry or the economy generally, the emergence of new or growing competitors, disruptions and delays in the supply chain, the actions or omissions of third parties, including suppliers, customers, competitors and governmental authorities, geopoliti",
-          "nt years, we have developed product innovations to improve patient comfort and compliance. These include more comfortable patient interface systems, delay timers that gradually increase air pressure allowing the patient to fall asleep more easily, bilevel air devices, including our AirCurve 11 Series",
-          ",787 581,829 Operating lease right-of-use assets 196,688 153,167 Goodwill 2,908,232 2,909,575 Other intangible assets, net 442,681 452,737 Deferred income taxes 344,845 329,254 Prepaid taxes and other non-current assets 208,657 214,649 Total non-current assets 4,702,890 4,641,211 Total a"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "ty sleep underpins almost all aspects of human health. The upper airway has no rigid support and is held open by active contraction of upper airway muscles and tracheal traction by the lungs. Normally, during REM sleep and deeper levels of non-REM"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-14",
-          "headline": "Resmed Form 10-K Annual Report 124 pages 1.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125096",
-          "textChars": 44234
-        },
-        {
-          "date": "2026-11-02",
-          "headline": "Resmed Form 10-Q Quarterly Report 46 pages 526.4KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160776",
-          "textChars": 20381
-        },
-        {
-          "date": "2026-10-30",
-          "headline": "Resmed Announces Results for the First Quarter of Fiscal 202 13 pages 609.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159672",
-          "textChars": 28557
-        }
-      ],
-      "announcementsReviewed": 44,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:04:41.347026+00:00"
-    },
-    {
-      "ticker": "STO",
-      "status": "OK",
-      "evidenceScore": 58,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 58,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "flow from operations is defined as operating cash flows less investing cash flows (net of acquisitions and disposal s and growth development project capital expenditure) less lease liability payments 5 2026 Half-year results 2026 First-half financial highlights Strong dividend maintained through a year of transitionF",
-          "eight days, while Darwin LNG delivered 100 per cent plant reliability in the first half. \u201cWith the major development build and peak major project capex for Barossa and Pikka behind us, second-half production is expected to be around 20 to 30 per cent higher than the first hal f, supporting stronger",
-          "and free cash flow from operations (operating cash flows less investing cash flows net of acquisitions and disposals and growth development project capex, less lease liability payments) are non-IFRS measures that are presented to provide an understanding of the performance of Santos\u2019 operations. The n"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "Pikka Phase 1 oil project Santos has commenced continuous production operations at the Pikka Phase 1 oil project on Alaska\u2019s North Slope, with the first production wells now online delivering gross production of approximately 20,000 bbl/day. Santos will commence pressure support through seawater injection over",
-          "ficer Kevin Gallagher said continuous operations at Pikka Phase 1 marked a significant step on the path to plateau production later this year. \"The first production wells are now online and delivering continuous production. We will commence pressure support through seawater injection and bring more wells online"
-        ],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "s, economic and financial market conditions in various countries, approvals, conduct of joint venture participants and contractual counterparties, cost estimates, reputational risk, social licence and stakeholder risk and activism. No represent"
-        },
-        {
-          "metric": "capex",
-          "evidence": "elivered 100 per cent plant reliability in the first half. \u201cWith the major development build and peak major project capex for Barossa and Pikka behind us, second-half production is expected to be around 20 to 30 per cent higher than the fir"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-19",
-          "headline": "Santos 2026 Half-year Results 42 pages 2.9MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126837",
-          "textChars": 15154
-        },
-        {
-          "date": "2026-08-10",
-          "headline": "2026 Half-year results webcast 1 page 130.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03123434",
-          "textChars": 1182
-        },
-        {
-          "date": "2026-06-23",
-          "headline": "Santos commences continuous production operations at Pikka 1 page 155.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03106701",
-          "textChars": 2236
-        }
-      ],
-      "announcementsReviewed": 30,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:04:48.592085+00:00"
-    },
-    {
-      "ticker": "APA",
-      "status": "OK",
-      "evidenceScore": 42,
-      "evidenceRisk": 40,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "r certain non-operating items, less stay-in-business capital expenditure. Stay-in-business capital expenditure comprises operation asset lifecycle replacement costs and technology lifecycle costs. Free Cash Flow per security has been determined using the number of securities entitled to distributions as a",
-          "certain non-operating items, less stay-in-business capital expenditure. Stay-in-business capital expenditure comprises operational asset lifecycle replacement costs and technology lifecycle costs. Underlying earnings before interest, tax, depreciation and amortisation (EBITDA) excludes recurring items aris",
-          "ution. Securities will be allocated to security holders under the DRP for the 2026 final distribution at an amount equal to the allocation price for securities issued pursuant to the DRP, being the 10-day volume weighted average price which commenced 7 trading days after the record date of 30 June 2026. APA Group"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "ee Cash Flow is defined as Operating Cash Flow adjusted for certain non-operating items, less stay-in-business capital expenditure. Stay-in-business capital expenditure comprises operation asset lifecycle replacement costs and technology lifecycle costs. Free Cash Flow per security has been determined using the numb",
-          "e indications of, and guidance on, future earnings and financial position and performance, statements regarding APA Group\u2019s future strategies and capital expenditure, statements regarding estimates of future demand and consumption, and statements regarding APA\u2019s sustainability and climate transition plans and",
-          "tions of, and guidance on, future earnings and financial position and performance, statements regarding APA Group\u2019s future strategies and potential capital expenditure, statements regarding estimates of future demand and consumption, the future gas market and potential pricing and statements regarding APA\u2019s sustain"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "cheme that delivers reliable and affordable gas for end- users, a stable regulatory environment, a return to long-term contracts and a strong liquified natural gas (LNG) export market. We made good progress on our work in the emerging Beetalo"
-        },
-        {
-          "metric": "ebitda margin",
-          "evidence": "l Fraser Chairman For personal use only FY26 overview Our year in numbers UNDERLYING EBITDA +8.3% to $2,183m UNDERLYING EBITDA MARGIN +370bps to 77.9% FREE CASH FLOW (FCF) +3.2% to $1,118m FY26 DPS 58.0cps 1 cps increase on FY25 FY27 UNDERLYING EBITDA G"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-20",
-          "headline": "APA FY26 Appendix 4E and Annual Report 248 pages 19.1MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127268",
-          "textChars": 29938
-        },
-        {
-          "date": "2026-10-22",
-          "headline": "Results of 2026 Annual Meeting 2 pages 184.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155869",
-          "textChars": 4334
-        },
-        {
-          "date": "2026-08-20",
-          "headline": "APA FY26 Results Presentation 49 pages 12.9MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127302",
-          "textChars": 16416
-        }
-      ],
-      "announcementsReviewed": 30,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:05:02.983484+00:00"
-    },
-    {
-      "ticker": "ANZ",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "setting out the terms of any relevant agreement, and a statement by the person giving full and accurate details of any contract, scheme or arrangement, must accompany this form, together with a written statement certifying this contract, scheme o"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-11-02",
-          "headline": "Change in substantial holding 80 pages 10.4MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160758",
-          "textChars": 45000
-        },
-        {
-          "date": "2026-10-28",
-          "headline": "Update on divisional reporting 4 pages 224.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158026",
-          "textChars": 12248
-        },
-        {
-          "date": "2026-10-20",
-          "headline": "Shareholder resolution for consideration at ANZ's 2026 AGM 2 pages 74.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03154628",
-          "textChars": 2366
-        }
-      ],
-      "announcementsReviewed": 41,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:05:11.160951+00:00"
+      "analysedAt": "2026-11-03T15:06:17.564650+00:00"
     },
     {
       "ticker": "SUN",
@@ -1301,24 +375,174 @@
           "textChars": 16595
         }
       ],
-      "announcementsReviewed": 78,
+      "announcementsReviewed": 79,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:05:22.656582+00:00"
+      "analysedAt": "2026-11-03T15:06:27.675088+00:00"
     },
     {
-      "ticker": "WBC",
+      "ticker": "ORG",
       "status": "OK",
-      "evidenceScore": 37,
-      "evidenceRisk": 45,
+      "evidenceScore": 38,
+      "evidenceRisk": 44,
       "managementDeliveryScore": 50,
       "evidencePositives": [],
       "evidenceFlags": [
         {
           "severity": "HIGH",
-          "text": "Recent disclosures contain contract/customer loss or termination evidence."
+          "text": "Recent disclosures indicate rising project/capital costs."
         }
       ],
-      "evidenceSummary": "Risks: Recent disclosures contain contract/customer loss or termination evidence.",
+      "evidenceSummary": "Risks: Recent disclosures indicate rising project/capital costs.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "egrated Gas Energy Markets Capital Expenditure Data Tables Conversion & abbreviation Analyst notes Directory QUARTERLY REPORT SEPTEMBER 2026 APLNG capital expenditure Quarterly APLNG1 capex (APLNG 100%) 278278278 236236236 226226 228228 5151 88 Sustain and Other Exploration and Appraisal Jun-26 QTR Sep-26 QTR (1) A",
+          "of the battery portfolio. Australia Pacific LNG production is estimated at 625\u2013670 PJ (APLNG 100 per cent), reflecting natural field decline. Total capital expenditure and operating expenditure is expected to be $3.0\u2013$3.3 billion with increased drilling activity planned to partially offset natural field decline in",
+          ") Energy Markets Electricity sales TWh 9.5 9.4 1% 9.2 3% 9.5 9.2 3% Natural gas sales PJ 48.1 39.2 22% 51.9 (7%) 48.1 51.9 (7%) Origin consolidated Capex $m 152 226 (33%) 199 (23%) 152 199 (23%) Investments $m 210 8 n/m (0) n/m 210 (0) n/m For further information: MEDIA INVESTORS Anneliis Allen Liam Ba"
+        ],
+        "capex_overrun": [
+          "28228 3636 88 Sustain and Other Exploration and Appraisal FYTD-26 (Sep-25 QTR) FYTD-27 (Sep-26 QTR) (1) APLNG capex is reported on an accrual basis \u2022 Capex in FYTD-27 increased by $17 million driven by higher well delivery activity, partially offset by lower exploration spend and timing of non-operated development. For per"
+        ],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "et by a change in sales mix with lower LNG spot sales. \u2013 Domestic revenue up 14% primarily driven by higher short-term contract volumes. FYTD-26 vs FYTD-27 (APLNG 100%) ($m) 2,1242,1242,124 2,6012,6012,601 372372 (166)(166) (29)(29) 177177 1,7521,"
+        },
+        {
+          "metric": "capex",
+          "evidence": "sales TWh 9.5 9.4 1% 9.2 3% 9.5 9.2 3% Natural gas sales PJ 48.1 39.2 22% 51.9 (7%) 48.1 51.9 (7%) Origin consolidated Capex $m 152 226 (33%) 199 (23%) 152 199 (23%) Investments $m 210 8 n/m (0) n/m 210 (0) n/m For further information: MEDIA IN"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-10-30",
+          "headline": "September 2026 Quarterly Report 28 pages 1.8MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159707",
+          "textChars": 10138
+        },
+        {
+          "date": "2026-10-14",
+          "headline": "2026 Annual General Meeting - Results of Meeting 2 pages 156.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03152251",
+          "textChars": 1867
+        },
+        {
+          "date": "2026-08-13",
+          "headline": "Full Year Results 2026 5 pages 280.1KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124676",
+          "textChars": 9580
+        }
+      ],
+      "announcementsReviewed": 30,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:06:34.382790+00:00"
+    },
+    {
+      "ticker": "PME",
+      "status": "OK",
+      "evidenceScore": 62,
+      "evidenceRisk": 35,
+      "managementDeliveryScore": 58,
+      "evidencePositives": [
+        "Recent disclosures contain contract/customer win evidence.",
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "LOW",
+          "text": "Options, performance rights or convertibles may add future dilution."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Recent disclosures show delivery/commissioning milestones being achieved. Risks: Options, performance rights or convertibles may add future dilution.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [
+          "vanced our AI strategy further, entering a Heads of Agreement, with Sydney based AI cardiology company EchoIQ committing an initial A$10 million via convertible notes (with an option for a further A$10 million upon FDA clearance of EchoSolv HF). The Master Agreement for the convertible note was signed on 14 Augu",
+          "tial A$10 million via convertible notes (with an option for a further A$10 million upon FDA clearance of EchoSolv HF). The Master Agreement for the convertible note was signed on 14 August 2026. The Heads of Agreement also envisages that the company will become a reseller of the EchoSolv suite. This is in line w"
+        ],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [
+          "plus cardiology announced in July 2025 and a 7-year A$90 million contract with Beth Israel Lahey Health announced in May 2026, with a further seven new contract wins across multiple market segments in North America. The company also successfully renewed six client contracts, each for a full 5-year term maint"
+        ],
+        "contract_loss": [],
+        "execution_positive": [
+          "urope, 9 US contracts signed worth total of $407m \u2022 Renewals \u2013 Renewed 6 out of 6 contracts on long term, 5-year extensions \u2022 Implementations \u2013 On or ahead of schedule \u2022 Cardiology \u2013 gaining traction UC Health Colorado, Vancouver Clinic & Others \u2022 New Products \u2013 Digital pathology and AI optimized Reporting module \u2022"
+        ],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "to $273.5m, an increase of 28.4% (refer to financial outcomes Page 19 for details of constant currency). \u2022 Minimum contracted revenue over the next 5 years increased to $1.3b, +41%. \u2022 Net cash inflows from operating activities for the curre"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-18",
+          "headline": "Annual Report FY26 98 pages 2.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126343",
+          "textChars": 28547
+        },
+        {
+          "date": "2026-08-18",
+          "headline": "PME FY26 results presentation 67 pages 5.0MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126318",
+          "textChars": 4744
+        },
+        {
+          "date": "2026-08-18",
+          "headline": "CEO Interview FY26 Results 6 pages 313.2KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126309",
+          "textChars": 12679
+        }
+      ],
+      "announcementsReviewed": 30,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:06:43.282982+00:00"
+    },
+    {
+      "ticker": "IAG",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 36,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Customer-concentration language appears in recent disclosures; dependency should be checked."
+        }
+      ],
+      "evidenceSummary": "Risks: Customer-concentration language appears in recent disclosures; dependency should be checked.",
       "evidenceSignals": {
         "capital_raise": [],
         "options_issue": [],
@@ -1330,11 +554,11 @@
         "cash_burn": [],
         "capex": [],
         "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [
-          "our use of AI to support our scams and fraud teams to detect threats and support customers in real-time, contributed to preventing $181 million in customer losses. TRANSFORMATION Investing for the future \u2022 UNITE is simplifying our operating environment with completion of the first large-scale migration to P"
+        "major_customer": [
+          "d members. Our enterprise technology investments will help ensure we remain relevant and competitive in the world of agentic search. We serve all major customer groups: members, individuals and families, rural and regional customers, and small and commercial businesses in our target segments. And we reach"
         ],
+        "contract_win": [],
+        "contract_loss": [],
         "execution_positive": [],
         "execution_negative": []
       },
@@ -1342,30 +566,92 @@
       "sectorEvidence": [],
       "evidenceDocuments": [
         {
-          "date": "2026-11-02",
-          "headline": "Westpac 2026 Group Annual Report and Appendix 4E 255 pages 17.1MB",
+          "date": "2026-08-13",
+          "headline": "IAG FY26 Appendix 4E and Annual Report 206 pages 16.0MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160745",
-          "textChars": 17292
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124614",
+          "textChars": 33879
         },
         {
-          "date": "2026-05-05",
-          "headline": "Westpac 2026 Half Year Result Media Release 4 pages 570.6KB",
+          "date": "2026-10-22",
+          "headline": "2026 IAG AGM Voting Results 2 pages 860.5KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03090207",
-          "textChars": 11048
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155786",
+          "textChars": 3591
         },
         {
-          "date": "2026-11-02",
-          "headline": "Westpac 2026 Full Year Results email to shareholders 5 pages 383.0KB",
+          "date": "2026-08-13",
+          "headline": "IAG FY26 Results Presentation 40 pages 1.8MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160750",
-          "textChars": 8768
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124617",
+          "textChars": 12383
         }
       ],
-      "announcementsReviewed": 65,
+      "announcementsReviewed": 41,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:05:31.900716+00:00"
+      "analysedAt": "2026-11-03T15:06:55.190109+00:00"
+    },
+    {
+      "ticker": "TWE",
+      "status": "OK",
+      "evidenceScore": 46,
+      "evidenceRisk": 35,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "LOW",
+          "text": "Options, performance rights or convertibles may add future dilution."
+        }
+      ],
+      "evidenceSummary": "Risks: Options, performance rights or convertibles may add future dilution.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [
+          "lculating the required majority on a poll. 3 Adoption of the Remuneration Report Ordinary 10,661,258 1.86% 4 Grant of F27 Long Term Incentive Plan Performance Rights to the Chief Executive Officer and Managing Director Ordinary 5,597,354 0.98% 1/1 For personal use only DOCUMENT 2026-08-13 2026 Annual Results"
+        ],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-13",
+          "headline": "TWE 2026 Annual Report 199 pages 18.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124706",
+          "textChars": 14408
+        },
+        {
+          "date": "2026-10-15",
+          "headline": "TWE 2026 AGM Voting Results 2 pages 262.9KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03152848",
+          "textChars": 3012
+        },
+        {
+          "date": "2026-08-13",
+          "headline": "2026 Annual Results Investor and Analyst Presentation 33 pages 3.1MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124711",
+          "textChars": 10138
+        }
+      ],
+      "announcementsReviewed": 47,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:07:06.497664+00:00"
     },
     {
       "ticker": "MPL",
@@ -1443,7 +729,1187 @@
       ],
       "announcementsReviewed": 27,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:05:42.147844+00:00"
+      "analysedAt": "2026-11-03T15:07:15.644460+00:00"
+    },
+    {
+      "ticker": "QBE",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "15% ROAC1 3yr avg \u2022 Diversification drives performance \u2022 Structural shift towards greater facilitisation \u2022 Access to broad market data \u2022 Efficient placement for customer, broker and carrier \u2022 Product shift to lower-volatility proportional reinsurance improves earnings stability \u2022 Increased relevance wi",
+          "an and Bonus Share Plan will operate with no discount applicable to shares allocated under the plans. The Bonus Share Plan will be satisfied by the issue of shares, and the Dividend Reinvestment Plan is anticipated to be satisfied by the on-market purchase of shares. To the extent that the on-market purchase i",
+          "nt that the on-market purchase is not able to be completed for any reason, obligations under the Dividend Reinvestment Plan will be satisfied by the issue of shares. The interim dividend will be 30% franked. The unfranked part of the dividend is declared to be conduit foreign income. The share issue price for th"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-14",
+          "headline": "2026 Half Year Results Presentation 24 pages 1.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125041",
+          "textChars": 12425
+        },
+        {
+          "date": "2026-08-14",
+          "headline": "Market Release 2026 Half Year Results 6 pages 356.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125039",
+          "textChars": 15630
+        },
+        {
+          "date": "2026-08-14",
+          "headline": "2026 Half Year Results and Financial Statements 34 pages 1.3MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125036",
+          "textChars": 45000
+        }
+      ],
+      "announcementsReviewed": 52,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:07:24.106232+00:00"
+    },
+    {
+      "ticker": "ASX",
+      "status": "OK",
+      "evidenceScore": 38,
+      "evidenceRisk": 45,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        },
+        {
+          "severity": "LOW",
+          "text": "Options, performance rights or convertibles may add future dilution."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk. Options, performance rights or convertibles may add future dilution.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "more resilient and modern network foundation for our trading platforms, supporting future enhancements to the cash market trading platform and the replacement of our derivatives trading system. The replacement of our futures clearing system, a key component of our derivatives clearing project, has entered",
+          "trading platforms, supporting future enhancements to the cash market trading platform and the replacement of our derivatives trading system. The replacement of our futures clearing system, a key component of our derivatives clearing project, has entered the testing phase, following the launch of the indu"
+        ],
+        "options_issue": [
+          "2,993,021 397,908 103,751,538 22,843,222 279,402 Carried 79.81% 17.01% 0.46% 2.40% 0.32% 81.96% 18.04% 525 Holders 488 Holders 92 Holders 4 GRANT OF PERFORMANCE RIGHTS TO THE MANAGING DIRECTOR AND CEO NA 119,907,857 1,213,124 566,900 162,144 2,841,899 534,867 125,003,144 1,749,580 162,491 Carried 95.88% 0.97% 0.45%"
+        ],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "$37.1b Total net new capital quoted $2.3t Total cash market value traded 223m Total futures and options on futures contracts traded Strategic report Governance Financial statements Additional 3 1. Based on Segment information presented in Note"
+        },
+        {
+          "metric": "ebitda margin",
+          "evidence": "lower end of the target range. Underlying return on equity improved to 13.7%, up 10 basis points on the pcp. The EBITDA margin decreased 180 basis points to 61.0%, as expense growth exceeded revenue growth. This included the costs associated wit"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-13",
+          "headline": "Appendix 4E and ASX Annual Report 2026 162 pages 11.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124741",
+          "textChars": 17804
+        },
+        {
+          "date": "2026-10-22",
+          "headline": "Results of Annual General Meeting 2 pages 106.1KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155781",
+          "textChars": 3314
+        },
+        {
+          "date": "2026-08-13",
+          "headline": "2026 Full-Year Results Presentation and Speaking Notes 26 pages 2.0MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124747",
+          "textChars": 12672
+        }
+      ],
+      "announcementsReviewed": 55,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:07:33.581559+00:00"
+    },
+    {
+      "ticker": "WBC",
+      "status": "OK",
+      "evidenceScore": 37,
+      "evidenceRisk": 45,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "HIGH",
+          "text": "Recent disclosures contain contract/customer loss or termination evidence."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent disclosures contain contract/customer loss or termination evidence.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [
+          "our use of AI to support our scams and fraud teams to detect threats and support customers in real-time, contributed to preventing $181 million in customer losses. TRANSFORMATION Investing for the future \u2022 UNITE is simplifying our operating environment with completion of the first large-scale migration to P"
+        ],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-11-02",
+          "headline": "Westpac 2026 Group Annual Report and Appendix 4E 255 pages 17.1MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160745",
+          "textChars": 17292
+        },
+        {
+          "date": "2026-05-05",
+          "headline": "Westpac 2026 Half Year Result Media Release 4 pages 570.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03090207",
+          "textChars": 11048
+        },
+        {
+          "date": "2026-11-02",
+          "headline": "Westpac 2026 Full Year Results email to shareholders 5 pages 383.0KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160750",
+          "textChars": 8768
+        }
+      ],
+      "announcementsReviewed": 65,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:07:42.456680+00:00"
+    },
+    {
+      "ticker": "APA",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "r certain non-operating items, less stay-in-business capital expenditure. Stay-in-business capital expenditure comprises operation asset lifecycle replacement costs and technology lifecycle costs. Free Cash Flow per security has been determined using the number of securities entitled to distributions as a",
+          "certain non-operating items, less stay-in-business capital expenditure. Stay-in-business capital expenditure comprises operational asset lifecycle replacement costs and technology lifecycle costs. Underlying earnings before interest, tax, depreciation and amortisation (EBITDA) excludes recurring items aris",
+          "ution. Securities will be allocated to security holders under the DRP for the 2026 final distribution at an amount equal to the allocation price for securities issued pursuant to the DRP, being the 10-day volume weighted average price which commenced 7 trading days after the record date of 30 June 2026. APA Group"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "ee Cash Flow is defined as Operating Cash Flow adjusted for certain non-operating items, less stay-in-business capital expenditure. Stay-in-business capital expenditure comprises operation asset lifecycle replacement costs and technology lifecycle costs. Free Cash Flow per security has been determined using the numb",
+          "e indications of, and guidance on, future earnings and financial position and performance, statements regarding APA Group\u2019s future strategies and capital expenditure, statements regarding estimates of future demand and consumption, and statements regarding APA\u2019s sustainability and climate transition plans and",
+          "tions of, and guidance on, future earnings and financial position and performance, statements regarding APA Group\u2019s future strategies and potential capital expenditure, statements regarding estimates of future demand and consumption, the future gas market and potential pricing and statements regarding APA\u2019s sustain"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "cheme that delivers reliable and affordable gas for end- users, a stable regulatory environment, a return to long-term contracts and a strong liquified natural gas (LNG) export market. We made good progress on our work in the emerging Beetalo"
+        },
+        {
+          "metric": "ebitda margin",
+          "evidence": "l Fraser Chairman For personal use only FY26 overview Our year in numbers UNDERLYING EBITDA +8.3% to $2,183m UNDERLYING EBITDA MARGIN +370bps to 77.9% FREE CASH FLOW (FCF) +3.2% to $1,118m FY26 DPS 58.0cps 1 cps increase on FY25 FY27 UNDERLYING EBITDA G"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-20",
+          "headline": "APA FY26 Appendix 4E and Annual Report 248 pages 19.1MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127268",
+          "textChars": 29938
+        },
+        {
+          "date": "2026-10-22",
+          "headline": "Results of 2026 Annual Meeting 2 pages 184.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155869",
+          "textChars": 4334
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "APA FY26 Results Presentation 49 pages 12.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127302",
+          "textChars": 16416
+        }
+      ],
+      "announcementsReviewed": 30,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:07:54.392255+00:00"
+    },
+    {
+      "ticker": "ALL",
+      "status": "OK",
+      "evidenceScore": 34,
+      "evidenceRisk": 49,
+      "managementDeliveryScore": 40,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        },
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language. Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "$202 million, down from $231 million in the prior corresponding period, reflected continued investment in the installed base aligned with net unit placements of ~2,000 units in this period compared to ~2,500 units in the prior corresponding period. Reconciliation of statutory profit to normalised NPATA",
+          "on Total number of +securities on issue ALL : ORDINARY FULLY PAID 592,348,586 3.2 Unquoted +equity securities (total number of each +class of +equity securities issued but not quoted on ASX) ASX +security code and description Total number of +securities on issue ALLAA : PERFORMANCE SHARE RIGHTS 4,063,878 Note: the f"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "gs mix for the period. Fully funded organic investment continued in the priority areas of Design and Development (D&D), User Acquisition (UA) and Capital Expenditure (Capex), to drive near and longer-term competitiveness, capability and superior returns. D&D investment of $407 million grew by 1%, or 7% on a con",
+          "6) (275.3) 28.2 Interest and tax (419.5) (318.8) (31.6) Other cash and non-cash movements 119.2 118.2 0.8 Operating cash flow 820.1 772.6 6.1 Net capital expenditure (189.2) (230.9) 18.1 Acquisitions and divestments (169.4) 880.8 n/a Investing cash flow (358.6) 649.9 n/a Dividends and cash returned to sharehol",
+          "n provisions. The prior corresponding period reflected the gain on sale of Plarium partially offset by the impairment of the Big Fish assets. Net capital expenditure reflected priority investment to support continued growth in the North America Gaming Operations installed base, net of the proceeds on the sale of"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": [
+          "gration and other related costs from acquisitions (46.8) (39.2) Costs associated with the exit of the White Label business (27.1) (26.1) Changes in deferred tax asset relating to historical Group structure changes - (5.7) Net gain from significant items 131.7 80.1 1 The total Light & Wonder S",
+          "y movements. 1 Net working capital includes current trade and other receivables, inventories, trade and other payables and deferred revenue. 2 Net working capital/revenue from continuing operations % is calculated as Net working capital divided by revenue from continuing operatio"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "strong Outright Sales volumes at the end of financial year 2025. This was partly offset by amortisation of customer contracts within the Group\u2019s 50% joint venture investment in NeoPollard Interactive (NPI JV). Non-current borrowings: The decr"
+        },
+        {
+          "metric": "capex",
+          "evidence": "tment continued in the priority areas of Design and Development (D&D), User Acquisition (UA) and Capital Expenditure (Capex), to drive near and longer-term competitiveness, capability and superior returns. D&D investment of $407 million gre"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-05-13",
+          "headline": "HY26 Results Announcement 35 pages 3.1MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093298",
+          "textChars": 22509
+        },
+        {
+          "date": "2026-05-13",
+          "headline": "HY26 Investor Presentation 32 pages 2.7MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093331",
+          "textChars": 9004
+        },
+        {
+          "date": "2026-10-09",
+          "headline": "Notification of cessation of securities - ALL 4 pages 10.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03150703",
+          "textChars": 3213
+        }
+      ],
+      "announcementsReviewed": 82,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:08:02.076850+00:00"
+    },
+    {
+      "ticker": "CPU",
+      "status": "OK",
+      "evidenceScore": 70,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 70,
+      "evidencePositives": [
+        "Management has raised or beaten guidance in recent disclosures.",
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [],
+      "evidenceSummary": "Positive evidence: Management has raised or beaten guidance in recent disclosures. Recent disclosures show delivery/commissioning milestones being achieved.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [
+          "mployee Share Plans again produced excellent results for shareholders. Management EPS increased by 7% to 145 cents per share, slightly ahead of the guidance upgraded during the year, while Management Revenue increased 3% to $3.2 billion. This was a strong outcome in a changing interest rate environment, reflecti"
+        ],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "is broadly flat at 65%, im pacted by prepayments of certain long-term technology contracts. I expect this to trend to 70% over the coming years. \u2022 Capex fell a little, over $7m down on the PCP. This is more timing related; I expect this to increase to around $65m in FY27 due to planned investments i",
+          "ongoing business lines in FY26 ($18.7m in 1H and $21.5m in 2H). \u2022 Below the line costs down 34% vs. PCP, trending to zero by the end of FY27. \u2022 FY26 capex spend of $39.2m, FY27 expected to be around $65m \u2013 reflects investment in property, AI and technology infrastructure. 60.6 14.1 6.6 - 83.5 81.5"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [
+          "e increased 9%, with higher issuance supporting growth in client balances. The business delivered the $80 million Wells Fargo synergy target a year ahead of schedule, helping EBIT excluding Margin Income margins expand to more than 17%. CEO\u2019s report Issuer Services Management Revenue $1,310.6m UP 4.4% Management",
+          "rly impressed by our people\u2019s ability to stay focused and execute despite everything going on around the globe. We delivered acquisition synergies ahead of schedule in Corporate Trust, continued to embrace new technologies and supported many of our clients through a number of complex global transactions. Our P",
+          "larly impressed by the team\u2019s ability to stay focused and execute, despite everything going on around the globe. We delivered acquisition synergies ahead of schedule, continued to embrace new technologies, and supported many of our clients through a number of complex global transactions. That discipline has been"
+        ],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "ement on Slide 11: \u2022 Cash conversion is broadly flat at 65%, im pacted by prepayments of certain long-term technology contracts. I expect this to trend to 70% over the coming years. \u2022 Capex fell a little, over $7m down on the PCP. This is more"
+        },
+        {
+          "metric": "capex",
+          "evidence": "ted by prepayments of certain long-term technology contracts. I expect this to trend to 70% over the coming years. \u2022 Capex fell a little, over $7m down on the PCP. This is more timing related; I expect this to increase to around $65m in FY2"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-09-01",
+          "headline": "Annual Report - FY26 144 pages 3.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03133935",
+          "textChars": 20583
+        },
+        {
+          "date": "2026-08-12",
+          "headline": "FY26 Results - CEO and CFO conference call script 7 pages 132.7KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124433",
+          "textChars": 15062
+        },
+        {
+          "date": "2026-08-11",
+          "headline": "CPU FY26 Results Presentation 52 pages 1.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124057",
+          "textChars": 10947
+        }
+      ],
+      "announcementsReviewed": 26,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:08:09.564279+00:00"
+    },
+    {
+      "ticker": "ANZ",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "setting out the terms of any relevant agreement, and a statement by the person giving full and accurate details of any contract, scheme or arrangement, must accompany this form, together with a written statement certifying this contract, scheme o"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-11-02",
+          "headline": "Change in substantial holding 80 pages 10.4MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160758",
+          "textChars": 45000
+        },
+        {
+          "date": "2026-10-28",
+          "headline": "Update on divisional reporting 4 pages 224.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158026",
+          "textChars": 12248
+        },
+        {
+          "date": "2026-10-20",
+          "headline": "Shareholder resolution for consideration at ANZ's 2026 AGM 2 pages 74.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03154628",
+          "textChars": 2366
+        }
+      ],
+      "announcementsReviewed": 41,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:08:18.939793+00:00"
+    },
+    {
+      "ticker": "STO",
+      "status": "OK",
+      "evidenceScore": 58,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 58,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "flow from operations is defined as operating cash flows less investing cash flows (net of acquisitions and disposal s and growth development project capital expenditure) less lease liability payments 5 2026 Half-year results 2026 First-half financial highlights Strong dividend maintained through a year of transitionF",
+          "eight days, while Darwin LNG delivered 100 per cent plant reliability in the first half. \u201cWith the major development build and peak major project capex for Barossa and Pikka behind us, second-half production is expected to be around 20 to 30 per cent higher than the first hal f, supporting stronger",
+          "and free cash flow from operations (operating cash flows less investing cash flows net of acquisitions and disposals and growth development project capex, less lease liability payments) are non-IFRS measures that are presented to provide an understanding of the performance of Santos\u2019 operations. The n"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [
+          "Pikka Phase 1 oil project Santos has commenced continuous production operations at the Pikka Phase 1 oil project on Alaska\u2019s North Slope, with the first production wells now online delivering gross production of approximately 20,000 bbl/day. Santos will commence pressure support through seawater injection over",
+          "ficer Kevin Gallagher said continuous operations at Pikka Phase 1 marked a significant step on the path to plateau production later this year. \"The first production wells are now online and delivering continuous production. We will commence pressure support through seawater injection and bring more wells online"
+        ],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "s, economic and financial market conditions in various countries, approvals, conduct of joint venture participants and contractual counterparties, cost estimates, reputational risk, social licence and stakeholder risk and activism. No represent"
+        },
+        {
+          "metric": "capex",
+          "evidence": "elivered 100 per cent plant reliability in the first half. \u201cWith the major development build and peak major project capex for Barossa and Pikka behind us, second-half production is expected to be around 20 to 30 per cent higher than the fir"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-19",
+          "headline": "Santos 2026 Half-year Results 42 pages 2.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03126837",
+          "textChars": 15154
+        },
+        {
+          "date": "2026-08-10",
+          "headline": "2026 Half-year results webcast 1 page 130.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03123434",
+          "textChars": 1182
+        },
+        {
+          "date": "2026-06-23",
+          "headline": "Santos commences continuous production operations at Pikka 1 page 155.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03106701",
+          "textChars": 2236
+        }
+      ],
+      "announcementsReviewed": 30,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:08:25.214620+00:00"
+    },
+    {
+      "ticker": "DTL",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 39,
+      "managementDeliveryScore": 40,
+      "evidencePositives": [
+        "Recent disclosures contain contract/customer win evidence."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures contain contract/customer win evidence. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [
+          "ata and Transformation and Governance. Managed Services continued to perform well, with growth of more than 9% supported by solid renewal rates and new contract wins, while Maintenance Services delivered a strong second half, supported by Cisco EA renewals, to achieve full-year growth of more than 11%. Thi"
+        ],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": [
+          "ionary pressures, geopolitical uncertainty and higher hardware prices related to global memory shortages. These conditions caused some customers to delay decisions and reconsider discretionary technology spend, which affected parts of the Services business. Pleasingly, demand remained resilient for",
+          "ts and margin pressure from a more competitive market. Renewal performance and activity levels remained strong, but conversions were constrained by delayed customer decisions, cash rate pressure and a tight market for specialist candidates. Maintenance Services delivered another solid result, with sales"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "cy (\u201cDTA\u201d) as the sole panel provider of Microsoft products and services to the Australian Government. This five-year contract, the largest in Data#3\u2019s history, reinforces the Company\u2019s long-standing public sector credentials and provides a sig"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-09-17",
+          "headline": "2026 Annual Report 60 pages 5.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03140567",
+          "textChars": 39807
+        },
+        {
+          "date": "2026-10-28",
+          "headline": "Results of Meeting 2 pages 189.5KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158504",
+          "textChars": 599
+        },
+        {
+          "date": "2026-08-24",
+          "headline": "DTL FY26 Results Briefing 44 pages 3.7MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03128831",
+          "textChars": 4622
+        }
+      ],
+      "announcementsReviewed": 18,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:08:33.205057+00:00"
+    },
+    {
+      "ticker": "DMP",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "ted Citigroup Global Markets Australia Pty Limited holds a decreased relevant interest in these shares pursuant to contracts entered into subject to an obligation to return under a securities lending agreement and pursuant to contracts ente"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-26",
+          "headline": "FY26 Appendix 4E / Annual Report 178 pages 13.9MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130285",
+          "textChars": 18392
+        },
+        {
+          "date": "2026-11-02",
+          "headline": "France MFA renewal 1 page 37.1KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160781",
+          "textChars": 579
+        },
+        {
+          "date": "2026-10-28",
+          "headline": "Change in substantial holding 6 pages 285.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158523",
+          "textChars": 8732
+        }
+      ],
+      "announcementsReviewed": 40,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:08:41.756692+00:00"
+    },
+    {
+      "ticker": "RMD",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 39,
+      "managementDeliveryScore": 40,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent disclosures contain delay, deferral or operating interruption language.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": [
+          "bility to execute our strategy due to changes in our industry or the economy generally, the emergence of new or growing competitors, disruptions and delays in the supply chain, the actions or omissions of third parties, including suppliers, customers, competitors and governmental authorities, geopoliti",
+          "nt years, we have developed product innovations to improve patient comfort and compliance. These include more comfortable patient interface systems, delay timers that gradually increase air pressure allowing the patient to fall asleep more easily, bilevel air devices, including our AirCurve 11 Series",
+          ",787 581,829 Operating lease right-of-use assets 196,688 153,167 Goodwill 2,908,232 2,909,575 Other intangible assets, net 442,681 452,737 Deferred income taxes 344,845 329,254 Prepaid taxes and other non-current assets 208,657 214,649 Total non-current assets 4,702,890 4,641,211 Total a"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "ty sleep underpins almost all aspects of human health. The upper airway has no rigid support and is held open by active contraction of upper airway muscles and tracheal traction by the lungs. Normally, during REM sleep and deeper levels of non-REM"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-14",
+          "headline": "Resmed Form 10-K Annual Report 124 pages 1.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03125096",
+          "textChars": 44234
+        },
+        {
+          "date": "2026-11-02",
+          "headline": "Resmed Form 10-Q Quarterly Report 46 pages 526.4KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160776",
+          "textChars": 20381
+        },
+        {
+          "date": "2026-10-30",
+          "headline": "Resmed Announces Results for the First Quarter of Fiscal 202 13 pages 609.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159672",
+          "textChars": 28557
+        }
+      ],
+      "announcementsReviewed": 44,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:08:49.923187+00:00"
+    },
+    {
+      "ticker": "CBA",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "growing by 15%. Operating expenses grew 16% to $1,645 million, predominantly driven by the settlement of the Credit Contracts and Consumer Finance Act 2003 class action proceedings, increased costs due to inflation, and hiring more people to s"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-12",
+          "headline": "2026 Annual Report 412 pages 20.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124133",
+          "textChars": 44955
+        },
+        {
+          "date": "2026-10-14",
+          "headline": "2026 Annual General Meeting Results 3 pages 229.0KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03152439",
+          "textChars": 4022
+        },
+        {
+          "date": "2026-08-12",
+          "headline": "ASB 2026 Full Year Financial Results Media Release 4 pages 256.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124262",
+          "textChars": 8449
+        }
+      ],
+      "announcementsReviewed": 103,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:09:00.854396+00:00"
+    },
+    {
+      "ticker": "WOW",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 36,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Customer-concentration language appears in recent disclosures; dependency should be checked."
+        }
+      ],
+      "evidenceSummary": "Risks: Customer-concentration language appears in recent disclosures; dependency should be checked.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [
+          "s Weeks as well as new partners, AIA Vitality and Skinny Mobile, added during the period. During the quarter one new store was opened in Halswell, a key customer catchment in Christchurch, and one SuperValue was converted to FreshChoice. Woolworths New Zealand donated $753,000 to food rescue organisations du"
+        ],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-26",
+          "headline": "Appendix 4E and Annual Report 195 pages 13.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130111",
+          "textChars": 25370
+        },
+        {
+          "date": "2026-10-29",
+          "headline": "Results of Annual General Meeting 2 pages 265.4KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159311",
+          "textChars": 3228
+        },
+        {
+          "date": "2026-10-28",
+          "headline": "First Quarter Sales Results 10 pages 486.6KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158156",
+          "textChars": 26849
+        }
+      ],
+      "announcementsReviewed": 27,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:09:11.137836+00:00"
+    },
+    {
+      "ticker": "TCL",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 39,
+      "managementDeliveryScore": 48,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent disclosures contain delay, deferral or operating interruption language."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "ions are intended to identify forward-looking statements. Indications of, and guidance on, future earnings, financial position, costs, distributions,capex requirements, performance, interest rate and CPI sensitivity and emission reduction targets are also forward-looking statements as are statements re"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [
+          "partners have invested in building and managing toll roads in Sydney.\u201d \"During the year, we completed the Northern Extension of the 495 Express Lanes ahead of schedule, which is already delivering significant benefits to customers. We also opened the West Gate Tunnel Project, representing the largest addition to Me"
+        ],
+        "execution_negative": [
+          "arried 2(d) Re-election of Timothy Reed as a director (THL and TIL) Carried 3 Adoption of the Remuneration Report (THL and TIL) Carried 4 Grant of deferred securities and performance awards to the CEO and Managing Director (THL, TIL and THT) Carried Investor enquiries Craig Stafford, CFA General M",
+          "counted in calculating the required majority on a poll. Ordinary Shares Unit value** $102,477,219 $30,753,840 Carried $67,187,728 Item 4 Grant of deferred securities and performance awards to the CEO and Managing Director (THL, TIL and THT) 6,891,049 10,510,484 3,154,2402,439,547,624 $23,785,589,334 I",
+          "supported by strong housing construction up +20.2% year-on-year6 \u2022 +10% ADT on 495, driven by NEXT opening \u2022 1H26 volumes impacted by Government shutdown in Q2 moderating growth \u23bb North America ADT 1H26 +3.5% vs 2H26 +7.6%8 Sydney 1.2% Melbourne 3.1%2 Brisbane"
+        ]
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "Non-recurring items in FY26 include commercial receipts from third parties in connection with the Group\u2019s construction contracts recognised of $47m. FY25 non-recurring items include ConnectEast litigation liability costs recognised of $143m and re"
+        },
+        {
+          "metric": "ebitda margin",
+          "evidence": "7.5% and supported by proportional toll revenue growth of 6.7% to $3,982 million and operating costs growth6 of 3.3%. EBITDA margin improved to 75.7% from 74.9% in FY25 \u2022 Strong balance sheet with corporate liquidity of $3.7 billion at 30 June 20267."
+        },
+        {
+          "metric": "capex",
+          "evidence": "forward-looking statements. Indications of, and guidance on, future earnings, financial position, costs, distributions,capex requirements, performance, interest rate and CPI sensitivity and emission reduction targets are also forward-looking s"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-13",
+          "headline": "Transurban FY26 results and FY27 distribution guidance 8 pages 224.1KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124631",
+          "textChars": 18445
+        },
+        {
+          "date": "2026-10-21",
+          "headline": "Results of 2026 Annual General Meetings 2 pages 222.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155228",
+          "textChars": 3776
+        },
+        {
+          "date": "2026-08-13",
+          "headline": "Transurban FY26 investor presentation 74 pages 9.3MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124632",
+          "textChars": 19692
+        }
+      ],
+      "announcementsReviewed": 43,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:09:19.965277+00:00"
+    },
+    {
+      "ticker": "SEK",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "rams, maintained gender balance and strengthened engagement People Yield 18% yield growth across APAC 6th consecutive year of double-digit growth Placements Placement share stable across Australia and Asia Positive trajectory over many years Earnings EBITDA up 15% Adjusted EPS up 28% EBITDA margin",
+          "ined gender balance and strengthened engagement People Yield 18% yield growth across APAC 6th consecutive year of double-digit growth Placements Placement share stable across Australia and Asia Positive trajectory over many years Earnings EBITDA up 15% Adjusted EPS up 28% EBITDA margin up two perce",
+          "nsecutive year of double - digit growth Operating leverage 10% revenue growth and 8% total cost growth; 4th consecutive half of operating leverage Placements Placement share stable across Australia and Asia; positive trajectory over many years Earnings EBITDA up 15%; Adjusted EPS up 28%; EBITDA margin up"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "diture increased by 8%, below the rate of revenue growth , delivering two percentage points of operating leverage. Operating expenses were up 6% and capital expenditure was up 17%. The increase was driven by continued investment in product, technology and AI teams, as well as growth in IT infrastructure and compute",
+          "nue of approximately $1,210m to $1,280m \u2022 Total expenditure of approximately $825m to $860m - Operating expenses of approximately $680m to $700m - Capital expenditure of approximately $145m to $160m \u2022 EBITDA of approximately $530m to $580m \u2022 Adjusted profit of approximately $185m to $215m For illustration pur",
+          ".2 1,097.0 17% 18% ANZ 945.4 844.9 12% 12% Asia 253.5 245.5 3% 5% Net revenue 1,198.9 1,090.4 10% 11% Operating expenses 669.0 631.2 6% 7% Capital expenditure7 152.0 129.9 17% 17% Total expenditure7 821.0 761.1 8% 8% EBITDA8 529.9 459.2 15% 17% D&A (162.0) (151.1) (7%) Net interest (66.4) (70.0)"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "ebitda margin",
+          "evidence": "re stable across Australia and Asia Positive trajectory over many years Earnings EBITDA up 15% Adjusted EPS up 28% EBITDA margin up two percentage points to 44% Operating leverage 10% revenue growth 8% total cost growth 4th consecutive half o"
+        },
+        {
+          "metric": "capex",
+          "evidence": "olio value. FY26 financial performance 8 SALES REVENUE $1,284m NET REVENUE $1,199m TOTAL EXPENDITURE $821m OPEX $669m CAPEX $152m EBITDA $530m ADJUSTED PROFIT $199m REPORTED LOSS 1 ($307m) 56cps FULL YEAR DIVIDEND 52cps ADJUSTED EPS \u25b2 +"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-12",
+          "headline": "Appendix 4E and FY2026 Annual Report 158 pages 9.3MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124207",
+          "textChars": 20312
+        },
+        {
+          "date": "2026-08-12",
+          "headline": "SEEK FY2026 Full Year Results Presentation 52 pages 9.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124226",
+          "textChars": 9025
+        },
+        {
+          "date": "2026-08-12",
+          "headline": "SEEK FY2026 Full Year Results Announcement 6 pages 420.2KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124224",
+          "textChars": 17330
+        }
+      ],
+      "announcementsReviewed": 35,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:09:30.918319+00:00"
+    },
+    {
+      "ticker": "NAB",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "dependent on the extent and persistence of the crisis. New Zealand's economy entered 2026 in a fragile position. After contracting in 2024, real GDP growth improved to a relatively subdued 1.3% over 2025. Household consumption growth strengthened"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-05-04",
+          "headline": "2026 Half Year Results Investor Presentation 129 pages 3.0MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089681",
+          "textChars": 7464
+        },
+        {
+          "date": "2026-05-04",
+          "headline": "2026 Half Year Results email to Shareholders 1 page 242.0KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089933",
+          "textChars": 2092
+        },
+        {
+          "date": "2026-05-04",
+          "headline": "2026 Half Year Results Summary 8 pages 1.7MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089679",
+          "textChars": 29906
+        }
+      ],
+      "announcementsReviewed": 60,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:09:39.886649+00:00"
+    },
+    {
+      "ticker": "MQG",
+      "status": "OK",
+      "evidenceScore": 58,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 58,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [
+          "iginal work program that dates from April 2021 has now been completed. Remediation of additional matters that have arisen since then is proceeding on schedule. In view of progress being made, there was a partial removal by APRA of some regulatory overlays. Two new matters arose in FY2026. First, in May 202"
+        ],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "78419 Atom Engine Limited United Kingdom 20-3690322 Avenal Power Center, LLC United States 2464710 Aylesford Electrical Contractors Limited United Kingdom 653 880 785 B2R No. 1 Pty Limited Australia 653 881 040 B2R No. 2 Pty Limited Australia 653 8"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-05-08",
+          "headline": "Macquarie Group Appendix 4E and FY26 Annual Report 346 pages 19.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03091887",
+          "textChars": 10397
+        },
+        {
+          "date": "2026-07-23",
+          "headline": "Results of Meeting 2 pages 164.7KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03117671",
+          "textChars": 3420
+        },
+        {
+          "date": "2026-11-02",
+          "headline": "Change in substantial holding for NWH 65 pages 9.0MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03161270",
+          "textChars": 45000
+        }
+      ],
+      "announcementsReviewed": 240,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:09:55.272233+00:00"
     },
     {
       "ticker": "WDS",
@@ -1530,313 +1996,7 @@
       ],
       "announcementsReviewed": 26,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:05:54.306081+00:00"
-    },
-    {
-      "ticker": "DMP",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "ted Citigroup Global Markets Australia Pty Limited holds a decreased relevant interest in these shares pursuant to contracts entered into subject to an obligation to return under a securities lending agreement and pursuant to contracts ente"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-26",
-          "headline": "FY26 Appendix 4E / Annual Report 178 pages 13.9MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130285",
-          "textChars": 18392
-        },
-        {
-          "date": "2026-11-02",
-          "headline": "France MFA renewal 1 page 37.1KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160781",
-          "textChars": 579
-        },
-        {
-          "date": "2026-10-28",
-          "headline": "Change in substantial holding 6 pages 285.3KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158523",
-          "textChars": 8732
-        }
-      ],
-      "announcementsReviewed": 40,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:06:01.828155+00:00"
-    },
-    {
-      "ticker": "NAB",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "dependent on the extent and persistence of the crisis. New Zealand's economy entered 2026 in a fragile position. After contracting in 2024, real GDP growth improved to a relatively subdued 1.3% over 2025. Household consumption growth strengthened"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-05-04",
-          "headline": "2026 Half Year Results Investor Presentation 129 pages 3.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089681",
-          "textChars": 7464
-        },
-        {
-          "date": "2026-05-04",
-          "headline": "2026 Half Year Results email to Shareholders 1 page 242.0KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089933",
-          "textChars": 2092
-        },
-        {
-          "date": "2026-05-04",
-          "headline": "2026 Half Year Results Summary 8 pages 1.7MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03089679",
-          "textChars": 29906
-        }
-      ],
-      "announcementsReviewed": 60,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:06:11.946236+00:00"
-    },
-    {
-      "ticker": "WOW",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 36,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Customer-concentration language appears in recent disclosures; dependency should be checked."
-        }
-      ],
-      "evidenceSummary": "Risks: Customer-concentration language appears in recent disclosures; dependency should be checked.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [
-          "s Weeks as well as new partners, AIA Vitality and Skinny Mobile, added during the period. During the quarter one new store was opened in Halswell, a key customer catchment in Christchurch, and one SuperValue was converted to FreshChoice. Woolworths New Zealand donated $753,000 to food rescue organisations du"
-        ],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-26",
-          "headline": "Appendix 4E and Annual Report 195 pages 13.5MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03130111",
-          "textChars": 25370
-        },
-        {
-          "date": "2026-10-29",
-          "headline": "Results of Annual General Meeting 2 pages 265.4KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159311",
-          "textChars": 3228
-        },
-        {
-          "date": "2026-10-28",
-          "headline": "First Quarter Sales Results 10 pages 486.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03158156",
-          "textChars": 26849
-        }
-      ],
-      "announcementsReviewed": 27,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:06:20.900016+00:00"
-    },
-    {
-      "ticker": "CBA",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "growing by 15%. Operating expenses grew 16% to $1,645 million, predominantly driven by the settlement of the Credit Contracts and Consumer Finance Act 2003 class action proceedings, increased costs due to inflation, and hiring more people to s"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-12",
-          "headline": "2026 Annual Report 412 pages 20.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124133",
-          "textChars": 44955
-        },
-        {
-          "date": "2026-10-14",
-          "headline": "2026 Annual General Meeting Results 3 pages 229.0KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03152439",
-          "textChars": 4022
-        },
-        {
-          "date": "2026-08-12",
-          "headline": "ASB 2026 Full Year Financial Results Media Release 4 pages 256.6KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124262",
-          "textChars": 8449
-        }
-      ],
-      "announcementsReviewed": 103,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:06:31.268245+00:00"
-    },
-    {
-      "ticker": "MQG",
-      "status": "OK",
-      "evidenceScore": 58,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 58,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "iginal work program that dates from April 2021 has now been completed. Remediation of additional matters that have arisen since then is proceeding on schedule. In view of progress being made, there was a partial removal by APRA of some regulatory overlays. Two new matters arose in FY2026. First, in May 202"
-        ],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "78419 Atom Engine Limited United Kingdom 20-3690322 Avenal Power Center, LLC United States 2464710 Aylesford Electrical Contractors Limited United Kingdom 653 880 785 B2R No. 1 Pty Limited Australia 653 881 040 B2R No. 2 Pty Limited Australia 653 8"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-05-08",
-          "headline": "Macquarie Group Appendix 4E and FY26 Annual Report 346 pages 19.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03091887",
-          "textChars": 10397
-        },
-        {
-          "date": "2026-07-23",
-          "headline": "Results of Meeting 2 pages 164.7KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03117671",
-          "textChars": 3420
-        },
-        {
-          "date": "2026-11-02",
-          "headline": "Change in substantial holding for NWH 65 pages 9.0MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03161270",
-          "textChars": 45000
-        }
-      ],
-      "announcementsReviewed": 240,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:06:46.440611+00:00"
+      "analysedAt": "2026-11-03T15:10:05.089247+00:00"
     },
     {
       "ticker": "WOR",
@@ -1913,7 +2073,7 @@
       ],
       "announcementsReviewed": 74,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:07:07.800881+00:00"
+      "analysedAt": "2026-11-03T15:10:24.393909+00:00"
     },
     {
       "ticker": "JHX",
@@ -2000,92 +2160,9 @@
           "textChars": 20518
         }
       ],
-      "announcementsReviewed": 114,
+      "announcementsReviewed": 116,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:07:15.072553+00:00"
-    },
-    {
-      "ticker": "TCL",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 39,
-      "managementDeliveryScore": 48,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent disclosures contain delay, deferral or operating interruption language."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Recent disclosures contain delay, deferral or operating interruption language.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "ions are intended to identify forward-looking statements. Indications of, and guidance on, future earnings, financial position, costs, distributions,capex requirements, performance, interest rate and CPI sensitivity and emission reduction targets are also forward-looking statements as are statements re"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "partners have invested in building and managing toll roads in Sydney.\u201d \"During the year, we completed the Northern Extension of the 495 Express Lanes ahead of schedule, which is already delivering significant benefits to customers. We also opened the West Gate Tunnel Project, representing the largest addition to Me"
-        ],
-        "execution_negative": [
-          "arried 2(d) Re-election of Timothy Reed as a director (THL and TIL) Carried 3 Adoption of the Remuneration Report (THL and TIL) Carried 4 Grant of deferred securities and performance awards to the CEO and Managing Director (THL, TIL and THT) Carried Investor enquiries Craig Stafford, CFA General M",
-          "counted in calculating the required majority on a poll. Ordinary Shares Unit value** $102,477,219 $30,753,840 Carried $67,187,728 Item 4 Grant of deferred securities and performance awards to the CEO and Managing Director (THL, TIL and THT) 6,891,049 10,510,484 3,154,2402,439,547,624 $23,785,589,334 I",
-          "supported by strong housing construction up +20.2% year-on-year6 \u2022 +10% ADT on 495, driven by NEXT opening \u2022 1H26 volumes impacted by Government shutdown in Q2 moderating growth \u23bb North America ADT 1H26 +3.5% vs 2H26 +7.6%8 Sydney 1.2% Melbourne 3.1%2 Brisbane"
-        ]
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "Non-recurring items in FY26 include commercial receipts from third parties in connection with the Group\u2019s construction contracts recognised of $47m. FY25 non-recurring items include ConnectEast litigation liability costs recognised of $143m and re"
-        },
-        {
-          "metric": "ebitda margin",
-          "evidence": "7.5% and supported by proportional toll revenue growth of 6.7% to $3,982 million and operating costs growth6 of 3.3%. EBITDA margin improved to 75.7% from 74.9% in FY25 \u2022 Strong balance sheet with corporate liquidity of $3.7 billion at 30 June 20267."
-        },
-        {
-          "metric": "capex",
-          "evidence": "forward-looking statements. Indications of, and guidance on, future earnings, financial position, costs, distributions,capex requirements, performance, interest rate and CPI sensitivity and emission reduction targets are also forward-looking s"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-13",
-          "headline": "Transurban FY26 results and FY27 distribution guidance 8 pages 224.1KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124631",
-          "textChars": 18445
-        },
-        {
-          "date": "2026-10-21",
-          "headline": "Results of 2026 Annual General Meetings 2 pages 222.8KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03155228",
-          "textChars": 3776
-        },
-        {
-          "date": "2026-08-13",
-          "headline": "Transurban FY26 investor presentation 74 pages 9.3MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124632",
-          "textChars": 19692
-        }
-      ],
-      "announcementsReviewed": 43,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:07:23.853002+00:00"
+      "analysedAt": "2026-11-03T15:10:32.723154+00:00"
     },
     {
       "ticker": "REA",
@@ -2147,67 +2224,7 @@
       ],
       "announcementsReviewed": 59,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:07:31.131996+00:00"
-    },
-    {
-      "ticker": "COL",
-      "status": "OK",
-      "evidenceScore": 50,
-      "evidenceRisk": 30,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [],
-      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "including, without limitation, any liability from fault or negligence on the part of Coles or its directors, employees, contractors or agents. This presentation contains forward-looking statements, including statements regarding the Group\u2019s intent,"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-25",
-          "headline": "Appendix 4E & 2026 Annual Report 188 pages 23.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03129459",
-          "textChars": 16044
-        },
-        {
-          "date": "2026-10-30",
-          "headline": "2027 First Quarter Sales Results 6 pages 466.1KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159755",
-          "textChars": 11675
-        },
-        {
-          "date": "2026-08-25",
-          "headline": "2026 Full Year Results Presentation 35 pages 5.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03129466",
-          "textChars": 12858
-        }
-      ],
-      "announcementsReviewed": 25,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:07:42.436534+00:00"
+      "analysedAt": "2026-11-03T15:10:40.505623+00:00"
     },
     {
       "ticker": "WES",
@@ -2272,87 +2289,10 @@
       ],
       "announcementsReviewed": 25,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:07:53.846081+00:00"
+      "analysedAt": "2026-11-03T15:10:51.044832+00:00"
     },
     {
-      "ticker": "SEK",
-      "status": "OK",
-      "evidenceScore": 42,
-      "evidenceRisk": 40,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "rams, maintained gender balance and strengthened engagement People Yield 18% yield growth across APAC 6th consecutive year of double-digit growth Placements Placement share stable across Australia and Asia Positive trajectory over many years Earnings EBITDA up 15% Adjusted EPS up 28% EBITDA margin",
-          "ined gender balance and strengthened engagement People Yield 18% yield growth across APAC 6th consecutive year of double-digit growth Placements Placement share stable across Australia and Asia Positive trajectory over many years Earnings EBITDA up 15% Adjusted EPS up 28% EBITDA margin up two perce",
-          "nsecutive year of double - digit growth Operating leverage 10% revenue growth and 8% total cost growth; 4th consecutive half of operating leverage Placements Placement share stable across Australia and Asia; positive trajectory over many years Earnings EBITDA up 15%; Adjusted EPS up 28%; EBITDA margin up"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [
-          "diture increased by 8%, below the rate of revenue growth , delivering two percentage points of operating leverage. Operating expenses were up 6% and capital expenditure was up 17%. The increase was driven by continued investment in product, technology and AI teams, as well as growth in IT infrastructure and compute",
-          "nue of approximately $1,210m to $1,280m \u2022 Total expenditure of approximately $825m to $860m - Operating expenses of approximately $680m to $700m - Capital expenditure of approximately $145m to $160m \u2022 EBITDA of approximately $530m to $580m \u2022 Adjusted profit of approximately $185m to $215m For illustration pur",
-          ".2 1,097.0 17% 18% ANZ 945.4 844.9 12% 12% Asia 253.5 245.5 3% 5% Net revenue 1,198.9 1,090.4 10% 11% Operating expenses 669.0 631.2 6% 7% Capital expenditure7 152.0 129.9 17% 17% Total expenditure7 821.0 761.1 8% 8% EBITDA8 529.9 459.2 15% 17% D&A (162.0) (151.1) (7%) Net interest (66.4) (70.0)"
-        ],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "ebitda margin",
-          "evidence": "re stable across Australia and Asia Positive trajectory over many years Earnings EBITDA up 15% Adjusted EPS up 28% EBITDA margin up two percentage points to 44% Operating leverage 10% revenue growth 8% total cost growth 4th consecutive half o"
-        },
-        {
-          "metric": "capex",
-          "evidence": "olio value. FY26 financial performance 8 SALES REVENUE $1,284m NET REVENUE $1,199m TOTAL EXPENDITURE $821m OPEX $669m CAPEX $152m EBITDA $530m ADJUSTED PROFIT $199m REPORTED LOSS 1 ($307m) 56cps FULL YEAR DIVIDEND 52cps ADJUSTED EPS \u25b2 +"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-08-12",
-          "headline": "Appendix 4E and FY2026 Annual Report 158 pages 9.3MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124207",
-          "textChars": 20312
-        },
-        {
-          "date": "2026-08-12",
-          "headline": "SEEK FY2026 Full Year Results Presentation 52 pages 9.2MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124226",
-          "textChars": 9025
-        },
-        {
-          "date": "2026-08-12",
-          "headline": "SEEK FY2026 Full Year Results Announcement 6 pages 420.2KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03124224",
-          "textChars": 17330
-        }
-      ],
-      "announcementsReviewed": 35,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:08:03.537598+00:00"
-    },
-    {
-      "ticker": "AIA",
+      "ticker": "COL",
       "status": "OK",
       "evidenceScore": 50,
       "evidenceRisk": 30,
@@ -2369,9 +2309,7 @@
         "debt_refi_positive": [],
         "debt_stress": [],
         "cash_burn": [],
-        "capex": [
-          "and runway, taxiways and aprons in 2026 and we have also reversed out the revaluations of land in 2025; \u2022 reversed out the impact of unrealised capital expenditure write - offs, impairments and termination cost expenses in 2025. These fixed asset write - offs, impairments and termination costs are not consid"
-        ],
+        "capex": [],
         "capex_overrun": [],
         "major_customer": [],
         "contract_win": [],
@@ -2380,33 +2318,38 @@
         "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [],
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "including, without limitation, any liability from fault or negligence on the part of Coles or its directors, employees, contractors or agents. This presentation contains forward-looking statements, including statements regarding the Group\u2019s intent,"
+        }
+      ],
       "evidenceDocuments": [
         {
-          "date": "2026-08-20",
-          "headline": "AIA - FY26 Annual Results 254 pages 29.5MB",
+          "date": "2026-08-25",
+          "headline": "Appendix 4E & 2026 Annual Report 188 pages 23.2MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127171",
-          "textChars": 20071
-        },
-        {
-          "date": "2026-07-22",
-          "headline": "AIA - Analyst and media webcast for FY26 annual results 1 page 337.4KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03116916",
-          "textChars": 960
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03129459",
+          "textChars": 16044
         },
         {
           "date": "2026-10-30",
-          "headline": "AIA - NZX D&O Disclosure Notice 7 pages 322.3KB",
+          "headline": "2027 First Quarter Sales Results 6 pages 466.1KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160063",
-          "textChars": 11875
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03159755",
+          "textChars": 11675
+        },
+        {
+          "date": "2026-08-25",
+          "headline": "2026 Full Year Results Presentation 35 pages 5.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03129466",
+          "textChars": 12858
         }
       ],
-      "announcementsReviewed": 29,
+      "announcementsReviewed": 25,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:08:14.225326+00:00"
+      "analysedAt": "2026-11-03T15:11:04.513099+00:00"
     },
     {
       "ticker": "CAR",
@@ -2473,7 +2416,268 @@
       ],
       "announcementsReviewed": 85,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:08:24.431384+00:00"
+      "analysedAt": "2026-11-03T15:11:16.016207+00:00"
+    },
+    {
+      "ticker": "AIA",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [
+          "and runway, taxiways and aprons in 2026 and we have also reversed out the revaluations of land in 2025; \u2022 reversed out the impact of unrealised capital expenditure write - offs, impairments and termination cost expenses in 2025. These fixed asset write - offs, impairments and termination costs are not consid"
+        ],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [],
+      "evidenceDocuments": [
+        {
+          "date": "2026-08-20",
+          "headline": "AIA - FY26 Annual Results 254 pages 29.5MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127171",
+          "textChars": 20071
+        },
+        {
+          "date": "2026-07-22",
+          "headline": "AIA - Analyst and media webcast for FY26 annual results 1 page 337.4KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03116916",
+          "textChars": 960
+        },
+        {
+          "date": "2026-10-30",
+          "headline": "AIA - NZX D&O Disclosure Notice 7 pages 322.3KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03160063",
+          "textChars": 11875
+        }
+      ],
+      "announcementsReviewed": 29,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:11:29.256781+00:00"
+    },
+    {
+      "ticker": "GMG",
+      "status": "OK",
+      "evidenceScore": 42,
+      "evidenceRisk": 40,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [
+        {
+          "severity": "MEDIUM",
+          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
+        }
+      ],
+      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
+      "evidenceSignals": {
+        "capital_raise": [
+          "at 6.5%\u00b3 (4.3% at FY25 ), 19.5% on a look - through basis and Interest Cover Ratio (ICR) 4 of 25.4 times (look - through 9.5x) \u2013 $3.2 billion of capital raised from third parties across the Partnerships \u2013 Financial risk management activity, retaining substantial FX and interest rate hedges \u2013 81% inte"
+        ],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "ets. We expect to announce several leasing transactions in the coming months as customer agreements are finalised and contractual commitments are secured. Importantly, this progress is now translating into tangible outcomes. During the y ear we"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-09-16",
+          "headline": "Goodman Group dispatch of 2026 Annual Report & AGM key dates 2 pages 192.7KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03140019",
+          "textChars": 5487
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Goodman 2026 Annual Report 292 pages 36.3MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127333",
+          "textChars": 23708
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Full Year Results Presentation Updated 54 pages 16.1MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127445",
+          "textChars": 18325
+        }
+      ],
+      "announcementsReviewed": 30,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:11:48.686272+00:00"
+    },
+    {
+      "ticker": "SHL",
+      "status": "OK",
+      "evidenceScore": 54,
+      "evidenceRisk": 35,
+      "managementDeliveryScore": 58,
+      "evidencePositives": [
+        "Recent disclosures show delivery/commissioning milestones being achieved."
+      ],
+      "evidenceFlags": [
+        {
+          "severity": "LOW",
+          "text": "Options, performance rights or convertibles may add future dilution."
+        }
+      ],
+      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Options, performance rights or convertibles may add future dilution.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [
+          "ance criteria over the period to 30 June 2028; exercisable at $21.18 each under the Sonic Healthcare Limited Employee Option Plan 50,481 unlisted performance rights over ordinary shares in Sonic Healthcare Limited, issued in 2025 and will vest on 20 November 2028, subject to performance criteria over the period",
+          "st on 20 November 2028, subject to performance criteria over the period to 30 June 2028, with Nil exercise price under the Sonic Healthcare Limited Performance Rights Plan 18,909 unlisted performance rights over ordinary shares in Sonic Healthcare Limited, issued in September 2026 and will vest on 1 March 2027",
+          "ance criteria over the period to 30 June 2028, with Nil exercise price under the Sonic Healthcare Limited Performance Rights Plan 18,909 unlisted performance rights over ordinary shares in Sonic Healthcare Limited, issued in September 2026 and will vest on 1 March 2027, with Nil exercise price under the Sonic H"
+        ],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [
+          "ngs per share increased 14% (underlying) \u2022 LADR Laboratory Group acquisition completed and integration progressing well, with synergy realisation on schedule \u2022 Continued substantial synergy capture from recent acquisitions in Switzerland \u2022 Strong growth in advanced diagnostics, leveraging market-leadin"
+        ],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "t private billing initiatives and the commencement of the North Shore Private Hospital and Hollywood Private Hospital contracts. A major national laboratory platform procurement process was completed during the year, supporting further efficien"
+        },
+        {
+          "metric": "utilisation",
+          "evidence": "tals supporting demand for healthcare diagnostics remain highly attractive. Ageing populations, increasing healthcare utilisation, advancing technology and the growing importance of personalised and preventative medicine continue to create signifi"
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-09-24",
+          "headline": "Annual Report to shareholders 200 pages 12.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03143546",
+          "textChars": 30128
+        },
+        {
+          "date": "2026-08-20",
+          "headline": "Media Release - Full Year Results to 30 June 2026 2 pages 229.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127519",
+          "textChars": 8550
+        },
+        {
+          "date": "2026-11-02",
+          "headline": "Change of Director's Interest Notice 4 pages 245.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03161263",
+          "textChars": 6651
+        }
+      ],
+      "announcementsReviewed": 28,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:11:57.201356+00:00"
+    },
+    {
+      "ticker": "XRO",
+      "status": "OK",
+      "evidenceScore": 50,
+      "evidenceRisk": 30,
+      "managementDeliveryScore": 50,
+      "evidencePositives": [],
+      "evidenceFlags": [],
+      "evidenceSummary": "No strong positive or negative disclosure signal was detected in the selected recent documents.",
+      "evidenceSignals": {
+        "capital_raise": [],
+        "options_issue": [],
+        "guidance_raise": [],
+        "guidance_reaffirm": [],
+        "guidance_cut": [],
+        "debt_refi_positive": [],
+        "debt_stress": [],
+        "cash_burn": [],
+        "capex": [],
+        "capex_overrun": [],
+        "major_customer": [],
+        "contract_win": [],
+        "contract_loss": [],
+        "execution_positive": [],
+        "execution_negative": []
+      },
+      "sectorEvidenceFamily": "industrials",
+      "sectorEvidence": [
+        {
+          "metric": "contract",
+          "evidence": "iling annual taxes, and provides reporting and analytics. Payroll Payroll tools to help simplify paying employees and contractors easily and on time. Payments Payment tools to help small businesses make and collect payments and manage cash flow."
+        }
+      ],
+      "evidenceDocuments": [
+        {
+          "date": "2026-05-14",
+          "headline": "FY26 Annual Results Investor Presentation 47 pages 5.2MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093688",
+          "textChars": 10866
+        },
+        {
+          "date": "2026-05-14",
+          "headline": "Appendix 4E & FY26 Annual Report 124 pages 9.6MB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093686",
+          "textChars": 20684
+        },
+        {
+          "date": "2026-08-27",
+          "headline": "Results of 2026 Annual Meeting 2 pages 72.8KB",
+          "priceSensitive": false,
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03131365",
+          "textChars": 4067
+        }
+      ],
+      "announcementsReviewed": 32,
+      "documentsRead": 3,
+      "analysedAt": "2026-11-03T15:12:07.445895+00:00"
     },
     {
       "ticker": "S32",
@@ -2552,156 +2756,12 @@
           "textChars": 5838
         }
       ],
-      "announcementsReviewed": 68,
+      "announcementsReviewed": 69,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:08:34.020658+00:00"
+      "analysedAt": "2026-11-03T15:12:19.764824+00:00"
     },
     {
-      "ticker": "SHL",
-      "status": "OK",
-      "evidenceScore": 54,
-      "evidenceRisk": 35,
-      "managementDeliveryScore": 58,
-      "evidencePositives": [
-        "Recent disclosures show delivery/commissioning milestones being achieved."
-      ],
-      "evidenceFlags": [
-        {
-          "severity": "LOW",
-          "text": "Options, performance rights or convertibles may add future dilution."
-        }
-      ],
-      "evidenceSummary": "Positive evidence: Recent disclosures show delivery/commissioning milestones being achieved. Risks: Options, performance rights or convertibles may add future dilution.",
-      "evidenceSignals": {
-        "capital_raise": [],
-        "options_issue": [
-          "ance criteria over the period to 30 June 2028; exercisable at $21.18 each under the Sonic Healthcare Limited Employee Option Plan 50,481 unlisted performance rights over ordinary shares in Sonic Healthcare Limited, issued in 2025 and will vest on 20 November 2028, subject to performance criteria over the period",
-          "st on 20 November 2028, subject to performance criteria over the period to 30 June 2028, with Nil exercise price under the Sonic Healthcare Limited Performance Rights Plan 18,909 unlisted performance rights over ordinary shares in Sonic Healthcare Limited, issued in September 2026 and will vest on 1 March 2027",
-          "ance criteria over the period to 30 June 2028, with Nil exercise price under the Sonic Healthcare Limited Performance Rights Plan 18,909 unlisted performance rights over ordinary shares in Sonic Healthcare Limited, issued in September 2026 and will vest on 1 March 2027, with Nil exercise price under the Sonic H"
-        ],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [
-          "ngs per share increased 14% (underlying) \u2022 LADR Laboratory Group acquisition completed and integration progressing well, with synergy realisation on schedule \u2022 Continued substantial synergy capture from recent acquisitions in Switzerland \u2022 Strong growth in advanced diagnostics, leveraging market-leadin"
-        ],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "t private billing initiatives and the commencement of the North Shore Private Hospital and Hollywood Private Hospital contracts. A major national laboratory platform procurement process was completed during the year, supporting further efficien"
-        },
-        {
-          "metric": "utilisation",
-          "evidence": "tals supporting demand for healthcare diagnostics remain highly attractive. Ageing populations, increasing healthcare utilisation, advancing technology and the growing importance of personalised and preventative medicine continue to create signifi"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-09-24",
-          "headline": "Annual Report to shareholders 200 pages 12.6MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03143546",
-          "textChars": 30128
-        },
-        {
-          "date": "2026-08-20",
-          "headline": "Media Release - Full Year Results to 30 June 2026 2 pages 229.8KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127519",
-          "textChars": 8550
-        },
-        {
-          "date": "2026-11-02",
-          "headline": "Change of Director's Interest Notice 4 pages 245.8KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03161263",
-          "textChars": 6651
-        }
-      ],
-      "announcementsReviewed": 28,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:08:43.188865+00:00"
-    },
-    {
-      "ticker": "GMG",
-      "status": "OK",
-      "evidenceScore": 42,
-      "evidenceRisk": 40,
-      "managementDeliveryScore": 50,
-      "evidencePositives": [],
-      "evidenceFlags": [
-        {
-          "severity": "MEDIUM",
-          "text": "Recent capital raising/share issuance creates dilution and funding-dependence risk."
-        }
-      ],
-      "evidenceSummary": "Risks: Recent capital raising/share issuance creates dilution and funding-dependence risk.",
-      "evidenceSignals": {
-        "capital_raise": [
-          "at 6.5%\u00b3 (4.3% at FY25 ), 19.5% on a look - through basis and Interest Cover Ratio (ICR) 4 of 25.4 times (look - through 9.5x) \u2013 $3.2 billion of capital raised from third parties across the Partnerships \u2013 Financial risk management activity, retaining substantial FX and interest rate hedges \u2013 81% inte"
-        ],
-        "options_issue": [],
-        "guidance_raise": [],
-        "guidance_reaffirm": [],
-        "guidance_cut": [],
-        "debt_refi_positive": [],
-        "debt_stress": [],
-        "cash_burn": [],
-        "capex": [],
-        "capex_overrun": [],
-        "major_customer": [],
-        "contract_win": [],
-        "contract_loss": [],
-        "execution_positive": [],
-        "execution_negative": []
-      },
-      "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "ets. We expect to announce several leasing transactions in the coming months as customer agreements are finalised and contractual commitments are secured. Importantly, this progress is now translating into tangible outcomes. During the y ear we"
-        }
-      ],
-      "evidenceDocuments": [
-        {
-          "date": "2026-09-16",
-          "headline": "Goodman Group dispatch of 2026 Annual Report & AGM key dates 2 pages 192.7KB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03140019",
-          "textChars": 5487
-        },
-        {
-          "date": "2026-08-20",
-          "headline": "Goodman 2026 Annual Report 292 pages 36.3MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127333",
-          "textChars": 23708
-        },
-        {
-          "date": "2026-08-20",
-          "headline": "Full Year Results Presentation Updated 54 pages 16.1MB",
-          "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127445",
-          "textChars": 18325
-        }
-      ],
-      "announcementsReviewed": 30,
-      "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:08:58.536677+00:00"
-    },
-    {
-      "ticker": "XRO",
+      "ticker": "ZIP",
       "status": "OK",
       "evidenceScore": 50,
       "evidenceRisk": 30,
@@ -2727,38 +2787,33 @@
         "execution_negative": []
       },
       "sectorEvidenceFamily": "industrials",
-      "sectorEvidence": [
-        {
-          "metric": "contract",
-          "evidence": "iling annual taxes, and provides reporting and analytics. Payroll Payroll tools to help simplify paying employees and contractors easily and on time. Payments Payment tools to help small businesses make and collect payments and manage cash flow."
-        }
-      ],
+      "sectorEvidence": [],
       "evidenceDocuments": [
         {
-          "date": "2026-05-14",
-          "headline": "FY26 Annual Results Investor Presentation 47 pages 5.2MB",
+          "date": "2026-08-20",
+          "headline": "Appendix 4E and FY26 Annual Report 175 pages 9.7MB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093688",
-          "textChars": 10866
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127396",
+          "textChars": 13962
         },
         {
-          "date": "2026-05-14",
-          "headline": "Appendix 4E & FY26 Annual Report 124 pages 9.6MB",
+          "date": "2026-10-23",
+          "headline": "1Q FY27 results update 8 pages 164.2KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03093686",
-          "textChars": 20684
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03156033",
+          "textChars": 14995
         },
         {
-          "date": "2026-08-27",
-          "headline": "Results of 2026 Annual Meeting 2 pages 72.8KB",
+          "date": "2026-08-20",
+          "headline": "FY26 Results Update 8 pages 113.2KB",
           "priceSensitive": false,
-          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03131365",
-          "textChars": 4067
+          "url": "https://www.asx.com.au/asx/v2/statistics/displayAnnouncement.do?display=pdf&idsId=03127398",
+          "textChars": 17948
         }
       ],
-      "announcementsReviewed": 32,
+      "announcementsReviewed": 107,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:09:07.257866+00:00"
+      "analysedAt": "2026-11-03T15:12:27.235449+00:00"
     },
     {
       "ticker": "GOLD",
@@ -2874,7 +2929,12 @@
       ],
       "announcementsReviewed": 41,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:09:14.676415+00:00"
+      "analysedAt": "2026-11-03T15:12:35.822550+00:00"
+    },
+    {
+      "ticker": "ETPMAG",
+      "status": "NOT_APPLICABLE",
+      "reason": "Exchange-traded product; issuer operating evidence is not comparable with a company."
     },
     {
       "ticker": "MIN",
@@ -2953,12 +3013,7 @@
       ],
       "announcementsReviewed": 55,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:09:26.190412+00:00"
-    },
-    {
-      "ticker": "ETPMAG",
-      "status": "NOT_APPLICABLE",
-      "reason": "Exchange-traded product; issuer operating evidence is not comparable with a company."
+      "analysedAt": "2026-11-03T15:12:46.479111+00:00"
     },
     {
       "ticker": "DRO",
@@ -3033,7 +3088,7 @@
       ],
       "announcementsReviewed": 50,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:09:32.199445+00:00"
+      "analysedAt": "2026-11-03T15:12:52.087130+00:00"
     },
     {
       "ticker": "WBT",
@@ -3126,7 +3181,7 @@
       ],
       "announcementsReviewed": 58,
       "documentsRead": 3,
-      "analysedAt": "2026-11-02T17:09:40.205021+00:00"
+      "analysedAt": "2026-11-03T15:13:00.106635+00:00"
     }
   ]
 }
